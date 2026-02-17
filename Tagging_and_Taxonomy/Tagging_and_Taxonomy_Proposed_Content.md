@@ -5,8 +5,7 @@
 **Authoritative references used:**
 - [Taxonomy and tagging best practices for AEM Assets](https://experienceleague.adobe.com/en/perspectives/taxonomy-and-tagging-best-practices-for-aem-assets)
 - [Tags, taxonomy, and metadata best practices: high-level summary (Site hierarchy)](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/page-authoring/expert-advice/site-hierarchy)
-- Implementation analysis: `/Users/lambert/Documents/Projects/SHRSS/Implementation_Analysis_Project/Documentation/Implementation-Analysis/final`
-- Content package: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Content/shrss-content-minimal-assets-PROD-1.0`
+- Content package: /SHRSS_Knowledge_Transfer/Content/shrss-content-minimal-assets-PROD-1.0`
 
 ---
 
@@ -14,13 +13,26 @@
 
 ### 1.1 How taxonomy was configured for this implementation
 
-- **Taxonomy root:** Tags are stored under the standard AEM taxonomy root. The content package filter includes `/content/cq:tags/shrss`, indicating a **shrss** namespace for SHRSS-specific tags.
-- **Path-to-tag mapping (site/content context):** The implementation uses **TagsPathMappingConfigService**, which reads a path-to-tag mapping from an **ACS Commons Generic List** at `/etc/acs-commons/lists/path-tags-mapping/jcr:content/list`. Each list item has:
-  - **jcr:title** = content path (e.g. site or section path)
-  - **value** = tag ID (e.g. a tag under the taxonomy)
+- **Taxonomy root:** Tags are stored under the standard AEM taxonomy root: `/content/cq:tags/shrss`, under the **shrss** namespace for SHRSS-specific tags.
+- **Path-to-tag mapping (site/content context):**
+  - The implementation uses **TagsPathMappingConfigService**, which reads a path-to-tag mapping from an **ACS Commons Generic List** at `/etc/acs-commons/lists/path-tags-mapping/jcr:content/list`. 
+    - Each list item has:
+      - **jcr:title** = content path (e.g. site or section path)
+      - **value** = tag ID (e.g. a tag under the taxonomy)
+  
   - This allows the system to **derive tags from the current page path** (e.g. for alerts or context-specific content) without authors selecting tags manually on every page.
-- **Content Fragments and assets:** Content Fragments and DAM assets store tag references in metadata. For CFs, the **categories** field (multi-value) holds tag IDs used for filtering in dynamic lists. DAM assets use the standard **cq:tags** property on `jcr:content/metadata` (with `cq:Taggable` mixin). Sample content shows tags such as `properties:orientation/square` and namespaced tags like `shrss:regions/latam`, `shrss:event-categories/entertainment`.
+  
+- **Content Fragments and assets:** 
+  - Content Fragments and DAM assets store tag references in metadata:
+    - For CFs, the **categories** field (multi-value) holds tag IDs used for filtering in dynamic lists.
+    - DAM assets use the standard **cq:tags** property on `jcr:content/metadata` (with `cq:Taggable` mixin). 
+      - Examples:
+        - `shrss:regions/latam`
+        - `shrss:event-categories/entertainment`.
+
 - **Tag namespaces in use (from code and test data):** `shrss` (e.g. `shrss:regions/apac`, `shrss:event-categories/entertainment`, `shrss:hotel/new-york`), and standard OOTB namespaces such as `properties` (e.g. `properties:orientation/portrait`).
+  - Spreadsheet: /SHRSS_Knowledge_Transfer/Tagging_and_Taxonomy/SHRSS_Content_Tag_Mapping.xlsx`
+
 
 ### 1.2 How tags are structured across Brand / LOB / Property
 
@@ -71,7 +83,7 @@
 ### 3.1 Component and asset metadata mapping
 
 - **Assets (DAM):** Metadata schema is defined at `conf/global/settings/dam/adminui-extension/metadataschema/shrssmetadataschema`. The **Tags** field is typically bound to `jcr:content/metadata/cq:tags`. Authors pick tags from the taxonomy when editing asset metadata; tags are stored as string array on the asset.
-- **Content Fragments:** CF models (e.g. News, Events) include a **categories** (or similar) field that stores tag IDs. This is used by **CF Card List** and related components to filter by tags. Map this field in the CF model to the same taxonomy used in the Tagging console.
+- **Content Fragments:** CF models (e.g. News, Events) include a **categories** field that stores tag IDs. This is used by **CF Card List** and related components to filter by tags. Map this field in the CF model to the same taxonomy used in the Tagging console.
 - **Pages:** Page properties can expose **Tags/Keywords** (cq:tags) for SEO and for components that use page context (e.g. Alert Aggregator uses path–tag mapping derived from current page path).
 - **Path–tag mapping:** Not a component field; it is authoring-time configuration in the ACS Commons list. It maps **paths** (e.g. `/content/shrss/hotel/en/...`) to **tag IDs** used by backend services (e.g. **TagsPathMappingConfigService.getAllTagsByPath(currentPage.getPath())**).
 
@@ -81,8 +93,12 @@
   - Restricts to DAM assets that are Content Fragments under the root folder.
   - Filters by **content fragment model** (e.g. Event, News).
   - Adds **group property** conditions on the **categories** property matching each tag in **tagsList** (OR logic between tags).  
-  So only CFs whose **categories** metadata contains at least one of the selected tags appear in the list.
-- **Path-derived tags:** **Alert Aggregator** uses **TagsPathMappingConfigService.getAllTagsByPath(currentPage.getPath())** to get tags for the current page path, then uses those tags to decide which alerts to show. So **path–tag mapping** directly drives which content appears on a given page/section.
+    So only CFs whose **categories** metadata contains at least one of the selected tags appear in the list.
+  - `shrss/news-categories/featured-news`
+    - https://author-p135156-e1336227.adobeaemcloud.com/ui#/aem/editor.html/content/shrss/corporate/hardrock/en/blog.html
+- **Path-derived tags:** **Alert Aggregator** uses service to get tags for the current page path, then uses those tags to decide which alerts to show. So **path–tag mapping** directly drives which content appears on a given page/section.
+  - *TagsPathMappingConfigService.getAllTagsByPath(currentPage.getPath())* 
+
 
 ### 3.3 Category filters
 
@@ -112,6 +128,21 @@
 - **Tag performance (query efficiency, indexing):** Tag properties are indexed when standard AEM/Oak indexing is used. Queries that filter by `cq:tags` or CF **categories** should use indexed properties; avoid large OR sets of tags in a single query when possible. Path–tag mapping is a small list read once per request; keep the list size reasonable.
 - **Troubleshooting content not appearing in listings/filters:** (1) Confirm the CF or asset has the expected tags in **categories** or **cq:tags**. (2) Confirm component config: **tagsList**, **tagsRootFolder**, and list type (e.g. tags vs fixed list vs root path). (3) For path-driven content (e.g. alerts), confirm path–tag mapping exists for the page path and is published. (4) Confirm tags are published. (5) Check Query Builder or service logs if queries return no results.
 - **Scheduling or lifecycle states:** Tags themselves do not change with scheduling; they are static metadata. If “visibility” is time-based, that is usually implemented via **publish date / end date** on the CF or page, or via workflow state, not via tag changes. Tags can still be used **together** with date filters (e.g. Event CF list filtered by tag and by event date range).
+
+---
+
+## Appendix: Tagging versus Asset Metadata
+
+### Overview
+
+- **Metadata** = structured properties *about* an asset (title, campaign, usage rights, SKU, dates…). In AEM Assets these are defined and surfaced via **metadata schemas** and profiles, stored under `jcr:content/metadata` on the asset node.
+- **Tags** = reusable **taxonomy terms** (`cq:Tag`) applied as metadata (usually `cq:tags`) to categorize content by business concepts (region, product, audience, theme). They create flexible, hierarchical classification across Sites and Assets.
+- **When to use what**
+  - Use **metadata fields** for *fixed, well-defined attributes* that behave like columns in a table (single source of truth, integrations, governance, permissions).
+  - Use **tags** for *business taxonomy* and *faceted discovery* (findability, related content, navigation, personalization).
+- Authors see both in the same properties dialog: **fields** (text, dropdowns, dates…) vs. **tag pickers**. Technically both end up as metadata; the difference is whether the value comes from a **schema field** or from the **central tag taxonomy**.
+
+
 
 ---
 

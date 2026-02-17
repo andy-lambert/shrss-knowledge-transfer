@@ -54,3 +54,17 @@ Task Steps:
        - Search results
        - Content inheritance across sites
        - Card and page visibility
+
+---
+
+## Task 2 - Create content/tag mapping spreadsheet
+
+I need an Excel spreadsheet listing all content resources from the exported content package and that resource's assigned tags. Exclude content resources with no tags
+
+Please create an Excel file (.xlsx) file with a sheet containing the following columns:
+
+- Content Type: (`Page`, `Experience Fragment`, `Content Fragment`)
+- Path: path to content item in JCR starting at `/content`. For example: `/content/shrss/corporate/hardrock/en`
+- Tag IDs (pipe-delimited). Example: `shrss:brands/hri|shrss:country/united-states|shrss:regions/na`
+- Tag Paths (pipe-delimited). Take Tag ID value and replace `shrss:` with `/content/cq:tags/shrss/`.     Example: `/content/cq:tags/shrss/brands/hri|/content/cq:tags/shrss/country/united-states|/content/cq:tags/shrss/regions/na`
+- Tag Property: (`cq:tags`, or other component or asset metadata property names as applicable. `categories` for any content fragments is a good example)

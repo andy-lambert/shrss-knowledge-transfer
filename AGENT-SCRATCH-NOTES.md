@@ -19,6 +19,61 @@
 
 ---
 
+## Session Handoff & Next Session (2026-02-17)
+
+- **Timestamp (UTC):** 2026-02-17
+- **Category:** Reminder
+- **Context:** User reported that the **Tagging, Taxonomy & Metadata Governance** KT session was delivered successfully; asset metadata/tag examples and CF Card List page examples were well received and complimented. Next session to prep: **DAM Training and Usage Guide for Admins**.
+- **Description:**
+  - **Accomplished this session:** Tagging/Taxonomy KT content (session guide, proposed content, content–tag mapping, Asset Metadata Fields doc, CF_Card_List_Page_Examples_KT_Reference.md) was used to host the session; delivery went really well.
+  - **Next:** Prepare for **DAM Training and Usage Guide for Admins** using:
+    - **Agenda:** `DAM/AAEMDAM-3736_DAM_Training_and_Usage_Guide_for_Admins_Agenda.pdf`
+    - **Jira:** `DAM/AAEMDAM-3736_DAM_Training_and_Usage_Guide_for_Admins_Agenda_JIRA.docx` (ticket AAEMDAM-3736)
+  - **Jira summary (from DOCX):** Parent AEM Enablement; Status To Do; Priority Show Stopper; Assignee Jenny Yang. **Audience:** Librarian, Content Admins, Product Owner have DAM access; **Content Authors do not.** Goal: enablement so Admins can manage assets, maintain governance, support property teams without misuse or disorganization. **Learning goals:** DAM structure (based on spreadsheet), upload/version/manage assets, where to store assets (hierarchy), how metadata and folders work, Dynamic Media in publishing, avoid breaking references, how asset updates flow to live pages. Training required before DAM becomes part of daily operations. Affects R1.0/R7.0; Fix versions R2.0–R7.1.
+- **Note Status:** Resolved
+- **Resolution:** Scratch notes updated; next agent can use agenda + Jira + this handoff to continue DAM Training for Admins prep.
+
+---
+
+## DAM Training and Usage Guide for Admins — Content & Approach Notes (2026-02-17)
+
+- **Timestamp (UTC):** 2026-02-17
+- **Category:** Idea
+- **Context:** Prep for next KT session per agenda PDF and Jira AAEMDAM-3736. Audience: Admins (Librarian, Content Admins, Product Owner); not Content Authors.
+- **Description:**
+
+  **Objective (from agenda):** Understand how to properly use the DAM so admins can manage assets, maintain governance, and support property teams without risking misuse or disorganization.
+
+  **Thoughts by agenda section:**
+
+  1. **DAM Content Architecture**
+     - **Content:** How the DAM is structured; how and where to store assets in the correct hierarchy; best practices; architecture realignment roadmap (shrss → shrss-primary).
+     - **Approach:** Ground “structure” in the actual content package and implementation: `/content/dam` (e.g. `content/dam/shrss/corporate/logos`, `content/dam/shrss/cf`). Jira says structure is “based on spreadsheet”—**confirm/locate that spreadsheet** (folder hierarchy, naming, placement rules) and use it as the single source of truth for “where to store.” Clarify **shrss → shrss-primary**: is this a rename, a migration, or a new root? Not clearly present in implementation analysis final docs; get client/roadmap input so the realignment slide is accurate and non-speculative.
+     - **Deliverable idea:** One-page “DAM folder map” or hierarchy diagram + short best-practices list (naming, no orphan assets, use of folders vs. tags).
+
+  2. **Assets Metadata**
+     - **Content:** Metadata schemas; folder metadata schemas; metadata profiles; best practices.
+     - **Approach:** Reuse and point to existing KT artifacts: **Tagging session** and **Asset_Metadata_Fields_Tag_Selection.md** (and Asset Metadata Fields doc) already document `shrssmetadataschema`, tag roots, and fields. This section can focus on: (a) where schemas live (`/conf/global/settings/dam/adminui-extension/metadataschema/shrssmetadataschema`), (b) folder-level metadata schemas if used in this implementation, (c) metadata profiles (e.g. processing/renditions) if applicable. Keep “best practices” concrete (e.g. required fields, tag consistency) and aligned with governance from the Tagging session.
+     - **Deliverable idea:** Short “Metadata for Admins” cheat sheet: schema overview + link to Tagging/metadata docs; folder metadata and profiles if present.
+
+  3. **DAM Operations**
+     - **Content:** How to upload, version, and manage assets; how to avoid breaking references; how asset updates flow to live pages; best practices.
+     - **Approach:** This is highly procedural and UI/UX. Cover: upload flows, versioning (AEM versioning behavior), when updates propagate (references, Sites usage, publish). “Avoid breaking references” is critical: document or demonstrate what breaks references (move/rename/delete), and safe patterns (replace binary, use versioning). Implementation analysis mentions AssetService and JCR at `/content/dam`; no need to go deep technically for Admins—focus on authoring behavior and outcomes. If there are workflows or scheduling in use, describe them from an admin perspective.
+     - **Deliverable idea:** Step-by-step “Safe asset update” and “Do not do” one-pagers; optional short demo script (replace vs. delete, version before major change).
+
+  4. **Dynamic Media**
+     - **Content:** Current state; integration roadmap.
+     - **Approach:** Keep factual: what is enabled today (e.g. Smart Crop, renditions) vs. not (e.g. DM Scene7/Hybrid). Implementation analysis and content package show Smart Crop/AI-style metadata on assets—that’s “current state” evidence. Roadmap is client/PM territory; document only what is confirmed (e.g. “Integration roadmap to be shared by product/project”) so the session doesn’t over-promise.
+     - **Deliverable idea:** One slide/section “Dynamic Media today” (what works now) + “Planned” (roadmap TBD or high-level only).
+
+  **Cross-cutting:** All content must stay **analysis/documentation only** (no code or config changes). Align any “best practice” or “how it works” claims to implementation analysis and content package evidence, and to AEM canonical refs where useful (see AGENTS.md and docs/ai/reference).
+
+- **Note Status:** Pending Action
+- **Required Action:** When building session materials: (1) Locate/confirm DAM structure spreadsheet and shrss-primary roadmap; (2) Reuse Tagging/metadata docs for Assets Metadata section; (3) Add DAM Operations procedural/cheat-sheet content; (4) Confirm Dynamic Media current state and roadmap ownership with client/PM.
+- **Resolution:** (N/A)
+
+---
+
 ## Instructions for Use (REQUIRED)
 
 - ALWAYS prefix the note with a timestamp (date and time in ISO 8601 format; e.g. `2026-01-06T10:46:00Z` and local equivalent)
