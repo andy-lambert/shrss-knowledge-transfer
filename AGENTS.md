@@ -1,4 +1,4 @@
-# AGENTS.md — SHRSS Log File Analysis
+# AGENTS.md — SHRSS Knowledge Transfer
 
 This file defines the authoritative rules, principles, and working model
 for all AI agents contributing to this repository.
@@ -21,7 +21,7 @@ Agents must treat this file as a **control plane**, not background reading.
 
 ---
 
-## Project Overview
+## Implementation Overview
 
 The **SHRSS AEM Sites & Assets** implementation is a custom, enterprise-scale web content and digital asset management (DAM) platform built on Adobe Experience Manager as a Cloud Service (AEMaaCS).
 
@@ -53,9 +53,11 @@ Design for scale, performance, integration, and optimal user experience (UX).
 
 ---
 
-## ⚠️ IMPORTANT: Special Instructions for this Project
+## Project Overview
 
-This is a special project focused on AEMaaCS log analysis, including root cause analysis as directed by the human. You may be asked, or may need, to review the codebase as part of a task. However, we WILL NOT be making any changes over the duration of this project.
+Adobe has been tasked with providing a series of knowledge transfer (KT) sessions to inform and enable SHRSS stakeholders. Depending on the session or topic, the target audience will range from highly technical (AEM technical architects, developers, administrators) to semi/non-technical (UX designers, AEM content authors, project managers, product owners)
+
+This project is focused on analyzing code, content, and configurations and creating documentation to support knowledge transfer (KT) sessions. You may be asked, or may need, to review the codebase as part of a task. ⚠️ IMPORTANT: However, we **WILL NOT** be making any changes over the duration of this project.
 
 ### FUNDAMENTAL PROJECT RULES (Non-Negotiable)
 
@@ -72,6 +74,7 @@ Folliow these rules In addition to all other rules and instructions defined in t
 
 Agents must prefer these sources over general web results or older blog posts.
 
+- Implementation analysis: `/Users/lambert/Documents/Projects/SHRSS/Implementation_Analysis_Project/Documentation/Implementation-Analysis/final`
 - Adobe AEM best practices (AEM authoring components, clientlibs, OSGi components (Sling models, servlets, services, listeners, schedulers, etc.), templates, assets/DAM, etc.)
   - See `docs/ai/reference/AEM_CANONICAL_REFERENCES.md` first.
   - Find semantic URLs for every documentation page on Adobe Experience League here: `docs/ai/reference/AdobeDocs-global-mapping.csv`
