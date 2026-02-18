@@ -1,0 +1,261 @@
+# SHRSS DAM structure (outline)
+
+Current folder hierarchy under `/content/dam/shrss` from the scrubbed content package (Task 3). No assets—structure only.
+
+**Source:** `Content/dam-shrss-folder-structure-1.0`
+
+## Summary
+
+| Top-level branch | Description (typical use) |
+|------------------|---------------------------|
+| **cafe** | Cafe assets (Amsterdam, Milan, Wroclaw) |
+| **cf** | Content Fragments (locations, news, venues) |
+| **corporate** | Corporate / brand (logos, photography, campaigns, careers) |
+| **hotel** | Hotel assets (logos, property-specific: Davos, en locales) |
+| **reverb** | Reverb assets (Atlanta, Hamburg, en) |
+| **training** | Training / sample content (images, cf/news) |
+
+*Total folders in structure: 237 (excluding `_jcr_content` / thumbnail nodes).*
+
+---
+
+## Outline
+
+- shrss
+  - cafe
+    - amsterdam
+      - en
+        - photography
+    - milan
+      - en
+        - photography
+    - wroclaw
+      - en
+        - photography
+          - media
+  - cf (FluffyJaws Note: child location nodes are content fragments)
+    - locations
+      - africa
+        - egypt
+        - ethiopia
+        - nigeria
+        - south-africa
+        - tunisia
+      - asia-pacific
+        - armenia
+        - cambodia
+        - china
+        - guam
+        - india
+        - indonesia
+        - japan
+        - lao-people-s-democratic-republic
+        - macau
+        - malaysia
+        - maldives
+        - mongolia
+        - nepal
+        - philippines
+        - singapore
+        - thailand
+        - united-states-of-america
+      - automaticupdatetestregioncode
+        - united-states
+      - caribbean
+        - cayman-islands
+        - dominican-republic
+        - puerto-rico
+        - st--kitts-and-nevis
+      - central-america
+        - costa-rica
+        - panama
+      - europe
+        - andorra
+        - austria
+        - belgium
+        - croatia
+        - cyprus
+        - czech-republic
+        - denmark
+        - france
+        - germany
+        - greece
+        - hungary
+        - iceland
+        - ireland
+        - italy
+        - malta
+        - montenegro
+        - netherlands
+        - norway
+        - poland
+        - portugal
+        - romania
+        - serbia
+        - spain
+        - sweden
+        - switzerland
+        - united-kingdom
+        - united-states-of-america
+      - middle-east
+        - united-arab-emirates
+      - north-america
+        - canada
+        - mexico
+        - united-states-of-america
+      - others
+        - others
+      - south-america
+        - argentina
+        - bolivia
+        - brazil
+        - chile
+        - colombia
+        - guyana
+        - paraguay
+        - suriname
+        - united-states-of-america
+        - uruguay
+        - venezuela
+    - news
+      - corporate
+        - en
+          - 2019
+            - 01
+            - 02
+            - 03
+            - 04
+            - 05
+            - 06
+            - 07
+            - 08
+            - 09
+            - 10
+            - 11
+            - 12
+          - 2020
+            - 01
+            - 02
+            - 03
+            - 04
+            - 05
+            - 06
+            - 07
+            - 08
+            - 09
+            - 10
+            - 11
+            - 12
+          - 2021
+            - 01
+            - 02
+            - 03
+            - 04
+            - 05
+            - 06
+            - 07
+            - 08
+            - 09
+            - 10
+            - 11
+            - 12
+          - 2022
+            - 01
+            - 02
+            - 03
+            - 04
+            - 05
+            - 06
+            - 07
+            - 08
+            - 09
+            - 10
+            - 11
+            - 12
+          - 2023
+            - 01
+            - 02
+            - 03
+            - 04
+            - 05
+            - 06
+            - 07
+            - 08
+            - 09
+            - 10
+            - 11
+            - 12
+          - 2024
+            - 01
+            - 02
+            - 03
+            - 04
+            - 05
+            - 06
+            - 07
+            - 08
+            - 09
+            - 10
+            - 11
+            - 12
+          - 2025
+            - 01
+            - 02
+            - 03
+            - 04
+            - 05
+            - 06
+            - 07
+            - 08
+            - 09
+            - 10
+            - 11
+            - 12
+          - 2026
+            - february
+            - january
+    - venues
+      - hotel
+        - en
+  - corporate
+    - campaigns
+      - partnerships
+    - careers
+      - en
+        - logos
+        - photography
+          - media
+    - logos
+    - photography
+  - hotel
+    - davos
+      - en
+        - photography
+          - media
+    - en
+      - logos
+      - photography
+        - factsheet
+        - media
+    - logos
+  - reverb
+    - atlanta
+      - en
+        - logos
+        - photography
+    - en
+      - logos
+      - photography
+    - hamburg
+      - en
+        - logos
+        - photography
+  - training
+    - cf
+      - news
+        - corporate
+          - en
+            - 2025
+              - 10
+              - 9
+    - images

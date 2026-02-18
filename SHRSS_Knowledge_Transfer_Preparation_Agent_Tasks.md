@@ -141,3 +141,212 @@ Snippet from directory's `.content.xml` file including `jcr:primaryType` propert
 </jcr:root>
 ```
 
+---
+
+## Task 4 - Create complete mapping of CF Card List component to page and experience fragment usage
+
+### Task Objective
+
+Create comprehensive documentation of current CF Card List component usage in pages and experience fragments.
+
+### Task Details
+
+In a prior session, we created a document containing a sampling of pages where the CF Card List component is configured on the page: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Tagging_and_Taxonomy/CF_Card_List_Page_Examples_KT_Reference.md`
+
+In this task, we will create another version of this markdown document that will be provided to the customer as an inventory of pages and experience fragments that use the CF Card List component.
+
+In addition, we will generate a new Excel spreadsheet file (.xlsx) also containing the inventory.
+
+> [!IMPORTANT]
+> In the document content, do not mention anything about the KT session. This will serve as a deliverable artifact.
+
+ Follow the task guidance below to create the deliverable artifact.
+
+### Content Sources
+
+We want to capture usage in the two sites currently in production, as well as the Careers website, which is in customer QA/UAT and targeted to go to production on March 16, 2026.
+
+#### Sites currently in Production
+
+Analyze/include content for the following two sites from the **production** content folder here: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Content/shrss-content-minimal-assets-PROD-1.0`:
+
+- `/jcr_root/content/shrss/corporate` (https://www.hardrock.com)
+  - NOTE: Exclude the `/jcr_root/content/shrss/corporate/careers` directory. Though the Careers content is structured under the `corporate` site hierarchy, it will actually be hosted as a standalone site at https://careers.hardrock.com. The Careers site content IS NOT currently up to date on production. We will account for it via the content package from the Stage environment below.
+
+- `/jcr_root/content/shrss/reverb` (https://reverb.hardrock.com/)
+
+#### Sites currently in Stage (In customer QA/UAT)
+
+Analyze/include content for the following site from the **stage** content folder here: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Content/shrss-content-minimal-assets-STAGE-1.0`:
+
+- `/jcr_root/content/shrss/corporate/careers` (https://aem.careers.stage.hardrock.com/)
+
+#### Page versus Experience Fragment Locations
+
+- **Pages** are located under `/jcr_root/content/shrss`
+- **Experience fragments** are located under `/jcr_root/content/experience-fragments/shrss`
+
+### Markdown Document Organization
+
+Structure the inventory by Site, then site subsections underneath when applicable, then sub-subsections/pages at the same level, and so on. I am open to your thoughts how best to organize. Experience fragments
+
+For each section, organize the relevant pages/EFs into a table with the following columns (see "Appendix - Table examples from CF_Card_List_Page_Examples_KT_Reference.md" below for quick reference to tables in the original version of this file):
+
+- **Type** ("Page" or "Experience Fragment")
+- **Path** (Page or EF path starting at `/content`.)
+  - Examples:
+    - Page: `/content/shrss/corporate/hardrock/en/blog`
+    - Experience Fragment: `/content/experience-fragments/shrss/corporate/hardrock/en/header/master`
+- **Site/Context** (See appendix, 'Best for “List by tags” demo' table for example)
+- **CF Card List Config** (See appendix, 'Best for “List by tags” demo' table for example)
+- **Notes** (See appendix, "Other pages with CF Card List" table for example)
+
+### Excel File
+
+Use the same columns/values from the markdown document tables in the Excel file
+
+> [!NOTE]
+>
+> The relevant pages and experience fragments (ef) can be found based one of the nested child nodes under `<page or ef node>/jcr:content/**` having a `sling:resourceType` property with a value of `shrss/components/cfcardlist`. For example: `/content/shrss/corporate/hardrock/en/blog/jcr:content/root/container/container/white-bg-container/white-bg-container/featured-blog-posts-grey-container/featured-blog-posts-container/cfcardlist`. 
+>
+
+> [!IMPORTANT]
+>
+> DO NOT rely solely on the name of the node to determine whether it is an instance of the CF Card List component or not (i.e. `cfcardlist`). In theory, the component node name could be something else
+
+### Task 4 - Agent Clarification Questions
+
+1. One row per page/EF vs per component
+
+   When a page has multiple CF Card List instances, should the deliverable have:
+
+   - One row per page/EF (Notes/Config describe all instances), or
+
+   - One row per component instance (same page path can appear multiple times, with one config per row)?
+
+   ANSWER: One row per component instance. Yes, please add an "Instance" column. Great idea!
+
+2. Output location
+
+   Where should the two deliverables live?
+
+   - Option A: DAM/ (with other DAM KT artifacts).
+
+   - Option B: Tagging_and_Taxonomy/ (next to CF_Card_List_Page_Examples_KT_Reference.md).
+
+   - Option C: Another path you specify.
+
+   ANSWER: Option B: Tagging_and_Taxonomy/ (next to CF_Card_List_Page_Examples_KT_Reference.md).
+
+3. Experience fragments scope
+
+   Confirm we include EFs under /content/experience-fragments/shrss that belong to:
+
+   - corporate (excluding careers) and reverb from PROD, and
+
+   - corporate/careers from STAGE,
+   - and that we only include EFs that actually contain at least one shrss/components/cfcardlist instance.
+
+   ANSWER: Confirmed all
+
+4. File names
+
+   Preferred base name for the two files? For example:
+
+   - CF_Card_List_Usage_Inventory.md and CF_Card_List_Usage_Inventory.xlsx, or
+
+   - Something like AAEMDAM-3736_CF_Card_List_Usage_Inventory.md / .xlsx?
+
+   ANSWER: CF_Card_List_Usage_Inventory.md and CF_Card_List_Usage_Inventory.xlsx
+
+---
+
+## Task 4 - Appendix - Table examples from CF_Card_List_Page_Examples_KT_Reference.md
+
+> ## Best for “List by tags” demo
+>
+> | Page path (JCR)                                 | Site / context             | CF Card List config                                          |
+> | ----------------------------------------------- | -------------------------- | ------------------------------------------------------------ |
+> | **`/content/shrss/corporate/hardrock/en/blog`** | Corporate Hard Rock → Blog | **listType:** `tags` • **tagsList:** `shrss:news-categories/featured-news` • **tagsRootFolder:** `/content/dam/shrss/cf/news/corporate/en` • **type:** news • **categories:** false (card config) |
+>
+
+> ## Other pages with CF Card List
+>
+> | Page path (JCR)                                         | Notes                                                        |
+> | ------------------------------------------------------- | ------------------------------------------------------------ |
+> | **`/content/shrss/reverb/en/tbd/en/cf-card-list-page`** | Dedicated CF card list page. Contains **two** CF Card List components: one **Events** (listType=rootPath, rootFolder=events path), one **News** (listType=rootPath, rootFolder=news path). Good for comparing rootPath vs. tags. |
+> | **`/content/shrss/reverb/en/tbd/en/event-list-reverb`** | Events list (rootPath-style; eventBasePath set).             |
+> | **`/content/shrss/corporate/hardrock/en/home`**         | Home page with CF Card List (categories=false).              |
+> | **`/content/shrss/corporate/hardrock/en/corporate`**    | Corporate section with CF Card List.                         |
+> | **`/content/shrss/hotel/en/home`**                      | Hotel home with CF Card List.                                |
+>
+
+---
+
+## Task 5 - Consolidate and Rename Tagging Structure Package Files
+### Task Objective
+
+Create a single `.content.xml` file that represents the entire SHRSS tagging structure.
+
+### Task Details
+
+I have extracted an AEM content package containing the SHRSS tag structure here. For this task, this directory will be referred to as **"the source directory"**: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/DAM/00_Drafts_and_Resources/tag_working_directory/_cq_tags/shrss`
+
+I have created a new directory that, for this task, will be referred to as **"the target directory"** here: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/DAM/00_Drafts_and_Resources/tag_working_directory/shrss_tag_structure_definition_files`
+
+### Task Steps
+
+1. Copy `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/DAM/00_Drafts_and_Resources/tag_working_directory/_cq_tags/shrss/.content.xml` to the target directory
+2. Traverse all directories under the source directory, extracting the content in each directory's direct child `.content.xml` file between the opening/closing `<jcr:root>` tags and pasting it into its respective location in the target directory's `.content.xml` file.
+3. Continue following this pattern until the tag configurations in all nested subdirectories under the target directory are populated into the target directory's `.content.xml` file.
+
+Example:
+
+The `_cq_tags/shrss` directory's `.content.xml` file contains the following:
+
+```xml
+<global/>
+<hotel/>
+<casino/>
+<cafe/>
+<categories/>
+<brands/>
+<venues-and-branded-experiences/>
+<regions/>
+<lob/>
+<properties/>
+<type/>
+<category/>
+<news-categories/>
+<event-categories/>
+<country/>
+<products/>
+```
+
+- The `_cq_tags/shrss/global/.content.xml` file doesn't contain any tag placeholders, so we would leave it unchanged in the target directory `.content.xml` file.
+
+- The `_cq_tags/shrss/brands/.content.xml` file contains three entries. So, the matching `<brands/>` element in the target `.content.xml` file would get expanded to include these elements:
+
+  - ```xml
+    <hri/>
+    <sga/>
+    <shr/>
+    ```
+
+---
+
+## Task 6 - Create a markdown document with SHRSS DAM structure in outline form
+
+### Task Objective
+
+Create a markdown document and Excel spreadsheet containing a complete visual model of the current SHRSS DAM architecture. 
+
+### Task Details
+
+Use the updated package defintion we created in "Task 3 - Scrub all asset nodes from content package content"
+
+At minimum, the document should include the folder structure in outline form. Am also interested in your ideas on additional visual representations (diagrams, tables, etc.)
+
+Please also generate a spreadsheet that conveys the current DAM structure. For an example of what the customer has seen before, see the "Asset Folders" sheet in this workbook: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/SHRSS-Content-Architecture-Workbook-v1_3.xlsx`. Note this sheet is likely out of date.
+
+Save the markdown file here: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/DAM`

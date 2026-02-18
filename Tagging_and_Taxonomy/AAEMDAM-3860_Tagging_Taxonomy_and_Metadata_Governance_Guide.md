@@ -69,9 +69,14 @@
 
 ### 2.3 Best practices
 
-- **Standardize:** Use a single vocabulary/glossary; avoid synonyms as separate tags unless using thesaurus features.
+- **Standardize:** Use a single vocabulary/glossary
+- **Avoid synonyms and near-duplicates:** Avoid synonyms as separate tags unless using thesaurus features.(e.g., don’t have both `footwear` and `shoes` for the same concept).
+- **Create namespaces:** for major domains: `brand`, `product`, `experience`, `audience`, etc.
+- **Keep hierarchies shallow but expressive:** – more like 3–5 levels, not 10.
 - **Avoid over-tagging:** Too many tags per asset/page dilutes value; define guidelines (e.g. max tags per content type).
 - **Re-evaluate:** Periodically audit tag usage and merge or retire unused tags.
+- **Control who can create tags:** no ad‑hoc tags from every author.
+- **Periodically review and refactor:** merge, deprecate, localize.
 - **Path–tag list:** Treat the ACS Commons path–tag list as governed configuration; change only with approval and document each path–tag pair for troubleshooting.
 
 ---
@@ -129,12 +134,12 @@
 
 ---
 
-## Appendix B: Asset Metadata Fields Configured for Tag Selection
+## Appendix A: Asset Metadata Fields Configured for Tag Selection
 
 **Source:** `/conf` in content package  
 `Content/shrss-content-minimal-assets-PROD-1.0/jcr_root/conf`
 
-All metadata fields below use a **tagfield** (values selected from the tag taxonomy). Widget: `cq/gui/components/coral/common/form/tagfield` with `metaType="tags"`.
+All metadata fields below use a **tagfield** dialog field element (values selected from the tag taxonomy). Widget: `cq/gui/components/coral/common/form/tagfield` with `metaType="tags"`.
 
 ---
 
@@ -205,9 +210,111 @@ Used when editing Content Fragments. Values stored in the CF model data (e.g. `j
   - Use **tags** for *business taxonomy* and *faceted discovery* (findability, related content, navigation, personalization).
 - Authors see both in the same properties dialog: **fields** (text, dropdowns, dates…) vs. **tag pickers**. Technically both end up as metadata; the difference is whether the value comes from a **schema field** or from the **central tag taxonomy**.
 
----
+#### What is asset metadata in AEM?
 
-## Document control
+From AEM’s perspective, asset metadata is:
 
-- **Version:** 1.0 (draft for KT session)
-- **Source:** Implementation analysis, content package review, Adobe Experience League references above.
+- Data stored primarily under `assetPath/jcr:content/metadata` on a `dam:Asset` node, using standard namespaces like `dc:*`, `xmp:*`, `tiff:*`, plus custom properties.
+- Used to answer questions like:
+  - **What is this?** (title, description, format)
+  - **Who is it for / about?** (audience, brand, market, persona)
+  - **Where and how can it be used?** (license, channels, regions)
+  - **When is it valid?** (valid from/to, campaign dates)
+
+Metadata is the **backbone of structured content** in Assets – essential for search, automation, personalization and governance [“Metadata best practices for AEM Assets”](https://experienceleague.adobe.com/en/perspectives/metadata-best-practices-for-aem-assets) and [“Metadata overview”](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata) confirm this.
+
+#### What is tagging in AEM?
+
+> [!NOTE]
+>
+> The official “Tags, Taxonomy, and Metadata Best Practices” guide calls tags **pre-defined terms** that normalize how content is described and power faceted search, related content, SEO, etc. [“Site Hierarchy, Taxonomy, and Tagging Guide”](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/page-authoring/expert-advice/site-hierarchy).
+
+Tags in AEM are:
+
+- Nodes of type `cq:Tag` stored in the tag taxonomy (namespaces + hierarchies).
+- Applied to assets and pages via properties like `cq:tags` and used for organizing, searching, navigation, personalization, etc. See **Using Tags** and **Administering Tags** for AEMaaCS Sites and Assets [“Using Tags”](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/authoring/sites-console/tags), [“Administering Tags”](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/sites/administering/tags).
+- Architecturally a **global, reusable vocabulary** independent of any single asset or page. The taxonomy can be centrally governed and reused across:
+  - Assets (DAM)
+  - Sites pages and Experience Fragments
+  - Content Fragments/headless content
+  - Content Hub / external consumers via `xcm:keywords` mappings [“Taxonomy management in Assets view”](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets-essentials/configuring/taxonomy-management).
+
+#### Relationship: tags *are* metadata, but not all metadata are tags
+
+Architecturally:
+
+- Tags are *implemented as metadata* (usually `cq:tags` string array), and AEM’s search/indexing treats them as such.
+- But conceptually, tags are the **controlled vocabulary layer** on top of raw fields – a reusable semantic layer across many assets/pages.
+- Metadata schemas define *where* tags are stored and *how* they are presented to authors (Tag field vs. text, dropdown, etc.) [“Metadata schemas”](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/metadata-schemas).
+
+#### Choose a *metadata field* when…
+
+Use a schema field (text, dropdown, date, boolean, etc.) when the attribute is:
+
+1. **Object‑like and single‑source‑of‑truth**
+   - IDs: SKU, product code, asset ID, campaign ID.
+   - Legal / regulatory: license ID, contract number.
+2. **Strongly typed or constrained**
+   - Dates (start/end), numeric values, booleans, fixed enums.
+   - Data that is validated or used in external systems / integrations.
+3. **Operational or system-internal**
+   - Workflow state, approval status, archival flag, retention classification.
+   - Permissions drivers (metadata-driven permissions in AEMaaCS) [“Metadata-driven permissions”](https://experienceleague.adobe.com/en/perspectives/metadata-best-practices-for-aem-assets).
+4. **Not meant for faceted navigation across many content types**
+   - For example, an internal “Upload Batch ID” or “Ingestion Source” that rarely drives end-user filters.
+5. **Needs to be different per schema / per folder**
+   - Specific metadata only applicable to product assets vs. brand imagery, etc.
+
+**Examples where metadata fields are better than tags**
+
+|                    Use case |                        Recommended implementation |
+| --------------------------: | ------------------------------------------------: |
+|  Product SKU / variant code |        Custom text field `commerce:sku` in schema |
+|     License expiration date |             Date field `xmpRights:ExpirationDate` |
+|            Rights territory |        Controlled dropdown, possibly multi-select |
+| Campaign ID / Salesforce ID | Text field, validated, used in downstream systems |
+|    Internal lifecycle flags |  Boolean or enum fields (Approved, Archive, etc.) |
+
+#### Choose *tags* when…
+
+Use tags when the attribute is:
+
+1. **Taxonomic / conceptual**
+   - Product categories, collections, themes, genres, topics.
+   - Audiences (musicians, families, loyalty tiers).
+   - Locations as conceptual facets (e.g. “Latin America” vs. precise geo-code).
+2. **Shared across many content types and systems**
+   - You want one global vocabulary for assets, pages, CFs, Content Hub, etc.
+   - You plan to reuse the same facets for navigation, recommendations, personalization.
+3. **Many-to-many and evolving**
+   - An asset can belong to multiple campaigns, audiences, themes.
+   - Business wants to extend/refine the taxonomy without touching code/schemas.
+4. **Driving discovery, not transactionality**
+   - Faceted search filters (“Region”, “Brand”, “Season”).
+   - Related content, “More like this”, “browse by theme”.
+5. **Useful for non-technical governance**
+   - Taxonomy and tag governance can be managed by business owners, with roles and permissions, without schema changes [“Taxonomy and tagging best practices for AEM Assets”](https://experienceleague.adobe.com/en/perspectives/taxonomy-and-tagging-best-practices-for-aem-assets).
+
+**Examples where tags are better than metadata fields**
+
+|                               Use case |                                  Recommended implementation |
+| -------------------------------------: | ----------------------------------------------------------: |
+|               Brand / Sub-brand facets |        `brand:hard-rock/cafe`, `brand:hard-rock/hotel` tags |
+| Experience type (dining, gaming, live) | `experience:dining`, `experience:gaming`, `experience:live` |
+|           Campaign / initiative themes |                  `campaign:summer-2026`, `campaign:grammys` |
+|                      Audience segments |      `audience:families`, `audience:vip`, `audience:locals` |
+|                         Content topics |                    `topic:music/rock`, `topic:food/burgers` |
+
+#### Common combination patterns
+
+You often use **both**:
+
+- **Product images**
+  - Metadata: `commerce:sku`, `commerce:color`, `dc:format`, license dates.
+  - Tags: product category, collection, season, region.
+- **Campaign hero images**
+  - Metadata: campaign code, start/end date, legal disclaimers.
+  - Tags: campaign name, audience, channel, theme, region.
+- **Restaurant / hotel photography**
+  - Metadata: location code, photographer, usage rights.
+  - Tags: property, venue type (pool, bar, lobby), time of day, mood.
