@@ -162,7 +162,15 @@ Use this when the **identity of the asset stays the same** (same photo/graphic, 
   - Creating a **new version** first, then updating metadata, so there’s a clear audit trail.
 - Avoid making **frequent tiny edits** (e.g., title changes several times a day) to reduce noisy version history.
 
-### Deleting assets safely
+### Versioning assets
+
+- Use **asset versioning** when updating images currently used on live pages.
+
+> [!TIP]
+>
+> See "Appendix - Asset Versioning & Cleanup" for a deep dive into asset versioning use cases, how-to's, and best practices.
+
+### Deleting assets (safely)
 
 Deleting is **destructive** and can break pages, content fragments, and external consumers. Treat deletion as a **last step** in an asset’s lifecycle.
 
@@ -194,11 +202,6 @@ Before deleting any asset:
 3. Select the asset and click **`Delete`**.
 4. Confirm the deletion in the dialog.
 
-If your environment uses a **Recycle Bin** or similar retention:
-
-- Understand how long deleted assets are retained and who can restore them.
-- Use restores sparingly; restored assets may still need **republishing** and **reference validation**.
-
 #### Deletion best practices
 
 - **Never delete a published, referenced asset** without:
@@ -212,39 +215,81 @@ If your environment uses a **Recycle Bin** or similar retention:
     - Unpublish and clearly mark them as **Retired** via metadata or tags.
     - Only delete once the business confirms no future need.
 
-### Versioning
+#### Restoring deleted assets from backup
 
-- Use **asset versioning** when updating images currently used on live pages.
-- Avoid deleting assets that may still be referenced by Sites pages or Content Fragments.
-- **Avoiding broken references**
-  - Do **not** move or rename assets that are already referenced, without:
-    - Running **Reference Search** first.
-    - Updating references in Sites or CFs where possible.
+Understand AEMaaCS content backup/restore functionality: https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/restore
 
-> [!TIP]
->
-> See "Appendix - Asset Versioning & Cleanup" for a deep dive into asset versioning how-to's and best practices.
+- Understand how long deleted assets are retained and who can restore them.
+- Use restores sparingly; restored assets may still need **republishing** and **reference validation**.
 
-#### Discussion questions
+### Avoiding broken references (moving, renaming, deleting, updating)
 
-- How do authors currently learn if an asset is used on a page?
-- Has SHRSS experienced broken images after DAM cleanup or moves?
+*This section applies whenever you **move**, **rename**, **update**, or **delete** assets.*
+
+Broken references typically show up as:
+
+- Missing images on pages,
+- Components showing “asset not found”,
+- Or incorrect/old imagery lingering because the wrong asset was updated.
+
+#### Core principle
+
+> **Once an asset is in use, its path and identity are “contractual.” Treat changes as a controlled operation, not a casual tweak.**
+
+#### How to avoid breaking references
+
+- **Always use the References panel before changing an asset**
+  - Before you **move**, **rename**, **delete**, or **bulk update**:
+    - Open **`References`** to see where the asset is used.
+    - If it appears on **critical pages** (home, navigation hubs, key campaigns), plan more carefully.
+- **Avoid changing paths for in-use assets**
+  - If you must move assets (e.g., folder cleanup):
+    - Move them in **small batches**.
+    - Immediately test key pages that reference them.
+- **Be deliberate when replacing files**
+  - If replacing the binary would **change the message, brand, or legal meaning**, create a **new asset** and update references instead of overwriting.
+- **Do not delete referenced assets**
+  - Only delete assets once:
+    - All references have been updated or removed, and
+    - The asset is **unpublished**, and
+    - Stakeholders have confirmed it is safe to retire.
+- **Use preview/stage (UAT) environments for risky changes**
+  - For large cleanups (mass moves, tag overhauls, metadata refactors):
+    - Trial the change in **stage/UAT**.
+    - Validate that **no critical references break** before repeating in prod.
+
+#### Suggested workflow for high‑risk changes
+
+For assets used on **critical pages** (home, key campaigns, navigation):
+
+1. **Identify references**
+   - Use **References** to list all consuming pages/CFs.
+2. **Plan the change**
+   - Decide if it’s a **version update** (same asset, new version) or a **replacement asset** (new identity).
+3. **Apply change in stage/UAT**
+   - Perform the move/rename/update.
+   - Run link checks and visual tests on key pages.
+4. **Communicate**
+   - Let relevant stakeholders (marketing, brand, product owners) know what is changing and when.
+5. **Apply in prod with validation**
+   - Repeat the change in prod during a safe window.
+   - Immediately verify that **pages load correctly** and **assets render as expected**.
 
 ------
 
-### 3.2 Search & Findability
+### Search & Findability
 
-- **Current search experience**
-  - Authors likely search by **free text** (filename/title) and maybe by **tags**.
+- **Current authoring search experience**
+  - Authors likely search by **free text** (filename/title) and maybe by **tags**, or opt to **browse** to locate an asset.
   - Many assets might not be consistently tagged yet.
+- **Optimal authoring search experience**
+  - Author uses magnifying glass in header of AEM admin console and enters minimal criteria based on asset metadata/tags and immediately finds the relevant asset resource
+
 - **Best practices**
   - Always apply:
-    - At least **one `lob` tag**
+    - At least **one tag** (`lob`?)
     - A **property** tag (when property-specific)
     - A **category** tag (logo, lifestyle, rooms, etc.)
-  - For news/campaign content: use **news/event category** tags as well.
-
-> For the session: demonstrate **a search scenario** (e.g., “Find hero images for Reverb Atlanta rooms”) and show how tags + folders work together.
 
 ------
 
@@ -295,7 +340,7 @@ If your environment uses a **Recycle Bin** or similar retention:
 
 ---
 
-## Appendix - Asset Versioning & Cleanup
+## Appendix A - Asset Versioning & Cleanup
 
 **Audience:** Authorized content authors, DAM architect, and admins  
 **Purpose:** Explain _how_ to version assets in AEMaaCS, _when_ to version, what SHRSS’s **automatic version retention** looks like, and how to avoid both data loss and unnecessary bloat.
@@ -507,3 +552,188 @@ Because versions are purged after ~30 days and capped at 10, the main risk is **
 > _If there’s any doubt about whether to rely on versions or to duplicate/archive an asset, authors should **ask the DAM architect or TA** for guidance on that specific use case._
 
 ---
+
+## How asset updates flow to live pages (AEM Sites/Assets)
+
+*This section explains, step‑by‑step, how an update in DAM flows (or does not flow) to live pages, content fragments (CFs), and experience fragments (XFs) in AEM Sites — and where authors need to intervene.*
+
+------
+
+
+> [!IMPORTANT]
+>
+> “Pages always point to assets by their path. If we just update the file but keep the path, the > change flows through automatically once we publish the asset and caches clear. If we move > or rename the asset, we must update and republish anything that references it; otherwise, live pages can break. Deletions are final and should only happen after unpublishing and cleaning up references.”
+> 
+
+### High‑level flow overview
+
+At a high level, when an asset is updated in AEM Assets:
+
+1. **DAM author updates the asset** in the **author** environment  
+   - Update can be: new binary (file), new metadata, move/rename (path change), or delete.
+2. **References in author** (pages, CFs, XFs) point to the asset by its **JCR path**  
+   - If the path doesn’t change, references keep working automatically.
+   - If the path changes via AEM’s **Move** operation (with reference update), AEM updates internal references.
+3. **Author publishes the asset** (and sometimes its references)  
+   - The updated asset is replicated to **publish**.
+   - Authors are usually prompted to **publish referencing pages/CFs/XFs** when needed.
+4. **Dispatcher + CDN cache are invalidated** for the affected paths  
+   - AEM’s flush mechanism invalidates cached entries, so new content is fetched.
+5. **End users request pages**  
+   - Pages on publish still reference the **same asset path**, now backed by the new binary/metadata.
+   - If paths changed, pages/CFs/XFs must be republished so the new path reaches publish.
+
+------
+
+### Scenario 1 – Updating an asset binary (no path change)
+
+*Example: same hero image, better crop or color correction.*
+
+**Steps**
+
+1. DAM author opens the asset in **Assets** (author).
+2. They **replace the binary** (same asset node, same path) – e.g., `Replace` / `Upload new version`.
+3. AEM creates a **new asset version** in author; the asset retains its **same path**.
+4. Author **publishes the asset**:
+   - AEM replicates the current version of the asset to **publish**.
+   - No changes are required to pages/CFs/XFs; they still point to the same path.
+5. Dispatcher & CDN caches for the asset URL are **invalidated**.
+6. When users hit a page:
+   - The page still has the same asset reference (same path).
+   - Publish returns the new rendition; Dispatcher/CDN cache the updated asset.
+
+**Key behaviors**
+
+- **Pages/CFs/XFs do not need to be republished** just because the binary changed, *as long as the path stays the same*.
+- Any published page that references the asset will show the **updated file** once caches clear.
+
+------
+
+### Scenario 2 – Updating metadata only
+
+*Example: title/description fix, tag change, rights/expiry update.*
+
+**Steps**
+
+1. DAM author edits **metadata** on the asset (title, description, tags, rights).
+2. They **save** the metadata changes.
+3. Author **publishes the asset** so the updated metadata is available on publish.
+4. Pages/CFs/XFs that **read metadata dynamically from DAM** (e.g., Image Core Component pulling alt text or title from DAM) will automatically reflect the change once the asset is published and caches flush.
+
+**When you may also need to republish pages**
+
+- If a component or model **copies metadata into the page or CF content** at authoring time (rather than reading it from DAM at render time), you may need to:
+  - **Edit and resave** the page/CF, then
+  - **Republish the page/CF** so the copied metadata is updated on publish.
+
+*In many modern implementations, most key metadata for imagery is read directly from DAM, so publishing the asset alone is enough.*
+
+------
+
+### Scenario 3 – Moving or renaming an asset (path change)
+
+*Example: move `hero.jpg` from `/content/dam/foo/2025/` to `/content/dam/foo/heroes/`.*
+
+This is more disruptive because **references are path‑based**.
+
+**Steps on author**
+
+1. DAM author chooses **Move** or **Rename** in the Assets UI.
+2. AEM typically offers an option to **update references**:
+   - If enabled, AEM scans and updates references in:
+     - Pages (Sites)
+     - Content Fragments
+     - Experience Fragments
+     - Other assets and configurations (where supported)
+3. As a result:
+   - On **author**, any referencing page/CF/XF now stores the **new path** to the asset.
+
+**Publishing the change**
+
+1. Author then uses **Manage Publication**:
+   - Publish the **asset** with its new path, and
+   - Publish the **referencing pages/CFs/XFs** (so their new path values are on publish).
+2. Dispatcher/CDN invalidate both:
+   - The old asset path (now unused), and
+   - The new asset path, plus any pages that changed.
+
+**Key behaviors**
+
+- If references are updated correctly on author and the **pages/CFs/XFs are republished**, the change flows cleanly to live.
+- If you move/rename assets **without updating and republishing references**, live pages can break (404s or “asset not found”).
+
+------
+
+### Scenario 4 – Deleting an asset
+
+*Example: retiring an obsolete image.*
+
+**Steps**
+
+1. Author checks **References** for the asset.
+2. Author **unpublishes the asset** first (if it’s live).
+3. Author **updates/removes references** in pages/CFs/XFs:
+   - Replace asset with a new one, *or*
+   - Remove the reference entirely.
+4. Author **republishes affected pages/CFs/XFs**.
+5. Only after references are cleaned up, the author **deletes the asset** in author.
+
+**Key behaviors**
+
+- Once deleted and removed from publish, existing references will break unless they were cleaned up and republished.
+- Always treat deletion as a final step in a **retirement workflow**, not a one‑click action.
+
+------
+
+### When updates do *not* flow automatically
+
+Updates do **not** automatically flow in these situations:
+
+- **External systems / hard‑coded URLs**
+  - Any URL to the asset that is:
+    - Hard‑coded in external websites, emails, PDFs, or apps, or
+    - Stored in external systems (e.g., campaign tools)
+  - will **not** be updated if the asset is moved/renamed or replaced.
+- **Manual path edits / package operations**
+  - If someone changes asset paths or references via **CRXDE** or content packages without using the AEM Move/Reference Update tools, AEM cannot reliably update all references.
+- **Metadata copied, not read dynamically**
+  - For pages/components that **copy metadata** at authoring time (rather than reading from DAM each render), you must **resave and republish** those pages/CFs after metadata changes.
+- **Cached pages that are not invalidated**
+  - If Dispatcher/CDN flushing is misconfigured, pages may continue serving **stale content** even after updates are published.
+
+------
+
+### Flow diagram – asset update to live page
+
+The following diagram illustrates a **binary update with no path change** (the most common case):
+
+```mermaid
+sequenceDiagram
+    participant Author as DAM Author
+    participant AEM as AEM Author
+    participant Publish as AEM Publish
+    participant Disp as Dispatcher
+    participant CDN as CDN / Edge
+    participant User as End User
+
+    Author->>AEM: Replace asset binary (same path)
+    AEM-->>AEM: Create new version of asset
+
+    Author->>AEM: Publish asset (optionally publish references)
+    AEM->>Publish: Replicate updated asset
+
+    Publish->>Disp: Invalidate cached asset/page URLs
+    Disp->>CDN: Invalidate cached asset/page URLs
+
+    User->>CDN: Request page with asset
+    CDN->>Disp: Cache miss, forward to Dispatcher
+    Disp->>Publish: Request page + asset renditions
+    Publish-->>Disp: Respond with updated page + asset
+    Disp-->>CDN: Cache updated responses
+    CDN-->>User: Serve updated page + asset
+```
+
+To adapt this for **move/rename**, add:
+
+- A **Move asset (update references)** step before publish.
+- A subsequent **Publish asset + referencing pages/CFs/XFs** step.
