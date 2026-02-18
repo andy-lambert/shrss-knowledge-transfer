@@ -6,7 +6,28 @@
 
 ## Objective
 
-Understand how to properly use the DAM so admins can manage assets, maintain governance, and support property teams without risking misuse or disorganization.
+SSHRS understanding of how to properly use the DAM so admins can manage assets, maintain governance, and support property teams without risking misuse or disorganization, by:
+
+- Reviewing the **current state** DAM structure, aligning on **optimal state** as well as an optimal state implementation and adoption strategy
+- Clarifying **admin/author processes** (uploading, versioning, approvals, avoiding broken references)
+- Showing how **tags (`shrss` namespace)** and **metadata (`shrssmetadataschema`)** should be used together
+- 
+- Outlining an **adoption roadmap** (metadata/tag cleanup, folder refactoring, Dynamic Media readiness)
+- Capturing **follow-up work** for a new backlog/roadmap
+
+
+
+
+
+We need enablement for how to properly use the DAM so Admins can manage assets, maintain governance, and support property teams without risking misuse or disorganization.
+
+The goal is to ensure Admins understand:
+
+- How Dynamic Media fits into publishing
+- How to avoid breaking references
+- How asset updates flow to live pages
+
+This training is required before DAM becomes part of daily operations.
 
 ---
 
@@ -69,27 +90,316 @@ Understand how to properly use the DAM so admins can manage assets, maintain gov
 - Metadata profiles
 - Best practices
 
----
+------
 
-## 3. DAM Operations
+## 3. DAM Operations & Governance
 
-- How to upload, version, and manage assets
-- How to avoid breaking references
-- How asset updates flow to live pages
-- Best practices
+### 3.1 Uploading, Versioning, and Asset Changes
+
+> [!NOTE]
+>
+> > How and where to store assets in the correct hierarchy - https://shrss.atlassian.net/browse/AAEMDAM-3736
+>
+> In this section, we're discussing how/where to upload in the DAM based on *current state*. In that sense, "correct hierarchy" is defined as "correct hierarchy for current architectural structure." 
+
+#### Where to upload
+
+- Cafe imagery → `/cafe/<property>/en/photography`
+- Hotel imagery → `/hotel/<property>/en/photography`
+- Reverb imagery → `/reverb/<property>/en/photography`
+- Corporate/careers imagery → `/corporate/careers/en/...`
+- Training/demos → `/training/...` only
+
+#### Versioning
+
+- Use **asset versioning** when updating images currently used on live pages.
+- Avoid deleting assets that may still be referenced by Sites pages or Content Fragments.
+
+- **Avoiding broken references**
+  - Do **not** move or rename assets that are already referenced, without:
+    - Running **Reference Search** first.
+    - Updating references in Sites or CFs where possible.
+- See 
+
+#### Discussion questions
+
+- How do authors currently learn if an asset is used on a page?
+- Has SHRSS experienced broken images after DAM cleanup or moves?
+
+------
+
+### 3.2 Search & Findability
+
+- **Current search experience**
+  - Authors likely search by **free text** (filename/title) and maybe by **tags**.
+  - Many assets might not be consistently tagged yet.
+- **Best practices**
+  - Always apply:
+    - At least **one `lob` tag**
+    - A **property** tag (when property-specific)
+    - A **category** tag (logo, lifestyle, rooms, etc.)
+  - For news/campaign content: use **news/event category** tags as well.
+
+> For the session: demonstrate **a search scenario** (e.g., “Find hero images for Reverb Atlanta rooms”) and show how tags + folders work together.
+
+------
+
+### 3.3 Roles & Responsibilities
+
+> In addition to **Librarian**, **Content Admins** and **Product Owner** will have access to the Adobe DAM, but Content Authors will not. - https://shrss.atlassian.net/browse/AAEMDAM-3736
+
+**Roles**
+
+- **DAM Architect/Librarian (primary audience of this session)**
+  - Owns folder conventions.
+  - Owns `shrss` taxonomy and metadata schema roadmap.
+  - Approves new top-level tags and schema changes.
+- **Content Administrators (Brand/Property author leads?)**
+  - Train their teams on “golden path” folder + tag usage.
+  - Request changes to tags/metadata.
+- **Developers / AEM TAs**
+  - Ensure Sites templates and components correctly use tags and metadata.
+  - Support automation where possible (e.g., default tags by folder).
+
+**KT Activities/Questions**
+
+- As an exercise, align current user/group/permission reality to `Permissions` sheet in `/SHRSS_Knowledge_Transfer/DAM/00_Drafts_and_Resources/SHRSS-Content-Architecture-Workbook-v1_3_Working_20260218.xlsx`
+  - How do **Librarian**, **Content Admins**, **Product Owner**, and **Content Author** roles align to currently defined AEM groups and permissions?
+    - Are changes required based on updated governance policies, business processes,etc?
 
 ---
 
 ## 4. Dynamic Media
 
-- Current state
-  - Provisioned
-  - Configured in lower environments
-  - Not configured in production
-  - Sites pages and experience fragments do not currently use Dynamic Media components
-
-- Integration/Adoption roadmap
+- **Current state (from original agenda)**
+  
+  - Dynamic Media is:
+    - **Provisioned**, configured in lower environments.
+    - **Not configured** in production.
+    - Core components on Sites currently **do not use DM components**.
+  
+  **Roadmap discussion**
+  
+  - Which content types would benefit most from DM?
+    - Hero images? Carousels? Media-heavy experiences?
+  - What would need to change in DAM to adopt DM smoothly?
+    - Clear separation of hero vs. raw imagery?
+    - Consistent aspect-ratio tagging or naming?
+  
+  > Outcome: capture whether DM is in scope for **next 6–12 months** and what prerequisites exist in DAM.
+  >
 
 ---
 
-*Working agenda draft for KT session. Source: AAEMDAM-3736_DAM_Training_and_Usage_Guide_for_Admins_Agenda.pdf*
+## Appendix - Asset Versioning & Cleanup
+
+**Audience:** Authorized content authors, DAM architect, and admins  
+**Purpose:** Explain _how_ to version assets in AEMaaCS, _when_ to version, what SHRSS’s **automatic version retention** looks like, and how to avoid both data loss and unnecessary bloat.
+
+---
+
+#### What a “version” is in AEM Assets
+
+In AEM Assets, a **version** is a snapshot of an asset at a point in time:
+
+- The **binary file** (image, video, PDF, etc.)
+- Its **metadata** (title, description, tags, custom fields)
+- Sometimes associated renditions and technical properties (as handled by DAM Update workflows)
+
+Versions are accessed via the **Timeline** in the Assets UI, and can be:
+
+- **Compared** (e.g., see when something changed)
+- **Restored** (roll back to an earlier state)
+- **Labelled** (e.g., “Approved 2026‑03”, “Pre-campaign update”)
+
+For SHRSS, versions are meant to be a **short‑to‑medium‑term safety net**, not long‑term archival.
+
+---
+
+#### How authors create versions (step‑by‑step)
+
+**A. Automatic versioning on replace/upload**
+
+Whenever you **upload a new file over an existing asset** (same path + same asset), AEM automatically creates a new version.
+
+1. Navigate to the asset in **Assets**.
+2. Click **Upload** and select a file **with the same name** into the same folder, or drag & drop into the folder and choose to **replace** the existing asset.
+3. AEM:
+   - Re-runs the **DAM Update Asset** processing.
+   - **Creates a new version** in the background.
+
+> **Result:** You now have `Version N+1` with the new binary. Older versions (N, N‑1, …) are still visible in Timeline (subject to retention described in 4.x.4).
+
+**B. Manual “Save as Version” (metadata or binary changes)**
+
+Use this when you’re making a **significant change** (binary or critical metadata) and you want an explicit rollback point.
+
+1. Open the asset’s details page.
+2. Click **Timeline** on the left.
+3. In the Timeline panel, use the **“Save as Version”** option.
+4. Optionally:
+   - Enter a **label** (e.g., “Legal-approved”, “Pre‑localization”).
+   - Enter a **comment** (why you’re versioning).
+
+> **Result:** A new version is created with current binary + metadata. You can restore this specific version later.
+
+**C. Restoring a previous version**
+
+When an asset update goes wrong:
+
+1. Go to the asset and open **Timeline**.
+2. Scroll to the desired older version (e.g., “Version 3”, or the one with your label).
+3. Click **Revert** / **Restore** (wording may differ slightly depending on UI version).
+4. Confirm.
+
+> **Result:** AEM creates a new _current_ version whose content equals the previously selected version (i.e., rollback creates yet another version).
+
+---
+
+#### When to version vs. when it may not make sense
+
+**Good times to create a new version (or rely on auto‑versioning):**
+
+- You are **replacing the asset binary** (new design, updated photo, fixed typo in PDF).
+- A change is **legally or compliance significant** (e.g., removing sensitive info, updating T&Cs).
+- You’re introducing a **campaign-critical change** right before go‑live and want a quick rollback path.
+- You’re making **major metadata changes** that change how an asset is discovered or used (e.g., changing campaign, brand, usage rights tags).
+
+**Usually _not_ worth a manual version:**
+
+- Small metadata tweaks (fixing a misspelled title, adding one non-critical keyword).
+- Bulk tag cleanups that can be redone easily in bulk if needed.
+- Temporary edits that you will immediately overwrite again before anything is published or used.
+
+> **Rule of thumb for authors:**  
+> - If it directly affects what end‑users see or what legal/compliance expects → **version**.  
+> - If it’s minor internal housekeeping → **no manual version**, rely on the normal automatic versions on binary changes.
+
+---
+
+#### SHRSS version retention and audit log policy (stage + prod)
+
+The **mt-stage-prod** maintenance configuration defines how long versions and audit logs last in SHRSS **Stage** and **Prod** environments:
+
+```yaml
+kind: "MaintenanceTasks"
+version: "1"
+metadata:
+  envTypes: ["stage", "prod"]
+data:
+  versionPurge:
+    maximumVersions: 10
+    maximumAgeDays: 30
+    paths: ["/content"]
+    minimumVersions: 1
+    retainLabelledVersions: false
+  auditLogPurge:
+    rules:
+      - all:
+          maximumAgeDays: 30
+          contentPath: "/content"
+          types: ["replication", "dam", "pages"]
+```
+
+**Practical implications for authors:**
+
+- **Where this applies:**  
+  - All content under `/content`, **including `/content/dam/...`**.
+- **How many versions are kept:**
+  - At least **1 version** per asset.
+  - Up to **10 versions** per asset.
+- **How long versions are kept:**
+  - Versions older than **30 days** are eligible for purge.
+  - Combined with the 10‑version cap, this means you can’t rely on very old or very frequent versions being available.
+- **Labelled versions are _not_ exempt:**
+  - `retainLabelledVersions: false` means labels are **for human clarity only**—they do **not** protect a version from purge.
+- **Audit logs:**
+  - Detailed DAM audit events (`dam`, `replication`, `pages`) older than **30 days** are purged.
+  - You cannot rely on more than ~30 days of audit history for troubleshooting “who changed what when?”
+
+> **Takeaway for authors:**  
+> Essentially, you have a **working month** of history and up to ~10 recent versions per asset as your safety net—this is not long‑term archive.
+
+---
+
+#### Automated versioning: what is and isn’t recommended
+
+**What AEM does by default (SHRSS included):**
+
+- **Binary replacement creates a version automatically.**
+  - Anytime you upload a new file for an existing asset (same path), AEM versions it.
+- **Metadata-only edits do _not_ auto‑version** unless you explicitly do “Save as Version”.
+- **There is no default “version on publish” workflow**:
+  - Publishing/unpublishing does not, by itself, create versions.
+
+**Custom “auto versioning” workflows (what we’re _not_ doing today):**
+
+You _could_ build custom workflows, for example:
+
+- Create a version every time an asset is published.
+- Create a version every time specific metadata fields change.
+
+However, given SHRSS’s current **purge policy (max 10 versions, 30 days)**, heavy automatic versioning:
+
+- Increases storage churn and processing load.
+- Makes version history noisier (harder to find the one “meaningful” change).
+- Doesn’t actually extend your retention because the purge still trims versions beyond 10 / 30 days.
+
+> **Current stance / recommendation:**  
+> - Keep relying on AEM’s **standard automatic versioning on binary replacement**.  
+> - Use **manual “Save as Version”** for important transitions.  
+> - Avoid extra auto‑versioning (such as “version on publish”) unless there’s a clear business/compliance requirement.
+
+---
+
+#### Versioning scenarios: what authors should do
+
+| Scenario | What you do | Version behavior | Recommendation |
+|---------|-------------|------------------|----------------|
+| New final design for an image or PDF | Upload new file with the same name to the same folder, replacing the existing asset | AEM automatically creates a new version | ✅ Rely on this; no manual “Save as Version” needed unless you want a special label/comment |
+| Fixing a small metadata typo (title, description) | Edit metadata and save | No new version unless you explicitly “Save as Version” | ✅ No manual version needed; low risk |
+| Changing usage rights, legal disclaimer, or key tags | Update metadata; optionally “Save as Version” with label “Legal-approved” | If you “Save as Version”, a new version is created, often without changing binary | ✅ Use manual version with a label – makes rollbacks and audits simpler |
+| Complete visual redesign of a heavily reused asset | Replace the binary (auto version), then optionally “Save as Version” with note “New visual direction” | Auto version on replace; manual version adds clarity | ✅ Use both: rely on auto version and add a label/comment for future you |
+| Testing out a temporary crop or experimental variant | Prefer uploading as a **separate asset** (e.g., in a `/temp` or `/working` folder) | Separate asset has its own version history | ✅ Don’t clutter the main asset’s versions with experiments; use a separate working asset |
+| Big multi-step metadata cleanup on many assets | Use bulk editing; avoid creating manual versions on each small step | No extra versions unless you “Save as Version” | ✅ If nervous, create **one version before** the cleanup for a representative asset; don’t version each tiny change |
+
+---
+
+#### Version cleanup best practices (for a mature DAM)
+
+Because versions are purged after ~30 days and capped at 10, the main risk is **over‑relying** on versions or **creating excessive noise**, not “running out of space.”
+
+**For authors:**
+
+- **Don’t use versions as long‑term storage.**
+  - If you want to keep old creative directions for months/years, store them as **separate assets** in clearly named folders (e.g., `/archive/2025/campaign-x/...`), not just as versions.
+- **Minimize unnecessary “Save as Version” clicks.**
+  - Reserve manual versions for _meaningful_ states: “Approved”, “Pre‑legal‑change”, “Pre‑localization”.
+- **Batch your changes.**
+  - When working on many small tweaks, try to batch them into a single “before” and “after”, rather than creating many intermediate versions.
+
+**For the DAM architect/admin:**
+
+- Confirm that the **maintenance tasks** (max 10 versions, 30 days, `/content`) are appropriate for SHRSS’s risk tolerance.
+- Consider **excluding specific paths** from the strictest purge policy _only_ if:
+  - There are assets with heavy compliance or long audit requirements, and
+  - The storage/cost/performance trade‑off is justified.
+- Periodically **communicate the retention rules** to authors:
+  - “If you need to be able to roll back months later, versions are _not_ the right tool; create archived copies.”
+
+---
+
+#### Key assets versioning takeaways
+
+- **You _do_ have version safety – but it’s short‑term.**
+  - Typically a month or so of history, and up to ~10 recent changes.
+- **Replacing files is safe and versioned.**
+  - Don’t fear replacing an asset when you have a better or fixed version; AEM keeps recent history.
+- **Use manual versions sparingly but intentionally.**
+  - Think “significant milestone” or “legal/brand critical change”.
+- **Versions are not archives.**
+  - For long‑term historical reference, use separate archived assets and/or controlled archive folders.
+
+> _If there’s any doubt about whether to rely on versions or to duplicate/archive an asset, authors should **ask the DAM architect or TA** for guidance on that specific use case._
+
+---
