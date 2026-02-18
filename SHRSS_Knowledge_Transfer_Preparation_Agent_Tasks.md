@@ -68,3 +68,76 @@ Please create an Excel file (.xlsx) file with a sheet containing the following c
 - Tag IDs (pipe-delimited). Example: `shrss:brands/hri|shrss:country/united-states|shrss:regions/na`
 - Tag Paths (pipe-delimited). Take Tag ID value and replace `shrss:` with `/content/cq:tags/shrss/`.     Example: `/content/cq:tags/shrss/brands/hri|/content/cq:tags/shrss/country/united-states|/content/cq:tags/shrss/regions/na`
 - Tag Property: (`cq:tags`, or other component or asset metadata property names as applicable. `categories` for any content fragments is a good example)
+
+---
+
+## Task 3 - Scrub all asset nodes from content package content
+
+### Task Objective
+
+Modify FileVault content package to contain **only** the folder structure and associated metadata nodes for a given path in the customer's AEM Assets instance (DAM), with no asset nodes remaining in the package contents (i.e. no nodes having a `jcr:primaryType` property value of `dam:Asset`). 
+
+The customer should be able to install this package on an AEM instance via Package Manager and, as a result, the exact, empty hierarchical folder structure will be created in the DAM.
+
+### Task Details
+
+There is an extracted FileVault content package zip file here: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Content/dam-shrss-folder-structure-1.0`. (FileVault documentation: https://jackrabbit.apache.org/filevault/overview.html)
+
+This directory contains the hierarchical set of subdirectories and files that define the JCR nodes, properties, and other attributes of resources in the customer's DAM starting at path `/content/dam/shrss` (absolute path: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Content/dam-shrss-folder-structure-1.0/jcr_root/content/dam/shrss`). NOTE: For the remainder of this task we will refer to this directory as "the working folder".
+
+Each subdirectory under the working folder, and the working folder itself, has a child XML file named `.content.xml`. These files define what type of node the directory represents, based off of the value of the `jcr:primaryType` defined inside the directory's `.content.xml` file.
+
+Our goal is to remove all subdirectories with a `jcr:primaryType` property value of `dam:Asset` (and their child directory structures), leaving only folder nodes in the content package definition. 
+
+* See more instruction and examples under "Folder Nodes" and "Nodes to Remove" sections below.
+
+To get started:
+
+1. Analyze the contents the working directory and compile a list of all asset node directories to be removed.
+2. Add the directory paths to a new Excel (.xlsx) file in this directory: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/DAM`
+   - In addtion to the path columns, include a "type" column that specifies the directory's `jcr:primaryType` property value based on the configuration in the directory's immediate child `.content.xml` file.
+3. Pause and prompt me to review and with any questions or points of clarification. I will review, make adjustments, and reply with feedback and next steps.
+
+#### Folder Nodes
+
+The package will include all folder nodes having a jcr:primaryType property value matching any of the following values/constraints:
+
+- nt:folder
+
+- sling:Folder
+
+- nt:unstructured CONSTRAINT: ONLY `nt:unstructured` nodes having node name: `folderThumbnail.dir`. These define the content nodes under folders representing the parent folder node's corresponding image thumbnail)
+
+  - Example thumbnail folder node definition directory: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Content/dam-shrss-folder-structure-1.0/jcr_root/content/dam/shrss/corporate/_jcr_content/folderThumbnail.dir` 
+
+  - Example thumbnail folder node definition directory XML in the folder's `.content.xml` file
+
+    - ```xml
+      <?xml version="1.0" encoding="UTF-8"?>
+      <jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:file">
+          <jcr:content
+              dam:folderThumbnailPaths="[/content/dam/shrss/corporate/logos/Hard Rock_News_logo.jpg,/content/dam/shrss/corporate/logos/2025-bmc-logo-v2.jpg,/content/dam/shrss/corporate/logos/ecolab-logo-sm.jpg]"
+              jcr:primaryType="nt:unstructured"
+              bgcolor="{Long}-1"
+              height="{Long}200"
+              width="{Long}240"/>
+      </jcr:root>
+      ```
+
+#### Nodes to Remove
+
+Example asset node directory: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Content/dam-shrss-folder-structure-1.0/jcr_root/content/dam/shrss/corporate/photography/05-guitar-smash-1536x1024.jpg`
+
+Snippet from directory's `.content.xml` file including `jcr:primaryType` property with value equaling `dam:Asset`
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:dam="http://www.day.com/dam/1.0" xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:dc="http://purl.org/dc/elements/1.1/"
+    jcr:mixinTypes="[mix:referenceable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="f40b0e8a-e516-4088-b15b-356cf65019fb">
+    <!-- <jcr:content> -->
+</jcr:root>
+```
+

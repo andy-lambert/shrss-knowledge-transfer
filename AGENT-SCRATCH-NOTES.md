@@ -1,8 +1,48 @@
 # Scratch Notes
 
+> ## Purpose
+>
 > Agent note keeper and archiver for this project.  
 > Use to log, track, and make actionable the spontaneous thoughts, creative/design ideas, potential new tasks, etc. that come up during the course of an agent's work session.
-
+>
+> ## Instructions for Use (REQUIRED)
+>
+> - ALWAYS prefix the note with a timestamp (date and time in ISO 8601 format; e.g. `2026-01-06T10:46:00Z` and local equivalent)
+> - ALWAYS populate the **Category** field from the following options:
+>   - Idea
+>   - New Task
+>   - Other
+>   - Reminder
+> - ALWAYS populate the **Context** field. Concise bulleted list. What precipitated the note? What step/activity in the current task?
+> - ALWAYS populate the **Description** field. Be as detailed as is required to accurately and completely capture the thought
+> - ALWAYS populate **Note Status** from the following actions:
+>   - Pending Action
+>   - Resolved
+> - When **Note Status** is **Pending Action**, the **Required Action** field is ALWAYS required.
+> - When **Note Status** is **Resolved**, the **Resolution** field is ALWAYS required
+>
+> ### Template (REQUIRED)
+>
+> ```md
+> - **Timestamp (UTC):** 2026-01-06T10:46:00Z
+> - **Timestamp (Local):** 2026-01-06T05:46:00-05:00
+> - **Timezone (IANA):** America/New_York
+> 
+> - **Category:**
+> 
+> - **Context:**
+> 
+> - **Description:**:
+> 
+> - **Note Status:**:
+> 
+> - **Required Action:**
+> 
+> - **Resolution:**
+> 
+> ---
+> ```
+>
 ---
 
 ## KT Preparation Onboarding (2026-02-17)
@@ -74,42 +114,16 @@
 
 ---
 
-## Instructions for Use (REQUIRED)
+## Task 3 — Scrub asset nodes from DAM content package (2026-02-17)
 
-- ALWAYS prefix the note with a timestamp (date and time in ISO 8601 format; e.g. `2026-01-06T10:46:00Z` and local equivalent)
-- ALWAYS populate the **Category** field from the following options:
-  - Idea
-  - New Task
-  - Other
-  - Reminder
-- ALWAYS populate the **Context** field. Concise bulleted list. What precipitated the note? What step/activity in the current task?
-- ALWAYS populate the **Description** field. Be as detailed as is required to accurately and completely capture the thought
-- ALWAYS populate **Note Status** from the following actions:
-  - Pending Action
-  - Resolved
-- When **Note Status** is **Pending Action**, the **Required Action** field is ALWAYS required.
-- When **Note Status** is **Resolved**, the **Resolution** field is ALWAYS required
-
-### Template (REQUIRED)
-
-```md
-- **Timestamp (UTC):** 2026-01-06T10:46:00Z
-- **Timestamp (Local):** 2026-01-06T05:46:00-05:00
-- **Timezone (IANA):** America/New_York
-
-- **Category:**
-
-- **Context:**
-
-- **Description:**:
-
-- **Note Status:**:
-
-- **Required Action:**
-
-- **Resolution:**
-
----
-```
+- **Timestamp (UTC):** 2026-02-17
+- **Category:** New Task
+- **Context:** DAM KT session prep; user requested concise DAM structure reference + content package that creates prod folder structure with no assets. Task 3 in SHRSS_Knowledge_Transfer_Preparation_Agent_Tasks.md.
+- **Description:**
+  - **Steps 1–2 completed:** Analyzed working folder `Content/dam-shrss-folder-structure-1.0/jcr_root/content/dam/shrss`; found all directories whose immediate `.content.xml` has `jcr:primaryType="dam:Asset"`. Created Excel inventory at **`DAM/AAEMDAM-3736_Asset_Nodes_To_Remove_Inventory.xlsx`** with columns **Path (JCR)** and **Type (jcr:primaryType)**. **Total asset node directories: 4,670** (all type `dam:Asset`). User approved; removal executed.
+  - **Scrub completed:** Removed all 4,670 asset directories from the package filesystem. Verification: zero `dam:Asset` nodes remain under `jcr_root/content/dam/shrss`; **275** `.content.xml` files remain (folder nodes and `folderThumbnail.dir` nodes only). Package now contains only the empty folder hierarchy plus folder metadata. **Note:** `folderThumbnail.dir` nodes may still reference deleted asset paths in `dam:folderThumbnailPaths`; AEM may show no thumbnail or regenerate on use—no change made to those nodes per task spec.
+- **Note Status:** Resolved
+- **Required Action:** (N/A)
+- **Resolution:** Task 3 scrub complete. Package at `Content/dam-shrss-folder-structure-1.0` is ready for repackaging (zip) and install to create empty DAM folder structure. No META-INF/filter changes were required for this content-only scrub.
 
 ---

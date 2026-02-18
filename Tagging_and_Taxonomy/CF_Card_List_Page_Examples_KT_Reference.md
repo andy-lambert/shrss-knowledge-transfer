@@ -1,6 +1,6 @@
 # CF Card List Component — Page Examples (KT Quick Reference)
 
-Pages in the exported content package that contain the **CF Card List** component (`shrss/components/cfcardlist`), for use during the Tagging, Taxonomy & Metadata Governance KT session.
+Sampling of pages in the exported content package that contain the **CF Card List** component (`shrss/components/cfcardlist`), for use during the Tagging, Taxonomy & Metadata Governance KT session.
 
 ---
 
