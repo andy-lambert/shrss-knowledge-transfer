@@ -6,26 +6,14 @@
 
 ## Objective
 
-SSHRS understanding of how to properly use the DAM so admins can manage assets, maintain governance, and support property teams without risking misuse or disorganization, by:
+Facilitate SSHRS understanding of how to properly use the DAM to effectively manage assets, maintain governance, and support property teams without risking misuse or disorganization, by:
 
-- Reviewing the **current state** DAM structure, aligning on **optimal state** as well as an optimal state implementation and adoption strategy
+- Reviewing the **current state** DAM structural architecture, aligning on **optimal state** as well as an optimal state implementation and adoption strategy
+  - Outlining an **adoption roadmap** (metadata/tag cleanup, folder refactoring, Dynamic Media readiness)
+
 - Clarifying **admin/author processes** (uploading, versioning, approvals, avoiding broken references)
-- Showing how **tags (`shrss` namespace)** and **metadata (`shrssmetadataschema`)** should be used together
-- 
-- Outlining an **adoption roadmap** (metadata/tag cleanup, folder refactoring, Dynamic Media readiness)
+- Providing  holitic  **tags (`shrss` namespace)** and **metadata (`shrssmetadataschema`)** should be used together
 - Capturing **follow-up work** for a new backlog/roadmap
-
-
-
-
-
-We need enablement for how to properly use the DAM so Admins can manage assets, maintain governance, and support property teams without risking misuse or disorganization.
-
-The goal is to ensure Admins understand: 
-
-- How asset updates flow to live pages
-
-This training is required before DAM becomes part of daily operations.
 
 ---
 
@@ -33,7 +21,7 @@ This training is required before DAM becomes part of daily operations.
 
 - DAM content architecture
 - Assets metadata
-- Admin/authoring processes (versioning, scheduling, workflows, etc.)
+- Operations (admin/authoring processes such as versioning, scheduling, workflows, etc.)
 - Dynamic Media
 
 ---
@@ -275,6 +263,140 @@ For assets used on **critical pages** (home, key campaigns, navigation):
    - Repeat the change in prod during a safe window.
    - Immediately verify that **pages load correctly** and **assets render as expected**.
 
+---
+
+### Scheduling publication and unpublishing
+
+Scheduling lets you plan **when** assets (and optionally their referencing content) go live or come down, instead of doing everything manually in real time. In AEM Assets, you typically schedule via **Manage Publication**.
+
+**When to use scheduling**
+
+- **Planned launches** – campaign start times, new site/section go‑lives, promotions.
+- **Planned takedowns** – rights expiry, end of campaigns, legal or compliance deadlines.
+- **Off‑hours operations** – avoid making changes during peak business hours but have them take effect at a specific time.
+
+**How to schedule a publish**
+
+1. In **Assets > Files**, select one or more assets.
+2. Click **Manage Publication**.
+3. Choose **Publish**.
+4. Decide whether to:
+   - Publish **now**, or  
+   - **Schedule** for a specific date/time.
+5. (Recommended) Enable the option to **include references** (pages, CFs, XFs) where appropriate so those consumers are published along with the asset.
+6. Review the summary and **Confirm**.
+
+**How to schedule an unpublish**
+
+1. In **Assets > Files**, select the asset(s) you plan to retire.
+2. Click **Manage Publication**.
+3. Choose **Unpublish**.
+4. Choose a **future date/time** (for scheduled takedown) or **now**.
+5. Decide whether to include **referencing pages/CFs/XFs** if you also want those to unpublish or be updated.
+6. Review and **Confirm**.
+
+**Scheduling best practices (SHRSS)**
+
+- **Coordinate with campaigns and business owners** – especially for Homepage, navigation, and major campaign assets.
+- Use **scheduling for predictable events** (launches, takedowns, rights expiry), but still:
+  - Verify content in **Stage/UAT** before the scheduled time.
+  - Add a brief **calendar reminder** around the scheduled event to double‑check live behavior.
+- Be mindful of **time zones** (for example, confirm whether the instance is using [INSERT_TIME_ZONE_REFERENCE] as the reference time).
+- For critical assets, plan **staggered scheduling**:
+  - Schedule assets first,
+  - Then pages/CFs/XFs in the same window,
+  - And monitor the live site right after the window.
+
+---
+
+### Workflows and approvals for asset changes (future capability)
+
+Today, SHRSS does **not** have formal approval workflows configured for Sites or Assets. Authors and admins coordinate approvals **outside AEM** (for example, via email or chat), and then publish assets manually.
+
+AEM, however, supports **workflows** that can be used to enforce approvals before assets are published. Even if not implemented yet, it’s useful for Admins and Authors to understand what a **basic approval workflow** could look like.
+
+##### What workflows do (conceptually)
+
+- Provide a **structured sequence of steps** (review, approve, reject) for changes.
+- Assign **tasks** to specific roles or groups (for example, DAM Reviewer, Brand/Legal).
+- Optionally **automate publish/unpublish** when approvals are complete.
+- Record an **audit trail** (who approved what, when, with what comments).
+
+Out of the box, AEM includes:
+- Technical workflows like **DAM Update Asset** (handles renditions, metadata extraction).  
+- General models like **Request for Activation** for content approvals.
+
+For SHRSS, a future **“Asset Approval”** workflow could be based on these patterns and tailored to your groups.
+
+##### Example: Lightweight SHRSS asset approval workflow (future blueprint)
+
+_This is a proposed model; it does **not** exist yet in the current SHRSS implementation._
+
+**Roles (example)**
+
+- **Content Author** – uploads/updates assets, sets metadata and tags.
+- **DAM Reviewer** – checks metadata quality, tagging, folder placement.
+- **Brand/Legal Approver (optional)** – reviews high‑risk assets (brand, legal, rights sensitive).
+
+**Proposed flow**
+
+1. **Author prepares the asset**
+   - Uploads the asset into the correct **folder**.
+   - Sets mandatory **metadata and tags** (for example brand, usage, rights, expiry).
+   - Reviews the asset in **Stage/UAT** if needed.
+
+2. **Author starts the approval workflow**
+   - From the asset, chooses **Start Workflow** (or similar) and selects:
+     - `SHRSS – Asset Approval` (future custom model based on OOTB patterns).
+   - Adds a brief **comment** (what changed, campaign, due date).
+
+3. **DAM Reviewer step**
+   - Workflow assigns a task to the **DAM Reviewer** group.
+   - Reviewer checks:
+     - **Metadata completeness and accuracy**.
+     - **Tagging and folder placement** against SHRSS guidelines.
+     - **Rights/usage fields** for compliance.
+   - Reviewer chooses:
+     - **Approve** – moves the workflow forward, _or_
+     - **Reject** – sends the asset back to the author with comments.
+
+4. **Brand/Legal step (optional)**
+   - For specific folders or tag combinations (for example, brand‑critical or legal‑sensitive assets), the workflow adds a second approval step.
+   - Brand/Legal Approver:
+     - Confirms **visual and messaging alignment**.
+     - Confirms **rights and restrictions**.
+     - Approves or rejects with comments.
+
+5. **Automatic publish on final approval**
+   - When all required steps are approved:
+     - Workflow can **auto‑publish** the asset to **Publish**.
+     - Optionally, it can **notify the author** that the asset is live.
+   - If desired, the workflow can also:
+     - Trigger a reminder to **publish referencing pages/CFs/XFs**, or  
+     - Automatically create a task for page authors.
+
+6. **Audit and reporting**
+   - Workflow history provides a **trace**:
+     - Who approved,
+     - When they approved,
+     - What comments they added.
+   - This is especially useful for **rights management and compliance**.
+
+##### How to think about workflows today
+
+For this session, the goal is not to design the full workflow but to:
+
+- Help Admins and Authors understand that:
+  - Right now, **approval is process‑based but not enforced** in AEM.
+  - A future workflow can **formalize and enforce** your DAM governance rules.
+- Capture whether SHRSS wants:
+  - A **single shared asset approval workflow**, or
+  - **Different workflows** for specific folders/brands (for example, careers vs marketing).
+- Identify which **groups** would participate:
+  - For example, `shrss-authors`, `shrss-dam-reviewers`, `shrss-brand-approvers`.
+
+This understanding will feed into **follow‑on discovery sessions**, where the SHRSS team can decide whether to implement a simple approval workflow and which steps to include.
+
 ------
 
 ### Search & Findability
@@ -299,7 +421,7 @@ For assets used on **critical pages** (home, key campaigns, navigation):
 
 **Roles**
 
-- **DAM Architect/Librarian (primary audience of this session)**
+- **DAM Architect/Librarian**
   - Owns folder conventions.
   - Owns `shrss` taxonomy and metadata schema roadmap.
   - Approves new top-level tags and schema changes.
@@ -335,8 +457,10 @@ For assets used on **critical pages** (home, key campaigns, navigation):
   - What would need to change in DAM to adopt DM smoothly?
     - Clear separation of hero vs. raw imagery?
     - Consistent aspect-ratio tagging or naming?
-
-- **Discuss implementation roadmap**
+  - **Discuss implementation roadmap**
+    - DAM integration and asset processing
+    - Swap out relevant 
+  
 
 ---
 
@@ -563,7 +687,93 @@ Because versions are purged after ~30 days and capped at 10, the main risk is **
 > [!IMPORTANT]
 >
 > “Pages always point to assets by their path. If we just update the file but keep the path, the > change flows through automatically once we publish the asset and caches clear. If we move > or rename the asset, we must update and republish anything that references it; otherwise, live pages can break. Deletions are final and should only happen after unpublishing and cleaning up references.”
-> 
+
+This section explains, at a high level, how **asset changes** in DAM flow through to **pages, content fragments (CFs), experience fragments (XFs), and the live site**, and where manual actions are still required.
+
+#### Flow 1 – Updating an asset (binary/metadata, no path change)
+
+Use this model when:
+
+- The **asset path does not change**.
+- You are **replacing the file** (new version) and/or **updating metadata** on an existing asset.
+
+**High-level flow**
+
+1. **DAM author updates the asset**
+   - Uploads a **new version** of the same asset (same path).
+   - And/or updates **metadata/tags/rights**.
+2. **References remain intact**
+   - AEM retains the **same asset path**, so references in:
+     - Pages (Sites components),
+     - Content Fragments (CFs),
+     - Experience Fragments (XFs),
+     - Other assets and components  
+       continue to point to the same asset.
+3. **Author publishes the asset**
+   - Author publishes the updated **asset**.
+   - The UI may **prompt to publish referencing resources** (pages, CFs, XFs using the asset).
+4. **Author publishes referencing pages, CFs, XFs**
+   - Author confirms and publishes the **referencing content**.
+5. **Dispatcher and CDN cache invalidation**
+   - Publish triggers **cache invalidation** at dispatcher and CDN for affected paths.
+   - New asset binary and/or metadata is retrieved on the next requests.
+6. **Live site reflects the change**
+   - Site visitors now see the **updated asset** and/or metadata on all published pages, CFs, XFs that reference it.
+
+**Mermaid diagram – Update flow**
+
+```mermaid
+flowchart LR
+  A[Author updates asset in DAM] --> B[Asset path unchanged]
+  B --> C[Author publishes asset]
+  C --> D[Author publishes referencing content]
+  D --> E[Dispatcher and CDN cache refreshed]
+  E --> F[Visitors see updated asset on live pages]
+```
+
+#### Flow 2 – Moving or renaming an asset (path change)
+
+Use this model when:
+
+- You are **moving an asset to a new folder**, or
+- **Renaming** the asset so that its **path changes**.
+
+**High-level flow**
+
+1. **DAM author checks references**
+   - Before moving or renaming, the author opens **References** to see:
+     - Which **pages**,
+     - Which **CFs or XFs**, and
+     - Which **other assets**
+       currently use the asset.
+2. **Author moves or renames the asset in DAM**
+   - Asset is **moved** to a new folder and/or **renamed**.
+   - AEM attempts to **update internal references** for:
+     - Standard Sites components,
+     - CFs and XFs using supported reference patterns.
+3. **References are updated (where supported)**
+   - For supported components and models, AEM rewrites the **stored path** to the new asset location.
+   - Any **custom or external references** (for example stored in plain text, third-party systems, APIs) must be updated **manually**.
+4. **Author publishes asset from new location**
+   - Author publishes the **moved or renamed asset**.
+5. **Author publishes referencing pages, CFs, XFs**
+   - Author publishes the **referencing content** so it points to the **new path** on publish.
+6. **Dispatcher and CDN cache invalidation**
+   - Publish triggers **cache invalidation** at dispatcher and CDN for affected pages and asset URLs.
+7. **Live site reflects the new path**
+   - Site visitors see the asset from its **new path** on all published pages, CFs, XFs that reference it.
+
+**Mermaid diagram – Move/Rename flow**
+
+```mermaid
+flowchart LR
+  A[Author checks references] --> B[Author moves or renames asset]
+  B --> C[AEM updates internal references]
+  C --> D[Author publishes asset from new location]
+  D --> E[Author publishes referencing content]
+  E --> F[Dispatcher and CDN cache refreshed]
+  F --> G[Visitors see asset from new path on live pages]
+```
 
 ### High‑level flow overview
 
@@ -585,103 +795,36 @@ At a high level, when an asset is updated in AEM Assets:
 
 ------
 
-### Scenario 1 – Updating an asset binary (no path change)
+- ### Flow diagram – asset update to live page
 
-*Example: same hero image, better crop or color correction.*
+  The following diagram illustrates a **binary update with no path change** (the most common case):
 
-**Steps**
+  ```mermaid
+  sequenceDiagram
+      participant Author as DAM Author
+      participant AEM as AEM Author
+      participant Publish as AEM Publish
+      participant Disp as Dispatcher
+      participant CDN as CDN / Edge
+      participant User as End User
+  
+      Author->>AEM: Replace asset binary (same path)
+      AEM-->>AEM: Create new version of asset
+  
+      Author->>AEM: Publish asset (optionally publish references)
+      AEM->>Publish: Replicate updated asset
+  
+      Publish->>Disp: Invalidate cached asset/page URLs
+      Disp->>CDN: Invalidate cached asset/page URLs
+  
+      User->>CDN: Request page with asset
+      CDN->>Disp: Cache miss, forward to Dispatcher
+      Disp->>Publish: Request page + asset renditions
+      Publish-->>Disp: Respond with updated page + asset
+      Disp-->>CDN: Cache updated responses
+      CDN-->>User: Serve updated page + asset
+  ```
 
-1. DAM author opens the asset in **Assets** (author).
-2. They **replace the binary** (same asset node, same path) – e.g., `Replace` / `Upload new version`.
-3. AEM creates a **new asset version** in author; the asset retains its **same path**.
-4. Author **publishes the asset**:
-   - AEM replicates the current version of the asset to **publish**.
-   - No changes are required to pages/CFs/XFs; they still point to the same path.
-5. Dispatcher & CDN caches for the asset URL are **invalidated**.
-6. When users hit a page:
-   - The page still has the same asset reference (same path).
-   - Publish returns the new rendition; Dispatcher/CDN cache the updated asset.
-
-**Key behaviors**
-
-- **Pages/CFs/XFs do not need to be republished** just because the binary changed, *as long as the path stays the same*.
-- Any published page that references the asset will show the **updated file** once caches clear.
-
-------
-
-### Scenario 2 – Updating metadata only
-
-*Example: title/description fix, tag change, rights/expiry update.*
-
-**Steps**
-
-1. DAM author edits **metadata** on the asset (title, description, tags, rights).
-2. They **save** the metadata changes.
-3. Author **publishes the asset** so the updated metadata is available on publish.
-4. Pages/CFs/XFs that **read metadata dynamically from DAM** (e.g., Image Core Component pulling alt text or title from DAM) will automatically reflect the change once the asset is published and caches flush.
-
-**When you may also need to republish pages**
-
-- If a component or model **copies metadata into the page or CF content** at authoring time (rather than reading it from DAM at render time), you may need to:
-  - **Edit and resave** the page/CF, then
-  - **Republish the page/CF** so the copied metadata is updated on publish.
-
-*In many modern implementations, most key metadata for imagery is read directly from DAM, so publishing the asset alone is enough.*
-
-------
-
-### Scenario 3 – Moving or renaming an asset (path change)
-
-*Example: move `hero.jpg` from `/content/dam/foo/2025/` to `/content/dam/foo/heroes/`.*
-
-This is more disruptive because **references are path‑based**.
-
-**Steps on author**
-
-1. DAM author chooses **Move** or **Rename** in the Assets UI.
-2. AEM typically offers an option to **update references**:
-   - If enabled, AEM scans and updates references in:
-     - Pages (Sites)
-     - Content Fragments
-     - Experience Fragments
-     - Other assets and configurations (where supported)
-3. As a result:
-   - On **author**, any referencing page/CF/XF now stores the **new path** to the asset.
-
-**Publishing the change**
-
-1. Author then uses **Manage Publication**:
-   - Publish the **asset** with its new path, and
-   - Publish the **referencing pages/CFs/XFs** (so their new path values are on publish).
-2. Dispatcher/CDN invalidate both:
-   - The old asset path (now unused), and
-   - The new asset path, plus any pages that changed.
-
-**Key behaviors**
-
-- If references are updated correctly on author and the **pages/CFs/XFs are republished**, the change flows cleanly to live.
-- If you move/rename assets **without updating and republishing references**, live pages can break (404s or “asset not found”).
-
-------
-
-### Scenario 4 – Deleting an asset
-
-*Example: retiring an obsolete image.*
-
-**Steps**
-
-1. Author checks **References** for the asset.
-2. Author **unpublishes the asset** first (if it’s live).
-3. Author **updates/removes references** in pages/CFs/XFs:
-   - Replace asset with a new one, *or*
-   - Remove the reference entirely.
-4. Author **republishes affected pages/CFs/XFs**.
-5. Only after references are cleaned up, the author **deletes the asset** in author.
-
-**Key behaviors**
-
-- Once deleted and removed from publish, existing references will break unless they were cleaned up and republished.
-- Always treat deletion as a final step in a **retirement workflow**, not a one‑click action.
 
 ------
 
@@ -703,37 +846,5 @@ Updates do **not** automatically flow in these situations:
 
 ------
 
-### Flow diagram – asset update to live page
 
-The following diagram illustrates a **binary update with no path change** (the most common case):
 
-```mermaid
-sequenceDiagram
-    participant Author as DAM Author
-    participant AEM as AEM Author
-    participant Publish as AEM Publish
-    participant Disp as Dispatcher
-    participant CDN as CDN / Edge
-    participant User as End User
-
-    Author->>AEM: Replace asset binary (same path)
-    AEM-->>AEM: Create new version of asset
-
-    Author->>AEM: Publish asset (optionally publish references)
-    AEM->>Publish: Replicate updated asset
-
-    Publish->>Disp: Invalidate cached asset/page URLs
-    Disp->>CDN: Invalidate cached asset/page URLs
-
-    User->>CDN: Request page with asset
-    CDN->>Disp: Cache miss, forward to Dispatcher
-    Disp->>Publish: Request page + asset renditions
-    Publish-->>Disp: Respond with updated page + asset
-    Disp-->>CDN: Cache updated responses
-    CDN-->>User: Serve updated page + asset
-```
-
-To adapt this for **move/rename**, add:
-
-- A **Move asset (update references)** step before publish.
-- A subsequent **Publish asset + referencing pages/CFs/XFs** step.
