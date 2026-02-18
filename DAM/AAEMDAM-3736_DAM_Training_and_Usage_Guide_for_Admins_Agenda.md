@@ -21,10 +21,8 @@ SSHRS understanding of how to properly use the DAM so admins can manage assets, 
 
 We need enablement for how to properly use the DAM so Admins can manage assets, maintain governance, and support property teams without risking misuse or disorganization.
 
-The goal is to ensure Admins understand:
+The goal is to ensure Admins understand: 
 
-- How Dynamic Media fits into publishing
-- How to avoid breaking references
 - How asset updates flow to live pages
 
 This training is required before DAM becomes part of daily operations.
@@ -94,15 +92,13 @@ This training is required before DAM becomes part of daily operations.
 
 ## 3. DAM Operations & Governance
 
-### 3.1 Uploading, Versioning, and Asset Changes
-
 > [!NOTE]
 >
 > > How and where to store assets in the correct hierarchy - https://shrss.atlassian.net/browse/AAEMDAM-3736
 >
 > In this section, we're discussing how/where to upload in the DAM based on *current state*. In that sense, "correct hierarchy" is defined as "correct hierarchy for current architectural structure." 
 
-#### Where to upload
+### Creating (Uploading) assets
 
 - Cafe imagery → `/cafe/<property>/en/photography`
 - Hotel imagery → `/hotel/<property>/en/photography`
@@ -110,16 +106,124 @@ This training is required before DAM becomes part of daily operations.
 - Corporate/careers imagery → `/corporate/careers/en/...`
 - Training/demos → `/training/...` only
 
-#### Versioning
+### Updating assets
+
+*This section focuses on “update” actions: replacing files, refining metadata, and deciding when an update should be a new version vs. a brand-new asset.*
+
+#### Updating an asset file (same asset, new version)
+
+Use this when the **identity of the asset stays the same** (same photo/graphic, improved crop, color correction, minor copy fix, etc.) and you want to preserve references and history.
+
+**Steps: Replace the binary and create a new version**
+
+1. **Locate the asset**
+   - In **Assets > Files**, navigate to the asset’s folder.
+2. **Open the asset details**
+   - Click the asset to open its detail page (or use the top toolbar if you prefer inline tools).
+3. **Upload the updated file**
+   - Use **`Replace`** (or `Upload new version` if surfaced in your UI) to upload the new binary with the **same filename**, or
+   - Drag‑and‑drop the updated file **onto the existing asset** (depending on your configured UI/workflow).
+4. **Confirm the version**
+   - AEM automatically creates a **new version** of the asset.
+   - Optionally, open the **Timeline** / **Versions** panel and:
+     - Add a **label** and **comment** (e.g., `v2 – color corrected; approved by Brand`).
+5. **Validate references**
+   - Use **References** to confirm which pages/components use this asset.
+   - Spot‑check at least one **published page** to ensure the updated file looks correct.
+
+**When to use this path**
+
+- You’re fixing **minor issues** (typos, color correction, safe‑area tweaks).
+- You want **all existing references** (Sites pages, CFs, external consumers) to get the updated asset.
+- You need a **version history** for audit purposes.
+
+**When not to use this path**
+
+- The change fundamentally alters the **meaning or usage** of the asset (e.g., new campaign, new offer, new legal terms).
+  - In that case, create a **new asset** with a new filename and retire or unpublish the old asset.
+
+#### Updating metadata (title, tags, rights, usage)
+
+**Steps: Update metadata on an existing asset**
+
+1. **Open the asset details** in Assets.
+2. Click **`Edit`** or **`View Properties`**.
+3. Update relevant metadata fields:
+   - **Title / Description** – human‑readable; used in search and in authoring UI.
+   - **Tags** – apply appropriate `shrss:*` tags (brand, location, usage type, rights, etc.).
+   - **Rights / expiry / usage** – ensure rights information matches the current contract.
+4. **Save & close**.
+5. Optionally, **republish** the asset so downstream consumers see the updated metadata immediately (depending on your replication / CDN behavior).
+
+**Best practices**
+
+- Prefer **tags and structured fields** over free‑text for any data you may search/filter on later.
+- If metadata updates are part of a **larger correction** (e.g., fixing a rights issue), consider:
+  - Creating a **new version** first, then updating metadata, so there’s a clear audit trail.
+- Avoid making **frequent tiny edits** (e.g., title changes several times a day) to reduce noisy version history.
+
+### Deleting assets safely
+
+Deleting is **destructive** and can break pages, content fragments, and external consumers. Treat deletion as a **last step** in an asset’s lifecycle.
+
+#### Before you delete: checks for authors/admins
+
+Before deleting any asset:
+
+- **Check references**
+  - Select the asset and open the **`References`** panel:
+    - Confirm whether it’s used on **Sites pages**, **content fragments**, **experience fragments**, or **other assets**.
+- **Unpublish first**
+  - If the asset is published:
+    1. Use **`Manage Publication`** or **`Unpublish`** from the toolbar.
+    2. Confirm unpublish has completed (especially in prod).
+  - This avoids 404s and broken content in the live experience while you clean up authoring references.
+- **Update or remove references**
+  - For each reference:
+    - Replace with a **new asset**, *or*
+    - Remove the asset from the component/CF entirely.
+  - Only proceed to delete once you’re confident no live or upcoming content needs it.
+
+#### Deleting an asset (step-by-step)
+
+1. **Navigate to the asset** in **Assets > Files**.
+2. Confirm you’ve:
+   - **Checked references**, and
+   - **Unpublished** the asset (if needed), and
+   - **Updated/remediated** all references.
+3. Select the asset and click **`Delete`**.
+4. Confirm the deletion in the dialog.
+
+If your environment uses a **Recycle Bin** or similar retention:
+
+- Understand how long deleted assets are retained and who can restore them.
+- Use restores sparingly; restored assets may still need **republishing** and **reference validation**.
+
+#### Deletion best practices
+
+- **Never delete a published, referenced asset** without:
+  - First unpublishing it, and
+  - Updating or removing all references.
+- **Time deletions carefully**
+  - Perform deletions **outside of peak traffic** when possible.
+  - Coordinate with **business owners** if assets are part of campaigns or legal content.
+- **Prefer “retirement” over immediate deletion**
+  - For high‑risk assets (legal, brand, compliance):
+    - Unpublish and clearly mark them as **Retired** via metadata or tags.
+    - Only delete once the business confirms no future need.
+
+### Versioning
 
 - Use **asset versioning** when updating images currently used on live pages.
 - Avoid deleting assets that may still be referenced by Sites pages or Content Fragments.
-
 - **Avoiding broken references**
   - Do **not** move or rename assets that are already referenced, without:
     - Running **Reference Search** first.
     - Updating references in Sites or CFs where possible.
-- See 
+
+> [!TIP]
+>
+> See "Appendix - Asset Versioning & Cleanup" for a deep dive into asset versioning how-to's and best practices.
 
 #### Discussion questions
 
@@ -169,25 +273,25 @@ This training is required before DAM becomes part of daily operations.
 
 ---
 
-## 4. Dynamic Media
+## 4. Dynamic Media (DM)
+
+> How Dynamic Media fits into publishing - https://shrss.atlassian.net/browse/AAEMDAM-3736
 
 - **Current state (from original agenda)**
-  
+
   - Dynamic Media is:
     - **Provisioned**, configured in lower environments.
     - **Not configured** in production.
     - Core components on Sites currently **do not use DM components**.
-  
-  **Roadmap discussion**
-  
+
+- **Discuss DM adoption/content strategy**
   - Which content types would benefit most from DM?
     - Hero images? Carousels? Media-heavy experiences?
   - What would need to change in DAM to adopt DM smoothly?
     - Clear separation of hero vs. raw imagery?
     - Consistent aspect-ratio tagging or naming?
-  
-  > Outcome: capture whether DM is in scope for **next 6–12 months** and what prerequisites exist in DAM.
-  >
+
+- **Discuss implementation roadmap**
 
 ---
 
