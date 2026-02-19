@@ -1,0 +1,23 @@
+sequenceDiagram
+    participant Author as DAM Author
+    participant AEM as AEM Author
+    participant Publish as AEM Publish
+    participant Disp as Dispatcher
+    participant CDN as CDN / Edge
+    participant User as End User
+
+    Author->>AEM: Replace asset binary (same path)
+    AEM-->>AEM: Create new version of asset
+
+    Author->>AEM: Publish asset (optionally publish references)
+    AEM->>Publish: Replicate updated asset
+
+    Publish->>Disp: Invalidate cached asset/page URLs
+    Disp->>CDN: Invalidate cached asset/page URLs
+
+    User->>CDN: Request page with asset
+    CDN->>Disp: Cache miss, forward to Dispatcher
+    Disp->>Publish: Request page + asset renditions
+    Publish-->>Disp: Respond with updated page + asset
+    Disp-->>CDN: Cache updated responses
+    CDN-->>User: Serve updated page + asset

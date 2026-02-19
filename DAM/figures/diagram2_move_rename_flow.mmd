@@ -1,0 +1,7 @@
+flowchart LR
+  A[Author checks references] --> B[Author moves or renames asset]
+  B --> C[AEM updates internal references]
+  C --> D[Author publishes asset from new location]
+  D --> E[Author publishes referencing content]
+  E --> F[Dispatcher and CDN cache refreshed]
+  F --> G[Visitors see asset from new path on live pages]

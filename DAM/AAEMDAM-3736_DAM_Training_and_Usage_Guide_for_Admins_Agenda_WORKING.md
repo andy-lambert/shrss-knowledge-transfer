@@ -6,13 +6,13 @@
 
 ## Objective
 
-Facilitate SHRSS readiness to sustainably govern, structure, and operationalize AEM Assets in support of scalable content delivery, metadata-driven discovery, and future digital growth.
+Facilitate SSHRS understanding of how to properly use the DAM to effectively manage assets, maintain governance, and support property teams without risking misuse or disorganization, by:
 
 - Reviewing the **current state** DAM structural architecture, aligning on **optimal state** as well as an optimal state implementation and adoption strategy
   - Outlining an **adoption roadmap** (metadata/tag cleanup, folder refactoring, Dynamic Media readiness)
 
 - Clarifying **admin/author processes** (uploading, versioning, approvals, avoiding broken references)
-- Providing  holitic  **tags (`shrss` namespace)** and **metadata (`shrssmetadataschema`)** should be used together
+- How **tags (`shrss` namespace)** and **metadata (`shrssmetadataschema`)** should be used together
 - Capturing **follow-up work** for a new backlog/roadmap
 
 ---
@@ -60,6 +60,7 @@ Facilitate SHRSS readiness to sustainably govern, structure, and operationalize 
    5. Require all new assets to be placed in new structure
 
 - Considerations for Dynamic Media
+  - Unique file names REQUIRED
 
 - Best practices
 
@@ -662,7 +663,7 @@ Because versions are purged after ~30 days and capped at 10, the main risk is **
 
 ---
 
-## How asset updates flow to live pages (AEM Sites/Assets)
+## Appendix B - How asset updates flow to live pages (AEM Sites/Assets)
 
 *This section explains, step‑by‑step, how an update in DAM flows (or does not flow) to live pages, content fragments (CFs), and experience fragments (XFs) in AEM Sites — and where authors need to intervene.*
 
