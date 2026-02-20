@@ -21,7 +21,6 @@
 
 ### Don’t
 
-- **Don’t** store real production images or videos under `/training` — that is for demos and experiments.
 - **Don’t** put raw images directly under `/cf` — that branch is for Content Fragments.
 - **Don’t** create new top-level folders under `/content/dam/shrss` without alignment with the DAM architect.
 
@@ -92,23 +91,6 @@
 
 - **Don’t** delete assets you didn’t upload if you’re not sure who uses them.
 - **Don’t** move large sets of assets between folders without coordinating with the DAM architect or a developer.
-
-------
-
-## 6. Training & Sandbox
-
-### Do
-
-- **Do** use `/content/dam/shrss/training` for:
-  - Practice
-  - Demos
-  - Experimenting with new features
-- **Do** clearly mark any training content if it accidentally gets used on a real page.
-
-### Don’t
-
-- **Don’t** rely on anything under `/training` for permanent, public content.
-- **Don’t** clean up `/training` without checking with whoever is running training or demos.
 
 ------
 
