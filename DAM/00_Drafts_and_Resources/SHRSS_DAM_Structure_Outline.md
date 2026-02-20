@@ -1,8 +1,6 @@
 # SHRSS DAM structure (outline)
 
-Current folder hierarchy under `/content/dam/shrss` from the scrubbed content package (Task 3). No assets—structure only.
-
-**Source:** `Content/dam-shrss-folder-structure-1.0`
+Current folder hierarchy under `/content/dam/shrss`
 
 ## Summary
 
@@ -15,12 +13,11 @@ Current folder hierarchy under `/content/dam/shrss` from the scrubbed content pa
 | **reverb** | Reverb assets (Atlanta, Hamburg, en) |
 | **training** | Training / sample content (images, cf/news) |
 
-*Total folders in structure: 237 (excluding `_jcr_content` / thumbnail nodes).*
-
 ---
 
 ## Outline
 
+```text
 - shrss
   - cafe
     - amsterdam
@@ -33,7 +30,7 @@ Current folder hierarchy under `/content/dam/shrss` from the scrubbed content pa
       - en
         - photography
           - media
-  - cf (FluffyJaws Note: child location nodes are content fragments)
+  - cf
     - locations
       - africa
         - egypt
@@ -259,3 +256,6 @@ Current folder hierarchy under `/content/dam/shrss` from the scrubbed content pa
               - 10
               - 9
     - images
+```
+
+  

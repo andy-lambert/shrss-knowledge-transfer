@@ -1,0 +1,631 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; }
+svg sub, svg sup { position: static; }
+.nodeLabel p { padding-right: 2px; padding-left: 2px; }
+.typora-export .nodeLabel p { padding-right: 0px; padding-left: 0px; }
+foreignObject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
+.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: medium; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext' type='text/css' />
+<style type='text/css'  id="style-theme_css">:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', 'SF Pro', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.mac-os #write{
+    caret-color: AccentColor;
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+<style type='text/css'  id="style-mac-print"> @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}</style>
+
+<title>Comprehensive_DAM_Session_Guide_Final</title>
+</head>
+<body class='typora-export'><div class='typora-export-content'>
+<div id='write'  class=''><h1 id='shrss-dam-training--usage-guide-for-admins'><span>SHRSS DAM Training &amp; Usage Guide for Admins</span></h1><p><em><span>Comprehensive Session Guide (Host + Attendee Version)</span></em></p><p><strong><span>Ticket:</span></strong><span> AAEMDAM-3736</span>
+<strong><span>Audience:</span></strong><span> SHRSS DAM architect (primary), AEM authors, AEM devs/TAs (secondary)</span>
+<strong><span>Duration:</span></strong><span> 60 minutes  </span></p><hr /><h2 id='0-session-overview'><span>0. Session Overview</span></h2><p><strong><span>Objective</span></strong></p><p><span>Help SHRSS/HRI use AEM Assets in a consistent way across Hard Rock properties, by:</span></p><ul><li><p><span>Explaining the </span><strong><span>current DAM structure</span></strong><span> under </span><code>/content/dam/shrss</code></p></li><li><p><span>Showing how </span><strong><span>tags (</span><code>shrss</code><span> namespace)</span></strong><span> and </span><strong><span>metadata (</span><code>shrssmetadataschema</code><span>)</span></strong><span> should be used together</span></p></li><li><p><span>Clarifying </span><strong><span>admin/author processes</span></strong><span> (uploading, versioning, approvals, avoiding broken references)</span></p></li><li><p><span>Outlining an </span><strong><span>adoption roadmap</span></strong><span> (metadata/tag cleanup, folder refactoring, Dynamic Media readiness)</span></p></li><li><p><span>Capturing </span><strong><span>follow-up work</span></strong><span> for a new backlog/roadmap</span></p></li></ul><blockquote><p><strong><span>Timebox summary (60 min)</span></strong></p><ul><li><p><span>0–5: Context + goals  </span></p></li><li><p><span>5–20: Current DAM content architecture  </span></p></li><li><p><span>20–35: Tagging &amp; metadata in practice  </span></p></li><li><p><span>35–50: Operations &amp; governance  </span></p></li><li><p><span>50–60: Decisions, backlog items, and next steps</span></p></li></ul></blockquote><hr /><h2 id='1-current-shrss-dam-landscape-15-min'><span>1. Current SHRSS DAM Landscape (15 min)</span></h2><h3 id='11-aem-sites--environments-context'><span>1.1 AEM Sites &amp; Environments (context)</span></h3><ul><li><p><strong><span>Production Sites</span></strong></p><ul><li><p><code>https://www.hardrock.com/</code><span> — global brand, cafes, hotels, casino, news, etc.</span></p></li><li><p><code>https://reverb.hardrock.com/</code><span> — Reverb brand site</span></p></li></ul></li><li><p><strong><span>Upcoming</span></strong></p><ul><li><p><code>https://aem.careers.stage.hardrock.com/</code><span> — careers site in UAT; go-live planned for </span><strong><span>2026-03-16</span></strong></p></li></ul></li></ul><p><strong><span>Discussion prompts</span></strong></p><ul><li><p><span>Which teams currently upload assets (central brand vs. property-level teams)?</span></p></li><li><p><span>Which teams are expected to use the </span><strong><span>careers</span></strong><span> assets specifically (HR, TA, brand)?</span></p></li></ul><hr /><h3 id='12-dam-folder-structure-under-contentdamshrss'><span>1.2 DAM Folder Structure (under </span><code>/content/dam/shrss</code><span>)</span></h3><p><strong><span>Top-level branches</span></strong></p><figure class='table-figure'><table><thead><tr><th><span>Top-level folder</span></th><th><span>Typical usage (current)</span></th><th><span>Example paths</span></th></tr></thead><tbody><tr><td><code>cafe</code></td><td><span>Cafe-specific assets per location</span></td><td><code>/content/dam/shrss/cafe/amsterdam/en/photography</code></td></tr><tr><td><code>cf</code></td><td><span>Content fragments (locations, news, venues)</span></td><td><code>/content/dam/shrss/cf/locations/europe/france</code></td></tr><tr><td><code>corporate</code></td><td><span>Brand/corporate: logos, campaigns, careers</span></td><td><code>/content/dam/shrss/corporate/careers/en/photography</code></td></tr><tr><td><code>hotel</code></td><td><span>Hotel-specific assets (global + properties)</span></td><td><code>/content/dam/shrss/hotel/davos/en/photography/media</code></td></tr><tr><td><code>reverb</code></td><td><span>Reverb brand assets</span></td><td><code>/content/dam/shrss/reverb/atlanta/en/photography</code></td></tr><tr><td><code>training</code></td><td><span>Training/sample content (CF + images)</span></td><td><code>/content/dam/shrss/training/cf/news/corporate/en/2025</code></td></tr></tbody></table></figure><blockquote><p><strong><span>Important:</span></strong><span> </span><code>/content/dam/shrss/cf</code><span> holds </span><strong><span>content fragments</span></strong><span>, not traditional media assets. They are part of the </span><strong><span>content model</span></strong><span> and used heavily for locations and news.</span></p></blockquote><p><strong><span>Notable patterns from folder outline and Excel</span></strong></p><ul><li><p><strong><span>Location-driven CF structure:</span></strong>
+<code>/content/dam/shrss/cf/locations/&lt;region&gt;/&lt;country&gt;</code>
+<span>Roughly mirrors the </span><strong><span>country</span></strong><span> and </span><strong><span>properties</span></strong><span> tag branches.</span></p></li><li><p><strong><span>News CF structure:</span></strong>
+<code>/content/dam/shrss/cf/news/corporate/en/&lt;year&gt;/&lt;month&gt;</code>
+<span>Also mirrored under </span><code>/content/dam/shrss/training/cf/news/...</code><span> for demos.</span></p></li><li><p><strong><span>Brand/site alignment:</span></strong></p><ul><li><p><span>Cafe imagery: </span><code>/cafe/...</code></p></li><li><p><span>Hotel imagery: </span><code>/hotel/...</code></p></li><li><p><span>Reverb imagery: </span><code>/reverb/...</code></p></li><li><p><span>Corporate/careers imagery: </span><code>/corporate/careers/en/...</code></p></li></ul></li></ul><p><strong><span>Talking points</span></strong></p><ul><li><p><span>The top-level segmentation (</span><code>cafe</code><span>, </span><code>hotel</code><span>, </span><code>reverb</code><span>, </span><code>corporate</code><span>) maps cleanly to </span><strong><span>site/brand</span></strong><span>.</span></p></li><li><p><code>cf</code><span> and </span><code>training</code><span> are special: CF = structured content; training = safe sandbox.</span></p></li><li><p><strong><span>Question:</span></strong><span> Is anything “production-critical” currently stored under </span><code>training</code><span>? If yes, we should plan to move it.</span></p></li></ul><hr /><h3 id='13-how-folder-structure-tags-and-metadata-work-together'><span>1.3 How Folder Structure, Tags, and Metadata Work Together</span></h3><p><strong><span>Conceptual model</span></strong></p><ul><li><p><strong><span>Folder</span></strong><span>: primary grouping by </span><strong><span>brand/site + location + language</span></strong></p></li><li><p><strong><span>Tagging (</span><code>shrss</code><span> namespace)</span></strong><span>: cross-cutting dimensions:</span></p><ul><li><p><span>Brand / line of business (</span><code>lob</code><span>)</span></p></li><li><p><span>Property / venue / region</span></p></li><li><p><span>Content category (e.g., lifestyle, rooms, menus, philanthropy)</span></p></li><li><p><span>Campaign / news / events categories</span></p></li></ul></li><li><p><strong><span>Metadata schema (</span><code>shrssmetadataschema</code><span>)</span></strong><span>: currently mostly </span><strong><span>technical fields</span></strong><span> (width, height, PDF title, video tech info) plus a basic </span><strong><span>Location</span></strong><span> field.</span></p></li></ul><p><strong><span>Gap to call out</span></strong></p><ul><li><p><span>There are </span><strong><span>few to no business fields</span></strong><span> in the metadata schema (e.g., rights, usage, internal/external, campaign name).</span></p></li><li><p><span>Today, </span><strong><span>tags are carrying most of the business semantics</span></strong><span>. That’s OK, but it means:</span></p><ul><li><p><span>Tag governance is critical.</span></p></li><li><p><span>Future schema enhancements should align carefully with existing tag branches (no duplicate concepts in both places).</span></p></li></ul></li></ul><hr /><h2 id='2-tagging-strategy-shrss-namespace-15-min'><span>2. Tagging Strategy: </span><code>shrss</code><span> Namespace (15 min)</span></h2><h3 id='21-overview-of-shrss-tag-tree'><span>2.1 Overview of </span><code>shrss</code><span> Tag Tree</span></h3><p><strong><span>Top-level branches (from tag outline)</span></strong></p><ul><li><p><code>shrss/global</code><span> (currently not heavily populated)</span></p></li><li><p><code>shrss/hotel</code><span> (property/area-specific tags, including some quality issues)</span></p></li><li><p><code>shrss/casino</code></p></li><li><p><code>shrss/cafe</code></p></li><li><p><code>shrss/categories</code></p></li><li><p><code>shrss/brands</code></p></li><li><p><code>shrss/venues-and-branded-experiences</code></p></li><li><p><code>shrss/regions</code></p></li><li><p><code>shrss/lob</code><span> (line of business)</span></p></li><li><p><code>shrss/properties</code></p></li><li><p><code>shrss/type</code><span> (corporate/franchise)</span></p></li><li><p><code>shrss/category</code><span> (imagery/content type, e.g., rooms, logo, lifestyle)</span></p></li><li><p><code>shrss/news-categories</code></p></li><li><p><code>shrss/event-categories</code></p></li><li><p><code>shrss/country</code></p></li><li><p><code>shrss/products</code><span> (digital screens, email, mobile app, websites, booking…)</span></p></li></ul><p><strong><span>Key ones for authors</span></strong></p><ul><li><p><strong><span>Brand / LOB:</span></strong><span> </span><code>shrss/lob</code><span> (cafe, hotel, casino, entertainment, games, shop, sportsbook, unity, bet)</span></p></li><li><p><strong><span>Property / Location:</span></strong><span> </span><code>shrss/properties</code><span> (amsterdam, atlanta, davos, wroclaw, etc.)</span></p></li><li><p><strong><span>Country:</span></strong><span> </span><code>shrss/country</code><span> (france, germany, united-states, etc.)</span></p></li><li><p><strong><span>Imagery category:</span></strong><span> </span><code>shrss/category</code><span> (logo, lifestyle, rooms, suites, awards, philanthropy, etc.)</span></p></li><li><p><strong><span>News / events:</span></strong><span> </span><code>shrss/news-categories</code><span>, </span><code>shrss/event-categories</code></p></li><li><p><strong><span>Venues &amp; branded experiences:</span></strong><span> </span><code>shrss/venues-and-branded-experiences</code><span> (hard-rock-live, rock-spa, etc.)</span></p></li></ul><hr /><h3 id='22-known-issues-and-cleanup-areas'><span>2.2 Known Issues and Cleanup Areas</span></h3><p><strong><span>Examples from current tag tree</span></strong></p><ul><li><p><strong><span>Typos / duplicates</span></strong></p><ul><li><p><code>guadalajara</code><span> vs </span><code>guadalaraja</code><span> under </span><code>hotel</code></p></li><li><p><code>northernindiana</code><span> vs </span><code>northern-indiana</code><span> under </span><code>properties</code></p></li><li><p><code>wroclaw</code><span> appears under </span><strong><span>country</span></strong><span> even though it’s a city</span></p></li></ul></li><li><p><strong><span>Encoded / awkward names</span></strong></p><ul><li><p><code>_x0032_4k-boutique</code></p></li><li><p><code>lobby-bar-gmt_x002b_1</code></p></li><li><p><span>Tags with trailing hyphens (e.g., </span><code>unplugged-</code><span>, </span><code>velvet-sessions-</code><span>)</span></p></li></ul></li><li><p><strong><span>Overlapping concepts</span></strong></p><ul><li><p><span>Some venues appear both under </span><code>venues-and-branded-experiences</code><span> and </span><code>properties</code><span>.</span></p></li></ul></li></ul><blockquote><p><strong><span>Decision to capture:</span></strong>
+<span>Which namespace(s) should be the </span><strong><span>author-facing “golden path”</span></strong><span> (e.g., always use </span><code>properties + category + lob</code><span>) and which ones are “expert-only”?</span></p></blockquote><hr /><h3 id='23-recommended-tagging-patterns'><span>2.3 Recommended Tagging Patterns</span></h3><p><strong><span>Pattern 1 – Cafe property hero image</span></strong></p><ul><li><p><strong><span>Folder</span></strong><span>: </span><code>/content/dam/shrss/cafe/amsterdam/en/photography</code></p></li><li><p><strong><span>Tags:</span></strong></p><ul><li><p><code>shrss/lob/cafe</code></p></li><li><p><code>shrss/properties/amsterdam</code></p></li><li><p><code>shrss/country/netherlands</code></p></li><li><p><code>shrss/category/lifestyle</code><span> (or </span><code>exterior-shots</code><span>, </span><code>interior</code><span>, etc., as appropriate)</span></p></li></ul></li></ul><p><strong><span>Pattern 2 – Hotel room imagery</span></strong></p><ul><li><p><strong><span>Folder</span></strong><span>: </span><code>/content/dam/shrss/hotel/en/photography</code><span> or </span><code>/hotel/davos/en/photography</code></p></li><li><p><strong><span>Tags:</span></strong></p><ul><li><p><code>shrss/lob/hotel</code></p></li><li><p><code>shrss/properties/davos</code><span> (or specific hotel)</span></p></li><li><p><code>shrss/country/switzerland</code></p></li><li><p><code>shrss/category/rooms</code><span> or </span><code>suites</code></p></li></ul></li></ul><p><strong><span>Pattern 3 – Corporate/careers headshot</span></strong></p><ul><li><p><strong><span>Folder</span></strong><span>: </span><code>/content/dam/shrss/corporate/careers/en/photography</code></p></li><li><p><strong><span>Tags:</span></strong></p><ul><li><p><code>shrss/brands/hri</code><span> or </span><code>shr</code><span> (as appropriate)</span></p></li><li><p><code>shrss/category/headshots</code></p></li><li><p><code>shrss/category/careers</code><span> (if used)</span></p></li><li><p><span>Optional: </span><code>shrss/products/websites</code><span> (if only used on careers site)</span></p></li></ul></li></ul><p><strong><span>Pattern 4 – News image (press release)</span></strong></p><ul><li><p><strong><span>Folder</span></strong><span>: near corresponding CF, or </span><code>/corporate/photography</code><span>  </span></p></li><li><p><strong><span>Tags:</span></strong></p><ul><li><p><code>shrss/news-categories/press-releases</code><span> or </span><code>hard-rock-news</code></p></li><li><p><code>shrss/lob/&lt;relevant-lob&gt;</code></p></li><li><p><code>shrss/properties/&lt;property&gt;</code><span> if property-specific</span></p></li><li><p><code>shrss/category/awards</code><span> / </span><code>events</code><span> / </span><code>philanthropy</code><span> as appropriate</span></p></li></ul></li></ul><blockquote><p><span>For the session: walk through </span><strong><span>two live assets</span></strong><span> (one cafe, one corporate/careers) and show how tags drive </span><strong><span>search</span></strong><span> and </span><strong><span>re-use</span></strong><span>.</span></p></blockquote><hr /><h3 id='24-tag-governance'><span>2.4 Tag Governance</span></h3><p><strong><span>Current state (from prior analysis)</span></strong></p><ul><li><p><span>No explicit documented governance for:</span></p><ul><li><p><span>Who can create new tags</span></p></li><li><p><span>Who can rename/disable tags</span></p></li><li><p><span>How to handle typos/duplicates without breaking references</span></p></li></ul></li></ul><p><strong><span>Proposed lightweight model</span></strong></p><ul><li><p><strong><span>DAM Architect (primary owner)</span></strong><span>:</span></p><ul><li><p><span>Approves new top-level branches and high-impact tags.</span></p></li><li><p><span>Maintains cleanup backlog (typos, merges, deprecations).</span></p></li></ul></li><li><p><strong><span>Author leads / brand managers</span></strong><span>:</span></p><ul><li><p><span>Request new tags via defined intake (JIRA/ServiceNow/email).</span></p></li><li><p><span>Validate the business meaning and re-use potential.</span></p></li></ul></li><li><p><strong><span>Rules of thumb:</span></strong></p><ul><li><p><span>Prefer </span><strong><span>re-using existing tags</span></strong><span> over creating new ones.</span></p></li><li><p><span>New tags must specify: </span><strong><span>where they’ll be used, who owns them, and if they’re temporary</span></strong><span> (campaign-based).</span></p></li></ul></li></ul><blockquote><p><strong><span>Outcome for this session:</span></strong><span> alignment on </span><strong><span>who owns </span><code>shrss</code><span> taxonomy</span></strong><span> and how authors request changes.</span></p></blockquote><hr /><h2 id='3-metadata-schema-shrssmetadataschema-10--15-min'><span>3. Metadata Schema: </span><code>shrssmetadataschema</code><span> (10–15 min)</span></h2><h3 id='31-current-configuration-from-contentxml'><span>3.1 Current Configuration (from </span><code>.content.xml</code><span>)</span></h3><p><strong><span>Schema path</span></strong></p><ul><li><p><code>JCR path: /conf/global/settings/dam/adminui-extension/metadataschema/shrssmetadataschema</code></p></li></ul><p><strong><span>Asset types covered</span></strong></p><ul><li><p><code>image</code><span> (base node)</span></p></li><li><p><code>image/jpeg</code></p></li><li><p><code>image/tiff</code></p></li><li><p><code>application/pdf</code></p></li><li><p><code>video</code></p></li></ul><p><strong><span>Fields (summary)</span></strong></p><ul><li><p><strong><span>Image (generic image tab)</span></strong></p><ul><li><p><code>Width</code><span> (read-only; </span><code>tiff:ImageWidth</code><span>)</span></p></li><li><p><code>Height</code><span> (read-only; </span><code>tiff:ImageLength</code><span>)</span></p></li></ul></li><li><p><strong><span>JPEG / TIFF</span></strong></p><ul><li><p><code>Location</code><span> (free-text; </span><code>Iptc4xmpExt:LocationShown</code><span>)</span></p></li></ul></li><li><p><strong><span>PDF</span></strong></p><ul><li><p><code>Pdf Title</code><span> (free-text; </span><code>pdf:Title</code><span>)</span></p></li></ul></li><li><p><strong><span>Video</span></strong></p><ul><li><p><code>Size</code><span> (</span><code>./jcr:content/metadata/size</code><span>)</span></p></li><li><p><code>Duration (seconds)</code><span> (</span><code>videoDuration</code><span>)</span></p></li><li><p><code>Total Bit Rate (kbps)</code><span> (</span><code>bitrate</code><span>)</span></p></li><li><p><code>Video Codec</code><span> (</span><code>videoCodec</code><span>)</span></p></li><li><p><code>Video Bit Rate (kbps)</code><span> (</span><code>videoBitrate</code><span>)</span></p></li><li><p><span>(All free-text fields; primarily technical.)</span></p></li></ul></li></ul><blockquote><p><span>There are currently </span><strong><span>no dedicated business fields</span></strong><span> such as </span><code>Usage rights</code><span>, </span><code>Internal/External</code><span>, </span><code>Campaign</code><span>, or </span><code>Content owner</code><span>.</span></p></blockquote><hr /><h3 id='32-how-authors-see-this-in-the-ui'><span>3.2 How Authors See This in the UI</span></h3><ul><li><p><span>When an author opens </span><strong><span>Properties → Metadata</span></strong><span> for:</span></p><ul><li><p><span>An </span><strong><span>image</span></strong><span>, they see a </span><strong><span>Basic</span></strong><span> tab with Width/Height; JPEG/TIFF also show </span><strong><span>Location</span></strong><span>.</span></p></li><li><p><span>A </span><strong><span>PDF</span></strong><span>, they see </span><strong><span>Pdf Title</span></strong><span>.</span></p></li><li><p><span>A </span><strong><span>video</span></strong><span>, they see </span><strong><span>Size, Duration, Bitrate, Codec</span></strong><span> info.</span></p></li></ul></li><li><p><span>Most fields are either </span><strong><span>read-only technical data</span></strong><span> or </span><strong><span>one-off free-text</span></strong><span>.</span></p></li></ul><p><strong><span>Implication</span></strong></p><ul><li><p><span>The </span><strong><span>primary semantic classification</span></strong><span> right now is </span><strong><span>tags</span></strong><span>, not form-based metadata.</span></p></li><li><p><span>Business-critical information such as:</span></p><ul><li><p><span>“Can I use this off-property?”</span></p></li><li><p><span>“Is this asset limited to a specific region or campaign?”</span></p></li></ul><p><span>…is </span><strong><span>not captured in the schema</span></strong><span> yet, and often not reliably in tags either.</span></p></li></ul><hr /><h3 id='33-recommended-metadata-enhancements-for-follow-up-not-in-this-session'><span>3.3 Recommended Metadata Enhancements (for follow-up, not in this session)</span></h3><p><span>For future rounds (requirements/discovery), propose adding:</span></p><ul><li><p><strong><span>Rights &amp; usage</span></strong></p><ul><li><p><code>Usage rights</code><span> (controlled list: internal-only, paid media, organic social, etc.)</span></p></li><li><p><code>Expiration date</code><span> (if legally required)</span></p></li></ul></li><li><p><strong><span>Business context</span></strong></p><ul><li><p><code>Content owner</code><span> (team or role)</span></p></li><li><p><code>Primary brand</code><span> (align with </span><code>shrss/brands</code><span>)</span></p></li><li><p><code>Primary product</code><span> (align with </span><code>shrss/products</code><span>)</span></p></li></ul></li><li><p><strong><span>Search helpers</span></strong></p><ul><li><p><code>Short description</code><span> (for authors, not public)</span></p></li></ul></li></ul><blockquote><p><strong><span>In session:</span></strong><span> identify </span><strong><span>2–3 fields</span></strong><span> that would have the highest ROI if added to the schema and confirm these as </span><strong><span>backlog candidates</span></strong><span>.</span></p></blockquote><hr /><h2 id='4-dam-operations--governance-15-min'><span>4. DAM Operations &amp; Governance (15 min)</span></h2><h3 id='41-uploading-versioning-and-asset-changes'><span>4.1 Uploading, Versioning, and Asset Changes</span></h3><p><strong><span>Current expectations (align in session)</span></strong></p><ul><li><p><strong><span>Where to upload</span></strong></p><ul><li><p><span>Cafe imagery → </span><code>/cafe/&lt;property&gt;/en/photography</code></p></li><li><p><span>Hotel imagery → </span><code>/hotel/&lt;property&gt;/en/photography</code></p></li><li><p><span>Reverb imagery → </span><code>/reverb/&lt;property&gt;/en/photography</code></p></li><li><p><span>Corporate/careers imagery → </span><code>/corporate/careers/en/...</code></p></li><li><p><span>Training/demos → </span><code>/training/...</code><span> only</span></p></li></ul></li><li><p><strong><span>Versioning</span></strong></p><ul><li><p><span>Use </span><strong><span>asset versioning</span></strong><span> when updating images currently used on live pages.</span></p></li><li><p><span>Avoid deleting assets that may still be referenced by Sites pages or Content Fragments.</span></p></li></ul></li><li><p><strong><span>Avoiding broken references</span></strong></p><ul><li><p><span>Do </span><strong><span>not</span></strong><span> move or rename assets that are already referenced, without:</span></p><ul><li><p><span>Running </span><strong><span>Reference Search</span></strong><span> first.</span></p></li><li><p><span>Updating references in Sites or CFs where possible.</span></p></li></ul></li></ul></li></ul><p><strong><span>Discussion questions</span></strong></p><ul><li><p><span>How do authors currently learn if an asset is used on a page?</span></p></li><li><p><span>Has SHRSS experienced broken images after DAM cleanup or moves?</span></p></li></ul><hr /><h3 id='42-search--findability'><span>4.2 Search &amp; Findability</span></h3><ul><li><p><strong><span>Current search experience</span></strong></p><ul><li><p><span>Authors likely search by </span><strong><span>free text</span></strong><span> (filename/title) and maybe by </span><strong><span>tags</span></strong><span>.</span></p></li><li><p><span>Many assets might not be consistently tagged yet.</span></p></li></ul></li><li><p><strong><span>Best practices</span></strong></p><ul><li><p><span>Always apply:</span></p><ul><li><p><span>At least </span><strong><span>one </span><code>lob</code><span> tag</span></strong></p></li><li><p><span>A </span><strong><span>property</span></strong><span> tag (when property-specific)</span></p></li><li><p><span>A </span><strong><span>category</span></strong><span> tag (logo, lifestyle, rooms, etc.)</span></p></li></ul></li><li><p><span>For news/campaign content: use </span><strong><span>news/event category</span></strong><span> tags as well.</span></p></li></ul></li></ul><blockquote><p><span>For the session: demonstrate </span><strong><span>a search scenario</span></strong><span> (e.g., “Find hero images for Reverb Atlanta rooms”) and show how tags + folders work together.</span></p></blockquote><hr /><h3 id='43-roles--responsibilities'><span>4.3 Roles &amp; Responsibilities</span></h3><p><strong><span>Proposed roles</span></strong></p><ul><li><p><strong><span>DAM Architect (primary audience of this session)</span></strong></p><ul><li><p><span>Owns folder conventions.</span></p></li><li><p><span>Owns </span><code>shrss</code><span> taxonomy and metadata schema roadmap.</span></p></li><li><p><span>Approves new top-level tags and schema changes.</span></p></li></ul></li><li><p><strong><span>Brand/Property author leads</span></strong></p><ul><li><p><span>Train their teams on “golden path” folder + tag usage.</span></p></li><li><p><span>Request changes to tags/metadata.</span></p></li></ul></li><li><p><strong><span>Developers / AEM TAs</span></strong></p><ul><li><p><span>Ensure Sites templates and components correctly use tags and metadata.</span></p></li><li><p><span>Support automation where possible (e.g., default tags by folder).</span></p></li></ul></li></ul><hr /><h3 id='44-dynamic-media-brief'><span>4.4 Dynamic Media (brief)</span></h3><p><strong><span>Current state (from original agenda)</span></strong></p><ul><li><p><span>Dynamic Media is:</span></p><ul><li><p><strong><span>Provisioned</span></strong><span>, configured in lower environments.</span></p></li><li><p><strong><span>Not configured</span></strong><span> in production.</span></p></li><li><p><span>Core components on Sites currently </span><strong><span>do not use DM components</span></strong><span>.</span></p></li></ul></li></ul><p><strong><span>Roadmap discussion (5 min)</span></strong></p><ul><li><p><span>Which content types would benefit most from DM?</span></p><ul><li><p><span>Hero images? Carousels? Media-heavy experiences?</span></p></li></ul></li><li><p><span>What would need to change in DAM to adopt DM smoothly?</span></p><ul><li><p><span>Clear separation of hero vs. raw imagery?</span></p></li><li><p><span>Consistent aspect-ratio tagging or naming?</span></p></li></ul></li></ul><blockquote><p><span>Outcome: capture whether DM is in scope for </span><strong><span>next 6–12 months</span></strong><span> and what prerequisites exist in DAM.</span></p></blockquote><hr /><h2 id='5-decisions-backlog-and-next-steps-5--10-min'><span>5. Decisions, Backlog, and Next Steps (5–10 min)</span></h2><p><span>Use the last 10 minutes to capture </span><strong><span>clear actions</span></strong><span>:</span></p><h3 id='51-decisions-to-capture'><span>5.1 Decisions to Capture</span></h3><ul><li><p><strong><span>Folder governance</span></strong></p><ul><li><p><span>Confirm top-level structure: </span><code>cafe</code><span>, </span><code>hotel</code><span>, </span><code>reverb</code><span>, </span><code>corporate</code><span>, </span><code>cf</code><span>, </span><code>training</code><span>.</span></p></li><li><p><span>Rules for new top-level folders (if any).</span></p></li></ul></li><li><p><strong><span>Tagging</span></strong></p><ul><li><p><span>Agree on </span><strong><span>minimum tagging standard</span></strong><span> (e.g., </span><code>lob + property + category</code><span>).</span></p></li><li><p><span>Decide who </span><strong><span>approves new tags</span></strong><span> and how authors request them.</span></p></li></ul></li><li><p><strong><span>Metadata</span></strong></p><ul><li><p><span>Identify </span><strong><span>2–3 high-priority business fields</span></strong><span> to add to the schema.</span></p></li></ul></li><li><p><strong><span>Dynamic Media</span></strong></p><ul><li><p><span>Decide whether to pursue a </span><strong><span>discovery/POC</span></strong><span> in the next iteration.</span></p></li></ul></li></ul><h3 id='52-backlog-candidates-for-jira'><span>5.2 Backlog Candidates (for Jira)</span></h3><ul><li><p><strong><span>Tag cleanup</span></strong></p><ul><li><p><span>Fix identified typos/duplicates/encoded names.</span></p></li><li><p><span>Deprecate or merge redundant branches.</span></p></li></ul></li><li><p><strong><span>Schema enhancement</span></strong></p><ul><li><p><span>Add rights/usage + owner fields; map to clearly named properties.</span></p></li></ul></li><li><p><strong><span>Folder cleanup</span></strong></p><ul><li><p><span>Move any production assets out of </span><code>/training</code><span>.</span></p></li><li><p><span>Normalize any ad-hoc substructures that don’t follow brand/site patterns.</span></p></li></ul></li><li><p><strong><span>Author enablement</span></strong></p><ul><li><p><span>Publish an updated </span><strong><span>Author Tagging and Metadata Quick Guide</span></strong><span>.</span></p></li><li><p><span>Short video/walkthrough of “upload &amp; tag correctly” for each main brand.</span></p></li></ul></li></ul><hr /><p><em><span>End of comprehensive session guide.</span></em></p></div></div>
+</body>
+</html>
