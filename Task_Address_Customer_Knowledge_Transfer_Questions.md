@@ -33,12 +33,18 @@ In fact, it appears that one of the authors has uploaded the transcripts from th
 
 ## Task Resources
 
-### Task Relevant Files
+### SHRSS AEMaaCS Implementation Documentation
 
-| Resource              |                                                              |
-| --------------------- | ------------------------------------------------------------ |
-| Session transcripts   | `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/KT_Session_Transcripts/SHRSS_Adobe_KT_All_Session_Transcripts_Consolidated.md` |
-| Questions spreadsheet | `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/KT_Session_Follow_Up_Questions_RESEARCH_WORKING.xlsx` |
+Complete end-to-end analysis and technical documentation for the current SHRSS implementation.
+
+See all markdown files under`/Users/lambert/Documents/Projects/SHRSS/Implementation_Analysis_Project/Documentation/Implementation-Analysis/final`:
+
+- `00_EXEC_SUMMARY.md`
+- `01_STRUCTURAL_ARCHITECTURE.md`
+- `02_CROSS_LAYER_INTERACTIONS.md`
+- `03_SOLUTION_DESIGN_TRUE_UP.md`
+- `04_IMPLEMENTATION_QUALITY_ASSESSMENT.md`
+- `05_INDEX_AND_NAVIGATION.md`
 
 ### SHRSS AEM Content
 
@@ -116,7 +122,23 @@ You have access to the tools/services defined in these MCP servers, currently en
 
 ## Task Details
 
-I would like for you to analyze the questions in the questions spreadsheet and attempt to accomplish two distinct goals, defined below as subtasks to be completed in order.
+You are a seasoned, expert Adobe Experience Manager (AEM) / AEM as a Cloud Service (AEMaaCS) senior technical architect/developer with a deep understanding of the SHRSS AEMaaCS implementation (based on access and analysis of the resources provided in the *"Task Resources"* section above)
+
+For this task, you will be analyzing and updating the "Research" spreadsheet in the Excel workbook here: ``/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/KT_Session_Follow_Up_Questions_RESEARCH_WORKING.xlsx``
+
+I would like for you to analyze the questions in the spreadsheet and attempt to accomplish **two distinct goals**, defined below as subtasks to be completed in order.
+
+> [!IMPORTANT]
+>
+> **Non-negotiable**
+>
+> Before starting:
+>
+> 1. Review and always adhere to the rules, instructions, and other information in @AGENTS.md (`/Users/lambert/Documents/Projects/SHRSS/Implementation_Analysis_Project/AGENTS.md`)
+> 2. Review the following SHRSS AEMaaCS implementation architectural documents:
+>    - 01_STRUCTURAL_ARCHITECTURE.md
+>    - 02_CROSS_LAYER_INTERACTIONS.md
+> 3. After reviewing the rest of the task as defined below, pause, provide me with a summary of your understanding of the task/subtasks and any questions or required points of clarification. I will review, provide feedback, and give the go ahead and to proceed with task execution.
 
 ### Subtask 1 - Identify AI-Generated Questions
 
@@ -134,7 +156,7 @@ It appears that the author instructed AI to analyze the transcripts and derive q
 
 Do a deep cross analysis of each question with its corresponding session dialog in `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/KT_Session_Transcripts/SHRSS_Adobe_KT_All_Session_Transcripts_Consolidated.md`.  Look for matching phrases, multiple matching words used in a sentence, etc. to identify where snippets were taken from the transcript and fed to AI.
 
-The first column (*"Session"*) in the questions sheet, matches each question to its corresponding KT session. See the table below for transcript session headings and corresponding "Session" column values:
+The first column (*"Session"*) in the questions sheet matches each **question** to its corresponding **KT session**. See the table below for `"Session"` column values and transcript session section headings:
 
 | Session Section Heading in Transcript    | "Session" Column Value        |
 | ---------------------------------------- | ----------------------------- |
@@ -160,10 +182,16 @@ Also include in your consideration (but do not limit to):
 
 ### Subtask 2
 
-Using all of the resources specified above in the "Task Resources" section, attempt to answer the questions, populating the "Answer" column with the answer, and the "Answered  By" column with "Adobe".
+Using all of the resources specified above in the "Task Resources" section, attempt to answer the questions. For those that you can confidently answer, populate the *"Answer"* column with the answer, and the *"Answered By*" column with *"Adobe"*.
 
-Constraints:
+For each question, as applicable:
 
-- Skip "questions" that are actually declarative sentences or paragraphs (ending with period, or no question mark)
+- Analyze the specific page, experience fragment, content fragment or configuration in the relevant content directory (refer back to the *"SHRSS AEM Content"* section above), and related assets as needed in the assets directory/directories.
+- Analyze corresponding code in the Git repo
+- Search Adobe resources via the MCP servers
+- Use the browser tools in the MCP_DOCKER MCP server review page in production (https://www.hardrock.com, https://reverb.hardrock.com) and stage (https://aem.careers.stage.hardrock.com/)
+
+**Constraints:**
+
+- Skip questions that are actually declarative sentences or paragraphs (ending with period, or no question mark)
 - Skip questions begining with the word "Why"
-- Focus on those that are non-implementation specific. Meaning, you will not be able to answer questions about their custom components, but may be able to answer those that are related to OOTB AEMaaCS functionality, core components, or authoring instructions
