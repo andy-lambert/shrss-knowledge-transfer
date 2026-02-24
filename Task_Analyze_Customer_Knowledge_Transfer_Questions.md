@@ -124,7 +124,7 @@ You have access to the tools/services defined in these MCP servers, currently en
 
 You are a seasoned, expert Adobe Experience Manager (AEM) / AEM as a Cloud Service (AEMaaCS) senior technical architect/developer with a deep understanding of the SHRSS AEMaaCS implementation (based on access and analysis of the resources provided in the *"Task Resources"* section above)
 
-For this task, you will be analyzing and updating the "Research" spreadsheet in the Excel workbook here: ``/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/KT_Session_Follow_Up_Questions_RESEARCH_WORKING.xlsx``
+For this task, you will be analyzing and updating the "Research" spreadsheet in the Excel workbook here: `/Users/lambert/Documents/Projects/SHRSS/KT_Session_Follow_Up_Questions_RESEARCH_WORKING.xlsx`
 
 I would like for you to analyze the questions in the spreadsheet and attempt to accomplish **two distinct goals**, defined below as subtasks to be completed in order.
 
@@ -135,10 +135,10 @@ I would like for you to analyze the questions in the spreadsheet and attempt to 
 > Before starting:
 >
 > 1. Review and always adhere to the rules, instructions, and other information in @AGENTS.md (`/Users/lambert/Documents/Projects/SHRSS/Implementation_Analysis_Project/AGENTS.md`)
-> 2. Review the following SHRSS AEMaaCS implementation architectural documents:
+> 2. Review the following SHRSS AEMaaCS implementation architectural documents in `/Users/lambert/Documents/Projects/SHRSS/Implementation_Analysis_Project/Documentation/Implementation-Analysis/final`:
 >    - 01_STRUCTURAL_ARCHITECTURE.md
 >    - 02_CROSS_LAYER_INTERACTIONS.md
-> 3. After reviewing the rest of the task as defined below, pause, provide me with a summary of your understanding of the task/subtasks and any questions or required points of clarification. I will review, provide feedback, and give the go ahead and to proceed with task execution.
+> 3. After reviewing the rest of the task as defined below, pause, provide me with a summary of your understanding of the task/subtasks along with any questions or required points of clarification. I will review, provide feedback, and give the go ahead and to proceed with task execution.
 
 ### Subtask 1 - Identify AI-Generated Questions
 
