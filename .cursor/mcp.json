@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ACS CoPilot AEM Backend": {
+      "url": "http://acs-mcp-all.corp.adobe.com:3333/mcp",
+      "transport": "streamable-http",
+      "headers": {
+        "mitra-api-key": "sk-c7c8365db5c344bcb118306c6b11cfbf"
+      }
+    }
+  }
+}

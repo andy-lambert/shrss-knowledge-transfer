@@ -12161,9 +12161,7 @@ problem.
 
 **Lucas Nelson** stopped transcription
 
-**SHRSS Adobe Knowledge Transfer-20260223_135724-Meeting Recording --
-
-PART 2**
+**SHRSS Adobe Knowledge Transfer-20260223_135724-Meeting Recording -- PART 2**
 
 February 23, 2026, 6:57PM
 
