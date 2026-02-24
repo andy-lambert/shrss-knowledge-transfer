@@ -1,8 +1,8 @@
 ---
 title: SHRSS Adobe Knowledge Transfer — All Session Transcripts (Consolidated)
 source: KT Sessions (Microsoft Teams meeting recordings)
-sessions: Jobs, Events, Careers, Tagging & Taxonomy, DAM, Shared Data, News, Locations
-dates: 2026-02-10 through 2026-02-23
+sessions: Jobs, Events, Careers, Tagging & Taxonomy, DAM, Shared Data, News
+dates: 2026-02-10 through 2026-02-20
 format: Markdown transcript (no images). Optimized for AI ingestion and analysis.
 ---
 
@@ -11222,10 +11222,11 @@ Lyon, Rick (Director of Digital Experience)** 1:16:05 Thanks everyone.
 
 Scott Sorel** stopped transcription
 
+---
+
 ## Session: Locations — 2026-02-23
 
-**SHRSS Adobe Knowledge Transfer-20260223_130200-Meeting Recording --
-PART 1**
+**SHRSS Adobe Knowledge Transfer-20260223_130200-Meeting Recording -- PART 1**
 
 February 23, 2026, 6:02PM
 
@@ -12161,9 +12162,7 @@ problem.
 
 **Lucas Nelson** stopped transcription
 
-**SHRSS Adobe Knowledge Transfer-20260223_135724-Meeting Recording --
-
-PART 2**
+**SHRSS Adobe Knowledge Transfer-20260223_135724-Meeting Recording --PART 2**
 
 February 23, 2026, 6:57PM
 
@@ -12280,4 +12279,382 @@ guys.
 Gonzalo Calasich (SHRSS)** 6:32 Thank you. Bye.
 
 **Lucas Nelson** 10:07 (Part 2) Angelica, are you on this call right now? Yeah, yeah, we we we had to end it. Yeah. Oh, no problem.
+
+---
+
+## Customer Follow Up Questions
+
+| Session                       | Question                                                     | Date Asked | Asked By   | Answer | Answered On | Answered By | Status   |
+| ----------------------------- | ------------------------------------------------------------ | ---------- | ---------- | ------ | ----------- | ----------- | -------- |
+| Jobs                          | Are all job-related components  production-ready, or are any still considered MVP or interim solutions? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Are configuration options  role-based (author vs. admin)?    |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Are default search behaviors  configurable (e.g., location-first, keyword-first)? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Are filters driven dynamically  from Workday data or statically configured? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Based on demo, seems we can use  job components on other sites. is that correct? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Can category ordering and  visibility be controlled by content authors? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Can hot jobs be scheduled like  in sitecore (using promo cards) |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Can I choose which categories  are displayed in category cards? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Can the page template used to  build this site support additional content blocks below or between? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Can we default the Search Page  path to the existing search page so authors don’t have to select it every  time? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Has load testing been done at  scale?                        |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | How are image cropping, scaling,  and focal points controlled to prevent distortion? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | How does search behave with no  results or partial matches?  |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | How does the Job Listing Card  component handle incomplete or missing data? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | How is search relevance and  ranking determined?             |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | How will property/location data  and images be fully mapped and maintained in AEM for Careers? ETR? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Is the layout responsive and  optimized for all breakpoints (desktop, tablet, mobile)? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | What are the user roles created  for this website?           |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | What data is sent to the data  layer on job click?           |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | What happens if a  category/location/property/type has no jobs in filters? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | What image renditions are  generated, and are aspect ratios enforced |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | What is the element ID or  tracking event for job card clicks? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | What is the finalized DAM folder  structure for job-related images? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | When we create a page (any  template) does it inherit header/footer? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | When will image issues be  addressed and resolved?           |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | When will the style  inconsistencies compared to the current site be addressed? |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Who has access to configuration  pages for job components?   |            | @Mayte Eme |        |             |             | deferred |
+| Jobs                          | Are filters interdependent?                                  |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Can Awards be scheduled (go live  on a specific date and automatically expire)? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Can Product configure sorting,  filtering, or query logic for Hiring Events (e.g., upcoming first, region  filter)? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Do hiring events and job fairs  automatically show and drop off based on start/end date/time? Is timezone  respected per property? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Do Hot Jobs automatically drop  off based on end date/time? Is timezone respected per property? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Does filter state persist across  navigation?                |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Does the Job Card support  personalization rules (e.g., geo-targeted jobs)? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | For Job Portal Url, Is this URL  automatically assigned as the default CTA link on job listing cards? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | How are dynamic queries built to  reuse components across pages? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | How are long job titles  truncated — CSS only or server-side logic? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | If “Is API Data” is unchecked  that’s the next sync checks it? Assume not but would like confirmation |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | If DPLT updates a property, does  it automatically update both Brand and Careers? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Is there a custom 404 for  expired jobs?                     |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Is there built-in logic to  maintain equal row heights across dynamic content? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Is there version history for job  overrides?                 |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Need to get a walk us through a  live authoring example of creating a Hiring Event from start to publish and  scheduled drop off. including feeds/queries on other pages/sites. |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | The address from API, where is  that used?                   |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | The Inclusion page uses shared  components—how are those configured? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | To help us provide accurate  feedback, can you please include direct links to each component reviewed  during these sessions so we can easily reference them afterward? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Told tags are internal metadata  to categorize content but can they be used to query content? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | We understand LD JSON is not  used but why is it there and what does it do if used? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | What does a Hiring Event detail  page template look like?    |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | What does type do?                                           |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | What happens if a job detail  page URL exists but job no longer exists in Workday? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | What templates are used for  returning applicants, team members? |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Where are the filters for hot  jobs listing page?            |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Where is Job Zip Code used?                                  |            | @Mayte Eme |        |             |             | Pending  |
+| Jobs                          | Why are logos the same height as  navigation links? Is that intentional from a design system perspective? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | What fields in the card and detail page are managed by status values? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we schedule events to  automatically publish and unpublish based on start and end date/time without  manual intervention? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we ensure events  automatically drop off the Event Calendar after the end date/time without  requiring manual unpublishing? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we configure property-level  timezones so event times always display in the venue’s local timezone instead  of the user’s browser timezone? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we restrict Location Reference selections by user role or property  access to prevent cross-property publishing errors? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure custom tags (ex:  “Dinner & Show,” “21+,” “Free Event”) beyond predefined categories and  use them for filtering/display? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we dynamically query and  display events in other components (carousel, grid, homepage modules) outside  of the Event Calendar component? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we build event listings using  queries (tags/metadata) instead of a single folder path, especially for  cross-LOB “featured events” scenarios? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we exclude specific categories or tags when pulling events into a  listing component? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we control sorting behavior when two events share identical start  dates and times? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we manually reorder featured events within the same month beyond  the default “Featured” checkbox logic? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we temporarily hide an event without fully unpublishing the  Content Fragment? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we customize Event Detail Page layouts per property instead of  using one global template? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we add structured modules to  the Event Detail Page (ex: venue info, parking, FAQs, disclaimers) without  embedding everything in the Description field? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we preview Event Detail pages in author mode without publishing to  Stage or Production? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure ticket prices?                           |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we preview Event Listing page in author mode without publishing to  Stage or Production? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure recurring events (weekly, monthly) without creating  separate Content Fragments for each occurrence? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do I group events?                                       |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we conditionally display different CTAs (Buy Tickets, RSVP, Learn  More) based on event type or status? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we manage event-specific SEO fields (Meta Title, Meta Description,  Open Graph, Schema Event markup)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we display venue name separately from full address instead of  relying solely on the Location Reference field? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we add structured compliance disclaimers (ex: 21+, ID required) as  dedicated fields instead of manual RTE content? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we duplicate or clone events efficiently for repeat use cases? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we report on which Event Content Fragments are live, unpublished,  expired, or scheduled? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we prioritize certain events globally (pinning logic) beyond  chronological sorting? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we integrate event status dynamically with ticketing systems? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure different event card layout variations (horizontal,  vertical, large hero, compact)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure default filters for specific properties (ex: default  to “Concerts” category)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure the filters: venues, categories, date presets and  custom date range, properties? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we query events to be displayed within site in other pages? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we query events from multiple sites or all sites to be displayed  in other site? (i.e. entertainment site) |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure event lifecycle  states (Announcement/Presale/On-Sale/Post-Event/Cancelled/Rescheduled) so the  badge, CTA, and messaging change automatically without manual republish? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we define the timing rules  for each state (announce time, presale window, on-sale time) so transitions  execute at the exact moment and are logged for audit? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we handle multi-date events  (one event with multiple showtimes) so cards/detail pages display correctly  and listings sort predictably? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we support multi-venue events (touring performer) without  duplicating content fragments or losing consistency? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we ensure cross-site event  reuse renders with the consuming site’s format while still showing the  correct timezone label? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we ensure scheduling works for reused content across sites  (schedule once, updates everywhere it is displayed)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we prevent layout breakage  when scheduled items expire (collapse module or show fallback message, keep  row styling patterns intact)? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we standardize the tagging taxonomy so filtering logic works (and  isn’t ad-hoc per site/component)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we support “badge/bubble  text” on event cards (e.g., “21+”, “Free”, “Phone-free”), including cases  where properties intentionally leave it blank today (often using   )—without forcing awkward author workarounds? (aligns to lifecycle + UI  rules) | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we preview “future state” scheduled content (e.g., “what the page  will look like when presale starts”) ? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we guarantee event updates reflect within an acceptable caching  window on Stage/Prod (and what is the target SLA)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we ensure dynamic queries stay performant (e.g., 200ms server-side  target) as events scale across properties? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we prevent expired events from appearing in search results,  filtered grids, and cross-promotional components? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we support soft-deactivation (temporarily hide from UI but retain  data and URL)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we restore an archived or expired event without rebuilding the  Content Fragment? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure dynamic filtering logic that adapts based on  available content (only show filters that apply)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we exclude certain categories from filters while still allowing  them to display in grids? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we prevent filter pollution when incorrect Location References are  selected? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we support conditional display rules for badges?      |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we control display limits (e.g., show only 3 upcoming events)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we control fallback behavior if no events match the query? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure search indexing rules for events?        |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure canonical URLs for event detail pages?   |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do event cards adapt across breakpoints (mobile, tablet, desktop)?  (they looked weird in the demo) |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we prevent layout shift when images are missing or delayed? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we enforce max character limits on titles to protect grid layout? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we implement friendly name display instead of numeric Location  IDs? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we prevent authors from publishing events without required  governance fields? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we validate that required lifecycle dates are logically sequenced? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we implement role-based author permissions per property? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure the number of  event cards per row per breakpoint (desktop, tablet, mobile), and is this  configurable per page template? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do orphaned cards behave in the  final row (e.g., 1–2 cards when layout is set to 3 per row)? Can alignment be  configured (left, centered, stretched)? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | How do we control card height consistency when titles, statuses, or  metadata vary in length? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How does the Smart Event Grid determine priority when multiple events are  marked Featured? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we define maximum events displayed before pagination or load-more  is triggered? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure pagination vs. “Load More” vs. infinite scroll for  event listings? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How does pagination behave when filters are applied — does it reset,  persist, or re-query dynamically? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Are filtered results URL-driven (query parameters) to support sharable  filtered views? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure on-page search scope for events — title only,  description, venue, tags, status? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How does the Events Filter component support multi-select filters (e.g.,  Venue + Category + Date Range)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How are filter states handled in browser history (back button behavior)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we prevent empty filter states (no results) from degrading UX? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How does filtering interact with event lifecycle (Announced, On Sale,  Sold Out)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Is there version history specific to Content Fragments for event  rollback? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we prevent properties from editing enterprise-managed events? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How are Event Detail Pages structured for SEO (schema markup: Event,  Venue, Offer)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Is sitemap updated instantly upon event publish/unpublish?   |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we aggregate events from multiple properties without duplicating  CFs? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Should Events remain a Content  Fragment model, or should they be modeled using Experience Fragments or a  hybrid architecture for cross-site rendering control? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | What is the recommended AEM pattern  for separating “event data” from “event presentation” to avoid template  duplication across properties? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | Does AEM support inheritance or  composition patterns for Content Fragments to allow enterprise-managed fields  and property-managed overrides? | @Mayte Eme |            |        |             | Pending     |          |
+| Events                        | What is Adobe’s recommended modeling approach for multi-venue or touring  events to prevent duplication? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Can filtering logic be centrally managed or does each component require  independent configuration? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Can a single Content Fragment be rendered across multiple site themes  without duplication? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Does AEM automatically generate structured data for Event schema, or must  it be custom implemented? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Are any fields hardcoded in component logic but not exposed in the CF  model |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Which fields are display-only vs logic-driving (e.g., status, badges,  visibility)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Can fields be conditionally required based on event type?    |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Does a new property automatically inherit tag taxonomy?      |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | What breaks if a property is added but event configuration is incomplete? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Are renditions automatically generated per event component use? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | What happens if an asset is deleted or moved?                |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure the default fallback image per site per event type? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Which CF fields map to which component elements (card, detail, calendar)? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Does the card and detail page share the same image source?   |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How do we configure the mobile image?                        |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Where is the master event taxonomy managed?                  |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Are tags property-specific or global?                        |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | How are retired tags handled in existing events?             |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Does template enforce accessibility standards? (noticed a few issues) |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Does URL generation follow naming convention rules?          |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Can URL be edited after creation without breaking references? |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Is there version rollback at page level?                     |            | @Mayte Eme |        |             |             | Pending  |
+| Events                        | Need to demonstrate cross-property/site reuse                |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Are accessibility controls (captions, ARIA labels) supported? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Are all fields translatable, or are some hard-coded?         |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Are field values dynamically inherited or copied per language? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Can alignment rules differ per breakpoint?                   |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Can location-based components fall back to manual text if DPLT record is  missing? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Can multiple templates render the same Promotion Fragment?   |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Can Promotion Content Fragments be  decoupled from Casino-specific fields (e.g., Loyalty, Slot) if reused for  non-casino use cases like Hiring Events? | @Mayte Eme |            |        |             | Pending     |          |
+| Careers                       | Can promotions be syndicated across sites dynamically?       |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Do translations require full manual duplication of every field? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Does Hide remove components server-side or apply client-side CSS only? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Has load testing been performed?                             |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How are autoplay, mute, and looping governed at component level and  browser policy level? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How are Promotion Fragments translated?                      |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How are responsive renditions generated — Dynamic Media, Adaptive Image  Servlet, or static crops? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we allow authors to toggle between carousel and grid layouts at  component level? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we configure an SEO-safe, UX-optimized empty-state behavior when  no results match filters? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we configure compound Query Builder logic (path + tag + metadata)  for precise Promotion retrieval? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we configure fallback thumbnail behavior if video fails to load? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we configure site-specific filter sets while reusing a global  Promotions component? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we eliminate manual breakpoint resizing through template-level  grid policies? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we enable author-controlled filter display order without requiring  code changes? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we enable controlled extensibility of Promotion Detail pages  without breaking structure? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we exclude specific CFs from query results without restructuring  the DAM hierarchy? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we implement mobile-specific image overrides for Promotions? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we implement start/end lifecycle logic for Promotion visibility  beyond page activation? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we implement workflow-driven Promotion states (Active, Expired,  Archived)? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we improve author experience by enabling searchable CF references  instead of manual ID entry? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we leverage metadata-driven queries instead of hard-coded ID  references? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we structure taxonomy governance so new tags automatically surface  in filter UI across sites? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we support layout variation per Promotion while maintaining  template governance? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How do we suppress specific filter values in the UI while retaining  underlying metadata for governance? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How does AEM handle deduplication when querying overlapping CF paths? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How does AEM validate Promotion ID uniqueness at repository level? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How does Promotion status impact Query Builder results and direct ID  rendering? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How is focal point behavior managed across responsive breakpoints? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How is http://Schema.org structured data applied to Promotion Detail  pages for SEO compliance? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How is lazy loading implemented to support Core Web Vitals performance? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How is Promotion ID uniqueness scoped — globally across AEM or per site  root? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | How is responsive video behavior governed across breakpoints? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | If a CF Model is modified (field added/removed), What happens to existing  fragments? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | If cards wrap unevenly across breakpoints, how is visual balance handled? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | if DPLT updates, does that update cascade to all components referencing  it automatically? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Is there a global grid system policy that can enforce consistent column  behavior across components? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Is there a library of icons?                                 |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Is there a Promotion Detail Page  template planned, or are all promotion detail pages expected to be manually  created using the Open Page template? | @Mayte Eme |            |        |             | Pending     |          |
+| Careers                       | Is there version control / rollback for CF Model edits?      |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Should Hiring Events truly be  modeled as Promotions long-term, or should Events CF be enhanced instead?  Seems promotions requires even more manual steps than events CF. | @Mayte Eme |            |        |             | Pending     |          |
+| Careers                       | What architectural difference causes carousel cards to auto-adjust while  standalone cards do not? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What architecture prevents ongoing 1:1 maintenance overhead for Promotion  references? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What formats are accepted for icons?                         |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What global responsive grid policies exist at template level? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What is the architectural limitation of External URL mode versus  structured 3rd Party integration? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What is the architectural reason for  requiring a manually entered Promotion ID, and how do we eliminate manual  dependency? | @Mayte Eme |            |        |             | Pending     |          |
+| Careers                       | What is the caching strategy (Dispatcher/CDN) for Promotion listing  queries? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What is the dependency impact if a referenced Promotion ID is modified? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What is the performance impact of broad path-based CF queries at  enterprise scale? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What is the recommended pattern for recurring Promotion visibility? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What is the scalable pattern for dynamically surfacing Promotions across  grids and carousels without manual ID references? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What is the standardized template architecture for Promotion Detail  Pages? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What is the underlying logic that drives filter values — dynamic  metadata/tag queries or hard-coded dialog configuration? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What lifecycle controls exist beyond basic publish/unpublish? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What performance thresholds should we consider for filter volume in Query  Builder–driven listings? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What provider constraints exist when using External URL configuration? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | What validation or fallback logic protects layout integrity when asset  specs are incorrect? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Where is layout behavior governed — Editable Template Policy or component  dialog? |            | @Mayte Eme |        |             |             | Pending  |
+| Careers                       | Why do standalone card components Icon and video cards) not inherit  responsive grid policies automatically? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | What is the current intended  taxonomy architecture under the SHRSS namespace (Categories, Category, Event  Categories, Properties, Property Names, etc.)? | @Mayte Eme |            |        |             | Pending     |          |
+| Tagging_Taxonomy_Metadata_Gov | What are the functional differences between: Categories, Category, Event  Categories, etc? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Which components or services currently reference each of these tag  branches? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | What is the safest approach to consolidating or renaming tag branches  without breaking? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | What validation steps should be completed before restructuring the  taxonomy? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Which site components rely on ACS Commons Path/Tag mapping?  |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Where are Generic Lists currently configured and what functional  dependencies do they drive? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Are Generic Lists governing allowed tag values in specific components? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | s there documentation mapping each Generic List to its consuming  component? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Why are some Content Fragment Model fields driven by static enumerations  instead of Tag taxonomy? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Should Category fields inside CF Models be refactored to reference  centralized Tags instead of hard-coded options? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | What is the difference in  implementation between CQ:tags field, Category dropdown field, Metadata  schema tag-driven dropdowns? | @Mayte Eme |            |        |             | Pending     |          |
+| Tagging_Taxonomy_Metadata_Gov | Is Category a required field on Content Fragments?           |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | What components currently query Content Fragments by Category tag? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | How does tag selection in a Content Fragment affect dynamic listings  (e.g., News card lists)? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | If taxonomy is consolidated, how will this impact existing Content  Fragments? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Which asset metadata fields are currently tag-driven?        |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Are asset metadata tag fields governed differently than page-level  tagging? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | What is the process to audit tag  usage? What is the recommended process for exporting asset metadata for audit  (without selecting “All Properties”)? | @Mayte Eme |            |        |             | Pending     |          |
+| Tagging_Taxonomy_Metadata_Gov | Is there a recommended naming convention for tag namespaces and branches? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | What happens if a tag in use is deleted?                     |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Does AEM provide dependency warnings before tag deletion?    |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | What functionality in SHRSS implementation is currently not supported in  Universal Editor? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | What is the roadmap for migrating back to Universal Editor (Experience  Cloud editor)? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | Are any tag-related features incompatible with Universal Editor? |            | @Mayte Eme |        |             |             | Pending  |
+| Tagging_Taxonomy_Metadata_Gov | How do we validate that no dynamic components break after tag  consolidation? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | Why were Careers assets renamed incorrectly during migration? Was the  migration tool responsible for the naming changes? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | What metadata fields should be mandatory upon upload?        |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | Should we rely on metadata (not folder location) for identifying asset  languages (EN/ES/FR)? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | Can we adjust how asset filenames  display in the asset picker and in the Sites rail so authors can see more of  the filename (avoid truncation)? | @Mayte Eme |            |        |             | Pending     |          |
+| DAM_Training_Usage_Admin      | How do static renditions get automatically chosen by out‑of‑the‑box  components? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | How can we prevent components from accidentally pulling old or duplicate  assets? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | What are the recommended image rendition sizes for SHRSS components  (cards, banners, hero, gallery, tiles, etc.)? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | When an author uploads a new asset, how do we ensure the correct  rendition is chosen automatically? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | Should static renditions be fully disabled once Dynamic Media is  launched? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | What is the plan for transitioning from static renditions → Dynamic Media  presets? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | When Dynamic Media is implemented, will image presets replace all static  renditions? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | Do we need dedicated language folders in DAM to support future  localization automation? |            | @Mayte Eme |        |             |             | Pending  |
+| DAM_Training_Usage_Admin      | Can metadata alone be used to identify language-specific versions of  assets? |            | @Mayte Eme |        |             |             | Pending  |
+| Shared_Data                   | How do we decouple the footer? mote very page needs the pre footer. |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How can we validate which components are allowed on which templates? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do we enforce component‑level governance so property teams don’t  misuse components? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can we enable/disable components at the template level without making new  templates? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Are there any components that should never be used inside containers? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How can we force authors into structured content (CFs) instead of  free‑form page edits? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Which components support personalization (Target / ContextHub)? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Which components support responsive behavior automatically, and which  require specific authoring steps? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Is there a component audit available showing which components rely on  clientlibs, HTML templates, Sling models, etc.? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Which components support drag‑and‑drop DAM assets natively?  |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Which components support variants / styles, and how do we expose more  styles? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Which CF models support translation and which do not?        |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Do CF references break if CFs are moved into new folders?    |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can CF models be versioned, and how do we migrate existing CFs to a new  version? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | What is the recommended governance for creating new CF models? Who  approves them? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do validation rules in CF models affect existing fragments when rules  change? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do authors locate CFs when the number of fragments becomes very  large? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can CFs support conditional fields or business rules (e.g., show this  field only when…)? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do XF variations handle caching across sites?            |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | When should an XF NOT be used because of performance implications? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can XF inheritance be partial? (e.g., inherit CTA but not image?) |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do we prevent authors from editing a variation that should be locked? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | What is the versioning strategy for XFs used on multiple sites with  different publish cycles? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How does AEM’s site search index XFs, CFs, and DAM assets?   |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can we exclude certain XF variations or CF fields from search indexing? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How are navigation links cached and invalidated globally (important for  corporate → property consistency)? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can we define navigation hierarchies outside the Experience Fragment  (e.g., via CFs)? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do we properly use “policy inheritance” to avoid accidental template  override? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do we create a template that allows flexible component-level  permissions but retains design rules? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can we restrict certain components on certain templates for governance? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can we create a template with two optional headers or footers |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | When authors choose an image from the DAM, can we warn them if the image  is too large (e.g., 12MB)? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can components auto‑select the correct rendition based on container  width? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Does the component detect WebP, AVIF, or DM renditions automatically? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | When Dynamic Media launches, do any current components need refactoring? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do CFs work with AEM translation frameworks?             |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Can XFs be translated automatically, or must they be duplicated per  language? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do we ensure shared CF models work across EN/ES/FR without breaking? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Do localized assets need folder-level locale structure if we rely on  metadata only? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Which components automatically contain http://schema.org markup? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Should we add structured data fields to CF models for SEO?   |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do we ensure canonical URLs work when XF content is shared across  pages? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | To what extent do CF‑ or XF‑driven pages get indexed differently? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How does AEM handle caching and invalidation when CFs are updated but  used on 30+ pages? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | What is the recommended publishing workflow when shared content exists  across multiple sites? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Do we need a “Content Freeze” rule when updating shared XFs or CFs? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | Is there an audit log showing which components are used on which pages  (to avoid accidental side effects)? |            | @Mayte Eme |        |             |             |          |
+| Shared_Data                   | How do we troubleshoot page performance if components load large images  or too many CF references? |            | @Mayte Eme |        |             |             |          |
+| Locations                     | Which fields are sourced from  DPLT, which are managed directly in the CMS? Is it just relation to location  ID? |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | If a location’s status is  changed, how does that impact its visibility or behavior in AEM? |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | When a location is added to  DPLT, does it automatically appear in AEM even if some values are blank? |            | @Mayte Eme |        |             |             | xq       |
+| Locations                     | Is the display or availability  of locations in AEM driven by any specific DPLT status? |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | What are the steps to add  locations to another page in AEM? |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | How can we add locations without  using the accordions?      |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | How do we add decorations with  the map?                     |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | How can we add only the map and  locations, without including accordions? |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | Why are images not displayed for  some locations?            |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | How do we add a location not yet  in the DPLT?               |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | How do we set up criteria in AEM  to display specific locations? For example, based on one or multiple LOBs,  different DPLT criteria (geo, amenities, sub-locations, categories) |            | @Mayte Eme |        |             |             | Pending  |
+| Locations                     | Which DPLT field should be used  to replace the Location ID as the Content Fragment Title (e.g., Legal Name,  Long Name, Short Name)? |            |            |        |             |             | Pending  |
+| Locations                     | What is the correct process for  bulk updating Content Fragment titles using metadata values? |            |            |        |             |             | Pending  |
+| Locations                     | Which fields in the Location  Content Fragment are read-only vs. author-editable? |            |            |        |             |             | Pending  |
+| Locations                     | When a new location is added to  DPLT, does the author need to manually check “Is Delivery”? |            |            |        |             |             | Pending  |
+| Locations                     | What image specifications  (size/dimensions) are required for the Location image field used in hotel  components? |            |            |        |             |             | Pending  |
+| Locations                     | What happens if authors  mistakenly populate hotel-specific editable fields on a cafe location (or  vice versa)? |            |            |        |             |             | Pending  |
+| Locations                     | Is component display logic  restricted by Line of Business (LOB) to prevent incorrect cross-display  (e.g., café appearing in hotel components)? |            |            |        |             |             | Pending  |
+| Locations                     | If authors incorrectly check “Is  Delivery” for a hotel, will it surface in cafe delivery results? |            |            |        |             |             | Pending  |
+| Locations                     | Are any fields in the Location  Content Fragment required for publishing? |            |            |        |             |             | Pending  |
+| Locations                     | Are delivery links automatically  configured to open in a new tab? |            |            |        |             |             | Pending  |
+| Locations                     | Is there any scenario where  delivery links would be internal instead of external? |            |            |        |             |             | Pending  |
+| Locations                     | If delivery partners change, is  updating the URL in the Content Fragment sufficient? |            |            |        |             |             | Pending  |
+| Locations                     | Does adding delivery partners  require republishing the Location fragment only? |            |            |        |             |             | Pending  |
+| Locations                     | If a new field (e.g., Meeting  Room View) is needed, what is the process to update the Content Fragment  Model? |            |            |        |             |             | Pending  |
+| Locations                     | Who has permission to modify  Content Fragment Models?       |            |            |        |             |             | Pending  |
+| Locations                     | After adding a new field to the  model, what additional front-end updates are required for display? |            |            |        |             |             | Pending  |
+| Locations                     | If a new venue data field is  added, does the Sort By dropdown also require component updates? |            |            |        |             |             | Pending  |
+| Locations                     | Are venue fields (Meeting Rooms,  Max Capacity, Area, Guest Rooms) hard-coded in the component? |            |            |        |             |             | Pending  |
+| Locations                     | Are venue fields required for  publishing?                   |            |            |        |             |             | Pending  |
+| Locations                     | Can authors add additional  buttons beyond “Additional Information” and “Fact Sheet”? |            |            |        |             |             | Pending  |
+| Locations                     | Is the “View More” link  automatically tied to the uploaded fact sheet PDF? |            |            |        |             |             | Pending  |
+| Locations                     | Are filter categories (e.g.,  Type of Destination, Type of Vacation) configurable without development? |            |            |        |             |             | Pending  |
+| Locations                     | If a new filter category is  needed, does that require Content Fragment Model changes? |            |            |        |             |             | Pending  |
+| Locations                     | If a new sort option is needed,  does that require both model and component updates? |            |            |        |             |             | Pending  |
+| Locations                     | Are regions (North America,  Europe, etc.) tied to folder structure or another data source? |            |            |        |             |             | Pending  |
+| Locations                     | Can specific countries be  manually excluded from a region list? |            |            |        |             |             | Pending  |
+| Locations                     | Can authors manually control  which countries display under each region? |            |            |        |             |             | Pending  |
+| Locations                     | Is the inability to manually  control country listings considered a functional gap? |            |            |        |             |             | Pending  |
+| Locations                     | Why are some images not  displaying on the Destinations page (missing image vs. unpublished)? |            |            |        |             |             | Pending  |
+| Locations                     | Is there image position/focal  point control available in this component? |            |            |        |             |             | Pending  |
+| Locations                     | Should styling inconsistencies  (accordion width, padding issues) be treated as gaps? |            |            |        |             |             | Pending  |
+| Locations                     | Is there a formal review process  before components are considered “handed off”? |            |            |        |             |             | Pending  |
+| Locations                     | Does the Google Map component  allow manual country selection (unlike Destination Search)? |            |            |        |             |             | Pending  |
+| Locations                     | Should locator behavior (hotels,  cafes, corporate) allow granular country-level control? |            |            |        |             |             | Pending  |
+| Locations                     | Is the Google Map component  functionally different from Destination Search & Filters? |            |            |        |             |             | Pending  |
+| Locations                     | Will map functionality be  reviewed separately in KT?        |            |            |        |             |             | Pending  |
+| Locations                     | Is the Booking Widget configured  via Experience Fragment?   |            |            |        |             |             | Pending  |
+| Locations                     | Is the “Book Now” modal  referenced in the header via the Crown CTA component? |            |            |        |             |             | Pending  |
+| Locations                     | How does the theme override  button styling in Experience Fragments? |            |            |        |             |             | Pending  |
+| Locations                     | What is the difference between  “Default” and “Pop-up” style variations? |            |            |        |             |             | Pending  |
+| Locations                     | Where is the booking URL  configured for each hotel?         |            |            |        |             |             | Pending  |
+| Locations                     | Is booking engine logic  currently limited to specific engines (e.g., SynXis)? |            |            |        |             |             | Pending  |
+| Locations                     | If additional booking engines  are required, does that require component enhancement? |            |            |        |             |             | Pending  |
+| Locations                     | Should visual alignment issues  in the booking widget be logged as a gap? |            |            |        |             |             | Pending  |
+| Locations                     | Where should A/B testing  (Target) be applied — at Experience Fragment level or elsewhere? |            |            |        |             |             | Pending  |
+| Locations                     | Is analytics event firing  handled in the component or at developer/data layer level? |            |            |        |             |             | Pending  |
 
