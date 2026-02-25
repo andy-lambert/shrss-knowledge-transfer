@@ -1,0 +1,372 @@
+row_idx,AI-Generated,Confidence,Reasoning
+2,TRUE,60,Likely AI-generated: multiple technical/AEM terms; formal/AI-style phrasing
+3,FALSE,25,technical term(s)
+4,FALSE,25,technical term(s)
+5,FALSE,45,multiple technical/AEM terms
+6,FALSE,20,"long, formal question"
+7,FALSE,10,No strong AI indicators; plausible author question.
+8,FALSE,10,No strong AI indicators; plausible author question.
+9,FALSE,15,some transcript overlap
+10,FALSE,20,"long, formal question"
+11,FALSE,25,"long, formal question; some transcript overlap"
+12,FALSE,10,No strong AI indicators; plausible author question.
+13,FALSE,25,technical term(s)
+14,FALSE,10,No strong AI indicators; plausible author question.
+15,FALSE,15,some transcript overlap
+16,FALSE,25,technical term(s)
+17,FALSE,20,"long, formal question"
+18,FALSE,45,multiple technical/AEM terms
+19,FALSE,15,some transcript overlap
+20,FALSE,25,technical term(s)
+21,FALSE,10,No strong AI indicators; plausible author question.
+22,FALSE,45,multiple technical/AEM terms
+23,FALSE,25,technical term(s)
+24,FALSE,10,No strong AI indicators; plausible author question.
+25,FALSE,10,No strong AI indicators; plausible author question.
+26,FALSE,10,No strong AI indicators; plausible author question.
+27,FALSE,10,No strong AI indicators; plausible author question.
+28,FALSE,10,No strong AI indicators; plausible author question.
+29,FALSE,10,No strong AI indicators; plausible author question.
+30,FALSE,10,No strong AI indicators; plausible author question.
+31,FALSE,20,"long, formal question"
+32,FALSE,25,"long, formal question; some transcript overlap"
+33,FALSE,25,"long, formal question; some transcript overlap"
+34,FALSE,10,No strong AI indicators; plausible author question.
+35,FALSE,10,No strong AI indicators; plausible author question.
+36,FALSE,25,"long, formal question; some transcript overlap"
+37,FALSE,10,No strong AI indicators; plausible author question.
+38,FALSE,10,No strong AI indicators; plausible author question.
+39,TRUE,50,"Likely AI-generated: multiple technical/AEM terms; long, formal question; some transcript overlap"
+40,FALSE,25,technical term(s)
+41,FALSE,10,No strong AI indicators; plausible author question.
+42,FALSE,10,No strong AI indicators; plausible author question.
+43,FALSE,10,No strong AI indicators; plausible author question.
+44,FALSE,35,"technical term(s); long, formal question"
+45,FALSE,10,No strong AI indicators; plausible author question.
+46,FALSE,10,No strong AI indicators; plausible author question.
+47,FALSE,20,"long, formal question"
+48,FALSE,20,"long, formal question"
+49,TRUE,45,"Likely AI-generated: multiple technical/AEM terms; long, formal question"
+50,FALSE,10,No strong AI indicators; plausible author question.
+51,FALSE,10,No strong AI indicators; plausible author question.
+52,FALSE,35,"technical term(s); long, formal question"
+53,FALSE,10,No strong AI indicators; plausible author question.
+54,FALSE,30,phrases match transcript
+55,FALSE,10,No strong AI indicators; plausible author question.
+56,FALSE,20,"long, formal question"
+57,FALSE,15,some transcript overlap
+58,FALSE,25,"long, formal question; some transcript overlap"
+59,TRUE,55,"Likely AI-generated: formal/AI-style phrasing; long, formal question; phrases match transcript"
+60,FALSE,20,"long, formal question"
+61,FALSE,20,"long, formal question"
+62,FALSE,20,"long, formal question"
+63,FALSE,40,"long, formal question; phrases match transcript"
+64,FALSE,20,"long, formal question"
+65,FALSE,20,"long, formal question"
+66,FALSE,20,"long, formal question"
+67,FALSE,25,"long, formal question; some transcript overlap"
+68,FALSE,30,technical term(s); some transcript overlap
+69,FALSE,25,"long, formal question; some transcript overlap"
+70,FALSE,40,"long, formal question; phrases match transcript"
+71,FALSE,25,"long, formal question; some transcript overlap"
+72,FALSE,10,No strong AI indicators; plausible author question.
+73,FALSE,20,"long, formal question"
+74,FALSE,40,"technical term(s); long, formal question; some transcript overlap"
+75,FALSE,10,No strong AI indicators; plausible author question.
+76,FALSE,20,"long, formal question"
+77,FALSE,20,"long, formal question"
+78,FALSE,25,"long, formal question; some transcript overlap"
+79,FALSE,20,"long, formal question"
+80,FALSE,10,No strong AI indicators; plausible author question.
+81,TRUE,45,"Likely AI-generated: technical term(s); long, formal question; phrases match transcript"
+82,FALSE,10,No strong AI indicators; plausible author question.
+83,FALSE,10,No strong AI indicators; plausible author question.
+84,FALSE,25,technical term(s)
+85,FALSE,10,No strong AI indicators; plausible author question.
+86,FALSE,20,"long, formal question"
+87,FALSE,10,No strong AI indicators; plausible author question.
+88,FALSE,20,"long, formal question"
+89,FALSE,20,"long, formal question"
+90,FALSE,20,"long, formal question"
+91,FALSE,20,"long, formal question"
+92,FALSE,35,"technical term(s); long, formal question"
+93,FALSE,45,"formal/AI-style phrasing; long, formal question"
+94,FALSE,45,"formal/AI-style phrasing; long, formal question"
+95,FALSE,20,"long, formal question"
+96,FALSE,35,"technical term(s); long, formal question"
+97,FALSE,20,"long, formal question"
+98,FALSE,20,"long, formal question"
+99,FALSE,20,"long, formal question"
+100,FALSE,45,"formal/AI-style phrasing; long, formal question"
+101,FALSE,20,"long, formal question"
+102,FALSE,10,No strong AI indicators; plausible author question.
+103,FALSE,30,technical term(s); some transcript overlap
+104,FALSE,20,"long, formal question"
+105,FALSE,20,"long, formal question"
+106,FALSE,10,No strong AI indicators; plausible author question.
+107,FALSE,10,No strong AI indicators; plausible author question.
+108,FALSE,10,No strong AI indicators; plausible author question.
+109,FALSE,10,No strong AI indicators; plausible author question.
+110,FALSE,25,technical term(s)
+111,FALSE,15,some transcript overlap
+112,FALSE,35,"technical term(s); long, formal question"
+113,FALSE,10,No strong AI indicators; plausible author question.
+114,FALSE,10,No strong AI indicators; plausible author question.
+115,FALSE,10,No strong AI indicators; plausible author question.
+116,FALSE,25,technical term(s)
+117,FALSE,35,formal/AI-style phrasing
+118,FALSE,25,technical term(s)
+119,TRUE,45,"Likely AI-generated: multiple technical/AEM terms; long, formal question"
+120,FALSE,20,"long, formal question"
+121,FALSE,20,"long, formal question"
+122,FALSE,10,No strong AI indicators; plausible author question.
+123,FALSE,10,No strong AI indicators; plausible author question.
+124,FALSE,10,No strong AI indicators; plausible author question.
+125,FALSE,20,"long, formal question"
+126,FALSE,10,No strong AI indicators; plausible author question.
+127,FALSE,20,"long, formal question"
+128,FALSE,20,"long, formal question"
+129,FALSE,10,No strong AI indicators; plausible author question.
+130,FALSE,10,No strong AI indicators; plausible author question.
+131,FALSE,10,No strong AI indicators; plausible author question.
+132,FALSE,30,technical term(s); some transcript overlap
+133,FALSE,10,No strong AI indicators; plausible author question.
+134,FALSE,15,some transcript overlap
+135,FALSE,10,No strong AI indicators; plausible author question.
+136,FALSE,10,No strong AI indicators; plausible author question.
+137,TRUE,50,"Likely AI-generated: multiple technical/AEM terms; long, formal question; some transcript overlap"
+138,FALSE,20,"long, formal question"
+139,FALSE,35,"technical term(s); long, formal question"
+140,FALSE,10,No strong AI indicators; plausible author question.
+141,FALSE,10,No strong AI indicators; plausible author question.
+142,FALSE,25,technical term(s)
+143,FALSE,20,"long, formal question"
+144,FALSE,25,technical term(s)
+145,FALSE,10,No strong AI indicators; plausible author question.
+146,FALSE,10,No strong AI indicators; plausible author question.
+147,FALSE,25,technical term(s)
+148,FALSE,10,No strong AI indicators; plausible author question.
+149,FALSE,45,multiple technical/AEM terms
+150,FALSE,10,No strong AI indicators; plausible author question.
+151,FALSE,10,No strong AI indicators; plausible author question.
+152,FALSE,10,No strong AI indicators; plausible author question.
+153,FALSE,15,some transcript overlap
+154,FALSE,10,No strong AI indicators; plausible author question.
+155,FALSE,25,technical term(s)
+156,FALSE,10,No strong AI indicators; plausible author question.
+157,FALSE,10,No strong AI indicators; plausible author question.
+158,FALSE,10,No strong AI indicators; plausible author question.
+159,FALSE,10,No strong AI indicators; plausible author question.
+160,FALSE,10,No strong AI indicators; plausible author question.
+161,FALSE,10,No strong AI indicators; plausible author question.
+162,FALSE,10,No strong AI indicators; plausible author question.
+163,FALSE,25,technical term(s)
+164,FALSE,10,No strong AI indicators; plausible author question.
+165,FALSE,10,No strong AI indicators; plausible author question.
+166,FALSE,25,technical term(s)
+167,FALSE,25,technical term(s)
+168,FALSE,10,No strong AI indicators; plausible author question.
+169,FALSE,40,"technical term(s); long, formal question; some transcript overlap"
+170,FALSE,10,No strong AI indicators; plausible author question.
+171,FALSE,10,No strong AI indicators; plausible author question.
+172,FALSE,10,No strong AI indicators; plausible author question.
+173,FALSE,10,No strong AI indicators; plausible author question.
+174,FALSE,15,some transcript overlap
+175,FALSE,10,No strong AI indicators; plausible author question.
+176,FALSE,45,multiple technical/AEM terms
+177,FALSE,20,"long, formal question"
+178,FALSE,10,No strong AI indicators; plausible author question.
+179,FALSE,35,"technical term(s); long, formal question"
+180,FALSE,10,No strong AI indicators; plausible author question.
+181,FALSE,10,No strong AI indicators; plausible author question.
+182,FALSE,25,technical term(s)
+183,FALSE,10,No strong AI indicators; plausible author question.
+184,FALSE,10,No strong AI indicators; plausible author question.
+185,FALSE,10,No strong AI indicators; plausible author question.
+186,FALSE,10,No strong AI indicators; plausible author question.
+187,FALSE,10,No strong AI indicators; plausible author question.
+188,FALSE,25,technical term(s)
+189,FALSE,20,"long, formal question"
+190,FALSE,10,No strong AI indicators; plausible author question.
+191,TRUE,45,"Likely AI-generated: multiple technical/AEM terms; long, formal question"
+192,FALSE,45,multiple technical/AEM terms
+193,FALSE,35,"technical term(s); long, formal question"
+194,FALSE,10,No strong AI indicators; plausible author question.
+195,FALSE,10,No strong AI indicators; plausible author question.
+196,FALSE,25,technical term(s)
+197,FALSE,45,multiple technical/AEM terms
+198,FALSE,10,No strong AI indicators; plausible author question.
+199,FALSE,10,No strong AI indicators; plausible author question.
+200,FALSE,10,No strong AI indicators; plausible author question.
+201,FALSE,45,multiple technical/AEM terms
+202,FALSE,25,technical term(s)
+203,FALSE,25,technical term(s)
+204,FALSE,25,technical term(s)
+205,FALSE,20,"long, formal question"
+206,FALSE,10,No strong AI indicators; plausible author question.
+207,FALSE,40,"long, formal question; phrases match transcript"
+208,FALSE,25,technical term(s)
+209,FALSE,20,"long, formal question"
+210,FALSE,10,No strong AI indicators; plausible author question.
+211,FALSE,10,No strong AI indicators; plausible author question.
+212,FALSE,10,No strong AI indicators; plausible author question.
+213,FALSE,25,technical term(s)
+214,FALSE,25,technical term(s)
+215,FALSE,35,"technical term(s); long, formal question"
+216,FALSE,25,technical term(s)
+217,FALSE,25,technical term(s)
+218,FALSE,10,No strong AI indicators; plausible author question.
+219,FALSE,10,No strong AI indicators; plausible author question.
+220,FALSE,20,"long, formal question"
+221,FALSE,10,No strong AI indicators; plausible author question.
+222,FALSE,20,"long, formal question"
+223,FALSE,10,No strong AI indicators; plausible author question.
+224,FALSE,25,technical term(s)
+225,FALSE,10,No strong AI indicators; plausible author question.
+226,FALSE,10,No strong AI indicators; plausible author question.
+227,FALSE,25,technical term(s)
+228,FALSE,35,"technical term(s); long, formal question"
+229,TRUE,90,"Likely AI-generated: multiple technical/AEM terms; formal/AI-style phrasing; long, formal question; typical AI-generated taxonomy question"
+230,TRUE,50,Likely AI-generated: formal/AI-style phrasing; some transcript overlap; typical AI-generated taxonomy question
+231,FALSE,10,No strong AI indicators; plausible author question.
+232,TRUE,40,Likely AI-generated: technical term(s); formal/AI-style phrasing
+233,TRUE,40,Likely AI-generated: technical term(s); formal/AI-style phrasing
+234,TRUE,55,Likely AI-generated: multiple technical/AEM terms; phrases match transcript
+235,FALSE,45,technical term(s); phrases match transcript
+236,FALSE,25,technical term(s)
+237,FALSE,25,technical term(s)
+238,TRUE,50,"Likely AI-generated: multiple technical/AEM terms; long, formal question; some transcript overlap"
+239,TRUE,70,"Likely AI-generated: multiple technical/AEM terms; formal/AI-style phrasing; long, formal question"
+240,TRUE,50,"Likely AI-generated: multiple technical/AEM terms; long, formal question; some transcript overlap"
+241,FALSE,25,technical term(s)
+242,FALSE,25,technical term(s)
+243,FALSE,35,"technical term(s); long, formal question"
+244,FALSE,45,multiple technical/AEM terms
+245,FALSE,30,phrases match transcript
+246,FALSE,10,No strong AI indicators; plausible author question.
+247,FALSE,20,"long, formal question"
+248,TRUE,40,Likely AI-generated: technical term(s); formal/AI-style phrasing
+249,FALSE,35,formal/AI-style phrasing
+250,TRUE,40,Likely AI-generated: technical term(s); formal/AI-style phrasing
+251,TRUE,40,Likely AI-generated: technical term(s); formal/AI-style phrasing
+252,TRUE,40,Likely AI-generated: technical term(s); formal/AI-style phrasing
+253,TRUE,40,Likely AI-generated: technical term(s); formal/AI-style phrasing
+254,TRUE,60,Likely AI-generated: multiple technical/AEM terms; formal/AI-style phrasing
+255,FALSE,20,"long, formal question"
+256,FALSE,10,No strong AI indicators; plausible author question.
+257,FALSE,10,No strong AI indicators; plausible author question.
+258,FALSE,25,"long, formal question; some transcript overlap"
+259,FALSE,45,multiple technical/AEM terms
+260,FALSE,10,No strong AI indicators; plausible author question.
+261,FALSE,35,"technical term(s); long, formal question"
+262,TRUE,50,"Likely AI-generated: technical term(s); formal/AI-style phrasing; long, formal question"
+263,FALSE,45,multiple technical/AEM terms
+264,FALSE,45,multiple technical/AEM terms
+265,TRUE,40,Likely AI-generated: multiple technical/AEM terms; some transcript overlap
+266,FALSE,10,No strong AI indicators; plausible author question.
+267,FALSE,10,No strong AI indicators; plausible author question.
+268,FALSE,10,No strong AI indicators; plausible author question.
+269,FALSE,10,No strong AI indicators; plausible author question.
+270,FALSE,25,technical term(s)
+271,FALSE,10,No strong AI indicators; plausible author question.
+272,FALSE,10,No strong AI indicators; plausible author question.
+273,FALSE,10,No strong AI indicators; plausible author question.
+274,FALSE,10,No strong AI indicators; plausible author question.
+275,FALSE,45,multiple technical/AEM terms
+276,TRUE,45,"Likely AI-generated: multiple technical/AEM terms; long, formal question"
+277,FALSE,10,No strong AI indicators; plausible author question.
+278,FALSE,25,technical term(s)
+279,FALSE,25,technical term(s)
+280,FALSE,10,No strong AI indicators; plausible author question.
+281,FALSE,35,"technical term(s); long, formal question"
+282,FALSE,45,multiple technical/AEM terms
+283,FALSE,25,technical term(s)
+284,FALSE,10,No strong AI indicators; plausible author question.
+285,FALSE,10,No strong AI indicators; plausible author question.
+286,FALSE,25,technical term(s)
+287,FALSE,10,No strong AI indicators; plausible author question.
+288,FALSE,10,No strong AI indicators; plausible author question.
+289,FALSE,25,technical term(s)
+290,FALSE,20,"long, formal question"
+291,FALSE,25,technical term(s)
+292,FALSE,45,multiple technical/AEM terms
+293,FALSE,10,No strong AI indicators; plausible author question.
+294,FALSE,30,technical term(s); some transcript overlap
+295,FALSE,10,No strong AI indicators; plausible author question.
+296,FALSE,20,"long, formal question"
+297,FALSE,25,technical term(s)
+298,FALSE,10,No strong AI indicators; plausible author question.
+299,FALSE,20,"long, formal question"
+300,FALSE,25,technical term(s)
+301,FALSE,45,multiple technical/AEM terms
+302,FALSE,25,technical term(s)
+303,FALSE,10,No strong AI indicators; plausible author question.
+304,FALSE,10,No strong AI indicators; plausible author question.
+305,TRUE,40,Likely AI-generated: technical term(s); formal/AI-style phrasing
+306,FALSE,10,No strong AI indicators; plausible author question.
+307,FALSE,10,No strong AI indicators; plausible author question.
+308,FALSE,25,technical term(s)
+309,FALSE,35,formal/AI-style phrasing
+310,FALSE,10,No strong AI indicators; plausible author question.
+311,FALSE,20,"long, formal question"
+312,FALSE,30,technical term(s); some transcript overlap
+313,FALSE,10,No strong AI indicators; plausible author question.
+314,FALSE,20,"long, formal question"
+315,FALSE,20,"long, formal question"
+316,TRUE,50,"Likely AI-generated: technical term(s); formal/AI-style phrasing; long, formal question"
+317,FALSE,20,"long, formal question"
+318,FALSE,35,"technical term(s); long, formal question"
+319,FALSE,35,"technical term(s); long, formal question"
+320,FALSE,10,No strong AI indicators; plausible author question.
+321,FALSE,10,No strong AI indicators; plausible author question.
+322,FALSE,10,No strong AI indicators; plausible author question.
+323,FALSE,10,No strong AI indicators; plausible author question.
+324,FALSE,10,No strong AI indicators; plausible author question.
+325,FALSE,25,technical term(s)
+326,FALSE,35,"technical term(s); long, formal question"
+327,TRUE,50,"Likely AI-generated: multiple technical/AEM terms; long, formal question; some transcript overlap"
+328,FALSE,25,technical term(s)
+329,FALSE,45,technical term(s); phrases match transcript
+330,FALSE,35,"technical term(s); long, formal question"
+331,FALSE,25,"long, formal question; some transcript overlap"
+332,FALSE,20,"long, formal question"
+333,FALSE,20,"long, formal question"
+334,FALSE,20,"long, formal question"
+335,FALSE,45,technical term(s); phrases match transcript
+336,FALSE,10,No strong AI indicators; plausible author question.
+337,FALSE,10,No strong AI indicators; plausible author question.
+338,FALSE,30,technical term(s); some transcript overlap
+339,FALSE,10,No strong AI indicators; plausible author question.
+340,TRUE,65,"Likely AI-generated: multiple technical/AEM terms; long, formal question; phrases match transcript"
+341,TRUE,40,Likely AI-generated: multiple technical/AEM terms; some transcript overlap
+342,FALSE,20,"long, formal question"
+343,FALSE,20,"long, formal question"
+344,FALSE,15,some transcript overlap
+345,FALSE,10,No strong AI indicators; plausible author question.
+346,FALSE,15,some transcript overlap
+347,FALSE,15,some transcript overlap
+348,FALSE,25,technical term(s)
+349,TRUE,40,Likely AI-generated: multiple technical/AEM terms; some transcript overlap
+350,FALSE,20,"long, formal question"
+351,FALSE,10,No strong AI indicators; plausible author question.
+352,FALSE,10,No strong AI indicators; plausible author question.
+353,FALSE,10,No strong AI indicators; plausible author question.
+354,FALSE,10,No strong AI indicators; plausible author question.
+355,FALSE,15,some transcript overlap
+356,FALSE,25,technical term(s)
+357,FALSE,10,No strong AI indicators; plausible author question.
+358,FALSE,15,some transcript overlap
+359,FALSE,30,phrases match transcript
+360,FALSE,10,No strong AI indicators; plausible author question.
+361,FALSE,30,phrases match transcript
+362,FALSE,10,No strong AI indicators; plausible author question.
+363,FALSE,30,technical term(s); some transcript overlap
+364,FALSE,30,phrases match transcript
+365,FALSE,25,technical term(s)
+366,FALSE,25,technical term(s)
+367,FALSE,10,No strong AI indicators; plausible author question.
+368,FALSE,10,No strong AI indicators; plausible author question.
+369,FALSE,10,No strong AI indicators; plausible author question.
+370,FALSE,15,some transcript overlap
+371,FALSE,25,technical term(s)
+372,FALSE,25,technical term(s)
