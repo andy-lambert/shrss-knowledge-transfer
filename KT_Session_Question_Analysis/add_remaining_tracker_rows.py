@@ -6,10 +6,16 @@ import openpyxl
 DIR = Path(__file__).resolve().parent
 WB_PATH = DIR / "SHRSS_Adobe_KT_Session_Follow_Up_Tracker.xlsx"
 
+# Column order in workbook: Status, Date Asked, Answered On, Answered By, Asked By, Question/Comment, Answer, Notes
+# Tuples below are: Question/Comment, Date Asked, Asked By, Answer, Answered On, Answered By, Status, Notes
+NEW_COL_ORDER = (7, 2, 5, 6, 3, 1, 4, 8)  # 1-based indices into tuple
+
+
 def add_rows(ws, rows):
     next_row = ws.max_row + 1
     for row in rows:
-        for col, val in enumerate(row, 1):
+        ordered = tuple(row[i - 1] for i in NEW_COL_ORDER)
+        for col, val in enumerate(ordered, 1):
             ws.cell(row=next_row, column=col, value=val)
         next_row += 1
 

@@ -7,6 +7,9 @@ DIR = Path(__file__).resolve().parent
 WB_PATH = DIR / "SHRSS_Adobe_KT_Session_Follow_Up_Tracker.xlsx"
 SESSION_DATE = "2026-02-11"
 
+# Tuple order: Question/Comment, Date Asked, Asked By, Answer, Answered On, Answered By, Status, Notes
+# Workbook columns: Status, Date Asked, Answered On, Answered By, Asked By, Question/Comment, Answer, Notes
+NEW_COL_ORDER = (7, 2, 5, 6, 3, 1, 4, 8)
 ROWS = [
     ("View as published shows changes fast but publisher takes too long; new job (CF) not showing on publisher. Can we expedite?", SESSION_DATE, "Gonzalo Calasich (SHRSS)", "Need more info (cache, etc.). Daniela will monitor during call. Andy investigating failed publish logs; will raise support ticket.", SESSION_DATE, "Daniela Tea / Andy Lambert", "Pending", "Gonzalo: not showing at all on publisher; likely cache."),
     ("Override for date field (e.g. 'every Wednesday through February') instead of actual date/time?", SESSION_DATE, "Lisa Cardia", "Not in event content fragment. Promotions has date override; can confirm if same behavior wanted for events—gap.", SESSION_DATE, "Daniela Tea", "Deferred", "Same question for location override."),
@@ -43,7 +46,8 @@ def main():
     ws = wb["Events"]
     next_row = ws.max_row + 1
     for row in ROWS:
-        for col, val in enumerate(row, 1):
+        ordered = tuple(row[i - 1] for i in NEW_COL_ORDER)
+        for col, val in enumerate(ordered, 1):
             ws.cell(row=next_row, column=col, value=val)
         next_row += 1
     wb.save(WB_PATH)

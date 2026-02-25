@@ -7,6 +7,9 @@ DIR = Path(__file__).resolve().parent
 WB_PATH = DIR / "SHRSS_Adobe_KT_Session_Follow_Up_Tracker.xlsx"
 SESSION_DATE = "2026-02-12"
 
+# Tuple order: Question/Comment, Date Asked, Asked By, Answer, Answered On, Answered By, Status, Notes
+# Workbook columns: Status, Date Asked, Answered On, Answered By, Asked By, Question/Comment, Answer, Notes
+NEW_COL_ORDER = (7, 2, 5, 6, 3, 1, 4, 8)
 ROWS = [
     ("Manual job content fragment: create, publish, not showing on jobs page. Other CFs show. Workday sync deletes manual jobs (is not API data) in ~30 min.", SESSION_DATE, "Gonzalo Calasich (SHRSS)", "Andy: investigating; support ticket. Get all job IDs not excluding manual; email with recommendation coming; tech sync to drill in.", SESSION_DATE, "Andy Lambert / Daniela Tea", "Pending", "Gonzalo to send example URLs for logs."),
     ("Promotion ID—where from? What do we put? Is it made up? Required for targeting/analytics we had for casino, not unique ID for display.", SESSION_DATE, "Lisa Cardia / Mayte Eme", "Author-entered unique identifier to display one promotion (e.g. content fragment card). No format requirement. Uniqueness validated on save. Same value in another CF blocks save.", SESSION_DATE, "Daniela Tea", "Answered", "Mayte: gap—we don't want this; need to remember/copy; not smart (dropdown of existing IDs)."),
@@ -48,7 +51,8 @@ def main():
     ws = wb["Careers"]
     next_row = ws.max_row + 1
     for row in ROWS:
-        for col, val in enumerate(row, 1):
+        ordered = tuple(row[i - 1] for i in NEW_COL_ORDER)
+        for col, val in enumerate(ordered, 1):
             ws.cell(row=next_row, column=col, value=val)
         next_row += 1
     wb.save(WB_PATH)

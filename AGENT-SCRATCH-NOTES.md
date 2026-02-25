@@ -180,3 +180,87 @@
 - **Resolution:** Session handoff captured; next agent can continue from AGENTS.md, this file, and SHRSS_Knowledge_Transfer_Preparation_Agent_Tasks.md.
 
 ---
+
+## KT Session Participation Task — Historical Context & Future Rounds (2026-02-17)
+
+- **Timestamp (UTC):** 2026-02-17T18:00:00Z
+- **Timestamp (Local):** 2026-02-17T13:00:00-05:00
+- **Category:** Reminder
+- **Context:** User requested documentation of the “Participate in KT sessions as SHRSS stakeholder” task for historical tracking and for future agents executing the same task in subsequent session rounds (additional sessions coming up).
+- **Description:**
+
+  ### Task summary (what was done)
+
+  - **Source:** `Task_Participate_in_KT_Sessions_as_SHRSS_Stakeholder.md` (repo root).
+  - **Persona:** SHRSS Product Director / senior author; blend of Mayte Eme and Lisa Cardia; focus on authoring components, tagging, governance, gap analysis. Must capture every question, answer, and SHRSS comment; add 3–5 “Product Director” persona questions per session.
+  - **For each session:** (1) One **session notes** markdown file in `KT_Session_Question_Analysis/`; (2) Rows added to the corresponding sheet in the Excel follow-up tracker.
+  - **Completed sessions (first round):** Jobs (2026-02-10), Events (2026-02-11), Careers (2026-02-12), Tagging & Taxonomy (2026-02-17), DAM (2026-02-18), Shared Data (2026-02-19), News (2026-02-20), Locations (2026-02-23). All have session notes MD + tracker rows.
+  - **Workbook column order (current):** Reordered per user request to: **Status** | **Date Asked** | **Answered On** | **Answered By** | **Asked By** | **Question/Comment** | **Answer** | **Notes**. Script: `KT_Session_Question_Analysis/reorder_tracker_columns.py`. All add-row scripts use this order when appending (via reorder constant).
+
+  ### Paths and artifacts
+
+  | Item | Path |
+  |------|------|
+  | Transcript (consolidated) | `KT_Session_Transcripts/SHRSS_Adobe_KT_All_Session_Transcripts_Consolidated.md` |
+  | Output directory | `KT_Session_Question_Analysis/` |
+  | Workbook | `KT_Session_Question_Analysis/SHRSS_Adobe_KT_Session_Follow_Up_Tracker.xlsx` |
+  | Session notes naming | `Session_Notes_<Topic>_<YYYY-MM-DD>.md` (e.g. `Session_Notes_Jobs_2026-02-10.md`) |
+  | Column reorder script | `KT_Session_Question_Analysis/reorder_tracker_columns.py` |
+  | Add-row scripts | `add_jobs_tracker_rows.py`, `add_events_tracker_rows.py`, `add_careers_tracker_rows.py`, `add_remaining_tracker_rows.py` (Tagging, DAM, Shared_Data, News, Locations) |
+
+  ### Sheet name ↔ session mapping (extend for new sessions)
+
+  | Session (transcript heading / topic) | Sheet name |
+  |-------------------------------------|------------|
+  | Session: Jobs — 2026-02-10 | Jobs |
+  | Session: Events — 2026-02-11 | Events |
+  | Session: Careers — 2026-02-12 | Careers |
+  | Session: Tagging & Taxonomy — 2026-02-17 | Tagging_Taxonomy_Metadata_Gov |
+  | Session: DAM — 2026-02-18 | DAM_Training_Usage_Admin |
+  | Session: Shared Data — 2026-02-19 | Shared_Data |
+  | Session: News — 2026-02-20 | News |
+  | Session: Locations — 2026-02-23 | Locations |
+  | *(Locations continue / new)* | Locations *(or new sheet if split)* |
+  | *Media* | *TBD — add sheet when transcript available* |
+  | *Navigation and Data Displays* | *TBD* |
+  | *Page Templates* | *TBD* |
+
+  ### Workflow for each new session (steps for future agents)
+
+  1. **Transcript:** Locate the session block in `SHRSS_Adobe_KT_All_Session_Transcripts_Consolidated.md` (session date and title at top of block).
+  2. **Session notes MD:** Create `Session_Notes_<Topic>_<date>.md`. Capture: summary, key points, every Q&A (who asked, who answered, answer text), SHRSS comments, follow-ups. Add 3–5 **Product Director** questions (governance, authoring, tagging, gap analysis, permissions) even if not in transcript.
+  3. **Tracker rows:** Add one row per question/comment. Columns (in order): Status, Date Asked, Answered On, Answered By, Asked By, Question/Comment, Answer, Notes. Use session date for Date Asked / Answered On; “Product Director” for persona questions. Status: **Pending** | **Answered** | **Deferred** (use Deferred when item is explicitly deferred to gap/later phase). Capture answers from **any** participant (SHRSS or Adobe).
+  4. **Excel:** Either (a) add a new sheet to the workbook if it’s a new session type and append rows (openpyxl), or (b) append rows to existing sheet (e.g. Locations continue → Locations). Reuse pattern from `add_remaining_tracker_rows.py`: tuple order in script = (Question/Comment, Date Asked, Asked By, Answer, Answered On, Answered By, Status, Notes); reorder with `NEW_COL_ORDER = (7, 2, 5, 6, 3, 1, 4, 8)` when writing so workbook columns stay Status, Date Asked, Answered On, Answered By, Asked By, Question/Comment, Answer, Notes.
+  5. **Optional:** After first new session in a round, pause for user review of notes + tracker sample before proceeding through remaining new sessions.
+
+  ### Getting the most out of sessions (exercises & analysis)
+
+  - **Pre-session:** Skim implementation analysis (e.g. `Implementation_Analysis_Project/.../final`) and any session-specific prep (e.g. DAM structure, Tagging docs) so Product Director questions are grounded in real gaps and governance needs.
+  - **During “attendance”:** Note timestamps or speaker cues for follow-ups (e.g. “Daniela to get back”) and tag them as Pending; note any “we’ll add to gap list” or “defer to platform expansion” as Deferred.
+  - **Post-session:** Cross-check session notes against tracker rows so no Q is dropped; add Product Director questions that tie to authoring, tagging, governance, or gap prioritization even if not asked live.
+  - **Analysis reports:** If producing summaries (e.g. “Topics for gap analysis,” “Open Pending by session”), derive from the tracker workbook and session notes; keep one source of truth (workbook) for follow-up status.
+
+  ### Recommendations for future agents (subsequent rounds)
+
+  - **Do not** copy/paste prior-session questions from earlier runs; adopt the persona and treat each transcript as live attendance (per task).
+  - **Do** reuse conventions: same column order, same Status values, same session-notes filename pattern, same Product Director question style (governance, authoring, tagging, gap, permissions).
+  - **New sheets:** If a new session type gets its own sheet, add the sheet to the workbook (same 8 columns), then append rows; update this scratch-note table and any mapping in the task doc if the user maintains it.
+  - **Locations continue:** If “Locations (continue from today)” is the same topic, append to the existing **Locations** sheet with the new session date where applicable; no new sheet unless user asks.
+  - **Scripts:** Prefer one add-row script per session (or one script per “batch” of new sessions) and keep the `NEW_COL_ORDER` reorder so new rows match the current workbook layout. Running `reorder_tracker_columns.py` again will not harm existing data (idempotent reorder).
+
+  ### Upcoming sessions (as of 2026-02-17)
+
+  | Session | Notes |
+  |---------|--------|
+  | **Locations** | Continue from today — append to existing Locations sheet/session notes or new MD as appropriate |
+  | **Media** | New; add sheet when transcript/session date available; same workflow |
+  | **Navigation and Data Displays** | New; add sheet when transcript/session date available |
+  | **Page Templates** | New; add sheet when transcript/session date available |
+
+  When transcripts for Media, Navigation and Data Displays, and Page Templates are available: create session notes MD, add or reuse workbook sheet, append tracker rows in the column order above, add Product Director questions, then update this table with sheet names and dates.
+
+- **Note Status:** Resolved
+- **Required Action:** (N/A)
+- **Resolution:** Documented for historical tracking and for future agents executing the task for Locations (continue), Media, Navigation and Data Displays, and Page Templates. Re-read this section and `Task_Participate_in_KT_Sessions_as_SHRSS_Stakeholder.md` at start of each new round.
+
+---

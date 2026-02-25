@@ -7,7 +7,9 @@ DIR = Path(__file__).resolve().parent
 WB_PATH = DIR / "SHRSS_Adobe_KT_Session_Follow_Up_Tracker.xlsx"
 SESSION_DATE = "2026-02-10"
 
-# Rows: Question/Comment, Date Asked, Asked By, Answer, Answered On, Answered By, Status, Notes
+# Tuple order: Question/Comment, Date Asked, Asked By, Answer, Answered On, Answered By, Status, Notes
+# Workbook columns: Status, Date Asked, Answered On, Answered By, Asked By, Question/Comment, Answer, Notes
+NEW_COL_ORDER = (7, 2, 5, 6, 3, 1, 4, 8)
 ROWS = [
     (
         "You have two IDs—job unique ID and job ID. Which one are you using? (Displayed one is wrong.)",
@@ -487,7 +489,8 @@ def main():
     ws = wb["Jobs"]
     next_row = ws.max_row + 1
     for row in ROWS:
-        for col, val in enumerate(row, 1):
+        ordered = tuple(row[i - 1] for i in NEW_COL_ORDER)
+        for col, val in enumerate(ordered, 1):
             ws.cell(row=next_row, column=col, value=val)
         next_row += 1
     wb.save(WB_PATH)
