@@ -61,7 +61,7 @@ There are empty sheets in the workbook for each session. See the table below for
 
 ---
 
-## Subtask 2
+## Subtask 1
 
 We have two more session transcripts to work on: **"Locations, Day 2"** and **"Media"**.
 
