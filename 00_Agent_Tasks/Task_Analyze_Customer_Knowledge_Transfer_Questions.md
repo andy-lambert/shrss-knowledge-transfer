@@ -2,32 +2,11 @@
 
 ## Task Objective
 
-Categorize and, when possible, answer the questions submitted to Adobe by the customer following each of the knowledge transfer (KT) sessions, flagging those that are too ambiguous or require more information/context to be meaningfully, accurately addressed. In addition, flag questions that are likely AI-generated.
+Flag KT session questions that are likely AI-generated.
 
 ## Background for Context (IMPORTANT! Do not skip.)
 
-Adobe Professional Services is providing the SHRSS customer with a set of knowledge transfer (KT) sessions to enable their authors and DAM admin/architect/librarian with the skills and information they need to effectively:
-
-- conduct role-specific day-to-day tasks and operations
-- have a holistic, comprehensive understanding of their implementation in its current state
-- make informed decisions when assessing and prioritizing requirements to provide Adobe to conduct the next wave of development and web property migrations:
-  - Enhancements/fixes based on experiences to date of stakeholders mentioned above
-  - New custom features/components
-  - Adoption of new/additional AEMaaCS capabilities
-  - Integration of additional 3rd party services
-
-To date, KT sessions have been conducted for the following topics:
-
-- Jobs
-- Events
-- Careers
-- Tagging_Taxonomy_Metadata_Gov
-- DAM_Training_Usage_Admin
-- Shared_Data
-- News
-- Locations
-
-After each KT session, Adobe/SHRSS agreed that any related follow up questions from SHRSS would be provided for Adobe to address. We have run into an issue where the customer is posting ~100 questions per session. While some of the questions are highly relevant, valid, contextual inquiries, many are the opposite - not relevant to the session content and are highly vague/ambiguous. 
+To date there have been over 470 questions per session. While some of the questions are highly relevant, valid, contextual inquiries, many are the opposite - not relevant to the session content and are highly vague/ambiguous. 
 
 In fact, it appears that one of the authors has uploaded the transcripts from the sessions to ChatGPT and asked for 100 questions per session to ask Adobe, maybe asking the agent to review and curate questions from the perspective/persona of an AEM technical expert.
 
