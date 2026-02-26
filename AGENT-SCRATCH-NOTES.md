@@ -264,3 +264,33 @@
 - **Resolution:** Documented for historical tracking and for future agents executing the task for Locations (continue), Media, Navigation and Data Displays, and Page Templates. Re-read this section and `Task_Participate_in_KT_Sessions_as_SHRSS_Stakeholder.md` at start of each new round.
 
 ---
+
+## Tasks since last scratch update (2026-02-26)
+
+- **Timestamp (UTC):** 2026-02-26T16:00:00Z
+- **Timestamp (Local):** 2026-02-26T11:00:00-05:00
+- **Category:** Reminder
+- **Context:** User requested scratch notes update before starting “Analyze Customer KT Questions” task; capture work completed since last update (Subtask 1, participant list).
+- **Description:**
+  - **Subtask 1 (Participate in KT sessions — new transcripts):** (1) Created markdown from Word transcripts for **Locations, Day 2** (2026-02-24) and **Media** (2026-02-25), excluding images (`strip_images_from_md.py`). (2) Appended both to `KT_Session_Transcripts/SHRSS_Adobe_KT_All_Session_Transcripts_Consolidated.md` with section headings. (3) Created new workbook sheets **Locations_Day_2** and **Media** in `SHRSS_Adobe_KT_Session_Follow_Up_Tracker.xlsx`; added session notes MD and tracker rows for both. (4) Updated `Task_Participate_in_KT_Sessions_as_SHRSS_Stakeholder.md` session/sheet table. Scripts: `append_to_consolidated.py`, `add_locations_day2_and_media_tracker_rows.py`.
+  - **Column reorder (earlier):** Workbook columns reordered to Status, Date Asked, Answered On, Answered By, Asked By, Question/Comment, Answer, Notes. All add-row scripts use `NEW_COL_ORDER` when appending.
+  - **Participant list:** User requested distinct participants from consolidated transcript. Delivered alphabetical list of 18 distinct participants (Adobe + SHRSS); noted “Speaker 1” (unidentified, DAM session only).
+- **Note Status:** Resolved
+- **Required Action:** (N/A)
+- **Resolution:** Scratch notes updated; next task is Analyze Customer KT Questions (flag likely AI-generated questions in `SHRSS_KT_Session_Questions.xlsx`).
+
+---
+
+## Task: Analyze Customer KT Questions — AI-generated flagging (2026-02-26)
+
+- **Timestamp (UTC):** 2026-02-26T16:30:00Z
+- **Category:** New Task
+- **Context:** Task from `Task_Analyze_Customer_Knowledge_Transfer_Questions_Cursor_20260226.docx`; 543 questions in `SHRSS_KT_Session_Questions.xlsx` sheet `All_SHRSS_KT_Questions` to be analyzed for likely AI-generation.
+- **Description:**
+  - **Done:** Script `analyze_ai_generated_questions.py` loads the consolidated transcript by session, scores each question using task criteria (formal/AI phrasing, technical AEM terms, reworded transcript snippet, length, conversational cues), and writes **AI-Generated** (TRUE/FALSE), **Confidence** (1–100%), and **Reasoning** to the workbook.
+  - **Result:** 542 rows updated. ~232 TRUE (likely AI-generated), ~310 FALSE. Distribution by session varies (e.g. News 4 questions → 1 TRUE; Tagging 36 → 29 TRUE). Reasoning field summarizes which signals applied (e.g. “technical/AEM terms”, “formal/AI phrasing”, “question appears to rephrase a transcript snippet”, “conversational phrasing (human-like)”).
+- **Note Status:** Resolved
+- **Required Action:** (N/A)
+- **Resolution:** Workbook saved. Analysis is heuristic-based; user can tune thresholds/patterns in the script and re-run to refresh.
+
+---
