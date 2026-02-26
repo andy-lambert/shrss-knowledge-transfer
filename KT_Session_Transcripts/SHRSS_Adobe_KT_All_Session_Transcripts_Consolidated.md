@@ -1,7 +1,7 @@
 ---
 title: SHRSS Adobe Knowledge Transfer — All Session Transcripts (Consolidated)
 source: KT Sessions (Microsoft Teams meeting recordings)
-sessions: Jobs, Events, Careers, Tagging & Taxonomy, DAM, Shared Data, News, Locations
+sessions: Jobs, Events, Careers, Tagging & Taxonomy, DAM, Shared Data, News, Locations, Media
 dates: 2026-02-10 through 2026-02-23
 format: Markdown transcript (no images). Optimized for AI ingestion and analysis.
 ---
@@ -10146,8 +10146,6 @@ rest of your day then. Thank you everyone. Goodbye.
 
 Scott Sorel** stopped transcription
 
-
-
 ## Session: News — 2026-02-20
 
 **SHRSS Adobe Knowledge Transfer-20260220_130127-Meeting Recording**
@@ -11227,7 +11225,7 @@ Scott Sorel** stopped transcription
 **SHRSS Adobe Knowledge Transfer-20260223_130200-Meeting Recording --
 PART 1**
 
-February 23, 2026, 6:02PM
+February 23, 2026, 1:00PM
 
 49m 15s
 
