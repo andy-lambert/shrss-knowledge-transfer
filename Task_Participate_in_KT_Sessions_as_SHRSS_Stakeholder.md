@@ -58,6 +58,8 @@ There are empty sheets in the workbook for each session. See the table below for
 | Session: Shared Data — 2026-02-19        | Shared_Data                   |
 | Session: News — 2026-02-20               | News                          |
 | Session: Locations — 2026-02-23          | Locations                     |
+| Session: Locations, Day 2 — 2026-02-24  | Locations_Day_2               |
+| Session: Media — 2026-02-25            | Media                         |
 
 ---
 
