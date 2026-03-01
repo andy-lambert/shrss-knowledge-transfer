@@ -1,0 +1,15108 @@
+---
+title: Knowledge Transfer — All Session Transcripts (Consolidated)
+source: KT Sessions (Microsoft Teams meeting recordings)
+sessions: Jobs, Events, Careers, Tagging & Taxonomy, DAM, Shared Data, News, Locations, Media
+dates: 2026-02-10 through 2026-02-23
+format: Markdown transcript (no images). Optimized for AI ingestion and analysis.
+---
+
+# Knowledge Transfer — Consolidated Transcripts
+
+
+## Session: Jobs — 2026-02-10
+
+**Customer Vendor Knowledge Transfer-20260210_130301-Meeting Recording**
+
+February 10, 2026, 6:03PM
+
+1h 53m 23s
+
+**Burt Jones** started transcription
+
+**Burt Jones** 0:11 All right folks, thanks for joining this afternoon and being patient
+while we've been working out the the logistics to to get these
+knowledge transfer sessions on the calendar and I think we're we're in
+a good enough consensus between vendor and customer leadership that we can
+get these. These started. So given that Daniela T is going to be running this
+session, I think we're putting the early sessions with a focus on
+careers, you know, with the jobs components that we have. Given the careers work stream that's happening in parallel. So with
+that, Daniela, is there anything else you need me to kick off before you
+start?
+
+**Jenny Smith** 0:56 I think Luke, if we just want to remind everyone that for the end of
+these sessions we'll be having essentially like a gap analysis phase,
+if you just want to mention that really quickly.
+
+**Burt Jones** 1:10 Yeah, no, that's a good point. Both individually to Daniella. It's
+worth noting on these calls that we're going to have, we'll get
+through our material that Daniella has, you know. Created and and and reviewing with you guys and we'll have each session
+will have a a little bit of a retrospective Q&A for one. But what
+Danielle is talking about as well is the intention at the end of these
+knowledge transfer sessions. Is that that there there's a oh, I heard some back feed. Sorry. OK,
+cool. At the at the end of these knowledge transfer sessions the the
+last week or so of the seven week schedule. We're going to be supporting you know Seminole Hard Rock you you guys
+with with with filling in the backlog for gaps and noted functionality
+that that you you would have documented from having these this baseline
+knowledge transfer. Work stream that we have so so we we can put together together the you
+know full list or as comprehensive as a list as we can of the of the
+gaps that the platform doesn't currently have implemented.
+
+**Jenny Smith** 2:17 Yeah.
+
+**Greg Scott** 2:21 Yes.
+
+**Burt Jones** 2:35 And so that's the, that's the intention that we want to get to the
+desired outcome from these knowledge transfer sessions. So Danielle,
+thanks for calling that out. And if there's other questions on that,
+Scott, as we're going through these sessions, you and I can work to,
+you know, make sure we address them. OK, Scott.
+
+**Greg Scott** 2:55 Yes, Sir.
+
+**Burt Jones** 2:57 Alrighty, Danielle, anything else before I hand it to you?
+
+**Jenny Smith** 3:01 Yep, I think we're good to go. So let me go ahead and share my screen
+and we can get started. Um, let's confirm.
+
+**Burt Jones** 3:03 Alright, thanks.
+
+**Jenny Smith** 3:09 If you guys can just confirm you guys can see my screen, we should be
+looking at a Conflence page.
+
+**Amy Carter** 3:16 Yes.
+
+**Greg Scott** 3:17 Yep, looks good to me.
+
+**Jenny Smith** 3:18 Perfect. Thank you guys. All right. So thank you everyone. Good
+afternoon. Today what we have planned is to review the job-related
+components specifically because we are aware of the fact that the
+careers website, the intention is to have that to be going live sometime
+next month. I know.
+
+**Greg Scott** 3:19 Yeah.
+
+**Jenny Smith** 3:38 That currently it's in the QA phase with customer team. So today what
+we'll be reviewing are those job components as well as the job content
+fragment, which is the data source for essentially all of these
+components. Earlier this week I had also posted. Some additional agenda items for some future sessions. To be clear, the
+the reason why we I selected these here is because I wanted to make sure
+that we had time to really get into the content fragment driven
+components. So we will have of course additional agendas, additional sessions which
+will cover other items. Want to make sure that you were aware that the
+items I'm trying to prioritize first in these this first week of
+sessions are things related to content fragments. So taking a quick quick look at this Confluence page, the other thing I
+wanted to call out is that what our intention is, is we understand that
+you may have questions about the components or you know, just just some
+some things you might need to verify with us. And what we're asking you to do is if you are able to come up with
+those questions during the session or if we run out of time, we would
+like for you to gather those questions within the specific Confluence
+page for that session. So for example, anything that you may think of
+when it comes to jobs while like say you're eating dinner tonight or
+something if you could. Please just add a comment to this page. What our team will be doing is
+we will be reviewing the questions and our goal is to be able to either
+answer them directly within this Confluence page or if it's something
+that needs to be, say, demonstrated further, then we want it to allocate
+some time. Just going to go to this next. Agenda here allocate some time at the beginning of each future session
+to to review those questions and and make sure that you get those
+updates. So that's what we're just asking for this team here is any
+questions that you may have, please make sure to add it to the specific
+Confluence page. All right. OK, so let's go ahead and get started. I am now going to
+navigate to the stage environment. And we're going to take a look at our jobs content fragment. All right,
+so here I am in stage and I'm going to go to Assets and Files and I'm
+going to go to the customer folder. And then the content fragments folder. Here we can see here there is a
+folder called jobs and what I wanted to point out is that this jobs
+folder will contain all of the jobs that are coming in from Workday. So
+what you see here are essentially a folder structure. That will show, say, like the country US, you'll see like the state, in
+this case Florida, and then you'll see the location or the property
+name. And then from underneath there will be all those related job
+postings for that specific location. So to be clear, all this here that
+you see is actually coming. In from Workday, this is not something that an author has created. So in
+terms of like adding a new job post or something, my understanding is
+that this is supposed to be from Workday and so this you'll see here
+that this will continuously be modified and published as the sync is
+being run from the connection. Between Workday and AEM. So you might notice that some folders do not
+have anything in them, and that's because what might have happened is
+there were previously jobs for this location. However, those jobs may
+have been removed in Workday for whatever reason, so the folder
+structure will still be intact in AEM. However, the job postings content fragments will no longer be available.
+And to be clear, we're on the stage environment and right now we are
+connected to, I believe, the QA API for Workday. So these jobs, of
+course, there's certainly much more jobs available. Once we make the connection to prod, however, right now down in stage
+and as the QA team is doing their testing, you're going to see a a much
+smaller subset of jobs. So this will certainly be much bigger once we go
+to production. Right, so now I'm just going to navigate to a folder and I'm just
+using Tampa because I was looking at this earlier and there's multiple
+jobs. I'm going to open up one of these content fragments, so selecting
+it and then clicking on edit. OK. And let's take a look at each of these different fields. Some of
+these fields again are going to be coming from Work Day and some of
+these are actually going to be something that the author would consider
+updating. So let's walk through each one of these. And then what we'll do is we will map these fields to some of these job
+components to see how the information is actually being displayed to the
+end user. So I'm actually going to zoom in just a little bit so
+everyone can see. All right. So we see here the job ID, job unique ID. These are coming in from
+Workday. Here we have our image field. This is something that is not
+going to come from Workday and it's something that's going to be
+inputted by the author.
+
+**Don Wood** 9:12 OK.
+
+**Jenny Smith** 9:14 There is a way, yes.
+
+**Maia Emerson** 9:14 Question you have two ID's. You have job unique ID and then you have
+job ID. Which one are you using?
+
+**Jenny Smith** 9:24 So right now this is both information coming in from Workday. What's
+being displayed to the end user is going to be the job ID.
+
+**Maia Emerson** 9:31 OK, that's the wrong one.
+
+**Jenny Smith** 9:33 So that I'm aware that there is a ticket, I believe that mentions the
+job ID. This is something that I believe our developers have taken a
+look at. So if that needs to be updated, that is something that will be
+handled with that ticket.
+
+**Maia Emerson** 9:48 OK, and then this image thing you meant that's not mapped to pick up
+automatically the right image like we currently have right now.
+
+**Jenny Smith** 9:57 So right now what I'm showing you is the actual image field within the
+content fragment. Later on in this session, we're going to take a look
+at the image configuration page where you would be able to set up the
+images for all the locations in advance. However, keeping in mind that
+we are aware that in some instances. Images might need to be overwritten by the author and or. We've also
+seen on the live site itself that some some job job postings do not have
+images at all. So this here is a way for the author to be able to
+overwrite whatever is coming from that configuration page and or remove
+an image entirely if that is desired.
+
+**Maia Emerson** 10:38 OK. Thanks.
+
+**Jenny Smith** 10:39 Yep, we'll take a look at that image configuration page shortly. Yep.
+OK, so let's keep going down to the remaining fields that we have in
+our content fragment. So we see here.
+
+**Amy Carter** 10:50 But Daniella, sorry, sorry to interrupt, but regarding the image, how
+you said we have the option to override and I am aware that there's the
+the mapping with the configurations. Does the override replace the image
+we see on the card and the listing or just the card? if we if we choose to override it.
+
+**Jenny Smith** 11:10 If you choose to override it, it should update the image that's used in
+the job listings component, which is the cards I believe you're
+referencing, and then also the job search component which lists the
+results as like longer horizontal cards.
+
+**Amy Carter** 11:26 OK, all right. Something we'll take back then because we typically do
+two different like logo on listings, property shot on let's say
+homepage and the hiring events page. So just want to make or hot jobs
+page I guess because that's what's pulling in.
+
+**Jenny Smith** 11:27 So that's so this is Yep. OK.
+
+**Amy Carter** 11:42 So I'll just note that and we can move forward. Thanks.
+
+**Jenny Smith** 11:42 OK. Okay, sure. All right.
+
+**Maia Emerson** 11:46 And one more thing when because this there's a sync right that I guess
+runs every so often. If there's an update to the job and you've over
+reading something, I assume that doesn't get updated again after the
+sync or we lose the override.
+
+**Jenny Smith** 11:52 Yes. So the only fields that get over that would OK, so just to be clear,
+anything that's coming from workday. So we're going over those workday
+fields, those will get overwritten by workday. However, the field say
+for example image and then another field down here for hot job and the
+LD JSON field we've seen on our content fragments, these. These are not fields that are coming in from Workday. So if you set this
+or if you put an image, nothing from Workday will overwrite that.
+However, if you try to say add additional content here or any of these
+other fields then that will get overwritten by Workday.
+
+**Liz Black** 12:36 Daniella, a quick question. As far as the size for the logo image, I see
+two different sizes. What is the standard size of the logo that should
+be uploaded?
+
+**Jenny Smith** 12:45 Yeah. So that is still information that I think we would need to get
+back to you on. As of right now, we were using, I believe, whatever was
+already in the dam for the Sage website. So we don't have those exact
+measurements at this moment.
+
+**Liz Black** 13:02 OK.
+
+**Jenny Smith** 13:04 It. OK, so let's keep going here. So as mentioned earlier, these other
+fields, job title, job portal, URL, etcetera, all the way up to here are
+going to be coming in from Workday. You'll notice this toggle that says
+is API data. This is signifying that this. Particular content fragment is something that's coming in from Workday,
+and so again, it's going to overwrite this information. When we've
+initially wrote the requirements for jobs content, we were informed that
+there have been some instances where say a job. Not necessarily like a job that would be coming in from Workday or ISIMs
+in your current instance, but you might need to have a job posting
+that's created by an author. If that's the case, you can. You do have
+the ability to do that. This would not be turned on because this is
+not. This is not coming in from any sort of API. However, that was one of the
+use cases that we have previously heard when we were documenting
+requirements. So to be clear, you can create a job as an author.
+However, these are here that we all see currently right now within stage
+are all going to be jobs that are coming in from. Work day.
+
+**Maia Emerson** 14:22 And how would you do that? Do you just?
+
+**Jenny Smith** 14:26 So if you just wanted to create a new job yourself, you can do create
+and then do content fragment and then you could select jobs with the
+title test job CF create.
+
+**Maia Emerson** 14:26 Uh.
+
+**Jenny Smith** 14:41 And then you would just fill out all that information yourself.
+
+**Maia Emerson** 14:46 And is there any feed of the category so it goes with the other ones? So
+you have to know them. Those are not drop downs, right?
+
+**Jenny Smith** 14:54 These are not dropped up, correct. These are not drag downs because
+these were the under. The understanding is that these are supposed to be
+coming in from work day. So if you did need to match something, you
+would need to make sure that you had the exact category like in this
+case casino sales.
+
+**Maia Emerson** 15:10 OK, so you have OK.
+
+**Jenny Smith** 15:12 Mhm. Hang on a second. OK, sorry, something from teams just popped up. All
+right, so let me go back to.
+
+**Maia Emerson** 15:21 Is there? Sorry to ask again, but just checking. Is there a schedule?
+Like if you're adding a job, as soon as you publish, it goes live.
+There's no scheduling, right?
+
+**Jenny Smith** 15:24 Yep. So if you have published, I'm going to click on publish here. You can
+see there's the now functionality and then there's the schedule. So
+when you click on schedule and you can have the activation date. So and
+to be clear though, I might say and because these are all coming in from
+workday, they do get published as they're like.
+
+**Maia Emerson** 15:38 Oh. Um. Oh.
+
+**Jenny Smith** 15:51 Coming into AEM, but I guess are you asking specifically for like a like
+a authored content fragment? OK, yeah, so you do have the ability to to
+schedule content fragments, but in the case of jobs, anything from
+Workday is going to get published without any intervention from the
+author. Like you can see this just got.
+
+**Maia Emerson** 15:53 Mhm.
+
+**Jenny Smith** 16:10 Modified 6 minutes ago is another one and published 6 minutes ago
+because it's coming in from that API.
+
+**Maia Emerson** 16:17 And they drop off based on workday, right? If it's manual, there's no
+drop off. You have to manually delete it.
+
+**Jenny Smith** 16:24 That is correct, yes.
+
+**Burt Jones** 16:26 Gonzalo has his hand up, Daniella.
+
+**Jenny Smith** 16:27 Yeah, go ahead, Gonzalo.
+
+Cal Nelson (customer)** 16:33 Hi, can you guys see me?
+
+**Jenny Smith** 16:34 Yes.
+
+Cal Nelson (customer)** 16:36 Yeah, following on my test question. So so the the way this process
+works is that you wipe out all the job postings every time that you do a
+sync.
+
+**Jenny Smith** 16:51 Sorry, cause I'll what was the sorry, what was the question?
+
+Cal Nelson (customer)** 16:54 Once again, so every time that you do a sync from work day, do you
+delete all the job postings from vendor?
+
+**Jenny Smith** 17:01 Oh, are you talking like, does an author have to manually delete all of
+this? Is that what you're asking?
+
+Cal Nelson (customer)** 17:06 No, what I'm trying to understand, for example, let's say when a job
+is no longer active and should no longer should be showing the website,
+I mean that that needs to happen from work day. So let's say this work,
+this, this job posting is already fulfilled and work day they will do a
+change.
+
+**Jenny Smith** 17:11 Oh. Yes, that. Hmm.
+
+Cal Nelson (customer)** 17:23 And that will not be part of the sync. So that means that next time the
+sync runs, that job will automatically be removed, correct?
+
+**Jenny Smith** 17:32 That is correct, yes. And I'm not sure if you if you were part of the
+discussion earlier, but for example, like this immocally folder is here,
+but there's no jobs underneath. When this was initially set up, there
+were likely going to be there were likely jobs that were here. So just
+to be clear, do we not set up any of these? These are coming. Directly from Workday, so the folder structure will remain intact, but
+the job postings will come and go depending on what is happening in
+Workday.
+
+Cal Nelson (customer)** 18:02 OK. Thank you.
+
+**Jenny Smith** 18:03 I am going to now go back to our content fragment and I want to just
+also highlight one thing that you could see here. What I'm showing here
+right now is the city, the state, the country. And I'm just going to drag it to the right and have the folder
+structure here on the left. So as you can see, the way that this folder
+structure was set up is based off of the information that's being that
+was coming in for this particular job. So we can see here US job location country US you can see FL FL is the
+state and then for the city is Tampa and so Tampa is right here and
+that's why this particular job 6150. Here is located in there. So every single job post that you see here is
+going to be sorted based off of their country, state and then city. So
+that's how this was created. Alright.
+
+**Maia Emerson** 19:06 One more question about this thinking. There's been situations where we
+had to remove a job. It takes a while for ISAMS to do it. I don't know
+about workday, but we had to immediately hide it from the website. Is
+there that? Do we have an option to do that?
+
+**Jenny Smith** 19:22 So. An author could technically delete a job, but to be clear, because of
+the sync and it's going to constantly republish, that's obviously not
+a viable solution. So your question is, would you be able to say say
+this particular job is no longer something that you need to show right
+now? And and you want to make sure it's hidden. At the moment, I don't
+think you would be able to just simply remove it because the sync is
+continuous and the expectation is that all of the changes would be
+coming in through work day versus happening in AM.
+
+**Maia Emerson** 20:00 Right. But there's been situations that it takes a while, especially on
+weekends, right, to remove a job where they won't reply until Monday or
+you can get hold of somebody and we need to remove that posting. So we
+can do that in cycle, but seems an E and we we don't have that yet.
+
+**Jenny Smith** 20:15 Yeah. So Macy, let me check with the development team to see if like for
+example, if we were to say turn off the as API data, is that something
+that could potentially say freeze the sync? So let me check in with our
+development team tomorrow. We can capture this as a question and then in
+our next session I can get back to you on their response.
+
+**Maia Emerson** 20:35 OK, it doesn't happen quite often, so don't like freak out, but it's
+happened enough that we had to do those emergency things that wouldn't.
+
+**Jenny Smith** 20:35 Once. Yeah, understood. Right. And sorry, just out of out of curiosity, curiosity might say who
+who updates the jobs and work like is that your team or is that a
+completely different team?
+
+**Maia Emerson** 20:58 Well, before it.
+
+**Liz Black** 20:59 That would be me, Danielle.
+
+**Jenny Smith** 21:01 But sorry, who was speaking? Sorry, I couldn't see.
+
+**Liz Black** 21:05 Oh, no, that would be me.
+
+**Amy Carter** 21:06 Yeah, so well, so Mona, yeah, yeah, I'd I'd say the content team does
+part of the equation, which is getting a a hiring event and a hot job
+posted on the home page as well as where it feeds into the other two
+pages.
+
+**Jenny Smith** 21:06 OK.
+
+**Maia Emerson** 21:07 Yes, it will be Lisa's team week.
+
+**Jenny Smith** 21:21 Uh.
+
+**Amy Carter** 21:21 But our team doesn't manage any of the actual work today job postings.
+
+**Liz Black** 21:27 Right.
+
+**Jenny Smith** 21:27 OK. OK. So so basically like all this information that's coming in from
+Work Day, that's not your your team's responsibility, Lisa, but making
+sure it's appearing on certain pages like displaying as like a card
+that is your team's responsibility, is that right?
+
+**Amy Carter** 21:28 Right.
+
+**Maia Emerson** 21:42 No, Lisa's team. I mean, yes and no. Yes, of course they're supposed
+to make sure they're they're displayed, but she does. She's not
+responsible for functionality, right? She's just making sure the
+events, the hot jobs are tagged properly, but making sure these plays
+that will be product, right? Which we don't own this yet, so I would
+say IT.
+
+**Amy Carter** 21:42 Correct. Oh, well, yeah.
+
+**Jenny Smith** 21:44 Oh. Uh.
+
+**Maia Emerson** 22:01 Until it's transferred.
+
+**Jenny Smith** 22:06 OK. All right. OK. So we'll get back on that question about the the,
+the not as common edge case, but still something that you guys have seen
+Mayte where you need to remove a job. I'll get back to you guys on on
+that for tomorrow. Now what I want to do is essentially show how this content fragment is
+going to display within our job components. So I am going to switch over
+just to a page that I created. This is within the careers section of the
+site. And So what I'm going to do is I'm going to go through this page, but
+we can also create a brand new page and add these components as well so
+you can see how they look like when you are initially configuring. But
+for this particular purpose, I do want to show how these fields map to
+something that's already configured. OK, so this here is our job search component. We have 1/2, just counting
+how many components we have 3-4. We have four different job components
+which is dependent on this content fragment. So the job listing one as we know is on the I'm sorry, the job search
+component as we know is on the search page. So let's take a look at
+what our content fragment maps to. So here we have the job ID which is
+currently being posted right here. My understanding is it should be
+something different. It seems like it should be the unique ID, but again, this is something
+that was captured within a JIRA ticket so our team can take a look at
+it. But you can see for right now it's pointing to the job ID. We have
+our image field. In this case this one was authored by someone and you
+can see there are instances where you don't have an image and there are
+instances. You do if you do have an image and it will display here to the left. We have our job title, so casino host. I'm gonna actually find casino
+host on here. Here we go. Casino host. The job portal URL is the
+destination link when you click on the on actual. Results the updated date. We take this and we post the duration of time
+since it has been since the job was available. So in this case this is
+about a month ago. We have our job category casino sales also listed
+here. On the results, job type full time. This is not something that's listed
+on the result, but it is something that affects the filters. Job types
+full time. Then we have the address and we showed how the address does
+dictate the. Folder structure that's in the DAM. And then we have here the job properties, Seminole Hard Rock Hotel and
+Casino Tampa. And here's an example of how the job property is
+displayed here within the results. Those fields are also going to affect
+the filters as we saw before job category. It is in this section. Select properties. These are all the ones where
+results are existing. Select locations. This here is a combined field
+based again off of the. In this case this is the country. So in this case this is Canada, but here we you know US the job
+location, state and then also the city. So that this is a concatenation
+of those 3 fields. I'm going to pause here and see if there's any
+questions. On how the content fragment fields map to the job search component.
+
+**Maia Emerson** 25:54 Notice.
+
+**Amy Carter** 25:55 Just me again. Oh, sorry, my turn. If you want to go, it doesn't
+matter. You can go ahead. OK. I was just gonna say to reiterate all of
+the the fields that you just mentioned if we were to override if needed.
+
+**Maia Emerson** 25:58 Yeah. Go, Google.
+
+**Amy Carter** 26:10 They'll get overridden when the sync happens again. Just to be clear,
+it was what 3 fields don't get overridden. I guess the the point is
+like, I don't know if we should touch these if it's gonna resync every
+what, 30 minutes? Like does that?
+
+**Jenny Smith** 26:13 Yes. The fields that.
+
+**Don Wood** 26:21 G.
+
+**Jenny Smith** 26:22 The only so the fields that an author can touch and would not get
+overwritten by sync is this image field and then also the is hot job and
+that's sorry, just realized this is one thing. So these three of course
+have the is hot job toggle set and that would be something that comes
+from an author.
+
+**Amy Carter** 26:43 Yes. So it was just, it was just Image Field and hot job.
+
+**Jenny Smith** 26:49 Yes, that's correct.
+
+**Amy Carter** 26:51 You said three, so I just want to make sure if I.
+
+**Jenny Smith** 26:53 So LD JSON also that's that's not something that's going to be
+displayed here, but just want to be clear, this is something that is
+included. I believe in the other content fragment models again not
+coming in. This field is not going to have any information coming in
+from Work Day. It is something that an author could author if needed, so
+this would not get overrated. Neither.
+
+**Liz Black** 27:16 Daniella, are the select locations under the job search component? Are
+those locations pulling in from AEM?
+
+**Amy Carter** 27:17 Got it. Thank you.
+
+**Don Wood** 27:19 Sh.
+
+**Jenny Smith** 27:22 Yes. You're talking about this portion? Yes, yes. So this here is coming in
+from. It's a combination of the country field, the state field, you can
+see FL and then the city field. Let me find Tampa. Here we go. So.
+
+**Liz Black** 27:29 Yes. And that was pulling in from OK. OK. I was just asking because I didn't see Ottawa on the back end of
+AEM and I was.
+
+**Jenny Smith** 27:46 US I fell in Tampa.
+
+**Liz Black** 27:54 That just brought to my attention because I was thinking if there's a
+new property, is the author responsible for adding that property and
+then that property will pull into this area here under select locations
+as well?
+
+**Jenny Smith** 28:07 So when new properties are created, so let's say in work day, I guess a
+a new property is created and a new job is created for that property.
+That folder structure should be because this because these content
+fragments.
+
+**Liz Black** 28:10 OK.
+
+**Jenny Smith** 28:23 Are being populated from Workday. What's happening is the folder
+structure is set up based off of those fields as well. So an author
+would not have to create this, nor would an author have to update
+anything in this section because this is all coming in from the fields
+that are within the content fragment.
+
+**Liz Black** 28:42 OK. OK. Thank you.
+
+**Jenny Smith** 28:43 Yeah, and I see Don's hand up, I think.
+
+**Don Wood** 28:47 Yeah, so for the image component, you may have already said this, but so
+where exactly is that image coming from? Is it coming from workday? How
+is it authored?
+
+**Jenny Smith** 28:50 Mhm. Oh, so yeah, so this particular image.
+
+**Don Wood** 29:01 It's uh, it's it is in the dam, so.
+
+**Jenny Smith** 29:04 Yeah, this is this is coming in from the dam, so this so I don't want
+to X out of it just because it's in stage. But yeah, if I click on add
+asset I would be able to select any other image from the dam instead.
+
+**Don Wood** 29:08 Sure. Right. So if this asset's already there and we haven't changed it and let's
+say I move the asset, is it going, we're going to lose that reference?
+
+**Jenny Smith** 29:26 The reference should update, but I am going to take that down as well.
+Don, just to confirm and I can report back tomorrow, but it should
+update the reference if this gets moved. If it gets deleted then this
+would break, but if it were to get moved then yeah it's it moved or
+renamed.
+
+**Don Wood** 29:29 OK. Sure. Yeah. Yeah. Right, right. No, definitely, yeah.
+
+**Jenny Smith** 29:45 Then the references should be updated as well.
+
+**Don Wood** 29:47 Should say, OK, I just wanna make sure. I mean, I I knew that was the
+case, but I just wanna make sure that that's where it's coming from
+exactly so.
+
+**Jenny Smith** 29:53 Yeah, absolutely.
+
+**Don Wood** 29:55 Thank you.
+
+**Jenny Smith** 29:56 Sure. Okay.
+
+Chuck Williams (customer)** 29:56 I had a question. My hand raising isn't working for some reason. I keep
+trying to raise my hand and and it won't do it. I had a question about
+the sequence. So I'm assuming the sequence is all by I guess by the
+date value, right? Is that the way that it's arranged? Like so when you
+look at the page you see that there's a sequential order, right? You
+have 13 days ago, a month, month, whatever.
+
+**Jenny Smith** 30:00 Oh, no problem, Charles. Go ahead. Sequence. Yes.
+
+Chuck Williams (customer)** 30:16 Is it? How is that sequence determined? And if you wanted to reorder
+something, how would you do that?
+
+**Jenny Smith** 30:22 So we have there is a filter that's associated with this component.
+Right now I'm viewing this in essentially published mode, but I will
+now go back over to the editor and we can configure this component to
+see what was set. So I'm just going to open this up. You'll see here on the sort filter we have most recent job title and
+location. These values are coming in these. These are not something that
+an author touched. These are something that will already be part of the
+job search configuration. If additional sorting is available in the
+future then that. Is certainly something that could be added by an author by simply
+clicking add, but these were the ones that we were informed about so
+they are added here by default. So in this case here most recent is what
+was the default was selected and so that's why it's being displayed
+like that. However as a user if I want to do job title. It's going to sort everything outside of the hot jobs O location. Oh, OK, so it does. Sorry. When I say it sorts everything outside of the
+hot jobs, what I mean is the hot jobs will should always stay at the
+top. However, these will sort amongst itself. It's separate from from
+the portion underneath. I want to make sure that's clear.
+
+Chuck Williams (customer)** 31:42 OK. And then after that I'm assuming it's by property and then the
+most recent in that property.
+
+**Jenny Smith** 31:48 After that, so you're saying most recent if we were to do sorry, like
+you mean like if we did job title or?
+
+Chuck Williams (customer)** 31:54 Right. Yeah. If you so if you just did job title, is that gonna be like
+in alphabetical order by a job title?
+
+**Jenny Smith** 32:01 Yes. So based off of this, like assistant general assistantship, I'm
+trying to see if there's OK, here we go. So like bartender, same, but
+Hard Rock Cafe Barcelona, Spain has precedence over Edinburgh, United
+Kingdom. Yep.
+
+Chuck Williams (customer)** 32:13 OK. OK. All right. No problem. OK. Thank you.
+
+**Jenny Smith** 32:16 Mhm. Yeah, sure. OK. So I think since we're looking at the job search
+component, let's do that. And what we'll do, just to be clear, when we
+go over the other components, we can also take a look at how they map to
+the content fragment. But since we're talking about job search, let's go ahead and look at
+the configuration for this. And I'm also going to open up another page
+and we're going to create a new page and then just add this on there to
+see what it looks like by default. So give me one moment to be able to
+add that new page. We're just going to create a page using the open page template. And this is knowledge transfer job search. So just putting something random here just to get this to have a link
+page. OK, all right. So now what I'm going to do is I'm going to add a
+couple of spacers on here simply because this particular template you
+would typically use. Say a hero image or so, but I'm not going to put one in here since I'm
+just trying to test some components. So in order to kind of take up that
+space, I'm just simply adding some spacers, so I'm just going to add
+the job search component. Here and we can see I dropped it on the page and this is how it looks.
+And let's see what the configuration was by just dropping it on the
+page. Just putting this over to the right here. OK, so. Our job search component is again pulling in all those jobs that are
+currently in AEM, so author doesn't need to necessarily do anything
+from that through this configuration window. You can see how it appeared
+with me just dropping this on there since there's an. Associated query with this component, but what an author can do is we
+can see here I'm able to edit these specific text fields, for example
+the title. Refine your search. That's what's being displayed here on
+the left for the filters. We have different button labels like clear all which is displayed here,
+the placeholder text search, our category labels, job categories,
+properties, job types and locations. So this is these are the default
+values here. We had that sort label that we had taken taken a look at. So sort by I
+believe is displayed in mobile so we can see that when we look at the
+mobile view. But our sort filters currently have three options by
+default with most recent as the default selected. We have our properties label that is select properties and you'll see
+here singular and plural. So as I'm starting to select things, if I
+select one, I'll say one property selected. If I say if I select
+multiple then that's when it would display this version instead. Job types. Locations. So all these labels are associated with the filters here and
+the apply filters label. There's apply filters button I believe in
+mobile. So again we'll take a look at that and then again more more
+labels for when a job is found. Singular and plural. Here we have results per page. Right now you can
+see it's 50. Since there's 30 jobs, then there's not going to be a
+pagination. However, if I were to say change this to 10 and I hit done,
+I'm going to hit preview and I Scroll down, you can see that pagination
+will begin. Depending on on how many results I want to show. Now keep in mind that
+as of right now the pagination I have put 10 and so it does show 10
+results here. It also will show the hot jobs in addition to those 10
+results. So the 10 results is saying OK 10 on here and then also to show the hot
+jobs. I am going to change this back to 30.
+
+Angela Johnson (customer)** 36:31 Do we display the hard jobs on each of the pages or just on the first
+one?
+
+**Jenny Smith** 36:31 Save this. I believe, sorry, let me change that back. I believe it only shows it on
+the first one, but we're gonna, we're gonna look at that right now. So
+I've set it back to 10 and I hit next. So now it's gonna show 10 on
+each of these additional pages without the hot jobs at the top.
+
+Angela Johnson (customer)** 36:38 OK. Yes.
+
+**Jenny Smith** 36:56 O The first page is going to be 10 plus hot jobs on top. All right, let me now let's take a look at how things will render when
+we look at it in. I think iPhone would be the most appropriate here. So
+we'll see here that we have our refine your search button. Second, yeah. And so when I have refine your search, you'll notice
+things are a little bit a little bit different. However, it's. This is how the user will be able to interact with it. So let's take a
+look at the configuration. So Yep, the title again here it's it's a
+title, but it's also now serving as the link to display the filters. Um, and then all right, one second. OK. See if I were to select things. Yep. So you'll see here this is this is
+what's the this is what's being pulled in from the plural selected or
+singular selected. These are all things that were configured by the
+author. Jobs found, job categories selected. Et cetera. All right. And then here's our apply filters button. Keep in mind I'm
+viewing this in in the emulator. That's why this is so long. Of course
+on the phone, if your review is on actual device, apply filters is not
+going to be, you know, like on this long scroll bar. But this is where
+the apply filters button comes in and one of the things that we. Had seen that an author would, um, be able to configure. So where is it? So here you go, the apply filters label. Hey. All right. Any questions about what we're seeing here with job search?
+
+**Maia Emerson** 38:59 Not the search, but the cards. When I click on an actual card, what's
+that we need to track these clicks, right? So I remember in cycle we
+used to have. I don't know if we did a custom or we just had something
+hard coded, but they had unique IDs, right? Not.
+
+**Jenny Smith** 39:04 Mhm.
+
+**Maia Emerson** 39:17 And friendly so we can track them. So when I click on them, what data I
+send to the Tillium data layer?
+
+**Jenny Smith** 39:24 So in terms of the data alert, that is that is something that we can
+capture as a question for our tech team. The link that's populating
+this as we saw is coming in from. Uh, the content fragments. I really pull that up again.
+
+**Maia Emerson** 39:43 So OK the link I get but the ID of the you know like each course you
+have their own like name or ID something.
+
+**Jenny Smith** 39:45 Yeah. Right. You're you're saying like for example this here should be like
+say like ID one and then another one be like ID2 etcetera, like in
+unique individual for each of these results. That's what you're asking
+for, correct?
+
+**Maia Emerson** 40:00 Yes, mhm.
+
+**Jenny Smith** 40:02 One second, let me uncheck this just so we can see more. So in terms of
+these all having unique IDs as as something from like the author
+standpoint that is not currently set up within the configuration section
+as you can see here. But I will check in with the tech team with regards to what's actually
+being passed, because I do believe these should still have unique ID's
+since they are coming in from unique content fragments, but I will get
+more information. More information on that one and we can follow up on that during
+tomorrow's Q&A portion before we start with the next portion. Does that
+sound good, Maiti? OK, all right. OK. Any. Yeah, go ahead. Sure.
+
+**Maia Emerson** 40:43 OK, Yep.
+
+Angela Johnson (customer)** 40:47 Yeah, I can Daniel, we have one quick question related to the actual
+job. I understand that the job runs every 30 minutes, but is there any
+option to run the job on demand if we need to run for whatever reason in
+between?
+
+**Jenny Smith** 41:01 Any option to run the job on demand? So I actually I actually want to
+check in and I'm not sure. I'll check in with our dev team, but my
+understanding is actually this is running more than 30 minutes. I
+don't. I think it was running as much as like every 5 minutes or so I
+I.
+
+Angela Johnson (customer)** 41:03 Thank you, ma'am. Anything is.
+
+**Jenny Smith** 41:21 I will confirm the numbers on that, but your question is would you be
+able to run it on demand? Since I think it was it was such a short time,
+I'm not sure if we have that particular functionality because you can
+see here like it's been less than 30 minutes and this is already
+updated.
+
+Angela Johnson (customer)** 41:21 Oh, OK.
+
+**Jenny Smith** 41:41 So I I'm not quite clear the exact duration, but I will check in on
+that and then also ask that question about an on demand update for these
+jobs.
+
+Angela Johnson (customer)** 41:48 I wonder how how long will be the period for the in production also 5
+minutes or it will be increased to 30 minutes. I don't know even in
+staging or in a low environment they just did it 5 minutes so that we
+can test.
+
+**Jenny Smith** 41:51 Uh. Mhm. Right. Because there's because there's way less jobs. Yeah, that's
+that's definitely something. I think we would need to check in on it.
+Go ahead, Gonzalo, maybe you have some insights on that.
+
+Angela Johnson (customer)** 42:04 And. And I wonder how long it takes if we have. Currently we have around 800
+jobs in production. How long will it take the whole thing to happen? OK.
+
+**Jenny Smith** 42:24 Gonzalo, did you? Did you have?
+
+Cal Nelson (customer)** 42:27 No, I will wait. I will wait for you guys to answer Angelica first.
+
+**Jenny Smith** 42:28 Oh.
+
+Angela Johnson (customer)** 42:31 No, I think I'm done. I just asked my questions. You can go ahead,
+Gonzalo.
+
+Cal Nelson (customer)** 42:36 What your question would answer, Angelica?
+
+Angela Johnson (customer)** 42:39 No, I think Danielle will check it out.
+
+Cal Nelson (customer)** 42:41 Oh, OK, cool.
+
+**Jenny Smith** 42:41 Yes, that's something I'll need to check in on, Gonzalo.
+
+Cal Nelson (customer)** 42:44 OK, so on the on the search page I noticed when you select something on
+the filter it doesn't really append something on the URL. Is is that
+something that you guys because the the current one we we have every
+time that you select a filter it will append the.
+
+**Jenny Smith** 42:51 Mhm.
+
+Cal Nelson (customer)** 43:04 To the URL. So that that means that if I copy that URL and put it
+someplace else, it's going to do the filter automatically. Is that
+something that is going to happen? And the reason has been because I I
+think you know somewhere on the sites I think they have a hardcoded you
+know categories or property. Locations that will need to be in the filter automatically, so I
+haven't seen the the filters being added on the URL on the on the URL.
+
+**Jenny Smith** 43:31 Right. Yeah, so.
+
+**Maia Emerson** 43:35 Yes, thank you, Gonzalo. We do need deep links and we need them to be
+friendly. Not those weird numbers, letters that we have right now.
+
+**Jenny Smith** 43:44 Yeah. So in terms of what you guys like as we can see like you're
+you're pointing out Gonzalo not appending to the URL and yes, there are
+definitely instances I believe. Let me see, let me take a look. There are instances on the the website where you guys are leaking. Yeah,
+yeah, sorry.
+
+**Maia Emerson** 44:02 So just to give you an example, we have exactly properties will go to
+their specific property or we will go by category or we might go by
+region, right? If it's like depend depending on the use case.
+
+**Jenny Smith** 44:11 OK, yeah. So yeah, let's take a look like, I guess like if we were going to Hard
+Rock Digital, uh, if you all.
+
+**Maia Emerson** 44:22 No, they have their own hiring. We usually don't. Don't LinkedIn,
+yeah.
+
+**Jenny Smith** 44:25 Oh, do they? Oh, 'cause I I think, right? I think you're.
+
+Angela Johnson (customer)** 44:29 My pictures if you go to my cages.
+
+**Maia Emerson** 44:30 They have they they feed into work day, but they have their own thing
+too, so that's not a good use case.
+
+**Jenny Smith** 44:34 I see. OK. Um, what would be a good one then?
+
+**Maia Emerson** 44:39 A property. I mean if you go to a property website, they link to right
+now to the career site and you learn on that specific property like
+Brighton will link to this research results page filtered by Brighton or
+it could be filtered by Brighton and a category or and you know.
+
+**Jenny Smith** 44:53 So I do.
+
+**Maia Emerson** 44:59 I don't know whatever we want to do, we can mix and match any of those
+filters.
+
+**Jenny Smith** 45:04 I see something. Yeah so this is because I know that even without even throughout this
+site there are instances where the URL is going to have like something
+like this with some parameters at the end. In this case here like I I
+copy this from whatever link we were just on in this case here this.
+
+45:11 I.
+
+**Jenny Smith** 45:26 Does not exist with the QA data, so that's why it's not able to show
+something doesn't exist. I know it says 30 jobs found because the
+default behavior is that if it's not going to show anything instead of
+saying 0, it's just going to load the jobs as is.
+
+**Maia Emerson** 45:39 Right.
+
+**Jenny Smith** 45:43 So this is definitely something I, you know, I I I want to talk to the
+tech team on because we were working with such a small subset of data.
+But yeah, definitely want to confirm how the filtering works with
+regards to the URL because as it stands right now, I'm just going to go
+to the search for.
+
+**Maia Emerson** 45:53 Oh.
+
+**Jenny Smith** 46:02 Jobs page, right? As you're clicking on filters, it's not going to
+append that to the URL, but it sounds like that's what you guys need.
+
+**Maia Emerson** 46:07 Well, to be to be honest, we don't want the filters to append to the
+URL, we just want a deep link. So because every time you append to the
+URL, you literally create a new URL. So our analytics now has 1000 URLs
+for the same page.
+
+**Jenny Smith** 46:15 OK. Mhm.
+
+**Maia Emerson** 46:24 Just because of the filter options. So we don't want it to append to
+the URL, we just want to have the ability to deep link so we can add to
+the URL and land on the page filtered. We don't want users to be, you
+know, clicking everywhere and changing the URL.
+
+**Jenny Smith** 46:37 OK, OK. So let me talk to the tech team on that one too, because I know
+that was we were we were testing in in terms of authoring certain pages
+and we saw that the URL on the live site had those filters appended to
+to it. So let me make sure and confirm how that's going to work with the use
+case that you described might say for those other property websites. So
+we're going to take that one back and we'll get back to you guys
+hopefully tomorrow on that one, OK. Now I'm going to, I'm going to just get out of this, this particular
+page so that way I can focus on the editor. Yeah, go ahead.
+
+**Maia Emerson** 47:16 One last question about this, just because you never know right with our
+technology, if for whatever reason the sync goes wrong and it's not
+connecting or whatever, do we have an error message?
+
+**Jenny Smith** 47:29 Do we have an error message if the sync goes wrong? So if the I think if
+the sync goes wrong, if there's existing jobs in there, that would
+still display because that's already in AEM, right? So like it.
+
+**Maia Emerson** 47:40 OK. So if you display the last sync, it doesn't OK and if for whatever
+reason you can't display the data.
+
+**Jenny Smith** 47:45 Yes, that's correct, right.
+
+**Maia Emerson** 47:52 It's just blank.
+
+**Jenny Smith** 47:55 I believe this would just we do have a no jobs found message.
+
+**Maia Emerson** 48:01 OK.
+
+**Jenny Smith** 48:02 So that this display right now you're gonna see this if if I were to
+delete all the content drivers right now it would say no jobs found. But
+if I were to like try and do some weird selection of filters, it would
+say no jobs found. So you're saying if.
+
+**Maia Emerson** 48:08 Mhm.
+
+**Jenny Smith** 48:17 There's an instance where it's not waking.
+
+**Maia Emerson** 48:19 For whatever reason it cannot pick, it cannot read, it cannot display
+anything. Instead of just showing blank in like we should have like you
+know like that message, no jobs found. I mean something better than
+that, but you know like a custom message that we can display.
+
+**Jenny Smith** 48:38 OK, yeah, so I'm trying to think of when there could be an instance
+because like I mentioned, these would all still be here. So as long as
+there's jobs in AEM, something would display in this section. If you if
+there was no jobs in AEM, it would display no jobs found. So this is
+custom, but it sounds like what? What you're saying might say is like say another field if there's like
+an error, not just if there's no jobs found because of weird filters.
+
+**Maia Emerson** 48:59 Mm.
+
+Cal Nelson (customer)** 49:02 Yes.
+
+**Maia Emerson** 49:04 Like, yeah, and I remember when we were testing Isense, we had that we
+we had them break it to see what would happen, right? And we got a blank
+page. So we just adapted to have a an error message in case that ever
+happens.
+
+Cal Nelson (customer)** 49:14 Yes. Any. That.
+
+**Jenny Smith** 49:21 Sorry, someone saying sorry, someone speaking.
+
+Cal Nelson (customer)** 49:25 Anyways.
+
+**Maia Emerson** 49:25 I think that was background.
+
+**Jenny Smith** 49:26 Oh, OK, got it. All right, so yup, heard what you said in terms of
+essentially something separate from no jobs found, more like a specific
+error message for when something can't load instead. That certainly
+sounds like something that we'd want to cover during the gap analysis,
+so.
+
+**Maia Emerson** 49:28 OK.
+
+**Jenny Smith** 49:46 We'll make sure that that's something that we're taking note of. I'm
+going to hit cancel.
+
+**Maia Emerson** 49:51 Yeah. To be fair, I don't know when that would happen. I mean, the odds
+are low, just, you know, having some business continuity in case
+something goes wrong.
+
+**Jenny Smith** 49:58 Yeah, yeah. No, understood. All right. OK. So I think we we talked about
+with regards to the job search component, essentially, you know some of
+the things that you can see the differences in mobile. And in desktop, the configuration and how the fields are mapping. Are
+there any questions with the job search component before we move on to
+our next component?
+
+**Amy Carter** 50:27 Um, just from me, I know we're going uh component by component today,
+but as it relates to like a new page needed for careers, what template
+should we be using? And is that on our? Forgive me if it was on the
+agenda to go over just building a regular page for.
+
+**Jenny Smith** 50:31 Mhm.
+
+**Amy Carter** 50:42 For careers, so we know which template to use.
+
+**Jenny Smith** 50:45 Yeah, so Lisa, for all of these pages you're gonna be using essentially
+the open page template and it's just like how I did here. So it's
+always gonna have like the the header and the footer established and
+then the middle area for the content with whatever components you need
+to add to it.
+
+**Amy Carter** 50:58 OK. But that was always open page.
+
+**Jenny Smith** 51:05 Yes, that's correct. Yes. Yep.
+
+**Amy Carter** 51:06 OK. Thank you.
+
+**Maia Emerson** 51:08 I do have one more question about filters because I know we did that
+wrong and we had to fix it during the Sprint when we did items. When you
+select the filters, do they update each other? Angelica, I don't know
+what word we use if you remember, but if I select like you're doing now
+properties, types and locations get.
+
+**Jenny Smith** 51:25 Uh huh.
+
+**Maia Emerson** 51:27 Ulated so you only see.
+
+**Jenny Smith** 51:29 Yeah, so you can see actually how like I had selected multiple here, but
+then when I selected a property, it kind of removed those filters. I
+don't know, conditional filter. I'm not quite sure what the correct
+term is, but you can see how like when I unchecked properties, the
+categories came back, right? Is that what you're referring to?
+
+**Maia Emerson** 51:42 Uh. Yep. Yeah, I I see it. Thank you. Exactly. Thank you.
+
+**Jenny Smith** 51:49 My day. Okay. Yep. Sure thing. All right. OK, guys, let me Scroll down now and let's take a look at
+our next component. OK, so this is our job listings component and I'm going to pull back
+up. Uh, my. Sorry, my my random job posting here the CF again so we can see how this
+maps to the content fragment. Let me close out of my test one and I'm
+just going to jump back to author. OK, here we go. So this is the job
+listings component. So the job listings component actually can display in two ways. In this
+instance, I'm showing all the jobs, limiting it to a certain number of
+jobs I want to show, but I'm showing everything versus showing just the
+hot jobs. But let's take a look first at this job listings all and just really
+quickly here. We're going to see again this card is comprised of our image that's
+set here or with the image configuration page, which again I will be
+showing. We see the title of the job and then also the property. Listed here and then we have the Apply Now button which is pulling in
+this particular link. OK, so let's take a look at how this is
+configured to be showed the way it is right now. As mentioned, I can select between all jobs and hot jobs. In this
+instance I have shown all jobs for the layout style. I chose 3 columns.
+You have an option of 123 or four. My route path is pointing to a
+specific folder in the dam. In this case I had selected, I went to customer CF jobs US and I selected
+Florida. So that way it will pull in all of these particular folders
+from Florida and display within this component. If I wanted to say
+narrow it down to just Tampa, I could do that and. It would just show the items here, but in this case I chose everything
+from Florida. I can also select my maximum job cards. So say I only want to show like
+3 jobs in Florida. I'm not sure you know there might be a use case that
+you have like you only want to show a certain number. You can do that by
+setting this here. So if I were to change this to say 4, I'm going to
+hit done. You can see it changed. Yeah, go ahead.
+
+**Maia Emerson** 54:29 Does it only does it only go like Florida as a state or does can you can
+select properties because what we our real use case would be South
+Florida Cocoa Classic. Oh OK, you can check.
+
+**Jenny Smith** 54:37 Yeah, so if I were to select Orlando instead and I do this, you can see
+this is only showing things from Orlando, so.
+
+**Maia Emerson** 54:45 And you can do multiple properties, right? I saw checkboxes.
+
+**Jenny Smith** 54:47 So in this case you you would show um one. Uh, you can do multiple
+properties.
+
+**Maia Emerson** 54:54 Because we would do the three, the what is it? They have a name for the
+three in Florida, the three big S or whatever they call it. And it's
+Coco, Classic and Hollywood. We we do job first for those 3.
+
+**Jenny Smith** 55:06 Classic and hot. So you're saying like like in your instance, you would
+probably show these two together. Is that what you're saying, Maiti?
+
+**Maia Emerson** 55:18 Yeah, I see that you can select more than once, I think so.
+
+**Jenny Smith** 55:20 Oh no, no. So you cannot select more than one. Be clear, you can only
+select one time. However, in this instance, like if you, this is not
+going to be the most elegant solution. However, if I want to show those.
+
+**Maia Emerson** 55:23 Oh. You just remove the headings and put them one after the other.
+
+**Jenny Smith** 55:38 Yes, correct. Yeah.
+
+**Maia Emerson** 55:40 Yeah, but then you can't sort them properly.
+
+**Jenny Smith** 55:45 When you say sort, I guess what kind of sorting are you talking about?
+
+**Maia Emerson** 55:47 Yeah. Well, if you want to sort them by, you know, by category or division or
+whatever, you can't, it's property, then the division. OK, so we'll just know this is another gap.
+
+**Jenny Smith** 56:02 Select.
+
+**Amy Carter** 56:03 I think I do have a question on this too though. What are the steps that
+you chose? So you can also choose the columns, but you said you can
+choose like the Max cards. Is there any way? And this this occurs quite
+a bit on like very similar components outside of careers.
+
+**Jenny Smith** 56:05 Sure. Mhm. Uh.
+
+**Amy Carter** 56:19 If we had less, like we always have three being the typical 11 row, but
+if there is less than three, there's no way to like center the two
+cards or center that one card so that like so they're not always left
+aligned I guess is my question.
+
+**Jenny Smith** 56:26 Mhm. And. I see what you're saying. Um.
+
+**Amy Carter** 56:37 So like that fourth card that you just had when you did 4 listings was
+like all the way to the left, but the rest were center. So it's.
+
+**Jenny Smith** 56:40 Yeah. So.
+
+**Amy Carter** 56:45 Is there a way to keep it that way?
+
+**Jenny Smith** 56:45 Yeah, so let's see. So not currently. So in this case here I I
+understand what you're asking. You would want these to be centered, but
+let me confirm something though. You would want this to be centered
+without changing the width of the cards, is that correct?
+
+**Amy Carter** 56:54 Yeah. I'll have I'll defer to the UX team to to comment on the width of the
+cards. I would think we'd want them to to not get larger because then
+that might distort what they look like, but at least centered.
+
+**Jenny Smith** 57:15 Yeah, so that. So that's currently not there, but I was asking because
+that would certainly be something that we would discuss during the gap
+portion, but something like understanding if this number were to change,
+like for example if this was one, oops.
+
+**Amy Carter** 57:30 Yeah, 'cause it's one, it's one in the section below. So that's why
+I was like saying it looks a little bit odd when or when you just had
+you just had Coconut Creek or something selected at this point and it
+was showing just one. Yeah, so so one by itself especially looking.
+
+**Jenny Smith** 57:31 This is 1. Uh huh. Oh, when I had two, two together too. Yeah. Mm-hmm.
+
+**Amy Carter** 57:48 You know.
+
+**Jenny Smith** 57:49 Yeah, no, understand what you're saying. And yes, so this sounds like a
+gap. However, when we discuss the gap, that would be something, you
+know, like we would need to understand if there's less numbers, what
+happens to the card? Does it stay the same width? Would it increase? It
+would be centered and it would increase, you know, like if I were to put
+two here is the. Expectation that this would take up 100% of this width right here or
+that this would just simply be centered. So those are the kinds of
+things that we would need to to discuss during the gap portion. But
+certainly understanding though that is that the desire is that at least
+at the bare minimum the alignment is something that is missing from this
+component.
+
+**Amy Carter** 58:16 Right. Yeah, I guess the reason why I bring it up, especially not just to be
+like nitpicky, but because of the hot jobs in the hiring events that we
+saw on the home page, those ones centered, the hot jobs actually got
+bigger, but it stayed center aligned. You know, they're all working
+differently. So it's like although we're we're having a set of.
+
+**Jenny Smith** 58:37 Hey. Yeah.
+
+**Amy Carter** 58:46 Grid cards, they all display different, so it just doesn't look very
+like neat and consistent. That's my concern.
+
+**Jenny Smith** 58:54 OK. OK. Yeah, these are all definitely, these are definitely the topics
+that we want to talk about when we go over the gaps for the job listings
+though. So in this case here I had chosen Orlando, I had chosen
+previously I had chosen Florida.
+
+**Amy Carter** 59:00 Yeah.
+
+**Jenny Smith** 59:11 Simply because I knew I had more cards. Just do this. So yeah, so you
+can see here it's going to list out everything within my columns of
+three because that's what I selected. The button label apply now
+that's just, you know, dictates what's being displayed here, but
+again, as mentioned before.
+
+**Amy Carter** 59:22 Yeah.
+
+**Jenny Smith** 59:31 The URL, the destination URL for this is coming from the individual
+content fragment. So this is going to link to that specific page for
+Hostess is going to the general manager, etcetera, etcetera. And here
+you can see a job's default image. So if say you did not put any image within the content fragment here,
+you're able to set something so that way when it's displayed as cards
+here, it will at very bare minimum have this this image that's listed
+in the card. So if I were to of course clear this, it done. And you can see it's not going to show anything, so I'm able to to set
+whatever default image I want for this particular component. That apostiary, yeah.
+
+**Amy Carter** 1:00:18 And that doesn't work. That doesn't work the same for the listings we
+saw with the search, because like the ones that appeared with nothing
+didn't have.
+
+**Jenny Smith** 1:00:26 Right, so this the search and that's where we're going to take a look
+at the configuration page, but there is no default image set up within
+the job search at this time. Let me open this. Let's confirm. So we talked about jobs type when
+it's all jobs. We talked about the layout style, the root path, and how
+you can only select one, but it can be very specific for property. It
+could go up to any portion of this hierarchy setting setting the. The maximum number of jobs, our CTA button label, and what populates the
+link opening a new tab, as well as our default image here. OK, so this
+is for yeah.
+
+**Amy Carter** 1:01:12 Sorry Danielle, the the apply now link. So is there a a purpose for it
+then? If that always gets added as the content fragment, like why do we
+what would we? What would happen if we put different text there? What is
+that gonna do?
+
+**Jenny Smith** 1:01:15 Yes. Oh, well. So this is what dictates the button text.
+
+**Amy Carter** 1:01:29 OK, so that always has to be filled out and can only be the the same
+there, but then the actual URL is what gets generated in the fragment.
+
+**Jenny Smith** 1:01:39 Yes, that is correct.
+
+**Amy Carter** 1:01:40 OK.
+
+**Jenny Smith** 1:01:41 Yeah. All right, OK, so that is for all listings. Let's take a look at the
+exact same component, but in this case, this is specifically for hot
+jobs. OK, so you can see here same. I put Florida and I selected three column
+and I selected yeah.
+
+**Burt Jones** 1:02:00 Daniela, sorry, this you wanted to leave that different text.
+
+**Jenny Smith** 1:02:05 That's fine. Yeah, this is. Oh, just to be clear guys. So this isn't
+stage, but it is. It is a test page, so so don't worry and we will
+certainly be removing it. So it would not appear on production. Yeah,
+no, no problem.
+
+**Burt Jones** 1:02:05 I don't know if the test page for you. OK, thanks. OK. All right. Thanks. Sorry.
+
+**Maia Emerson** 1:02:20 I have to select a location. Sir, can we have the path as the road?
+Because hot jobs would be every hot job, not specific to our location.
+
+**Jenny Smith** 1:02:20 So here, yeah. So you're asking for hot, like, say, say you selected multiple hot jobs
+for anywhere, right? So you would just move up the location of where you
+wanted that to be. Yeah, in this case, I chose. I chose Florida just
+because that's where I knew the hot jobs were. But yes, you could set
+it higher up in order to choose those hot jobs.
+
+**Maia Emerson** 1:02:39 Good job. OK, so that works. OK. And if there are no hot jobs, like let's say you leave it like this,
+right? And we have a bunch, but at one point we don't have anything.
+Does it just hide by itself or blank with a message?
+
+**Jenny Smith** 1:03:04 So right now I believe it would be blank, but there is no message at the
+time. I think we saw that again because we were using QA data. And just
+to confirm, I take you're saying there are instances where you guys
+will not have hot jobs or will there always be at least one I guess from
+y'all's end?
+
+**Maia Emerson** 1:03:24 We don't have hot jobs as often as you may think, so we don't want
+like hot jobs title and then blank. Nothing, you know, it's.
+
+**Jenny Smith** 1:03:28 OK.
+
+Angela Johnson (customer)** 1:03:31 Yeah, my TV tested this and if there are no hard jobs, then what will
+happen? The section is still there and you'll have the section name,
+but the the whole section will be empty.
+
+**Jenny Smith** 1:03:31 OK.
+
+**Maia Emerson** 1:03:45 What do you mean the whole section? Something like the title like
+everything and it's just a.
+
+Angela Johnson (customer)** 1:03:47 The time you will have you have the the the hot jobs title as a section
+title right? But there will not be cards underneath.
+
+**Jenny Smith** 1:03:53 Yeah, so this here. Right. So like pretend this type. So this title is there's.
+
+**Maia Emerson** 1:03:59 So there's no message saying no jobs or nothing.
+
+**Jenny Smith** 1:04:02 There would not. There's currently not, um, a message that displays if
+there's no hot jobs.
+
+**Maia Emerson** 1:04:09 Or the component or the module hides. OK, so that's.
+
+Angela Johnson (customer)** 1:04:12 No, it doesn't hide. It doesn't hide. It will stay there. It is a
+title, but blank, blank.
+
+**Maia Emerson** 1:04:16 OK. OK, it's just another up.
+
+**Amy Carter** 1:04:22 Yeah, so if you went to production today, team, you would see that we
+you might have scraped the site and a hot job existed, but hot jobs no
+longer has any listings currently. So the title of hot job section comes
+down automatically when there's no listings.
+
+**Jenny Smith** 1:04:36 Mm. Hmm. OK. OK, alright. OK.
+
+**Maia Emerson** 1:04:45 Do we have a back for that, Angelica?
+
+Angela Johnson (customer)** 1:04:46 We have a. Yes, I have a for this. Mm-hmm.
+
+**Jenny Smith** 1:04:47 Yeah.
+
+**Maia Emerson** 1:04:48 OK, good.
+
+**Jenny Smith** 1:04:49 Yes, there is a jury ticket for that. Yep. OK, alright, so that is the
+job listings component. We covered how that would be set up for hot jobs
+or if we needed to show all jobs. Let's take a look now at our.
+
+**Amy Carter** 1:05:04 And I think, I think Danielle will, unless you want me to add it to the
+confluence page. The take away there though is the fact that for the hot
+jobs we usually put an image of the property, but we wouldn't want to
+override the logo image in the listings. So although we're going to
+pull in the hot jobs here, Tampa should show the Tampa property.
+
+**Jenny Smith** 1:05:05 Yep. Mhm.
+
+**Amy Carter** 1:05:23 Coco should show the Coconut Creek exterior image, but then if we were
+to look at the same job as the hot job listing at the top, it would
+still show the logo.
+
+**Jenny Smith** 1:05:24 Mhm. Uh huh. I see. OK. So yeah, that I think so we are, since we are recording this
+and that's what we're going to be reviewing essentially things that we
+acknowledged as a gap, I think Lisa. So I think we have it covered since
+I'll be checking out the transcription, but let me make sure I I
+confirm this. You are saying that there are instances where if something is a hot job,
+you might have a different logo than when it's within the actual job
+listing itself. Is that correct?
+
+**Amy Carter** 1:06:01 Yeah, it won't be a logo, but rather we like to use like an image of
+the property. But then when it's in this like search component, that's
+when we're pulling in a logo.
+
+**Jenny Smith** 1:06:06 OK. The logo. OK, OK, got it. OK, understood. All right, let's see. OK, so
+now we're going to take a look at job filters after that job category,
+category cards, and then the job image page. So let's take a look at job filters. All right, and actually I'm going to pull U. Sorry, I meant to do this
+for the other component. I know that this is my this is my test. My new test page I had created
+with the job search component. I'm going to delete that and I'm just
+going to put in. I realize I didn't show this. I'm gonna go play in job listing so you
+guys can see what it looks like by default. So I just put it in, put in
+a new component. So by default it's showing hot jobs for column. It has
+this root path, so these are the default values and then of course as
+you can. Figure it. You can change it to however you need. If you want it to show
+all jobs instead, that's where you would do it here. Change that route
+path to show exactly where you want versus the overall jobs, etcetera,
+etcetera. So just want to make sure that the team was aware of what
+values are here by default. And also how things can look after you configure it.
+
+**Amy Carter** 1:07:36 So that one was set to 8 and four or what was this set to the one that
+we're just looking at?
+
+**Jenny Smith** 1:07:37 OK. Yeah, sorry, this one was set to by default it's four column hot jobs,
+4 column pointing to the root path of jobs, meaning every every location
+and then a maximum of eight.
+
+**Amy Carter** 1:07:55 Yeah, if you just had done, I'm just curious, like I would like to know
+as an author what? So like if it's four, they have like a bit of a
+skinnier view. If it's three, they have more of the like wider view. If
+it's two, are they going to get very wide? Like is is the number of
+columns, what's shading the size of the card? Because it's not like would go in.
+
+**Jenny Smith** 1:08:18 OK, so I'm going to change this one to two because I'm showing more
+things here. So you can take a look. You can see that the cards does get
+wider to fill in the width of this component.
+
+**Amy Carter** 1:08:23 Thank you. OK.
+
+**Jenny Smith** 1:08:31 Yeah, so we saw how it looked like at 2:00 and then this is how it looks
+like at three. Sorry, it shifted, but this is how it looks like at 3:00.
+
+**Amy Carter** 1:08:41 Got it. So it's the columns that's dictating the size of the cards.
+Number of cards are always going to left align no matter how many.
+
+**Jenny Smith** 1:08:41 Yep. Yes. That is correct, yes. All right. OK, so now let's go on to our job filters component so we
+can see how I configured this and we'll see how it looks like upon
+initial configuration. All right, so just join to the left. This is the filters that you see on
+the homepage of the careers website. Here as an author, I'm configuring
+what I want the search jobs button to to go to. In this case, you can
+see I've sent it to our jobs page. I have the labels that are displayed here, job categories, select
+properties, select job types, select locations, as well as the singular
+and plural labels like we had seen earlier. So that's that's for all
+four of these drop downs. We're just going to Scroll down. A little bit more. We have our button text of search jobs and then of
+course when you view this particular component in mobile, there is a
+title that gets displayed on top of this that the author would be able
+to configure here. Let's take a look at how that is. Find it. Here you go. So find your career is the title that I figure
+within the component, only displayable in mobile. OK, so this is the job filter. So let's take a look at how it is when
+you just drag it on the page and remove my job listings component. Job filters. So by default it looks pretty much the same, but the search
+page is something that you would need to configure. You can see right
+now it's pointing to just like a random location with an customer because
+your search page could be anywhere. So this is certainly something that
+an author would need. To make sure it's configured properly. In terms of the labels, you will
+likely keep the majority of this information the same, but perhaps the
+button text instead of search jobs, you might need to put something
+else, but just wanted to make sure that the authors. Confirm that the job search page is indeed pointing to the correct
+search page that you need it whenever you use this component. Great. OK.
+
+**Maia Emerson** 1:11:18 Why do we have to configure the search page? We only have one search
+page.
+
+**Jenny Smith** 1:11:23 So when this the way that this is working right now is the on on the
+current website right now in stage it is pointing to the right search
+page. So an author at this moment would not have to change anything if
+you were to ever have to use this component say I don't. I'm not quite clear why you would use it on say like a cafe site or
+something, but if you need to use it somewhere else, that search page is
+going. The job search page is not going to necessarily be in the same
+location for every site I would imagine. So what we're just saying here
+is that. You don't have to change anything right now as it is because it's been
+migrated, but if say you have another search page you need to point to
+instead when you're using this component, you have the ability to
+change that as an author.
+
+**Maia Emerson** 1:12:03 Mhm. But even if we put this widget somewhere else, we would go to the same
+search page. Can that be defaulted?
+
+**Jenny Smith** 1:12:22 It certainly can, but keep in mind whenever you default values, I guess
+the question is like having the flexibility for an author to be able to
+change things. If we're talking about like a default value, sure,
+that's fine. However, if you were to change the structure, you know, I
+guess, or if there's another search page, you want to just.
+
+**Maia Emerson** 1:12:26 Uh.
+
+**Jenny Smith** 1:12:41 Make sure that the author has that flexibility to be able to update it.
+
+**Maia Emerson** 1:12:45 Yeah, I I mean, I do like the flexibility and that that that's good.
+I'm just saying if we're gonna use it somewhere else, we pretty much. 99.9999% of the time we'll go to the same search page, so defaulting
+the value is just one step less. That is a content author that I will
+have to do, you know, the easiest for them, the faster and the better
+for all of us.
+
+**Jenny Smith** 1:13:08 So I I think, yeah, so it sounds like then for right now things should
+be fine. There's the default value as we saw is something that is a
+little bit different since you know if you is is a little different if
+you ever use it. Just as it is. However, if we were to take a look again at what is
+currently going to be, I think it's on, it should be on home. Yeah, so
+this should be set up as is. And I guess my say if if like there's no
+reason to use this component anywhere else for the time being, this
+should be fine the way it is then. This is what's currently on your stage website configured properly.
+
+**Maia Emerson** 1:13:48 OK, we'll just log it and I guess identify, you know, another gap and
+we'll fix it later.
+
+**Jenny Smith** 1:13:54 Great. OK, now I wanted to move on. Oh, sorry. Actually, before we move
+on, quick look at the UI portion of the. So I'm just trying to find my
+published view of the page. OK, yeah, so this is. My test page, but on the state website. So just just to be clear here
+again, we can see how this operates. This is pulling in that information
+from those content fragments. So like the location we saw, that's the city essentially from the
+content fragment, the category, the values there are being rolled up
+into these drop downs here. I. Alright. OK, so now let's move on to job category cards and this here is what is
+also on the homepage, I believe on the current live site. Let's take a
+look at what I have configured. All right, singular results label, one job, plural results label, 9
+jobs. Number of cards to display. I put six sort results. It could
+either be by the number of jobs, highest to lowest or alphabetical
+order. In this case I chose alphabetical order. And to your point, Mayte, the job search page, this is again, I know you
+you're saying there will only be one. In this case here, it's being
+pointed to that one job search page within the corporate careers
+website. And so that's what we have here. Let's take a look at how
+this component is when you configure it from scratch. So I'm going to jump on over to my other test page. Just remove this. I'm going to add job category cards. Alright, so by default you'll see
+it's pulling in the information on. These are the this information's
+coming in from our content fragments, right? These are our categories,
+so it's pulling all that in. You'll notice here it says undefined, undefined, undefined, and that's
+because I don't have how many cars I want to display and I also do not
+have the search page added. So if I were to just put a number in this
+case. I think. Just going to put 9 and then the job search page is under corporate
+careers, English and then jobs. I hit select once I hit done. You can see here how now it displays the correct label and it's also
+sorted. I believe I've had it sorted by default by number of jobs,
+highest to lowest. So this is what it is when you drag the components
+for the first time to a page. So again, if you want to change that to
+output order. That would just be something the author configures.
+
+**Maia Emerson** 1:17:02 How do you change the categories? Because we don't. Um. I wanna say and Angelica, please correct me if I'm wrong, but we can
+change the categories that we want I think.
+
+**Jenny Smith** 1:17:18 So I guess my take, can you sorry, can you elaborate on?
+
+**Maia Emerson** 1:17:21 Does it have the ability? Like what if I don't want to put food and
+beverage right? I want to promote some other category. How do I change
+that?
+
+**Jenny Smith** 1:17:29 What if you don't want to promote food and beverage you want? So
+you're just say you want to like pick and choose which categories
+versus everything that's within that's currently stored in in EEM.
+That's what you're asking. Is that correct? OK.
+
+**Maia Emerson** 1:17:36 Yeah. Mhm.
+
+**Jenny Smith** 1:17:46 So I guess if you wanted to simply pick and choose right now with this
+component as is, you do not have that ability if say you wanted to show
+like the top three that had the most jobs. You could do that with the current implementation. Right now I'm only
+showing these are the ones that have the most jobs available. But if you
+say wanted to show, I'm going to go back to 9 so I can see more if you
+want to show like casino sales and housekeeping. And just those two currently with the implementation of the component,
+you would not be able to do that. I guess, um, is that something currently that you all are doing today
+with the live site?
+
+**Maia Emerson** 1:18:32 I wanna say we have the ability because we started having gaming jobs
+and then we added more and we tweaked them. But honestly, this component
+I would have not developed because we're gonna kill it so we can.
+
+**Jenny Smith** 1:18:40 Mm. OK.
+
+**Maia Emerson** 1:18:48 Um. We can just move on.
+
+**Jenny Smith** 1:18:52 OK, sure. All right. OK. Any other questions, um, for anyone else on the
+job category cards? OK, so now let's take a look at the promised configuration page. So
+what I'm going to do now is I'm just going to go back to just the
+admin view of AEM and I'm going to click on vendor Experience Manager. And I'm going to click on the hammer here and then I'm going to click
+on ACS AEM Commons and I am going to click on content packagers. So what
+this is going to do is this is going to take me to this configuration
+section where we are able to. To put images for specific properties, I'm going to select the image
+config. I'm going to hit edit. Alright, so you see here we have this component called Job Images and it
+looks like it's just a title. However, when we click on the
+configuration icon, you'll see here what's actually being stored in
+this component is the job property as well as. The image that we wanted for the specific property. You can see that
+this dropdown, yeah.
+
+**Maia Emerson** 1:20:17 What is? What is the job property? Is that the? Because it doesn't
+read. Is it like specific name that we?
+
+**Jenny Smith** 1:20:26 This is what's. So let me navigate back to a content fragment so we can
+see where that's coming in one second.
+
+**Maia Emerson** 1:20:28 Yeah. Thank you.
+
+**Jenny Smith** 1:20:35 Yep, alright.
+
+**Maia Emerson** 1:20:36 Is it like the work they name or something?
+
+**Jenny Smith** 1:20:39 Yeah, So what I believe what our our tech team did is took the job like
+this is that field, that value that's stored here in job property,
+right. So the way this configuration works is it's going to check like
+for example Hard Rock Cafe Orlando.
+
+**Maia Emerson** 1:20:48 Mhm.
+
+**Jenny Smith** 1:20:55 Any jobs, new jobs that get added with Hard Rock Cafe Orlando will then
+have this particular image stored as the image for that particular job. So this here this value, if it matches what's stored here in the job
+property, then the image that's that you can see referenced here will
+will be stored here in this image section.
+
+**Maia Emerson** 1:21:28 And let me assume all of the locations have been created and already.
+
+**Jenny Smith** 1:21:28 OK, so. Yeah, so yeah, you can, excuse me, you can see this is a pretty long
+list and you um.
+
+**Maia Emerson** 1:21:37 It doesn't seem long. That's what is scaring me because we have way
+more locations than that, no.
+
+**Jenny Smith** 1:21:40 Oh, it's it doesn't seem as long as you think. Yes, so this is
+something that.
+
+**Amy Carter** 1:21:44 I think the concern too is that like Seminole Casino Coconut Creek is in
+this list with a logo referenced, but that was one of the ones that
+showed up without a logo.
+
+**Jenny Smith** 1:21:53 Yeah, so let me explain that. So with regards to this configuration
+page, anything that has been like any job that has been added before the
+configuration page was set up does not automatically inherit. This. The reason why is because when we were first working on these
+components, to be clear, we were told that there are instances where
+jobs do not have images. There are also instances where again, the
+author would want to overwrite the image. So because of that, this does not automatically get added to make sure
+that it's not overwriting whatever an author actually wants. However,
+if you were to, once we move over to production, all those jobs that
+will be in production once we have the production connection. It will check the property match here, the value here with this and any
+of those jobs should then display whatever image is being referenced
+here. So I understand right now in stage because keep in mind when we
+were working on some of like the configuration page for example, some
+jobs are already coming in because. I think was made before we handed off the site, and so that's why
+you're probably seeing some jobs that do not have any images. However,
+when we move to production, those images, as long as the job properties
+match, those images should appear within those content fragments and
+displayed and say like the job search results component. Night.
+
+**Maia Emerson** 1:23:33 So who's doing all that mapping and who's getting every name for every
+location out there when we go by?
+
+**Jenny Smith** 1:23:39 So this yeah. So this is at least the initial setup of this. This is
+something that that I know our technical team handled. I'm not clear I
+guess from the customer side who would be handling adding additional
+properties for example like if if something else gets added or if a. Logo needs to change.
+
+**Maia Emerson** 1:23:57 I mean new locations I understand but existing right where we we already
+have that in cycles so who we need that and what I'm concerned is if
+were they. Where to change their internal name? Because I don't know why they have
+HRC Washington DC. It should be Hard Rock Cafe Washington DC. Is that
+going to break this because the name is not going to map anymore on the
+next sync?
+
+**Jenny Smith** 1:24:22 So then what would happen if the property doesn't match this? Like so
+you're saying if in Work Day for example, if they were to change this
+to Hard Rock Cafe, Washington DC, what would need to happen is a new
+entry would need to be added with that specific property value and with
+the desired logo.
+
+**Maia Emerson** 1:24:32 Mhm. A new entry or just updating this one?
+
+**Jenny Smith** 1:24:44 So I guess, I guess if the jobs that are existing or saying that those
+jobs should also, I guess there would be no references of this anymore.
+Is that what you're?
+
+**Maia Emerson** 1:24:53 Oh, you're saying if all jobs have their own name, OK. Yeah, this mapping is concerning. It seems very, very manual. And it's not even a third or a fourth or a fifth of all the locations
+that we have.
+
+**Jenny Smith** 1:25:12 I think then what? Because I I'm not quite clear exactly where we got
+the list of locations. Perhaps it was when we it might be when we had
+worked on the integration. I can check on this with the tech team, but
+they we did do the initial setup. Perhaps if there's a separate list or something, we can take a look at
+that, but I think we were working with information that was provided to
+us when we were discussing the integration. So this is the process for
+adding additional properties. To your point, Mayte, if we are missing
+some, I think we would just need to. Understand where that you know like where this list um like where there
+is a full list.
+
+**Maia Emerson** 1:25:56 Yeah, we have over 500 locations.
+
+**Burt Jones** 1:25:57 Daniella, we can provide our, we can provide our point of view as an
+answer tomorrow after we follow up with Vinay on what where we were
+getting the initial mapping from, OK.
+
+**Jenny Smith** 1:26:06 Yeah, Yep, definitely. I'll check in with with our team tomorrow.
+Again, understanding I can report back during our next session. Yep.
+
+**Burt Jones** 1:26:14 Yeah, I just want to time check. There's 30 minutes left. I know we
+wanted to leave time for a retro for the call. Is there any? How are we
+tracking, Danielle?
+
+**Maia Emerson** 1:26:15 Hey, I'm. And.
+
+**Jenny Smith** 1:26:24 Yeah, let me.
+
+**Maia Emerson** 1:26:24 Wait, hold on, let me just ask Scott, if you can take a task please with
+IT that work with with the vendor on this to make sure that we have
+every location in that mapping because we have over 500 and I don't
+think I even saw 100.
+
+**Greg Scott** 1:26:42 Well, I think it's just coming through the interface, my data. It's
+nothing anybody's going to hard code there.
+
+**Maia Emerson** 1:26:43 Yes. Well, it has to be added in vendor, right? Like copy paste the name so if
+we can get the list of locations from workbase, somebody from IT can go
+and start mapping those ahead of time.
+
+**Greg Scott** 1:26:59 They have to actually be done. They don't. They don't come in as part
+of the interface.
+
+**Amy Carter** 1:27:04 No, that's what Daniela just showed us.
+
+**Maia Emerson** 1:27:05 No, that's what they just showed us. It's not automatic. You have to.
+There's another panel where you have to paste the name that has to
+match work day and then add the image and then you got to go 1 by 1 by
+1.
+
+**Greg Scott** 1:27:15 Oh yeah, yeah.
+
+**Amy Carter** 1:27:17 It's like Workday recognizes the mapping, but the mapping has to be
+manually added. That's the missing part.
+
+**Maia Emerson** 1:27:17 I know. Mhm.
+
+**Greg Scott** 1:27:26 Who added the ones that are in there now?
+
+**Jenny Smith** 1:27:31 vendor the vendor technical team did.
+
+**Greg Scott** 1:27:34 OK. OK. So we can ask so, so I wouldn't be out of bounds Luke asking
+Vinay to do something like that.
+
+**Jenny Smith** 1:27:42 I I think what we need though, Scott, is we need to understand what that
+full list is. We were operating off of information that was given, but
+according, you know, the team is saying it's not full. So we just need
+to understand where is that full list.
+
+**Burt Jones** 1:27:48 Yeah.
+
+**Greg Scott** 1:27:48 Yeah. Yeah, we need to figure out where it comes from, right? Who's the
+source of the full? Like, you know who is the source of the full list?
+
+**Jenny Smith** 1:27:57 That's correct.
+
+**Burt Jones** 1:27:57 Exactly. We're gonna confirm.
+
+**Greg Scott** 1:28:04 Who can give us that full list?
+
+**Amy Carter** 1:28:07 That's what we're asking if you can connect with IT on.
+
+**Greg Scott** 1:28:10 It's like a circle. We just say IT is like it's like it's it's like
+a nebulous cloud. At least I I can start asking around. I I will start
+poking around. Maybe. Uh, OK.
+
+**Burt Jones** 1:28:22 Yeah, Scott, we're only confirming with Vinay what what what we got
+initially, but if it's not a full list, we don't have visibility to
+that.
+
+**Greg Scott** 1:28:23 Some.
+
+**Jenny Smith** 1:28:26 Mm.
+
+**Greg Scott** 1:28:28 Yeah, I'll ask Michael. Maybe he knows. It's OK. I'll put it on my To Do List. It's fine. We'll figure it
+out. I'm somebody asked to have it. This must exist, right?
+
+**Jenny Smith** 1:28:34 Right.
+
+**Amy Carter** 1:28:41 Probably whoever handed it off the first time.
+
+**Jenny Smith** 1:28:44 Yeah, we'll, we'll when we discuss with Vinay, you know, we'll try to
+track down where it came from and then we can confirm, you know, if
+there's a bigger, if there's more information that we can gather from
+that particular individual, but.
+
+**Greg Scott** 1:28:44 Yeah.
+
+**Jenny Smith** 1:28:59 OK.
+
+**Greg Scott** 1:28:59 Yeah, I don't know who. I'll, I'll, I'll take it upon myself.
+
+**Jenny Smith** 1:29:05 Right. OK. All right. OK. So just confirming what we had scheduled for
+today's session. So I think we did cover search categories, filters.
+Yep. So we covered all the topics that were listed here. I had put time
+for. Perspective and also of course Q&A. And again the reminder for any
+burning questions you may come up with later on tonight, tomorrow before
+the next session, you know we we ask that you please put them within
+this confluence page. That way we can keep track and also respond. With in the comments as well. So I guess I'll pause here though and see
+Luke, how you want to handle this, this next step with the retrospective
+portion.
+
+**Maia Emerson** 1:29:53 And before we get into retro because I just wanna make sure you didn't
+miss anything. We didn't see the career events or the job first.
+
+**Jenny Smith** 1:30:00 Oh, so yeah, sorry, the what was the second part?
+
+**Maia Emerson** 1:30:04 They're the same thing. I mean different names, but the same thing.
+
+**Amy Carter** 1:30:05 Yeah, the hot, the hiring events. And then we didn't see those pages
+that are supposed to have the same cards on them. So there's a hot jobs
+page and there's a hiring events page, and then both those cards exist
+on the home page.
+
+**Jenny Smith** 1:30:05 Oh. Yeah. So with regards to hiring events, that was my plan was to have
+that actually within the events session because it's not a specific
+component related to jobs, right? So like these here that we were
+covering today were job specific components.
+
+**Maia Emerson** 1:30:48 OK.
+
+**Jenny Smith** 1:30:48 With regards to the events content fragment. So that is something we are
+planning on covering, but that was not for today's session.
+
+**Maia Emerson** 1:30:48 OK.
+
+**Amy Carter** 1:30:54 And then those pages though. So obviously like the the hot jobs are
+getting pulled in from the hot jobs tag into that section on the home
+page, but they aren't. Are they also getting funneled into the the hot
+jobs page as well? So if you browse all hot jobs, do we have to add them manually to every
+location or is that pulling from the same feed?
+
+**Jenny Smith** 1:31:15 Um, yeah. So this here, let's take a look at that. I'm going to just navigate to this specific page. We'll iter this
+looks like it's about jobs. Let's take a look at the configuration of
+the components on here. So this is just using that job listings component, right? And it's, you
+know, selecting my hot jobs. So you anything that's marked as a hot job
+should appear here on the hot jobs page. And then also if we were to go
+back to the home page. Because you there's that section there.
+
+**Maia Emerson** 1:31:55 And before you move from the hot jobs page, where's the filtering for
+the hot jobs and the searching and all those things?
+
+**Jenny Smith** 1:32:01 So the filtering is something that we had identified. I believe there
+was an open ticket for that. The filtering is not something that's
+currently part of the component, so it so we had identified that as a
+gap, but that is something that was being tracked in JIRA.
+
+**Maia Emerson** 1:32:07 Oh.
+
+**Jenny Smith** 1:32:17 So yeah, you can see you can see here with hot jobs, this is using the
+same component job listings with that configuration of hot jobs. So
+Lisa, I believe your question was if you would have to do it twice and
+the answer is no, you wouldn't have to make any updates. It's just
+adding that hot job toggle to jobs within the content fragment itself.
+
+**Greg Scott** 1:32:20 OK. And.
+
+**Jenny Smith** 1:32:37 Elf.
+
+**Amy Carter** 1:32:38 OK, but might be a different story for the hiring events below. I know
+you said we're going to do events tomorrow, but is this also getting
+fed?
+
+**Jenny Smith** 1:32:42 Green. So this here, yeah, let's let's cover this tomorrow because this is
+using a a a different content fragment. It's not using jobs. So this
+one we can talk more about how this is going to work and how we can
+potentially try to reuse, you know, like say using experience
+fragments. Or something like that to make it so you only have to update it once.
+
+**Amy Carter** 1:33:12 Yeah, you can just see though like in comparison when these are both
+pretty similar cards on the production site, a hot job versus a hiring
+event, how now looking at the hiring event, they're they're different
+widths and heights than what is standardized with the hot jobs like. Carousel or grid, if you will. And then even like the lengths here when
+there's like 3. See how they're not like an equal. It's just little
+things because we're using the same type of concept of a card in one
+section and a card in another, but they look so, so different.
+
+**Greg Scott** 1:33:38 8.
+
+**Jenny Smith** 1:33:43 No. Mm-hmm.
+
+**Maia Emerson** 1:33:50 And to check also for tomorrow, are we going to go over the queries and
+when we're bringing in different, you know, like properly like
+throughout the pages, we have different cycle queries right to bring
+different content that we're going to go through that.
+
+**Greg Scott** 1:33:57 Sure. Sure. Uh.
+
+**Jenny Smith** 1:34:06 Um.
+
+**Burt Jones** 1:34:06 Daniela, do you wanna pull up the agenda for tomorrow so we have a clear
+expectation set?
+
+**Jenny Smith** 1:34:10 Yeah. Yeah, sure. OK, so tomorrow's supposed to be all about events. So
+again, reviewing the event content fragments, the the template page
+that's used for displaying events. The event detail component and the event calendar components. Um, I
+guess, Mighty, can you repeat what you were hoping to see?
+
+**Maia Emerson** 1:34:34 So when we go, we have. Other pages in the career side right where we pull queries of content
+that already exists in other websites so we don't have to reuse them.
+So we need to go through those too.
+
+**Jenny Smith** 1:34:49 I guess I need to understand like example like you're saying I I guess.
+Can you provide like very clear examples for us to be able to take a
+look at first?
+
+**Maia Emerson** 1:34:51 OK. Yeah, like we have content in Cycord for that already exists somewhere
+else. So why do it again, right? We'll manage the same thing twice so
+we can just write a query. I don't know how you call them in vendor,
+right? But we we call them scopes in Cycord and you say get me the cards
+from this folder and it displays on the page.
+
+**Greg Scott** 1:35:12 OK.
+
+Angela Johnson (customer)** 1:35:17 Danielle, you can go to our brands. I can show you what we're talking
+about. Go to cafes or casinos. Scroll down. Yeah, even more. Yeah,
+where? Which page you want?
+
+**Maia Emerson** 1:35:17 Yes.
+
+**Jenny Smith** 1:35:20 Sure. OK. Oh.
+
+**Greg Scott** 1:35:28 Sign.
+
+**Jenny Smith** 1:35:29 This is on our brands. Is that what you you asked for?
+
+Angela Johnson (customer)** 1:35:32 You go to a casino under our brands menu. You go to casinos or cafe
+cafes.
+
+**Jenny Smith** 1:35:40 Um. Uh.
+
+**Amy Carter** 1:35:42 I think that's the getting the those are the children pages, Angelica,
+of getting the name.
+
+Angela Johnson (customer)** 1:35:46 Yeah, yeah, I'll get here. Sorry, get in the game. Yeah. But if you go
+to the casinos, right, Scroll down. So for example, there are three,
+three cards we display and they display the same cards if you go to,
+let's say now to the you know where you go to cafes, cafes or hotels.
+
+**Jenny Smith** 1:35:47 Oh, OK. Sure, sure, sure. Yes.
+
+Angela Johnson (customer)** 1:36:03 We display the same key cards looks like.
+
+**Jenny Smith** 1:36:04 OK. Yeah, so, so this is actually, yeah, so this is, this is something that
+I believe we were going to explore the use of experience fragments for
+because I I understand what what you're saying and I was reviewing some
+of the tickets. I believe there are about 18 or so where you guys
+identified pages that have. Have some shared content. In this case, for this section here, it looks
+like these cards are essentially all shared amongst all these pages. And
+then for the art brands, I believe there's a section of cards here that
+should be shared across all the pages. Is that that's what you're
+referring to, Angelika and Mayte, is that correct?
+
+**Maia Emerson** 1:36:43 Yeah, the yeah, the component. I mean all the functional different
+career side, those the video cards. I think there's a form somewhere, but no, we killed that, so never
+mind.
+
+Angela Johnson (customer)** 1:36:54 Reason that we can reuse, right? Instead of creating on each page
+separately, we would like to reuse.
+
+**Maia Emerson** 1:37:01 Like the navigation, right? Um.
+
+**Jenny Smith** 1:37:01 Right, So what I had and actually what I had done, I should have
+scrolled down. Yeah, so like I because I remembered seeing that ticket
+and what I was going to show you guys just to make sure and and see if
+this covered the needs is that instead of using a card carousel on the
+page, what I did was I set up. An experience fragment and then put up that card carousel and then just
+point it to it instead. So that way I could update the cards and then
+any pages that's referencing the experience fragment would also have
+the update. So like if I were to change Seminole Gaming to like Seminole
+Gaming 2026. In in the experience fragment, anything that has this experience
+fragment would also have Seminole Game 2026 and I that's what I wanted
+to understand is that that's what you guys are are looking for. Is that
+correct?
+
+**Amy Carter** 1:37:53 That would definitely solve our issue of needing to use like if we
+updated one card that existed on 10 pages that it gets updated in one
+spot. But there is something separate that we do have to log that
+Angelica might have logged, which is that these cards that are related
+to when you were on the get in the game, for example that showed all.
+
+**Jenny Smith** 1:38:02 Yes.
+
+**Greg Scott** 1:38:06 Yeah.
+
+**Jenny Smith** 1:38:06 OK.
+
+**Amy Carter** 1:38:13 All of our lines of businesses, the way that they should actually act is
+with a little bit of logic so that when you're on the casino's page,
+you wouldn't actually see the casino's cards now in that listing. So
+it shows all children of the get in the game, excluding the page you're
+on, if that makes sense. So it's taking what you just said, but.
+
+**Jenny Smith** 1:38:15 Uh huh. OK.
+
+**Amy Carter** 1:38:33 Also a step further of something we would would like to know, but it's
+definitely useful at least to get a shared source, you know, just in
+case we change the amount of casinos listed or something and then that
+only gets updated once of course. But I do want to mention that there is
+like additional logic with these queries.
+
+**Jenny Smith** 1:38:34 I see. Yeah. I see. OK. Yeah.
+
+**Amy Carter** 1:38:53 that Maite brought up.
+
+**Jenny Smith** 1:38:54 OK, understood. So I think it sounds like then the experience fragment
+approach takes you guys like halfway there in the sense that reusable
+right now the way that this was set up on with an AEM is I think because
+during the migration it probably.
+
+**Greg Scott** 1:39:00 Oh.
+
+**Amy Carter** 1:39:04 Yeah.
+
+**Jenny Smith** 1:39:14 You know, it probably had like some. It saw that the logic was that the
+cards weren't exactly the same. So that's why these cards are all
+locally configured. So I think in terms of how you guys can do this, you
+guys can use the experience fragment. It would not have the additional
+logic for go live or you can.
+
+**Greg Scott** 1:39:18 Yeah.
+
+**Jenny Smith** 1:39:34 Keep it as is where you're able to control it locally on each page. So
+that way it essentially is not showing like you're saying the casinos
+page would not be in here because this would just be a local instance of
+that carousel. So I think that's something you know. I understand definitely the appeal of the experience fragment. We want
+to update it once, so that way any page that's having it will then also
+be updated it. If that's the route you do want to take, knowing that in
+this case here it would show like the casino's card because you'll be
+referencing the same experience fragment on all of these pages, then
+this would need to be just replaced.
+
+**Greg Scott** 1:39:54 OK.
+
+**Jenny Smith** 1:40:10 With an experience environment component. So there would be some
+authoring involved with that, but I think that would just have to be a
+decision that Hard Rock would have to make.
+
+**Burt Jones** 1:40:15 So.
+
+**Maia Emerson** 1:40:20 OK, Scott, then we need to follow up because this should have been set
+up properly, right? So we need a fix before we go live and we we're
+done.
+
+**Greg Scott** 1:40:27 Well, obviously.
+
+**Maia Emerson** 1:40:31 OK. I mean it should. I mean I thought it was when Mohsin told us it was as
+is. We assume at least this site would get a structured better knowing
+that most of our content is shared across everywhere. So let's put a
+task for that one please. I have Moses figured that out.
+
+**Greg Scott** 1:40:52 Sure.
+
+**Maia Emerson** 1:40:57 Oh. Oh.
+
+**Jenny Smith** 1:40:57 Sorry, Charles, I didn't see that. I'm sorry.
+
+Chuck Williams (customer)** 1:40:57 Yeah, yeah, it's it's OK. That was a very lively conversation. I
+needed that to go first.
+
+**Greg Scott** 1:41:01 Yeah, that's fine, Charles. I just. I felt bad. I'll ignore you, man.
+Sorry.
+
+Chuck Williams (customer)** 1:41:06 Yeah, my question was a logic question and I might have missed the
+answer to it in the very beginning when we talked about when we imported
+items from the API that the publishing happened immediately, right. So
+pretty much whenever that happened is live time. So say that we had 13
+items, 13 jobs that got imported immediately. We realized after the fact
+like oh shoot, we need the.
+
+**Jenny Smith** 1:41:16 Yes. Yes.
+
+Chuck Williams (customer)** 1:41:27 Take three of these down and reschedule them for later. Do would would
+it? What would be the best way to go about doing that? Would it be to
+resubmit through Workday and have them pull in 10 and purge? Or is it to
+purge those three? Is it a way to just go to those three individual and
+reschedule them manually? What would be the easiest way to take care of that?
+
+**Jenny Smith** 1:41:48 Yeah. So this is one of our takeaways that we're going to discuss with
+our tech team. So as of right now, like you mentioned Charles, these are
+going to be coming in from Workday. So the Workday is the source of
+truth. It's pushing everything to A EM. So all these are coming from
+there if, if. You were to make a change in here right now and try to publish it. Work
+day changes would eventually override it because it's continuously
+syncing. So what we did want to check though with our our team is like
+for example, my team had called out earlier in the call of some
+instances where you might need to take down a job just like you're
+describing.
+
+Chuck Williams (customer)** 1:42:13 Uh, OK.
+
+**Jenny Smith** 1:42:25 So we are going to check in and see if there's any way that you can do
+it through the AEM side, anything you know for an author to be able to
+handle those particular use cases, but we will not have that answer
+until the earliest tomorrow. So definitely making sure though that we
+will discuss that with our team. OK.
+
+Chuck Williams (customer)** 1:42:46 OK. Thanks. Yeah, I must have missed that. Sorry. Thank you.
+
+**Jenny Smith** 1:42:48 Oh, no problem. No problem. Yeah. And I sorry, I think I saw somebody
+else's hand was off, but I missed it. OK, thank you.
+
+**Burt Jones** 1:42:51 Joseph has their hand up.
+
+Joe Ford (customer)** 1:42:56 Yeah, can we go back to the the the job search real quick?
+
+**Jenny Smith** 1:43:01 Yes, um. OK. Yeah, sure.
+
+Joe Ford (customer)** 1:43:08 Um, no, the I mean the filter from the Uh from the homepage careers
+homepage.
+
+**Jenny Smith** 1:43:11 Oh. Look the filter from the homepage. You're talking about this section
+here.
+
+Joe Ford (customer)** 1:43:18 Yes, yes. Can we go into configuration real quick? And where is the job
+category label located where it says job category label job category?
+
+**Jenny Smith** 1:43:20 OK. Yes. Uh, yeah, this one. Um, let's see.
+
+Joe Ford (customer)** 1:43:38 And there there's one for each one. There's, you know, the properties
+label.
+
+**Jenny Smith** 1:43:46 Let me see. Sorry, man, I lost it one second. So we're asking about
+where is this specific field and you said the job prompt like where are
+these specific fields?
+
+Joe Ford (customer)** 1:44:00 Yes, exactly. There's four of them because there's four categories
+there.
+
+**Jenny Smith** 1:44:02 Let's see. I might need to check on how this is on how this is mapped to the UI.
+
+**Greg Scott** 1:44:09 OK.
+
+Joe Ford (customer)** 1:44:12 Yeah, I had. I had a story for this and I I couldn't find those four
+labels there.
+
+**Jenny Smith** 1:44:15 Um.
+
+**Greg Scott** 1:44:16 Thank you.
+
+**Jenny Smith** 1:44:17 OK. OK, let me see if I wonder. Actually, hang on, I wonder if this is
+actually. I might have to get back to you on this. This might be something that
+that is potentially being used, like you like a user won't be able to
+see it, but it might be something that's within the markup. So let me
+get back to you on that one, Joseph. I'll add that to the list for
+things to cover at the beginning of tomorrow's session.
+
+Joe Ford (customer)** 1:44:31 Oh. Mhm. Mhm. OK, great.
+
+**Jenny Smith** 1:44:49 Great. Thank you. OK, Luke, did you want us to?
+
+**Burt Jones** 1:44:54 Yes. Yeah, I mean, I I it's not gonna be like an official retro board or
+anything like that. Yeah, I just, uh, oh, yeah, go ahead, my too. Sure.
+
+**Jenny Smith** 1:44:58 Oh, OK.
+
+**Maia Emerson** 1:45:01 One more question. Sorry, one more question. Luke, I'm sorry, I'm
+seeing those huge logos. So did we ask you for the specs for the images?
+So we don't have that issue because some of the the things you were
+showing had like the images.
+
+**Burt Jones** 1:45:07 You're good.
+
+**Maia Emerson** 1:45:18 Even corrupt at at some point.
+
+**Jenny Smith** 1:45:22 Yeah, that's something I think is is still that we're we're still
+looking into that my day. We do not have the spec sheet detailed out as
+of yet.
+
+**Maia Emerson** 1:45:27 Oh, OK. OK, but since this site is going live soon, are we going to then who's
+going to go back and fix those images so they don't look, you know,
+like this when we're going to go live?
+
+**Burt Jones** 1:45:55 What is happened as a take away, Daniela, to talk with Vinay and you
+know, whoever's supporting him with authoring might say, yeah, sorry,
+I.
+
+**Jenny Smith** 1:46:01 OK.
+
+**Greg Scott** 1:46:02 Yeah.
+
+**Burt Jones** 1:46:06 Any other questions?
+
+**Amy Carter** 1:46:09 So are our questions just getting looked at in tandem with the like
+things that Angelica and team have already reported? Cause I think like
+a few of my questions go hand in hand with what she's reported.
+
+**Jenny Smith** 1:46:09 Mm.
+
+**Burt Jones** 1:46:21 Yeah, I think there's some synergies there Lisa and honestly Scott and
+Angelica, I hope you know we we we have a little bit of you know clarity
+from this call as well when when we have syncs with you guys moving
+forward at our tactical level that that'll.
+
+**Jenny Smith** 1:46:28 Yeah.
+
+**Greg Scott** 1:46:34 This.
+
+**Burt Jones** 1:46:41 Address some of the ones that we kinda have parked right now. So we'll
+we'll see though how that goes. But yeah, Lisa, um, they're they're
+they're kind of addressed in tickets and and you guys touched on on
+this call to answer your question.
+
+**Greg Scott** 1:46:46 Yeah.
+
+**Amy Carter** 1:46:54 OK. Thanks. Sorry. Yeah, go ahead.
+
+**Maia Emerson** 1:46:54 And I do have one. Oh, go ahead. No, you go.
+
+**Amy Carter** 1:46:58 It's OK. You're you're fine. Got it.
+
+**Maia Emerson** 1:47:01 OK, maybe I don't know who's this for vendor or or our IT team, but I
+was looking at pagination, right? I I remember in Daniela was like 3 or
+10 or 30. Is there any recommendation? Because I know we've done that
+before and we have performance issues. So have you guys tested and know what's the Max number of listings we
+should have on a page knowing we have like, I don't know how many
+Angelica, we have like hundreds of jobs.
+
+Angela Johnson (customer)** 1:47:32 800.
+
+**Maia Emerson** 1:47:34 Yeah, so knowing we have 100, you know 30 seems like too few right to go
+like 30 by 30. And I know there's filtering, I know they're searching,
+but is there a recommendation on the Max number of jobs we should list
+per page based on your testing?
+
+**Jenny Smith** 1:47:48 But.
+
+**Burt Jones** 1:47:51 Are you asking vendor that question, Maite?
+
+**Jenny Smith** 1:47:51 Mhm.
+
+**Maia Emerson** 1:47:54 I I don't know who did that performance and the load or stress testing.
+So that's why I said maybe vendor or TJ, one of you guys should know the
+answer.
+
+**Burt Jones** 1:48:02 Scott, I think you're gonna have to take it back and talk with with TJ
+and Mohsin. We we we don't currently have a performance testing
+resource. Yeah, right.
+
+**Greg Scott** 1:48:10 Yeah, I don't think that's a yeah, I I don't I that that's not on
+the radar at all my day. I I don't know why that would be an issue. It
+seems like chump change Rogers 30 or 800 or even 1500 as far as as far
+as listings when you think of like you know content I I that's not
+that's not heavy listing.
+
+**Maia Emerson** 1:48:27 I I hope you're right. We had that issue before that we're like, oh,
+great, let's put 50 and boom, it crashes, right? So if we can just get
+an answer, please.
+
+**Burt Jones** 1:48:36 Just to be clear, from the vendor perspective, we're not qualifying it
+as light or anything. We just don't have any resource scope for it,
+Maite. Just wanted to be clear on our point of view.
+
+**Maia Emerson** 1:48:42 Mhm. OK. OK. Thank you.
+
+**Burt Jones** 1:48:47 No problem. Last call. Any questions?
+
+**Greg Scott** 1:48:53 Hey, so Luke, just with a couple minutes left. So how did you guys, you
+know, I'm just kind of curious on the side side, how do we think this
+went? Did we, did we get through Daniella, what you're hoping to get
+through for one session? Do we go slower? Do we go faster?
+
+**Burt Jones** 1:49:03 Yeah, Scott that that that that that's a perfect foray. I I was gonna
+give my my point of view on a on the on the retro of this. We did get
+through Daniella's intended topics on on this. And which is good. So we're tracking, which is great. We're going to
+have to take a, you know, keep the retros going as we see how we do
+using the A I notes and then and and making sure we're capturing. Follow-ups accordingly from the questions answered here, Scott. So
+that's something for you and me to to make sure you know we're we're
+not leaving too many gaps. The other part about this call that I think
+might be slightly different than the other calls is Careers is an
+in-flight site that that it's going to go live next month.
+
+**Greg Scott** 1:49:39 Mhm.
+
+**Burt Jones** 1:49:54 So there's a lot of extra heat and scrutiny on careers compared to just
+level setting on, you know, knowledge transfer of how the platform has
+been implemented. So I just wanted to make sure everybody's clear on
+that, like these questions that you've been asking. It's great to hear them. I I we had no issue with that, Scott, from our
+point of view, especially given on careers, OK.
+
+**Greg Scott** 1:50:17 Mhm. Yep, Yep.
+
+**Burt Jones** 1:50:21 So yeah, so that that that that's that that's what my point of view is
+on how this went. But you know open to to hear any other feedback from
+you guys that that that you know you want us to hear, yeah.
+
+**Greg Scott** 1:50:31 Yeah, I I I do feel like it was rushed. I I I yeah. So I was just
+curious about Daniela in her mind's eye. She probably laid out what she
+would hoping to get through and if she got through it.
+
+**Burt Jones** 1:50:42 Yeah, she she's she's good. She knows she's a she's a seasoned pro.
+So Yep, we appreciate Daniella. Any other feedback from you guys?
+
+**Greg Scott** 1:50:49 OK.
+
+**Burt Jones** 1:51:09 Yeah.
+
+**Amy Carter** 1:51:09 Is I think that we're gonna start piling up, if I'm being honest.
+
+**Burt Jones** 1:51:13 I I completely agree in the background saying the same thing, Lisa,
+it's the tab's going to be quite big at the end of it with the gap
+analysis, but that's what we need to identify, right? Like we need to
+get it all out. You guys need that full baseline understanding.
+
+**Greg Scott** 1:51:19 OK.
+
+**Amy Carter** 1:51:25 Yeah.
+
+**Burt Jones** 1:51:28 That's what our intention is here. Yeah, so.
+
+**Amy Carter** 1:51:30 I think like this first week is gonna be the true test. If we make it
+through what, 4 sessions this week, you'll see what that list becomes.
+And then it's like gonna paint the picture of how the rest of these
+like weeks are gonna go if they can go in the same manner.
+
+**Burt Jones** 1:51:35 Mhm.
+
+**Greg Scott** 1:51:37 Mhm.
+
+**Burt Jones** 1:51:42 Mhm.
+
+**Greg Scott** 1:51:44 S.
+
+**Burt Jones** 1:51:45 Yeah, yeah, exactly, Lisa. Yep. Good feedback. Anything else, guys? All right, cool. Well, we appreciate your time, Daniela. Great job as
+always, and we'll look forward to seeing what you have in store for us
+tomorrow, OK?
+
+**Jenny Smith** 1:52:05 Alright, thank you everybody for doing.
+
+**Burt Jones** 1:52:06 All right. Thanks, folks.
+
+Angela Johnson (customer)** 1:52:07 Thank you so much.
+
+**Amy Carter** 1:52:08 Thank you. Thank you. Thank you, bye.
+
+**Jenny Smith** 1:52:09 Goodbye. Thank you.
+
+**Burt Jones** 1:52:09 Right.
+
+Chuck Williams (customer)** 1:52:09 Thank you.
+
+Cal Nelson (customer)** 1:52:09 Thank you. Thank you. Bye.
+
+Chuck Williams (customer)** 1:52:10 Everyone.
+
+**Don Wood** 1:52:12 Thank you.
+
+**Greg Scott** 1:52:12 Thank you.
+
+Burt Jones** stopped transcription
+
+
+
+## Session: Events — 2026-02-11
+
+**Customer Vendor Knowledge Transfer-20260211_130309-Meeting Recording**
+
+February 11, 2026, 6:03PM
+
+1h 55m 18s
+
+**Burt Jones** started transcription
+
+**Burt Jones** 0:11 OK, sounds good. Recording started. As we said yesterday, we would start
+this call by just kind of briefing on the the, the, the questions and
+and what answers we were able to to to to provide so far. To provide so far on the the Confluence page, we did, we did want to
+make sure we acknowledge that yes, we saw all the questions and we're
+working through trying to provide answers and that's what we wanted to
+start with. Daniela, I think is just kind of. Propose how we want to handle the number of questions we're seeing. Is
+that right?
+
+**Jenny Smith** 0:49 Yeah, yes. Let me go ahead and share the confluence page. So thank you
+everyone for providing your questions and especially in this tabular
+format, I think this is great. They were able to clearly see what's
+being answered and by whom. So right now I have this sorted by the rows are sorted by answer. So you
+can see there are still things that our team is planning on reviewing.
+We just of course need just a little bit more time. We understand that
+you know that these questions are going to come after these knowledge
+transfer session like the knowledge transfer session. That we just attended. So what our plan is in order to be able to make
+sure that we're answering things as accurately as possible and with the
+proper context, we are just asking for a little bit more time for us to
+be able to go through these questions. The onshore team will be reviewing these after the page is complete. So
+Maite, I do appreciate you tagging me to let me know when the questions
+were in a pretty good state because as I was refreshing, I was seeing
+more added. I wanted to make sure you guys were at a good stopping
+point. So what that means is we would need some time for us to be able to
+review them and then we also need to connect with our GDC team members
+to be able to ensure that they are also providing answers where
+necessary, specifically with the technical questions. And as we're responding, we also recognize that there might be
+instances where, for example, you'll see here we have tagged some other
+folks to to be able to chime in. So there are times where we will need
+somebody else to address the part of the question that vendor is not able
+to answer. And also we also recognize that based off of the response that you're
+getting asynchronously, you might have a follow-up or something still
+related to that or perhaps need some clarification. What we're asking
+with with those kinds of instances is if you could perhaps highlight the
+specific row, take this for example. If this is something where you have a follow-up question on, if you
+could highlight the row and add your follow-up question to the existing
+row, then our team knows OK, this is something that we need to look back
+at and address. So that would just make it easier for us to be able to
+group things together as well as be able to understand what is still. Needing to be answered. I'll pause here to see if there's any comments
+or questions about this process.
+
+**Maia Emerson** 3:24 Makes sense and and thank you. I know there was a lot and I tried to
+combine everything. At one point I just kept my name because it was
+easier copy pasting and I deleted a few that I thought were duplicate.
+So hopefully that helped and I was thinking I I'm seeing in your screen
+and and I glance at it in the morning the ones that are assigned.
+
+**Jenny Smith** 3:33 Yeah. OK. Mhm.
+
+**Maia Emerson** 3:44 To customer, should we put them in a separate table or tag them somehow so
+they say separate from the ones assigned to you as in you know vendor
+Team versus customer for answers?
+
+**Jenny Smith** 3:56 Right. So I guess, yeah. So let's take a look at these. For example,
+like you mentioned Mighty, they are a couple of these are all all
+something we would need customer inputs on and I think we need to
+understand for example, we've tagged Shoab and and TJ here. I believe
+TJ is on the call. What is the best way to get these questions? To you is confluence appropriate to tag and then have you review and
+answer here. Is this something that needs to be brought out to a
+separate location? Yes. Sorry, is TJ on the call? Sorry, I can't actually see the attendee
+list. Oh, OK.
+
+**Greg Scott** 4:40 He was. He was. He's here. I see his name.
+
+**Jenny Smith** 4:44 Yeah, I think we just need to understand because you know, we could
+certainly tag them here, but if this is, if Confluence is not the right
+place to be able to get those answers from those individuals, we we want
+to make sure these aren't getting answered, but they need to be
+directed in the.
+
+**Greg Scott** 4:58 Well, I I think, yeah, Danielle, I have a suggestion in that like for
+example, there were some for show up, right. So I I I hit them up on
+Webex chat before we started and I think that we're going to have to do
+something like that because I don't think you get too many emails from
+councils of it's very easy to miss them and we really want to make the
+best use.
+
+**Jenny Smith** 5:04 Yes, that's correct. OK. Yeah.
+
+**Greg Scott** 5:17 Of time and not be waiting. So yeah, so I guess when we get we get done,
+I I can just take it upon myself and take a look really there and try
+and nudge people of, you know, do your homework. But I don't know. TJ,
+what do you suggest? Because like I reached out the show, but he didn't
+answer me and he's not here.
+
+**Jenny Smith** 5:19 Sure.
+
+**Greg Scott** 5:36 That's not really going to get us where we want to be. If anybody else has a suggestion on, you know.
+
+**Burt Jones** 5:45 Scott, let's not spend the paces here. Can you have an offline with TJ
+and Shob and?
+
+**Greg Scott** 5:48 OK, Yep, I'll have it offline. But Luke, in general, just like you did
+with me before earlier, if there's somebody who's not really leaning
+in or we need something, let me know and I'll just go start rattling
+cages until we get answers. All right.
+
+**Burt Jones** 5:58 Let let me know what the outcome is about how you want to handle that
+and and then we can follow suit with how you're gonna handle customer
+assigned items. OK, Scott.
+
+**Greg Scott** 6:00 Yeah. Yeah. Yeah. Yeah, yeah.
+
+**Burt Jones** 6:11 All right. Thank you. All right. Keep going, Danielle.
+
+**Jenny Smith** 6:11 Yeah, sure. And Yep, the other point I wanted to to mention is we also
+realize that some of these questions, since we're trying to have them
+isolated to just the specific session that we had and while I I know
+that a lot of these questions are related to the careers website.
+
+**Greg Scott** 6:13 Let's get going, Daniel.
+
+**Jenny Smith** 6:31 There are times where, for example, like with the video testimonials,
+which are video cards, that's going to be covered in a separate
+session. So what we are planning on doing is we're going to have
+essentially like a question backlog page and filter out those questions
+and put them there so that way they can be moved to the appropriate
+agenda. End of page when we actually cover it. So there will be visibility as to
+which questions have been removed from this table and there will be
+moved to that backlog page. And then once those new agendas are
+appearing, for example, we have say like a card component. Pretend we have a card component training session. We'll be adding any
+questions related to cards that were not answered within this agenda
+added to that specific agenda. So I'm going to pause here to see if
+there's any questions or comments about how some of these questions are
+going to be removed from here, but we will be addressing them in the
+future. OK. Great. Okay. Was that? Yeah.
+
+**Amy Carter** 7:33 If you don't mind, sorry, if you don't mind, I just wanted to add and
+it was just like one that I happened to glance over. So some of the
+questions that we did include here, I hope that you don't feel like we
+did answer that in the call. This was more so to make sure we have in
+writing in case anyone else came through with the same question and
+since it was explicitly asked in the call, we might have added it here
+just for that.
+
+**Jenny Smith** 7:39 Mhm.
+
+**Amy Carter** 7:52 Answer. We noticed like something wasn't the same answer as what we got
+in the recording, so.
+
+**Jenny Smith** 7:57 Right. Yeah. So Lisa, that's where I was saying we need a little bit
+more time. So that way our teams can can have a connect session with the
+offshore team. So the onshore, onshore team and offshore team will be
+connecting. That's why we just need another extra 24 hours. before we will be putting the answers to these questions.
+
+**Amy Carter** 8:18 OK, but not I'm talking about ones that like had the answer answered on
+answered by not blank ones. So I just wanna make sure it's not like a
+disconnect there.
+
+**Jenny Smith** 8:26 Yeah. Yeah. So, so we actually did connect after some of these were filled out
+and as we were reviewing some of the answers and responses, we that's
+why we recognize that, oh, we do need to make sure that we have our sync
+time before we are just posting things on here because keeping in mind
+that for example, our offshore team isn't necessarily on the call. Not be interpreting the question the same way that it was asked within
+the call itself with some additional context. That's why our proposal
+is for the onshore team to go through first before we hand things off to
+our offshore team to answer any other technical questions. So if you're
+seeing discrepancies on some of these answers, we're hoping to get that
+resolved with the.
+
+**Amy Carter** 9:09 OK.
+
+**Jenny Smith** 9:09 Process. Yep. Any anything else before we move on and and just to confirm that the
+team is because I'm not clear if you all are are getting notifications
+when these are being responded to or if you guys are able to review this
+or or or were notified that this page was updated with some answers. Just want to make sure that your team also has time to review these
+answers as well and I see Gonzalo's hand is up.
+
+Cal Nelson (customer)** 9:49 Thank you. So I I do have a question. So does it means that we need to
+go first to this confluence space to put a question or or for example
+will this be for components that we already went through or or we can
+raise the questions here?
+
+**Jenny Smith** 10:04 So these questions here are specifically for the session that we had. So
+ideally, you know, we'll certainly try to answer as many as we can
+during our actual call. However, we do realize that that the team needs
+time to also come up with additional things. However, the intention of
+this is for questions related to the session. And anything that's not related to the session, we're planning on
+adding to our question backlog, which will be a new page added here. And
+as we continue to cover more topics and we create more agendas, those
+questions will be moved from the question backlog to that specific
+agenda page.
+
+Cal Nelson (customer)** 10:41 OK. Thank you.
+
+**Jenny Smith** 10:43 Yep. Great. OK. So I think in terms of after actions, I think Luke, if we can just
+put a reminder when we send out the recording and transcript for the
+process with regards to like highlighting and that sort of things and
+then also perhaps a link to the question backlog and I can we, I can
+work with you on that after the call, but we can send.
+
+**Burt Jones** 11:06 Yeah, right, right on. Sounds good.
+
+**Jenny Smith** 11:07 That out as a follow up. OK, perfect. Awesome. Thank you guys. All right, so let's go ahead and
+get started then with our next session, which is events, and I'm going
+to pull up all my test pages and such over here. So one second as I get
+situated. Alright, OK. OK, so let's go start from the very beginning as if we were just
+logging to AEM for the first time. What I'm going to do first is I'm
+going to review the event content fragments and we're going to create a
+new one and also review some existing ones just so you can see. See some of the data that's there and then also we're going to take a
+look at our event related components, specifically the event calendar
+and the event detail page. We're also going to create a new event
+detail page using the event detail template. All right, so oops, did not mean to click that. OK, so now I'm going to
+navigate first to the DAM to where our content fragments are located. So
+I clicked on Assets and Files and we are in our customer folder and then we
+are in CF. And just like we saw with jobs, there's a separate folder for events
+here and we're going to take a look at the existing structure and I
+just want to to explain how this was previously set up during the
+migration. So here right now we have cafe and hotel events and the breakdown for
+those as you guys can see is the line of business, the specific
+property, the specific language and then it gets broken down by date and
+month. And then finally based off of the month, this is where all the
+events get dumped in. So to be clear, this particular structure is actually set up for ease of
+authoring. The understanding is that yes, there can be several events,
+you know, per month, per year, and so this here is broken down. So that
+way it's easier to be able to find events. So you're not dealing with an infinite scroll. So, so just to be clear,
+that's the reason why in some cases you know like in in here you don't
+see like 2026, you don't see previous months or anything like that
+because during migration the perhaps there were no events for that time
+frame. But if if for whatever reason you need to say change the structure, this
+is this is a structure that we had set up for the ease of authoring and
+being able to find events based off of a specific month. So we have
+followed that. For all the locations for across hotels and cafes, we followed that
+structure, but just wanted to make sure that you're aware. And Don, if
+you're listening, especially if if you are, you know, thinking about
+how this could be modified in the future, just want to let you know this
+is this was a set up we had, but it was. Use of authoring. OK, all right. So with that being said, what you can see here is I've
+created a folder called KT and so this the way that this would work is
+if for example say you all have a new hotel or something, you would put
+it within hotel, you would put it within cafe, but if you all have. Have say a separate line of business entirely, it would probably make
+sense to create a completely different folder. So that's what I've
+done here and I just tried to follow the structure that we had
+previously just so that way I could keep track of the events that I was
+creating. So in this case you can see I have.
+
+**Greg Scott** 14:39 OK. No.
+
+**Jenny Smith** 14:53 My month folder 02 and 03 within 2026 and so then I just put some
+content fragments here. So what I'm going to do now is just within this
+02 folder I'm going to create a new content fragment. Using the event model. And let's just call this test event. And I hit create and now the content fragment is created. Now one thing
+I want to note is that by default the editor is displaying in the new
+content fragment editor and so you you may notice if you have ever
+toggled this off that there are actually. A few differences between the new editor and the old editor. So just to
+show you, you can see it's it's laid out a little bit differently and
+I did want to inform the team here that we are actually having a support
+ticket created with the product team, so that way it will default to the
+old. So that way an author does have to change it. The reason why we're
+doing that is because within the new editor there are some differences
+within the way a field is rendered, and as we were doing our testing, we
+wanted to make sure that authors are not running into any issues or. Discrepancies by using the new editor. So once the support ticket has
+been fulfilled, we'll notify the team. But the way that you would be
+able to see content fragments moving forward is with this view. So I
+want to make sure that the team was aware of that. That's something
+that's in progress from the vendor side. OK, so for the time being though, I'm going to just show when you open
+up a content fragment, it's going to look like this. I'm going to
+toggle it by switching from new to old just for the time being now. In
+the future you will not have to do that, OK. So here is my new content fragment for test event. Just going to open
+this up a little bit wider and let's take a look at the fields that we
+have here from top to bottom, and then we'll take a look at the event
+calendar and see how this all maps out. All right, so for my title, I'm just going to put my test event. Again,
+I can name this anything. It doesn't have to match, but in this case
+I'm just going to put it here. I'm going to put my start date. I'm
+just going to set it for, let's say, February 15th. I have my start time which is a required field. I click here I can put
+the hours and minutes set AM to M. So let's say 9:00 AM. You'll notice end date is not a a required
+field, and that's because if your start date and end dates are the
+same, you don't need to fill it out again. However, you do need an end
+time. O I'm going to just put. 12:00 PM, 12:00 PM All right, so now let's move on here to the banner
+image and banner image alt text. And I'm just going to set an image
+here. I'm just going to take something from the dam. So this is going to be something random I'm just going to select just
+for the purpose of this and I can put my alt text here. And then here is another image field. This image field is going to be
+displayed on the event details page, which I will pull up once this
+event is created so you can see how it maps and I'm going to set
+another image from the dam. So I'm just going to choose something. Let's choose that. And this was, I think it was Rock City. OK, so this is a required field.
+The banner image is not and I'll show why in a second. But we as an
+author, we need to make sure this field is set up so it's displayed on
+the event detail page. As I continue to Scroll down, we do have event status. I'm not going to
+set that right now since it's not required, but we will edit this event
+content fragment so we can see how that gets displayed. Here's an event
+status message, also not required. Description is though, however. We also have an additional detail section which appears underneath the
+card and it's not required, so I'm going to leave it blank just for
+the time being. The CTA links are also not required. That's because by
+default if you don't put anything here, it should have a link. That will take you to the event detail page. So for right now, let's
+let's leave this blank and then we can see how that gets populated. We also have categories and from here this is actually pointing to a
+specific event category tag section. So there in the tagging structure
+there's a folder called Event Categories and these were the tags that
+have been identified for events. I recognize and realize that there could be additional tags you might
+need in the future, and so the way that that would be updated is by
+adding those tags within the tagging section. Right now though, this is
+the list that's currently under this folder, so I'm just going to
+check something for the time being. And then for location reference, what this is going to do is as an
+author you are going to select which location that you want your event
+to be associated with. And this is all content fragment based coming in
+from DPLT so. In this case, I'm just going to select this. I recognize that here this
+ID that's coming in. This is, you know, it's not clear to me exactly
+what this location is. So I and I understand that that may be, you know,
+difficult as an author to be able to choose. For the time being right now the way that I have been checking is by
+clicking on edit and then seeing what the property legal name is for
+that particular content fragment. And I lost all my information because I forgot to do my new dev. So one
+second. All right, we're going to make this really fast. All right. So that is something that I believe would make sense to put on that gap
+list is to perhaps have that information for the title on on the content
+fragments for ease of authoring use. And I'm going to go back and check my category. And then I'm going to select a location here. I'm just going to select
+the the hotel here at Maya, which I believe was just here. I'll just
+use this. It's fine, OK. Underneath here you'll see there is a featured check box. If I check
+this, and again we'll show this in a bit once there's a couple more
+events. If I check this, what this means is that this particular event
+will appear at the beginning of the calendar for the specific month that
+I'm viewing. So in this case we're in the month of February, so. Even though the calendar will display chronologically, if I put this as
+feature, this will be the first event depending on if there's other
+featured events. So we'll see that in a second. You'll also see here
+this event ID. This is a read only field. This is getting. Generated as it's passed as part of the URL which on the event details
+page and we'll see how that is right now since it's read only.
+Obviously you're not able to change that. If that's something that is
+desired in the future, that is something that we would want to discuss
+during the gap analysis portion. The reason why we have this generated event field though is to prevent
+any sort of duplicates from occurring. OK, so I'm going to go ahead and
+save my event content fragment and I'm going to close this. So we can see here this is my test event and I am going to publish it.
+So that way when I look at the calendar I'll be able to actually see it
+on there. So I'm actually going to pull this over here and I'm going
+to navigate to my test calendar page that I had created. So I went to sites, customer, corporate careers, English and you can see I
+created some test calendar events and I'm just going to open up my page
+here. And you're going to see right now that my specific event that I just
+created is not appearing here because I did not publish it. O let's go
+ahead and publish the event. OK, so I'm publishing it. It's saying OK, this is the content fragment
+model of the content fragment I'm just publishing. When I refresh this
+page, I'm also going to view it as published, but when I refresh this
+page. Now I can see that my test event has appeared, so I want to make sure
+that process was clear. I'm creating events. You may think why is it
+not on the calendar. You want to check and make sure that the event is
+actually published and then when you refresh your page you should see it
+there. I think I saw a hand up, but not sure who it was. Sorry.
+
+Cal Nelson (customer)** 24:56 Hi, this is Gonzalo. How are you? So we are seeing that you're using
+the view as publish and we're seeing that changes come really fast, but
+when you actually navigate to the publishing environment, they take too
+long to to show up.
+
+**Jenny Smith** 24:57 Sure, go ahead. Mhm.
+
+Cal Nelson (customer)** 25:14 For example that the jobs right when you were demoing the jobs so they
+they were coming really fast but we were trying we were playing with the
+jobs and we created a new one or make a change but we couldn't see the
+the changes. If we if we use the view as published this yes we will be
+able to see it but we will not be.
+
+**Jenny Smith** 25:20 Mhm.
+
+Cal Nelson (customer)** 25:33 Be able to see it on the published environment. Is there a way so we
+can, you know, expedite that publishing or we just have to wait the 5
+minute rule because we waited more than 5 minutes many times?
+
+**Jenny Smith** 25:45 So. Right. So I think this would be something we would need a little bit
+more information on Gonzalo like you know to to take a look at like for
+example, is it something that's being cached? Is it because someone
+else is publishing the page? You know that I'm not quite clear exactly
+like this the exact situation. But it sounds like to me you guys said on the actual. So if we were to
+go to like like you're talking about this publisher like, is that
+correct?
+
+Cal Nelson (customer)** 26:16 Correct, yes.
+
+**Jenny Smith** 26:17 OK. And what you're saying is that when you added a new job, was it
+through Workday or was it through just like a content fragment?
+
+Cal Nelson (customer)** 26:18 Oh. This is just like a contract requirement.
+
+**Jenny Smith** 26:27 OK, so you're saying when you added a new job, you're unable to see
+the job appear on here even after you published the content, correct?
+
+Cal Nelson (customer)** 26:29 Oh. Correct, correct and we were able to see it on the on the authoring
+using the view as published, but it was not reflecting in this in this
+page.
+
+**Jenny Smith** 26:37 I. Mhm. OK.
+
+**John Zimmerman** 26:47 Is it ultimately showing up, Gonzalo, or just or is it not showing up at
+all or is it taking time to show up?
+
+Cal Nelson (customer)** 26:53 No, I'm not showing up at all.
+
+**John Zimmerman** 26:55 OK, so then now there's some kind of blocker happening in the
+environment.
+
+Cal Nelson (customer)** 26:58 Most likely it looks like cash.
+
+**John Zimmerman** 27:02 Well, it depends if the page is. I would have to check with Vinay on how
+this page is loaded, but if it's if it's front end then it shouldn't
+be cached. If you publish the content fragment right, it should just
+show up if it's enabled and all of that so.
+
+Cal Nelson (customer)** 27:20 Yeah, I just wanted to bring it up that because I know that you are
+using content fragments. So I just wanna if you can show us on the on
+the publishing and see if that if the events are having the same issue.
+
+**John Zimmerman** 27:21 And. Yeah.
+
+**Jenny Smith** 27:24 Mhm. Yeah, so let's actually publish this page. OK, so this page to publish
+and let's take a look. What do I call this corporate KT calendar?
+
+**John Zimmerman** 27:33 No.
+
+**Jenny Smith** 27:47 So this is the first time I published this event, so there's absolutely
+no cache. So this would certainly, you know, be displayed pretty
+quickly. But Gonzalez, throughout this call, because I will be adding
+some more events, we can certainly kind of monitor that to just see, you
+know, if we're experiencing any issues with. Publishing new events and how quickly it's getting to this publisher
+link. OK, Yep, sure thing. OK, so let me navigate back though to the
+actual components. That way we can take a look at how our content
+fragment maps to this and we'll continue monitoring the published link.
+So I'm going to open up again.
+
+Cal Nelson (customer)** 28:11 Thank you.
+
+**Jenny Smith** 28:27 My test event. And we are going to take a look at this test event here, which is on my
+calendar so we can see. I'm going to make this smaller second, OK. So we can see here test event is appearing here on as a title of the
+card. We have our start date of 2/15/2026, 9:00 AM, 12:00 PM. So that
+appears here within the time section. Here we have our location. This is based off of that location reference
+that I had selected. It's pulling in the address and you can see when I
+hover over this, there is a URL associated with it. In this case it's
+Playa del Carmen. So that that information is coming based off of the location reference
+that I had made. And then here you'll see, as I had mentioned before, I
+did not put anything within the CTA links by default. What's going to
+happen, it's it's going to show a. Another a CTA button here which is going to link to the event details
+page if you leave that blank.
+
+**Greg Scott** 29:38 OK.
+
+**Jenny Smith** 29:41 Oh, and then also the image that I selected here, my guitar smash,
+that's what's being displayed here. So this image field corresponds
+with the image just displayed in the card. I'll pause here to see if
+there's questions about how the content fragment fields translate to
+what we see in the event calendar.
+
+**Amy Carter** 30:01 Yes, Daniela, I have some authoring questions that I think might be
+useful at this time.
+
+**Jenny Smith** 30:07 OK, sure.
+
+**Amy Carter** 30:08 OK, to start, is the there availability for us to put a override for the
+date field? There's a lot of times we have events where we like to
+change it out to not say the actual month and day and the time, but
+rather. Rather, every Wednesday through the month of February, something like
+that. Do we have an override?
+
+**Jenny Smith** 30:30 So that's not available within the event content fragment right now.
+When we take a look at promotions, there is that field and I think
+that's probably the behavior that you're that you would like to see
+here in events too and and we can kind of confirm that if that's the
+kind of behavior you would want in events. Um, during the gap portion, but we will take a look at promotions, Lisa,
+I think in like 2 days or so.
+
+**Amy Carter** 30:54 OK, the same question would go for the location. I know that those would
+be two placements that authors like to override from time to time, just
+requested from properties. And then my second question is the option for
+the image. It looks like we could add.
+
+**Jenny Smith** 30:57 Mhm. OK, mhm. Mm-hmm. OK.
+
+**Amy Carter** 31:12 Additional What happens if we add an additional? There was another add
+below image.
+
+**Jenny Smith** 31:17 I believe it just defaults to the first one. I can certainly test that
+out later to see. Usually as we've been when we were doing the
+migration and such it was only using just one image. But this yes this
+is a multi field but I don't think it's going to take into
+consideration the other images but we can confirm that.
+
+**Greg Scott** 31:26 Yeah. OK.
+
+**Amy Carter** 31:36 OK, I'm just writing this down at the same time. I'll hold off on my
+other question related to banner image. I know you didn't get to the
+actual more info page yet, so my my question is going to be related to
+why we would even have this as an option. Would it override it if it's
+configured from the page template? So we can skip that one.
+
+**Jenny Smith** 31:42 Mm.
+
+**Greg Scott** 31:43 Mhm.
+
+**Jenny Smith** 31:45 Yep. Mm-hmm. Sure. Yeah, we'll take that.
+
+**Amy Carter** 31:54 But for events, for the event status, is there a way that we can do some
+sort of logic so that if presale we have very specific presale dates
+which would then show you know a presale disclaimer of a password. But
+then once that presale date and time have passed, we revert, we
+basically revert back to a.
+
+**Jenny Smith** 31:58 Mhm.
+
+**Amy Carter** 32:14 Where the card might just say on sale. So is there any logic I guess is
+my question behind the event status labels because typically we fill out
+all at once an announce date and on sale date and pre sale dates.
+
+**Jenny Smith** 32:17 Mhm.
+
+**Amy Carter** 32:29 And then it will know and recognize the state of the the date in which
+it's presale and then go back to normal state. Does that make sense?
+
+**Greg Scott** 32:37 Oh.
+
+**Jenny Smith** 32:38 OK. So yeah, let me let me reiterate what I've heard. It sounds like
+what you're saying is that if you were to create a new event, you are
+aware of the different event statuses and the and how long those would
+be displayed. And so the ask is to be able to associate multiple event
+statuses with a date. So that way you would just automatically display
+on. To the card without the author having to come in every single time to
+change the status. Is that correct?
+
+**Amy Carter** 33:03 Exactly because like probably events are our most frequented item I'd
+say. So for content author to only have to add the event once filling
+out every field so that we don't have to remember at 9:00 AM do we need
+to go change the state of this at 10:00 AM did it change back kind of
+thing especially cause pre-sale dates.
+
+**Jenny Smith** 33:04 OK. Hello.
+
+**Greg Scott** 33:23 So.
+
+**Amy Carter** 33:23 Can be way outside of business hours or weekends, so just something to
+take into consideration, but I can move on. The other question was the
+call to action link that is the more info.
+
+**Greg Scott** 33:25 OK.
+
+**Jenny Smith** 33:26 1. Yes, yes.
+
+**Amy Carter** 33:40 We skipped it because it's automatically getting populated. There are a
+lot of times that we don't make a landing page associated with the card
+just because there's not more information for that that person to get.
+A lot of these entertainment acts are like very local level artists, so
+we don't give them more than what it is of date time.
+
+**Jenny Smith** 33:43 Mhm.
+
+**Amy Carter** 34:00 An event location, so we would hide that call to action. Is there a way
+to hide that button so that if we're not putting one, there just is
+none?
+
+**Jenny Smith** 34:09 I see. OK. I believe that the way that this was we were doing the
+initial requirements. The understanding was that there was going to be
+an event detail page associated with it and that's why this is the
+default. Even if you put anything sounds like it would be useful that
+if. There was say like some sort of toggle or something to be able to just
+hide it entirely. So I guess Lisa, to be clear, like in terms of say
+sending out the event to like people like that means that you wouldn't,
+you would have to send out the full calendar. Is that currently what the
+team is doing right now?
+
+**Amy Carter** 34:33 Yes. Yeah, so there's some property sites that will use event calendars just
+to show weekly free entertainment. And so it doesn't really give them
+much to to click more when when we don't build out pages for those
+artists outside of like the very ticketed events that we can share much
+more detail.
+
+**Jenny Smith** 34:51 Ah, OK. I see. OK.
+
+**Amy Carter** 35:02 So it's just having the flexibility there so that we don't force a
+user to click more info and then ultimately they don't receive more
+information.
+
+**Jenny Smith** 35:10 I see. OK, yeah, so so to your point, I understand the use case now.
+Right now it will default and it will just essentially just if there was
+no, say there was no like additional details or you know you didn't,
+you didn't set anything else, then it would show basically the exact
+same information. On its own page, but we like, I understand what you're asking for to be
+able to actually prevent that by not having that that display. I see.
+OK, yeah. So yeah, definitely that would be something that would be
+added to the gap since that would be a slight change from what we have
+right now.
+
+**Greg Scott** 35:31 Right.
+
+**Amy Carter** 35:36 Exactly. It's just more for the user's experience. Um. Great. And then my other question is related to the location reference,
+since every property would essentially need to know their number from
+the DPLT until that there is a way that we would know that 3150 is
+whatever property.
+
+**Jenny Smith** 35:53 Mhm. Yes.
+
+**Amy Carter** 36:04 Is it at least limited by user access? Because my assumption would be if
+you've already built the content fragments in the correct property
+folder and timeline that we wouldn't need to then select the property
+again somewhere as the source. So I would just hate for someone to
+choose the wrong location reference and have access to. Amsterdam if they're adding a Mexico event. So my question is the
+location reference, is there a way to limit it to the user so that
+they're only, especially in cafe world, only adding events for their
+location and not by mistake?
+
+**Greg Scott** 36:28 No.
+
+**Amy Carter** 36:39 Controlling someone else's? Or does that not get impacted if the wrong
+one is selected here? I just am finding it difficult to follow along if
+we've already put the content fragment in the right folder path, how
+it's getting picked up by a property location reference.
+
+**Jenny Smith** 36:48 Mm. Mm. OK, so let's take a look at, yeah, so the location reference you can
+actually see here and I think we're taking a look at the event calendar
+configuration right now is is hopefully going to be able to shed some
+light. So the location reference, this is not actually something that you even
+need to fill out right now. What you're asking for is if I as an author
+am just a cafe owner specifically for say this Mexican location, you're
+saying I ideally I would not be able to have. To even select it, is that correct?
+
+**Greg Scott** 37:30 Oh.
+
+**Amy Carter** 37:32 Yeah, I just don't understand if we've already built it in the path
+that it needs to be while now we need to also reference it. But if
+that's for the filter, I guess that makes sense. It's just now I want
+to make sure that no one has access to put a different location or else
+we're going to see, we're going to see mistakes being made, if that
+makes sense.
+
+**Jenny Smith** 37:39 I see. Yes. Yeah. Right. So yeah, this location reference because you can see I when I
+created my content frag, sorry, one second, I'm trying to open up. OK,
+here we go. You can see in my content fragment what I was trying to
+highlight here. You can say put Valley here because I was just showing
+this similar structure even though I put Valley here.
+
+**Amy Carter** 38:07 Yeah, right.
+
+**Jenny Smith** 38:10 Obviously I did not create a Bali event and that's simply for, you
+know, authoring organization like like you like you saw here. Yeah, this
+was necessary, correct. That's correct. And if I wanted to, let me show
+this here right now, the reason why it's showing.
+
+**Amy Carter** 38:17 Got it. So this is necessary for it to actually work, but the rest was
+organization.
+
+**Jenny Smith** 38:29 All my events, regardless of the location, you can see I actually had. I
+have four events located in this folder. Those four events are from
+different locations. You can even see them displayed here. This is
+Ontario. This is Mexico, Indonesia and Florida.
+
+**Amy Carter** 38:37 Mhm.
+
+**Jenny Smith** 38:46 And because those four content fragments are from different locations,
+the location filters and populate it with each location that they're
+from. Same thing with region, right? And then categories, it's a roll
+up. So I think in the instance of say like a specific cafe, what would
+happen is that this content.
+
+**Amy Carter** 38:55 Mhm.
+
+**Jenny Smith** 39:05 Content fragment folder path should only point to the events for that
+specific location and if there is a mistake within the content fragment,
+that is something that would have to be updated within the content
+fragment itself, but you would be able to see it based off of what if
+anything else were to appear on.
+
+**Amy Carter** 39:06 Yes. Mhm.
+
+**Jenny Smith** 39:25 On here if that makes sense. So the concern about like say this
+particular content fragment appearing in in the in someone else's
+section that is being prevented by the root path of the content fragment
+folder.
+
+**Amy Carter** 39:35 Yeah. So it won't show up on someone else's site, but it will still
+mistakenly add that location to this site's filtering.
+
+**Jenny Smith** 39:46 That's correct, yes.
+
+**Amy Carter** 39:48 OK, so it's probably still something we want to look into, but I I
+understand now.
+
+**Jenny Smith** 39:50 Yeah, understood. OK, right.
+
+**Amy Carter** 39:55 Sorry, was Scott saying something?
+
+**Jenny Smith** 39:57 Yeah, I heard someone else. Did someone have a comment? No. OK. Umm
+
+**Amy Carter** 40:04 OK.
+
+**Greg Scott** 40:04 Probably me just talking to myself. Sorry, I should mute myself.
+
+**Amy Carter** 40:06 And then and then I my my last question, cause I can just and yeah, it
+just sounds like you're sighing to be honest. The last question I'll.
+
+**Jenny Smith** 40:07 Oh, no problem.
+
+**Greg Scott** 40:15 No, I'm I'm multitasking. Thanks to Luke. Got me in trouble, Luke.
+
+40:19 My bad.
+
+**Jenny Smith** 40:25 Sure. Mhm.
+
+**Amy Carter** 40:32 Associated image. Do we have an ability to just populate A defaulted
+image and then we override when there is a specific one in in use? Not
+select a generic, but rather default to generic.
+
+**Jenny Smith** 40:32 M. Default generic. So right now I don't think that is added because this
+specific image. Hang on, so I'm just going to. Open this up. We're just taking a look now at the event detail page so
+I can show you that specific image was all supposed to be here. But what
+you're saying, Lisa, is that because of the nature of some of these
+events, there would this might not need to change out for many of them.
+And so you want the ability to not have to fill this out every time and
+instead. The component side set like a default kind of like how we I believe we
+can do that like we saw with the what was it the jobs listing component
+is that correct?
+
+**Amy Carter** 41:27 Yeah, it's it was just more so for convenience of author to make sure
+that we're not ever running into an issue if a blank image or anything
+of that nature, if they didn't select one. So there was just always
+something in its place, but I can add it to the sheet and I I apologize,
+I know I derailed a lot, but I thought my questions were beneficial to
+most people on this call.
+
+**Jenny Smith** 41:40 I see. Oh, it's OK.
+
+**Amy Carter** 41:47 So I'll I'll let the rest of the crowd speak so you can move on with
+the other event components.
+
+**Jenny Smith** 41:52 So so just to be clear though, this content fragment cannot be like I
+and I understand what you're saying about a default, but the concern
+about an image not being filled out, this can't be saved unless an
+image is there, just to be clear. So if there is like a default.
+
+**Amy Carter** 42:07 OK.
+
+**Jenny Smith** 42:10 Like in the DAM, if there's like a default section or image that can be
+used for the time being. If the concern is that an image might not be
+used, they can't save it or ublish it without an image here.
+
+**Amy Carter** 42:21 OK, understood.
+
+**Jenny Smith** 42:22 OK. All right. Let me go back to the calendar component. Let's get
+ourselves situated and oriented first. Just resize this. OK. All right.
+So we took a look at how these. Existing fields are mapping to the calendar portion. Now I'm going to
+open up the details page that I had just shown you guys so we can see if
+there's anything else on here that that we had mapped that wasn't
+present on the first page. Going to Scroll down. So here we can see the description description of
+test event that has now appeared here when you actually view the
+specific event details page and that is that is actually it for
+additional information because I left everything else blank. As I populate this, we'll publish it and then we'll refresh this to
+see what happens. But going back here now, let's take a look at these
+filters that we have here. As mentioned before, the region and location
+filter is Yep.
+
+**Maia Emerson** 43:28 Good question because I just got confused. What you just showed us, you
+said it was a detail page, but it looked like a card. I mean it it.
+
+**Jenny Smith** 43:36 This is this is so you can see here I have this is the page URL KT event
+if I were to go to AEM which let me do that on. going to just open.
+
+**Maia Emerson** 43:47 But is this what you're showing supposed to be the details of the event
+or just another listing of events?
+
+**Jenny Smith** 43:51 This is the details of the event. Yes, this is the details of the event.
+
+**Maia Emerson** 43:55 Why does it look like that? Looks like a card listing.
+
+**Jenny Smith** 44:03 They pull up. My page. So what I had done for this detail event page is I had created
+a new page and we're we can do that right now actually. So this is this
+is the KT event page that you can see right here and then you can see
+this is the ID of the event. That I'm viewing that we had just created so.
+
+**Maia Emerson** 44:25 OK, but why does it look like? I mean, are we supposed to? Sorry, I just
+want to make sure levels are here. Are we looking at careers? Because
+this is Hard Rock Life and we cannot use this for Hard Rock Life.
+
+**Jenny Smith** 44:35 This is the way that the event details page looks.
+
+**Maia Emerson** 44:40 How?
+
+**Jenny Smith** 44:45 So I am just going to create a new event detail page so we can see it
+from scratch. So I clicked on page and I'm going to select event page.
+This is the template I'm going to hit next. And we're going to create a KT test page. Actually, I want to make sure this is meant. Yeah. Event page. Yeah, so this is just essentially the same page I'm going
+to be creating here, but you can see what it looks like from scratch. So
+you'll see here on this particular page what gets added is this event
+detail component. Yes, because I am in the career section of this, I can copy this page
+and I can put it anywhere else. And what might change a little bit is
+like the color of say like the header or something. But this like I we
+can do that right now. Let's go ahead and do that right now.
+
+**Maia Emerson** 45:31 But it says careers. And.
+
+**Jenny Smith** 45:48 I'm just gonna go to, let's go, let me go somewhere else. I'm going
+to create another page and say this.
+
+**Maia Emerson** 45:58 Let me let me ask again, are we supposed to use this for all our sites
+for events or is this just a work around for career events?
+
+**Jenny Smith** 46:08 No, this is what's being used currently for all the events. So if we if we look at say this Amsterdam event calendar. Oh, sorry, there's no events. Let me see. I think Valley has events
+that are active. Hello. So if we look at this.
+
+**Maia Emerson** 46:37 So another question then, if you can drop this into a page, we don't
+have to drop this. I might as well just have an RTE and have something
+that. Works. Um. OK, let's just I'll just write the questions because I'm going to
+take too long trying to figure out this.
+
+**Jenny Smith** 47:03 Yeah. Let's see here. So this is actually while we're here, while we're
+looking at Valley, this is just an example. Let's take a look at this
+configuration. So as mentioned before, you can see the content fragment folder path is
+only going to pull in content fragments from whatever we selected here.
+In this case we have pointed to the EN folder of Valley under cafes and
+we've also set the event page base path, which is what I was creating
+in the previous tab. Essentially this means that the event details will be loading within
+this page that has been created. I'm going to hit cancel really quickly
+though, so you can see here in this case there's only one region, Asia
+Pacific, there's only one location Valley because I have. Pointed everything, every content fragment within the content fragment
+path I had selected has value associated with it. OK. And then taking a look at the event page for here, this is how the
+event details page looks with this specific event. You can see the
+information is pretty similar to what we we had here, just you know,
+additional text and such. But this is an example of the event pages being used with cafes as
+well. Alright, I'm going to close out of some of this. Um, some of these
+tabs, yeah.
+
+**Amy Carter** 48:35 Question on the the event detail page I believe it is. I'm trying to
+see where I had my note. My question is the URLs that you pointed out.
+So a lot of our events end up needing like a clean URL so that they're
+shared for.
+
+**Jenny Smith** 48:41 Yes, yes. Mhm.
+
+**Amy Carter** 48:55 Like promotional purposes, so advertisements, radio. So it'll be very
+clear to say property.com slash Kid Rock slash what have you. Will that
+work instead of like numbers 1234.
+
+**Jenny Smith** 49:08 Hey. I see. So, um, one second. Yeah. So in terms of your, it sounds like
+you're talking about like a like some sort of vanity URL. Does that
+sound accurate?
+
+**Maia Emerson** 49:22 No, no, no, not vanity. Right now in all our sites when we create an
+event and we have a detail page, the detail page has the name of the
+artist of the show, whatever the contract tells us to put. So these
+numbers, that's what this is asking. This is just.
+
+**Jenny Smith** 49:28 Hmm.
+
+**Maia Emerson** 49:39 I don't know. In the works or a bug, we're gonna have real names,
+right?
+
+**Jenny Smith** 49:43 No. So this is where I was saying right now the event ID it gets auto
+generated. This is to prevent. This was previously added to prevent
+duplicates. It sounds like what is needed is as a enhancement to this. Being having the ability to change it, so making this not read only and
+then being able to change the ID so it's something that's a little bit
+more user-friendly.
+
+**Maia Emerson** 50:09 I don't. I don't think we expect content authors to be changing. Can
+you just pick up the name of the page that we're creating, like
+WordPress or site coders?
+
+**Jenny Smith** 50:23 So so when you say creating the page, keep in mind this is one
+individual page I have created. This page is going to be used for every
+event based off of the ID. So what I so I'd say like let's say this
+is.
+
+**Maia Emerson** 50:32 But.
+
+**Jenny Smith** 50:38 The event, right? So in the future what I'm saying is this is something
+that I could see happening where the event ID instead of being the
+numbers, you would want it to be say like the name of the event. Is that
+correct?
+
+**Maia Emerson** 50:52 Yes, but not that way. I think we need to identify it as a gap because
+the way this is working, it's very labor intensive and not you know
+with a smart CMS that can you just create event and it just populates
+everywhere that we have it now. Um. So let's just add it to the list for when we launch any other side and
+careers. We'll figure out what to do with careers because that this
+digital page is not working for careers for the events.
+
+**Jenny Smith** 51:25 OK, uh.
+
+**Terry Friedman** 51:27 Question, Daniela, with these event detail pages, the homepage hero that
+we have there, is that a standard hero across all of the event details
+pages or is that something we can customize per page?
+
+**Jenny Smith** 51:28 Yes. What? Let me confirm. We're talking about this portion right here. Yes. So if
+I were to go back to, sorry, I lost the page. If I were to go back to
+this event detail page in the author, I'm gonna do that right now.
+
+**Terry Friedman** 51:41 Correct, yes.
+
+**Jenny Smith** 51:54 Sure, OK. Uh, So what I had done here is I can set. In the event detail page I can set a default hero banner, but I can also
+override it with that banner image and alt text field here within the
+content fragment. So an yeah, so an example of that.
+
+**Terry Friedman** 52:15 Perfect. OK.
+
+**Jenny Smith** 52:18 And sorry guys, we're jumping around. I'm just trying to find my tabs.
+An example of that. Let me take a look. I think this one I set something
+differently. No, was it this one? One of these? One of these I set
+differently. But basically as long as you put, yeah, this one you can
+see I set differently. If you put something within the content fragment, it will override it.
+If you leave it blank, it will just inherit essentially whatever you had
+put in the event detail page when you set up this page. Does that does
+that answer the question?
+
+**Terry Friedman** 52:47 Yeah, that answers it. Thank you.
+
+**Jenny Smith** 52:49 OK, perfect. Yeah, so let's actually take a look at this component.
+I'm going to go back to the empty page I had just created, which is
+right here. So by default what you'll see is the event page title. We
+have a pre-populated text of Hard Rock live event counter that can
+certainly be changed. Changed and configured the description, title, event details, the
+default hero banner image which can be selected based off whatever you
+want to show for anything that doesn't have a banner and then an error
+message if say there's no events or something happens and you can put
+an error message here to be displayed. So this is what is here the moment you create the page and then of
+course the author can change out as needed. But the process of this is
+that you create one event page and then the as of right now what happens
+is that the content fragment details will populate this page. By passing in the specific ID. And then I'm filling in the rest of the information on the page. I will pause here to see if there's any questions about this event
+detail component which is being used on the event page template.
+
+**Maia Emerson** 54:11 I got so many questions. I'll I'll put them in confluence. I'll I'll
+try to regroup, probably rewatch this and make sure I don't bombard you
+with too many questions. I know it is what it is. So just let us digest
+this and if we even, you know, need to use this or come up with.
+
+**Jenny Smith** 54:26 Yeah, understood.
+
+**Maia Emerson** 54:30 Something else, because it's just, you know, not what we need.
+
+**Jenny Smith** 54:35 All right, so now what I'm going to do is I want to actually show. You
+can see here this has a couple of other things filled out that we did
+not see previously on my other details page, and that's because I
+filled out more fields on this specific content fragment. So I'm
+actually going to pull up this content fragment. So we can see what was filled out for those to appear. So this one, Saint Patrick's Day. So you'll notice again, just to
+highlight, I had put this in 03 because as I was testing I wanted this
+to be Saint Patrick's Day, which is obviously not in February. However,
+I changed the date. In the content fragment itself, the way that the calendar works is it's
+going to be basing it off of what you put in the start date. So again,
+no bearing off the folder structure. This was just for ease of authoring
+use for organization.
+
+**Maia Emerson** 55:32 I quick question, I don't see time zone. So is is that a site setting
+or we still don't have that?
+
+**Jenny Smith** 55:32 OK, I'm going to, yes. So time zone wise, I was discussing this with our TA this morning and
+let me check my notes. You do not set a time zone here. This is based
+off of the user time. So viewed on the browser February 20th, 3:00,
+that's.
+
+**Maia Emerson** 55:56 Mhm. Wait based on the user.
+
+**Jenny Smith** 56:01 I'm sorry, what was that?
+
+**Maia Emerson** 56:04 Based on the the the event time is based on the property, not the user.
+
+**Jenny Smith** 56:09 No, as in this visibility is determined based off of the user's time
+zone. As in if I see this like because this there's no time zone
+associated with this February 20th, 2026, 3:00 PM for Eastern Time. Is obviously different from say like India or California and it's
+visible based off of the local time is my understanding.
+
+**Maia Emerson** 56:33 No, that's not what we have to do by country. We have to put the time
+zone of the location. So if I'm in China, I still see 8:00 PM Eastern
+Time because the event is in Miami.
+
+**Jenny Smith** 56:34 Yeah. Yeah, so let's get that into our Confluence page. I will talk to our TA
+to get a get something that's document on there to hopefully be able to
+explain a little bit better with some examples. So we'll note that one for something for follow up within our
+Confluence page. OK.
+
+**Amy Carter** 57:08 I think the only thing that unless I'm sorry when I was taking notes,
+missed it was the tags again. It's something that we kind of always
+skim over that that's just for internal purposes and for like Don's
+organization. Not the categories tags.
+
+**Jenny Smith** 57:23 So like, oh, oh, sorry, the tag you're talking about like right here.
+Yeah, these tags are not. Yeah, these tags are not, um, uh, being used
+within the calendars. And like, like you're saying, Lisa, you could
+certainly add tags for organization purposes, but.
+
+**Amy Carter** 57:28 Yeah.
+
+**Jenny Smith** 57:40 The calendar is not dependent on the tags that are added.
+
+**Amy Carter** 57:44 So tags are is like an internal use.
+
+**Jenny Smith** 57:47 Correct. In this case, yes. The categories though, which are tags, as
+you know, are dependent on to fill up the filter. Yep.
+
+**Amy Carter** 57:49 OK. Right. Confusing to say tags twice, but tags is typically internal
+category tags. It's meant for the filtering in the cards. Thank you.
+
+**Jenny Smith** 58:02 That is correct. Yes. Yes. Yeah. OK. So let's take a look at this here.
+So some slight differences that you'll see here is this, for example,
+this sold out status. That is based off the offense status and I I again, Lisa, I understand
+what you're asked was here. In this case I have one selected for sold
+out and so it's being displayed. So this will not change out unless I
+were to change it again. We also see the event status message. This is sold out. That appears
+here.
+
+**Maia Emerson** 58:36 Can we go over the statuses? Are those all manual or can we actually
+schedule the pre sale, the announcement, the rescheduled?
+
+**Jenny Smith** 58:46 Yeah. So this was the discussion that we were having earlier. Currently
+it is going to be manual what you select, but the understanding that I
+heard which will be discussed and covered more in the gap is that it
+sounds like each one of these statuses needs to have a specific like
+time frame associated with it. So that we would change without an author
+having to.
+
+**Maia Emerson** 58:50 Oh.
+
+**Jenny Smith** 59:06 Manually come into the content fragment and republish.
+
+**Maia Emerson** 59:09 Not all of them, because we don't know when it's sold out right until
+they tell us or cancelled or postponed. But it's more than that. I
+mean, they actually drive and hide different content. So is it doing
+that? I guess we just want to understand right now what it does. Like if I
+choose preset, does it hide the CTA? Does it change it? Does it add the
+description that we usually have or the code or is just a little flag on
+the corner?
+
+**Jenny Smith** 59:37 So right now, if I were to click on a presale, let's save this and
+again, I'm going to republish to have those changes visible. I'm just
+republishing it and then I'm going to refresh my event detail page. You
+can see that the presale. Flag has changed, so that's what the event status does. Yeah, that's
+because because what I did was, you know, let me open that back up
+again. I didn't change out my event status message. So this is separate
+from whatever the event status is.
+
+**Maia Emerson** 59:57 It is. So you have to do all the money. Okay.
+
+**Jenny Smith** 1:00:18 See.
+
+**Amy Carter** 1:00:19 I actually had a question just about what the process you just showed
+about like publishing to see those changes. So if we're a content
+author and we're making changes and we accidentally selected the wrong
+label or something and we needed to see it, we would have to make it
+published in order.
+
+**Jenny Smith** 1:00:24 Yes. So let's so I've just, yeah.
+
+**Amy Carter** 1:00:41 And then we needed to change before we go ahead and publish. We didn't
+push something wrong.
+
+**Jenny Smith** 1:00:47 Yeah, no, understood. So yeah, let's let's let's demonstrate how that
+works currently. So you can see I've like updated the title. I changed
+this to cancel. I hit save. I did not hit publish. So viewing the view
+as published side, you can see how I've refreshed it and it hasn't
+reflected those changes. So I would not be able to see those changes until I actually published
+it.
+
+**Amy Carter** 1:01:12 Even just internal to yourself.
+
+**Maia Emerson** 1:01:15 So how do we preview to make sure it's looking right? Because there's
+so many manual steps we need to see it before we publish because we
+might publish the wrong thing.
+
+**Jenny Smith** 1:01:28 Oh, so let's see here. So.
+
+**Maia Emerson** 1:01:33 And not to mention, we probably have to like export it as a PDF to send
+it to somebody. If it's a big one, then it's approval because we still
+don't have the preview links, so we got to come up with a process to
+get approvals.
+
+**Jenny Smith** 1:01:48 Uhuh. And I and I think in terms of because I believe that was a question that
+we saw and also I think we're also going to we answered it, but I think
+we also want to cover that during the gap analysis portion, the preview
+server and the preview links. But for this section right here currently
+the way it works is that.
+
+**Maia Emerson** 1:02:01 Yeah.
+
+**Jenny Smith** 1:02:09 You would not see the changes until you publish the content fragment.
+However, keep in mind I have not actually published the page.
+
+**Maia Emerson** 1:02:22 But if we need to send something for approval and we need to send the
+whole page.
+
+**Jenny Smith** 1:02:22 Right. So what I'm saying though is the so the previous server is something
+that's completely separate. That's something.
+
+**Maia Emerson** 1:02:30 We. No, right, right, right. I'm just saying like we gotta come up with a
+process, right? So right now the process is doing a full page screenshot
+and send it in as a JPEG or a PDF. So how do we get that? If we have to publish and go live to see a full page and there's no
+internal review when I'm logged in into AM.
+
+**Burt Jones** 1:02:55 Andy, are you aware of any export ability that that AEM has
+out-of-the-box just by chance?
+
+**John Zimmerman** 1:03:03 For exporting.
+
+**Burt Jones** 1:03:05 Like this page to a PDF, like the entire page, the the use cases
+they're trying to figure out a process while other things in the gap
+analysis will be in flight to be able to send these pages as previews to
+like vendor partners or.
+
+**Maia Emerson** 1:03:09 Me.
+
+**John Zimmerman** 1:03:17 Mhm.
+
+**Burt Jones** 1:03:22 Whoever their other stakeholders are before they actually, uh, publish
+changes on a public site. Just curious if you've had that use case
+before with exporting.
+
+**John Zimmerman** 1:03:28 Let me. No, not a specific ask for like a screenshot almost, but let me take a
+look and see what the latest and greatest is on cloud services and see
+if there's something that's available. We'll come back to you.
+
+**Maia Emerson** 1:03:45 And to be to be fair, I mean we can just do plug in Chrome or whatever
+and screenshot the whole page, right? And it saves as a JPEG or a PDF.
+So not asking for an export feature, but a way to at least preview in
+the browser so we can do our screenshots.
+
+**John Zimmerman** 1:03:54 Mhm.
+
+**Burt Jones** 1:04:03 So a browser preview and and and.
+
+**Maia Emerson** 1:04:05 No.
+
+**John Zimmerman** 1:04:05 Wouldn't that be from using just view as published or using your
+preview tier? So you have in in cloud services you've got in addition
+to your dev QA stage prod. For each of those environments there is a
+preview tier that you guys I don't think are using right now.
+
+**Maia Emerson** 1:04:11 Yes.
+
+**John Zimmerman** 1:04:22 Um, that might serve that purpose where it's only visible to you.
+
+**Maia Emerson** 1:04:22 Hmm.
+
+**Burt Jones** 1:04:27 Yep, Andy, the problem. It's not configured yet.
+
+**Maia Emerson** 1:04:29 OK, but is there a preview like what Danielle is showing right now?
+Let's say we wanted to send this page that she has right now. At least
+we can see the page. We can say ignore the toolbar on the top like
+something to see the page, but it seems like for the event detail pages
+that doesn't exist at all.
+
+**John Zimmerman** 1:04:30 Um.
+
+**Jenny Smith** 1:04:45 So sorry, let me you're asking, sorry, I'm trying to make sure I
+understand the question because I made changes here, right? And you're
+like, how do I get those changes to be seen here without having this go
+out to the public? So that way they aren't seeing a bunch of.
+
+**Maia Emerson** 1:04:47 I Yes. Yes.
+
+**Jenny Smith** 1:05:03 You know, junk. Um, So let me actually pull up this page in the
+publisher. Alright, one second.
+
+**Maia Emerson** 1:05:06 Yeah. OK.
+
+**Jenny Smith** 1:05:12 OK, one second. One second. Um. What is this called? QT Calendar, I think. OK, so right now we're
+reviewing this in the publisher and I'm going to click on more info to
+open up my details. Oops. Oh, I don't think I I don't think I I I
+didn't publish this, did I? One second. Yeah, so let me let me publish this version. And publish this version first. OK. Let's publish. Let me also double check to see what the event details
+are for this. So right now, uh, OK, it's cause I was, I was messing around. I was
+messing around with that link. OK, I'm actually going to save this one
+and I'm going to publish this one. Alright, So what I was just doing
+was I was changing one of my destination links. I was. I put something else there as I was setting U this page. I
+didn't intend for that to happen. So now if I were to go back to our. Publisher link, which I'm going to pull up again. Last KT calendar. See here and let's go back. Let's look at the author version of this
+page as well to see what differences that there are. OK, so right now
+you'll see I didn't publish this page, I didn't publish KT calendar,
+and so I'm able to see this here, right?
+
+**Maia Emerson** 1:06:59 OK.
+
+**Jenny Smith** 1:07:02 I'm able to see more info. I did publish the content fragment, but I
+did not publish the page. Makes sense. Like that's why you're not
+seeing any of the changes I made where I removed the button or I added
+all you know this junk at the end of this title. So the.
+
+**Maia Emerson** 1:07:03 OK. OK. But what are and can you do the same with the?
+
+**Jenny Smith** 1:07:18 Yeah, go ahead.
+
+**Maia Emerson** 1:07:22 Thing that detail page that looks like a card the.
+
+**Jenny Smith** 1:07:26 Oh, so hang on, let's see. Let me confirm what you're asking. So as I
+clicked on more info, this is the detail page so I can see the changes
+that I made. You're asking for if you can see that here as well. I did
+change the destination link for this. One second, I'm actually going to
+open up this one.
+
+**Maia Emerson** 1:07:31 So. Yeah, that one.
+
+**Jenny Smith** 1:07:45 I don't think, oh, I never publish. Don't think I published my detail
+page from the publisher side. Mayte, one second. And sorry guys for jumping around. I'm just trying to find it in my
+section here. Did I ever publish this page? Yeah, so you can see.
+
+**Amy Carter** 1:08:01 But this is helpful to know too. Do we have to publish all three, the
+fragment, the detail page and the event calendar every time a new
+event's added? This is just important for other authors that are going
+to be adding to their event calendars.
+
+**Jenny Smith** 1:08:09 So. Yeah, so keep in mind that again, this event page is just one page,
+right? So you would only have to publish it once, but I never publish
+this. That's why none of these links here in my calendar on the
+publisher side are going to work because I never published the KT event
+page, right? O hoefully that makes sense. So now what I'm going to do instead is
+I'm going to publish my KT event page. On the publisher side, if I were to refresh this, let's see if that has
+gone through. So now you can see here the event detail page works and
+it's showing information, whereas previously it wasn't because that
+page had never been published. But even when I refresh this and I go back to the author side, you can
+see there is there is differences. My taste question was if I were to
+view this here, let's see what it looks like. OK, so because I
+published the page and it probably published a content from again.
+
+**Maia Emerson** 1:09:15 Mhm.
+
+**Jenny Smith** 1:09:22 Let's do this exercise one more time. What I'm going to do is I'm
+going to make another edit to the content fragment. Um, just to see, uh,
+you know, like what's being displayed here. So one second. Let's go back to my St. Patrick's Day content fragment.
+
+**Maia Emerson** 1:09:39 I am so gonna have to watch this again. There's so many steps.
+
+**Jenny Smith** 1:09:42 Well, this the reason why is because I'd never published a page.
+That's why there are some inconsistencies. But one second. OK, so I hit
+save and I hit close and let me hit publish and let's see what
+happens. So I had published. So this should now say testing. Let's see what it says over here. It
+still does not reflect because I never republished the KT calendar page.
+If I were to refresh this, you can see here it does not show the new
+change of testing. Because I did. I I did not republish. Let's see. Hang on. I didn't.
+Wait, hang on. Yeah, so I republished the content fragment, but I did
+not republish the event page here.
+
+**Maia Emerson** 1:10:33 To. So when we have the 100 of events, is that how long is it quick right?
+Because if we got to republish every time there's a new event or a
+change the whole page, does that cause any issues or delays or? And I'm sorry, but going through cycle, like cycle would give us a lot
+of issues, right? If we were published the whole event page, that's why
+I'm wondering.
+
+**Jenny Smith** 1:10:53 So can you? Yeah. Yeah. Can you repeat the question please, Mayte?
+
+**Maia Emerson** 1:11:02 Yeah, um, when you said you have to publish the event page right for it
+to show.
+
+**Jenny Smith** 1:11:10 When I yeah, when I first created this, I had never published it. And so
+now this is published. So you can see it was published 3 minutes ago.
+OK, sorry, continue.
+
+**Maia Emerson** 1:11:23 Yeah, so um. Maybe you just answered the question. So you don't have to publish that
+event page every time a new event is added. It was just that one time
+because you didn't publish it.
+
+**Jenny Smith** 1:11:35 That is correct. Yes, I did not have. Yeah, yeah. So like now now if I
+were to look at these, like previously these links would not have
+worked. Well, the Google one would have worked, but these links would
+have worked because that KT event page had never been published. But now
+if I were to open it, it should display the content.
+
+**Maia Emerson** 1:11:36 OK, OK, OK, OK.
+
+**Jenny Smith** 1:11:55 Because I published the page. Hopefully that makes sense. And again, Maishi, totally understand. If
+you have some additional questions, we can certainly review them also in
+Confluence.
+
+**Maia Emerson** 1:12:06 OK, yeah, yeah, that'd be good.
+
+**Amy Carter** 1:12:07 So what do things always need to be published? The the fragment and what
+else?
+
+**Jenny Smith** 1:12:10 So. Okay, So let's let's do this. I've created a calendar page. I can create a let's create a brand new
+calendar page, a brand new event detail page, and then also just, you
+know, referencing some content fragments. OK, let's do that.
+
+**Amy Carter** 1:12:31 OK, cause like likely the event calendars, my assumption are already
+pre-built for properties basically and they're just responsible for the
+new events. So if I'm that property and I'm creating the new event, I
+just want to make sure I'm publishing all of the right things that need
+to be included in the publishing. So that's.
+
+**Jenny Smith** 1:12:36 Yes. Yeah, understood.
+
+**Amy Carter** 1:12:49 The fragment.
+
+**Jenny Smith** 1:12:51 OK, so if I were to make some changes, let me add a new content fragment
+very quickly with some bare minimum content. Uh, start date. Let's do March. Start time just random. Uh. Going to select my image. So this seems like typically what a content author would do. Correct me
+if I'm wrong, Lisa, they right now would be creating an event
+specifically for their property, right? So like this, this seems to be
+in line with like what a content author would typically do. So I thought
+on my image my description. And I'm not going to fill this out, but I will just add a location and
+I and in this case I'm just going to choose something here. OK,
+alright, so this is the bare minimum right now. And you can see here I've created this within the Ballyen folder just
+like the other ones. So if I hit save. And I hit close. Right now we can examine that this particular content
+fragment has not been published. So the expectation is that when I view
+this calendar, I should not see it on here. So it was a March event. You can see March is not even available once I
+published this particular content fragment. Just sorry. Click on this and then I am. Where is my publish button? Uh. Uh. It's this one right? Should be the there we go. OK, so previously you
+might have seen that the the ribbon here didn't have my specific tool
+quick published, but after I refreshed it and yes it did pop up. So if
+that just something to keep note as a content, I'm sorry as a. As an author, depending on how fast you do things, sometimes it might
+not appear like right away, but if you refresh the page you will see it.
+So I'm going to hit quick publish. Publishing that. So now this is a published content fragment. We can say
+I published it a few seconds ago. If I refresh this page here in author,
+the expectation is that you will see it appear here now. So I click
+March 2026 and you can see that specific fragment is here.
+
+**Amy Carter** 1:16:06 OK.
+
+**Jenny Smith** 1:16:07 Now let's go to the same page that was in the publisher's server. So
+this is my KT calendar. Let's click refresh on here. So you'll see
+that there is no March 2026 event that appeared here. Right. If I publish the calendar page, right? So I'm going to republish
+this calendar page. So I've hit publish. There's been published. Um, let me see. OK, so I've hit publish and you'll see my Saint Patrick's Day testing
+thing came in and also let's see what else. All right, second this and this I think is what Gonzalo was referring to
+in terms of how quickly will we be able to see the changes and so this
+is something certainly that we would want to. Confirm. But as we will continue to check this page, the expectation is
+that after you publish this page here you the event calendar page, you
+should be able to see the same changes like the way that it's that
+you're interacting with it here where you see that the filter had been
+updated and that new test.
+
+**Amy Carter** 1:17:15 Which is the event calendar.
+
+**Jenny Smith** 1:17:27 I created is here after publishing that that should be available then on
+the site, but I think it could potentially be a couple minutes and as
+Gonzalo mentioned, this is something we certainly want to monitor, but
+that is the expected behavior, Lisa. So what I had outlined was.
+
+**Amy Carter** 1:17:34 OK.
+
+**Jenny Smith** 1:17:46 Pushing that content fragment and then I also published that calendar
+page.
+
+**Maia Emerson** 1:17:51 Yeah.
+
+**Burt Jones** 1:17:52 Daniella, can you drop the link that you have the page you published and
+it it. Yeah. And then we we can take that in the background for Andy and
+Vinay. Thank you. Yeah.
+
+**Jenny Smith** 1:17:54 Oh. Oh, yes. Sure. Yeah. No, thank you. Yeah, that's cool. Yes.
+
+**Amy Carter** 1:18:03 And then Daniela, two questions. One's going to be related to careers
+and one is going to be related to events in general. We we announce
+events sometimes and then get notified from the property. Take it down,
+take it down. Artist changed announcement to Friday.
+
+**Jenny Smith** 1:18:12 Sure.
+
+**Amy Carter** 1:18:19 So what does that look like to unpublish but not delete? Because we will
+use that content fragment, just unpublish and then repurpose it for the
+time that's necessary.
+
+**Jenny Smith** 1:18:20 Mhm.
+
+**Maia Emerson** 1:18:33 Yeah, kind kind of like hiding the the card and the detail page so
+nobody gets to it.
+
+**Jenny Smith** 1:18:33 So. OK, so let me make sure I understand. Let's take this for example.
+Let's pretend Saint Patrick's Day has been canceled and we don't want
+it to be displayed.
+
+**Amy Carter** 1:18:46 Mhm.
+
+**Maia Emerson** 1:18:46 Not, not canceled. We just got told to pull it down for a few days.
+
+**Amy Carter** 1:18:51 And we'll announce it later in the week, yeah.
+
+**Jenny Smith** 1:18:53 OK, so the question is how do I get like what do I what would I do in
+order for this to not be live on the site? Is that correct?
+
+**Maia Emerson** 1:19:01 Correct.
+
+**Jenny Smith** 1:19:02 OK.
+
+**Amy Carter** 1:19:02 But without deleting it, because we will put it back up Friday.
+
+**Maia Emerson** 1:19:06 Yes.
+
+**Jenny Smith** 1:19:07 OK, alright, so let's go ahead and unpublish Saint Patrick's Day. So this is saying OK are you what do you want to unpublish? OK, I want
+to unpublish my event. I don't have to select this, but some in some instances. The reason
+I'm just highlighting this is that you will see additional references
+where you get to pick and choose what you want to be updated and so just
+want to make sure that you guys are aware that in this case there's
+only one so it doesn't matter as much, but that's why this is a multi
+select. Then I hit unpublish. So it's referenced by three items. Yep, got it.
+So I have hit continue and So what that should do. Let's see because
+we're still waiting for this to. Um, operate, I think. Yeah, so you can see here in this instance, right? That event has been
+removed from the calendar and like you can't see an author because I
+unpublished it. Does that make sense?
+
+**Maia Emerson** 1:20:11 What about the? Yeah, what about the detail page? Is that a published
+too?
+
+**Jenny Smith** 1:20:16 So the detail page, I guess what you guys are saying is that in this
+case here like the URL, I'm gonna take it from the publisher. You're
+asking if like this here like would this still be something that they
+can access if they have like the specific?
+
+**Maia Emerson** 1:20:26 Yeah. Yes, when we pull it down, we'll pull it out from everywhere.
+
+**Jenny Smith** 1:20:37 I see. Um, let's see here. Oh man, I don't have the ID for it. I I
+would need to check the ID, but we can chest. Let's I what I'll be
+doing is, yeah.
+
+**Amy Carter** 1:20:47 I just want to make sure that the same pages that we're publishing, do
+they need to? Do we need to take precaution on extra steps to unpublish
+something so that we don't miss everywhere that it it got associated
+to?
+
+**Jenny Smith** 1:21:00 Yeah, no, I understand. With regards though to that event detail page,
+again keep in mind because it is only one page, you would not be
+unpublishing that specifically for the event. However, what I do want to
+check once we can see the changes here on the live site, I'm sorry on
+the stage website is. If I can still access the previous URL that was stored here, like since
+it's removed from here, I I understand that a user if they still had it
+stored as like a favorite or something, we want to check to see if
+that's accessible, but they would not access it from the event calendar
+because it would not be visible in the event calendar.
+
+**Amy Carter** 1:21:39 Upon a media unpublished of the fragment.
+
+**Jenny Smith** 1:21:41 Right. So what's we've we've taken this page so we're going to be
+investigating this one and that's also going to be something that I'll
+be testing. I have the URL currently for this with the ID once this
+because we unpublish this. Once this is unpublished and visible as
+unpublished on this page, we'll also be accessing. the specific link here to see if it's going to pull up a 404 or if it
+still displays the details. So that's something that we will have to
+take offline, but I can also report back tomorrow once we get that
+looked at. Hi.
+
+**Burt Jones** 1:22:18 Sounds good, Danielle. Yeah, we're sleuth in the publishing queue Part
+2, so we might have follow up on that tomorrow.
+
+**Jenny Smith** 1:22:23 Yeah. Yes, I believe we will. Yeah. Um, OK.
+
+**Maia Emerson** 1:22:29 So just to recap maybe for for a second to understand how these events
+that you have built worked, we can unpublish them and you're going to
+confirm the detail page. We can publish them on a specific date and
+time, but it's not local to the property. And they will drop off on the I I think I saw an end date right on time.
+So they will automatically drop off without any action from our part and
+all the event statuses are manual.
+
+**Jenny Smith** 1:23:02 Oh.
+
+**Maia Emerson** 1:23:02 We cannot override dates, we cannot override location because we usually
+don't put the address, we put the actual venue, whether it's a career
+event or whatever event we.
+
+**Jenny Smith** 1:23:15 Mhm.
+
+**Maia Emerson** 1:23:18 Cannot do a status as a scheduling. What else am I missing? Lisa, we
+have to do it like in three times instead of one. Like in Cycord we and
+that's pretty much right all the capabilities.
+
+**Jenny Smith** 1:23:32 So.
+
+**Amy Carter** 1:23:32 Uh yeah, I probably have other notes on my end that I could add to the
+list.
+
+**Jenny Smith** 1:23:37 Yeah, yeah. So one thing I did want to want to point out, let's see
+here. And I know that this is, I just want to be clear that the hiring
+events that are listed here, we are not currently using. I think like this is like what you're what you're talking about,
+right, Maite? So you'll see here, yeah.
+
+**Amy Carter** 1:24:02 Well, so if these are, what are these using if they're not using the
+events?
+
+**Jenny Smith** 1:24:06 Sorry, no, no, they so sorry. Apologies. I what I meant to say is they
+are using the events content fragment. Wait, hold on. Where did it go?
+One second.
+
+**Maia Emerson** 1:24:08 And I.
+
+**Jenny Smith** 1:24:21 One second. OK, here we go. All right, let's take a look at this very
+quickly and I can see the time. So I I know that we also want to cover.
+
+Cal Nelson (customer)** 1:24:28 Those are the promotion Uh content fragment model.
+
+**Jenny Smith** 1:24:31 Yeah, that's what I wanted to point out that this is, this is what I
+believe Mayte is expecting. Is that correct?
+
+**Maia Emerson** 1:24:38 Yeah, but Amazon.
+
+**Jenny Smith** 1:24:39 In terms of the over, in terms of the overriding, like that's what you
+were describing.
+
+**Maia Emerson** 1:24:44 Yeah, we can do that for any of our cards.
+
+**Jenny Smith** 1:24:48 Right. So here we have and I believe, yeah, I know Gonzalez, I think you
+you had made some edits and such, but let's just pull up one of these.
+So yeah, this is a a different content fragment model. This is using the
+promotions content fragment model. The reason why we chose to use the
+promotion. Content fragment model was because we we saw the examples where this was
+something that was overwritten. That's and that feature and capability
+is here with date override text and location override text.
+
+**Burt Jones** 1:25:13 Mhm.
+
+**Maia Emerson** 1:25:14 OK. But we need that for. So in the event ones we don't have that and we
+also don't have venues. I'm just trying to understand if we can actually use that. Um.
+
+**Jenny Smith** 1:25:31 We don't. So.
+
+**Maia Emerson** 1:25:45 Oh. Sorry, my connection was weird, but is there a way we how do we
+understand exactly what these cards can do?
+
+**Jenny Smith** 1:25:54 So keep in mind what we went over today is specifically for the events
+content fragment model using the event calendar component and the event
+details component. What we're seeing here, I I the reason why I was
+calling this out is because yes, I know this is hiring events. In order
+for us to make these cards, we use the promotions.
+
+**Maia Emerson** 1:25:55 To.
+
+**Jenny Smith** 1:26:14 Content fragment model since that seemed to be more in line with the
+fields that were listed here versus using the event content fragment
+model. Does that make sense?
+
+**Maia Emerson** 1:26:25 Yeah, it makes sense. But I mean, it's still lacking, you know,
+functionality and we we have to address that in in in the gap assessment
+that we're going to do. But I was asking more about the events, right?
+What is it that we can and cannot do to see if we can even use them?
+
+**Jenny Smith** 1:26:30 Mhm. Yes. Um.
+
+**Burt Jones** 1:26:45 Danielle, is there anything else on events that you haven't covered to
+show what we have currently implemented?
+
+**Maia Emerson** 1:26:47 Is.
+
+**Jenny Smith** 1:26:52 Um.
+
+**Amy Carter** 1:26:53 Also, to be clear, so we're not using events on careers. Sorry, I was
+just confused because I thought today was careers focused.
+
+**Maia Emerson** 1:27:00 Yeah.
+
+**Jenny Smith** 1:27:01 No, no. So today was events focused and we wanted to cover everything
+related to events. I wanted to call this out though, because this is
+actually using a completely different content fragment model. I know the
+title says hiring events, but this is not using the event content
+fragment model that's using promotions.
+
+**Maia Emerson** 1:27:05 Um. OK, so oh, I thought we were continuing with careers because they were. OK. So we'll just Add all the other questions from careers so we can
+wrap that up. And if today was about events, so much so, OK, we'll just
+write down our questions.
+
+**Burt Jones** 1:27:44 We tried to flash the agenda yesterday. I don't, you know, I'm sure
+there's a you're taking it from a fire hose, everybody. But yeah, we
+we we flashed it. We were gonna review events.
+
+**Maia Emerson** 1:27:51 Yeah.
+
+**Burt Jones** 1:27:56 So yeah, my take, you know, if there's more questions on careers, uh,
+we, we, we, we wanna make sure they're captured, yeah.
+
+**Jenny Smith** 1:27:59 I.
+
+**Maia Emerson** 1:28:01 Yeah.
+
+**Jenny Smith** 1:28:01 So actually, Luke, this actually rolls in quite nicely because I think,
+you know, yesterday we were kind of doing a retrospective. And So what
+I'm hearing from the team is definitely understand the desire to
+actually go over more things that are related to careers. Previously, when we had planned out how these sessions would go and
+examine what topics were being tracked within JIRA, we were trying to
+group things into essentially like, you know, big overview topics like
+everything events related. I mean the content fragment and the related
+components.
+
+**Maia Emerson** 1:28:18 Mhm.
+
+**Jenny Smith** 1:28:35 However, definitely understand that it sounds like careers is the
+desired focus, so we can potentially pivot tomorrow to look at some
+additional careers specific components. I believe one of the questions
+was like for example the video testimonials. And the fact that here we're using the promotions template, how does
+that work in relation to this hiring events section? So what I'm saying
+is I can write up a modified agenda to go over some of those different
+topics. We can go so it's more career focused versus. Some of the things we had initially planned, if that sounds good with
+everyone.
+
+**Burt Jones** 1:29:13 Hey, hey, once. Yeah, one second. Daniela, can you pull up the
+confluence with the agendas that we sent out last week?
+
+**Maia Emerson** 1:29:14 Yes, but it's big.
+
+**Jenny Smith** 1:29:19 Mhm. Yes, one second. Here we go. Yeah, OK.
+
+**Burt Jones** 1:29:28 And I'm not, I'm not pushing back. I'm just, I just want to make sure
+I'm I have an understanding. So you were initially going to do news
+tomorrow and then locations, but we're talking about pulling in. Tell
+me again what you're pulling up forward.
+
+**Jenny Smith** 1:29:42 Taking a look at the careers website and identifying any additional
+components like that we had planned for outside of these sessions, we
+were trying to cover the content fragment related components first since
+this do take a while. So to be clear then there will be a different
+agenda.
+
+**Burt Jones** 1:29:56 Right. Yeah.
+
+**Jenny Smith** 1:30:02 I'll try to get that prepared after this call and it will be covering
+some of the items that we can find on the careers website.
+
+**Maia Emerson** 1:30:11 Oh, question. When you say careers, job sessions one and two, we assume
+that's yesterday and today, session one and two. So if we are doing
+session three instead of two, can you just let us know when we're
+changing that? Because our mindset was on our careers, so we're looking
+at events. Trying to figure out how on earth we use this for career events, and it
+turns out it was for everything else, not careers that is used in
+promotionals.
+
+**Burt Jones** 1:30:36 Yeah. My my it was tough to norm on the number of session topics to blocks of
+time because they're two hour blocks of time. So So what what our
+intention was when when we list out the four bullet points because
+we're having four blocks of time, we were covering 2 session topics per
+block.
+
+**Maia Emerson** 1:30:44 Mhm. OK, that's no problem.
+
+**Burt Jones** 1:30:58 So yesterday we did jobs one and two, today we did events two and or
+three and four and and so on and so forth. So that that that's the
+intention that that there there's going to be two hour blocks of time
+and we were able to try to scope and plan. The the I don't know Danielle was at 42 session topics into those those
+planned sessions blocks of time. So I just want to be clear on that if
+we were I know that norming is is is a little wonky but that that was
+the best we could do given the two block 2 hour blocks of time that we.
+
+**Maia Emerson** 1:31:22 OK.
+
+**Burt Jones** 1:31:30 Had already aligned with Scott that you guys had, you know, were
+committing to be available. So just Danielle, did I explain that right?
+
+**Maia Emerson** 1:31:35 OK. No, thank you for explaining, Luke. That helps. Good to know because
+we didn't know. So, but we are not done with careers. So if you tell
+us, hey, go manage that site, we can't. So we'll add the rest of
+questions we were holding on thinking today was session two.
+
+**Jenny Smith** 1:31:37 Yeah, I think so.
+
+**Maia Emerson** 1:31:55 Add them to Confluence and we need to revisit that because that's the
+site that we got to go live right due to the Workday crazy timeline. So
+we got to be prepared to support that. We already have issues with Hard
+Rock and Reverb. We don't want to add more to with careers.
+
+**Burt Jones** 1:31:58 Yeah, I. Yeah. So Maite, I, you know, hear you, but but here here I I just want to make
+sure it it's clear the careers site, we're cross-pollinating topics of
+there's a careers work stream and I'm giving it to you from the vendor
+point of view. There there's a careers work stream, there's a
+knowledge transfer work stream.
+
+**Maia Emerson** 1:32:26 Mhm.
+
+**Burt Jones** 1:32:30 This focus that we have right now with these knowledge transfer sessions
+is knowledge transfer across the the components and and the master topic
+list that we had. We pulled those master topic lists that they were kind
+of agnostic to whatever careers work stream that you guys had. Committed to and and that now the onshore team and vendor are pulled in
+and are supporting start starting to get into the game supporting the
+careers work stream. But I to I, you know I say it a lot just want to be
+clear like this is knowledge transfer across. Those master topic list and what we've implemented in in your instance
+of a EM, we are pivoting and trying to accommodate with with the
+knowledge transfer schedule, you know careers focused components from
+from the framework.
+
+**Maia Emerson** 1:33:24 Mhm.
+
+**Burt Jones** 1:33:25 So hear you loud and clear there. I'm not disagreeing with you that
+it's it's of importance, but we still have to be mindful and
+specifically me and Scott that we're sticking to the plan and not
+falling behind and and and not, you know, finding that we need more
+sessions than what we had scope and planned for.
+
+**Maia Emerson** 1:33:30 Hmm.
+
+**Burt Jones** 1:33:44 On the schedule for knowledge transfer. So yeah, so we're doing a best
+effort to to support that mighty.
+
+**Maia Emerson** 1:33:47 So it's called maybe. Right. And I appreciate that. Look, I do, I do. It's just that clock is
+ticking. So can you guys maybe figure it out how we look at the
+components used in careers first instead of going through events that we
+are not using?
+
+**Burt Jones** 1:34:02 That's what Daniella was just saying to you, yeah. Yeah, that's what Daniella was just saying to you. Yeah. So we what
+what what we're doing is reacting to that, that ask and and
+understanding the careers timeline that we're under and Danielle is
+going to try to make a modified agenda is what she just said, yeah.
+
+**Maia Emerson** 1:34:12 Mhm. Okay, thank you for that.
+
+**Burt Jones** 1:34:22 Yeah, no problem. Danielle, did I did I over commit you for something or
+is that good?
+
+**Jenny Smith** 1:34:23 Oh. No, that that's exactly what I said. But sorry, I just wanted to make
+sure before before we got into more retrospective that I was checking
+the stage site again. This is that page that we're looking at. You can
+see that the unpublished content fragment, that Saint Patrick's when
+it's no longer visible on the live site. And then also that new content for everybody created March 2026. You can
+see it's also visible on the site here. I didn't republish the details
+page or anything like that, but just want to make sure that the team was
+clear that you can see it now on the staging website. OK. Um, so going, yeah.
+
+**Burt Jones** 1:35:06 That being said, Andy, it should be worth noting on the call that that
+we are investigating the delays on stage. Yeah, Andy, I think it's
+worth calling out so people know that we're we're trying to be
+proactive there, yeah.
+
+Richard Ray (Director of Digital Experience)** 1:35:17 Yep.
+
+**John Zimmerman** 1:35:20 Yep. So as you guys were doing the the KT session here and it sounded
+like there might be something up behind the scenes. So I went into cloud
+services and I see some some failed public well that's related to
+publication, some some entries in the log. So looking into that and. Raise a support ticket and we'll keep you guys posted.
+
+**Burt Jones** 1:35:44 Yes. So Gonzalo, hope you heard that. And I saw your hand was up
+earlier. Gonzalo, I'm sorry if I bogarded the mic. Did you have
+anything else, Gonzalo?
+
+Cal Nelson (customer)** 1:35:53 Yeah, this is to Daniela. Were you going through the hiring event
+component or that's going to be something for the for the next session?
+Because I have a question about that one specifically.
+
+**Jenny Smith** 1:36:04 That was gonna be tomorrow for the new modified agenda, Gonzalo.
+
+Cal Nelson (customer)** 1:36:09 OK, we'll have it for tomorrow. No problem. Thank you.
+
+**Jenny Smith** 1:36:11 Yeah, no, thank you. And and please let me know what your questions are
+tomorrow for sure. And Mayte, I know we had also said I had saved the
+URL for that specific one that had been unpublished. And so just showing
+you this is what would happen if a user went to it. This particular
+message here to be clear is something that's configured on the.
+
+Cal Nelson (customer)** 1:36:16 Yep.
+
+**Jenny Smith** 1:36:30 So if I were to take a look at it and the author, you can see I had my
+error message. There are no events. So obviously if you want it to just
+say this event no longer exists or something that could be something
+that can be configured, but when you unpublish the content fragment. And sorry, when you unpublish the content fragment, that specific event
+detail URL is also not available to the end user.
+
+**Maia Emerson** 1:36:54 OK, it's good to know how it works. I'll add it as another gap.
+That's not the functionality we're expecting, but at least the user
+doesn't get to see it. So that's one plus.
+
+**Jenny Smith** 1:37:07 Hi.
+
+Richard Ray (Director of Digital Experience)** 1:37:07 Would we still be able to have a preview link to that, Danielle?
+
+**Jenny Smith** 1:37:10 But we still be able to have a preview link. Um, if it's.
+
+**Maia Emerson** 1:37:13 Nora.
+
+Richard Ray (Director of Digital Experience)** 1:37:14 Like we had to make updates to the page after we unpublished. We need to
+share that out to get approval before we published again.
+
+**Maia Emerson** 1:37:20 That's a good question. So not a preview link as in the ones that we
+are identified as a gap, but if we log into AM, can we work on the page
+and see it within AM as a logged in user?
+
+**Jenny Smith** 1:37:22 Sorry, I'm I'm. Uh. Uh. Yeah, so keep in mind again, it's one page. Everything's coming in
+from the details here. If you publish the content fragment, it doesn't
+automatically become visible to the end user. You would have to
+essentially republish the. The calendar page. So when you guys are saying the event detail page,
+it's just again, it's one page. Like this is just one page. K team. Oh
+oh, I'm so sorry. One second.
+
+**Maia Emerson** 1:37:58 Oh, wait, you're not sharing. So an unpublished page. You can still go to the detail page and see it
+in AM and screenshot it to get approvals.
+
+**Jenny Smith** 1:38:14 So if I were to on this, uh, not this one. One of my content fragments
+was previously unpublished. I can't find it, but. We had unpublished the. Saint Patrick's Day one. This one is unpublished and you can see it's
+unpublished. And your question is, would you still be able to see that
+in a EM? So if I were.
+
+Richard Ray (Director of Digital Experience)** 1:38:43 Yeah, can you send me a link to that? Can you post a link to that in
+chat, the unpublished page?
+
+**Jenny Smith** 1:38:46 I see. So if I were to, so you would not see, you would not see the
+content fragment within the calendar, nor would you see the event detail
+page if it's unpublished. If we were to publish the content fragment,
+it would be visible.
+
+Richard Ray (Director of Digital Experience)** 1:38:51 Or unpublished details, whatever. OK.
+
+**Jenny Smith** 1:39:05 In the calendar as well as the link to be able to see the details.
+However, until I publish this link here, this will not be visible to the
+end user. But Rick, for your specific question about the details page,
+if I just publish this, let me do that right after this call and then I
+can report. Back on on that specific behavior for what you you just mentioned. OK,
+yeah.
+
+Richard Ray (Director of Digital Experience)** 1:39:26 OK. OK, good. Thank you. I just want to make sure that with content
+fragments because they are kind of, you know, data elements that's
+pulled into a template page to to render that we have the ability to
+preview that before it's built or somehow built but not published, that
+kind of thing.
+
+**Jenny Smith** 1:39:35 Mhm. Yes. Yeah, no, understood the need for that. Sure. Yep, I will write back on
+the Confluence page then. Yep, thank you guys. So I'll stop sharing and
+I think we've agreed then for tomorrow's session, we're going to take
+a look at some additional components that are specific to the careers
+website, one of the things that.
+
+Richard Ray (Director of Digital Experience)** 1:39:50 Perfect. Thank you.
+
+**Jenny Smith** 1:40:07 I we can certainly cover is the how hiring events has been modeled by
+using promotions. I believe we also had the video testimonials which are
+on a couple of pages and I'm actually going to do a look. After this call to kind of, you know, take see what else is out there
+and I'll be posting the new Confluence page prior to tomorrow's call,
+which will detail out the other components I'll be covering.
+
+Richard Ray (Director of Digital Experience)** 1:40:31 Hey.
+
+**Burt Jones** 1:40:34 Daniella, it it. Does this mean we're? Pulling topics forward, so to speak.
+
+**Jenny Smith** 1:40:42 Yeah, that's correct, Luke. Yeah, that's right.
+
+**Burt Jones** 1:40:46 OK, we're not adding a session, we're pulling stuff forward.
+
+**Jenny Smith** 1:40:47 So no, no. What we'll be doing, Yeah, what I'll be doing is like my
+previous confluence pages where I have like the list of JIRA tickets
+that the other reference. I'll be pulling those into my confluence page
+as well for whatever's being covered.
+
+**Burt Jones** 1:41:01 Yes, yes. This is actually really good. This is good 'cause it it's it's
+prioritizing careers like Maite's \*\*\*. So OK, OK.
+
+**Jenny Smith** 1:41:15 Yeah, yeah, absolutely. So yeah, if you guys can just give me a little
+bit of time to get that out, we will certainly send it over though once
+it's once it's ready to go.
+
+**Burt Jones** 1:41:16 So, OK, OK. OK, 15 minutes left. Any any questions or feedback from today's
+session, you know, let let let me know. I want to hear it. Anybody on
+the call?
+
+**Maia Emerson** 1:41:39 I'm still confused on how to use events, honestly. Um. Seems to have a lot of manual like check, check, checks and and added in
+multiple places instead of how easy we have it now that we just do it
+once and it populates wherever it has to.
+
+**Burt Jones** 1:41:45 Yeah. Yeah, we we definitely want you to understand or as best as you can
+might take the the baseline of of what we've implemented and yeah
+ultimately with with the with the gap list and and getting the you know
+the changes made to the platform on the road map. We want to get it right for you. So you know, encourage you to go back
+to the recording because I know Daniella, no fault to her, but you know,
+some of it goes pretty fast. There's a lot of information and we'll
+look forward to seeing your your, your feedback and and questions and
+confluence, OK.
+
+**Jenny Smith** 1:42:20 Yeah.
+
+**Maia Emerson** 1:42:33 Yeah.
+
+**Burt Jones** 1:42:36 What? What else, guys?
+
+**Maia Emerson** 1:42:37 And one question I did forget to ask is because we were talking about
+events, events and just on that page and it had those filters on the top
+for locations. But I assume we can choose or I might be wrong that we
+can choose what location show and display it on any website, right? Like
+if I'm in the. It's a Seminole gaming website that has six properties. I can only show
+events for these six properties. If I'm in, I don't know, a campaign
+that has three properties or only hotel and casinos, I can pick events
+from those so I can. Set my criteria to show to display whatever events I need from these
+venues or that venue. So from this month like mix and match criteria or
+is that not possible with AM?
+
+**Jenny Smith** 1:43:24 So right now the the way that the event calendar has been set up is it
+points to one specific content fragment folder path. If I'm
+understanding what you're saying, like you can certainly select like
+the line of business folder so it would show like safe like casinos. It
+could show all casinos, but it sounds like what you're asking. Asking for is say you don't want to show all casinos, but you want to
+show a subset of casinos. Is that correct?
+
+**Maia Emerson** 1:43:48 Yeah, and it could be, you know, hotel and casinos. It could be just the
+Seminole staff, which are casinos likely, but it could be also just
+based on location, who it could be a mix and match of different line of
+businesses. It could be any big event anywhere, which is what we do in
+entertainment.
+
+**Jenny Smith** 1:44:01 OK.
+
+**Maia Emerson** 1:44:05 We have venues across including Harbor Cafe Venue in Orlando. So that's
+a cafe. Then you have from hotels like New York and then casinos and
+casino hotels.
+
+**Jenny Smith** 1:44:15 OK, yeah, so with the way that it works today is because you're
+choosing a specific folder path, you can choose like a something in
+higher up in the hierarchy. However, you are not able to select specific
+folders from within there. To show multiple folders or build a calendar based off of multiple
+folders that is not currently in our system.
+
+**Maia Emerson** 1:44:40 OK. OK, sorry, I was just thinking how to how to do that, but OK, that's a
+big gap for any casino, hotel, cafe, entertainment and all the websites
+that are left. Can I pull events into somewhere else, something else than that event
+page? Or are they logged to a specific template? Like we show events in
+carousels across, you know, all the pages you might be in a restaurant
+and we might feature events.
+
+**Jenny Smith** 1:45:19 When you say pull events to other pages, you're saying outside of the
+calendar. So would you like for example, like say you might want to show
+just a specific event? Is that what you're asking Mayte?
+
+**Maia Emerson** 1:45:24 Yes. 6. Yeah, we can go. It could be a venue, right? I could be in a venue page,
+a small venue, like, I don't know, council log, right? And I want to
+show the events for playing at the council log venue. Or I could be in
+the homepage and show just a coming events from X. Category. I could be in the. I don't know. I I might want a show just
+to give you a use case, right? The ones that have dinner and a show,
+right? So pull all those.
+
+**Jenny Smith** 1:45:52 Mhm. OK, so there is the ability because keep in mind these are content
+fragments. We do have some other components outside of the event
+calendar component which was strictly made again just to display event. Uh, Events. Uh uh. Event components. I'm going to share my screen really quickly and I
+don't think this necessarily addresses exactly what you're saying, but
+I'm trying to make sure I understand. So right now I'm showing a
+component called the Contact Fabric card list. You can see I can display
+a list of either news or events. There are some other things I need to configure to display this, but
+because it's a content fragment, I'm able to display things outside of
+that that calendar component, so you're not locked into using that, but
+for your use case. You're saying like for example, if I want to select a fixed list of
+specific calendar events, you could do that through here by choosing the
+exact content fragment path. But what you're describing is like say
+something by tag maybe. Does that sound right?
+
+**Maia Emerson** 1:47:06 Oh. Um. Yeah, I don't know how you call them in in in EM, but something that we
+can say these events, right? Maybe it's a tag that we add like dinner
+and a show and then we query, hey, all the events, dinner and a show
+from this property show here or within the same site to make it easier,
+right?
+
+**Jenny Smith** 1:47:21 Right.
+
+**Maia Emerson** 1:47:28 Um.
+
+**Jenny Smith** 1:47:28 OK, yeah. So if I and just by the way, because I see the time, what I
+can do is I'm, I can, I'm going to configure some things, but I can
+also share this tomorrow once it's like properly configured. But what
+I'm saying is like yes, we could select the route path for the content
+fragments and then.
+
+**Maia Emerson** 1:47:41 Mhm.
+
+**Jenny Smith** 1:47:48 If you have tags that are associated with that specific content
+fragment, you could select that tag and then it would pull everything
+that's related to that. So anything that's say like dinner and a show
+or something, if that's A tag, you could pull that and as long as those
+content fragments are tagged with that, that then should show up within
+this content fragment card list.
+
+**Maia Emerson** 1:48:01 Oh.
+
+**Amy Carter** 1:48:08 And did we lose the filter for events? I know we, I know we lost the
+filter for careers, but is it just because that was careers specifically
+or did?
+
+**Jenny Smith** 1:48:11 Did we lose the filter? No. Oh. So in terms of and with careers, keep in mind the component that we're
+using for that is we we used a specific content fragment card component
+which we will take a look at tomorrow and that's why there's no filter
+on there if we use say the promotions component by default. A filter displays. I'm just going to add it here even though we're not
+actually going to use it yet. So this is. I think this is the filter you
+were expecting, is that correct?
+
+**Amy Carter** 1:48:47 Yes, for events and and promotions.
+
+**Jenny Smith** 1:48:48 Yeah. So to be clear though this the reason why we chose to use a card is
+because by default that UI this filter will appear whenever this
+component is used. Our understanding of like the careers website where
+it shows. I'm just showing it on the live site. What was it? Was it hiring,
+hiring events, right? Since there's a filter here, that's why we chose
+to use an individual card. Lisa, there's a filter here by with the way
+our component works, it does put that filter. I mean, if that's
+something that's desired on the homepage, certainly could be changed
+out.
+
+**Amy Carter** 1:49:11 Thank you.
+
+1:49:11 Mhm.
+
+**Jenny Smith** 1:49:26 But that's the reason why there was no filter on there. And then same
+thing with on this page here. Yes, we can switch it out so it's using
+that promotions component instead and it would have the filter that I
+just showed in the previous page wherever that page is. But we had made a choice, at least for the homepage, to just use a
+content fragment card component because we didn't want the filter to
+appear on the homepage. Does that make sense?
+
+**Amy Carter** 1:49:54 I well, I think it definitely makes sense not to have the filter like in
+the section on the home page, but I guess I'm just confused why we lost
+it. If we're using the promotion card model and it exists for
+promotions, why we wouldn't have had the the filter on that landing
+page at least.
+
+**Burt Jones** 1:49:59 Yeah.
+
+**Jenny Smith** 1:50:12 So that can certainly be changed out. We can explore that more tomorrow
+in terms of whether say for example the filters is matching what you're
+expecting is the fact that the search bar for example that we have here,
+is that something that you that you want to be displayed in this page
+like so those we can definitely discuss this. We'll we'll discuss this more tomorrow, but what I'm saying is if it
+if that's perfectly fine after we review the component, that can
+certainly be swapped out on this particular page.
+
+**Amy Carter** 1:50:34 Mhm.
+
+**Maia Emerson** 1:50:46 OK. And Speaking of careers, since we're on the topic, can I pull
+career jobs, like hot jobs or hiring events into a property page? So we
+have reverb, let's say that we are hiring for reverb. And I'm just making a use case, but can I pull some of those like maybe
+with a tag or location? You know if location is Atlanta, GA and it's
+river then show on the river website as maybe a carousel or a grid of
+like 3 or 6.
+
+**Jenny Smith** 1:51:13 So.
+
+**Maia Emerson** 1:51:26 Mm.
+
+**Jenny Smith** 1:51:26 Again, you can select the root path of where the jobs are located. I
+guess my question is would it be A tag or would it be, you know, kind of
+grouped together in one location? So like I can select anything from like say London and I can display it
+on any page, right? But if you're what you're asking for is you want
+to show like say Great Britain and Spain that currently cannot be done
+together in this one component.
+
+**Maia Emerson** 1:51:42 OK. And if it's within a location, let's say property specifically, Tampa
+is having a job fair and they're coming up with a landing page because
+they do that and we want to show only the Tampa jobs, we can do that or
+we can maybe group them. Maybe it's a job fair about we have culinary
+job fairs.
+
+**Jenny Smith** 1:52:10 Yeah, so.
+
+**Maia Emerson** 1:52:16 More often than we would like, right? So we want those jobs. Um, only
+those.
+
+**Jenny Smith** 1:52:19 So, so here you can see I've selected the Tampa folder and like, so I
+what I did was I navigated to the structure in the dam. So all those job
+postings again, these are coming in from work day and it's based off of
+the state and the country, right? That's how these got structured.
+
+**Maia Emerson** 1:52:25 OK.
+
+**Jenny Smith** 1:52:37 Structured so I can select that specific folder. So in your use case
+that you just described, my take Tampa, you want to show any Tampa jobs,
+I would select the Tampa folder and then all the jobs that are
+underneath that should appear within this component.
+
+**Maia Emerson** 1:52:43 Mm. OK, and if I want to exclude a category under Tampa, I can't. It's
+just gonna show everything from Tampa.
+
+**Jenny Smith** 1:52:59 When it's when you say, oh, you mean like, OK, like a category. So
+currently that's right, right, right, right. Right. Currently that is
+not something that you would be able to do within this component. It
+would just show everything that's within this specific folder path.
+
+**Maia Emerson** 1:53:05 Like marketing and food and beverage accounting. OK. OK. And to be fair, we cannot do that right now with the ISAMS job. So I
+was just wondering.
+
+**Jenny Smith** 1:53:24 Yep.
+
+**Terry Friedman** 1:53:26 OK, Daniela, before we have, before we run out of time, there's one
+other question. Sometimes with events we have a little field that for
+text specifically it's usually empty. We keep it empty, but sometimes
+we like include maybe A tag that says 21 plus event or free event or you
+know, a phone free event where we can't use our phones.
+
+**Jenny Smith** 1:53:29 Sure. Uh huh.
+
+**Terry Friedman** 1:53:45 Is there anything like that that we can have on these events
+specifically where some way to display A tag of sorts on them?
+
+**Jenny Smith** 1:53:45 OK. Edwin, can you send? I think I I feel like I've seen an example, but
+can you actually send me an example of that and I can take a look at
+that and discuss that with my technical team? I just want to make sure I
+I I understand the exact ask and how it currently looks, if that's OK.
+
+**Terry Friedman** 1:54:02 OK. OK. Yeah, sure. I'll be more than happy to.
+
+**Jenny Smith** 1:54:08 Thank you. Appreciate that.
+
+**Terry Friedman** 1:54:10 Of course.
+
+**Burt Jones** 1:54:11 All right, I'm calling it. Thanks guys for your time. Appreciate you
+again, Daniela, for walking through events today and we'll look forward
+to seeing the updated agendas for tomorrow because we're we're
+amending it a little bit.
+
+**Jenny Smith** 1:54:28 Yeah.
+
+**Burt Jones** 1:54:29 To accommodate careers. So and I'll send out the recording and the the
+transcription. Hopefully this time the recording loads correctly so you
+guys don't have to ping me about that. And then I think the last point
+I'll I'll I'll put out there when I send the e-mail. Daniella was
+also calling out the. Highlight on the the questions that we we yeah, I'll I'll put that
+instruction as well. Yep.
+
+**Terry Friedman** 1:54:51 Yes, you.
+
+**Burt Jones** 1:54:56 All right. Thanks for your time, guys.
+
+**Jenny Smith** 1:54:56 Awesome. Thank you, everybody. Bye, bye.
+
+**Greg Scott** 1:54:58 Thank you. OK, bye.
+
+Cal Nelson (customer)** 1:55:00 Thank you. Thank you. Bye.
+
+Greg Scott** stopped transcription
+
+
+
+## Session: Careers — 2026-02-12
+
+**Customer Vendor Knowledge Transfer-20260212_130224-Meeting Recording**
+
+February 12, 2026, 6:02PM
+
+1h 53m 20s
+
+**Burt Jones** started transcription
+
+**Burt Jones** 0:10 Okey doke. Thanks for joining us this afternoon. I'm letting ACN. OK,
+cool. Let me share my screen. I'm gonna kick us off and then I'll hand
+it over to Daniela for the next. Component she's gonna review. Can you guys see my screen all right,
+Scott?
+
+**Greg Scott** 0:35 Yep, looks good.
+
+**Burt Jones** 0:36 All right, cool. So this will look familiar to Scott, but be new to
+everybody else in the call. What we tried to do is we tried to put
+together a view, notional view of the knowledge transfer calendar.
+We're in week 1 here.
+
+Angela Johnson (customer)** 0:49 OK.
+
+**Burt Jones** 0:53 To kind of plot out where where our KT plan is is tracking towards. This
+is out there on Confluence published under KT calendar as the page.
+You'll see it over here on the left side. So um. Key call out here as I walk you through the legend. CA is content
+authoring. We tried to align language based on the SOWTE is technical
+enablement. Scott, you'll notice I have a call out for morning times
+for those. So when I get midweek March. 2nd or sometime before if we need more lead time, yeah, probably the
+week before because we're going to start them on that Thursday. We want
+those those technical ones to be in the morning so Vinay can join
+because he's the kind of the source of knowledge on our side, yeah.
+
+**Greg Scott** 1:47 I. Okay. Yeah. And what what what do you think about then? We'll figure it
+out. Okay.
+
+**Burt Jones** 1:51 So keep that in mind. Yeah, yeah, yeah, yeah, yeah, no problem. Adopt.
+There's an adoption strategy part of this that we've brought Jacob
+White, some of you have worked with him in the past on for. We want
+those on Thursday and after we're done with the. Content authoring sessions that Daniela is running. We'll dig a little
+bit more into those as we get closer and then the big point of what I
+want to talk through here just briefly before Daniela gets into her
+stuff. Is the platform expansion sessions the last two weeks and and then
+we'll you know Jacob will be wrapping up his adoption uh strategy
+sessions so. And and these are in the SOW and what we aligned with the intention with
+Macario for this entire knowledge transfer work stream is that we're
+going to reach decision points for stuff that that that's in the
+backlog for this what we've been calling the, you know, the gap list. That that we want to see if we can fit with the with the current
+platform or we can modify what's in the current platform or if it's
+net new that needs fully new development on the new on the platform so. How this ties in and why I wanted to bring it up now is like
+specifically right here where I have underlined and you guys can read
+this page whenever you want and if you have questions definitely let me
+know after after the call. But we're seeing a lot of questions. It's good. Maite, you're busy at
+night and we appreciate the diligence, but we're gonna have to start
+leveraging a question backlog. We'll have a different page on here
+that'll say question backlog. That that our team's gonna try to park some items in that that are are
+going, you know topics and questions that you have that that are
+requirements for preparation for that plat platform expansion part of
+this work stream. When I say platform expansion, again, it's there'll be tickets that we
+want to make sure we have fleshed out in in your Jira instance that are
+going to inform what we need to scope for a future, you know, for the
+future to to implement on the platform to to cover the. The gaps that you're identifying and these questions, some of them
+we're noticing will fill, will fill nicely in to what you guys are
+going to provide us and what we'll have some disposition on when we get
+into these last two weeks, March 16th and March 23rd. So we just wanted to call that out as we're going through questions.
+We're going to keep to what we've talked about. We're going to try to
+address in subsequent sessions or or you know respond directly in
+confluence where where we can and if further you know collaborations
+needed we we called out. Highlighting those will defer to follow-up discussions if they relate to
+other content authoring or technical discussions, or for a lot of them,
+they're going to be captured as backlog gap analysis or future
+consideration, and none of this should be a surprise. Because this is directly from the SOW and it's kind of working as
+we've anticipated, although the question there's more questions than
+we thought, but it's not necessarily a bad thing, it's just we're
+reacting to that and trying to make sure we accommodate it with a
+process. Um, yeah. So that's that. That's what I wanted to share with the team
+here. Are there any questions like quickly before I hand it over to
+Daniela? OK, Daniela, I did I did I give you some time? Are Are you ready to go?
+
+**Jenny Smith** 5:49 Yeah, but sorry. Yeah, thanks, Luke. There's actually just one more
+update that I wanted to share and I think Andy was going to take that.
+It's with regards to some of the issues that we were seeing yesterday
+when we were trying to publish and look at it on the publisher. Andy, I
+don't know if you're available to speak on that right now.
+
+**John Zimmerman** 6:11 Yep, sure. Hey everybody. So yeah, if you guys were doing the KT and and
+reported and that you were seeing delays and seeing updated content on
+the in the published environment, I started looking at the stage logs
+and found. A couple of artifacts that I want to actually need to submit the ticket.
+I'm going to send a ticket to support just to have them look at the
+environment and verify that things are OK now after well even during at
+the toward the end of the KT session it said it looked like. Content was showing up that Daniela was publishing and then we did some
+testing after and everything looks alright. I'd be interested to know
+if you guys have seen any delays today. If so, I'll grab from the logs
+and include that in the support ticket, but. Just want to have them check the published environment. It looked like
+maybe indexing of content, which is a job that a scheduled job that runs
+in the environment from time to time may have been slower than it
+necessarily should be and that would cause. The search kit functionality and the the back end stuff that that
+surfaces content to be slow and show them updated stuff. So anyway I
+just wanted to keep you in in the loop let you know Gonzalo. I'll
+actually CC you on the ticket so you have visibility into what how they
+respond. But right now the environment looks good. I just it's just for due
+diligence to to see where if we need assistance or they need to tweak
+anything then that's where we're at.
+
+Cal Nelson (customer)** 7:50 Thank you. We we tested in the morning and we were still facing the same
+issue. You say that they should like if we create a a custom job, it
+should show up on the jobs page.
+
+**John Zimmerman** 7:55 OK. Yeah, it should. Yeah, I am. Oh, go ahead.
+
+**Jenny Smith** 8:03 So, hey, hang on. Sorry, Andy. Gonzalo, when you're saying, I think
+Andy, when you're saying job, is that different from Gonzalo talking
+about like the job content fragment?
+
+**John Zimmerman** 8:12 Oh. Oh.
+
+Cal Nelson (customer)** 8:15 Oh, different.
+
+**John Zimmerman** 8:16 So it well, it depends right on the how the I'm not familiar with the
+details of how the job's. Danielle, maybe you could speak to it. Is
+there any reason why like when you're so this is manually authoring a
+job as opposed to it coming in from? The feed the um integration with Workday. or work right, which I read.
+
+Cal Nelson (customer)** 8:39 Yeah, yeah, no, no, this is this is when you we have the the the option
+of creating a a new content fragment, right? And we created, we
+published, we wait 5 minutes, but still doesn't show up on the job
+search page.
+
+**John Zimmerman** 8:47 Mm-hmm. Yeah. OK, but if it's either either yes, there's. My question is would if
+you publish other content like a event content fragment or a pay a test
+page, I would check to see if it's showing up immediately.
+
+**Jenny Smith** 8:59 So.
+
+Cal Nelson (customer)** 9:03 Thank you. Yeah, it shows up. Yeah, if you if you change, if you change another
+content fragment it works, but for for the page job it does not.
+
+**John Zimmerman** 9:13 Then then that. Yeah. Then there's. Then we need to OK, that's helpful.
+
+**Jenny Smith** 9:20 OK, so because yeah, Gonzalo, just to confirm and and so we can check
+back on the recording, we are saying that editing a job content fragment
+is not visible after you publish it on the job search page. Is that
+accurate?
+
+Cal Nelson (customer)** 9:34 Correct. Once I create and I publish the contact fragment and I go to
+the jobs page, I shall see the the just created job posting and I'm not
+seeing that.
+
+**Jenny Smith** 9:36 OK.
+
+**John Zimmerman** 9:47 Got real quick, Daniela. Oh, go ahead. You do that and then I'll, I've
+got to follow up.
+
+Cal Nelson (customer)** 10:02 Yeah, that's correct. Yeah, that's correct.
+
+**Jenny Smith** 10:03 OK. Sorry. Go ahead, Andy.
+
+**John Zimmerman** 10:07 Yeah, so could you paste into the chat if you have it now and if not you
+could do it later. Just examples of a couple of URLs for the job, the
+content fragments and author. That way I can check the logs against that
+and see what we need to find is.
+
+Cal Nelson (customer)** 10:11 Yeah.
+
+**John Zimmerman** 10:23 Where where the the bottleneck is or the the blocker like is it with the
+published process? Is there an error happening based on the content
+fragment model? You know we need to just basically do some
+troubleshooting and find the root cause and then and let you guys know
+and then we'll. More remediated.
+
+Cal Nelson (customer)** 10:43 Sure. So So what I can do is I can as soon as I create a couple ones I
+can shoot you an e-mail or or maybe in Slack. The the challenge we're
+having also is that when we create this custom job postings and we set
+the flag to is not API data right?
+
+**John Zimmerman** 11:03 Mhm.
+
+Cal Nelson (customer)** 11:03 The workday process, when it pulls all the job IDs, it's also including
+the ones that are manually created, so the process is deleting them. So
+that's another thing that we found, right? It seems that.
+
+**John Zimmerman** 11:15 Yep. Yeah, yeah, we need to talk about that.
+
+Cal Nelson (customer)** 11:19 Yeah, it seems that when they are calling this get all job IDs, it's
+not excluding the ones that should say no, this is this is not an API
+data. So yeah, so so we were having that challenge. So again, right, I
+can create a a couple ones and let you know.
+
+**John Zimmerman** 11:30 Yeah.
+
+Cal Nelson (customer)** 11:34 And and then they will disappear in the next 30 minutes because I think
+that's how how everything is running.
+
+**John Zimmerman** 11:35 OK. All right, so I'm gonna I'm actually we've been talking about this
+internally and are aware that the API is over is you know affecting the
+manually created job content fragments and so look for a e-mail from me
+related to that and.
+
+Cal Nelson (customer)** 11:46 6.
+
+**John Zimmerman** 11:57 Our recommendation for for you know dealing with that coming up soon.
+
+**Burt Jones** 12:01 It. And one more comment on that and then yeah, we'll we'll we'll go
+ahead and move on to what we're here for. Andy and Gonzalo, I created
+the cadence for the tech sync starting next week, Tuesday, Thursday.
+Andy, I think it'd be good to you know. Obviously send the e-mail, but use those sessions as well to to kind of,
+you know, drill further into what we're recommending. Does that sound
+good?
+
+**John Zimmerman** 12:21 Yep.
+
+Cal Nelson (customer)** 12:25 Yeah
+
+**John Zimmerman** 12:25 Yeah, I'll send it that that way. Yeah, we we touch base on this
+morning. I'll send that so that they've got the let up, take, absorb
+the e-mail, let it marinate and then we'll get to dig into it on the
+first texting.
+
+**Burt Jones** 12:37 Perfect.
+
+Cal Nelson (customer)** 12:39 Sweet. Thank you.
+
+**Burt Jones** 12:39 That works. Yeah. Yeah. Thanks guys. All right. Um, Danielle, you all
+ready?
+
+**Jenny Smith** 12:45 Yeah, sure. OK. All right. Thanks everybody and thanks Andy for that.
+Trying to remember if there's any other updates that we need to share,
+but I think that was it. So more to come on that particular portion of
+of jobs.
+
+**Burt Jones** 12:46 Alright.
+
+**Jenny Smith** 13:03 So today we are, as mentioned earlier, we are going to pivot a little
+bit. I know the desire is to identify additional components that are
+used on the careers website and we'll focus on that. The components
+that I had personally identified when I was reviewing it, I'm trying to
+find my Confluence page. It is not on this tab. I had identified about four components or so that I wanted to go over
+today. And then also since we will certainly have additional time at the
+end of that, we can continue to review the careers website and then see
+if there's anything on there where we would we would like to take a
+closer look at so. Here is what I had to do. I'm going to share my Confluence page. This
+is what I identified that's used on the Careers website. We have the
+promotion content fragment, but I'm going to be showing promotions as a
+whole. This is currently being used for the hiring events, so we'll
+see. See how that works right now. I also saw we have the video card
+component which is used specifically for the testimonials. I also saw
+the video component is being used on a couple pages and we'll take a
+look at that and then the card component which we know is being used all
+over the place on the careers website. There is the icon variation that's being used, so I wanted to just take
+a look at how that was set up. Keep in mind though that we will
+certainly review cards additionally since there's certainly more than
+one variation on that want to cover exactly what was used. For the careers website. So I think this list, don't worry, this list
+can certainly grow as we continue to review the career site, but this is
+definitely what I want to talk about first and then we can move on to
+other aspects of the careers website. All right. So starting off now with our promotion search and promotion
+content fragment, we're going to do something similar to what we did
+yesterday and the day before, where we're essentially going to take a
+look at the content fragment model. And also some content fragments that are using that model. Then we're
+going to take a look at the component that's calling in those content
+fragments and displaying them to the end user. So here we are in AEM
+going to just navigate to the DAM so we can take a look at that content
+fragment model. And I'm going to go to customer and Content Fragments and I'm going to
+click on Promotions and I'm going to click on KT just for my test data
+and I'm going to hit Create and click Content Fragment. All right, so looking at these templates, I want to select the promotion
+template. I'll select that and hit next. And for my title, we're just
+going to call it KT. I'm going to hit create. Alright, as a reminder, we are having that support ticket put into
+default to the old editor. So for right now I'm just going to manually
+switch it to the old editor as we review these page review these
+fields. Going to increase the size of my screen a little bit. OK. All right, so let's look at what we have here for our promotions
+content fragment model. We can see here a couple of required fields and
+some that don't actually need to be filled out. And I'm also going to
+pull up after this the some filled out ones that we are using currently
+on our careers website. So starting at the top we have the ID and the name of the promotion.
+These are required fields. We also have a title and we can see where
+these things are displaying on the end user in a bit. We have statuses
+of active or inactive, a card image. As well as the alt text associated with the card image, these are
+required fields. Banner images for when you interact with the promotion
+and see it on a specific page. These are also required the date format.
+A couple of different ways you can display the date. If you want only the date, the date with the start time, date with the
+end time, or the ability to display override text. So these fields here you'll notice they are not actually required. So
+if you just need to use say the date overwrite text field, you can
+certainly do that and not fill out anything else. We have our promo types, loyalty or slot. One thing I wanted to comment
+on is these this promotions content fragment model was initially created
+based off of requirements for the casino's website. So you'll you'll
+notice that you know these options are specific to casino. Understand. Is that there is a desire in the future to perhaps leverage this content
+fragment model for some other additional use cases outside of casino.
+That certainly would be something that we want to make sure is captured
+during the gap phase, but just wanna make sure the team is aware that
+this specific content fragment model was mainly for the casino. Websites and that's what you'll see here. So I have our description field, location and venue with these options. The ability to override the road location and put just text if it's not
+something that's listed in here. We also have some CTAS for to be
+displayed on the card when it renders and then that LD JSON field we had
+talked about which is going to be present on. The content fragments in general, you'll see this field often. So this
+is the initial content fragments before you fill it out. Now I want to
+take a look at something that is filled out. Uh, such as this one. I'll take this one right here and then we're
+going to see how it looks like on the website. Let me open that up in a
+different tab. OK. All right. Here we go. Actually, I'm going to go back and look at the full time one, just so
+that way we're not getting confused between the ones that have similar
+data. So one second, I'm gonna go back and just open up the full time
+one. OK. All right. OK. So let's take a look at what we have here. So we
+have our ID field. That's not going to be something that's going to be
+displayed to the end user. It's something that's part of the
+configuration. But focusing on what we see for the end user, we see
+our. Our name and title. We can change one of these to see which one actually
+affects this. I can do that right now.
+
+**Amy Carter** 20:21 Wait, sorry to already interrupt, Daniela, but what? Where did you get
+the ID from?
+
+**Jenny Smith** 20:24 So the idea is of field that's inputted by the by the end user or sorry
+by the author.
+
+**Amy Carter** 20:31 But like, what would we put?
+
+**Jenny Smith** 20:33 So this is a unique. This is a unique identifier that you would put in
+order to be able to display the specific content fragment as say like a
+singular card onto your site. So it's a way to be able to. Let's show
+that in action.
+
+**Amy Carter** 20:34 If it's required.
+
+**Maia Emerson** 20:49 Is that a made-up thing that we do? Do we just make up the stuff?
+
+**Jenny Smith** 20:52 So that is. So that is a field that was identified during the requirements of
+something that was needed. So here's an example where I'm calling in
+this.
+
+**Maia Emerson** 21:00 But I mean, I for the requirements for the casino promotions, we did not
+require a unique ID. We required a unique ID for targeting and
+analytics, but that was pretty much it.
+
+**Jenny Smith** 21:14 So. I think we would need to check as to the for that specific bill. Perhaps
+that is the reason why. However, you can see here with my content
+fragment card component, I'm pulling in the specific promotion that's
+listed here using that ID field. So this is one way to be able to display this promotion. We are also
+going to show how it will display within the promotions component, but
+if you need to display just one singular promotion and feature it, you
+know on like a specific page or something, this is the ability. This
+gives you the ability to just show that. That one item as needed.
+
+**Amy Carter** 21:56 Are there like required letters, numbers, sentence casing left like why
+you chose HE?
+
+**Maia Emerson** 21:56 Um.
+
+**Jenny Smith** 21:59 No.
+
+**Maia Emerson** 22:00 Yes.
+
+**Jenny Smith** 22:01 Nope. The only reason why HE was chosen was for hiring events and then
+one just for for tracking purposes. There's absolutely nothing there
+that is. There's no like text require text requirements here. It's
+just like. Like it doesn't have, it could be, you know, like HE or something, but
+you want it to be unique, right? Like because when you're referencing
+that specific job, I want it to to only show the one that I have here in
+this ID field.
+
+**Maia Emerson** 22:24 Yes. OK, let's call this as a gap because we have to fix it and the see that
+at least remember what I type. Because honestly, if I'm a content
+author, I'm just gonna do blah blah blah, right? So does he remember
+that I've used that? So I don't use it again and then pull the wrong thing. Like is it smart
+enough to know that there's there's existing set of IDs?
+
+**Jenny Smith** 22:55 So I don't know like sorry I'm I'm like trying to show it but you
+can't see it. But there is a message that says checking unique
+validity. Like I know it's really fast and it's flashing but when I
+like skip off of this you can see that it is checking in this field
+whether or not this particular value is unique.
+
+**Maia Emerson** 23:14 And when you.
+
+**Burt Jones** 23:15 Daniela, would it let you save if if you used one that already existed?
+
+**Jenny Smith** 23:19 We could try that.
+
+**Burt Jones** 23:20 I'm sorry to make you be a QA on this. Sorry.
+
+**Jenny Smith** 23:21 It's OK see, so the value needs to be unique. The same value is also
+appearing in a different one.
+
+**Maia Emerson** 23:28 OK. And when you when you thank you look for that and when you paste it
+somewhere else this does it, is it smart to tell you, hey these are the
+ones that you can select from or you have to like remember it and or
+paste it?
+
+**Burt Jones** 23:28 Thank you.
+
+**Jenny Smith** 23:40 When you say when you paste the ID or.
+
+**Maia Emerson** 23:44 So I saw that you put it somewhere else, right? I don't know why, but
+you had to put it somewhere else. So is that that drop down that you
+select or?
+
+**Jenny Smith** 23:50 Are you talking about in this in this component? This is this is a blank
+text. This is a regular text field.
+
+**Maia Emerson** 23:58 So it's not as smart.
+
+**Amy Carter** 23:59 Yeah, so it's like if I were to add an event, but then someone took it
+down and then they went back in because I was like, hey, can you add the
+halftime or the hourly rolls event now they would need to know like they
+would have to go into the fragment first I guess to check the promotion
+ID, copy it. To get it here like we wouldn't be able to like go through a folder
+path or anything to grab it, I guess. Is that I guess the way to answer
+that? Like how would we know if other authors created the code where we
+would go obviously to keep some consistency and organization there too?
+
+**Maia Emerson** 24:21 Mhm.
+
+**Jenny Smith** 24:26 So. Oh. So just keep in mind I'm showing how the content fragment card is using
+this promotions content fragment model. Let me add let's actually I
+have that here. So this is the actual promotions. The promotions component and So what this is going to do?
+
+**Maia Emerson** 24:52 And one more question, is this ID, sorry to cut you off, but really
+concerned now, is this expected to be used for casino promotions or just
+for careers because?
+
+**Jenny Smith** 24:53 Is Yep. This was supposed the the intention of this component was initially
+created specifically with casinos for casinos.
+
+**Maia Emerson** 25:11 But we're not using it for casinos, right? We'll fix it for casinos
+because we deal with a lot of promotions and more than one user. We
+can't be remembering made-up by this.
+
+**Burt Jones** 25:23 Yeah. So might say definitely capture what, what, what it doesn't
+currently have. You know, that's exactly the stuff that we would want
+to disposition in those last two weeks. You know what I mean? OK.
+
+**Maia Emerson** 25:32 Yeah, this one is more of something that we didn't ask that got added.
+So it's not like a gap, it's like an extra that we don't need.
+
+**Burt Jones** 25:41 Yeah, think think of it like at the end of it is you know there there
+there's a there's a change in modify piece of it too. There's adding
+and then there's change in modifying as well. So if there's something
+here that's implemented that's not quite meeting the mark and needs to
+be updated, that should be a part of it as well because it would be
+updating the. Um, you know, the component that was already delivered. So yeah, but I
+hear you.
+
+**Jenny Smith** 26:04 So yeah, so Yep.
+
+**Amy Carter** 26:05 And then Daniela, I know you were about to show us it with the filter,
+but the reason why I didn't want you to jump quite there yet is because
+my question was related to getting it on the page without the filter,
+which is what we have right now on the stage site for careers. So while
+it might not be needed for the filtering, I just want to know what the
+process is like. For a user to get it without the filter before you jump in to say
+that's why I didn't want you to jump because we don't have the
+filters on the stage site so.
+
+**Jenny Smith** 26:28 Get it without to get it without the filter. Yeah, so I I think my my question though is and I'm actually going to
+let's pull up the yeah. So this is where I wanted to understand and why
+I want to show the component previously. I think it was yesterday we were talking about how like for example on
+this page you did, you guys do want to filter on top and so that's why
+it makes sense to use promotions component in order to be able to show
+the filter on top and here on the homepage.
+
+**Amy Carter** 27:00 Mhm.
+
+**Jenny Smith** 27:03 There's no filter, which is the reason why we use that different
+component, the content fragment card. And so in terms of like for
+example, say like if if we wanted to capture as a gap that the you
+wanted to have promotions but have it have an ability to remove the
+filter, that could be something that could be captured as a gap.
+
+**Amy Carter** 27:10 Right.
+
+**Jenny Smith** 27:23 Or desired. The reason why we had to use that content fragment card
+component is simply to be able to match what we were seeing on the live
+site with the components that we had. But yeah.
+
+**Amy Carter** 27:32 Yeah, I I just don't want to lose the question of it was just about
+around getting this on the page means we can't like sift through
+options to know we're selecting the right card. A user needs to go into
+the content fragment, find the ID, copy and paste to get it to this
+page. So I just wanted to make sure that's clear without the promotions
+filter. Those are the steps to get it.
+
+**Jenny Smith** 27:54 Without the promotions filter, if you're using the content fragment
+card component, yes, this.
+
+**Amy Carter** 27:59 We would need to know that ID like to my taste point, you'd have like
+if other authors are in it, or even if I just don't remember what I
+made for the code, we can't go through a folder to find it in the
+fragments. We have to remember the unique ID, so we just need to make
+sure we copy and paste it. From the fragment asset folder to get it here.
+
+Cal Nelson (customer)** 28:22 Yeah, I correct.
+
+**Jenny Smith** 28:22 OK.
+
+**Amy Carter** 28:23 There's no other way without having it copied and paste like that.
+There would be no other way whether I made it or someone else.
+
+Cal Nelson (customer)** 28:27 I I did.
+
+**Amy Carter** 28:32 Sorry, Gonzalo, go ahead.
+
+Cal Nelson (customer)** 28:32 Yeah, no. My suggestion would be ideally like you have this page patch,
+you should have something that says source and you will click and you
+will navigate to to the content fragment section and pick up the one
+that you just created for example right instead of you remembering. That that's how it works now, my two cents.
+
+**Maia Emerson** 28:52 Wait, how do you say it works now? Because we don't have a unique ID.
+
+Cal Nelson (customer)** 28:57 No, what I'm saying is that you don't have to remember the unique ID.
+What I'm saying is that you should have like another field that says
+source, right? So you add the card.
+
+**Maia Emerson** 29:04 Oh, no, no, sorry, Gonzalo. I I do get that. I mean, I but I'm saying
+we don't use that right now. We we don't have to enter an ID for a
+promotion.
+
+Cal Nelson (customer)** 29:07 Oh, OK. OK. No, no, no the the source part that's that what what I was explaining
+that that's how we have it now.
+
+**Maia Emerson** 29:19 Uh. Oh, OK, cycle source that you can. Got it, got it, got it. Not the use
+case. OK.
+
+Cal Nelson (customer)** 29:23 That you not not correct.
+
+**Amy Carter** 29:24 Just to get the card on the page. To get the card on the page without a
+filter, we would just use the source of the card and find it through a
+folder path.
+
+**Jenny Smith** 29:37 Mhm. OK, yeah, no, we understand what the ask is. So right now though, the
+way that this does work right now is by selecting what the promotion ID
+and you'll see here. So this content fragment card component, keep in
+mind it's not just used for promotions, it's also a way to be able to
+display events or. To be able to display news. So this is this is not restricted to just
+promotions, but for the case of promotions or events it is expecting
+that ID. So certainly something that like I mentioned what Gonzalo was
+discussing could be identified as and listed as part of the gap analysis
+for an enhancement to this. this particular component and that
+
+**Maia Emerson** 30:20 Oh no, no, no, don't, don't. We don't want. We don't need this. So
+let's not enhance this to use the unique ID. Just creates more work on
+content others. We gotta redo it so. It someone needs.
+
+**Jenny Smith** 30:33 I guess what I what I'm trying to say Mayte is we we understand that
+the having to put promotion IDs by any means is not something that's
+desired. However, to be able to show a specific event would require and
+or I'm sorry, a specific promotion would require say like an additional
+field like being able to pull up the dam and then selecting from the
+list of content fragments but either. But either way, that is something that we would need to discuss and we
+want to discuss during that gap phase.
+
+**Maia Emerson** 31:00 Yeah, let's discuss the right way to do it and not add to this one,
+please.
+
+**Jenny Smith** 31:06 I'm going to hit, yeah, I'm going to hit cancel and so Lisa, to your
+point, I think we covered like how you would use this component right
+now and how it's being used right now in the stage site by putting in
+the specific ID.
+
+**Burt Jones** 31:06 Sounds good.
+
+**Jenny Smith** 31:23 But I did wanna show, yeah, that the promotion search component. This
+particular component is specifically looking for promotion content
+fragments. So you'll see here. Sorry, I didn't mean to hit the
+configure window. So you'll see here there are three different.
+
+**Amy Carter** 31:25 Yes.
+
+**Jenny Smith** 31:43 Promotions that have been added within our folder and you can see that
+they're being displayed here. However, with the promotion search
+component by default it does display filters. It displays the ability to
+switch between the two different views and it also displays a search
+bar. So I know one of the questions. Questions. I believe I saw a JIRA ticket or so which asks why hiring
+events does not have the filter that can be added. You know this
+particular component can be added there if that's desired. However, I
+do know that you know perhaps. There might be some instances where you know if you evaluate the
+component, you might not want it to have like the filters looking like
+this or something, and so that's why we had chosen to do it as a single
+single cards instead. So if that's something that you guys want to swap
+out, that can be done.
+
+**Maia Emerson** 32:31 So. But we have it right now, right in the current websites, and it was
+decided not to do it even though it can be done.
+
+**Jenny Smith** 32:40 So the reason why we're saying this is because these are supposed to be
+events, is that correct? These are events, the event calendar as we had,
+they are OK, so they're hiring events and so the hiring events could
+theoretically be using the event content fragment.
+
+**Maia Emerson** 32:49 They're hiring events not to get confused with.
+
+**Jenny Smith** 33:00 Model. However, there are some capabilities that we know you guys need
+for the hiring events to be displayed a certain way, such as the
+override text ability and such as I I believe previously we saw like the
+event shows the address versus the name of the. The property, etcetera. And so when we were doing our evaluation instead
+of using the event content fragment model, that's why we chose the
+promotions content fragment model. However, we wanted to make sure we
+talked about this with you guys to understand if it makes sense to use a
+promotions content fragment. For these hiring events or if that should be switched out to say
+calendar and then understanding the limitations of that. So what we have
+currently on the stage site right now is we made the choice to do it as
+promotions versus using the event content fragment model and that's
+what we want to know. Should that be switched out? Should it stay as a
+promotion so it.
+
+**Maia Emerson** 33:43 OK.
+
+**Jenny Smith** 33:55 Looks like this that that's a decision we need to understand.
+
+**Maia Emerson** 33:58 I can't answer without understanding what each one does, and I'm not
+fully aware yet. Not all events happen at properties. So when you say
+address versus property, events happen outside of our properties. So is
+that something that both of these components can do or just the one?
+
+**Jenny Smith** 34:17 So with regards to our promotion component and this was, I'm switching
+it back to whatever the unique ID was for this. Let's take a look at
+this. So where we see here like every Tuesday 10:50, we know right now that
+our. We know right now that our events component does not allow you to
+display it like this because this is using some overwrite text, right?
+So we don't have a date overwrite text field currently in our event
+content fragment model. That's one of the reasons why we said OK, this
+this is something that's in promotions. You could use promotions to play like that and then here with this
+particular venue you can see here that's also using the location
+override text versus connecting to the locations content fragment
+that's that has data from DPLT.
+
+**Maia Emerson** 35:15 But the locations don't come. I mean, we might go at our Convention
+Center, right? Not our location.
+
+**Jenny Smith** 35:20 What I'm saying though here is this gives you the ability to put
+whatever the location is. There's absolutely no connection between this
+and DPLT. With events though, there is a connection with DPLT since
+you're selecting from a list of of locations that are in A EM.
+
+**Maia Emerson** 35:30 OK. Wait, so you're saying events can only have locations from DPLT? So if
+the location is not in the DPLT, we what do we display like we can't
+display event?
+
+**Jenny Smith** 35:46 So when we when we take a look at, let me pull up an event.
+
+**Maia Emerson** 35:51 Because locations should be in the DPLT, but we all know it takes some
+time, so we will need to put events when the location is not yet in the
+DPLT and we should, you know, type it, type whatever it is so customers
+don't know.
+
+**Jenny Smith** 36:03 So right now you see here the location reference has to point to an
+existing location content fragment. This these location content
+fragments is data that's being sourced from DPLT.
+
+**Maia Emerson** 36:16 So DPD wasn't been well, OK, OK, we'll just add questions to the page.
+I don't want to take all the time on that.
+
+**Jenny Smith** 36:24 So let's let's, uh, where? Where'd it go? Oh. One second. Oh, OK, OK. I think this was it. This was it, alright. Alright, so let's take a look at this promotions search component. And see how some of these other fields are mapping to it. OK, status
+active. So we see our card image, card image alt text. The intention for
+that of course is to display as a card. We have our banner image, so if
+I am clicking on a promotion. And there's a separate page that's going to appear there. I don't
+think these are set up for that. My understanding is for the current
+hiring events you guys have, I believe it's just correct me if I'm
+wrong, but I believe it's just a. It's just like a these are external links. Is that correct?
+
+**Maia Emerson** 37:25 Not always. Sometimes we have events, they create pages and we link to
+them.
+
+**Jenny Smith** 37:31 OK, got it. Yeah. So for for this case, I believe this is relevant for
+say the if this was used for a casino promotion. My understanding of the
+casino promotions is there are additional pages associated with it.
+
+**Maia Emerson** 37:43 Not, not always, especially promotions. Some of them don't even have
+detailed pages behind them.
+
+**Jenny Smith** 37:48 OK, well in this case the reason why this was added was again because
+promotions was was created with casinos in mind. I'm going to Scroll
+down now to our date format. The overwrite text as mentioned is what's
+populated here every Tuesday 12:50. But if I wanted to choose like a start date, start time, end date, end
+time, I again have the ability to display the date in different ways
+based off the fields I fill out. Description. We can see a description is being displayed here on the
+card. And let's see. So our CTA labels apply now. So this here is the
+promotions content fragment and we can see how it translates, we how it
+translates to the cards that's on the page and. In terms of the actual filters, and sorry guys for for jumping from page
+to page, but in terms of the actual filters that appear on top of the
+component, let's take a look at how that works. But OK. Here we go. I'm going to open U the new page in the author and I'm
+just going to close the component to configure it. Right. OK, so here we have the configurations that could be set with regards to
+the filters at the top. We can see here it says select category, which
+we are going to correct. If you select one or more, this label will
+display depending on how many have been selected. The filter options include category, venue and date range, and so you
+can see the different placeholders for each of these different types of
+filters that you can put. If, for example, you don't need to have any
+of these filters, you can remove. Let's go ahead and remove, say venue for example, and I'm going to hit
+done. It will remove that specific filter from the component. However,
+one of the limitations that we've observed is currently if you remove
+all the filters, that's where this bar is still being displayed. Currently there's no way to to hide that. I'll just hit done so you
+can see what I what I'm talking about. So that is that is definitely
+one thing that we anticipate we would want to discuss further during the
+gap analysis portion. Right now I'm just going to. Put in a filter so we can see how that dislays if only one is selected.
+
+**Amy Carter** 40:26 Are the options for the filters, are they hard? I mean managed in the
+dam or who's managing those if we did a different option?
+
+**Jenny Smith** 40:26 What? No. Who's managing like like who's adding these options within? So that's
+within the component code, like the category, venue and date range as
+additional options for filters. It sounds like Lisa you're you want to
+know like what if you need another filter added to this? Is that is that
+like what you're? Yeah, OK.
+
+**Amy Carter** 40:50 Yeah, yeah. Like who would we go to for? Or could an author do that? Or
+is that, uh, like the dev team?
+
+**Jenny Smith** 40:56 That would be a dev team update since it's updating the component
+itself.
+
+**Maia Emerson** 41:01 So we cannot manage our own filter options.
+
+**Amy Carter** 41:01 OK.
+
+**Jenny Smith** 41:05 So the way that this particular component currently works is it's I
+believe it is using this hard coded list based off of what we had
+captured for promotions. However, again if you guys are trying to say
+enhance it in the future to include additional filters. So it's potential that this could be moved to say a generic list which
+then could be author managed, but as of right now that's not something
+that's available for this component.
+
+**Maia Emerson** 41:32 Yeah, he has to. He has to. We have the ability to manage every single
+filter we have on.
+
+**Burt Jones** 41:38 Yeah, let let's capture it, Mayte. OK, yeah, I Danielle is just being
+straight with what what's implemented right now. I just want to, yeah.
+
+**Maia Emerson** 41:42 Sure. Yes. And I'm confirming we have the ability. So this is a gap. So yeah,
+let's move on.
+
+**Burt Jones** 41:49 Yeah, sounds good.
+
+**Jenny Smith** 41:53 OK, yes. So looking at at the next field we have our default results
+display. So this is just saying if you want to display it by default in
+list view or if you want to display it in default by grid view you have
+the option to select that. Of course as an end user I'm able to select
+between that when I'm viewing on the site. But if you have a preference as an author, you're able to select that
+here are clear filters, label text, search placeholder text, which is
+right here. Search for promos, no search result text. So if you try to
+search for something and it doesn't appear, this is the message that
+will be there. And then of course we have some pagination set up. In this case here
+we're saying 15 results can be on this page before pagination shows up.
+If you need to make it smaller, that can certainly be oops, we don't
+want negatives. Yeah, there we go. I'm just gonna put 10 here.
+Promotion content fragment based path here. If I want to show by default, if I want to show all promotions that
+exist in AEM by not filling this out, it's saying OK, let me just find
+all promotions. If I want to filter it to say like a certain specific
+folder, I am able to do that by selecting where I want within the DAM. So in this case, I just had my folder for like KT, my folder for
+careers, and depending on what I select, this component will just show
+the ones that are located within that folder. You can see I left it blank and that's why you're seeing options
+listed in here. It's just pulling in anything that's using a promotion
+content fragment.
+
+**Amy Carter** 43:32 And would that be the same thing? I think we may have discovered
+yesterday with events. So if it's not necessarily under the same parent
+folder, but we want two category folders, we we can't do that at this
+time, correct?
+
+**Jenny Smith** 43:41 Mhm. Right. I think yesterday in the example we were talking about the use
+case was like say like something that was like tagged, right? Yeah, in
+this case here it is based off of where the folder is located while you.
+Yeah, while you can choose like say I wanted, you know all the
+promotions here, I I can choose promotions.
+
+**Amy Carter** 43:53 Yeah. The main folder. Like casino promotions versus like a hotel promotions, like whatever we
+wanna filter it to maybe.
+
+**Jenny Smith** 44:08 Yeah, so if I chose promotions, it would show everything down here. If
+you wanted, say, just casinos, you would select here. But say there was
+like 4 folders here. You only want to show two at this time. Right now
+that is not available. Yep, Yep.
+
+**Amy Carter** 44:21 Okay, thank you.
+
+**Maia Emerson** 44:23 OK, so that's another gap.
+
+**Jenny Smith** 44:25 Yep. OK, um.
+
+**Maia Emerson** 44:30 How do you remove the the search field from if I just want the filters
+and not the search?
+
+**Jenny Smith** 44:36 Yeah, so so that's not something that can currently be removed. That
+along with the filters. It sounds like that that would make sense to be
+able to hide say the filters in this to be able to display it as this
+list using this component. So search will always show.
+
+**Maia Emerson** 44:53 Oh wait, so if you use promotions, it comes with a filter and a search.
+We can't remove it.
+
+**Jenny Smith** 44:59 At this time.
+
+**Maia Emerson** 45:00 So we can't have the promotion cards anywhere else on the page, like a
+grid or a carrot, like nowhere else. It has to be with a filter and a
+search.
+
+**Jenny Smith** 45:10 So.
+
+**Amy Carter** 45:11 That's when we use up the ID, the ID of that CF card, so without it.
+
+**Jenny Smith** 45:13 Yes.
+
+**Maia Emerson** 45:16 Yeah, but that's 1 by 1 by 1.
+
+**Amy Carter** 45:18 Oh, like a grid of them or a carousel grouping?
+
+**Maia Emerson** 45:20 Yeah, yeah, because there's no way we're gonna be updating them,
+right? Like, oh, this one, it drop off. Now I gotta add another one.
+That's gonna take forever plus 24/7 support.
+
+**Amy Carter** 45:26 Singular, yeah. Yeah.
+
+**Jenny Smith** 45:34 Hmm.
+
+**Maia Emerson** 45:37 So if we're thinking of using, if we're thinking of using these
+promotions thing for hiring events.
+
+**Burt Jones** 45:38 What else, Daniella?
+
+**Maia Emerson** 45:46 That that's not gonna work.
+
+**Jenny Smith** 45:50 OK, yeah, so taking some notes down here. So one thing I did want to
+point out. So this is also something that I wanted to cover in the. Gap portion because it doesn't exist today. So we do have a content
+fragment card list component and the reason why I said this will be
+considered a gap is because as of right now we because we were focusing
+on. Sites that did not use promotions and this was going to be enhanced
+later, but this right now here you can see I'm able to pull in a
+specific content fragment model. In this case here it's just using
+events. But what I'm saying for a gap, having promotions to be an option here
+is something that I believe could be captured. And then what would
+happen is you're able to again select from say like that root path or
+say from like tags or say a specific fixed list. So instead of having to do things one by one with the content fragment
+card, it would display as a list. And so I would recommend like this is
+the type of component that I would say would be appropriate for the use
+case you were describing. I might say, but the reason why I say this gap
+is as you can see right now it's only focused on use and events.
+
+**Maia Emerson** 46:56 Mhm.
+
+**Amy Carter** 47:14 I did have a few other questions too. With the promotion search, I
+don't know if I saw the option to edit the text that said like search
+for promos. Was that in there?
+
+**Maia Emerson** 47:16 Yeah.
+
+**Jenny Smith** 47:17 Yep. Mhm. Oh, that that should be there, yes, as the search placeholder text.
+
+**Amy Carter** 47:30 Oh, OK. And 2nd for all of the labels, not the not the placeholder I
+guess, but the the the things that are hard coded, how would we be able
+to?
+
+**Jenny Smith** 47:35 Uh. OK. Mhm.
+
+**Amy Carter** 47:48 Like, uh, change that for a language, let's say so like. We have the option to put the placeholder for for the text, but then
+there's certain things that are like hard-coded in that search, such as
+filters title, the filter CTA. So like the title above select category
+looks hard-coded.
+
+**Jenny Smith** 48:10 Mm-hmm. So hang on. So like you're saying like this particular text
+that's here where it says filters.
+
+**Amy Carter** 48:14 Yeah, certain elements that I didn't see an option to put a placeholder
+text because we have some websites that use language. So if we're going
+to like write the language, those words would still be in English.
+
+**Jenny Smith** 48:23 Mhm. So, and this is something where yes, I do want to. This is where I would
+ask my my TA tomorrow during my discussion. So keep in mind that what I
+understand that there are different languages on the site and we're
+using the Transperfect. Plugin in order to have the content display like that. With regards to
+the actual components, I do know that our development team does have
+specific like language strings, so when they build out the component you
+know it can translate based off of. What the site is? I need to confirm though, at least for this specific
+example, as well as also just examples in general of what portions of
+the component have been captured to be translatable versus what's not.
+So I do want to check in with my tech team tomorrow about that Lisa,
+because definitely understand that the expectations.
+
+**Amy Carter** 49:22 Yeah.
+
+**Jenny Smith** 49:23 If this is used on like say a site that has Greek, this should be in
+Greek versus in English, right? So.
+
+**Amy Carter** 49:28 Yeah, just want to make sure that at least at the minimum we could
+override all of the areas.
+
+**Jenny Smith** 49:34 At least at a minimum to be able to override all of the areas. So out of
+curiosity though Lisa, like if like you were using this on a site that
+was a different language, how like would you put in I guess like
+whatever this would be in that different language?
+
+**Amy Carter** 49:45 Mhm.
+
+**Jenny Smith** 49:53 OK.
+
+**Amy Carter** 49:53 Every word that's not like a branded term.
+
+**Maia Emerson** 49:55 We.
+
+**Jenny Smith** 49:56 I see. OK.
+
+**Maia Emerson** 49:57 Every everything on our website is manageable, edible, edible that you
+can edit. We can edit and you can translate it so we can translate
+labels, values, pretty much anything. And Speaking of Greek, we're
+actually getting ready to start on our website, so more languages are
+coming in.
+
+**Jenny Smith** 50:16 Yep, Yep, understood. Yeah. So let me talk to my tech team during my
+sync tomorrow specifically about that. And I'm sure, Lisa, if you want
+to go ahead and add the question, that would be great. So then I can
+also ask him to respond to it. But we definitely want to get back to you
+on how that, how that works, but we won't be able.
+
+**Amy Carter** 50:31 OK.
+
+**Jenny Smith** 50:36 To get that until at the earliest tomorrow, so please make sure to add
+that question though.
+
+**Amy Carter** 50:39 OK.
+
+**Maia Emerson** 50:41 And one more thing, Daniela, just so you know, you mentioned
+Transperfect. We do use Transperfect, but not all the time. There will
+be a lot of manual translations for specific languages, and I know you
+your thing supports it, so we should be OK.
+
+**Jenny Smith** 50:44 Hello.
+
+**Maia Emerson** 51:10 OK.
+
+**Burt Jones** 51:11 Daniela, is that topic a CA topic or a technical topic?
+
+**Jenny Smith** 51:11 All right. Um, Yep.
+
+**Maia Emerson** 51:11 So.
+
+**Jenny Smith** 51:15 That's a technical topic, yeah.
+
+**Burt Jones** 51:17 So we'll just need to make sure we clue in Maite on technical
+enablement. Just a call out for Scott more than anybody. Thanks.
+
+Cal Nelson (customer)** 51:26 I do. I do have a question. Let's make sure when we talk about that,
+let's include if the transfer perfect plugin that you guys use will
+take care of the labels on the component, the ones that are being done
+by developers. The reason being that in in Sitecore every label is
+content managed and because it's content managed can be, you know, sent
+to the.
+
+**Jenny Smith** 51:27 Yeah. Mhm.
+
+Cal Nelson (customer)** 51:46 Transfer through the transfer for plugin. So just want to make sure that
+also labels are considered in that topic when we get there. Thank you.
+
+**Jenny Smith** 51:52 Yeah, absolutely, absolutely, Gonzalez. So we'll take the first pass at
+the at answering the question that Lisa has and any other additional
+follow-ups. It sounds like we would be able to cover that within the
+Transperfect knowledge transfer session. So yeah, we'll make sure that that is addressed. So in terms of the promotions search component, I'm just going to open
+this up again if there's if there's anything, any specific fields that
+we want to additional clarity on. Is there any more questions though
+about either the content fragments or? The component itself.
+
+**Maia Emerson** 52:35 So if I understood correctly, you have to create the. Everything is packaged where we cannot decouple anything from that page
+and you have to create the yes, the content framework for a promotion.
+
+**Jenny Smith** 52:53 Mm-hmm. So you create a content fragment for a promotion. Currently the
+way it works today is you would either be able to display it as an
+individual card by consulting the ID. So you can see here. Yes, you can
+decouple it individually. I understand that that's not the.
+
+**Maia Emerson** 52:55 Yeah. With that ID thing, OK. Yeah.
+
+**Jenny Smith** 53:12 Desired behavior. One of the gap items that we had mentioned that we
+want to cover in the gap is would it make sense to enhance the content
+fragment cart list component? Yep, to include that specific type. And
+then the third thing is right now you are able to display it within this
+promotion search component, but.
+
+**Maia Emerson** 53:14 Right. Yes. I invest. Yeah. Mhm.
+
+**Jenny Smith** 53:32 It does come along with the filters and the search bar.
+
+**Maia Emerson** 53:35 And in the content fragment, and I'm not gonna go too much into this
+because I know scheduling is a gap, but I think I saw some dates and you
+skipped them. So I just wanna make sure what do we have start?
+
+**Jenny Smith** 53:38 Mhm. OK, yeah, yeah, one second. Let me. Sorry, I I've lost it. Here it is.
+OK, yeah. So this start date, start time, end date and end time. These
+are the specific fields that would have displayed in.
+
+**Maia Emerson** 53:49 As well, you've not started. Also, that's not scheduling, that's just a display because we can
+schedule for tomorrow, but the date is, you know, three days from now.
+We don't have that.
+
+**Jenny Smith** 54:01 Good. This, yeah. Sorry, let me repeat what you said. So if this was, yeah.
+
+**Maia Emerson** 54:13 So let's say the event is this Saturday, right at a, I don't know,
+Convention Center in Broward, but I'm going to display it today or
+sorry, I'm going to, I want it to be displayed tomorrow and the event
+is for Saturday. So basically when we publish it, it doesn't publish based on this date,
+it just publishes now.
+
+**Jenny Smith** 54:30 Oh, I see. OK. So this here is a display date is is what is what they're. Yeah, this
+here is a display date.
+
+**Maia Emerson** 54:39 OK, OK, so those are display only they do nothing with OK.
+
+**Jenny Smith** 54:45 Yeah, this here is a display day. It's not intentional for scheduling.
+There is of course that the scheduling just going to do this. There is
+of course the scheduling for now or later with the activation date
+that's available here. However, the actual content fragment itself
+that's just.
+
+**Maia Emerson** 54:46 OK. OK. OK.
+
+**Jenny Smith** 55:04 For dislay purposes.
+
+**Maia Emerson** 55:06 OK. OK. I got excited and I thought that was the scheduling, but OK,
+thanks.
+
+**Amy Carter** 55:09 If we schedule it for later and we make an edit to the existing, does
+that impact anything or do we it? It will still schedule for later, but
+we went back in and we maybe changed the location because they they
+moved venues or something.
+
+**Jenny Smith** 55:24 Schedule. Uh, OK.
+
+**Amy Carter** 55:26 So if if we went in and changed it from the location saying Seminole
+Casino, Brighton Bay or whatever, and because they're like we're gonna
+have to have it at a Convention Center nearby, but we've already
+scheduled it. What does anything happen if we went back in and edited
+the same fragment?
+
+**Jenny Smith** 55:33 Mhm, mhm.
+
+**Amy Carter** 55:45 Does it maintain the scheduling or would anything get pushed live?
+
+**Jenny Smith** 55:49 So it shouldn't get pushed live in the sense that I'm trying to see if
+I can. We can try and do this right now. Let's.
+
+**Maia Emerson** 55:58 Yeah.
+
+**Jenny Smith** 55:59 Let's see. OK, be able to like show this like right here on the call is
+going to be a little difficult just because I'm going to have to save
+it the manage publication and then save it again. But we can try it. We
+can try to do that, alright.
+
+**Maia Emerson** 56:11 But that's exactly what a user would do, right? What you're doing now.
+
+**Jenny Smith** 56:14 Yeah, no, I understand that. I'm saying for the purpose of the call,
+because I know we have some limited time, I do want to make sure that
+that we're covering the other topics. But let's see here. Let me see
+what I can.
+
+**Maia Emerson** 56:15 OK, OK, good.
+
+**Amy Carter** 56:25 If it'll be helpful too, I have one more question on the fragment of is
+the promo type. I know we said it was the two options were built with
+casino in mind and I don't think you selected one for one of the
+examples maybe so it's not required, but are those hard coded? Like how
+would we get extra promo types?
+
+**Jenny Smith** 56:34 Yes. Yeah, so right now these are these were determined within, so these
+should actually be within the content. You should be in the content
+fragment wall to be able to add additional ones. However, that's not
+going to be something I think is that's going to be accessible to every
+user.
+
+**Amy Carter** 56:47 Development. OK, we did take the content model fragment class at least the authors,
+but I obviously that's like pretty like extensive I guess more so
+related. So I think internally we'd have to figure out teams of doing
+that or if that's just something maybe the admin authors get.
+
+**Jenny Smith** 57:01 So. M. OK.
+
+**Amy Carter** 57:18 Trained on but.
+
+**Jenny Smith** 57:20 Yeah. So, so just really quick. So when it comes to like the content
+fragment models, there is you know the ability to to create your own
+like depending on like the permission levels that have been set for
+that, right. So like I understand Lisa, like you don't want to open
+this up to every single person and and change it. And so that of course
+is going to.
+
+**Amy Carter** 57:37 Yeah, I don't even want my team to like be responsible for breaking the
+like UX of how something was built, but like the options for a field, I
+would assume we would have had the capability to making new ones.
+
+**Jenny Smith** 57:41 Yeah. Huh.
+
+**Maia Emerson** 57:50 Yeah.
+
+**Jenny Smith** 57:53 So what I guess what I'm saying is when it comes to a content fragment
+model, there's a content fragment model editor, right? In terms of who
+has access to that, that of course would be determined based off of like
+the user groups and such. However, this is this is. Different from say like adding another field to a component where that
+would be more of a developer has to go through that, update the
+component, do a code deployment, so that way it would be available for
+an author to use. So there is more flexibility when it comes to actually
+editing a model. Like a content fragment model, but when it comes to actually editing a
+component and adding additional drop down fields to that dialogue
+window, that is going to be development work.
+
+**Amy Carter** 58:45 Thank you. I guess if you want to continue with the scheduling.
+
+**Jenny Smith** 58:48 Yeah, we let's, let's. Oh, sure, go ahead.
+
+**Don Wood** 58:50 I I do have a question around the asset. So when you pull in the the
+asset, so I I see that this looks like it's a one to one ratio the
+image when it's in the card. So I know we've asked before about the
+dimensions that you know that we should be using for these but.
+
+**Jenny Smith** 58:54 Yep. Mhm.
+
+**Don Wood** 59:09 Let's say I pulled in an asset that's a 16 by 9 and how is that going
+to be placed? Is it something that we have to adjust if we want to make
+sure the proper area of the image is viewed? On the card, let's say you know the Hard Rock, you know that front arts
+all the way to the left or the right of the image. We want it centered
+in the card. Is that more of the image position?
+
+**Jenny Smith** 59:36 It. Yeah, so it sounds like what you're describing is actually the like,
+for example, say you wanted this to be all the way to the right, right?
+Like the guitar itself. Is that so like simple?
+
+**Don Wood** 59:45 Yeah, or or the original image is already to the the side. We want it
+centered, right? So somebody pulled in.
+
+**Jenny Smith** 59:52 OK, yeah, so so with I believe pretty much every component that has that
+that has like an image associated with it, you will find the image
+position tab if what I'm understanding is correct.
+
+**Don Wood** 1:00:07 Mhm.
+
+**Jenny Smith** 1:00:07 Like what you're asking, like if this was set to like all the way to
+the right, how would you move this to be, you know, more so that way the
+the focal point is changed. And so that's what the intention of this
+specific tab was, being able to set the position of the image.
+
+**Don Wood** 1:00:15 Yeah. Yes.
+
+**Jenny Smith** 1:00:26 In both desktop and tablet and then also in mobile. So like you know in
+mobile sometimes you might not want it to be that you know that way you
+want it to be separate. So that's what this tab is for and you're
+going to find that on I think probably every image component. I would
+assume the card should have it, which we will find here. Yeah, so any.
+
+**Amy Carter** 1:00:34 Mhm.
+
+**Jenny Smith** 1:00:45 Component that has an image will be able to have that. So you can make
+those manual adjustments. But when it comes to like say a a list of some
+sort, that's not something that's going like this is not going to have
+that image position because.
+
+**Don Wood** 1:00:54 I need.
+
+**Jenny Smith** 1:01:01 You're essentially having to change all of the image positions versus
+just individual like if you would with the content fragment card. Does
+that make sense?
+
+**Don Wood** 1:01:09 OK, then I yeah. But then on the other one, how would we adjust that
+image? Is it more setting up the smart crops with dynamic media? How?
+How? How would?
+
+**Jenny Smith** 1:01:19 Yeah, so currently at currently right now with with this here you are
+unable to adjust an individual row within here, so it would have to be
+some sort of adjusting the image outside of this component first,
+whether it's with.
+
+**Don Wood** 1:01:20 We go that.
+
+**Jenny Smith** 1:01:36 Say if you do Hotosho and you cropped a specific way, that's certainly
+one way to do it, but it would not be within the component since there
+is no tab. Yeah.
+
+**Don Wood** 1:01:40 Mhm. Yeah, yeah. I guess my preference is that we would not have, you know, a
+ton of duplicate type images. We would use the one source image across
+all placements. So I guess that's something we have to figure out.
+
+**Jenny Smith** 1:01:51 Yeah, understood. Yep. Yeah. So I I think and one thing I did want to mention is I know next
+week I believe we are according to counter, we are hoping to talk a
+little bit more about the dam. I realize that we're going to certainly
+want to make sure that we are identifying some of those gaps. Sounds
+like you know, Don like.
+
+**Don Wood** 1:02:02 OK. And. Mhm.
+
+**Jenny Smith** 1:02:21 Renditions would be a perfect gap that we discussed as to how it would
+fit with the components. These are the exact things that we want to make
+sure are documented and captured in the gaps. Because right now here,
+yes, you do have the ability to set the image position. We also
+understand you might want to be able to have.
+
+**Don Wood** 1:02:24 Yeah, yeah.
+
+**Jenny Smith** 1:02:41 Specific rendition that was made for this content frapping card, so it
+displayed that way. So yeah, that's that's the exact kind of stuff
+that we want to make sure is captured for that for that gap document.
+
+**Don Wood** 1:02:45 Right. And. OK. Yeah, let's talk about that during my session.
+
+**Jenny Smith** 1:02:53 Yeah, absolutely.
+
+**Don Wood** 1:02:56 Thanks.
+
+**Jenny Smith** 1:02:58 OK, Yep, sure thing. Let's see, where am I? I'm gonna close out on
+some of these tabs just so we aren't viewing things that are not
+relevant. OK. OK. All right. One thing I I actually wanted to to bring up as we're
+talking about job components is I know that there's been a lot of
+questions about, well, what if I can I use this on say like another
+site? Is it locked down to say just the career site? You know, like how do these components work across different sites? And
+I did want to show very quickly, for example, yesterday when we were
+talking about say, I'm sorry, two days when we were talking about like
+the. The jobs listing and the question was like, you know, I saw, I think I
+saw a question on the Confluence page that mentioned can that job
+listings component be used on like another site that focuses on on those
+specific jobs. And So what I just want to show is like this is an
+example of I'm going to show where I got this. There's an example of a hotel site, and so when I say a hotel site,
+what I mean is a site that is using the hotel sub theme. It's using a
+completely different experience fragment path right for the header and
+footer. It's hotel specific to this New York hotel. I'm just going to cancel. So I'm in a completely different location
+with an AEM from where the career site is located, which is down here in
+corporate and I had created just like a a test page called K Careers
+KT. And I'm just going to hit edit. And so if I were to just add say like my job listings component and just
+ignore the way that this is looking right now. But what I want to show
+is that I'm able to use this component. I'm able to call it a repath.
+I think so. I guess someone must have put a UAT testing job here.
+That's why this is showing. But I'm able to use this component and then, you know, display it on
+other sites. So obviously like with like cleaned up data and such, this
+would only display anything that was within this New York path. Same
+exact features of how many cars you need, the button label, the default
+image just like we had reviewed. Previously, so I just wanted to make sure that you guys are seeing these
+components. When we say they're quote UN quote global, yes you can use
+them in other places. They will look slightly different based off where
+you use them because it's dependent on the theme. So in this case
+because I'm using this component. Within this New York hotel page, which is using the hotel theme. That's
+why the CTA's look a little bit different than they currently do on say
+on this page, right? So that's because it's theme dependent. But I
+actually am gonna pause here just to see if there's I see you got off
+mute, so I just want to give you an opportunity.
+
+**Maia Emerson** 1:06:00 No, I was.
+
+**Jenny Smith** 1:06:02 Has a question or anything?
+
+**Maia Emerson** 1:06:03 Another question I was gonna say, even though they might look different
+because of colors or maybe a few styles, they still work right. They
+they wouldn't break or miss something. It's just styling. OK, OK.
+
+**Jenny Smith** 1:06:11 Oh, right, that's correct. Yes, it's it's more of like a the themes
+are mainly for styling, right? And also when it comes to the actual, let
+me go back here again to the.
+
+**Maia Emerson** 1:06:19 OK.
+
+**Jenny Smith** 1:06:27 Homepage. So you would set the theme. You can see here New York and the
+theme is set on specifically for this New York page. If I were to go to
+my corporate site and my career site, I should see a different theme has
+been applied, right? So it's using the Hard Rock theme, so the theme is
+applied. At more like a root level and so then all the child pages inherit that
+theme as well as inherits the header and footer and the components can
+be used across these different sites even though they're in different
+locations and these should work as expected when it's configured.
+
+**Maia Emerson** 1:07:03 But we couldn't, if I remember correctly, but we can't choose
+multiple, right? And say, hey, Seminole beam is gonna show from the six
+floor allocations. OK, OK.
+
+**Jenny Smith** 1:07:06 Mhm. Can't choose multiple. Oh yeah. So that's what. Yeah, exactly. So
+that's why I did want to highlight. Yes, we recognize that part as a
+gap. I think we we called out a gap on Monday. But what I wanted to just
+show though is that this component we previously I know we were just
+following the careers. I don't think right now you guys.
+
+**Maia Emerson** 1:07:15 Mhm. OK. Mhm.
+
+**Jenny Smith** 1:07:28 Doing something like this in hotels because OK.
+
+**Maia Emerson** 1:07:29 We did. We did for casinos. We had a page for Tampa when they were
+actively hiring in the expansion of Tampa Hollywood. We had a dedicated
+page listing all the jobs for only Hollywood, only Tampa. So this serves
+that use case of one-to-one.
+
+**Jenny Smith** 1:07:32 OK. Mhm. OK, I see. OK, I see. Got it. Yeah. So so yeah, I wanted to see if there's actual
+specific use cases because I believe right now from what I saw it was
+mainly just linking out. But if the need does arise where you need to do
+that, you know again for specific sites, you do have that ability to do
+that with our components.
+
+**Maia Emerson** 1:07:50 Mhm.
+
+**Jenny Smith** 1:08:00 Yep, Yep. All right, so sorry, slight tangent, but I want to make sure
+we address something that I remembered seeing the other day. Any other
+questions about the content? I'm sorry about the promotions component
+and the promotions content fragment before I move on to some other
+items.
+
+**Maia Emerson** 1:08:01 OK. That's good. Thank you.
+
+**Amy Carter** 1:08:19 Just from me, I I could be jumping the gun. So if you were about to head
+this direction, sorry, what would be the step to see the page of this
+promotion card?
+
+**Jenny Smith** 1:08:21 Yes. What would be the step to see the page of the promotion?
+
+**Amy Carter** 1:08:35 So like the same way when we just did the events, we saw there was the
+fragment, the event calendar and the event detail page. So the promotion
+page now what like does this automatically populate a page? How do we?
+
+**Jenny Smith** 1:08:38 Oh. Right. OK. Yeah. So, so in this case here based off of at least what I saw from
+the casino site, you are able to, you have to create a new page Lisa to
+be able to include, you know it's basically like a content page, right.
+And then you would link it here. So that way it would. Be accessible after you clicked on the CTA.
+
+**Amy Carter** 1:09:09 But there's no, I guess, template for like, is there a promotion? I
+thought we had a promotion detail page in our Um. Options, but maybe I dreamt that.
+
+**Jenny Smith** 1:09:19 Let's take let's take a look. I do not believe that there was one. It
+would be the open page template and then creating the content page with
+the additional information that's needed on there.
+
+**Amy Carter** 1:09:32 OK, so we don't have.
+
+**Maia Emerson** 1:09:33 Oh, so when you create that promo that you show us, that doesn't
+automatically create that the detail page you have to that?
+
+**Jenny Smith** 1:09:42 So let's take a look at casinos and I like a real world example of a
+promotion that we're seeing right now. If you guys could perhaps guide
+me to a place that.
+
+**Maia Emerson** 1:09:53 Oh, but not to go to a casino.
+
+**Jenny Smith** 1:09:56 Uh. The name is better.
+
+**Amy Carter** 1:09:59 Well, yeah, because it matters because somebody's a third party.
+
+**Maia Emerson** 1:09:59 No, not any.
+
+**Jenny Smith** 1:10:03 Oh.
+
+**Amy Carter** 1:10:04 You can just do Hollywood.
+
+**Jenny Smith** 1:10:06 Hollywood. OK, sure. Oh, oh, it must have. Where's it?
+
+**Amy Carter** 1:10:10 Great. Yeah.
+
+**Jenny Smith** 1:10:11 Oh, here it is. OK, Yep. All right. Yeah. Just wanna take a quick look
+to see how that's set up right now. And then promotions. OK.
+
+**Amy Carter** 1:10:19 Yes. So there's the filter with the cards, which we seem to have similar,
+but then the learn more. This is where I was asking what populates this.
+
+**Jenny Smith** 1:10:22 That. Mhm. I see. OK, um, let's. I let me go after this call, let me go down to the dev environment. So
+just to be clear, I can keep in mind what we have here within stage. You
+know we have migrated over the sites that were for like rollout one or
+rollout 7. So there are some there's data. That's not in stage because it's not, it's not ready to go, it
+hasn't been looked at, et cetera. So I do want to pull up something
+that's down in the integration environment for casinos so I can show
+how that particular page is set up for any of these casinos that was
+migrated down in the integration environment.
+
+**Amy Carter** 1:11:23 2.
+
+**Jenny Smith** 1:11:24 We'll get back to you then on this specific details page when it's
+used with casinos. So yeah.
+
+**Amy Carter** 1:11:30 Because like since we would have sometimes in this case for careers and
+a landing page from the promotion, I also saw on the promotion content
+fragment like there was the option for the the banner image. So it's
+like if we put that, where is that?
+
+**Jenny Smith** 1:11:34 Mhm. Yes. Yeah, that's, yeah, that's exactly why I want to look at it from the
+casinos standpoint because since we're kind of using promotions, you
+know, not as like a promotion, but more to handle how these hiring
+events are, there are some fields that that aren't really used and
+they're not being applied.
+
+**Amy Carter** 1:11:59 Mhm.
+
+**Jenny Smith** 1:12:04 The way that they that they would be for a casino promotion. So let me
+get an example when it comes to actually casinos. So that'll be
+probably more filled out and more you'll be able to kind of see like
+how that maps one to one when it's actually used for what its intended
+use case was. OK, so like right now we're not using everything that's related to the
+casino's promotions because this is not a casino promotion, this is
+actually a hiring event. However, what the what the promotions content
+fragment does provide is the ability to display this similarly to how it
+currently is on the live site. That's the reason why we. We chose it, but we can look at an example, not today, but we can look
+at an example later when it's actually used with the intention of
+casino promotion.
+
+**Maia Emerson** 1:12:51 Is there anything else or maybe the event template that allow us to link
+to another page like because we don't do it often, but we do have. Events that we mark as hot jobs or we have to explain more, even
+sometimes we have, I don't know, dealer university, right? Like for
+like craps or whatever, whatever. So we have to create these detailed
+pages for some of the jobs and it seems that promotions cannot do that.
+
+**Jenny Smith** 1:13:17 So. So promotions. So with promotions, keep in mind, yes, you, I mean you
+can create links to pages. You can create a page separately like a a
+separate open page and put your details there and then you can link it
+within the content fragment here, right? But what I'm hearing Lisa
+saying is. Because the way that events work is because you have that event ID,
+there's only one event detail page and then it's passing all the
+information that's already within the content fragment model, right?
+Yeah, so.
+
+**Maia Emerson** 1:13:48 Well, yeah, yeah. I was trying to find a walk around because honestly
+the we do it is so easy. We just created one and it gives you the part
+integrations page. Everything is tied together. So that's a redo for
+later. I was just trying to see. How we can do it what you guys have built already?
+
+**Jenny Smith** 1:14:06 Yeah, so you can certainly do this with events, but keep in mind that
+some of like like this override text functionality is not available with
+the events content fragment. So if you do have like if you wanted this to have its own separate page,
+that would be that would make sense if you want to use your event
+component, sorry, the event content fragment. But you wouldn't. This
+wouldn't say every Tuesday 12:50 right? Like we saw in the calendar, it
+wouldn't say that it would be like whatever the Tuesday date is. And it would say 12:50 and then it would also list out the location
+based off whatever was linked. So that's why there are differences
+between events and promotions in order to try to get it to match as
+closely as possible visually to what we saw on the live site. That's
+why we chose promotions. Now if there's I guess like this is where like it perhaps it makes
+sense to include like that override field within the events and then you
+could use events for hiring events as well, right? So these are all the
+things that like we need to make sure is documented so we can identify
+that for the gap. Which components need that specific enhancement, right? So I guess right
+now, does this cover the workaround for linking this to an existing
+page? Right now, as it is, you can link to an existing page. I can click
+here and I can choose any page I want, however, to have it similar to
+how it is with events. Right now, that's a different content fragment.
+
+**Maia Emerson** 1:15:39 Right. And just to make an idea. Oh wait, we don't even have a
+scheduling now, so it wouldn't be. We'll have to get creative and figure it out something.
+
+**Jenny Smith** 1:15:52 OK, so let's let's move on though to a couple of other things that I
+had noticed on the career site. And then I did want to spend some time
+having you guys if there's any specific pages we wanted to take a look
+at. And perhaps investigate those components, but let's take a look at the
+video card component. This is used with the testimonials. What I'm
+showing here are two different variations of the video card component,
+depending on if you fill out specific fields. So I'm going. We need to open up this component. We can see a configuration here. This
+has the ability to put the thumbnail. Right now you can see we have
+external URL. What we're doing is we are referencing a video that's
+within the DAM. However, if I'm not mistaken, I believe during the
+handoff of the site. It was mentioned that we do recommend from what we saw, the majority of
+videos are I believe in Vimeo, if that's correct. So the recommendation
+was, you know, if that's the intention to keep all the videos together,
+that should be moved to Vimeo and then this external URL would be
+replaced. With whatever that link is. So right now we are pointing to it. We're
+pointing to a video that was uploaded into the DM as an external URL.
+But moving forward, if you're trying to use external URLs, we would
+recommend the Vimeo link instead.
+
+**Amy Carter** 1:17:21 So if it's Vimeo or YouTube, we just take the the URL path from the
+browser. That's what.
+
+**Jenny Smith** 1:17:24 Mhm. That. That should be here, yes. Like you can see here this is referencing like
+the specific file dot MP4. Yeah, sorry, go ahead.
+
+1:17:31 Yes.
+
+**Maia Emerson** 1:17:36 Most of our business are in YouTube, so when you say we recommend, you
+know, so that's fine, OK.
+
+**Jenny Smith** 1:17:37 On YouTube. OK. Oh, sorry. I think what we saw was like, we were seeing
+videos in Vimeo on other sites, other hard work sites. But you're
+saying YouTube, it doesn't actually matter Vimeo or YouTube. It's just
+since that's external. Yeah, yeah, you know, it wasn't like a
+limitation of that. I was using Vimeo because that's what we were
+seeing. Yeah.
+
+**Maia Emerson** 1:17:49 OK.
+
+**Jenny Smith** 1:17:56 OK, so in this case here what you will notice is I've left the video
+title and the description blank and so you'll notice in this version
+I'm going to hit cancel. There's nothing that's appearing underneath,
+but in this version here I did fill out the title.
+
+**Maia Emerson** 1:17:57 Yeah.
+
+**Jenny Smith** 1:18:12 And also the description. And so that's how it's being displayed here.
+So with with title and description without title, that's just depend on
+if you fill out those fields. The close button label is something that
+will appear when you actually open up the video and that's what appears
+in the top right in that Moodle. So, so that's here and then. Let's see. Let's take a look at how that looks like on the publisher
+side. Alright, so I'm just gonna click on like something like this. So this
+is where we were saying that the close label is appearing here. So that's where that translates to. And then for the Watch More
+testimonials page, you can see here how we were using that video card
+component with the descriptions filled out. I'll pause here to see if there's yeah, go ahead, Lisa, please.
+
+**Amy Carter** 1:19:02 Yeah, all right. I have a list of questions because I've tested this on
+my own. So we we definitely skipped around on a lot of the controls of
+the video. So if you went back to your external URL, so now that we know
+we can reference a video that's in the dam, Vimeo or YouTube, I saw you
+had a with it.
+
+**Jenny Smith** 1:19:13 OK.
+
+**Amy Carter** 1:19:22 There. Is that the recommended width or why do we have 846 there?
+
+**Jenny Smith** 1:19:26 So I yeah, so I had I copied this specifically from the existing one
+that was listed here. Let's go ahead and change that and see what
+happens.
+
+**Amy Carter** 1:19:38 And so we don't need like a pixel or anything there, it just accepts a
+number.
+
+**Jenny Smith** 1:19:43 Let's do something small and crazy to make sure I believe with the
+let's see.
+
+**Amy Carter** 1:19:50 I believe it only impacts the modal, but.
+
+**Jenny Smith** 1:19:52 Yeah, that's that's what I was about to say. Like you can see how the
+modal got super small, right? And one thing I did want to mention is the
+videos do work when you're viewing them on the publisher. When when
+we're viewing trying to view like a damn video within the. Author. That's why you're seeing it's not, it's not going to play in
+here, but it is something that's visible when you're viewing on the
+publisher. But yes, so that width that we just inputted, you can see how
+that affected the modal window in terms of like the 8:46, that is
+probably something that we were putting to match whatever we saw on the
+live site, but that can certainly be changed. Changed.
+
+**Amy Carter** 1:20:28 OK. But no pixel required, just the number. OK. And then moving down,
+unless you plan on showing us the third party, but there was the options
+to do a fixed layout instead of responsive. It was like there was like
+fixed layout versus responsive and I think that's if you choose.
+
+**Jenny Smith** 1:20:30 No pets will require. That's correct.
+
+**Amy Carter** 1:20:48 Choose the third party. You have these options like you just have very
+very different options than what had existed and then it it asks you for
+like a a aspect ratio, you know all of those natures.
+
+**Jenny Smith** 1:20:50 Oh, right. I see what you're saying, yeah. So I think you might be thinking about the video component. So with the
+video card. Oh, no, I'm sorry. I apologize. You're talking about like
+after you select the. Yeah. So this is gonna be very similar. Yes,
+correct.
+
+**Amy Carter** 1:21:14 This was from selecting third parties so.
+
+**Jenny Smith** 1:21:17 Yeah, so with regards to this, you can see here the video ID. Let's
+switch to YouTube since you guys were mentioning YouTube. So the video
+ID is that the string or whatever that's at the end of the video, so
+that can be inputted here, right? So that way we would just reference
+that specific YouTube video here with the layout fixed or responsive I
+can. You can try and look for examples where we're actually using this so
+you guys can see how it works. So I can pull that off to the side and do
+that. But yeah, what this is showing here is you're able to add those
+specific. I guess you can configure it so that way it's looping. I
+believe we're using that on the homepage for example. Ability to loop this video for it to be able to play without being
+muted. It's auto playing, right? So that's what was used in order for
+this particular video to be shown. This is using a container. However,
+anything that's using a video is going to be very similar to these
+specific fields. That's why I'm. Referencing this, um, but these are things that would be configured by
+the author and then this. That's how it's like rendering on the page,
+right? So this.
+
+**Amy Carter** 1:22:26 But those options are only available if we went with the third party.
+
+**Jenny Smith** 1:22:29 If you click on third party, yes the video.
+
+**Amy Carter** 1:22:32 So we can't do that. Like I guess I don't understand why we would put
+a YouTube link on the external URL with the first example when this is
+asking for YouTube as a third party.
+
+**Maia Emerson** 1:22:33 Oh.
+
+**Jenny Smith** 1:22:41 Yeah, so so to be clear, external URL could be if it's something
+outside of what's listed in here, then that's when you would use this.
+You can't. What I'm trying to highlight is yes, you could
+theoretically still use a YouTube URL here. However, when it comes to. Additional features, then yes, it could certainly make more sense for
+you to be able to select YouTube from the third party drop down if you
+want to have access to all this additional stuff. However, if your
+videos were not hosted on YouTube, external URL is what is available for
+anything that's not hosted outside of these.
+
+**Amy Carter** 1:23:17 But we couldn't do this the configurations with like a hosted internal
+video. Sorry Mayte.
+
+**Maia Emerson** 1:23:18 So.
+
+**Jenny Smith** 1:23:22 Into the.
+
+**Maia Emerson** 1:23:22 No, I was going to say the same thing, Lisa. It seems that with external
+we missed the configurations that we have on third party. They should be
+the same. So that's another gap and that means that we only have to use
+YouTube or Vimeo their private.
+
+**Amy Carter** 1:23:32 Yeah.
+
+**Maia Emerson** 1:23:40 Otherwise we won't have controls.
+
+**Amy Carter** 1:23:45 Yes.
+
+**Maia Emerson** 1:23:48 So OK, yeah, so let's just not use external URL until that's fixed.
+
+**Amy Carter** 1:23:53 And then yeah, definitely a take away to let us know that if we were to
+use the fixed or responsive, what like our best practices for those like
+fields that are included. But if you don't have an example now, I
+don't want to waste the time. And my only other question was related to
+styling. So if you were you showed us how they looked on on the preview,
+but just to see the difference between.
+
+**Jenny Smith** 1:24:02 Mhm. Mhm.
+
+**Amy Carter** 1:24:13 None black and white is none is the default. So is that transparent I
+guess?
+
+**Jenny Smith** 1:24:15 Oh, right. So let's actually, I'm going to just copy this three times and I'm
+going to just put a background color on just for the ease of us being
+able to see this, right? This looks absolutely terrible, but let's. Let's set this to be white. Let's set this to be black, and let's see
+what happens here. Oops, did I set that white? Interesting. All right, so here you can see the black is showing up on
+on on top of the container with the background color, and so it's not
+transparent. The white one I'm going to look into because I feel like I
+have seen that working. I'm not sure what's going on here, but the
+intention is for this to be a white background. Right with the light with the dark text on top of the light background
+and then I think by default nothing is selected. And so once we check to
+see and understand why white description is not showing on the
+background as white, I can get back to you as to whether or not this is
+transparent or not, cuz right now it's showing as transparent, but I
+need to. Confirm what's going on with the white description.
+
+**Amy Carter** 1:25:28 OK, I've gotten the white to work before so I have seen it in action. I
+just I just don't know if if not selecting means default is
+transparent.
+
+**Jenny Smith** 1:25:31 Yeah, that's that's what it exactly. That's why I'm surprised by
+this. Right. No, definitely understand. But yeah, let me look into this, Lisa,
+because like I like you're saying the white should be working. I'm not
+sure why it's not working right now in this instant. But yes, I can
+show a screenshot of actually of the of the three different ones once I
+can understand why this is. View uh displaying those this way.
+
+**Amy Carter** 1:25:57 Thank you.
+
+**Jenny Smith** 1:25:58 Yep. Um, OK. So 'cause I'm seeing the time I did one. Yeah, go ahead.
+
+**Maia Emerson** 1:26:03 Um. One more question, we how does this work with this component? If I had a
+fourth one automatically turns into a carousel like sidecore? Or is
+there an extra step to make it agree, agree that it stacks or a
+carousel? Because we just got to like click one thing in sidecore and I
+didn't see that in the settings.
+
+**Jenny Smith** 1:26:23 Yes. So this particular component it it's.
+
+**Maia Emerson** 1:26:24 Yeah.
+
+**Jenny Smith** 1:26:29 So it's one component that does not automatically go into a carousel.
+We do have like card carousels and we have our hero carousel which does
+allow you to, you know, do things like add other components to them and
+and so let me actually show you. For the video card though, I don't believe that's something that we
+are currently adding to carousel, so it might not be an allowed
+component. Yeah, so in this case for the card carousel, we had limited
+just to cards for the. Hero carousel that was limited to. I'm sorry, one second. Let me get
+out of the carousel component. Yeah, for the hero carousel component. I believe we had limited that to just hero banner image and video. So
+notice this is not the video card component. This is a different
+component. The video is more of a video player. That's what we see
+here. This is the video player being used within a hero banner. So right
+now the video card component on its own. It does not turn into a carousel. What what I would recommend perhaps is
+like say like a gap is with our existing carousel components, perhaps
+allowing those video card components to be added to them since right now
+they are limited to only specific components and that was by design.
+
+**Maia Emerson** 1:27:51 OK, so yeah, let's component turns into carousel and obviously
+everything right, like navigation and things like that. But any any card
+can go into a grid that is taxed and is responsive or turns into a
+carousel if that's configured when more than you know, three or four,
+whatever the.
+
+**Jenny Smith** 1:28:08 Mhm.
+
+**Maia Emerson** 1:28:09 The um, I think I accepts.
+
+**Jenny Smith** 1:28:15 OK. And so the the last thing I wanted to to just show before we start,
+if there's anything else that we need to pull, which is that I also
+noticed that for this particular site we were using the card component. And again, that's been used obviously everywhere throughout all of the
+sites. But in this particular instance, this card, what I just wanted to
+highlight, you can see the title bonus programs and you can see the
+asset here. This particular card is just using the icon card variation.
+That's why it's displaying. Like this, if I were to turn this off, it'll look something like that,
+which is not what was matching on the live site. And so I just wanted to
+highlight how this particular variation was being used on this site with
+the cart component that I know that the authoring team has already used
+in several places.
+
+**Maia Emerson** 1:29:07 And if I add again like I'm not gonna ask about the carousel, but how
+does it respond if I have like 6 or 9? Does it go like 3 to 1 columns? I
+mean automatically or is that a setting? Because I remember from when we
+looked at the other sides we have that issue right that you have to
+manually go into every little thing and configure how it looks on each
+break point.
+
+**Jenny Smith** 1:29:28 Right. So for this particular component, because keep in mind this is
+kind of like a standalone component, like you could make this as wide as
+you wanted, you can make this as small as you wanted. And then with the
+way AEM works, you would basically have to change it in the different
+emulators. Now what we understand and definitely understand what you're
+describing my table. I know some of our components will automatically do that for you based
+off of like say like a carousel. You have the ability to be able to say
+all tablet carousels. I want two cards to be displayed, etc. That's
+some of that functionality is built in existing components, but
+something like say like a card that's. A standalone component. It's not being used within like this carousel
+and so this here you would have to manually size it deending on how you
+want it within the different viewports.
+
+**Maia Emerson** 1:30:22 OK, so we'll add to the God list.
+
+**Jenny Smith** 1:30:26 OK. So with what we covered here, excuse me, this is was I was going
+through the career sites. I know we want to focus on careers and I was
+just taking a look at at the things that we have on the careers that we
+hadn't really talked about. Is there any specific page that the team
+wanted to take a look at and perhaps take a look at? Configuration and talk a little bit more about it.
+
+**Maia Emerson** 1:30:49 We have a page where we list our executives. I think I forget the page,
+but that is the same content as that we have in hardrock.com, right?
+Like the brand side. So I'm assuming that shirt, right? If we change it
+on.com careers automatically.
+
+**Jenny Smith** 1:30:56 OK. Oh. OK.
+
+**Maia Emerson** 1:31:09 Updates.
+
+**Jenny Smith** 1:31:11 So it can't. Sorry, what? Maybe it's here from our team. No, that's
+that's not it.
+
+**Maia Emerson** 1:31:12 I'm gonna try to find that, yeah. Any inclusion?
+
+**Amy Carter** 1:31:18 Yeah, I was gonna say it might be the diversity.
+
+Richard Ray (Director of Digital Experience)** 1:31:18 It's the corporate page on hardrock.com.
+
+**Amy Carter** 1:31:21 But the one that's uncovering yours, which one is it here?
+
+**Maia Emerson** 1:31:22 And it's.
+
+**Jenny Smith** 1:31:24 Oh yeah, I'm looking for the one in careers, so um.
+
+**Maia Emerson** 1:31:27 I think inclusion.
+
+Richard Ray (Director of Digital Experience)** 1:31:27 Oh.
+
+**Amy Carter** 1:31:27 Yeah, I think it might be the diversity, equity and inclusion. Yeah,
+yes. So these are the same cards.
+
+**Jenny Smith** 1:31:29 Question. OK, perfect. OK.
+
+**Maia Emerson** 1:31:31 Yeah, that one. So we don't have to maintain it in two places, right?
+If you know like Jeff gets another title, it just automatically it's on
+both sides.
+
+**Jenny Smith** 1:31:40 So right now I believe it was probably migrated over separate cards. We
+can take a look. However, that can be changed, but let's pull up this
+page. I think we said divert. Wait. Oh, inclusion. OK.
+
+**Maia Emerson** 1:31:59 Inclusion.
+
+**Jenny Smith** 1:32:03 OK, here it is. Got it. All right. I believe right now these are
+probably using card components, right? OK, yeah, so these are using card
+components. However, keep in mind these can be moved to experience
+fragments. Definitely understand the desire to have that shared content.
+Let's. Bring up the Hard Rock website and I'm. Is it corporate? Is that the like the corresponding? OK, yeah, OK, so.
+
+**Maia Emerson** 1:32:32 I think so.
+
+**Jenny Smith** 1:32:37 Oh, looks like some images are a little bit different. Not sure if
+that's intentional or not, but if what's pretended is a one for one,
+it's completely the same, right? Let's pretend it's completely the
+same. What we could do, like what could be done? Get this be shared and you can be moved into Experience Fragments
+instead. So that way you are updating it in one location and keeping the
+exact same styling for both sites. So if you were to upload say the text
+here, say David like you mentioned got a new title or something, you'd
+update it in the Experience Fragments section and then it would update
+on. Our page was referencing that experience fragment. So this here would be
+moved to the experience fragment. This here would be replaced with the
+experience fragment. So it's using that shared source and then you as
+an author would just update it once. Does that make sense? So right now, as you can see here, these are using just cards, just like
+these are likely using just cards or or some other components, but if
+the desire is to have it to be shared across both sites with the exact
+same styling. And the exact same like data, then that is a perfect candidate to be
+moved to an experience fragment instead.
+
+**Maia Emerson** 1:33:57 When you say exact styling, just to understand how vendor works, if I do
+an experience fragment and I want the same content on two or multiple
+sites, it has to have the same styling. It can be it's the content the
+same but the style apply different per site.
+
+**Jenny Smith** 1:34:09 So. Yeah, so keep in mind. So that the reason why I was emphasizing the
+styling is because that's when experience fragments, you know, having
+it look exactly the same and and with the same content. However, if
+you're just trying to have the same content, that's where it goes
+candidate for content fragments instead, right? That's why I wanted to
+understand like. Like, are we trying to have like, you know, because I notice, you know,
+pictures a little bit different. Not sure if that's intentional or not.
+
+**Maia Emerson** 1:34:36 You. For this use case, like you're right, it should be the same, exactly
+the same. I was thinking of already other use cases where they are not
+exactly the the content is the same but not how it looks.
+
+**Jenny Smith** 1:34:43 OK. OK. Yeah. OK. Yeah, yeah. So whenever you're trying to have shared content, say a
+name, we know that we have a name and we have a title and we have an
+image, right? That is a content for a, sorry, that's a candidate for a
+content fragment model. Say those exact fields where you're able to
+then save that into that location and then. Edit it as a content fragment. You would then use like our content
+fragment card component to to display that specific content fragment,
+right? However, because we're saying I want this to be the exact same
+on both this site and this site, that's to be done inside a content
+fragment. That's not like an experience fragment and then you would
+edit. One experience fragment and then it would update on both sites.
+
+**Maia Emerson** 1:35:34 OK. Thank you for that.
+
+**Jenny Smith** 1:35:36 Yeah, and I'm sorry if that was a little confusing. We can certainly
+get more into experience fragments, which is the intention in a future
+session, you know, kind of seeing examples of where we are using
+experience fragments on existing sites as well as perhaps some
+additional use case candidates that that would make sense. Like this is a perfect use case for experience fragment. We're trying
+to do the exact same thing, but that is going to be covered. I believe
+if not next week, the week after I need to check the agendas. So just to
+be clear, we are going to be talking more about experience fragments.
+
+**Burt Jones** 1:36:08 Yeah, Daniela, one of the things we'll do tomorrow is send out what
+what the agendas are now that we've kind of amended the plan, right.
+So, yeah, so that'll be something I'll see tomorrow, yeah.
+
+**Jenny Smith** 1:36:19 Oh, yes. Yep. Mm-hmm. Yeah, we'll be working on that tomorrow. That's correct. Yep. So I
+think might say in team, any other pages we wanted to take a look at
+that's in careers, you know, perhaps take a look at behind the scenes
+as to how we are rendering it.
+
+**Burt Jones** 1:36:23 Yeah.
+
+**Amy Carter** 1:36:36 I do want to, I I know I sound like a broken record for probably a lot
+of the components we've covered, but I do want to call out that like
+for the video card or for the promotions or everything of that nature, I
+will document again to say what is the asset necessary for this because
+like for the video card, I think that there was like.
+
+**Jenny Smith** 1:36:45 Mhm. Mhm. Yes.
+
+**Amy Carter** 1:36:56 Like a the or I forget the the word you used for it. I'd have to go
+back to my notes. Let me see video card thumbnail, the thumbnail. So
+it's like what? What size is necessary for the thumbnail? I know I just
+saw like a recommended size you put maybe for the video, but like.
+
+**Jenny Smith** 1:37:06 So I get the the the yeah, the video thumbnail.
+
+**Amy Carter** 1:37:14 It's not really universally understood what would be necessary for that
+image right there. And then same thing with that image. A video card
+doesn't have the same capability of where we were able to like give it
+a focal point I guess. So like to me this one would be important to just
+know what's the aspect.
+
+**Jenny Smith** 1:37:19 Yes. Mhm. OK.
+
+**Amy Carter** 1:37:31 So that there's no mess ups there. Um. I'm trying to think what else. Obviously same goes for promotions, just
+wherever there was like a a banner image field or a promotion card
+image. Just knowing again the the basis that's really gonna get us in a
+standardization. Good point. You know, just at least implement that from the as we are
+dictating what the card looks like versus the card containing in.
+
+**Jenny Smith** 1:37:51 Yeah, yes. About the assets and we want to continue putting that down, you know,
+from a component basis. We understand that the fact that this does not
+have like say like an image tab or something new feature. You know, documenting all this on process to review during that.
+
+**Amy Carter** 1:38:34 Yeah, and it kind of like an overarching theme. Updates to pages and I'd say this might not be as relevant to the
+content fragments because I can see how they're stored in the back end
+and either published or unpublished. But we're having a lot of issues
+when we want to have something added to this page. Let's say it is the
+video card.
+
+**Jenny Smith** 1:38:49 Mhm. OK.
+
+**Amy Carter** 1:38:55 If we want to keep that another video card on the page, but someone
+tells us George isn't with the company, take it down, but then we want
+to. I guess that's not the best example. George isn't coming, is
+coming down this week, but we want to add George back next week. It's a
+pretty big effort to create it, get it sized, get it formatted and
+delete it versus at least storing it. On the page level, maybe hidden on the back end. Do we have any sort of
+functionality like that? Because we come across that with like the
+homepage heroes that constantly get rotated out. Sometimes we'll have
+something very temporary go up, but we want to revert back to Evergreen
+and not just make like a. It's more so being able to go to basically the component level and get
+it stored to the page, but it's not saved on the actual page layout,
+but more so in the content tree, so we can always access it from the
+tree if necessary. I I know we do that a lot. And then without having to say what did that look like, like do we need
+to recreate it? I hope I'm like saying that correctly because that's
+like most components that we're having an issue with of like what we do
+currently day-to-day. It's really easy for us to grab things that are
+just more so disabled or unpublished from the component level.
+
+**Jenny Smith** 1:39:55 Mm.
+
+**Maia Emerson** 1:39:56 Mm.
+
+**Jenny Smith** 1:40:05 Mm.
+
+**Amy Carter** 1:40:12 but still stored in the tree.
+
+**Jenny Smith** 1:40:12 Mhm. OK, yeah, I.
+
+**Maia Emerson** 1:40:15 And then, as you know, we do that for everything, for pages, for vans,
+for promotions, for cards, for literally everything. We just leave them
+there because we know we're gonna reuse them.
+
+**Jenny Smith** 1:40:21 Yeah. Yeah, understood. Um, So what I wanted to actually show.
+
+**Amy Carter** 1:40:28 Yeah.
+
+**Jenny Smith** 1:40:33 We'll see. So there's promotions component that's on here. However,
+you'll notice that it's actually hidden. What I did was I had layout
+and it's. You'll notice that there says hide component.
+
+**Amy Carter** 1:40:50 Oh, OK.
+
+**Jenny Smith** 1:40:51 I believe that's what you're asking for, Lisa. So like. OK.
+
+**Amy Carter** 1:40:57 It. Which? Something like that exist. I just would hope that that I exist in every
+component or is this like?
+
+**Jenny Smith** 1:41:02 Hello. I mentioned perhaps a specific card with it. This is at a component
+level like this particular feature on this. I did a link on the layout
+and I clicked on the eye and what that does is that. We'll hide component from. Or like you know this, this would come in handy to be able to dictate
+what's actually shown in a different device. But what it sounds like
+you're asking for is so you wanna hide on every single device. Well,
+you can actually do that by using this the same functionality just
+hiding the component. But it would still be accessible to tree so you can see I had hidden my
+title permissions. If I click on it you are going to see it because
+it's hidden, but when I if I go through the layout I'm able to
+actually unhide. I did again, right?
+
+**Amy Carter** 1:42:10 But it would have to be done across break points.
+
+**Maia Emerson** 1:42:10 OK, so that's one like a CSA's hide. It's still rendered right? And
+like you can get crawled and picked up. So it wouldn't have a use case
+because when we hide it in cycle, it doesn't get into the HTML, it's
+actually gone. So that's.
+
+**Jenny Smith** 1:42:29 Let's see. Yeah, one second. One second. One second. Let's take a look
+at.
+
+**Maia Emerson** 1:42:32 You can go.
+
+**Jenny Smith** 1:42:39 One second. Let's take a look. Yeah. So to Majay's point, like you can
+see here, the title is still. Yep. Sorry, Majay, you're you're
+breaking up. What? Sorry, what was that?
+
+**Maia Emerson** 1:42:43 And also we have to. Sorry, I was gonna say that the amount of that we have like let's say
+disable or unpublish, it's not the amount. So hiding, hiding like that,
+it's it's not. I mean it might help us Lisa for like a quick fix for
+something really urgent, right? But it doesn't have. A long term.
+
+**Amy Carter** 1:43:07 Right. I didn't know it was gonna be like in the code.
+
+**Maia Emerson** 1:43:12 Yeah. Because it takes so much manual labor and energy to create something in
+vendor, we don't want to lose those components. That's why we're
+asking if we can like store them somewhere so we don't have to recreate
+it and spend all the time to accomplish, you know the.
+
+**Jenny Smith** 1:43:36 So it's yeah. So out of curiosity I guess let me because I'm I'm
+trying to like process the use case. So it's a concern like I have an
+entire layout and now it's like I need to hide certain things.
+
+**Maia Emerson** 1:43:36 The look that we.
+
+**Jenny Smith** 1:43:55 Are you guys talking about perhaps you know like?
+
+**Amy Carter** 1:43:57 The the use case could be for example we we push a hero banner to a page
+and and the campaign that we're running or push like for a hiring
+event. And when we don't have a. We might want to swap that back out to generic, but the generic is set
+up with a description, not just like a like zero. So there's already
+like.
+
+**Jenny Smith** 1:44:15 OK.
+
+**Amy Carter** 1:44:31 We want to like reset up knowing it's just like an Evergreen content,
+but we don't necessarily have like scheduling either to say it's going
+to be following a very consistent schedule to say make it appear on XY
+and Z date. It's kind of like at the request of a stakeholder. So we won't, we wouldn't. We just want to have that evergreen content
+available to repurpose in a lot of areas. But that's like my best case
+to say.
+
+**Jenny Smith** 1:44:52 Mm.
+
+**Burt Jones** 1:44:54 Can you? You know is that. Sounds target a little bit, but maybe not. I don't, I don't know, you
+know, maybe if there was a.
+
+**Jenny Smith** 1:45:02 Yeah. But.
+
+**Burt Jones** 1:45:07 We if we change the the content architecture too, but I'm just trying
+to. That's what I'm hearing. Yeah, you go ahead.
+
+**Maia Emerson** 1:45:15 OK.
+
+**Burt Jones** 1:45:29 And.
+
+**Jenny Smith** 1:45:29 Yeah, for sure. And so I I understand the use case that you're
+describing, Lisa. I think we need a little bit of time to kind of digest
+that and also some time to sync with the tech team tomorrow to see if
+perhaps, you know, they have some suggestions as to how we could handle
+that.
+
+**Amy Carter** 1:45:45 Yeah, cause just like as we're evolving as a team, part of our
+initiatives this year have been really to to emphasize like content
+refreshness. So like so in order to do so we we're rotating out very
+temporary things, but when we don't have temporary things to to push
+then we want to be able to rely.
+
+**Jenny Smith** 1:45:48 Mhm. OK, OK.
+
+**Amy Carter** 1:46:05 Back on the Evergreen. So it's not like, as easy to say, we're always
+following a very standard schedule. So like, I don't think it's just
+as as much of targeting at a time being, but being able to default back
+to saved elements that aren't just fragments.
+
+**Jenny Smith** 1:46:10 Go ahead. Hmm. OK. All right. Yeah. No, we we will be reviewing this tomorrow
+during our discussion. See if we can.
+
+**Burt Jones** 1:46:32 Well, either way, I think I don't know if we'll have to be an answer,
+but we're hearing the need as part of this like initiative and vision
+that Lisa.
+
+**Jenny Smith** 1:46:33 I'm hoping last of these days. No, no.
+
+**Burt Jones** 1:46:43 Sent their team, you know, refreshing content. That's good to hear that
+like kind of anecdote at least I can. So my point is I don't, I don't know if an immediate answer but we but
+we definitely want to consider that when we're talking in going through
+our backlog expansion platform expansion discussions. So we're
+accounting for that with any future work that we're doing to improve
+the plat. Form as it's implemented. So yeah, alright.
+
+**Jenny Smith** 1:47:09 Yeah, yeah. Luke, I guess what I was trying to stress was if there is
+something that we can do currently today with the platform, we would,
+yeah, certainly, yeah, certainly we want to present that. But to your
+point, after our discussion with our tech team, that might have to be,
+you know, either like a modify or or something that's completely new.
+So yeah.
+
+**Burt Jones** 1:47:14 Oh, sure. Yeah, yeah. I don't wanna shortchange that. Yeah, yeah.
+
+**Jenny Smith** 1:47:29 Yeah, we'll definitely learn more after we talk tomorrow and then we
+can certainly cover this again in in in our later. Yep, exactly.
+
+**Burt Jones** 1:47:29 Yeah. OK. Figure out where it goes. Yeah, right. Yeah. OK.
+
+**Amy Carter** 1:47:38 Thank you.
+
+**Jenny Smith** 1:47:39 Yeah, thanks, Lisa.
+
+**Burt Jones** 1:47:39 Daniela, I I feel like you're you're you're you're about out of
+words here, but our team are there.
+
+**Maia Emerson** 1:47:39 Um.
+
+**Jenny Smith** 1:47:44 My God.
+
+**Maia Emerson** 1:47:44 I we I do have one last question. The locations page in the careers site
+is pretty much the same information as the brand site. So I'm assume
+that's the same right? Careers is pulling from the DPLD.
+
+**Burt Jones** 1:47:48 No problem.
+
+**Jenny Smith** 1:48:00 Let's take a look. I believe this is actually not pulling in from DPLT.
+Sorry, I'm just sharing the screen. You're talking about this page
+here.
+
+**Maia Emerson** 1:48:09 Yes.
+
+**Jenny Smith** 1:48:10 And this is the same page. Let's find it on the Hard Rock website. One
+second. Um, can you navigate me to the?
+
+**Maia Emerson** 1:48:22 Yeah, go to find the location top left in the in the belt on the top.
+Yep. So if you scroll below below, that's obviously organized
+differently, but it's the same information. So if we have the same
+information.
+
+**Jenny Smith** 1:48:25 Oh, Yep, sure. OK. So.
+
+**Maia Emerson** 1:48:37 I assume it was the same component.
+
+**Burt Jones** 1:48:40 Mm.
+
+**Jenny Smith** 1:48:41 No. So I believe the way that this is migrated is using accordion and
+text components. This here is using a different component which is
+connected to the map. I guess my question for you though is like is the
+is the intention for it to actually be organized in this way to
+essentially reuse what we see here?
+
+**Maia Emerson** 1:48:59 Not organized, but the idea of integrating with the DPLT is that
+everywhere we have a listing of locations like that pulls from the DPLT,
+so we don't have to maintain it in different places. We don't want to
+be maintaining locations, their links, their name changes and all that
+stuff. Manually across multiple sites as we keep adding sites to this. So is are we able to grab that accordion from the brand side and put it,
+not move it, but copy and have the same in the career side?
+
+**Jenny Smith** 1:49:32 So you can certainly copy the component. I do believe this component is
+linked to the map, but we can.
+
+**Maia Emerson** 1:49:39 But that's fine. We can have, we can have the map.
+
+**Jenny Smith** 1:49:43 OK, uh, actually, but I'm one second.
+
+**Maia Emerson** 1:49:48 I mean, to be fair, they actually wanted a map the first time we did it.
+We just didn't have enough resources to, you know, like actually do
+that work. So we ended up doing just unlisting in Accordions.
+
+**Jenny Smith** 1:49:59 Right. So and and I think that's the reason why it was probably
+migrated over that way. But if we were to go to the, excuse me,
+locations page here, we can take a look at what that component is. To
+your point, Mayte, you're saying, can you just copy it? So you'll see
+this is our map component and the reason why you're like, why is it a
+placeholder? If it renders an author, it's probably going to slow down the page
+significantly. However, this particular component contains all the
+different map data, right? You'll see the different group titles, et
+cetera, and then it's pulling in the different countries, which is then
+this particular component is linked to the content fragments that are
+being created from DPLT, right? Right, so you could take this, you can copy this and then you can put it
+on the page. Right now I'm gonna put it just on my test page because I
+don't know the exact page where it's there. Oops, my bad.
+
+**Maia Emerson** 1:50:49 Mhm.
+
+**Jenny Smith** 1:50:53 Yeah, so you should be able to copy the component and then display it
+within a different page because again, these components are global,
+right? So yeah, yeah, yeah, let's see if I why does it keep copying
+this?
+
+**Maia Emerson** 1:51:02 That's good.
+
+**Jenny Smith** 1:51:09 I'm going to do that and then I'm going to actually because I see a
+time, but I'm going to do that. I'm going to post it here and I'm
+going to actually ask Luke to send out the page once it's available.
+OK, if that's if that sounds good, so you guys can see how it's the
+exact same copy of that specific component, OK.
+
+**Maia Emerson** 1:51:17 OK. Yeah. Thank you.
+
+**Jenny Smith** 1:51:26 Alright, yeah, I will stop sharing then. And Luke, yeah.
+
+**Burt Jones** 1:51:27 It. Yeah, I I I got just a couple minutes and then I'll let people go. Just
+pulling the calendar back up and again, this is published on on
+Confluence. I'm sharing my screen, hopefully you see it. So just wanted
+to call out that. Tomorrow's session I I I had the intention of having the Friday session
+this week. We're gonna we're gonna postpone it and and move sessions
+to next week and have a Friday session next week. We we want to have a a
+pretty large post-mortem. Internally here, retrospective and and and use the time to collate what
+what we've, what we've gone through the last three days, go through
+the questions that you guys have had, make sure we have a buttoned up
+agenda for next week. So that's why we're going to use the Friday time
+for that. So you'll be seeing a calendar update from me for the Friday session
+tomorrow and I'll be sending, well, Daniela will be sending. Well,
+actually it'll be a mix of Daniela and Andy will be sending the agendas
+for next week and I'll be setting up the time blocks. The one to three time period Tuesday through Friday and just want to let
+everybody know this that that little bit of housekeeping for me. So
+hopefully that makes sense. That's all I had. So thanks for your time
+Daniela, as always, I appreciate. The diligence that you put into these knowledge transfer sessions with
+everybody, I appreciate everything you're doing, OK.
+
+**Jenny Smith** 1:53:02 Sure. Thank you.
+
+**Amy Carter** 1:53:05 Thank you, Daniela.
+
+**Jenny Smith** 1:53:05 Thank you everybody for your participation.
+
+**Maia Emerson** 1:53:06 Thank you.
+
+**Don Wood** 1:53:08 Thanks.
+
+**Amy Carter** 1:53:09 Thank you.
+
+**Greg Scott** 1:53:09 Yeah. Excellent. Thank you.
+
+Richard Ray (Director of Digital Experience)** 1:53:11 Thanks everyone.
+
+**Maia Emerson** 1:53:11 Thank you.
+
+Cal Nelson (customer)** 1:53:12 Thank you. Bye.
+
+Burt Jones** stopped transcription
+
+
+
+## Session: Tagging & Taxonomy — 2026-02-17
+
+**Customer Vendor Knowledge Transfer - DAM Sessions-20260217_130312-Meeting
+Recording**
+
+February 17, 2026, 6:03PM
+
+1h 2m 28s
+
+**Burt Jones** started transcription
+
+**Burt Jones** 0:08 Alright, we're off and running on the recording. Andy, if you wanna go
+ahead and brief the team on what today's session's gonna be about,
+that'd be great. Thank you.
+
+**John Zimmerman** 0:17 Sure. So for today's KT session, we're going to talk about all things
+tagging and taxonomy as it pertains to tags and AEM. So it's actually
+this. This session will not be 100% or even close to 100% focused on the damn,
+though I think that it's critical that Don be here as well as your
+authoring folks and anybody else that would be have an interest or stake
+in understanding how tagging works as it applies to both. Both sites and offering. So if you wanted to, you know, forward the
+invite or just shoot anybody a quick message on teams to have them join
+them, you know that would be. Recommended sure, but we'll also have the recording, so anybody that
+wants to go back and and check it out can. Now do we do we want to take a minute to invite anybody else or can we
+go ahead and get started?
+
+**Don Wood** 1:15 Thank you.
+
+**Burt Jones** 1:21 It's up to you, Scott. I think we'll just go ahead and get started here in silence there,
+Andy, OK?
+
+**Don Wood** 1:32 Yes.
+
+**Greg Scott** 1:34 Yeah.
+
+**John Zimmerman** 1:34 OK, sounds good.
+
+**Greg Scott** 1:35 Yeah, sorry, I was muted 'cause you press record. Let's go.
+
+**John Zimmerman** 1:37 Yep. Alright, so I'm gonna share my screen and kick us off. Let's see if I can do a whole application. No, it's not. Alright, so I maybe go back and forth between sharing some, you know,
+individual. Um. Things I have open. So we'll start actually, yeah, this gives us a good overview. So this
+is taken from the confluence page that just lays out the agenda for
+today. So we're going to be talking about and I did put a note in here
+that the objective for today is to and it's just taken directly from
+the associated. Ticket for this particular enablement track. The objective is to
+understand how tagging, metadata and taxonomy are implemented and how
+they drive dynamic content, search filters and cross-site behavior in
+AEM. And so we've broken that out. I did put one note that. We're going to have the dam focused session tomorrow where we bring in
+a subject matter expert, Chris Lewis, who has some familiarity with the
+project going back to the early days and also is an expert in all things
+custom metadata schemas and best practices around that. So and and the other agenda items we have lined up for tomorrow. That
+said, there will be some crossover. I'll, I'll touch on you know some
+critical differences when you're thinking about tagging versus what the
+difference is really between. Tagging in a EM versus the concept of metadata schemas and custom
+metadata fields and things like that. So we're going to get into tag
+taxonomy, which is basically talks about how tagging was implemented or
+I should say put into place and structured for this implementation. Tag management, some best practices around governance and some
+permissions and things that we can set up that can be set up so that you
+have granular control over who's able to. Add, update, delete tags and then we'll talk about the application of
+tags and authoring and asset management. So we will touch on assets
+there. We will in that area talk about how there are certain asset
+metadata fields. Fields in your schema that are populated from tags, so there's some
+crossover and functionality there. And then we'll talk about tag
+performance considerations and troubleshooting and some of the other
+call outs that you guys had in the JIRA ticket. I'm gonna stop sharing that for a second. This is the one that I wanna talk about, so um. And the first talk about tag taxonomy and how it was configured for this
+implementation. Before I get started, any questions on the agenda or any
+call before we get going?
+
+**Don Wood** 5:00 I don't have anything at this moment.
+
+**John Zimmerman** 5:01 All right, all right, so. You know what? I'm we'll talk through this a little bit and then I'm
+actually just gonna share my whole screen. But look, if you ping me on
+tag on Slack, I'm not gonna see it. Heads up.
+
+**Burt Jones** 5:17 No problem, Andy.
+
+**John Zimmerman** 5:25 Free wheel on it. No, no training wheels, no loop. No look on the back end saying no, no, don't.
+
+**Burt Jones** 5:33 I I have faith in you, Andy.
+
+**John Zimmerman** 5:35 All right, that's it. That'll be your demise, buddy.
+
+**Burt Jones** 5:39 Yeah, probably.
+
+**John Zimmerman** 5:42 Alright. Oh, can you guys see my screen OK?
+
+**Burt Jones** 5:48 Yes.
+
+**Don Wood** 5:48 Yes.
+
+**John Zimmerman** 5:49 I'll take that as we're good. Oh, the reason I shared my entire screen
+is I want to be able to hop back and forth. I'll try not to do it super
+quick or scroll a lot, but I want to be able to, you know, demo as in
+context. So your taxonomy route, I'm not sure if you're familiar, but
+in AEM. Um. On to move that guy 'cause we'll be referencing that later. Tags are managed in AEM through a tags console. I'll step back for a
+second and go back out to actually just that we have it for the sake of
+the recording. So let's say you're coming in as an author and you land
+on the the start page for the touch UI also. Refer to as the granite interface. You click on your tools icon and
+it's over here under tagging and you can see that there are several the
+top level of tags in AEM or and in general in the tagging world are
+called namespaces. So some of these are out-of-the-box. This is used for multi-site manager
+or translation functionality in a EM. You've got some asset properties
+that are out-of-the-box like portrait, landscape, square. Files. You also have variations on experience fragments that are
+out-of-the-box where we get into and then some tags that are used for
+various workflow processes like site and AEM projects and so forth. So where the rubber hits the road with you guys is we have a namespace
+called customer. You can see it in the console and the. The actual path in the JCR is under the hood is forward slash content
+CPU tag and then your namespace which is customer. And so here you can see
+that there are tags set up for. Your regions, brands. Hotels, some of these are in use currently and some of them are not.
+Some of them are set up for the additional site that would be onboarded.
+Maybe they got started and were paused or or for whatever reason are
+I'm looking at production. So we currently we're looking at production
+tags. You got your lines of business news categories. And underneath these you have, you know, more granular levels of the
+taxonomy, for example featured news. And just to show an example of
+where, for example, featured in addition to tagging an asset or a page
+or other resource in a experience fragmentation. Fragment content fragment. You think about back in the old days there
+was that website Delicious where it was just one great big tagging cloud
+where people could tag content with any descriptive tag that they could
+think of to create this massive cloud taxonomy. You have that ability in AEM in a governed way to and we'll talk about
+the governance that's in place currently for your tags or tagging
+schema, but you can in AEM tags are also used often to drive things like
+drop down menus for authoring component properties. Or or even specific asset metadata fields where when you're choosing,
+when you upload a NASA and you're applying metadata, you want to have
+governance over a finite set of options to describe the. Um. I don't know pick anything really the the the category of for the
+asset. That's a greatly a great example for your content. Fragments are
+based off of categories. categories um that get applied. And I'll show an example of that
+shortly. But for news categories, an example of that is featured news
+gets used to populate the blog page on hard drop. So if we go I was just there. Where's news guys?
+
+**Amy Carter** 10:30 Down to the bottom, there's a section that's gonna land.
+
+**John Zimmerman** 10:33 Yep.
+
+**Amy Carter** 10:34 That'll land us right. There's a direct link to the yeah.
+
+**John Zimmerman** 10:37 Perfect. Perfect. So yeah, so we have under here we have news. And then this is where I'm not. You can see I'm still coming in and
+getting familiar with your your architect, your content architecture.
+But I think the latest items you could see that there is the Seminole
+Hard Rock Hotel and Casino Hollywood.
+
+**Don Wood** 11:09 So are these the tags that are applied to the modules on the page?
+
+**John Zimmerman** 11:11 Yeah. Correct. So so for for this card list, for this section of the page that
+we go preview, I can say OK, so that's featured news. I go back to
+edit. The content that shows up under featured news is driven by the
+content fragment card list component.
+
+**Don Wood** 11:16 Oh, brother.
+
+**John Zimmerman** 11:38 And is based off of the type of news. And somewhere on the hood that's driven by and select the list type. Is tags and then it's set up to the to come from featured news. So
+that's how that's component knows where to pull and news items from is
+basically they're all tagged with featured news. That makes sense.
+
+**Don Wood** 12:01 Amazing. Yeah, that makes sense. I guess one thing I wanna talk about with those tags, if we can go back
+to that page where where you show all the list of the tags.
+
+**John Zimmerman** 12:17 Sure. Mhm.
+
+**Don Wood** 12:23 So right now and I I brought this up before. So we have you know under
+the first level underneath the customer we have directory called
+categories, we have directory called category, then we have news
+categories, we have events categories, so.
+
+**John Zimmerman** 12:38 Hmm.
+
+**Don Wood** 12:42 Can you maybe explain why we have several sets of categories? Maybe why
+those aren't all maybe not all nested under cat one directory?
+
+**John Zimmerman** 12:53 Yeah, and they I think that they serve, they they serve different
+purposes, but they could be named a little better, right? So so that as
+you're reading through this as a human that it would not be so because
+that that actually just caught me when I was describing that your
+content fragments use category and I was.
+
+**Don Wood** 13:03 Yeah. Yeah.
+
+**John Zimmerman** 13:12 Pointing to this folder, it's not that they're actually driven by this
+is the the field that populates. So I think that that comes into play.
+We'll talk about best practices for naming here in a little bit and I
+think that we can add that as.
+
+**Don Wood** 13:16 Right. Mm-hmm. Yeah. Yeah.
+
+**John Zimmerman** 13:28 As a to do you know for you guys or at some point you know to to do a
+little bit of clean up and refinement of the tag structure.
+
+**Don Wood** 13:30 Right. Yeah, definitely, definitely want that. And the same with the property
+names because we have all the locations there, but then we have hotel,
+casino and cafe and there's locations under there. See there's a few
+of the properties, but everything, all the other, all properties are
+listed under property.
+
+**John Zimmerman** 13:50 Mhm.
+
+**Don Wood** 13:56 Names further down below, right there.
+
+**John Zimmerman** 14:00 Yeah, it would make sense to consolidate for sure.
+
+**Don Wood** 14:02 Yeah. So it's like, do we need them all in one directory or do we need
+to separate them out? What's the best practice for that? How do we move
+them properly?
+
+**John Zimmerman** 14:12 I'll take a note to and just calling it out for the transcription for
+us later Luke to to take a look and see the like the functional
+implications of doing some consolidation on this because it would it
+would make sense to try to.
+
+**Don Wood** 14:25 Yeah, right.
+
+**John Zimmerman** 14:28 To merge that so that it's seamless.
+
+**Don Wood** 14:30 Yeah, it it, yeah, just get it all clean and a better organization would
+be great. Um, Lisa has a question.
+
+**Amy Carter** 14:38 I think it goes hand in hand with what you guys are saying. It's just
+if you guys do restructure this, does that break anything currently is
+my concern.
+
+**Don Wood** 14:46 You're right, yeah.
+
+**John Zimmerman** 14:47 But I yeah, what we would do is assess whether it breaks anything,
+whether it's can. What we try to do is set things up so that there are
+no hard coded paths. Now it's not always possible, it's not always the
+case, but our. In developing is to make everything as configurable as possible and
+follow a configuration as a development implementation model. And I'll
+go a little bit under the hood. I'm not gonna spend too much time on
+this, but just to give you some perspective on that. There are a bunch of so there's a service on the back end in the in the
+source code that gathers content based off of tags and and there are
+other types of services like that where the paths that are involved. For
+example, here's a here's a good example. Is that we have a very an environment variable that can be set. It
+can't be set by like your average author, but it can be changed by, you
+know, your AEM administrator, anybody like a TJ or whoever has access to
+a cloud services can go in and if you wanted to move say the locations. Root content for your content fragments, your location content
+fragments. Then this variable would allow you to change that location
+without having to do a code change. And So what we would look at and you know, making these these desired
+changes like to your tag taxonomy would be, you know, does that, is it
+handled? It doesn't matter at all. Is it does? Is there a variable in
+place either in the code or in cloud service environment? Variables that would need to be modified and if not, then the overriding
+goal would be to so you all can make these changes without it being a
+consideration, you know, so but for us to do it right now as we're sort
+of transitioning and we're onboarding new sites and functionality it
+would. The due diligence would be for us to at first let you know if there's
+any implications from a coding perspective and then give the green light
+if you wanted to make changes. But but have you do those changes? So at
+this point you guys as much as you can sit on that you know. And be empowered to to do what you want to do without being dependent on
+us.
+
+**Don Wood** 17:14 Understood. Understood.
+
+**John Zimmerman** 17:20 So that gives a a pretty good bird's eye view of the taxonomy route and
+the and the tagging structure underneath. As I said, there are places in
+the code where or in your implementation where. Tagging is used to populate, for example, authoring properties and an
+asset metadata. Another area where tags are where there's a mapping
+between content and tags. Is these they're called. It uses the functionality from the ACS Commons
+library, which we talked about for. I don't know if TJ's on or anybody
+from the technical team, but. We're in the process of helping you guys upgrade the ACS Commons
+library. A lot of your functionality leverages capabilities from this open source
+library. It's just a collection of tools and capabilities that can be
+added to an out-of-the-box AEM implementation. And one of those pieces of functionality is one of those features are
+called generic lists. And we use generic lists in this implementation to map tag sets to
+particular content areas. You can see like I guess when we started
+working on paths at some point before one of the pauses before I. I was around and there was map. There are mappings for this Atlantic
+City cafe. Property to oversight page to the Atlantic City tag that and this
+experience fragment is associated for Kataya is. Associated with this tag set. So as we onboard those sites that this
+will be driving functionality I assume as long as it's being done the
+same as it was originally planned.
+
+**Don Wood** 19:34 Yeah. And how would we use this?
+
+**John Zimmerman** 19:39 So it what it does is it it governs the tags that will can be used under
+a given section. I believe is what the that's typically why this is
+used. It's to enforce some kind of a. I shouldn't say that it limits
+the number of the tags that can be used. It's to impose it's to. Put some kind of constraint or guardrail in place and I can just take a
+note to go back and ask Vinay or if you guys could add it to the
+questions list for today, that would be good. Um. When you guys are compiling your questions for the post KP Q&A.
+
+20:20 Yeah.
+
+**John Zimmerman** 20:21 We can see how and I actually looked and I didn't see any really that
+affect like the corporate side or careers. For reverb, you know the sites that are alive today. So I don't have a
+real world example to show you, but I saw that this is in place when I
+did AI did an analysis of the to get my head around the implementation
+and stuff. When I came on the project I did a complete analysis and. You know this was called out as a functional a a piece of functionality
+where tagging tags and content were mapped together. So for the any AEM admins and then authors with that would have any
+interest in this the ACS you get the ACS Commons tools by going again
+clicking on the toolbar here or the tool icon and then this listed down
+here. And this is where you would go to view those generic lists.
+
+**Don Wood** 21:24 Mm-hmm.
+
+**John Zimmerman** 21:26 There are also, um, generic lists for social media types. This drifts away from tagging and taxonomy a little bit, but I think
+it's important to be aware of. But laser mappings for the different social media types that have been
+defined and their how they're used on the back end.
+
+**Don Wood** 21:53 OK.
+
+**John Zimmerman** 21:55 Features.
+
+**Don Wood** 21:56 Yeah, we'll we'll definitely need some more information on that.
+We'll add that to the questions.
+
+**John Zimmerman** 22:02 Yeah, basically the question is how are dot Howard? What are the generic
+lists that are currently configured and what are they being used for
+basically? OK. So that's covers this piece of the taxonomy and then a big piece that I
+want to talk about are or is the relationship of tagging with your
+content fragments and other assets. So um. Yeah, I think I have. So it talks about that basically for content
+fragments you have a categories field that holds tag IDs that are used
+for filtering in various dynamic lists.
+
+**Don Wood** 22:59 Hmm.
+
+**John Zimmerman** 23:01 Then you also have tagging of course on your assets using the CQ tags
+property just like you would on pages. And some examples of that where
+they're being used are like to tag by region, tag by event categories. And to give you some perspective on, I did a um, I'll blow this up a
+little bit for you to see. And I'm happy to share this with you guys. This is just something to
+have as a reference. So I did a I did an export of all of your page
+content, experience fragments and content fragments and it's just a
+sampling of the corporate assets. From your production author instance, I didn't take into account
+whether they were published or not. So this is pretty much everything
+and you're definitely using for content fragments more than anything
+else. You're using um tagging, so for example this um. This particular article from this is a content fragment news article
+news item that's showing hotel news and press releases. If there's
+anything relevant that you would like to see from this list, like if I
+was looking for a career. But it's not in production yet, so yeah, that would make sense. But this gives it has columns that show that this is what the tag space
+looks like from the from a coding or back end perspective. It has the
+namespace customer with a colon and then the. The tagging hierarchy, hierarch, hierarchy. Can't talk today, guys. I
+would need a drink of water, but and I separated them by pipe just so
+that it was easy to see. So there's two tags associated with this
+particular news article.
+
+**Don Wood** 25:03 It's alright.
+
+**John Zimmerman** 25:13 And then just for human readable, that actually translates to this path
+in the JCR. It's forward slash content. Yeah, basically just to get the tag ID, you replace content CQ tags
+customer with customer colon.
+
+**Don Wood** 25:35 OK.
+
+**John Zimmerman** 25:36 And then vice versa. You would replace customer colon with content forward
+slash content forward slash CQ tags forward slash customer colon. And then I listed the the tag property. So all of these you could see
+your content fragments all are you leveraging that. I assume that's a required field when you're authoring content
+fragments. We can take a look and then there are some where it's both
+tagged via the categories drop down and the the regular old CQ tags. In the content fragment properties. Let's take a look at that just for context.
+
+**Don Wood** 26:20 Yeah.
+
+**John Zimmerman** 26:25 One thing I wanted to touch on that we just had done, we had a support
+ticket for it in place was to at least for now replace the default
+content fragment editor with from the Universal Editor and Experience
+Cloud with the. Legacy AEM localized editor because you guys are using functionality and
+and other things that are not supported yet in the universal editor. So
+ideally at some point down the line you would be able to switch back
+like failures. Here's the Experience Cloud version that you probably used to see them
+pop up when you go to edit a content fragment. Here's the um. Local version. So if I Scroll down through here. The search, yeah, category. So you can see that the category selected
+here is hotel, sub category, hotel, line of business hotel. I think these are all tag driven. I can go one way where we can, if you're interested, we can go look at
+the content fragment model.
+
+**Don Wood** 27:39 Yeah, let's look at that.
+
+**John Zimmerman** 27:52 So all of your content fragments are based on content fragment models. I
+think Daniela touched on that the other day. And let's look at what was it we were just looking at. The location, OK. So all of the dialogue fields that you see when you're editing the
+content fragment are defined via the content fragment model. And you can see property ID. You click each of these fields on the left, it shows what the back end
+value is or the the type. So here's like. Either uh um number field or multi field. This tab data types is for actually. If I wanted to drag like if I
+wanted to add a single line text, I could just drag that over. I'm not
+gonna do anything 'cause we're in production, but. So it shows the field label, the back end value that would be used by
+code, front end or back end code, placeholder value, a type if it's if
+it's a numeric type, the default whether it's an integer or fraction. Fault values. Trying to scroll down on the this side. Anyone. There we go. You can actually specify validation type first over with
+the numeric field less than or equal to greater than between. You can
+even add custom validation types if you've got you know you can
+actually, you know, define. You can get real meta with this here on the development phase. If you
+had requirements like for a number field that aren't defined here,
+custom error message instructions for user. So you can go down through here and see. Now let's go down to a
+category.
+
+**Don Wood** 30:21 Less, yeah. So.
+
+**John Zimmerman** 30:23 Hmm.
+
+**Don Wood** 30:26 So if these are not defined by tags in the list, was that a requirement
+to set this up this way or what's the better route to do like?
+
+**John Zimmerman** 30:37 It's helpful. If you could, ideally everything would be nothing would be hard coded
+right? Like so. So if it were possible to drive this by, let me go back
+to the tags.
+
+**Don Wood** 30:44 Right.
+
+**John Zimmerman** 30:53 Gaming hotels, Featured news, pre-word. here. This is casino, hotel, dining, retail and none. I'm just kinda seeing
+if there is a what was that support that's getting in my way. Just wanna see if there's an under these categories. Yeah, there's not really a one to one. So yeah, that's a good question for to be added. Or as a something in the I would say that goes into gap analysis for you
+know some enhancements and. But you would have to look and see like what is this? Is this
+categorization unique to this this the locations data type or is it
+universal enough to where it makes? Sometimes it makes sense if it's
+just an enumeration that's specific to one data type you think about.
+
+**Don Wood** 32:04 Yeah.
+
+**John Zimmerman** 32:10 Content fragments. Think about content fragment models just like you
+would in a traditional like old school CMS where it's still database
+driven and you have a database table for locations, right? And you've
+got a field for for location ID or property ID and.
+
+**Don Wood** 32:23 And.
+
+**John Zimmerman** 32:28 Um, legal name, location ID and so forth then um. You know you would say maybe have like a look up table for this and that
+that or you may not. It may just be this a standard like like a
+numeration set that it's not used anywhere else. So why go through the
+it would be potentially over engineering to. Break it out.
+
+**Don Wood** 32:53 Right. So I guess my question would be how is this content fragment utilized
+right now? And how these lists populated and that or where it's used?
+
+**John Zimmerman** 33:09 Yeah, while I'm here, I'm just looking to see if any of these are
+driven by um. Content problem. Doesn't look like it. The locations are used all over. I go open up the dam. That they're organized by regions and North America, yes. Was the one. This is the one we were just looking at is for. That's
+it's a test location. Well, maybe we need a better one.
+
+**Don Wood** 34:02 Mhm.
+
+**John Zimmerman** 34:07 Anybody have a valid one right off the top of their head? It would be nice if these were named uh.
+
+**Don Wood** 34:16 Right.
+
+**John Zimmerman** 34:16 Let's see what they are.
+
+**Amy Carter** 34:20 We've asked for that too.
+
+**John Zimmerman** 34:22 Yeah. Luke, don't kill me. This is where I would see you pinging me on Slack
+and saying stop being a good idea fairing. Put ideas in their mind. No,
+he wouldn't. He wouldn't do it.
+
+**Burt Jones** 34:31 No, it's good, Andy. It's good.
+
+**John Zimmerman** 34:35 Yeah, he wouldn't do that. He would just say, Yep, we got that's
+enhancement and.
+
+**Burt Jones** 34:39 Yeah, yeah.
+
+**John Zimmerman** 34:41 Oh yeah, here's um. Yeah, so this is it's got its location ID which gets coded here or or
+encoded here. I should say codified. This is the HR bet Illinois Sportsbook. I guess. And so yeah, these are used all throughout the site. Um. The properties and so, so forth, probably Lisa or my taison.
+
+**Don Wood** 35:09 Alright.
+
+**Amy Carter** 35:10 Yeah, I think that this is like, this is something that we took away in
+a different session that we had with Daniela that we said this is like
+actually an issue for us because it was about getting a certain content
+fragment card on a page and that although we built it in the same like
+folder structure underneath the property, underneath the line of
+business and organized by month. It still required the author to put the location reference ID, which we
+thought was, you know, silly and not really user intuitive for people
+outside of like maybe this group.
+
+**John Zimmerman** 35:44 Yeah, yeah, I hear you.
+
+**Amy Carter** 35:44 But I think we saw that with, um, events. I wanna say I'd have to like,
+go back.
+
+**John Zimmerman** 35:53 Yeah, so one way to like quickly see and and I know this doesn't solve
+the problem in its entirety is like if you had a separate tab open with
+the dam, you can look it up by some some descriptive reference you know
+like you might not know exactly HR bit IL sports book but. You know, if you knew it was IO sports book or something like that, it
+would help be able to identify it quickly. Your line. You can switch to list view and that's gonna give you the. Or it doesn't that this list view dot is not very helpful, but the like
+part of you is. And capture it. Well, we'll have it in the recordings and be captured
+as a screenshot. Just if you're keeping like a tips and tricks book or
+notebook for your authors and stuff. But. So yeah, let's actually wanna look at and I'm gonna stop sharing my
+screen for a second. I wanna do a quick look up. I see my pretty face
+keeps showing up. I don't know if it does on your screen every time I
+stop sharing and reshare. So hello.
+
+**Burt Jones** 37:14 Only I see it, Andy, 'cause only the inside vendor folks see the vendor
+faces. Yeah, there you go. Now we see your face.
+
+**John Zimmerman** 37:17 Oh, OK. Oh yeah. Hello.
+
+**Burt Jones** 37:27 That majestic beard.
+
+**John Zimmerman** 37:30 I guess the yeah, it's it. It was not white before I started today at
+vendor.
+
+**Burt Jones** 37:31 The Wizard of AEM. I remember when it wasn't white, yes.
+
+**John Zimmerman** 37:43 All right. Yeah, I'm gonna share my screen again. So I have this put together for you guys and I'll send it out as a
+follow up. It basically breaks out where you have asset metadata that's
+driven by tags. So obviously you've got your CQ tags field. The brand asset metadata field and maybe I can go find an asset and we
+can look at it. So you have for context venues and branded experiences,
+customer venues, LOB and you can see on the right which tag namespace those
+align to. You guys want to see that in action?
+
+**Don Wood** 38:35 I I mean, I'm familiar, but maybe so everyone else.
+
+**John Zimmerman** 38:43 Help me find an asset so I'm not digging around. I should be able to pick anyone. I completely. Tell you how good my memory works. Yeah, so if I click this for brand. It's take MA to the tag taxonomy for brand. I would go back over to
+tags. It's a Hard Rock International, Tunnel Gaming, Tunnel, Hard Rock. Makes sense. So that's Yep.
+
+**Don Wood** 39:49 Mhm. Yeah, you can also type ahead, so.
+
+**John Zimmerman** 39:58 Yeah, I'm not that quick. And then there's the venues and branded
+experiences.
+
+**Don Wood** 39:59 Yeah.
+
+**John Zimmerman** 40:04 Uh, I will show you something neat though if we have time where I I'll
+use type ahead and you'll see how. I can be pretty expedient with that particular tool. Oh again, same
+thing. Then using branded experiences, this starts out at that that root
+and the tag taxonomy. That's another form of governance. And then this also lists that um one place where it's event categories
+is what's being used for um. For this categories field, let's go back to that asset for a second
+actually.
+
+**Don Wood** 40:53 That's they're all on the right column.
+
+**John Zimmerman** 40:58 Thanks.
+
+**Don Wood** 40:59 Yeah, those aren't the same. Tags.
+
+**John Zimmerman** 41:03 Let's say it starts with awards, bars and lounges.
+
+**Don Wood** 41:05 Yeah, those aren't the same, right? Yeah, these these are the ones that
+are populated there.
+
+**John Zimmerman** 41:09 It's, uh, this one. So this is where it would make sense like either to rename, rename these
+namespaces or like this could be like.
+
+**Don Wood** 41:25 So those are the those are the ones that you used on the content
+fragments. So the other ones are the ones we're using I guess for
+assets, image assets.
+
+**John Zimmerman** 41:25 Is there a? Mhm. Yeah, it says their event for it. So both the metadata asset property
+like if I hit cancel and like category, this should be event category
+because that's what drives it.
+
+**Don Wood** 41:48 But this isn't. This isn't. This isn't for. Yeah, this isn't for
+events.
+
+**John Zimmerman** 41:48 And then again and then. Oh oh, that's interesting. And then you actually have a totally
+different event categories.
+
+**Don Wood** 41:56 Yeah, that's that's why all this needs to be rethought and
+reorganized.
+
+**John Zimmerman** 42:01 Mm-hmm. Yeah, that makes a lot of sense.
+
+**Don Wood** 42:04 Because. Yeah, that's where I was getting confused before because I'm going in
+and we look at the properties and it's we have these categories, which
+is fine because this is what I need for the image assets. But then you
+have I guess categories that are only applied to. The content fragments. So that's where I guess the news and events and
+these other the categories is applied, I assume. So that's why we need
+to figure out what's going on here, how we can get this cleaned up and
+organized better.
+
+**John Zimmerman** 42:30 Yeah. Yeah, so we'll take it as an action item, circling back what we said
+before to and we'll do it. We'll do this pretty quick. I wanna get an
+answer for you so that you can feel comfortable making changes and
+knowing that it's not gonna break anything.
+
+**Don Wood** 42:38 Yep. Yeah, yeah.
+
+**John Zimmerman** 42:49 OK. Just close a couple of things. I'm not.
+
+**Don Wood** 42:53 I I assume just moving using the move tool is fine. That's probably
+will update everywhere unless it's hard coded, but hopefully nothing's
+working.
+
+**John Zimmerman** 42:59 Yeah. Yep, that's correct. It'll yeah, it'll update all your reference pads
+for you. So yeah.
+
+**Don Wood** 43:06 Yeah, because I mean, I've been doing that for a while with the assets,
+trying to clean up everything that's on stage because we had a lot of
+assets that were put in the dam and I've been trying to clean that up,
+rename assets, move them to the right directory, so. Trying to get the metadata updated as well so.
+
+**John Zimmerman** 43:29 I think it's a good time, like in general with where things are with
+the implementation. Yeah, it would have been great. Like you came in,
+Don, like when about a year ago, maybe. Yeah, yeah. And and we're at a
+place now where we're doing this whole exercise of these KT sessions
+and the true and the.
+
+**Don Wood** 43:39 Year ago, Yeah, 13 months ago, yeah. So it's. Mhm.
+
+**John Zimmerman** 43:49 Gap analysis and like and then ideally moving to the next wave. So for
+all of these things that it this is a good opportunity to to make these
+adjustments like yeah you're pretty far along there's there's several
+you know levels of the taxonomy but it could be a lot worse sometimes
+you know if you were if we had four more properties.
+
+**Don Wood** 43:51 OK. Yeah. Right, right. It can.
+
+**John Zimmerman** 44:09 Right.
+
+**Don Wood** 44:10 Yeah, and and there's, you know, the metadata schema we probably need
+to look at and make changes to and add things that we don't already
+have, things like that. Definitely need to look at. But yeah, this is a,
+you know, we should.
+
+**John Zimmerman** 44:25 Yeah.
+
+**Don Wood** 44:26 Make sure that before we do a full launch, we have all this, you know,
+organized better, clean it up better. Um. And so forth so.
+
+**John Zimmerman** 44:34 OK, alright. And again, I'm gonna send this. I've got a couple of
+different documents I put together. Um. So the one we just looked at that lays out where tags are being used
+across asset metadata schemas and all that, and then I'll send you.
+
+**Don Wood** 44:44 OK. Yeah, mm-hmm.
+
+**John Zimmerman** 44:55 Some uh. I'll send you the my actual agenda, my talking points, this document
+that I'm referring back to, and then I've got some other things that
+just may come in handy, like list of pages where.
+
+**Don Wood** 45:03 OK.
+
+**John Zimmerman** 45:13 The card list is being currently being utilized and stuff like that. So
+that may may not be matter that much for you, but for you know authors
+that might be useful.
+
+**Don Wood** 45:16 OK. Really. Yeah. Yeah, definitely.
+
+**John Zimmerman** 45:24 Coming back, let's see how much more so I know. Yeah, I need to talk
+pretty quick.
+
+**Don Wood** 45:30 You got 12 minutes.
+
+**John Zimmerman** 45:32 No sweat. So yeah, and then we've touched on some a lot of this already
+just by walking through. So the tags are organized by under customer or a
+high level broken out by things like regions, events, properties. But you could see there's opportunity for some optimization with the
+category field specifically or category category fields or spaces. We
+talked about the path to tag mapping, how that's that that's it looks
+like it was being set up to be used for hotels, cafes. Which are ideally hopefully upcoming migration projects. So then it gets
+into talking about some best practices and taxonomy strategy. I pulled a
+lot of this content from the. Assets tagging best practices and and sites tagging experience league
+pages and those are linked at the top of this document. But we wanted to
+talk about permissions specifically so we can. It is possible to. I say it's possible. It makes it sound like it's
+some esoteric practice. You have the ability to set permissions at a
+granular level on the tag taxonomy. So for example, if you only wanted certain folks to be able to manage
+regions, then we use on the permissions console. We could certainly do
+that.
+
+**Don Wood** 47:12 Yeah, I think we definitely need to lock that down because we don't
+want everybody going in, adding random tags or making messing up
+something, deleting that something that's not shouldn't be deleted.
+
+**John Zimmerman** 47:21 Yeah, so. Yeah. So the way that that would work and and we have another session lined up
+for user management and and group management and stuff. But essentially
+you would like go within a group. You never want to give permissions to
+a person that always, even if there's only one person in that group for
+the sake of scalability and also if they're. for technical reasons why um you would only want to give it to assign
+permissions at the brief level. Oh, let's say and I'm not going to
+change anything again because we're in production, yada, yada, yada,
+disclaimer, disclaimer. That actually goes to a group. I don't want that. Oh, go there to
+permission. Back on that. Go back over here. Here are the permissions. So somewhere in here is probably something that admin briefly can take
+just for fun. Yeah, we'll just say this one. And this gives you a granular view of the paths that a particular group
+has access to and what level of access they have, what privileges, where
+read, write, add children. They delete even CRX replicate means publish whether they can actually
+publish or not. So you know you could actually add ads just for that
+particular path under. DQ tag. So let's say we only want we gave this group for a cafe. So yeah, you
+can do that. Select it. And get ready. If it if they can do everything and then there's shortcut, just do
+everything. You can actually specify whether it's a deny or allow.
+There are best practices around that that we'll get into during that
+session. But Oh yeah, that. Um, that is how you would go about. Getting granular with your permissions. Just go back and make sure that I'm covering exactly. Oh yeah, for governance, that's that's how that would how that would
+occur. You put guardrails by defining who can do what. You can also, as
+I showed, you can specify whether they can just read the tags in Tag
+Manager, whether they can create, update, delete. When you do delete tags, it's gonna tell AEM's gonna tell you that
+they're referenced by other resources. So that's baked in. We covered. Pretty much all of it. And there are additional topics. OK. Oh. Yeah, this says I showed using permissions on the tag tree. It talks
+about keeping a, you know, a document somewhere, whether it's Excel
+file that has permissions for all of your different content types and
+and metadata types or just something where you're tracking. And maintaining this um.
+
+**Don Wood** 50:58 What's in the architecture workbook right that we have?
+
+**John Zimmerman** 51:01 Yep, Yep. Yeah. As it was whenever it was last, you know, updated, it
+probably. My guess is it probably could be some ugly. Let's see.
+
+**Don Wood** 51:02 Yep. OK. Yeah.
+
+**John Zimmerman** 51:17 So best practices just for everybody. It's you want to use single
+vocabulary glossary that everyone's agreed upon and it's part of, you
+know, your metadata governance model. Believe it or not, it sounds like
+I just made that up or pulled it from somewhere, but it's it's part of
+when you're looking at.
+
+**Burt Jones** 51:33 Yeah.
+
+**John Zimmerman** 51:36 Especially a DAM capability maturity model, but a content management
+capability maturity model. You know, one way of sort of defining or
+figuring out where you are along that that CMM path is by looking at the
+governance, including documentation that you have in place. And so you know, defining the vocabulary, the lexicon that you work from
+is an important aspect of that. And avoiding synonyms with separate tags
+is kind of just a general guideline. Avoid over tagging assets and
+resources. Always, you know, just like with any CMS resource type, you always
+looking to reevaluate and optimize. Yeah, and then this one just talks about that that where the ACS Commons
+path tag mapping lists are. That should definitely be a governed thing.
+Should not just be like your average author should not be able to come
+in here and go to. ACS Commons and modify these lists because they they drive
+functionality. So it should be an administrator or super author or
+someone that understands. Again, probably just like it sounds like
+you're the damn strategist on. It sounds like probably someone would be
+designated as.
+
+**Don Wood** 52:44 Right. Mm.
+
+**John Zimmerman** 53:01 at that level of metadata governance, and this will be part of that that
+job, that title, you know.
+
+**Don Wood** 53:06 Right. Yeah, I'll just have to. Do some deep dive on that.
+
+**John Zimmerman** 53:17 When we talk to them, let's say. Talked about metadata schemas and how the CS are used there. Talked
+about content fragment, talked about pages. As authors, you probably
+know you know what tagging looks like when you're on a page. I probably
+don't need to go into that, but just for real quick. And like I we're coming close to time. I don't know if you want to tee
+you up for close out, but again, just to have you prick up your ears and
+I'll work through the rest of.
+
+**Don Wood** 53:44 Mhm.
+
+53:52 Yeah.
+
+**Burt Jones** 53:56 Was it you showing anything else, Andy? Wasn't there like some cool tip
+you were gonna show? Yeah.
+
+**John Zimmerman** 54:00 Yeah. Yeah, I have a second. So like anyway, this just covered it like so here
+for the blog or I don't know Don, if you're familiar with all sites
+offering side, but basically this is your general tags fit. Yeah, so you
+go into a, you go into a page and that's the blog or new page and
+here's the.
+
+**Burt Jones** 54:04 Yeah.
+
+**Don Wood** 54:15 No, I but OK, yeah.
+
+**John Zimmerman** 54:22 Property you got tags. This is where you do and you can see this is not
+governed at all right now. So right now anybody could apply any you
+could go as an author. I could go in and be like, yay, this page is
+associated with portraits, no orientation. So I'd totally recommend putting adding some guardrails there, like
+stubbing out like what your baseline page tagging is.
+
+**Don Wood** 54:41 Yeah, definitely. OK.
+
+**John Zimmerman** 54:52 Anything else? There's a little more goes into detail about that that content listing
+service by tag and I'll send when I send this out, you'll have the you
+know more information about that.
+
+**Don Wood** 55:08 OK.
+
+**John Zimmerman** 55:10 Um. Yeah, I'll just sit out the rest of good.
+
+**Burt Jones** 55:12 Hey, with that, with the yeah, hey Scott, I I pinged you on chat. Is
+there a SharePoint folder you can create for some of this collateral
+that Andy's gonna provide? I think it'd be better to have a a link to
+your SharePoint versus a.
+
+**John Zimmerman** 55:27 Collateral band.
+
+**Don Wood** 55:28 Um.
+
+**Greg Scott** 55:30 Yeah, sure, sure. Yeah. Don, do you know where you have a place where
+you prefer to have all the damn stuff? So usually I just put it in all
+in one. Yeah. So maybe, maybe off the route.
+
+**Burt Jones** 55:31 Document floating on e-mail.
+
+**Don Wood** 55:39 I mean. I mean, I can put, I can put it in mine my OneDrive.
+
+**Greg Scott** 55:43 Yeah, yeah. So I I would say that I would, I would ask in this case, I
+would ask, I would defer to Don Luke.
+
+**Burt Jones** 55:44 Yeah. Don, you just want us to send you the doc and then you'll handle the
+storage. Oh, all right, that's fine. These aren't like big documents,
+Andy. They're just note files. Yeah.
+
+**John Zimmerman** 55:51 OK.
+
+**Don Wood** 55:53 Yeah, yeah, I can do that.
+
+**Greg Scott** 55:54 Perfect. There you go. Yeah.
+
+**John Zimmerman** 55:58 Yeah, then, yeah.
+
+**Don Wood** 55:58 Yeah, but we just wanted to keep everything together, so yeah.
+
+**Greg Scott** 56:01 Yes, perfect. There you go.
+
+**Burt Jones** 56:02 OK. Then that that that's good then that answers that. Thanks, Don.
+
+**Don Wood** 56:06 Yeah, yeah.
+
+**John Zimmerman** 56:07 Yeah. So I think that covers us for tagging and taxonomy. As I said,
+we'll get more, we're going to deep dive into metadata ad nauseam
+tomorrow. So look forward to that.
+
+**Don Wood** 56:16 Awesome. OK.
+
+**Greg Scott** 56:17 Sounds fun.
+
+**Burt Jones** 56:18 With Chris Lewis. Yeah, yeah. It's good to pull Chris back into it.
+Yep.
+
+**Don Wood** 56:21 What was? What was your cool trick?
+
+**Greg Scott** 56:24 Cool.
+
+**John Zimmerman** 56:26 Oh, yeah, yeah, yeah. Actually, Don.
+
+**Burt Jones** 56:28 Yeah, you can't leave it that and then not close it, Andy.
+
+**Greg Scott** 56:29 Oh, there's a cool trick. Nice call. Nice call out done.
+
+**John Zimmerman** 56:31 My bad. It's called Watch me slip out the side door. No, hold on.
+
+**Don Wood** 56:36 Right.
+
+**John Zimmerman** 56:37 Yeah. Alright, so and Don, you probably know about this already, but uh, for
+other folks, it's just. You can manage. Um. All like thousands and thousands metadata for thousands of assets in one
+shot by exporting to Excel.
+
+**Greg Scott** 56:55 So that's. OK.
+
+**Burt Jones** 56:58 Yeah.
+
+**Greg Scott** 57:00 OK.
+
+**John Zimmerman** 57:01 You do that, right? Yeah, you grab this guy and I'll show you where my
+handy dandy. Oh, I'm not in for it. That's create. So let's you pick
+a folder that you want. Like, let's say I want corporate.
+
+**Don Wood** 57:01 I I already do it. Yeah. Mhm.
+
+**John Zimmerman** 57:18 You go here, export metadata, giving name, customer, corporate. Include assets and subfolders. What you never want to do is select all
+properties, so you'll end up with a nightmare of a spreadsheet with
+17,000 like arcane fields that you have no idea of what they are. Um,
+where most of your.
+
+**Greg Scott** 57:36 Oh God.
+
+**Don Wood** 57:38 Yeah. Yeah, RDF.
+
+**John Zimmerman** 57:43 A lot of the standard fields are the best way to do this and use a type
+ahead, which is what made me think of the. This is actually one I can
+use is like a lot of the metadata fields are prefixed with BC title. Oh,
+I gotta do the path.
+
+**Don Wood** 57:50 Mhm.
+
+**Greg Scott** 57:53 Yeah. OK.
+
+**John Zimmerman** 58:00 Content none of the.
+
+**Don Wood** 58:00 JCR, yeah.
+
+**John Zimmerman** 58:04 So it's like that, for example, and back it up.
+
+**Don Wood** 58:10 Type in customer.
+
+**John Zimmerman** 58:13 So do you have some metadata fields that are prep? Yeah, there you go.
+So if you have that namespace or you guys are just pre you're not, you
+didn't set up as namespace, but they're just prefixed. Yeah, so yeah,
+you can grab all these and then just copy and paste this.
+
+**Don Wood** 58:17 Yeah. Right. OK. This would be a good good question to ask. Like right now if I do this
+then I I'm having to populate every single time I run this report to do
+this. I I normally just export it directly.
+
+**John Zimmerman** 58:37 Yep.
+
+**Don Wood** 58:42 And you're right, it does, you know. Fill up the whole spreadsheet. It takes hours to get this data. So if
+there's a way to set this up to where I have a pre populated set of
+metadata that I can just choose instead of having to go to add 15
+different you know.
+
+**John Zimmerman** 58:52 Is there a? Yeah. Yeah, you and every other damn admin. Chris is gonna talk. Chris is
+gonna ask the site or he's gonna say the same thing tomorrow. It is a
+pain right now. But yeah, you you do have to go and I just like, I just
+keep a text file with on another prop. Got a couple of other damn
+projects.
+
+**Don Wood** 59:03 And. OK. Yeah, I mean.
+
+**John Zimmerman** 59:17 And I just keep a text file and just copy, paste, copy, paste, copy,
+paste.
+
+**Don Wood** 59:18 Yeah.
+
+**Greg Scott** 59:23 Yep.
+
+**Don Wood** 59:24 Yeah, I mean, that's what I do, so.
+
+**John Zimmerman** 59:25 Yeah, but anyway, so for everybody else, you can export this. It creates
+a a Excel file. You can go in and you know, let's say you've got 10
+thousand 50,000 assets in there and you need to change 10,000 of those
+50,000 to have the same category. Then you can do a copy replace in that Excel spreadsheet, save it and
+then re upload it from anywhere in the DAM. You don't have to pick the
+folder again or anything. You browse for that Excel file you just
+edited, upload it and within a few seconds it boom updates all of them.
+So that's pretty handy.
+
+**Burt Jones** 59:43 Hmm.
+
+**Greg Scott** 59:46 To.
+
+**Don Wood** 59:49 Mhm.
+
+**Greg Scott** 59:58 Yes.
+
+**John Zimmerman** 1:00:02 That was my trick, but Don already knew about it.
+
+**Don Wood** 1:00:04 Yeah, no, I knew. I've been doing that for a while. Yeah, bro. Yeah, I
+mean, I I I got some stuff out of this, so I appreciate your time on
+here. Looking for tomorrow.
+
+**Burt Jones** 1:00:07 Yeah.
+
+**Greg Scott** 1:00:07 It was a test. Donna's passed.
+
+**Burt Jones** 1:00:08 That you're not surprised Don knew about that, yeah.
+
+**Don Wood** 1:00:19 If we can get that those questions added to the confluence, that'd be
+great. I'll add any more if I need anything so.
+
+**John Zimmerman** 1:00:24 Yep. Yep. And I'll take a first pass through them as they're coming up and
+then any that need deeper dive, then we'll get into those with the
+offshore team and and get them back to you.
+
+**Greg Scott** 1:00:28 Thanks.
+
+**Don Wood** 1:00:28 Yeah.
+
+**Greg Scott** 1:00:32 OK, cool.
+
+**Don Wood** 1:00:37 All right, great. Thanks. All right, appreciate it.
+
+**Greg Scott** 1:00:37 That sounds great. Thank you.
+
+**John Zimmerman** 1:00:39 Thanks everybody.
+
+**Burt Jones** 1:00:40 All right. Thanks. Y'all have a good day. Thanks. Bye.
+
+**Greg Scott** 1:00:40 Thank you, everybody. Thanks. Good stuff. Bye-bye.
+
+Burt Jones** stopped transcription
+
+
+
+## Session: DAM — 2026-02-18
+
+**Customer Vendor Knowledge Transfer - DAM Sessions-20260218_130350-Meeting
+Recording**
+
+February 18, 2026, 6:03PM
+
+1h 11m 27s
+
+**John Zimmerman** started transcription
+
+**John Zimmerman** 0:18 Uh, it couldn't give me the recording message. Can you guys hear me
+OK? OK, cool. All right, we'll go ahead and get started. So today's
+knowledge transfer session follows along nicely with yesterday's topic,
+which was.
+
+**Jenny Smith** 0:26 Yes.
+
+**Don Wood** 0:26 Yes, yes.
+
+**John Zimmerman** 0:41 Tagging taxonomy and metadata governance primarily around the uses
+current the the various use cases that are in place now with the the
+customer input current implementation. Where tags are being used to populate metadata drop down fields in some
+cases for asset metadata, in other cases is used for other component
+dialogue. Properties or fields. And so we covered all of that and and said
+yesterday that we would and there was some crossover with what we're
+going to be discussing today, which is going to be heavily focused on
+all things dam, which will include. A deep dive into metadata schemas and profiles and all sorts of good
+stuff. So we for today's adventure we brought along Chris Lewis, who
+has been with vendor for a good long while and worked with Chris. Danielle and I both have on a number of projects and he and I recently
+just worked together on, I know at least one LCBO, right, Chris? And
+then maybe, Oh yeah, also another as well. So he's he's honed his chops and he's here to provide subject matter
+expertise on on the dam. He and I have met. We met yesterday to talk
+about today's session and some of the areas where we think.
+
+Speaker 1** 2:07 Yeah, yes.
+
+**John Zimmerman** 2:25 Where I think he will be able to jump in and far surpass my level of
+knowledge, the assets and the art of the possible and the art of
+optimizing, you know, evaluating what you have today and and looking for
+ways to optimize it, say say hello, Chris.
+
+Speaker 1** 2:40 OK. Hey, hey everyone. Good to be here. Hopefully I can, uh, provide some meaningful insight here. So yeah, get
+started and I'll jump in wherever I can.
+
+**John Zimmerman** 2:56 OK. Oh, can everyone see my screen OK?
+
+**Jenny Smith** 3:09 Yes.
+
+**John Zimmerman** 3:10 Everybody's good.
+
+Speaker 1** 3:11 Yeah.
+
+**John Zimmerman** 3:12 All right, so oh one admin matter before we get going on this session is
+I did upload the reference docs that I talked about to the. Compluent page for tagging and taxonomy and all that. Uh. Those are I'll show you real quick. There's a PDF. These two are basically different views of the same
+thing. It's the lists or inventory of where all the pages that where
+you're you currently using the content fragment card list component. So you have it in PDF where it kind of has more like narrative based and
+then an actual spreadsheet for your use. You know, I don't know how
+much Don you in particularly that that rocks your world, but it may be
+of use to Lisa and and my pay is there. Working through things and just just having that holistic bird's eye
+view of the content. And then there's also this PDF is the agenda that
+you saw me walking through with all of the detailed information
+underneath each section, so.
+
+**Don Wood** 4:23 Thank you.
+
+**John Zimmerman** 4:36 Oh, that's this one. And then this one is a spreadsheet of all of your
+where everywhere that tags are being applied to a page or experience
+fragment or content fragment. Those are all things that we touched on yesterday. As we get started, yeah, I'll ramble. I'm hopped up on caffeine like
+you wouldn't believe. So definitely jump in and raise it. Use the hand,
+raise hand tool and teams or you know.
+
+**Don Wood** 4:55 Thank you.
+
+**John Zimmerman** 5:10 Danielle, just call me out if, uh, somebody has a question and I'm
+walking all over. He loves that. That's why she gave it some. All right, so today we're
+talking about we're gonna get a DAM training and usage guide for
+admins. And here's the JIRA ticket that was created that sort of
+spawned off this KTR defined. KT session and so as I went through and built out the agenda, I just
+constantly referred back to this to ensure that along with all the other
+information that we've got planned that we covered these essential
+asks. And. So and I I you know, where it made sense, I actually copied and pasted
+the. To make sure that I had it accounted for and you'll see in certain
+places throughout this document where I have it indented like a quote
+where I'm quoting directly from one of the goals for that section or
+where where it's pertinent. So yeah, if we look at the objective for
+the session, we want to. Facilitate Hardrock's understanding of how to properly use the dam to
+effectively manage assets, maintain governance, and support property
+teams without risking misuse or disorganization. That came right from
+the objectives from the JIRA ticket. And I sort of encapsulated the line items from a JIRA ticket in these
+bullet points. We're going to start out by reviewing the current state
+of the dam structural architecture, IE you know, the folder structure. And then Don, I I know that you had said that for right now the trying
+to migrate over to SSSSSHRS primary dash primary was on the back burner
+at least. And that we didn't really have to focus on that today, but I did, I
+want to touch on it not if not that just not not that specifically
+though I think we will come to it, but just talk about what optimal
+state, where we are now, what optimal state looks like from your
+perspective.
+
+**Don Wood** 7:16 Yeah.
+
+**John Zimmerman** 7:30 From others perspectives and you know how do we get there and that would
+include taking a look at of course the folder structure and any metadata
+and tag clean up. We touched on the need to do some. Some sanitizing of the the tag structure yesterday and and then talking
+about we'll talk about dynamic media readiness. Um.
+
+**Don Wood** 7:50 Mhm.
+
+**John Zimmerman** 8:00 And we'll we'll also walk through the admin authoring processes. A lot
+of this like Don may be totally familiar like do it in your sleep, but
+you know if there are other folks that aren't in the dam as much and
+are really looking at it from a sites perspective and working with the
+assets from the dam for pages that they're able to talk about. That and then, um, well, I don't know what this word is.
+
+**Don Wood** 8:21 Yeah.
+
+**John Zimmerman** 8:25 I think it's supposed to be holistic. There we go. Well, I don't know how that's got in there. I guess bothly how? There we go. We'll go with that. We'll talk about, we'll revisit tags and then we're really gonna get,
+I know I was gonna restructure the way that that was worded or rephrase
+it to be more all-encompassing of of the level of depth that we're
+gonna get into as far as even conceptual notions behind. A, you know, asset metadata and tagging and AEM and then we'll capture
+any follow-up work for any items that need to be go into the gap
+analysis as missing. Right now or or not working as expected or a new feature enhancement and
+you know as we're going definitely keep track of your questions like
+we've been doing and and those items for gap analysis.
+
+**Don Wood** 9:26 Yeah.
+
+**John Zimmerman** 9:30 Oh, by the way, I seriously doubt we're going to get through all of
+this today because each one of these topics is an hour discussion. It
+could be. I think that we can touch on it and then or not touch on it,
+but we'll get in deep where we need to. And we'll manage time and then we'll see what follow-up looks like.
+Does that look like discovery, you know, or what? What does that look
+like?
+
+**Don Wood** 9:49 Yeah. Yeah, I I figured there's. I didn't realize we didn't think we could
+get everything done in, you know, just an hour time. But yeah, if
+there's a potential if we need to. Yeah. Have another session if if if that's possible, you know, make sure we
+cover everything.
+
+**John Zimmerman** 10:12 Yeah, well, like we definitely want you to feel, have the keys to the
+Kingdom in terms of understanding the current implementation and like we
+talked about yesterday, where you can feel comfortable making changes
+and then where?
+
+**Don Wood** 10:20 Yeah.
+
+**John Zimmerman** 10:29 You know that there may be coding ramifications or at least
+configuration changes that need to happen on the back end to to support
+like for example I and Daniela can speak to this move on content
+fragments, right? Like let's say you did wanna move forward with. customer primary, one of the first things that we would need to look at is
+the way that content fragments function. So you know, that's just one I
+can think of off the top of my head where it wouldn't be just as simple
+as merging it in, you know?
+
+**Don Wood** 10:47 Right. Mhm. Yeah. Yeah. Well, and just to give you a little bit of background, so that customer
+primary was only set up decided that last August because of the way the
+assets were originally migrated into the customer directory. At that time I wasn't aware that we could move asset without breaking
+reference, so it was and because I wanted to rename all these assets,
+but because I didn't know that we could move it without breaking and
+renaming assets, I was like let's just keep everything in customer as it.
+
+**John Zimmerman** 11:19 OK.
+
+**Don Wood** 11:38 Is and let me figure out what to do with that. And then we were going to
+go and say customer primary would be where all the new assets go. But I
+think it makes more sense that we reclaim the customer as the main
+directory where we will move forward with. That way you don't have to move those content fragments and it was the
+original plan in the architect workbook. That's what was what we were
+planning on doing originally, but it seemed like it was going to be a
+lot of work to do that from either both mine or and vendor's side.
+
+**John Zimmerman** 11:57 Any.
+
+**Don Wood** 12:16 To do that work. So we came up with that plan. I believe Daniela, you
+were on that call or we had that conversation before, but now that I
+know that I can move assets around without really breaking, although it
+has broken some, but.
+
+**John Zimmerman** 12:20 I see. Uh huh.
+
+**Don Wood** 12:34 I I just want to keep everything simple, keep it at the customer. Anything
+that's in primary I need to move over and then we need to we can, you
+know, deprecate, you know, get rid of the primary at some point. And then just move forward with having that. And I've been working on
+all the directories and trying to get everything in. So cafe's mostly
+done, hotel also have a lot of work to do on, but that's where I am
+right now, so.
+
+**John Zimmerman** 12:50 But. OK. Yeah, thanks that. That definitely helps to level set on, you know
+where things stand and the background on on how all that came to be. And
+I think I So what we're gonna touch on, I keep saying touch on, we're
+gonna get into.
+
+**Don Wood** 13:15 Yeah.
+
+**John Zimmerman** 13:22 Maybe a path forward that would. So we're going to talk about, you know
+we're looking at what we have today and then what where we might like
+to be and that could be like if your goal, if your North Star well is in
+fact. And it doesn't sound like it necessarily is like maybe there's some
+middle ground, but if it was customer primary, like what what a path might
+look like to get there. And one idea that Chris and I went back and
+forth with full disclosure is mostly his idea and may just going, yeah,
+that's a good idea. Is having a and we've seen this on a lot of projects actually where you
+might have a a folder called a root folder called legacy assets, legacy
+dash assets or migrated of dash assets. Right. And just for the sake of of levels that clear and clear in the
+slate and starting fresh, all of those migrated assets we we take for
+example everything out of and Daniela don't freak out. We pull some
+thought into this and. Not this is all just up in the air. I can see Daniela. Evil eye, there she goes. Now, but so for example, you've got this
+under corporate, you got the photography folder as part of the content
+migration process and for other reason that I wasn't around then that
+you've got all these assets 1000 plus.
+
+**Don Wood** 14:42 Yeah.
+
+**John Zimmerman** 14:57 You know for corporate in this folder, so it would you could and should
+move those out of there and organize them in a form or fashion that
+makes sense, but if if you. If you couldn't, if there isn't a a happy path to getting them exactly
+into the damn structure that you want right now, but there is a path for
+all new stuff, just like you said for the primary folder you had, you
+could have like, OK, this is where all the legacy stuff lives. We know
+that someday there may be a cleanup or some.
+
+**Don Wood** 15:25 2.
+
+**John Zimmerman** 15:32 Scripting. It could be done with scripting for sure to migrate it all,
+eventually clean it up. But you know, moving forward as of this date or
+as of the launch of this site, everything or development of this site,
+everything goes under the new structure.
+
+**Don Wood** 15:32 Right.
+
+**John Zimmerman** 15:48 Um, Chris, you want?
+
+**Don Wood** 15:49 Yeah. But if you look under cafe, I mean, I've been actually working on
+that structure to get it the way it is, you know, compared to the
+architecture workbook that you know what we have aligned there. So I've
+already moved things around. So that that one is.
+
+**John Zimmerman** 15:51 Yeah. Yeah.
+
+**Don Wood** 16:05 Fairly to the way I need for cafe. I haven't worked on anything else as
+far as moving things around. So if you go into properties, if you click
+properties and then I'll you know everything's there the way it was.
+Originally it was just.
+
+**John Zimmerman** 16:20 I see.
+
+**Don Wood** 16:22 Cafe and then the list of like the properties and then underneath
+properties was a language folder and then each language folder were
+assets and there's there's duplicates all over the place. There's so
+many duplicates in the system right now. And then under Amsterdam, then you'll see the types of PDFs and you
+know, so I already have it in the structure that needs to be for cafe.
+So I think I'm OK if we just move forward, I mean and put new assets in
+there, it's.
+
+**John Zimmerman** 16:50 And let me ask Chris a question real quick, just to sorry to cut you
+off, but I wanted while we're right here in this context. So Chris, I
+know from a site's perspective and with content fragments and when
+we're dealing with localization like multi-site manager translations.
+
+**Don Wood** 16:56 Sure.
+
+**John Zimmerman** 17:07 That you want your you need in order to take advantage of a EM like
+automated translation capabilities that you need to have your page
+content structure such that it has. Or to open up a site, for example, you would see it's under content
+customer EN and I can't remember Danielle or anybody right off the top of
+my head if there's AUS in between or not. Yeah, I know, OK. Um, but the while I'm browsing through it to show the example. No, I
+don't want to do a user survey. Give me alone vendor. Um. We gotta incorporate. I got it. And then you can see here that we have English ENFR and ES and then in
+the dam you'll see that under CS under each of these.
+
+**Don Wood** 18:04 Right.
+
+**John Zimmerman** 18:15 Skype Cafe maybe. You'll have. So actually this works out. Yeah, you'll have your
+translation folders. And so Chris, where I'm going with this is if I
+it's been a while since I did MSM with like translating actual assets.
+Can you speak to that thumb? Like would you want to follow the same
+structure?
+
+**Don Wood** 18:21 And.
+
+Speaker 1** 18:33 Mm-hmm.
+
+**John Zimmerman** 18:40 Sure, or multilingual support with assets besides content fragments.
+
+Speaker 1** 18:43 OK. Yeah. So for typically for any automated language support, you know,
+like AM guides or anything like that to do any kind of swap out of
+assets based on, you know, localization language, that language folder
+typically resides at a top level, right? It's usually under, you know,
+maybe under the very first. Level of customer somewhere in there. You typically have a a language
+starting here, not US and you're in sights, right? So if you go to the
+dam, yeah, if you go there, I mean you typically have a language here
+and then all these separate folders underneath the each language, right?
+So that.
+
+**John Zimmerman** 19:15 Yeah. Oh, sorry. Mm-hmm.
+
+Speaker 1** 19:25 At a top level, you can easily have the software automatically swap out
+language versions if that's a requirement. I'm not sure if your assets
+have language versions or not. You can go down lower levels, but
+typically what that kind of winds up doing is.
+
+**Don Wood** 19:35 Yeah. I mean, we're.
+
+Speaker 1** 19:44 Is creating a very complex and convoluted folder structure, which may
+not be an issue. It all depends on how you're working and how your
+organization is in there managing assets. So I mean, you certainly can
+do that. It makes the automation a little more difficult because then
+you've got to be more specific as to where you're pointing to what
+assets you.
+
+**Don Wood** 19:55 Right.
+
+Speaker 1** 20:04 Want to translate, you know, with the along with the site pages. So
+that's why it's mostly it's more universal and easier to put that
+language at a higher level, right? So yeah.
+
+**Don Wood** 20:05 Right. I think in general for photography or anything like that, we're we're
+trying to move away from having any kind of copy baked into the actual
+graphic or image. So yeah, the only thing I can think of translated, you
+know, we have our our PDFs or menus and things like that.
+
+Speaker 1** 20:16 Yeah. Mm. OK.
+
+**John Zimmerman** 20:27 That's good.
+
+**Don Wood** 20:35 Be translated, but I would probably more rely on metadata to assign if
+it's a English or Spanish whatever to manage that rather than having
+all the assets in.
+
+Speaker 1** 20:36 Yeah. That's fine. Yeah, that's definitely, that's definitely one way to go about it. If
+that works for you, all the folders do is drive automation, right? So if
+you have automation software such as AM guides, that's one example. It
+it doesn't look at languages on assets. It can't like do that, you
+know, because.
+
+**Don Wood** 20:56 Yeah. Right, yeah.
+
+Speaker 1** 21:09 Know where to look for the corresponding version. It could be anywhere
+technically, right? Even if it's in the same folder the way you're
+storing it, it doesn't know that, right? So it's not gonna do some
+granular search throughout the DAM for a comparable asset with the
+different tag on it. It relies on a folder structure to find.
+
+**Don Wood** 21:13 Yeah. Yeah.
+
+Speaker 1** 21:28 A specific folder structure that's guiding it. OK, so that's all
+you're missing out on. Not doing it that way is any kind of language
+translation automation. That's all really. Yeah, so that's fine. And
+really some of the use cases for that is not.
+
+**Don Wood** 21:30 Yeah, I see what you're saying.
+
+**John Zimmerman** 21:43 Chris, well.
+
+Speaker 1** 21:48 Just text or language. Some organizations have actual different imagery
+for different languages, right? It might be an image of, you know, a
+local, you know, area or spot or city or town, and they want to swap out
+the actual imagery, right?
+
+**Don Wood** 21:51 Mhm.
+
+Speaker 1** 22:04 Not, you know, text aside, right? Yeah, right. So that that's usually
+what that's built out for. But if you don't have a a use case for
+that, then it's it's irrelevant to you.
+
+**Don Wood** 22:07 Right, right, right. I I can't think of right now. Maybe someone else has a use case for it,
+but yeah, because I'm really just trying to get to where we're
+utilizing a single asset for, you know, across the board rather than
+having the same asset.
+
+Speaker 1** 22:27 Yeah.
+
+**Don Wood** 22:30 For English, for Spanish, you know pages where it's, yeah, so you just
+have one asset that filters across all the sites and pages, so.
+
+Speaker 1** 22:30 What?
+
+**John Zimmerman** 22:31 No.
+
+Speaker 1** 22:33 That certainly makes it easier, yeah. Yeah. Sure. Yeah. So that that's pretty much all the.
+
+**John Zimmerman** 22:42 And move in the direction of your having rendition profile or profiles
+for generating all the renditions you need for your components and then
+eventually move into dynamic media and doing all that with with preset.
+
+**Don Wood** 22:45 But. Yeah. Yeah. Yeah, and we're gonna talk about renditions right today.
+
+**John Zimmerman** 22:57 And. And actually Daniela pinged me on that earlier and I have not look at
+the massive agenda that I created and I have not put renditions in
+there. So I think but but.
+
+**Don Wood** 23:09 Yeah 'cause I've tried to create them and I just, I think I've fallen
+short on something and it's they're not applying so.
+
+**John Zimmerman** 23:16 But. Because it was called out like it's a hot topic then, but let's let me
+step through with your. So for everybody that's on the line, I know
+that Don, you're familiar with the current structure of the dam. Just touch on it for I don't know how to anybody that's not been
+working on this. You've got your s s, your Hardrock support root folder
+in the dam, just like you do under forward slash content for pages.
+
+**Don Wood** 23:39 Yeah.
+
+**John Zimmerman** 23:48 And under forge live content experience fragments slash customer for
+experience fragments. And then at the root level you've got a folder
+dedicated to content fragments which you guys are using extensively,
+which is great. Recommend doing even more of it. Basically, anytime you got a structured data element that's going to be
+reused and displayed in different ways throughout the site, the content
+fragment is the way to go. That's good, and those are treated as
+assets. You might think that's odd that they're treated as assets in
+AEM as opposed to something like an experience fragment, but. took a long history behind that. They used to be straight up text files
+a long time ago. Totally different. Um So and then you've got your top level site level, Daniela, maybe you
+can probably speak the better than I can, but you've got your corporate
+which right now pretty much everything from the content migration using
+the promo was put into here. And what you know, we just talked about that it would be ideal and and
+really I would say required at some point down the road to move this
+stuff out of here. You're not going to have like from a performance
+perspective on the end user side, a performance issue. But you're certainly going to have from an authoring perspective,
+difficulties navigating, you know, trying to get through thousands of of
+images and one or assets in one folder. So and there's just all kinds
+of taxonomy that we talked about yesterday, governments.
+
+**Jenny Smith** 25:23 Yes.
+
+**John Zimmerman** 25:35 Who can upload images that you know to what sections of the corporate
+site. We'll talk about permissioning as part of this there in a bit. So
+one thing that is we're getting the other work stream besides the
+knowledge transfers that is obviously it's a career site going live and
+this is 1 case where under a corporate. Yeah, the careers assets live underneath of corporate, you know, it's a
+separate site, yeah. And then the other live site reverb. And then I
+guess these are all where work was started on hotels, etcetera.
+
+**Amy Carter** 26:12 Could we actually acknowledge, I don't know what happened with careers,
+migration of assets, but they all have like very odd names and at least
+I can confidently say in site core, which that's where these assets
+came from. They did not have these names.
+
+**John Zimmerman** 26:12 And. Yep.
+
+**Don Wood** 26:19 Right.
+
+**Amy Carter** 26:31 So is there?
+
+**John Zimmerman** 26:32 Assets uh, content fragment specifically or just the all these asset?
+
+**Amy Carter** 26:35 The the photography that we see, I know that Don did some renaming on
+his end, so there are a few that have been renamed. But I know like a
+lot of these didn't have the the same naming conventions. I think Don,
+didn't we call that out that like some of the logos had like a really
+weird chain of letters and numbers instead of.
+
+**John Zimmerman** 26:38 OK.
+
+**Don Wood** 26:52 It. Yeah, I mean if you look at the file name for any of these, you know you
+might have the title that might be OK, you know and then but the the
+file name is like C2D5, you know like.
+
+**Amy Carter** 26:55 Just the theme of it.
+
+**John Zimmerman** 26:57 Oh.
+
+**Amy Carter** 26:59 Yeah.
+
+**John Zimmerman** 27:05 You got like I I see.
+
+**Amy Carter** 27:05 Yeah. Yeah. And so we've we've noticed that for the image sources on the
+page. So obviously that's an issue that it it inherited some odd string
+of numbers.
+
+**John Zimmerman** 27:10 Yeah, I see it. Whoa.
+
+**Don Wood** 27:19 Yeah, yeah. And that's for a lot of them.
+
+**John Zimmerman** 27:19 Yeah. That's a unique identifier, probably from the prior, um, the prior CMS
+system.
+
+Speaker 1** 27:26 OK. It looks like whatever, whatever tool they use to extract that asset
+from its original location pulled out some sort of like internal
+reference number that you know what they use on that platform and and
+kind of appended it to the name, unfortunately.
+
+**Don Wood** 27:36 Yeah.
+
+**John Zimmerman** 27:38 Yeah. Yeah.
+
+Speaker 1** 27:43 There there is a bolt tool that you can use in AM where you can get an
+export of all these assets, edit the names in a spreadsheet, a simple
+spreadsheet and and you know possibly even apply some sort of Excel
+formula to remove that front end part of it and then.
+
+**Don Wood** 27:44 Yeah.
+
+**Amy Carter** 27:45 I.
+
+**Don Wood** 27:54 Yeah. Yeah.
+
+Speaker 1** 28:02 Re upload the spreadsheet in the AM and then a bulk operation won't
+name everything. Yeah, yeah.
+
+**Don Wood** 28:02 Hey. Yeah, it's that renovator.
+
+**Amy Carter** 28:07 I I do want to say though like my my concern is that this was the first
+Sitecore site to get migrated. So whoever made the decision of whatever
+application you use to migrate them that like this needs to get flagged
+or else Don's gonna be cleaning up assets for the rest of his life.
+
+**Don Wood** 28:07 Yeah, I've I've.
+
+Speaker 1** 28:15 Mhm. Yeah. Yes, that's right. Yeah.
+
+**John Zimmerman** 28:22 Yeah, I think that I don't know if it was.
+
+**Don Wood** 28:23 Yeah, there's, yeah.
+
+**Amy Carter** 28:23 So, like, we're lucky that careers is such a short, a small amount, but
+this is still like, not really acceptable.
+
+**John Zimmerman** 28:29 Here.
+
+**Don Wood** 28:29 But there's and there's still a lot of assets that aren't even
+referenced, you know that were pulled over. So I mean I already
+identified most of those and I used a metadata, I exported a metadata
+sheet and then just re uploaded it to identify the in the title. So I
+knew what you know what it was but.
+
+Speaker 1** 28:39 Yeah.
+
+**John Zimmerman** 28:43 Yeah.
+
+Speaker 1** 28:49 Yeah.
+
+**Don Wood** 28:49 Which ones could to move out, yeah.
+
+**John Zimmerman** 28:49 Yeah, on another project I used, actually got copilot to do some of the
+heavy lifting. The copilot's not as good as other some other, you know,
+LL NS, but.
+
+**Don Wood** 28:58 Yeah. No, I mean, we have to use copilot here, but um, now.
+
+**John Zimmerman** 29:02 But do even with just like some if you use a regex tool or if you're
+familiar with regex like you can do a lot just with like exporting CSV,
+put it into like copy it, put it into a text file and then do.
+
+**Don Wood** 29:08 Mhm.
+
+**John Zimmerman** 29:18 A search and replace on the file without actually having to open it if
+it's huge for example and and then use red tags.
+
+**Don Wood** 29:22 Yeah, I I do some vibe coding with. Yeah, I do some vibe coding with
+with Copilot to create Excel automations that will can do that for me.
+So I know how to.
+
+Speaker 1** 29:35 Mm.
+
+**Don Wood** 29:38 I I can do that. Yeah. And then
+
+Speaker 1** 29:38 That's the easiest one, but the the nice thing, the nice thing about
+renovator is it'll update. You know you don't have to actually
+physically move the file, it can. It can just update the name that under
+underlying name and republish it and update all references within AM all
+in one swoop.
+
+**John Zimmerman** 29:39 That's cool. Yeah, I got it.
+
+**Don Wood** 29:44 Yeah. Yeah. Yeah, yeah. The only the only problem with that is if there's anything
+that has the same file name. So in case I wanted to move it to another
+everything to a the similar folder, it won't do it. It can only do. So
+you have to do it in batches, but.
+
+Speaker 1** 29:56 Right, so. Oh yeah, yeah. Yeah, yeah.
+
+**John Zimmerman** 30:11 Mm.
+
+**Don Wood** 30:12 Yeah, yeah. I I just recently found out about the renovator a couple
+weeks ago, so I've been kind of using it somewhat, but yeah.
+
+**John Zimmerman** 30:13 No.
+
+**Don Wood** 30:20 Yeah.
+
+Speaker 1** 30:20 That's a good tool for damn clean.
+
+**John Zimmerman** 30:21 Yeah, Chris ought to get paid. Chris ought to get paid by somebody for
+advertising that thing every project.
+
+Speaker 1** 30:25 Hey, as much Dan clean up as I've done. I mean, you know, you you gotta
+use the best tools that are available to you and that's definitely one
+of them, yeah.
+
+**Don Wood** 30:29 Yeah. Yeah. Yeah, and and when I, you know, I mentioned that there's like a lot of
+things with the same file names because we did have all of the structure
+of the the different language. Well, some of the same assets are, you
+know, in there multiple times and you know with with the previous bulk.
+
+**John Zimmerman** 30:34 Hello.
+
+Speaker 1** 30:40 Yeah. Yeah.
+
+**Don Wood** 30:50 You know, migration, you would have, you know, hundreds of the same
+asset in there. So, so and on that note, how can we clean up the dam
+with those duplicates easily?
+
+Speaker 1** 30:53 Yeah, it's. Well, that's why it might be good to.
+
+**John Zimmerman** 31:02 Yeah, so.
+
+Speaker 1** 31:06 With duplicates.
+
+**Don Wood** 31:06 'Cause there's there's the same asset with different, you know, that
+we're.
+
+**John Zimmerman** 31:10 Let's take a look at you got.
+
+Speaker 1** 31:12 With the same asset name or you're talking about the exact same?
+
+**Don Wood** 31:14 Well, it's the same asset and we're, you know, I've been trying to
+rename everything the similar, but it would be the same asset. So in
+Sitecore I believe or Visigy, the sites would be set up to where you
+would have. You know, like here's a cafe site and there's multiple languages in
+it, so there'd be different pages and that same asset would I guess
+would be added to each of those folders. So when they were migrated
+over, they all had unique file names for each of those. And then you multiply that across all the cafe sites, you would have in
+some cases hundreds of assets that are the same.
+
+Speaker 1** 31:53 Mm.
+
+**Don Wood** 31:54 So.
+
+Speaker 1** 31:55 Got it. So, uh, so it's different.
+
+**John Zimmerman** 31:56 Yeah, think of an example right offhand to search. I just wanna kind of
+search and have a business.
+
+**Don Wood** 31:58 Just just click on caffeine, go to search and then hit enter.
+
+**John Zimmerman** 32:09 And then list them.
+
+**Don Wood** 32:11 Yeah, probably start seeing them right away. Well. Yeah, you probably have to. So if you go all the way down, so that
+additional FOBG, the background image that's in there so many times,
+this placeholder 1080 by 1920 is in there a lot of times and there's
+certain, you know, photos and other files. It's just.
+
+**John Zimmerman** 32:24 Oh.
+
+Speaker 1** 32:28 Right.
+
+**John Zimmerman** 32:31 Mm.
+
+Speaker 1** 32:33 Oh.
+
+**Don Wood** 32:34 On and on and on like and to give you a back story, there was 130,000
+assets brought over. There's only like 25,000 that are referenced right
+now and a lot of those are duplicates. So it we probably only have
+really half of those that should be.
+
+**John Zimmerman** 32:35 Wow. Yeah, I saw it. It looked like you had pulled the use the assets reports
+tool to get a sense of what is that what I saw on prod you were using.
+
+**Don Wood** 32:50 In the dam right now. Yeah, I I've I've done metadata exports to get all the metadata and
+then yeah, and I did that. I did that to that to get information.
+
+**John Zimmerman** 33:03 This would be. Yeah, yeah. So I ran one last night to pull all assets on pro. Yep, this
+was the. So this one, Chris, was just for the photography folder. And
+actually, you know, let me jump back for a second. That's a good segue
+back to we're gonna need so many more damn sessions.
+
+Speaker 1** 33:14 The one below that. Oh, OK.
+
+**John Zimmerman** 33:28 But so the thought that Chris had yesterday, maybe Chris, you want to
+walk through this like this path of doing like a legacy or migrated
+assets folder and.
+
+**Don Wood** 33:28 Yep.
+
+Speaker 1** 33:39 Yeah, right. From that for, for as an example, I was looking at was that
+photography folder that had well over 1000 assets. We were even unsure
+how many assets were in there. You know that which is, you know, I'm
+sure has a ton of duplicates to your point. So the way to typically handle that is to create a migrated assets
+folder First off, so that you can start to clean up and have a place to
+put the assets you do want to keep, right? So by using that renovator
+tool, getting an export of all the assets in that folder, you can then
+start to move these in groups. I would recommend by. Like we've we've done out here A through Z, put all the A, you know,
+assets starting with the A in one folder, B folder, C folder, so on and
+so forth. And then number for any assets that's starting with numbers
+or something like that, right? Because what you really want to do
+ideally is get these folders down to where they have less than.
+
+**John Zimmerman** 34:29 Mhm.
+
+Speaker 1** 34:34 And and and I mean less than like probably more in the neighborhood of
+like 500 assets per folder, no more than that because the user
+experience of browsing folders with anything more than that is is hoard,
+right. You don't want to do that right and and find assets and so on
+and so forth and we can get to more into that searching and finding
+assets.
+
+**Don Wood** 34:36 Yeah. Yeah. Right. Right. Yeah.
+
+Speaker 1** 34:54 Process later, but so and then if separating them by first letter
+doesn't do enough, well then maybe you start separating them by file
+type, like put all the PNGS or all the JPGS in one folder or another
+within those letter folders. Or maybe you do it by second letter AA, AB,
+AC, so on and so forth. You can get as granular as necessary. Hopefully you don't have to get
+too granular, right? Hopefully just that first level, the 1st letter or
+character of a asset name is enough, right? So that's just in the clean
+up of that and in that process to your point, overriding images that
+have the same name and the same folders.
+
+**Don Wood** 35:18 Mhm.
+
+Speaker 1** 35:33 And this whole huge migration effort, you know, that would kind of help
+with that because you'd be putting them in a different folder. You'd
+be starting net new in a in a folder that's designated saying here's
+all these assets that were migrated and they're separated out, you
+know, somewhat, you know that we can.
+
+**Don Wood** 35:36 Yeah.
+
+Speaker 1** 35:50 You know, manage them and look at them and kind of go through them in
+groups, you know? Yeah, that that's what I've seen done before.
+That's been the most successful. I mean, it kind of like whittles it
+down. It doesn't make it so overwhelming and just so, Oh my God, I just
+have a folder with, you know, 50,000 assets in it or whatever the case
+may be.
+
+**Don Wood** 35:53 OK. Alright. Yeah. Yeah.
+
+Speaker 1** 36:09 You know so. You know, and then kind of helps you with that.
+
+**Don Wood** 36:11 Chris. I guess the the thing just kind of throw out there, but since we have
+multiple of the duplicates like each of them might be referenced on this
+page. So that's where the cleanup is I need to worry about is like.
+
+Speaker 1** 36:16 Yeah. Uh huh. Each other. Yeah.
+
+**Don Wood** 36:29 How do we combine all of that into to reference that one \*\*\*? One
+version of that asset is on all of these pages instead of 20 versions of
+the asset are on different pages. You know what I'm saying? It's.
+
+Speaker 1** 36:33 Yeah. And maybe, maybe you know this better than I would actually Andy, in
+terms of sites, because I don't know about the tools that are available
+for sites, but is there a bulk way to reassign like you want to say that
+that one on line four image medium width, maybe you want to reassign
+every occurrence of that asset across?
+
+**John Zimmerman** 36:44 Yeah.
+
+Speaker 1** 37:02 All pages to a different asset. Can you do that as our tool for that?
+
+**John Zimmerman** 37:08 No, you would typically do it with a script and and or if, but if you
+were to.
+
+Speaker 1** 37:10 No. Yeah.
+
+**John Zimmerman** 37:21 Thinking I'm trying to think of a way, a clever way that you could do
+it by moving things around, right? Like if you had the correct image
+with the right name or something like that where you didn't actually
+have to update the page, the components.
+
+Speaker 1** 37:28 Yeah, not.
+
+**John Zimmerman** 37:36 File reference on the in the page config.
+
+Speaker 1** 37:39 Not that I'm aware from a damn perspective. I mean, if you delete an
+asset, you know if every single one of these image medium with JPEGs,
+wherever it lives is being referenced in a different page location.
+They're all different sizes though too, but so I don't know if that is
+the.
+
+**Don Wood** 37:55 Yeah, not all of this, not, yeah, not all the solid solid sizes are
+referenced. So you see the no reference there. So yeah, in a lot of
+cases it's really the large version, but sometimes it's the medium
+version that's referenced.
+
+Speaker 1** 37:56 It's not even really it's not. Oh, right, you see no reference, but even.
+
+**Don Wood** 38:11 We also have Web P and AVIF assets in there too that we need to replace
+with a JPEG version.
+
+Speaker 1** 38:19 Hmm.
+
+**John Zimmerman** 38:20 Yeah, so you could start to clean it out.
+
+**Don Wood** 38:21 So.
+
+Speaker 1** 38:21 But even those ones with the same name, like like row four, row six have
+the same asset name but different sizes. So it's even though it has the
+same asset name. Oh, it's got a slightly different name. It's got the
+little number in front of it. 1219419 OK.
+
+**John Zimmerman** 38:32 And a 41, but the sizes are different.
+
+**Don Wood** 38:35 Yeah, there's, yeah. And it still could be the same asset, same photo.
+That's that's The thing is in these other systems they, you know,
+whatever folder I guess is put in, it generated a unique name.
+
+Speaker 1** 38:39 No. OK.
+
+**Don Wood** 38:51 For that asset in that folder and then the next time it was loaded a new
+a new file.
+
+Speaker 1** 38:51 Right, OK. So AM does have an out-of-the-box duplicate detection that detects kind
+of what you're talking about, even if it has a different asset name and
+it detects similar the same asset. Exactly pixel for pixel, the same
+access asset, even if it if it looks the same, but let's say it's
+cropped slightly different or has an extra row of pixels.
+
+**Don Wood** 39:01 Mhm. Yeah, I've used that. Yeah. Yeah.
+
+Speaker 1** 39:16 Pixels, or even if the metadata inside is different, it'll it'll treat
+it as a separate different asset, right?
+
+**Don Wood** 39:22 Yeah, I I enabled that and I got like about 200 reports, so I don't
+have time to go through all of those right now.
+
+Speaker 1** 39:27 OK. Right. Yeah. But it has to be identical. Like everything about the image
+needs to be identical. Yeah.
+
+**John Zimmerman** 39:29 E Easy peasy, no problem.
+
+**Don Wood** 39:31 Yeah. Yeah, yeah. And that's the other thing. And some of these might be
+cropped or there might be a version that is edited slightly. Or yeah,
+I've been working with Lisa's team to help clean up some of that, but
+it's all manual right now.
+
+Speaker 1** 39:40 Yeah, no easy way around that.
+
+**John Zimmerman** 39:46 Uh.
+
+Speaker 1** 39:46 Yeah. And and that that's the only way when it when the images are different
+like that and they're cropped different and all that, that that's a
+manual cleanup.
+
+**John Zimmerman** 39:50 Yeah. Yeah, there's some some of it you can do. So a lot of times when we're
+doing a a massive down like restructure, we'll treat it like a content
+migration project where we and just like with a content migration
+project you're gonna have like one off scripts that you use to.
+
+Speaker 1** 39:59 Yeah, absolutely.
+
+**Don Wood** 39:59 Yeah. Mm-hmm. Mhm, mhm. Mhm.
+
+**John Zimmerman** 40:37 Want to try to use AEM's ability to when you move assets to pick up on
+that and update all the references and the referencing pages, content
+fragments, etcetera. Then for those, there's a section in this doc.
+We're not gonna get to it today, but there is a section in this
+document. That talks about the exact case scenarios when AEM doesn't
+automatically update reference paths. So you'll have that as a you know
+if and when we get back together we can dig into that, but you'll have
+there's a a lot of information.
+
+**Don Wood** 41:04 Yes. OK.
+
+**John Zimmerman** 41:14 About like what's going on under the hood and you know what case
+scenarios that that automation is going to work and when it doesn't
+stuff like that. But I wanted to step back to this. So Chris, correct me
+if I'm wrong, but does does the renovator tool, is it similar to the? A bulk asset tool of days of old where you you'd start with a
+spreadsheet and you do your mappings inside of it? Or does it work
+totally different where you do it all through the console? And I'll ask
+real quick.
+
+Speaker 1** 41:45 No, you do it. I do them all in the spreadsheet and it only works with
+two columns. You have that the column A with the path source and
+destination. That's it. But your destination you can have a different
+file name and it will rename it.
+
+**Don Wood** 41:48 The stores and destination.
+
+**John Zimmerman** 41:52 OK, nice. Oh, cool. So.
+
+Speaker 1** 41:58 Right. So if you're row two, if you put a column C with a destination
+and you call it just, you know, something different, it'll rename that
+file name in column B to whatever's in C Yeah, and the path.
+
+**Don Wood** 41:59 Yeah.
+
+**John Zimmerman** 42:11 Yeah, so.
+
+**Don Wood** 42:11 And if there's another, if you wanna move it to another directory, as
+long as that directory's there, you can change the path too.
+
+Speaker 1** 42:18 Yeah, yeah, I I'm not positive, but I think it'll also create a a a
+directory that doesn't exist, but I could be wrong on that. Yeah, no.
+
+**John Zimmerman** 42:18 Alright.
+
+**Don Wood** 42:27 I don't. I haven't been successful with that.
+
+**John Zimmerman** 42:27 So what you could do is basically so you would start out by generating
+like Chris we talked about just starting with this this report right
+where you we generated it for the photography folder under this in this
+case it was corporate right and then.
+
+Speaker 1** 42:31 OK. Yeah. Yeah. Mhm.
+
+**Don Wood** 42:44 Mhm.
+
+Speaker 1** 42:46 Yep.
+
+**John Zimmerman** 42:47 You would take that spreadsheet. That would be like your master working
+workbook, right? And inside of it, maybe create another sheet where
+you're doing the mapping that you're talking. Maybe add your
+destination column here or create a backup sheet that's just for
+migration.
+
+Speaker 1** 42:52 Mm-hmm.
+
+**Don Wood** 42:53 Mhm.
+
+Speaker 1** 42:59 Yep.
+
+**John Zimmerman** 43:03 Data and then you know you start like going through it exercise by
+exercise, using AI where you can to get things where you want them to
+be. Identify these outliers. For example, you know there are things like
+where if it doesn't have a reference at this point, you know maybe
+it's again it's a duplicate name. That's a pretty.
+
+Speaker 1** 43:03 Yeah.
+
+**Don Wood** 43:11 Yeah. Yes.
+
+**John Zimmerman** 43:22 Solid candidate for getting 86, right?
+
+Speaker 1** 43:26 And what I would do is like for instance like row two and three, I would
+move only one of those, right? Not both. Even if it's both reference, I
+would just move from one and put it in your destination folder. So then
+at the end of the entire exercise, whatever is left in your original
+folder.
+
+**Don Wood** 43:27 Yeah. So.
+
+Speaker 1** 43:44 After you're all done, you know it's a duplicate and should be
+deleted. Then you can look at all those assets and get a reference
+report and see what is actually being linked somewhere. Go update it to
+the new one that you have in the new folder. Then you can safely, once
+that's all done, come back and just wipe that folder, right? Because no
+longer are there duplicates in there.
+
+**Don Wood** 44:00 Mhm.
+
+Speaker 1** 44:04 They've all been, you know, dealt with and all the references have been
+dealt with. So that's how I would go about it, you know, and it's a
+long exercise. It's going to take a long time, a lot of work, but
+it's.
+
+**Don Wood** 44:09 Right. Yeah. I, well, I I've been doing some of this for the last three months. So
+yeah, it's I'm on the right path. It's just there's different ways
+to do things. And yeah, and I I'll take a lot of this in consideration
+and.
+
+**John Zimmerman** 44:17 Yeah.
+
+Speaker 1** 44:20 OK, good. Yeah. Sounds like you're on the right track. Yeah.
+
+**Don Wood** 44:30 See what we can do. In in most cases, since there was 130,000 assets,
+like most of those were moved to the archive that were were not
+referenced. And then there are certain files that I knew I didn't need
+anymore. I got rid of so I did X.
+
+Speaker 1** 44:39 Hmm.
+
+**John Zimmerman** 44:42 Where's that archive folder?
+
+**Don Wood** 44:49 Get rid of about 30,000 assets.
+
+Speaker 1** 44:52 OK.
+
+**John Zimmerman** 44:52 I don't. I don't see the asset folder. Is it like under the damn root
+or where is that located?
+
+**Don Wood** 44:57 The the archives. Yeah, it's under SHRS. There's a top of the.
+
+Speaker 1** 44:57 No, it was under the SHR. Yeah, it was under the the.
+
+**John Zimmerman** 45:02 There it is.
+
+**Don Wood** 45:04 Uh, it's not. Yeah, it's, you know.
+
+Speaker 1** 45:05 Yeah.
+
+**John Zimmerman** 45:09 Oh.
+
+**Don Wood** 45:10 Not as organized as the other upper directories, but yeah.
+
+Speaker 1** 45:10 In the I. And the idea of that archive folder is to have specific group access to
+that archive folder of whoever needs to see that, right? So the general,
+you know, damn browser population, you know, does not have access or
+visibility to what's in there, yeah.
+
+**John Zimmerman** 45:15 Hey, Chris.
+
+**Don Wood** 45:20 Yes. Yeah. Yeah, and and to that point, because definitely do not want this to be
+searchable in the content, the the sites rail. So is that really just by
+the setting the rules to that?
+
+Speaker 1** 45:37 Yeah.
+
+**John Zimmerman** 45:40 Yeah.
+
+Speaker 1** 45:42 The. Whatever ACLS the user has when they you know who when they log in,
+whatever groups they're assigned to, if they don't have visibility or
+access to that folder, any search they perform won't show anything at
+that. Yeah, Yep.
+
+**John Zimmerman** 45:48 Yeah.
+
+**Don Wood** 45:56 Yeah. OK.
+
+**John Zimmerman** 45:59 There's that and then there's also you got at the at the RBAC role
+based access control level with what Chris is talking about. And then
+you also have page template policies that can also define what what Dan
+paths are allowed and then you have it at the component level, right?
+
+**Don Wood** 46:17 Yeah, OK.
+
+**John Zimmerman** 46:18 In the component dialogue. Hey, hey Chris, can you talk about before?
+Well, let me see if there is one last thing and one on this. Oh, two
+things. I actually have to step away for just a minute, but I'll be
+right back. But Chris, you can take the con and talk about.
+
+**Don Wood** 46:20 OK.
+
+**John Zimmerman** 46:35 In terms of this restructuring and knowing that the customer, they have
+dynamic media provision that they bought it, they're they're at some
+point ideally going to be implementing it and using it in their
+authoring.
+
+Speaker 1** 46:38 Mhm. Mhm.
+
+**John Zimmerman** 46:51 Can you talk about like as far as restructuring and stuff like
+considerations for dynamic media? And then the other thing if I'm not
+back in time is renditions. So if you want to share your screen or maybe
+talk about renditions, I'll be right back.
+
+Speaker 1** 46:59 OK. OK. OK, yeah, all right. So dynamic media. One of the things I'm seeing
+right off the bat with the what you have going on here is duplicate file
+names. Even across different folders, you can't have duplicate file
+names with dynamic media. I mean, you can, but it just gets complicated
+and confusing because what's happening under the hood.
+
+**Don Wood** 47:14 Mm.
+
+Speaker 1** 47:24 Is when you know for as an as an example logo dot JPEG, which a lot of
+people have, you know at least one asset that's name that right? You
+know. So if you have that in folder A and then in folder B of another
+logo dot JPEG, but they're different when you go to dynamic media,
+what's gonna happen is you know one of two things depending.
+
+**Don Wood** 47:33 Yeah.
+
+Speaker 1** 47:44 Depending on your setting, the default setting is the latter time. You
+know an asset is synced to dynamic media is going to append a dash one
+to the file name, so you'll have a logo dash one dot JPEG for instance,
+right? So. And you won't see that in the dam. But what that will what will happen
+is is when you use that asset in a dynamic media component on a page,
+Dynamic Media just handles it in the background and knows this is
+actually named logo dash one in dynamic media and it'll link to the
+correct one but.
+
+**Don Wood** 48:08 OK.
+
+Speaker 1** 48:17 It can lead to confusion, especially like troubleshooting the road.
+It's like OK, I'm updating logo dot JPEG, but it's not updating and
+that's because it's now named logo dash one in Dynamic Media and it
+can get to be a mess. Another setting is across all folders. The latest
+one will just overwrite the other, so the last.
+
+**Don Wood** 48:20 Right.
+
+Speaker 1** 48:36 Last time you uploaded logo dot JPEG, it just overwrites the previous
+one in whatever folder it is, but that's a setting that you set, right?
+But it's gotta be something along those lines. You can't have two logo
+dot JPEGS in dynamic media because dynamic media does not pay attention
+to the folder structure at all, right?
+
+**Don Wood** 48:47 OK. Right, OK.
+
+Speaker 1** 48:57 It's a flat structure, right? So you just have an image URL that has a
+domain prefix to it and then the asset name and then modifiers after
+that. That's it, right? So there's no folder reference. So keep that
+in mind when building all this out. You don't have to worry about
+folders and naming. A lot of organizations are worried about the.
+
+**Don Wood** 49:07 Oh.
+
+Speaker 1** 49:16 Folder path being in the image URL, you won't have to worry about that,
+but you do have to worry about duplicates and and that is definitely a a
+concern based on what I've seen so far and what you guys have going on
+here. Yeah, so yeah.
+
+**Don Wood** 49:23 Right. Yeah, yeah, yeah. I I I think that might not be, you know, a future
+issue once everything's cleaned up because the duplicate names that I
+was talking about are are the same image, not really the same, you know,
+two different images with the same name.
+
+Speaker 1** 49:35 OK. OK.
+
+**Don Wood** 49:46 Because we we we will, you know, work on on that naming structure. But
+right now it's like I had moved all of those into the same directory
+and whenever I used the move tool, it appended A1 or a two or a three at
+the end of it, not a dash, but.
+
+Speaker 1** 49:54 OK. In the dam, yeah, yeah.
+
+**Don Wood** 50:05 Um, just a in the dam. So yeah, but you know, in the end, but.
+
+Speaker 1** 50:09 It's not, so it's it's not as bad when it happens in the dam, you
+know, because the assets, AM assets will allow you to have, you know,
+the same file names in different folders, right? Logo to JPEG exists and
+all over the place, right?
+
+**Don Wood** 50:14 Mm-hmm. Right. Yeah. Yeah. Right, right.
+
+Speaker 1** 50:41 That's good. The other thing too is to think about your folders in a
+sense of what you want to be in dynamic media and what you don't, if
+that's in fact a situation, because you can set it to where everything
+in the DAM syncs to dynamic media and then whatever's published is
+published. Facing. Publish in dynamic media as well, right? So there's two layers to
+dynamic media. There's syncing and there's publishing, right? So when
+you put a dam in the, when you put an asset in the dam, it can either
+not sync or sync the dynamic media, and then it can either be published
+or not published in dynamic media based on this published date.
+
+**Don Wood** 51:03 Mhm.
+
+Speaker 1** 51:21 In the DAM, right? So you just want to keep that in mind, right? It's
+much easier if you just have everything sync, everything just syncs to
+dynamic media, but it's only published in public facing when it's
+published in the DAM, right? That way because let's say you have a 50
+MB or larger couple GB image for whatever reason.
+
+**Don Wood** 51:31 Right. Right.
+
+Speaker 1** 51:41 Reason. You know, and you want to get it published. If in fact it's not synced
+to Dynamic Media and you hit publish, then it's got to sync it, which
+may take a little bit of time and then it's got to publish it, right?
+So, but if it's already synced, then the publishing is instant, right?
+So you know, so that's one thing to think about and that's the
+setting, you know, once you.
+
+**Don Wood** 51:55 OK. OK.
+
+Speaker 1** 52:02 If you get to the point of configuring dynamic media in your prod
+instance, which I saw is not done, then yeah, you would, you know, we
+can walk you through the setup and configuration around all that, right?
+Yeah, yeah, yeah.
+
+**Don Wood** 52:09 Right. OK, OK, 'cause I'll need that, yeah.
+
+Speaker 1** 52:19 Yeah, dynamic mean is a whole other beast for that. And then you know
+you have your your dynamic renditions that are served on the fly in real
+time, right? You know you don't have to worry about, you know, setting
+up.
+
+52:23 Oh.
+
+**Don Wood** 52:30 Yeah.
+
+Speaker 1** 52:34 Any static renditions, but are you guys using static renditions right
+now?
+
+**John Zimmerman** 52:39 I was thinking, Don, if you want to share your screen real quick and
+just show like what how you've been going about trying to do these
+renditions and maybe Chris can give some pointers here in the last few
+minutes of the call.
+
+**Don Wood** 52:39 Yeah. Yeah, I just created one and it didn't really apply, so I have to
+remember how to get there. Hold on a second.
+
+**John Zimmerman** 52:54 You got the master on the line with you. He can tell you in two seconds.
+
+**Don Wood** 52:54 Come on.
+
+Speaker 1** 52:56 Yeah, OK. Where you going?
+
+**Don Wood** 53:00 Um. I gotta get in there. Um, I think there's on prod. OK, let's see. It's not. It's not the right screen.
+
+Speaker 1** 53:24 Seeing your Yeah.
+
+**Don Wood** 53:25 Sorry. Not too many things open here.
+
+Speaker 1** 53:31 That's common, yeah.
+
+**Don Wood** 53:32 All right. OK. That would be. It was under assets, right? Um.
+
+Speaker 1** 53:39 Yeah, to set up renditions, that's that's under the processing
+profiles there. The second panel, yeah.
+
+**Don Wood** 53:46 OK, yeah, yeah, so. Did I create these? OK, this is maybe not where I created something.
+Um. Oh yeah, let's see create. Is this the right place 'cause I don't remember this.
+
+Speaker 1** 54:02 Yeah, yeah, this is where you create renditions, the test, and then
+you'd add a new rendition there, and that's where you put in the
+width, the height, and the format you want and the quality of the suit.
+
+**Don Wood** 54:03 Alright, let's do test. OK, I went OK. I went around a different path to do something, so I'll
+have to like go through this again on my own I guess. But if I created
+this one right here, go ahead.
+
+Speaker 1** 54:23 Yeah, so you create your rendition. Like for instance, for rendition
+name, just put, you know, sample or something like that, you know, just
+put a name in there, you know. Well, that's your profile name, but as a
+rendition name. But that's fine too. It's fine. Doesn't matter.
+
+**Don Wood** 54:30 Yeah, sample and oh, OK. OK. All right. Sorry.
+
+Speaker 1** 54:40 Just walking it through you so you know how to to build it out and apply
+it.
+
+**Don Wood** 54:42 Sample choose JPEG, say it's 500 by 500.
+
+Speaker 1** 54:46 Yeah, exactly. And then if it's a compression format like JPEG, then
+you can do those settings there. Just leave that. You want all images.
+You don't want, you know, videos or applications. So that's all set up
+for you up the, you know, by default there. You typically don't have to
+mess with these.
+
+**Don Wood** 54:49 1280. Oh yeah. OK, so leave that there.
+
+Speaker 1** 55:04 Yeah, and the JPEG compression right now is set to 85 quality, if
+that's good for you. I mean, you can adjust that obviously. So, so then
+what you would do for that rendition, you know you can add as many as
+you want. Then you hit save and then you go to the folder level, the
+parent folder level that you want to apply all those renditions to.
+
+**Don Wood** 55:05 OK. Yeah, it's it's fine, yeah. Mhm. Alright, so. That means. Alright, so let's just say to it on corporate whatever. I'm not gonna
+do it right now.
+
+Speaker 1** 55:42 Yeah, so let's say you wanted to do corporate and everything, all the
+child folders and everything. You do that and you select properties.
+
+**Don Wood** 55:43 Yeah. Yeah. And is it here? No.
+
+Speaker 1** 55:53 And then Yep, processing profile right there. See the second one to the
+right? Yep, that one. Then you select the. Well, why is it not showing
+up? Hmm.
+
+**Don Wood** 55:58 Uh, OK, yeah. Yeah.
+
+Speaker 1** 56:06 That's weird. Go back over to the other tab that you have open.
+
+**Burt Jones** 56:11 Hey, real quick, Chris, do you do you have a hard stop? And and and Don,
+if if you're getting value out of this with Chris, totally fine. If
+y'all stay on Andy, Daniela and I need to drop for the next call, OK.
+
+Speaker 1** 56:15 Yeah. No, I don't.
+
+**Don Wood** 56:23 OK. Yeah, yeah.
+
+56:26 Yeah. Thanks, Luke.
+
+**Don Wood** 56:27 OK, yeah.
+
+**Burt Jones** 56:28 All right. I I we're we're gonna drop, but you guys can stay on. OK.
+All right. Thanks.
+
+**John Zimmerman** 56:29 Thank you.
+
+**Don Wood** 56:32 Alright, thanks, Luke.
+
+Speaker 1** 56:32 Yeah, OK. Yeah, do it that way because that that that's kind of odd.
+
+**Amy Carter** 56:34 And the rest of the content team is gonna drop for that one as well.
+Most a lot of the attendees are dropping for that one.
+
+**Don Wood** 56:42 That's fine. Thank you.
+
+Speaker 1** 56:42 OK.
+
+**Amy Carter** 56:42 Thank you.
+
+Speaker 1** 56:44 Yeah.
+
+**Don Wood** 56:45 I mean.
+
+Speaker 1** 56:46 Yeah, so do it there. Go to apply to profile to folder and navigate to
+that. Any of those just do like cafe or.
+
+**Don Wood** 56:55 Yeah.
+
+Speaker 1** 56:57 Corporate whatever you whatever you were doing. Hit apply. Yep. Now go
+back to the other tab and go to that folder and go to properties and see
+if it applied it 'cause it should.
+
+**Don Wood** 56:58 Yeah, and then just apply. We could cache properties.
+
+Speaker 1** 57:13 Go to asset processing. Are are you in prod on both? Is the first time
+in prod?
+
+**Don Wood** 57:19 Oh shoot, it stayed. That's why. That's why I just thought it was
+wrong. Too many, too many things here. OK, now this should work.
+
+Speaker 1** 57:21 Oh, there you go. That's why. Yeah, OK. Yeah, now I like to navigate to the folder and set it there, but you can
+do it in either place. But yeah, and then go to properties and asset.
+There you go. So now you have that sample and then what what happens is
+any asset you add in that folder or any child folder from this point
+forward would get those renditions.
+
+**Don Wood** 57:31 Uh. I did. Yeah.
+
+Speaker 1** 57:50 If you want assets in that folder that are currently in there that have
+the renditions, you have to reprocess. Yeah, yeah, you have to do that.
+
+**Don Wood** 57:53 You have to reprocess. OK, so. Let's see, photography. Reprocess.
+
+Speaker 1** 58:06 Yeah. Yeah, another thing real quick too, just to kind of let you know that
+under that the root level when you're navigating the folders that has
+that bind similar that if if you've got smart tags on all your assets
+and you process them with smart tagging.
+
+**Don Wood** 58:22 Mm-hmm.
+
+Speaker 1** 58:28 That's helpful in finding all the assets that are similar but crop
+different.
+
+**Don Wood** 58:34 Yeah, I I've used that. It it doesn't OK job from from what from our
+asset perspective. So um, it doesn't do all of them.
+
+Speaker 1** 58:40 Yeah. Yeah. The only way that works though is if the all the assets that
+you're you're hoping to find have been processed with smart tax.
+
+**Don Wood** 58:51 OK.
+
+Speaker 1** 58:52 Sample dot JPEG. So there's a rendition, yeah.
+
+**Don Wood** 58:53 Right, right, right. There's that render. OK, OK, that's where I was.
+OK, I'll have to go back and see what I did before cause that wasn't
+OK.
+
+Speaker 1** 59:03 Yeah, you might have been editing. There's another way that used to be
+a legacy way to do it in the workflow for asset processing and but you
+don't want to do it there.
+
+**Don Wood** 59:12 Yeah. Mhm. OK, so just right.
+
+Speaker 1** 59:16 Yeah.
+
+**Don Wood** 59:19 Yeah, was it first? OK, all right, sample. OK, all right, that's good
+to know. And I guess that with that said, we now we create these. Now
+how do I apply them to an asset that's an?
+
+Speaker 1** 59:20 Processing from file. Yep. Yeah. Well, if you're using the component, if you're using an AEM component,
+a default, not a custom component. And just because I can't speak to
+whether the custom component supports it or not, but a default
+out-of-the-box image component in AEM site building will automatically
+select the rendition that.
+
+**Don Wood** 59:34 But.
+
+Speaker 1** 59:50 That is appropriate for the placement.
+
+**Don Wood** 59:53 Oh, it automatically do it. OK.
+
+Speaker 1** 59:55 Oh, Mac does it. But if you have custom components where you didn't
+utilize that functionality in the code, then it may or may not do it
+right. So that's kind of you have to build in that support into the
+component that you're placing it on. There is a direct URL that you can
+manually do to get to that.
+
+**Don Wood** 1:00:03 Yeah.
+
+Speaker 1** 1:00:14 To that rendition, but it it's not straightforward.
+
+**Don Wood** 1:00:15 And then. OK.
+
+Speaker 1** 1:00:18 It's a little cryptic.
+
+**Don Wood** 1:00:21 OK, alright, so just reiterate. So if I created a bunch of different
+renditions here and this says it's it's still static, not OK, OK.
+
+Speaker 1** 1:00:23 Yeah. Oh, oh. Yeah, it's static. Because it it actually creates a binary file, a separate binary file
+under the hood and stores it for that rendition. That's what it means
+by static. You're actually the more static renditions you create, the
+more copies of that asset you're creating under the hood.
+
+**Don Wood** 1:00:41 Oh, OK. Mm-hmm. All right.
+
+Speaker 1** 1:00:50 OK, that's what's so good about dynamic media is there's no binary
+stored as generated on the fly. Yeah.
+
+**Don Wood** 1:00:53 Right. OK. OK. So yeah, when we get dynamic media implemented and then
+that's probably what we need to be doing and then we'll have to have
+that.
+
+Speaker 1** 1:01:04 Yeah, and utilizing image presets because image presets function a
+little bit like what you're kind of used to with with the static
+rendition where you can name a preset sample or whatever. Or typically
+you name the preset for the the use case or where it's being consumed
+on your site like a carousel or a banner or something.
+
+**Don Wood** 1:01:15 Mhm.
+
+Speaker 1** 1:01:23 You name that preset and in that preset you define all the width, height
+parameters and the format and the compression and all that stuff, right?
+So then in the image URL you can just reference that preset because the
+other way to go about it is actually hard code all the modifiers and the
+parameters into the image URL into the component. But if you do that.
+
+**Don Wood** 1:01:24 Yeah. OK. K.
+
+Speaker 1** 1:01:43 You wanna make changes and you have to update the component code and do
+code deployments and all that. But if you reference a preset name, if
+you reference a preset name and then you need to make changes, you just
+go edit the preset and republish it and done. Everything referencing
+that preset gets the new parameters, right? So yeah.
+
+**Don Wood** 1:01:47 Yeah, we don't wanna do that, yes. OK, OK, alright, so.
+
+Speaker 1** 1:02:02 Yep. But yeah, for time being, I mean static renditions should help you out
+in in a lot of cases and as long as you're offering in in AEM, you know
+it'll it'll just do it for you.
+
+**Don Wood** 1:02:15 OK. All right. That sounds good. Yeah. OK.
+
+Speaker 1** 1:02:16 Yeah. Cool. Any other questions? I'm sure we'll have a follow up calls and
+talk more about all this good stuff, yeah.
+
+**Don Wood** 1:02:21 Yeah, that's cool. Um. Yeah, I think, I think it's good for today. I appreciate your time and
+then looking forward to us having the dynamic media because that's
+really what I wanted to really wanted to cover, but since we don't have
+it implemented yet.
+
+Speaker 1** 1:02:31 Yeah, no problem. Yeah.
+
+**Don Wood** 1:02:42 Then we just wait.
+
+Speaker 1** 1:02:43 Yeah, I mean it's it's it's connected on your lower environments, but
+your prod just isn't connected. It's not set up.
+
+**Don Wood** 1:02:50 Yeah, yeah. So, OK. All right. Well, thank you so much.
+
+Speaker 1** 1:02:53 Alright. OK, talk to you soon. Bye.
+
+**Don Wood** 1:02:57 Alright, alright, bye.
+
+John Zimmerman** stopped transcription
+
+
+
+## Session: Shared Data — 2026-02-19
+
+**Customer Vendor Knowledge Transfer-20260219_130217-Meeting Recording**
+
+February 19, 2026, 6:02PM
+
+1h 31m 52s
+
+**Burt Jones** started transcription
+
+**Burt Jones** 0:09 All right, we're off and running. Daniella, if you want to kick us off,
+thank you.
+
+**Jenny Smith** 0:12 Yep, thank you for that, Luke. Hey everyone, good afternoon. I wanted to
+start today's session with going over just a couple of updates from
+yesterday's meeting and I am planning on sending an e-mail reply. To the landing page meeting from yesterday, just so that way anyone who
+wasn't able to attend will still be able to see those answers. But want
+to provide a few updates. So yesterday there was a question about the
+component specs page that our team had provided and. I just wanted to share my screen so you guys can see this here. Our team
+is reviewing this page. You might notice if you guys are looking at the
+title of analysis under review 219. Just so the team is aware, we are
+taking a look at this to essentially verify all the information. That's put here and then if you know anything needs to update, we will
+be making those changes to the information here. But I will be letting
+you all know when our review is complete. So right now it's in
+progress. So more to come on this, but just want the team to be aware
+that that's. Something that we are currently doing. The next thing I wanted to share
+with the team is there is a question about how to handle vanity URLs for
+that specific page and I want to show you guys how that is done after I
+talk to the tech team. So right now I'm in the product environment I'm
+going. To navigate to the International Women's Month page that I believe the
+authoring team have been working on. So let's just take a quick look at
+that. So this is my copy. Let me find the other, the actual version. Here it
+is. OK, so you can see it's still not published. So we did not publish
+these changes, but we did add the beta URL and so I just wanted you guys
+to take a look at how this process is done. O I'm going to select the page and click on properties. I'm going to scroll down here. So after talking with the team and I and
+we confirmed what was the original rule that was captured for slash
+woman. So you'll notice that's not here present in the Vandy URL
+section of EEM because that's already being handled. At at the dispatcher level. And so for our best practices, typically you
+know if something is being handled somewhere else, you don't want to
+replicate it or duplicate it with an AEM. However, since this is a brand
+new rule for this empower women URL, that's why you see this one here. So the way that we added the beta URL as you can see is you need to put
+essentially the complete page path. So you'll see content customer
+corporate Hard Rock EN. That's the exact same section that this
+specific page is, although it's hard to see with the percent twos 2FS. But it's in the same exact location. But then at the very end that's
+where we put what we want the VAD URL to be empower dash women and then
+also putting that extension of dot HTML. The reason why you need this
+dot HTML and there's as I mentioned yesterday there were some. URL shortening rules that were put in place and so that's why because
+that rule is looking for an extension to then remove. That's why the
+when you put this bid URL in place here, you do meet this extension in
+order for it to also pass that rule. So moving forward, as the team needs to add additional van URLs, this is
+the format it should be. Again, the page path is here of where the page
+is located and then also just the desired URL of the page with the
+extension. And yes, I can add multiple. In the case, as mentioned before, the reason why I didn't put the women
+one here is because that's there's already a rule, existing rule that
+we saw that was in place that is active right now. So I'm going to
+pause here to see if there's any questions about vanity URLs, the
+process to do it and essentially where to go for. Accessing this.
+
+**Terry Friedman** 4:28 Yes, Daniella, can you explain what the redirect vanity URL checkbox
+does as well?
+
+**Jenny Smith** 4:33 Sure. Let's see. I noticed that my tech team member did not put this in
+place. Let me get back to you on that one, Edwin, I believe. I don't
+want to give you the wrong information, so I'm going to. I'll get back
+to you on that. In this case here though, it was not needed and that's
+why we didn't put it there, but I'll confirm the exact. Reason and the use cases for when you would use that.
+
+**Terry Friedman** 4:55 OK. Thank you.
+
+**Jenny Smith** 4:57 Yep. Anything else? OK, all right. So to be clear, this one is in place. So whenever that
+page is ready to go and ready to be published, you will not need to add
+any additional data URLs. However, of course, if there's something
+else, another one you need to add, please do so and then make sure to
+publish the page. All right. I'm gonna hit cancel. All right. OK. And then the last
+update, there is a question about the card. Yes.
+
+Richard Ray (Director of Digital Experience)** 5:25 Hey Danielle, sorry I had to click all the terms and everything on that
+last screen you had with the my understanding correctly, you can have
+multiple vanity names for that page and they'll all link to it. Oh,
+that's pretty cool because they I ironically with this one.
+
+**Jenny Smith** 5:28 Yeah, go ahead. Yes, that's correct. Yes, that's correct.
+
+Richard Ray (Director of Digital Experience)** 5:43 We had noticed one URL was in the PDF and a different URL was in the in
+another image. So it's like in how many different iterations are there
+possibly floating around, you know, before the program launches. So if
+we had the ability to add multiples, that would be pretty cool.
+
+**Jenny Smith** 5:55 Hmm. Yeah, you are able to add multiple. I don't. I think the only other
+I'm trying to remember what we had saw. So to be clear, there are
+there's another location where like redirects of ADRLS can also
+potentially be managed those individual roles that have been. Available in Visorj, I believe had just gotten migrated over and
+they're in our dispatcher and that's where I believe like the tech
+team would be managing those. So I think there are actually additional
+redirect rules are probably in place right now, Rick, but but for like
+the ones that you, you know don't exist that this is the location.
+
+Richard Ray (Director of Digital Experience)** 6:29 Mhm.
+
+**Jenny Smith** 6:39 Where you would want to put them.
+
+Richard Ray (Director of Digital Experience)** 6:41 Yeah, the landing page kind of thing, because that happens some you know
+where they want, you know, it's a really long page name, but in print
+they don't want to print that. So it's just like an abbreviation, 3
+letters or something. So be able to add that quickly here as people.
+
+**Jenny Smith** 6:47 Yeah. Right. Absolutely. Yeah. Yep. So yeah, sure thing. All right, so the follow up I have is for the
+use cases for redirect bid URL checkbox. I'm gonna hit cancel for right
+now and then we wanted to talk about the updates.
+
+Richard Ray (Director of Digital Experience)** 6:56 Thank you.
+
+**Jenny Smith** 7:10 To the card carousel. All right. OK, so previously it was asked about
+what the vendor response was for why the UI was getting cleaned up. After
+talking to my team, what we had noticed is that, excuse me, based off of
+the requirements. That we had seen previously and I can get the exact ticket number in a
+second. As mentioned before, desktop and desktop and tablet typically
+would have the same sort of view and mobile would be handled separately.
+This particular component previously had this separated, however. After that specific requirement was made, what we did was we our
+understanding was that card carousel and tablet should always be two if
+it's not a full width carousel, if it's a full width carousel, which I
+will. Let me see if I can show you when I say full width carousel, I'm
+talking about within the hero banner. Let's see if I can find an
+example. Something that looks kind of like this. If it's full width, then
+you're only going to show one at a time. However, for this instance
+here, the fact that I have one this, this particular number does not
+actually do anything for tablet. That's the reason why our team had
+responded saying that this particular. Field doesn't actually need to be here because there's already logic
+baked in without the author having to configure anything. So if I were
+to take a look at this page here, we see three here, we see two and this
+would technically be tablet and then we see one. So what's being
+respected is the. Three and the one that I've put into place, but that middle number for
+tablet, there's nothing like this does not take into consideration what
+this value is. So if I were to put this as five, you can see nothing
+will happen. It'll always be too. And so you know, totally understand if that's not
+something that is desired, that's where during the gap portion, if that
+if that specific functionality for a tablet needs to be added again. So
+that way this actually, you know, a tablet can have something
+different. That's something that we would want to make sure is covered in the gap.
+But when we said we were going to clean up the UI, we were saying we
+were going to remove this field because currently it does not have any
+bearing on how it's displayed to the end user and there's already
+logic that was added to always show as to. All right. OK. So those were the updates that I had from yesterday. And
+any any questions? Yeah, Don, I see your hand up. Not sure if that was
+intentional or not.
+
+**Don Wood** 10:00 It was not intentional, sorry.
+
+**Jenny Smith** 10:02 I just, I just happened to glance and see and I was like, oh, OK.
+
+**Don Wood** 10:06 Well, I was gonna do the React thing and I hit the wrong thing, so never
+mind.
+
+**Jenny Smith** 10:09 No problem. Thank you. OK. So yeah, any other questions about the page
+and actually with regards to the author team, you know, I know that
+yesterday it was said that there could be some additional changes. So I
+was just wondering if. There is anything else that you guys wanted to talk about with this
+specific page for today?
+
+**Terry Friedman** 10:36 I believe there's not been any large changes yet. It's still possible
+for it to be changed, but I I don't. I'm not aware of any large
+changes yet, so we should be OK for now.
+
+**Jenny Smith** 10:38 OK, yeah, understand. OK. OK. Thank you very much, Edwin, for that. All right. OK. So let's
+jump on over then to the, the, the agenda that I had prepared for today.
+So as I've been talking to you guys over the past couple of weeks, you
+know I.
+
+**Terry Friedman** 10:47 OK.
+
+**Jenny Smith** 10:59 I definitely understand that there's going to be a lot of instances
+with shared data. So essentially if something on the hardrock.com
+website, you might want to also see that on the careers website. I think
+we've identified a couple of examples of that and so I think that it
+would be good to understand like how to identify. These particular pieces of data that are going to be shared across
+multiple websites. Which is the best time to use a content fragment?
+What's the best time to use an experience fragment? Once you use a
+content fragment with an experience fragment or even experience fragment
+with an experience fragment? And so I just wanted to review some of the things that I've identified
+that could potentially be useful as the team is authoring pages moving
+forward. As you guys know, we had a set number of content fragment
+models that we had created. However, that doesn't mean that that's all
+you. You guys will end up using. There's gonna be a lot of times where
+you're looking and you're seeing, oh, this data has some sort of
+structure, it's repetitive. We should create a content fragment model.
+So I just wanted to show you guys like some of the things that I
+identified and how I would make that into either an experience fragment
+or a content fragment and how that could potentially be. Used across multiple sites. In addition to that, you'll notice here
+I've called out the components that are used specifically within the
+header and our footer, which are some very obvious examples of
+experience. I believe we actually have gone through these in a previous session
+before when we were reviewing the home pages for corporate, but we can
+certainly just take a look at them again today since we are trying to
+review experience fragments. And if you guys have any questions about
+those, we can certainly get into those too. All right, so I'm going to actually start now with showing just two
+examples of what I could think would be some good shared data. Last week
+we talked about this particular page and and there's actually a very
+similar page here on the. Careers website. However, there are also some differences that we noted.
+Some things might be shared, some things might not. So now obviously
+this is going to be more of a a hard rock would need to decide are these
+pictures truly supposed to be different on this page or would it make
+sense for them to be a one-to-one match? So depending on that answer, that would actually depend on whether or
+not this would be a good candidate for a content fragment or an
+experience fragment. If these were obviously one to one match, say you
+always want to be in this card format, you always have the image and
+this text here that would make sense to be an experience fragment. You
+would then. Use the experience fragment wherever you need to show this particular
+card, and then you'd only change it in one location. However, because
+I'm seeing that there are some slight differences, but some of it's
+shared, what I would say if that was indeed intentional is that it might
+make sense for this. To be actually a content fragment with a content fragment model. So let
+me open up down here and I went down to the integration environment just
+so that way people aren't accidentally using this and what I did was I
+actually created a. New content fragment model called bio. I'm just gonna navigate to where
+I have put my information. Was it careers? Oh, oops, sorry, I'm not in
+the DM. Here it is. OK, so going to my CF folder and here I have a folder called
+Biography because I created something called a biography content
+fragment model. I'm going to have you guys just take a quick look at it
+and then I'm going to show you how I actually created it. All right, so clicking edit. So you'll see here I was taking a look.
+OK, what are some things that are relevant, you know, that are shared
+across all these different pieces of of content on that other page? So I'd identified the name. I split it up in first name and last name,
+but that could certainly have just been one field. I identified the
+title, the bio, and then also the image. So you can see here exactly how
+I split it up. This is the shared structure that I would imagine all
+biographies. Would use and so all that information that's on here I have now
+captured as a content fragment. So when I create when I created that
+content fragment model, here I am in the content fragment model editor
+and you can see the exact fields that I selected for this. So for my first name I have my text field and I believe this and correct
+me if I'm wrong. I do believe you you all probably covered some of this
+within the training in terms of how you can have different types of
+fields and also different types of validation. So I'm not going to get too deep into like what each of these fields
+mean. However, I just wanted to just show, for example, like you know,
+using the different types of field and what makes sense in this case for
+an image using a content reference, setting my root path to the dam so
+that way whenever someone. Creates a new content fragment based off of this model, it will always
+default to the DAM. If there's a specific location that you know these
+images always are based off of Don's new structure, then it would make
+sense to set it exactly where you need it, but just trying to show you
+how. When creating these content fragment models, the important thing is
+understanding that the structure needs to be shared across everything
+that's going to use this, and you want to make sure that you know
+you're putting the proper validation in place. For example, in this
+case, I don't want someone to necessarily select like a content
+fragment here. I want them to only be able to select images. So you can see I I've
+like essentially put some guardrails in place as I was making this
+fictitious content fragment model and as additional. If there's
+additional fields that I need and maybe they they aren't necessarily
+required, I can add those. In this case I only set the. First name to be a required field, but certainly it's possible that I
+would imagine you might want to have first name, last name and title all
+be required. So that of course is a decision that would be coming from
+the, you know, the customer team, probably the product team or so on
+determining. When, when should something be required, what should these fields be,
+etcetera, etcetera. But this is the way to essentially build it out and
+to make sure that you're essentially guiding your users to be able to
+fill this out properly with the specific validation and things in
+place. So I'm actually going to pause here as we take a look at this editor to
+see if there's any questions about how I essentially built this
+fictitious model. All right. OK. All right. So let's jump back then to the actual content
+fragment I built based off this model. All right. So if this were a a
+real life scenario and say we this particular content fragment model has
+been approved by everyone as in like these are the. Exact fields we want and the way we want them. Simply as a content
+author, what I would be doing is I would be getting all that information
+for each one of these, creating a new content fragment, filling out the
+fields, etcetera, etcetera. And so then these would all be stored as
+content fragments as opposed to right now. I believe these are probably
+either card or. Text components. So moving forward, what I would need to do is instead
+of editing anything on the page, I would be editing it from a content
+fragment perspective. So right now on the hardrock.com corporate site, I
+believe you have to edit directly in the page. But if you were to use a content fragment model, as you guys know, you
+would be editing the information here, saving and publishing, and then
+that is what would determine what content is being displayed on the
+page. So looking at. This here we can see one of the reasons though why I chose a content
+fragment model versus doing an experience fragment is because there's
+things that are not exactly the same. So in this case here again, this
+is a card. This is instead showing the shared fields. These two and the shared fields here you know is right here. The image
+is different. There's a read bio button here so that none of that is
+shared between these two. So within my let me show this here. How do I display these fields on the page though? All right, so I'm
+going to navigate to just creating a test page where let me see if I can
+find it. Uh, here we go. All right, so out-of-the-box there is a a content fragment component,
+and its purpose is to essentially surface information from a content
+fragment, a stored content fragment. So you'll see here I have a
+content fragment component on. Here and what I've chosen to display is a the bio field from the
+selected content fragment that I have. So you have the option of
+choosing a single text element or multiple elements. This is an
+out-of-the-box component, so there's been no customization to this. And so this is something that yes, you can use. However, there are
+certain fields that are not going to work out-of-the-box and would
+require some some some customization too, for example the image field. The image field is not going to display the actual image right now
+without any customization. It displays the location of the image. A
+typical use case though would be for a developer to essentially create a
+custom component that is relying on that content fragment. So when we have our content fragment card, if you guys remember, this is
+a custom component that our team made and surfaced and so it's calling
+in content fragment models here. And what we're able to do is we're
+able to pull in the same information that's stored in the content
+fragment, but we've included a. Additional code to say, for example, display the image or style things a
+certain way. So I want to be clear that just because you create a
+content fragment model, it's not going to magically look like a card.
+There's going to have to be some discussion amongst how you would want
+that information to be displayed. But out-of-the-box, what you can do with the content fragment model
+component is display different specific fields that are stored within
+the content fragment. So I'm just going to call. This content fragment again and just show how if I were to want to
+display say the title, I could do that here and it it displays my title.
+If I display let's say a bio, I'll display my bio here. So I can. I also do have some control when it comes to paragraphs. Right
+now I'm showing everything. Say I just want to show the first
+paragraph. I should be able to do that. So this is the content. So the
+content fragment component again is a way to display pieces of text from
+your content fragment. However, if there's obviously like image fields or things that need to
+be displayed, that does require some customization.
+
+**Terry Friedman** 23:13 Daniela, with this text that we're seeing here, will this at least
+inherit the the stylings and everything that we have of the website?
+
+**Jenny Smith** 23:17 Hmm. But inherit the style. So I believe this is. Let me check what that
+field was one second. Let me go back 'cause there is actually a rich
+text editor that can be used within the. Content fragment model, but let me check what I have that set to. It
+should be I believe the body text, right? So like right now this this
+font should be. Let's see what the font is. It should be whatever the
+body font is saved within the in the style sheet. Yep, so font family,
+font family. So Lato, I believe is what the font family is. So when you say inherit,
+that's it is essentially inheriting whatever was in the style sheet.
+Does that make sense? OK, Yep. But yeah, let's take a look at this
+really quickly. I believe I just create. Yeah, so this here is a multi
+multi line.
+
+**Terry Friedman** 24:00 OK. OK, yeah, yeah, I just wanted to make sure.
+
+**Jenny Smith** 24:16 Text field. However, there is the ability to change it from plain text
+to rich text, but in this case I didn't necessarily want like the
+styles to be, you know, people putting whatever. So and again this is an
+example, but also another decision. Um, or something to consider when you're planning out building out your
+content fragment models. Right. Um, so with what we're seeing here, any questions about why I
+would use a content fragment for this and and essentially the shared
+pieces versus an experience fragment?
+
+**Terry Friedman** 25:00 I do have one question regarding the actual creation of the content
+fragment. Now is there any way for us to include a default image for
+that? Like let's say when we're creating the content fragment model,
+are we allowed to create put in a default image that's going to be
+there no matter what and we have the option to override that image?
+
+**Jenny Smith** 25:03 Sure thing, Yep. Mhm. So we do have a default value that can be set. So I believe you should
+be you should be able to select like a. In this case this is keeping in
+mind this is a content reference which I'm using for image. I should be
+able to set that default value and then as it as I'm creating new
+content fragments that would be there. And then I would be able to replace it. But because again, there's no
+custom component associated with this content drag model, you wouldn't
+actually be able to see it right now. But yes, you are able to put
+default values in place.
+
+**Terry Friedman** 25:51 But any specialized content that we have, any kind of a special
+components that we have would be able to show that defaulted image.
+
+**Jenny Smith** 25:59 Any special oh oh, so it's like, um, you're saying like if they're.
+
+**Terry Friedman** 26:03 Like if we're using a card component or something that references this
+content fragment, it would show that default image.
+
+**Jenny Smith** 26:09 There's a card to put. So the what would happen is that say this image
+field would essentially inherit whatever was stored in the default
+value. Does that make sense? Yeah, I think that answers your question,
+right? OK, perfect. Yep.
+
+**Terry Friedman** 26:18 Yeah, yeah. It should be good.
+
+**Jenny Smith** 26:25 OK. Uh, any other questions about the content fragment model? OK. All right. OK. So let's take a look now at another example that I had
+identified as I was reviewing the sites. So I think it's probably the
+same day when we were reviewing careers, we had noticed that. There are benefits on, of course, the benefits page, but then also on
+the home page. However, you'll notice there's a slight difference.
+While essentially the image and the title under each benefit is the
+same, you know there's some text that's present here, but not present
+on here. So what is the best way to handle something like this? Since the
+presentation is essentially the same with just one thing removed, this
+seems to be a good candidate for an experience fragment. So let me show
+you guys how I would do something like this. Now I'm going to go up to the stage environment since I have some
+examples there. Previously again, I was on int just because I didn't
+want anyone to actually use this thinking it was real. So when you're
+on stage or prod, you're not going to see this, so don't be alarmed.
+It's just this is for training purposes. But now that I'm in stage, let's go to our Experience Fragment
+section. OK, where's my training stuff? OK, here we go. So I started making just
+one example, the annual bonus eligibility, and let's take a look at
+what I have done. OK, so here you can see I have my image, I have my text, I have my my
+other text which is essentially what we see here. So I've identified
+all the all the parts to like what this benefit would require however. I also know that I don't necessarily want this piece to be on the
+homepage, but I do know that if I were to change, say, the title or this
+particular title portion for annual bonus eligibility, I want to make
+sure that gets pulled out to both pages. So what I've done is I have created a variation as live copy. So what
+that does is once I decided what I want the original to be, I then have
+created a copy. We can do another one create variation as live copy.
+Let's just call this test. And then it's going to be test and I've created. I've hit done. So
+here's my copy of test. It's the exact same thing. So if I don't want
+this portion here, but I want everything else to be the same, I'm going
+to select this. And I see that there's a button called Cancel Inheritance. What this
+means is now if I cancel this, I say yes, I don't want that. If I
+cancel this, anytime I make an update to annual bonus eligibility, this
+part will not be updated. The other parts will be, but this portion won't. So let's actually
+test that and we're going to put this is not inherited and see what
+happens. OK, going back to my original copy, the annual, I'm sorry, the
+original experience fragment annual bonus eligibility. Make a change to this text. And I'm going to hit done and right now nothing's going to change
+because I haven't rolled anything out. But if I select this, you'll
+see that there's this button that says roll out. I have the option to
+be able to roll it out to all the variations that are essentially
+inheriting from this or. Hit roll out to and I can select exactly which ones I want to have
+rolled rolled out to. So in this case I was messing around with my test
+one, the homepage one. I think that's something I probably made
+earlier, so I'm just going to uncheck that because I don't. I
+personally don't want that to be updated right now, but I do want test
+to be updated. O I'm selecting this. I'm going to hit roll out. I just happened now, so I'm just gonna hit now. I'm gonna hit
+continue. Alright, so if we were to go to annual bonus eligibility, the
+update I made for training is here and I go back to test, you'll see
+the training has been updated and this text was not touched because I
+canceled that inheritance. So what I'm trying to show is that for this particular section here,
+right now everything that I believe is probably just on the page, so
+you're editing it there. However, one thing to consider is this could
+potentially be moved to an experience fragment. You would use the experience fragment that's that's here to be
+displayed on this page and then on this page here the home page you
+would likely want to use the experience fragment for test. Pretend this
+is this part doesn't exist so that way it displays exactly the same and
+then as as say on you know something changes like. The image here or say the title here, you only have to change it in one
+location, that original experience fragment and then roll it out to
+anything that's copying from it. I'm going to pause here to see if
+there's any questions about this or any thoughts about, say, some other
+use cases. I've identified some other use cases I think could be good
+for this. I just want to hear any questions first.
+
+**Terry Friedman** 31:58 So regarding this component, is there any way we can break the entirety
+of it being a variation? Let's say for example we have it as a
+variation where you have one that doesn't have the text, one that does,
+but we decide to change the order on one page. So we'll have annual
+bonus eligibility on the 2nd row instead of the first, but we want to
+keep.
+
+**Jenny Smith** 32:05 Mhm. Mhm.
+
+**Terry Friedman** 32:18 Bit the same on the other page. Is there any way to undo that and break
+that connection so that we can just use it as a regular component itself
+or we would have to redo the component?
+
+**Jenny Smith** 32:26 Let me let me confirm what you said, just to make sure. OK, so taking a
+look at this, we're saying what if we actually want this to be
+underneath? Is that correct? For like a variation of this to be underneath.
+
+**Terry Friedman** 32:40 Um. Let's say we wanna change the position on the page itself, right? So
+we're not changing the component, but we're changing the position. Um.
+
+**Jenny Smith** 32:46 Oh, the page itself.
+
+**Terry Friedman** 32:53 Is is there any way we can just maybe break the component itself or
+there's no reason to break it? We're OK with the way it's set up.
+
+**Jenny Smith** 33:02 When you say component, to be clear, the experience fragment is
+containing right now it's containing 3 different components, right? So
+I have my image, my text and my text. I can drag. I actually can drag
+pretty much anything into here. I can even actually add an additional
+experience fragment and we can talk about when this would be a good use
+case for this. So I guess I I just wanna confirm what like what you're asking because
+this is essentially like a mini page, right? Like you're adding your
+components here, you're able to adjust it. And then what happens is on
+the actual page that you're authoring, you would add your experience
+fragment component.
+
+**Terry Friedman** 33:30 Yeah.
+
+**Jenny Smith** 33:41 Let's do that right now. I'm gonna find a test page and just add the
+experience fragment component. Experience fragment I just built. I think
+it's.
+
+**Terry Friedman** 33:50 Basically, to clarify it, but if we just wanna break that connection
+from the experience fragment and have it as its own component, would we
+have to recreate the component?
+
+**Jenny Smith** 33:52 Yeah. As its own component, as in like do I? If you want this stuff here
+that's stored here to just appear on a page without being an experience
+record, what would you need to do for that? I see. OK, one second. So
+going back here.
+
+**Terry Friedman** 34:08 Correct. Yeah.
+
+**Jenny Smith** 34:16 1st I'm just gonna add the experience fragment so you can see that
+reference on a page and then we will address what you just asked. So I
+added my experience fragment component. I'm going to then find the
+specific variation that I built. Where is it? Uh, yes, here. OK. OK, so here's a variation I built. So you're saying, oh, but I
+actually want this to be, you know, not with an experience for
+everything. I want everything to be here. So I guess one way you could
+do that is you could theoretically copy out the different parts and just
+put them on the page, right? You would have to likely do some
+formatting, but you can. And certainly because again, this is all actually for the ease of use,
+I'm going to put everything within a container and then copy out my
+container. So one second please. This one here. OK O for the ease of use, I'm going to copy out my container. I'm
+going to put this here. Yeah, so you could see this. This is actually now. Here we go. Yeah, let me refresh the page just to make sure that I'm
+able to access. Here we go. So now instead of me editing it within my
+experience fragment, I just copied over the components, slapped it onto
+a page. This now has no. Inheritance associated with the experience fragment. It's, you know,
+like this could be anything, right? So any rollouts and anything that's
+made to this, it's not going to affect us at all because now it's just
+three independent components within a container. Is that what you were
+you're asking?
+
+**Terry Friedman** 36:07 Yeah, that's exactly it. Just wanted to see if you can break the
+association. That's all.
+
+**Jenny Smith** 36:09 OK. Yeah, yeah. So two ways. Again, there's two ways. One is when you have
+a variation, you can. If you do not, if you actually don't create
+variations live copy, then there's actually no inheritance. It's
+essentially like grouping things together of of. Like like experience targets, but variations live copy. There is that
+ability to break the inheritance within the variation by cancelling it
+or like I just showed, just copying out the components, slapping on the
+page and now it's local on this specific page only with no inheritance.
+OK.
+
+**Terry Friedman** 36:45 OK, perfect.
+
+**Jenny Smith** 36:45 Yep. Any other questions about this specific experience fragment? And
+for the purpose of this, I actually want to show. Sorry, I'm going to
+add the other variation as well. So we can see how both of these, how this would essentially work. Where
+is it? That is test, right? Yeah, OK, so you can see how like in this
+case this would go on one page, this might go on another page, but
+again. Anything that was marked as inherited will only have to be changed in
+the original experience from it, OK. All right. OK, let's take a look at. Some other examples that I was noticing that could be potentially good
+candidates. Sorry, trying to get my bearings straight on here. OK, so I
+had mentioned earlier, hey, you might actually want to use an experience
+fragment with an experience fragment, which sounds crazy, right? However, not always. As we know, footers and headers are all experience
+fragments. I believe that the the authoring team, you guys have probably
+had to edit the headers and footers on maybe the corporate page and
+probably also when you review the careers page, there might be some. Updates and you would do that by going to the Experience Fragments
+section. Now something that I was noticing as I was reviewing is that
+sometimes the copyright here I notice it's not shared across all the
+sites. There's some different variations of it, however it seems like
+the. Lines of businesses all seem to have the shared copyright for it. So
+like, for example, hotels might have a certain copyright, like it might
+say like something about privacy in this statement here, but then I
+noticed on cafes might be a little different. So when I saw that, that
+to me seems like it would be a good case to make, say like. Different disclaimer experience fragments and then within your footer,
+adding that experience fragments to the footer. Since right now the way
+we have this structured is that every single every single cafe, every
+single hotel, each one has their own. Header and footer, right? So as an example, but each one has their own
+individual header and footer. So right now what you would have to do
+with this not being an experience wagon is you or the property owner, I
+suppose would have to make sure that the header and footer is updated. With the correct text. So anytime a year changes or anytime if something
+ever changes here, you'd have to update that for every single property.
+What can be done instead is say we had in our hotels, we had another
+experience fragment that was just called disclaimer. That disclaimer would have one text field this and then what would
+happen? This would require some updates, but it would only be one time
+is within the footer. I'm just going to open this for an example
+instead of having this text component here, adding that experience
+fragment there and then pointing to that disclaimer and then. Moving forward from then on, you would only have to change it in one
+place and then everything that's using experience framing would then be
+updated. So that's something that I noticed. Again, it seems like you
+know. You know that that obviously like right now the text, yeah, it's pretty
+easy to change it, but if you're changing a bunch, that might take a
+little bit of time. So just want to call up another example and a way
+when you might want to consider using experience fragment within an
+experience fragment, in this case the footer. So while we're taking a look at the footer right now, just out of
+curiosity, is the team aware of like, you know, any other say any other
+examples of places where you know, maybe it makes sense to make a
+content fragment or maybe it makes sense for an experience fragment. Is
+there anything that? Perhaps at the top of y'all's head that perhaps we can take a look at
+right now.
+
+**Terry Friedman** 41:04 Experience fragment within an experience fragment. Same thing here, just
+in general.
+
+**Jenny Smith** 41:07 No, just I guess just in, yeah, just in general like I know for one of
+the things that I believe will be handled in the future is like say say
+these these cards. So here this is an example. I believe we identify as experience
+fragment. I know there's additional logic. However, what would happen
+is this carousel would be put in experience fragment and then replacing
+the carousel that's on the page for the experience fragment. So this is
+a perfect candidate for experience fragments. So I'm just curious. If there's any examples that you guys like to take a look at.
+
+**Terry Friedman** 41:54 Believe one experience fragment was wherever we have a specific card on
+the cafe pages, it would be pointing toward a promotion.
+
+**Jenny Smith** 42:00 And. Let's take a look at that. Are you talking? Oh, OK, sure. Does that land? Yeah. OK, Yep.
+
+**Terry Friedman** 42:05 So if we go to a specific property, like if we go to a specific property
+page, sorry. Yep. So that third card that we see right there that says Captain Messy,
+this is shared across multiple properties and it changes for some, but
+not for all. So that's something that we definitely wanna consider as
+maybe something along the lines of an experience fragment.
+
+**Jenny Smith** 42:16 Mhm. Mm-hmm. Yeah.
+
+**Terry Friedman** 42:28 That we can customize dependent on the property.
+
+**Jenny Smith** 42:28 Mm-hmm. Yes, yeah. So like you're like you're saying something that's shared.
+You said something that's shared, but something that may change but not
+for all. Is that correct? So like Atlanta might have this. However, the
+fact of the matter is what can happen is you would replace this card
+with the experience for.
+
+**Terry Friedman** 42:41 Correct.
+
+**Jenny Smith** 42:50 You would reference the specific experience fragment variation that
+contains this. And then if you're saying like, say, at least decides
+they need to change that to something else, and at that point they
+could, they could replace experience fragment with this instead of this
+one pointing to something else. However, anything that's still
+referencing Captain Messi would. Still have that and anything that gets changed in the text here would
+also get rolled out to all the sites that still reference this. So yes,
+this is definitely a good candidate for an experience fragment,
+absolutely. Yeah. OK. All right. So let's take a look now at our. Let's take a look now at the remaining agenda. So we talked about
+experience fragments when you want to use them, why you'd want to use
+them. I didn't have that here, but the content fragment model we talked
+about, you know, like an example of one that I created. And essentially how that could be used for say a custom component that
+displays content fragment information. Or if you need to just display a
+portion of text or something, how that would work with the
+out-of-the-box content fragment component. Let's take a look at some of these other components that we have here,
+starting with our content fragment card list. I'm going to navigate to my test page. And I believe we are using the content fragment card list. I don't know
+if we're using non careers, but we can perhaps make up our own. OK, all right, so here is an example of a content fragment card list
+component. Right now, since this is a custom component, right now we are
+able to display news and events I believe we had mentioned. I think when we were going over promotions that one of the one of the
+things that would be beneficial would be to have promotions to be added
+here of course and also something to consider as you start to identify
+additional candidates for content fragment models this particular
+component. Component would likely have to be updated to take that into account. So
+with the Contra Fab and Carlos component though right now it's just
+news and events and this is saying OK, I can use a news model or an
+event model. For my cards layout style, I can display it in 1-2 or three columns just
+like we have for the card carousel. If you're doing events, you would
+put your event page based path. This is something that I know you guys
+are are aware of how it's just that one event page and then it passes
+in the ID of the event. So this is just that field that says well where's your event page so I
+know what to pass in and display when someone clicks on on learn more
+which is the CTA in this case. So I have my learn more text here as a
+placeholder, no results message I'm able to put. You know there are no news, there's no events, so something custom. So
+it's this field is open to whatever you have decided to choose for the
+type number of cards to show at a time. I know we have here. The column layout and so of course depending on what you choose here, 18
+cards would make sense for say like a three card layout or a two card
+layout, but you know perhaps something like like like. I'm just trying to think of like 99 would only probably make sense for
+a three column versus 2. So just some flexibility in terms of cards that
+you want to display in the list and then selecting the list type. We
+have our fixed list, our root path and our tags. I believe typically what we've been using across the site is root path.
+So when I select that, that just tells me where within the dam I can
+pull in those content fragments. So as we remember from our structure in
+the dam, currently things are set up for content fragments based off
+of. Of the content fragment model and then the line of business and then the
+location. I understand though that there could be instances where you
+might want to show multiple locations. So if there was a certain certain
+things that you knew you want to show, fixed list might be your best. Option you can select the individual content fragment you want to show
+here, and so while that may be a little, you know there's like 200 or
+so, this of course is not going to be something that you would want to
+do. However, if there's a limited number that's crossing multiple
+folders, this is certainly a viable option. And then finally, tags. With tags, of course, you're able to select
+which tags you have applied to those content fragments. So that's
+certainly another way to be able to show things across multiple folders,
+as long as you select the root path to be something that's a little
+higher than. Obviously the obviously higher than on the specific like location. Like
+right now if I wanted to show Barcelona I could show it at this level.
+But say I want to show Barcelona and say there was another thing that I
+want to show that was within Spain. Then I would of course select a higher level. So as long as things are
+tagged, choosing the tag list type should be able to pull as in.
+Gonzalo, I see your hand up.
+
+Cal Nelson (customer)** 48:33 So on um, I think on the first option that you have on the selected list
+type you have the CTA.
+
+**Jenny Smith** 48:38 This sorry on the select the list type we have fixed list, root path and
+tags.
+
+Cal Nelson (customer)** 48:44 I think was the first one.
+
+**Jenny Smith** 48:47 this one here.
+
+Cal Nelson (customer)** 48:48 No, there was one that you were you were talking about the root path.
+
+**Jenny Smith** 48:55 Let's see root path.
+
+Cal Nelson (customer)** 48:56 That one, that one is this can can the root path needs to be an internal
+page in vendor or it can be external?
+
+**Jenny Smith** 49:05 So this keep in mind that this list is saying I'm building things based
+off of content fragments, right? So the root path is since our content
+fragments are stored in AEM, it would be you know a folder that's
+within here with content fragments, right? So what I'm saying here is I'm building, pretend I'm building this
+news content fragment card list. Now where are all those news located
+within the dam? So I would select, yeah, so it's not so much like
+something you it wouldn't make sense for this to be an external link in
+this case because I'm just basically saying I want.
+
+Cal Nelson (customer)** 49:32 Gotcha. OK.
+
+**Jenny Smith** 49:42 To choose, say, all corporate news, or I want to choose all news across
+all sites by choosing this folder. So what's the root path of content
+fragments that you want to display? That's what that means. Yep, all right. News default image. This is essentially you know what
+would display if you didn't have an image for your news. And then here
+we have some check boxes and so these are gonna be kind of.
+
+Cal Nelson (customer)** 49:53 Thank you.
+
+**Jenny Smith** 50:09 Conditional. So for example, you can see here location is applicable for
+events. So if you were to check this and you have me selected,
+nothing's actually going to display. However, if you were to switch
+just to events and reset up this component, that's when location would
+appear. Categories again only applicable for news doesn't matter for
+events, at least in this. Instance and then if you need a secondary CTA button to appear, that's
+when this is checked and then we would check to see if there's any
+information stored in the content fragment. So I know it's a lot, so we
+can take a look at an example of a content fragment card list that has
+already been set up with content fragments and such. So what I'm going to do is I'm just going to navigate to the live
+usage. So if you're ever looking for examples of components and like
+where they're being used across the site so you can see like how did
+somebody else set this up? The way that I I do this and the way that you can find where this be
+used is by clicking on the top left vendor Experience Manager, clicking
+on our little hammer and then clicking on components. So in this case I
+want the content fragment card list. So I see that that is here. Click on that and I'm clicking on live
+usage and this is not going to list every single page that it's being
+used in because that would likely slow down this site. However, this is
+going to give you a very good. Representation of pages that are using this. So let's take a look at
+this cafe page. I'm just choosing one at random. Once I click on that,
+it's going to navigate me to where this is and then I would select here
+on the content tree to see exactly where is that content fragment card
+list being referenced. So I can look at it and I see it right here. So in this case, with my
+event calendar section, there's no events found. However, if I wanted
+to find, say, another example of one that's using this, I could go back
+to exactly where I was and just take a look, but we can see for Foxwoods
+Cafe. In this example, the way that they have set up, we have our event page
+based path. We have our CTA labeled more details which would be
+displayed if there are events. We have set the route path of where those
+events are all located and in this case all we have is a secondary CTA
+to be displayed when there are events. I want to find an example where there's actually events. I'm curious
+if anyone has any suggestions of a cafe and stage that would likely have
+any events. Let's try Valley. That's the an Asian one. Let's try this. Just take a look. Uh, perfect. OK, so here's an example where everything has been set up.
+So let's take a look. Here's our CTA label of more details. So you can
+see this is what's populating this button here. So we have our news
+default image. In this case, it looks like. Each of these specific content fragments had an image that was stored
+within it. That's why this is not displaying. Actually, no, this is a
+news default image. My bad. So this this has no effect on this here. But
+then also you'll notice I do have my secondary CTA. Let's take a look
+at. While it's all being displayed, if there's no secondary CTA info
+stored with for this particular event, then that button's not going to
+display, but we can look at that within the content fragment section. That's Cafe Valley and and let's check out February 19th. OK, I think this one is it. Alright, OK, so here's our event image and you can see a secondary CTA
+link is indeed blank. That's why there is no button that actually
+appeared here. Um, let's see. And so yeah, the image there's an image event placeholder image that's
+being stored here and that's what's displaying. And if I were to click
+on the more details, this operates just the same on my bent details page
+which I had inputted or which was inputted in the configuration window
+had been set and then it just passes in the ID. And so the information all displays here just as expected. OK, so this
+is the content fragment list. The other places there you can see this in
+action today I believe would be on the Hard Rock website when it comes
+to news. That's also again another available model. Moving forward though, it
+seems like as as the team is coming up with additional content fragment
+models, it would make sense to enhance this component to be able to
+reference those models and then display it as a list. Moving forward, I'm going to pause here to see if there's questions
+about this content fragment cart list component.
+
+**Terry Friedman** 55:48 With this component, I've I've seen it before where if we only have
+two cards, it's not really centered, it's it'll show the two cards to
+the left. Is there any way to center those cards or have it like fit
+configured to where if it's just two cards, it'll show centered or one
+card?
+
+**Jenny Smith** 55:53 Mhm. Currents. Right. I think that's something, right. I think that's something that we also
+were talking about when it came to the careers website and I think that
+was noted in Jira and that was identified as a gap. Definitely
+understand that you know as there if there's. One or two having that centered. So we understand what the ask is
+currently today that's not available, but that was something that was
+captured in JIRA and we would bring up again during our gap analysis.
+
+**Terry Friedman** 56:29 Perfect. Thank you.
+
+**Jenny Smith** 56:30 Yeah. Any other questions about the CF card list component? Alright. OK. Yeah.
+
+**Terry Friedman** 56:45 Actually, one more, one more. What if there is no CTA for the event? Is
+there any kind of additional functionality that any settings that we
+have to check off or change if there's no CPA for just a specific
+event? Yeah.
+
+**Jenny Smith** 56:55 If there's no CTA for the event, oh, I see. So to be clear though, the
+CTA that's here for these events is specifically to take you to that
+event details page. Are you saying that there might be an instance where
+this page doesn't exist?
+
+**Terry Friedman** 57:12 Correct. So a lot of times we would host events where there's not any
+additional information to share with the guest. It'll just be the the
+act, the time, the date, that's it. So there's no reason for the Learn
+More page. So we generally keep that CTA away because there's no reason
+to have a guest click on something that's not going to show them.
+
+**Jenny Smith** 57:22 Hmm. OK. I see. Let's see how trying to see where the model is and if we
+actually have that as a required field. So I think, I think the way that
+the component has actually been set up is that the expectation was that
+all.
+
+**Terry Friedman** 57:32 Anymore.
+
+**Jenny Smith** 57:52 Events would have additional details. I understand what you're saying
+that not all events would have, but that's when we were creating it
+that like whether it's the ability to say like share it or post, you
+know, like this has the social media portion, right? Or if there was
+some information that would be captured within this detail section,
+that's why the. Default is that all of them would have an event details page. So I think
+what you're saying though sounds like that would also be a gap where
+the desire would be to not have this displayed at all. So right now that
+functionality is not available, but that can certainly be identified as
+one of the gaps.
+
+**Terry Friedman** 58:33 Thank you.
+
+**Jenny Smith** 58:34 Yeah, OK, all right. OK, so that is the content fragment card list
+component. I'm going to now go on over to the header and footer
+specific components since those are related to shared content. So we are actually within a footer right now for San Diego. I see this
+is an open tab, so let's take a look at this one. Um. OK. And actually, yeah, that's right. I remember, I remember we talked
+about this when we were talking about, you know, experience fragments
+and experience fragments. Gonzalo, I believe you and the team had wanted
+when when you guys were putting in like the forms and such, correct me
+if I'm wrong, but you guys had updated. Experience fragments in order for for this form to appear. Is that
+correct? Yeah.
+
+Cal Nelson (customer)** 59:27 Correct, correct. The goal was that we needed to have this form on every
+page and that is why I think the experience fragment was the right
+choice. And because what's on the bottom of the of the page would say
+like why don't we reuse the footer to make it happen and it it came out
+really nice.
+
+**Jenny Smith** 59:33 Mhm. Yes. Uh huh. Yeah, so yeah, this is a absolute perfect example of experience
+fragments within experience fragments. So now if if Gonzalo, if you and
+the team, if you guys ever need to like change anything within here
+instead of changing it within the footer experience fragment, it would
+just be within this location. So glad to see. That we see in a live example in action. That's wonderful. All right.
+So moving on to some of the different portions of our footer. Again, I
+know we talked a little bit about this, but wanted to make sure that we
+covered some of the footer specific items, for example. When actually creating a footer itself, there is a specific footer
+template that needs to be used. So I'm I'm here at this root level.
+I'm not actually going to create it, but if I were to create experience
+fragment, typically when it comes to headers and any of those examples
+that we talked about like this. This one here when I was making up that fake benefit card, you would use
+the customer blank variation. The reason why is because this is going to
+this is the specific experience fragment template that we created which
+has all the components that you guys are accustomed to seeing. However,
+when it comes to footers and. Only you want to use the footer variation. The reason for that is
+because the footer variation experience fragment template actually wraps
+the content with the footer markup, so that's going to be visible
+within the actual like markup code, so there's no real difference. Or change in what you would see when you're interacting with the
+experience fragment, but it is specifically so that way there's that
+footer markup available to you. Additionally, when it comes to the
+footer, there was, I believe when we were discussing how the footer
+should be set up, there was. An original requirement to essentially restrict some components from the
+footer. So that's why when you add something within a footer experience
+fragment using that template, you're not going to see the full list of
+items because that was requested to restrict what was shown. So in this case here you'll notice there's there's, you know,
+certainly less than the components that are available. However, if you
+are creating a regular experience fragment. This here and I'll make sure I delete it. So this is my regular
+experience fragment using that customer variation. This is where you'll
+see the full list of things because essentially this is this could be
+placed anywhere on the page and not not just like a footer. So I want to make sure the team understood why this you see a smaller
+list when you create footers and also what you would need to do if you
+wanted to create something that had additional components in it. It
+would just be a regular experience fragment. OK, so let's take a look then at some of these footer specific
+components. I believe the only one here that would be footer specific is
+the footer image list. This is something that is. Believe visible on our hotels, but not all of them. So can someone give
+me an example of a hotel that has like the footer images at the bottom?
+Does anyone have an example at the top of their head? It's like the, I guess, like the awards and such for a hotel.
+
+Richard Ray (Director of Digital Experience)** 1:03:24 You can try Cancun. Can. Yeah, New York, Cancun or Madrid. Try one.
+
+**Terry Friedman** 1:03:25 New York. New York has one, I believe. New York has two.
+
+**Jenny Smith** 1:03:28 New York. Let's take a look at. Yeah, cool. Let's let's take a look
+at New York then, of course.
+
+**Terry Friedman** 1:03:35 And how? OK.
+
+**Jenny Smith** 1:03:39 OK, well actually yes. So this is here we go. Here is an example. In
+this case this only has looks like it only has two. We can take a look
+at the others, but for this specific one we can see here this is. All right. Um. And actually yes. So you can see here are required fields, images, alt
+text. However link is not and my understanding for that is because
+sometimes they don't actually link to like a an external URL and it's
+just simply to display the image. However with the image list as you can
+see multi field can add as many as you want. We'll take a look at. Another hotel where we can see how that's in practice, depending on how
+many images you do add. I believe the display of images. I think I
+can't remember if it's restricted to three. Or if it's two, I can't remember exactly. Let's take a look at
+another one. Then you guys said Cancun, Madrid, maybe, which would have
+a ton of awards.
+
+**Carl Aldan** 1:04:43 I think that the brand page highrock.com and the hotel it it has a
+bunch.
+
+**Jenny Smith** 1:04:48 Uh. Which one? Sorry.
+
+**Carl Aldan** 1:04:50 The main page for the hotel.
+
+**Jenny Smith** 1:04:51 Oh, OK, let's take a look at the main page then. Not header, footer.
+
+**Carl Aldan** 1:04:55 Yeah.
+
+**Jenny Smith** 1:04:59 OK, let's take a look at this. All right, perfect. Yeah, great candidate. All right. OK, so for this
+one here, we can see that I'm going to view this as published. So I
+guess is there only five? Let's take a look. Let's find out. And this is in stage, guys. This is not, this is like not in. So if you
+guys were really expecting this to look different, this is all like
+stage content. So I have 12345, all right, Yep. So I don't think we had
+put a limit within for this particular component. So of course as Hard
+Rock continues to win more wars. And such. This could certainly grow with just like with all of our other
+multi fields, the ability to change the location or the I'm sorry, the
+position of where that image is. And we'll notice here this image Max
+height. So this here is as you're having some images I guess. It depends on if you guys are pre-formatting your images or resize them
+in advance and then uploading them to the DAM. But in this case here we
+were trying to put some sort of height restrictions I believe to the the
+carousel itself. So that's what that field is. We do have the image
+position tab just like we have everywhere else. As we've talked about, you can see in this instance it's not being
+used, but this particular component, I don't know if we're actually
+using it outside of the footer, but this is one of those specific
+components that we have allowed for use within the footer itself. So that's where you have it here, the footer image list. OK, let me see
+what else is here. So we footer, footer image list, social media.
+That's also something that is captured here within the footer, although
+this can certainly be used in other locations. In this case, I think we are aware of of how you know this component
+works since we had seen it before. The main thing though I think that
+can differ and and what you'd see be different across properties is the
+two column view or the inline view. Inline of course. This means it's just one line, and that would probably be something you
+would want to consider if there's like, say, an odd number of social
+media icons here. And so as you're reviewing the footer experience
+fragments for some properties, you might see a different style variation
+being selected. OK.
+
+**Terry Friedman** 1:07:33 And Daniella, for these, for those award images, 'cause I know we
+currently have them set up a specific way, is there any specific specs
+that you may recommend or anything that we can use for these images?
+
+**Jenny Smith** 1:07:33 So those, yeah. Mhm. Mhm. Let me see if that's so that's as we're reviewing the component spec
+list. Let's see if that's on there. I know we had put a logo on here.
+Let me talk to the team about. Oh, here we go. Image list, awards,
+carousel, Flutter, 96 pixels. So I it looks like we have provided that,
+but again, we're reviewing. This page to confirm the information on here so you can see that's
+already here, but we'll confirm that for you.
+
+**Terry Friedman** 1:08:12 Perfect.
+
+**Jenny Smith** 1:08:13 Yep. All right. OK, going back to our confluence page. Any questions
+though about the footer in in general that a lot of these components
+with the exception of the ones I called out, you're you're using it
+already across multiple pages on the site. Um, but anything you know about footer in general that that you guys
+have any questions on?
+
+**Terry Friedman** 1:08:40 Nope.
+
+**Jenny Smith** 1:08:41 All right. OK, let's move on to the top where the header is our other
+main experience fragment that's been established. OK, I'm gonna go to actually, let's go to since we are reviewing
+careers. Let's take a look at careers and see how what's being set up
+there, OK? OK, so here is our careers header and we know that there are different
+parts to the header. We have the header in general, which is this whole
+entire component. So this is this encompasses the entire component which
+is made-up of our crowd navigation. Our crown CTA and also the main navigation. So clicking on the crown
+navigation as we can see here, in the case of the career site, we know
+there's only one label and that's why this has been, excuse me,
+that's why there's only one thing here. However, for say like the. Corporate page. I believe there's multiple labels that are being
+displayed, so this that's why this particular component is using a
+multi field. So if you need to ever change this and say link it to
+something else, this is where you would go crowd navigation. Crown CTA, which is this ortion here on the right. We have our different labels, returning applicant login, team member
+login and then the search for jobs button. And you'll notice here the
+different experience selectors CTA with the color of this. You also see
+CTA with color of this. And then this here is a CTA, but no color has been selected because by
+default CTAS will display with this background. So what I'm trying to
+highlight here is that the experience selector is all the same a CTA.
+However, if you need to change the appearance, you do have some
+flexibility with that by using this color selector field. OK, each of these within the Crown CTA we have the different link types,
+so you have a link. So of course a link would link to whatever is
+located here, but you also have modals, modal small, so depending on
+what size you want the modal to be. These would be selected and then what would be put within the URL field
+would be the specific experience fragment that you say would want to
+display in the modal. So in this case here. And careers, we don't have that. I will look for an example where we do
+have that since I don't want to mess this up, but just showing that
+links are typically I believe what you guys are using across most of
+your sites. However, when it comes to like hotels, I think that would be
+the book your experience model. So we can take a look at like a hotel
+navigation to see how. Modals being used with our experience selector. CTAs, as we all see, are
+basically going to be buttons or links that take you to a location, but
+you also have the sign in functionality. The sign in is actually what
+calls the modal for Unity. As we know on the hardrock.com website, this particular button displays
+this iframe of Unity within here that was set up by actually clicking on
+the sign in. Experience selector. You also have your drop down which can be displayed
+as a CTA, a map marker or a language selector. So these are the
+different icons that would display and then you would be able to add
+list items underneath that. Cycle. The map marker and then I can create a list that would appear after I
+clicked on that map marker, I click on the language selector icon and
+then I would put the different languages that I want along with the
+URLs, etc etc. So these are being used across I believe some of the
+other sites, not this particular one, but just wanted to make sure the
+team was aware. Like when these would be used and how to access that. Then we also have
+help which displays a help button and then the help button would link to
+whatever is here and then finally an author unique ID. Which in this case we don't have that, but this would be a way to be
+able to assign an ID that would then be added to the markup for this. OK, so let's take a look at. Actually, I want to. I want to show one
+that has a modal. I want to show one that has a modal. So let's go to
+hotel. I would assume this one has one. OK, this has a lot. All right, it's perfect. Alright, so as we saw exactly what I mentioned Unity. In order to
+display the Unity modal, I'm sorry, iframe sign in is selected. Learn
+more about our best rate guarantee. We've used the image. Oh yeah,
+there's an image field here which you can see is clearly being used.
+This best rate guarantee image. We're saying it's a CTA so that way when you click on it, it takes you
+to this page. Our book now button also a CTA. It has the modal. You'll
+see the modal is pointing to the book now experience fragment. Unity loyalty program. This looks like it's just a link to the Unity
+website, so that's why CTA was selected. And yeah, so this essentially
+is this is showing the majority of the items, you know, like a
+combination of the different items that we just reviewed. And we can actually take a look also at this ground navigation. Just to show, I think there was a small change that we have made where
+the pipe no longer shows that there's only one items that's now being
+reflected in the careers websites. There's only one link, but of course
+if there's additional items to the right of that, the pipe will appear
+and then anything underneath the first item. We'll just display to the right of the pipe, right? Hey. All right, and finally for the header, main navigation is a big one.
+This is essentially where you would put your everything that's in this
+section, including the drop down menus that will appear under each
+individual links. Of course on this logo tab, this is where you set your logo and also
+what link you would point to. We know that location address and reverb
+is reverb. This is something that we would see for the reverb headers,
+so it's just using the same component but with with this checkbox
+essentially in place. So it's styled that specific way. For the main navigation, this is where we are putting all of our links
+here along with secondary navigation, also tertiary navigation. I'm
+trying to remember which sites use that, but essentially as I hover over
+destinations. This is where I'll see anything that's here in this portion, and if I
+need to go a little bit deeper, I can. However, I believe in most cases
+I think we're only using secondary navigation for most navigations. So
+yes, a lot of multi fields in place in here since. There's a lot of links that need to go in the navigation, but
+essentially you know this is I think where you would likely have to
+spend the most time to update links when you're adding new pages or
+removing pages, and also if you need to prioritize ordering. Of these different pages, finally the mobile slash tab. What this is
+showing here is I believe when you're actually just in like a smaller
+break point, there's going to be a. Let's actually take a look. So if I were to expand this. You can see that text. So if you want to put say like back or back to
+main NAV or whatever, that's where that text is appearing for that
+specific field. Alright, OK. Any questions about the header in general? Because I know
+that you know this is the headers already header and footer are both
+already being used on say the reverb site, the corporate site. Not sure
+if the team has had to update anything as of yet, but just wondering if
+there's. Any questions about the authoring portion of that? It. OK. OK, so let's see here. OK, so tabs.
+
+**Burt Jones** 1:17:52 Did you did you cover everything, Daniella?
+
+**Jenny Smith** 1:17:54 I think I did. I didn't put. So we talked about content fragment
+models. That's not something that was listed here. It was more like
+general, but we did go over content fragment card list as well. Frage
+fragment, yeah. So these are all the items that are essentially within.
+
+**Burt Jones** 1:17:58 OK.
+
+**Jenny Smith** 1:18:14 Your header or footer. So I yeah, so I covered what I wanted to. So
+turning it over to the team, anything in particular that you guys had
+questions about. Carlos, I see your hand. Go ahead please.
+
+**Carl Aldan** 1:18:29 Yeah, Daniela, I have a question related to the content fragment events.
+Is it possible to copy one event, one content fragment in order to
+create a a new event?
+
+**Jenny Smith** 1:18:35 Sure. Is it possible to create? Sorry, let me I'm gonna. I'm gonna just
+navigate to our. OK, you're asking if I'm just gonna oops, didn't mean to click on
+that. I'm just gonna change the view here back to column view. You're
+asking if you can copy an event content fragment, is that correct?
+
+**Carl Aldan** 1:19:04 Yes, because what I understand is that we are going to create the
+events, let's say for our content calendar events. And then if if I
+have a similar or the same artist presenting the same show but in a
+different date, can I copy and paste that?
+
+**Jenny Smith** 1:19:08 So. Mhm.
+
+**Carl Aldan** 1:19:24 Enter.
+
+**Jenny Smith** 1:19:24 Yeah, so you should be able to copy and paste and you'll notice that
+now there's two versions. If you look at the name, wait, but one
+second. OK, sorry, I zoomed in. If you look at the name, you'll see
+that the name says day one, right? Whereas the original version does not
+have.
+
+**Carl Aldan** 1:19:36 Ha. Yeah.
+
+**Jenny Smith** 1:19:44 So this is indicating that this is a copy and then if I were to open
+this up, so I'm going to click on this and I'm going to click on edit.
+It's going to have the exact same information and then obviously you
+know like say this is a new date then you would want to change whatever
+you know you want to change.
+
+**Carl Aldan** 1:19:59 Mm-hmm.
+
+**Jenny Smith** 1:20:02 And I would recommend though, you know, like for ease of use, you can
+also don't forget you can also rename your content fragments, right? So
+hang on, sorry, this isn't the way. Yeah, so you can rename your
+content fragments by selecting it, clicking on move and then.
+
+**Carl Aldan** 1:20:10 Yeah.
+
+**Jenny Smith** 1:20:21 Changing the title to whatever you need. You can also actually change,
+you know, like we saw the one because that's a copy. You can also
+change that too. You just need to make sure that this is, you know, not
+the same as like a different content fragment, right? Or else that's
+that's not going to, it's not going to work. But yes, you can
+certainly copy things as like a starting point.
+
+**Carl Aldan** 1:20:35 Yeah.
+
+**Jenny Smith** 1:20:41 or whatever and then changing the relevant information and also even
+changing the title after you copy it.
+
+**Carl Aldan** 1:20:47 OK, awesome. Thanks.
+
+**Jenny Smith** 1:20:48 Mm-hmm. Any other questions?
+
+**Terry Friedman** 1:20:53 I got a few questions here Daniela for the for the main navigation is is
+there any? Can you explain like what the is reverb does exactly again?
+
+**Jenny Smith** 1:20:56 Sure. Yes. Yeah, absolutely. Let's navigate to our experience fragments and I'm
+actually going to open up reverb one. I think Atlanta might be a good
+should have it. Alright, so. This has OK, so first to this field location address you can see how
+that translates to reverb right? And with is reverb the navigation for
+reverb is slightly different right? So like our navigation and keep in
+mind this is the experience fragment so if. We actually view the site. I'm gonna pull the site over as well from
+stage. So you can see how it actually looks. No, not that. I'm at Atlanta, I think. Yeah, I'm at Atlanta. OK. OK. All right, OK, so just to be clear, you may be like, wait, why is it
+styled this way? This doesn't look the same. So the experience like the
+theme has not been applied to the experience fragment because if you
+guys recall, you set the theme at the level in sites. So that's why some things might look a little bit different, but as you
+can see, like the font is pulling in what's correct for the reverb
+theme, etcetera, etcetera. So don't be alarmed when it doesn't look
+the same, it's because the theme is applied at the site page level. All right, so the is reverb, essentially what it's saying like the
+navigation for reverb is obviously different from the navigations from
+like the Hard Rock website, et cetera, right? So like this is just
+saying when I have is reverb checked everything that I'm putting. You know, like in the main navigation and such is going to be structured
+this way and like you know, like appear like as in the hamburger versus
+like across the website, etcetera, etcetera, right. So that's why is
+reverb was specifically made because while the reverb navigation, you
+know it's it's a navigation just like every other site, there are some
+different. Differences between reverb and like corporate or reverb and hotels,
+etcetera. None of those need it because their navigation is pretty
+pretty much the same and how the component you know like is technically
+built, but reverb just had to be an exception. That's the only reason
+why this checkbox is here specifically for the reverb sites. So you're not going to use this outside of anything that's not reverb.
+
+**Terry Friedman** 1:23:36 OK, cool. And then you just mentioned something about how the child, the
+child pages inherit the the main theme for the site. Is there any way
+you can change it to where we can have the child page have a different
+hero, I mean, excuse me, main navigation or footer?
+
+**Jenny Smith** 1:23:44 Yes, yes. Let me confirm what. Yeah, let's confirm what you're saying. So let's
+take an example of like, say, actually the Hard Rock website, right? OK,
+let's see. Is it set at this level? One second. OK, so at the Hard
+Rock.
+
+**Terry Friedman** 1:23:54 Or is that just basically manage? Yeah, how how would you manage the? Mhm.
+
+**Jenny Smith** 1:24:10 Level. I'm sorry, the Hard Rock EN meaning the language, the English
+language website, the home for that. I have my theme set Hard Rock and
+then also have my header experience fragment and my footer experience
+fragment. So what this means right now is that anything underneath here,
+all of these are going to have that same experience fragment you're
+asking for like. Say our history to have something different. Is that correct? Like a
+page like this?
+
+**Terry Friedman** 1:24:34 Oh yeah, or just the just for the header or footers to be different on a
+child page versus the actual prior page itself. So let's say you'll
+have a subpage cafe that'll have a different header or just an as an
+example.
+
+**Jenny Smith** 1:24:44 Hmm. So. So right now, so based off the structure of this, because this child
+page is underneath this home page where the theme and the navigations
+are set, it is going to inherit. This is using the open page template,
+yeah. What it sounds like you're asking is instead of it inheriting, what
+might make sense for like the future is to have a slightly different
+template which doesn't necessarily inherit the information that was put
+in the properties of this page. And so that template could be built to say, you know, have an experience
+fragment built directly into that page templates. That way the user
+would then select which header and footer to use. So right now, because
+you're using, we're using page templates for all of our child pages,
+you don't have to. What I'm saying is. The thing is you could theoretically create a new page template to
+essentially have the requirements that you just described to me. We just
+don't have that right now.
+
+**Terry Friedman** 1:25:53 OK, OK.
+
+**Jenny Smith** 1:25:53 Yeah. So it sounds like what you're describing would be a could be a
+new template in order to be able to to kind of break that inheritance,
+but still live amongst the same level as the other topic. Does that
+sound right?
+
+**Terry Friedman** 1:26:05 Yeah, that sounds about right.
+
+**Jenny Smith** 1:26:06 OK. OK. Yeah, that's what my recommendation would be for that then. And
+I think we are going to be going over page templates. So maybe what I
+can show kind of similarly to what I was doing for that bio biography
+contact factor model I was just demonstrating earlier. I can perhaps demonstrate like you know like a template and like some of
+the decisions you would be making when creating a template and how that
+could potentially be built out.
+
+**Terry Friedman** 1:26:38 OK.
+
+**Jenny Smith** 1:26:38 Right. OK. Um. All right, so let's take a look now at. So we've covered this, so some other items we're talking about future
+sessions I did have on the radar since I wanted to make sure we covered
+as many of the content fragment model related components possible. I did
+have on the radar news. I believe the team is probably already used to news, but can certainly
+cover you know different the different components again as well as the
+the specific templates. I also had locations which I think we were going
+to try to cover sometime next week. This is for the location content fragment, menu content fragments. Since
+those are currently existing in the system, we're going to go over how
+these specific content fragment models relate to some of these
+components and then also some components you guys are familiar with with
+the hotel websites. Like booking widget offers destination search and filters. And then also
+I think we've seen the Google map, the location list used on certain
+other parts of the the corporate site as well as potentially using the
+Google map on the careers website. So this is something these are the some of the topics that we'll be
+covering in some future sessions tomorrow and I think hopefully early
+next week. And then I think after that we'll move on to things such as
+like page templates and then also take a look at the other components
+that are not necessarily content fragment model related. But certainly want to make sure that they are covered. So yeah, this is
+what I had for today. I do see the time. I think Luke, anything else
+that you want to add?
+
+**Burt Jones** 1:28:35 No, I don't think so. Thanks for flashing those future topics,
+Daniella. I think that was helpful as well. I don't have anything else
+to add. John Zimmerman, I don't know if you're active. Is there any, you
+know, updates technically that you have?
+
+**John Zimmerman** 1:28:51 No, I think I'm good.
+
+**Burt Jones** 1:28:54 OK. Yeah, Danielle and I think we're good from our side.
+
+**Jenny Smith** 1:28:56 OK, sounds good. Then I'm gonna flash the KT calendar again though,
+just so the team is aware the location of it and what we have planned.
+So typically we don't necessarily want sessions on Friday, but we are
+making exceptions since we weren't able to have it last week. But you'll notice here we are scheduled to begin our technical
+knowledge transfer sessions, not next week, but the week after. So
+we'll be getting more into and this will be particularly relevant to
+you, Gonzalo, if you're still on us, we'll be getting into more of
+those technical topics starting the week after next.
+
+**Burt Jones** 1:29:34 Yeah, and that's a good, that's a good call out, Daniella, Scott,
+because those are morning times and the morning can be tough for both of
+us. I'll work with you asynchronous. Maybe we can get the placeholders
+on for technical enablement in the adoption sessions so we can get them
+on the calendar sooner.
+
+**Jenny Smith** 1:29:34 Right.
+
+**Greg Scott** 1:29:53 I would say send it out sooner instead of later, Luke. Exactly. Yeah,
+yeah.
+
+**Burt Jones** 1:29:54 Rather than later. Yeah. So I'll ping you what my thoughts are for those morning calls and
+then we'll go from there. Yeah.
+
+**Greg Scott** 1:30:02 Yeah, yeah. I think people will make room for to be there. If Gonzalo is
+here, I mean, you can ask him where we finish early. You know, he's
+here. Yeah. So like the early ones, Gonzalo, the week of March 9th,
+would that be a problem?
+
+**Burt Jones** 1:30:03 OK, sounds good.
+
+Cal Nelson (customer)** 1:30:11 I'm here.
+
+**Greg Scott** 1:30:18 If we did like 9 to 11.
+
+Cal Nelson (customer)** 1:30:21 No, that's fine.
+
+**Burt Jones** 1:30:23 OK, yeah.
+
+**Greg Scott** 1:30:24 OK, there we go. Team player. Told ya.
+
+Cal Nelson (customer)** 1:30:26 Yeah.
+
+**Burt Jones** 1:30:26 Yeah. So Andy and Vinay will be like co-leading those. That's the
+reason we're doing them in the morning. So Vinay can participate. OK,
+yeah, sounds good. So I'll work to get those on the calendar, Gonzalo,
+and you guys can see those and you'll know it's kind of a blitz week,
+the March 9th week. OK. So thank you for that.
+
+**Greg Scott** 1:30:46 Yeah.
+
+Cal Nelson (customer)** 1:30:47 Thank you.
+
+**Burt Jones** 1:30:48 Yep. Alright, cool. Yeah. Danielle, thanks for doing that. Yep, I I have
+the next action for that stuff. Thanks.
+
+**Jenny Smith** 1:30:50 Alright. Thank you very much. OK.
+
+**Greg Scott** 1:30:53 Cool. Beautiful.
+
+**Terry Friedman** 1:30:54 And Danielle, for for next week's session, for next next session we
+have, would you be able to provide us some examples of possibly a footer
+with a search query and a footer that uses the tag as a component as the
+options?
+
+**Burt Jones** 1:30:54 Alright, thanks.
+
+**Jenny Smith** 1:30:55 Yes. Sure. We're talking about for the footer like what? Like, oh, are you talking
+about like for the list of links?
+
+**Terry Friedman** 1:31:09 'Cause I I think. Like in the list component settings when we have, yeah. Is there any way
+we can maybe explore that? I'm not too sure if you have one off hand
+already.
+
+**Jenny Smith** 1:31:20 Sure, yeah. So let me confirm. We say footer with list that shows tag
+query and then also what was the other one?
+
+**Terry Friedman** 1:31:29 One was the search query and one was for tag.
+
+**Jenny Smith** 1:31:32 Search query and text. Got it. Awesome. Yeah, no, I'll take note of
+that and try to either find examples or create some new ones, certainly.
+
+**Terry Friedman** 1:31:40 All right, thank you.
+
+**Jenny Smith** 1:31:41 Alright, awesome. Thank you guys very much. Hope you guys have a good
+rest of your day then. Thank you everyone. Goodbye.
+
+**Burt Jones** 1:31:46 Thank you, Daniella.
+
+**Terry Friedman** 1:31:46 Thanks. Thank you.
+
+**Burt Jones** 1:31:49 Thanks.
+
+Greg Scott** stopped transcription
+
+## Session: News — 2026-02-20
+
+**Customer Vendor Knowledge Transfer-20260220_130127-Meeting Recording**
+
+February 20, 2026, 6:01PM
+
+1h 19m 41s
+
+**Burt Jones** started transcription
+
+**Burt Jones** 0:08 All right, Daniella, I think we're we're off and running on the
+recording. If you want to start by just sharing the agenda for today's
+call, we can get started.
+
+**Jenny Smith** 0:15 Yeah, sure thing. OK. All right. Good afternoon, everybody. Let's see
+here. OK. So for today, since we are continuing to cover anything that
+has a content fragment, I was moving on to the news content fragments. Related components. What I'm hoping to do today is actually show you
+guys how you would go about creating a brand new news homepage. So this
+is going to be relevant for say like for example if you guys had career
+specific news that you wanted, you want to add a careers news page
+specifically to the career site. We've seen how that works in the corporate website, but how do we start
+that from scratch? So going to walk you guys through that and I also
+want to spend a little bit of time at the very beginning though to
+address some of the questions that came up yesterday. Starting with I think Edwin, you had asked a couple of questions,
+especially at the very end with regards to showing a list that pulled in
+tags and also a list that pulled in based off of the search in query. So
+I wanted to go over that really quickly first. OK, so if I'm not mistaken, you had asked specifically for the footer,
+but I did want to confirm we are talking about the list component. In
+this case here the list component is in the footer, but of course the
+list component can be used outside of the footer and so just wanted to
+confirm that is like that's what you were.
+
+**Terry Friedman** 1:49 Correct.
+
+**Jenny Smith** 1:49 You're asking about the list component in general, is that right?
+
+**Terry Friedman** 1:51 Yeah, that's correct.
+
+**Jenny Smith** 1:53 OK, sure. OK, so this is my little fake footer that I have in my
+training folder. So I made a copy of the an existing footer. What I'm
+doing here is in my list component I have shown an option for tags. So I created two training tags, one called events and one called
+calendars and you can see here that I have selected the parent page of
+this location and I'm saying OK anything that has this these two tags
+applied to it underneath this location I want you to just. Display it within my list. So I've selected match all tags and so right
+now you'll see I have one page that's showing up and we can take a
+look at that page and see what's actually applied to it and why it's
+coming up. If I were to change this to any tag, now it's saying OK
+underneath this section here, find anything that either has this. Events tag that I added or this calendar tag. So I'm going to click
+done and so now you can see I have 3 pages so they either have one or
+the other tag. So let's take a look at where I created the tags as a
+refresher for the team. I'm going to click on vendor Experience Manager and then the little
+hammer and then tagging. I created a new namespace for training just so
+that way it's not something that you guys would you would because you
+guys won't be using these are just for training purposes. So I created
+a new namespace for training and then I created these two tags. One called Events and one called Calendar. So now that those are
+available here in tags, when I go back to the sites section where all
+the pages are located, I'm just going to navigate to my training
+pages. Under corporate and then under careers in English. So these of course
+are the pages that we've kind of been going over. I'm going to open
+up, I think it was calendar test and I'm just going to click on
+properties and you'll notice here under tags in the basic tab, I had
+added those two tags. One for events and one for calendar. I can, you know, add whatever I
+want and I can also add multiple at a time to this page in this case. So
+I've just selected these two. So that's why when you. Where's my page? Oh, here it is. When I selected this tag and this tag and I said match both tags,
+that's why only this page calendar test is what we're expecting to see
+will show up in this list. However, if I have selected any tag. That page will also still of course show up because it has one or the
+other tag, but then these additional pages showing up because it has
+either the event tag or has the calendar tag that I created applied to
+it. So any questions about the tagging, how tagging works with the list
+component?
+
+**Terry Friedman** 4:56 Yeah, so when it comes to tags, we occasionally have some pages or
+events or any, you know, content in general sometimes has tags where we
+want to exclude them from a list. Is there any any option that we can
+maybe exclude certain tags from this list from appearing?
+
+**Jenny Smith** 4:57 Mhm. Hmm, so let's see. So let's take this for example. Pretend that it has
+another tag like I don't know, like something silly like do not use
+right? But it still has events in calendar. So what you're saying is I
+want to show anything with events in calendar but nothing with do not
+use. Is that an accurate like?
+
+**Terry Friedman** 5:31 Correct, correct.
+
+**Jenny Smith** 5:31 Um, useless. OK, OK, um, so hmm. I don't think out-of-the-box it works that way. What this is doing is
+is like I just showed it's building it based off the tags. It's not.
+It's not excluding, it's more matching. Let's see. I'm trying to
+think of a. Can you give an example of um like like like what's a real example like
+of A tag that might be something you want to exclude but it would still
+have the other tags?
+
+**Terry Friedman** 6:05 So for an example, we would have a promotion pages set up where one
+promotion page is specifically excluded from appearing on the landing
+page just because it's something that maybe the property uses off off
+site, so they don't want general public to be able to view it. So they won't show it on the website, but it'll still be up here in
+the back end. Um, but it'll still be elicited as a promotion. So like,
+that's one of the things, yeah.
+
+**Jenny Smith** 6:31 So is it to confirm, is it a pub? Would it be a published page and and
+something that would be indexed or is it OK, so it's it's published,
+but just not something you necessarily want to feature on the home page,
+but it would still have these appropriate text to it. OK, let me take
+that use case back.
+
+**Terry Friedman** 6:39 Correct. Correct.
+
+**Jenny Smith** 6:51 To the team right now, the way that this works as we just showed is
+based off of matching the tags. But I I understand though what you're
+trying to look for with regards to excluding. So I'll I'll see what we
+can, what we can do if that's something that's possible currently with
+this. All right, yeah, OK, so let's now go to search. OK, so with search,
+what search query is doing is you are putting any text here and it's
+actually going to match or look within.
+
+**Terry Friedman** 7:09 Awesome. Thank you, you know.
+
+**Jenny Smith** 7:25 The title, the description, the page properties, but it's also going to
+be looking on things that are actually on the page itself that might
+match this query. So in this case here I'm saying OK, search it in this
+specific folder, anything that has KT in it. And I hit done and so you'll see OK, it makes sense that these KT ones
+are appearing. However, why is KT appearing on calendar, calendar, test
+and test page if we were to take a look at these pages and we can do so
+right now. The reason why is because somewhere on this page there is something
+referencing KT on it because the query is looking for any sort of text
+or any anything like a component or something that's referencing the
+phrase KT. So that's why and if if you guys want to see actually. I realized it's because this folder path is pointing to my KT folder
+path. That's the reason and it's also pointing the KT event this
+particular page. That's the reason why this page is actually appearing
+here. The search query is specifically looking again for properties and
+anything on the actual page itself that is referencing this. Specific term. So if you need something that's again a little bit more
+specific, tags is a good way to be able to make sure it's only things
+that you have tagged. Of course, we're going to look into that other
+use case Edwin you mentioned if you need only say like very, very, very
+specific things to show like a list of five. You have that option of course for your fixed list and then for child
+pages. This of course is you would select which page at what level. In
+this case I'm going to show at my. English level is going to show a list of everything and it's going to
+of course list every single page here, and it's not going to list the
+child pages because I only said only take the first level. So there are
+a couple of options where of course you know you're able to show
+whether it's all the child pages in the location. A very, very specific list of pages that you want to show anything that
+might match a certain term, but keeping in mind it could pull in things
+that you might not intend if that particular text is on on the page
+itself, and then tags in order to pull in anything that was tagged at
+the page property level.
+
+**Terry Friedman** 9:51 No, Daniela, with the listing function, is there anything that dictates
+how many elements up here before it splits into two columns? Or is this
+is it just?
+
+**Jenny Smith** 9:54 Mhm. Um, so let's. So yeah, so we have a number of columns for list items.
+In this case we have two. Your question is if you were to have like say
+like 6 or something, how would it display? Is that what you're trying
+to?
+
+**Terry Friedman** 10:02 How was? How was that? Yeah. Yeah, how is it? How are you dictating whether you know what items are
+appearing in what columns? Is it just a?
+
+**Jenny Smith** 10:21 Oh, I see. OK, so this is actually going to be going. So you'll you'll
+see this list calendar, test KT calendar, KT career. So this is in
+alphabetical order. I am able to order it by the last modified date. So
+it's looking at the title of the page. I have selected order by. Title or I could do by last modified date depending what your use case
+is. So based off the column, if I were to do this as three columns, this
+might look a little wonky. Yeah, you can see it's still it's still in
+alphabetical order based off of the title, right? So 123 and then the
+next one would be underneath here in alphabetical order. Does that make sense? Yeah, based off the columns.
+
+**Terry Friedman** 11:02 OK, got it. And then one final question, since we're on the footer
+still, there's one thing regarding the image icon right there that we
+saw it. There's an option for logo styling. Could you explain what that
+is? If, if, what's the use case scenario for that?
+
+**Jenny Smith** 11:06 Mhm. Oh, let's see. Oh, my bad. The oh for this right here. Yeah, so logo
+image. If I'm not mistaken and I will check the ticket for this one. I
+believe logo image was supposed to apply a specific.
+
+**Terry Friedman** 11:17 Uh, not for the social, not for the social media, but for the the logo.
+Excuse me. Yeah, it.
+
+**Jenny Smith** 11:35 Is there a specific height or specific padding? Let me see if I can find
+that. Um, let's see here. And I think let's take a look though at when I'm pulling that up in,
+let's take a look at what we have in corporate. I I can't remember if
+that's actually set or not. Mm. Yeah. OK. So it's not set. I I think that this is something that's
+actually not necessarily set for the footer. I think it's set on the
+pages where you guys are displaying multiple logos. What is it? Maybe
+the, is it the Heels Foundation page perhaps? Let me see if I can find that, but I believe that's supposed to make it
+like a certain height and width. So that way if you have multiple logos
+on a page it it displays in a certain way but showing a logos. I think
+it's the heels foundation page. Oh, maybe not. Hmm. Hmm, let's see. I think I need to look into that one. I need to check
+the JIRA ticket to see exactly what that does, but that's not
+something. Just to be clear, it's not something that's specific to the
+footer, it's for the image component in general. I will provide
+additional information as to when you would want to use that. That and the reasoning for it, OK.
+
+**Terry Friedman** 13:17 Thank you, Danielle.
+
+**Jenny Smith** 13:19 Yeah, sure. All right. OK. So this is the list. Let me get out of some
+of these live pages. I don't want to touch anything in the corporate.
+Go back to my training and let's see. I think you will. There was
+another question, Edwin, that you had that I wanted to show really
+quickly. Just about the transparent backgrounds for what was it? The content
+fragment card list and I just wanted to show the content fragment card
+list is actually inheriting all the actually no, I have something for
+this already. It's inheriting all of the styles from the cards itself, so it's so
+it's not something that's unique to the content fragment card list.
+Just to be clear, it's um. It's one of the styles that's on the cards and the purpose for it. Uh,
+here we go. OK, so if you have and excuse the crazy colors, but I was
+trying to show it. If you have say a default card, I'm sorry if you do
+not have like a specific card style. So like with tertiary, like you can see that the background can be set
+to transparent. If I uncheck transparent background, you'll see that
+it's white. If I set this to default and let's say transparent red. So
+it's not it's not with default, it's with I believe primary button so
+you can see a transparent background affect that. Hopefully you can see that. Sorry. Yeah, hopefully you can see that. And
+then also with the tertiary tertiary style, if you need to have it be
+transparent for whatever reason, you have that ability to do so. So I
+think what if you were looking at a list, it might have had certain
+things. It might have had say like the default overlay horizontal. To apply and transparent background is like it doesn't do anything. So
+transparent background is specifically for like the primary button and
+the tertiary link styling that's here. If you need to have say like a
+different background color coming in and say you don't want that
+default white, that's what the purpose is for. Yep. All right. OK. So I also know I saw the the list of questions for
+the shared data page. I had only taken a look at a couple, so we'll
+continue to review that and if there's a.
+
+**Terry Friedman** 15:24 OK, got it. Thank you.
+
+**Jenny Smith** 15:40 Anything else we can show for that? I can certainly do that. But oh,
+sorry, Edwin, there's one more thing I know that you asked. It was
+about the redirect made URL. I did want to provide some documentation on
+this that you'll be able to see so. The difference between a redirect vanity URL and just adding the vanity
+URL entry is that the redirect vanity URL will cause the vanity URL to
+behave as a 302 redirect. So this is something that like I I guess it's
+dependent on what you're trying to do with the page like is this? You know, like a permanent redirect you're trying to do or is this like
+a short-term redirect you're trying to do? So there there is
+information on here. However, I realize this might be a more like
+technical topic. So I don't know if Andy's on the call, but I believe
+our plan is to talk more about the dispatcher and like redirect. Management and such in our technical enablement, but I did want to
+provide, yeah, thank you, Andy. Yeah. So I did want to provide you some
+information, Evan, from the direct documentation exactly what it does.
+However, we can certainly get more into like redirects and such during
+the technical enablement sessions.
+
+**John Zimmerman** 16:38 Yep.
+
+**Terry Friedman** 16:53 Perfect.
+
+**Jenny Smith** 16:54 Yeah. And I can, I can pass along this link to you in the chat. OK. All
+right. OK, then. So now let's jump back over to our agenda for today,
+which is news. So as mentioned earlier, we're going to go through all
+the different news templates, the news content fragments. And the various news components. And just to confirm, the authoring team
+right now is currently adding news to the corporate site, is that
+correct?
+
+**Terry Friedman** 17:25 That is correct, yes.
+
+**Jenny Smith** 17:26 OK, perfect. So in terms of like setting up any new news articles within
+the dam, I I just wanted to confirm like the team, you know, like like I
+don't think I saw anything for. So I didn't see a 2026 folder here, so
+I wasn't sure if there was. Like anything new that had been added or like exactly how the team was
+going to be handling news for the new year. So this isn't staged
+though. I didn't want to go and prod mess anything around, but just
+wondering, you know, like if the team has been adding anything new for
+the year 2026?
+
+**Terry Friedman** 18:05 That is a good question. Carlos, would you be able to answer? Yeah.
+
+**Carl Aldan** 18:06 Yes, I think, sorry, I think that we added probably one, but we are that
+is on prod.
+
+**Jenny Smith** 18:15 Yes, that's on prod. Yeah, don't worry, this is stage. I just because
+I couldn't, I didn't want to go into prod to look around and actually
+do something. So I just wanted to. OK, perfect. So yeah, so you know as
+the team has been practically doing it that we can we know what the set
+structure is for news.
+
+**Carl Aldan** 18:16 Yeah. Yeah.
+
+**Jenny Smith** 18:32 At least for corporate, I believe in pride you would see the similar
+structure except for my KT folder which I only made on stage. So we set
+up that same sort of structure also for the hotels based off of the
+property name, course and language and then the year and then the month
+and then the actual content. And so not certain if you guys are planning on changing that structure,
+but this is again of course a way to organize your content to make sure
+you're editing exactly what you want for the property that you want. In
+my case here for my KT folder, you know I was also following a very
+similar structure. I have my February item right here. So First things first, when we are
+creating new news articles for say a new line of business like careers
+or something, what you would need to do is in the dam, which we are here
+under CF and under news, you just want to create your. Folder for your line of business and then just set up something very
+similar to what I have here and then you can start creating your content
+fragments under the specific month that you have. So I'm going to go
+ahead and click create and click on content fragment. So as the team is familiar with, when I do that, I see the different
+types of models available to me. We're going to select Muse, click next
+and put my title, and I'm just going to hit create. All right, so here's my news content fragment model. You can see the
+highlighted fields or anything that's required. There are certain
+things that are not required but could still be useful. And as we had
+mentioned yesterday when we were talking about content fragment models,
+I did. I want to call out of course in the future as you guys are perhaps
+identifying say other fields that you might want to add here or maybe
+you're going to use some of the things that are previously not required
+is required. That can certainly be done. Once you guys make that
+decision, you can certainly. Certainly update the content fragment model. One thing to keep in mind
+though is of course if you are say making like the author field required
+suddenly and then there's content fragments that do not have that
+value, that's the kinds of considerations you need to make. So
+certainly a new field making a required that's not. Don't necessarily cause issues, but definitely want to plan and make
+sure that before you create a content fragment model and before you edit
+one that you have a clear understanding of of what field you want. Some
+other things that you can do as we saw yesterday is say for your author,
+say you know that right now it's a text field. And it's not required. However, say in the future you have a Bank of
+authors that you might want to, you know, set as your own content
+fragments with like their bio or something. This could potentially be
+updated to say a content reference field to then be able to select an
+author and all their information. Versus typing in the same name over and over again. So just trying to
+give you guys some ideas of like what can you do to essentially create
+additional models, like what are some considerations to take and how to
+make it, you know, more like shared content, which is what we were
+discussing yesterday. Carlos, I see. No, go ahead.
+
+**Carl Aldan** 22:05 Yeah, I I see that the image field there. So can can this content
+fragment include the default image?
+
+**Jenny Smith** 22:08 Mhm. And the content fragment create a default image. OK, so yeah, as we saw
+yesterday, so I don't think a default image was set. However, let's
+see here. So that can certainly this is what I mean. Like this is
+certainly something that that can.
+
+**Carl Aldan** 22:19 Just. Yeah.
+
+**Jenny Smith** 22:33 Be added in the future. Right now it's it's it's not a required
+field, but what you're saying, Carlos, is that the expectations that
+all articles would have an image. Is that accurate?
+
+**Carl Aldan** 22:44 Yeah basically because when when you publish A blog article then there
+is the this feature that display that the new one on the website on the
+landing page on the main page of the site. So it requires to have an
+image if if we if we publish A blog without without image then.
+
+**Jenny Smith** 22:49 Mhm. Uh. So are you talking? Yeah.
+
+**Carl Aldan** 23:03 And we have to do, we have to add something.
+
+**Jenny Smith** 23:06 Just so Carlos, just to confirm, are you talking about this? Let's take
+a look at the Hard Rock website and I just want to confirm which section
+you guys are talking about. So I'm here on the news page, the blog
+page. Are you talking about like these images here?
+
+**Carl Aldan** 23:19 Yeah, that one. Yes.
+
+**Jenny Smith** 23:25 OK, so just to be clear that so this here, this here is a new search
+result component and I'm going to jump back over to my page. That's
+this this component. You can set a default image at this level.
+
+**Carl Aldan** 23:38 Yeah.
+
+**Jenny Smith** 23:42 And so that would appear for any content fragment based off of what
+I've what I've like configured here. Any content fragment that
+doesn't have an image will automatically display this image within this
+view. Is is that so is this what you're this is what you're referring
+to correct cause like.
+
+**Carl Aldan** 23:57 Oh, OK. Yeah, that that would be a solution, yes.
+
+**Jenny Smith** 24:01 OK, OK, cool. Because yeah, we can take a look. This is the test article
+I had made earlier. So we can take a look at that test article. Let me
+pull this up here. So my test article, I believe, was my was my training
+article. I think it was this one. Oh, Nope, sorry, it was my. News article so that so you'll notice my title is is slightly different
+from what my title of my actual article is. But yes, so this is the test
+article and you'll notice here I left the image and the image alt text
+blank, but I set the image at that component level so that way something
+would. Appear here in the new search results. So hopefully Carlos, that answers
+your question on how to have like a default image for anything that
+doesn't. If you don't fill it out, as long as this is set with
+something, then that would display within this page.
+
+**Carl Aldan** 24:53 Yeah. OK. Thank you.
+
+**Jenny Smith** 24:55 Yeah, sure. OK.
+
+**Terry Friedman** 24:57 So Danielle, with the with the images, just to expand on Carlos,
+sometimes we have it to where we have default images on categories. So
+let's say we have A tag and the tag is, you know, it'll say casino,
+it'll show an image, a default image of the casino, unless if we
+override that with something else or if we have.
+
+**Jenny Smith** 24:59 Yes. Mhm. Yes. I see.
+
+**Terry Friedman** 25:17 Have the A tag that says hotel will change the image just so that The
+Newsroom is a little bit fresh. It's not constantly the same stale
+image over and over again. Um, is there kind of any kind of
+functionality we have here that can imitate that?
+
+**Jenny Smith** 25:23 Mhm. Mhm. I don't think we have the default image set based off a category like
+based off a tag. I do have a question though. So like is there ever any
+use case where like for example say you had tagged Hard Rock News and
+you had tagged like gaming? Are you saying that perhaps like there would
+be a default image for gaming and a default image for Hard Rock News?
+
+**Terry Friedman** 25:44 Mm-hmm.
+
+**Jenny Smith** 25:50 Is.
+
+**Terry Friedman** 25:51 There would be and in this situation where you would have multiple tags,
+it would pull that first tag's default image rather than the second
+one.
+
+**Jenny Smith** 25:55 Uh. OK. So it always based off of the oh, oh, based off what you selected or
+based off the outcome order. OK, OK, so like.
+
+**Terry Friedman** 26:03 Correct. Or we would override it to whatever we wanted if if there was a unique
+image that we can use for that article.
+
+**Jenny Smith** 26:11 OK, so yeah, so right now the default image is based off of what what's
+set in here. So clearly you can see it's not based off of categories. I
+I do understand what you're saying, but I think that this would one,
+this is a gap, but I think we would also want to discuss like the
+requirement that you're. Saying because like I can certainly see like you know if you have plenty
+of categories selected, now the author has to make a choice as to which
+specific default image should be prioritized to show for here. So
+that's gonna, you know that that to me is like, OK, yeah, want to dig
+deeper into that.
+
+**Carl Aldan** 26:45 Mm.
+
+**Jenny Smith** 26:50 So want to make sure that we capture that as a gap and then also want to
+make sure that you know there seems to be some sort of requirements and
+logic that are that would be required for us to like jot down for that
+one since yeah, the multiple of these articles probably would have
+multiple default images selected. So want to understand how we would
+want to make that work. Work. So no right now, but could be in the future, yes.
+
+**Terry Friedman** 27:10 Got it. Yeah, got it.
+
+**Jenny Smith** 27:15 All right. OK, so let's go back to my news article that I did not fill
+out, and let's go aptly to this category section here. So I'm clicking
+on my little field. You can see it's showing a list of. Tags here. And so to be clear, this specific field, if we were to look
+back in that tagging section, all of these tags are tags that are listed
+as news categories, so. Let's see how this was mapped, going back to tagging and I'm clicking
+on some of Hard Rock support. I'm gonna click on news categories, cafe,
+news, casino, featured gaming, etcetera, etcetera. So this particular
+field has been mapped to our actually is it this field? It's either this field or it's one of these fields. Actually, yeah,
+no, I think it is this field. OK. No, hold up please. Uh, here we go. It's been mapped directly to the
+Seminole Hard Rock support tagging section. So this namespace is showing
+all of these. Of course, in the future, if that's something that you
+want to change so that way it defaults to just news categories only,
+that's of course something that that could be. Configured by editing the content fragment model. In this case though
+there were some I think flexibility involved so that way I could choose
+other tags, but in this case I'm just going to choose some specific
+news categories and just hit select. All right, all right. So now I have three tags associated with this, of
+course, my article's title. And then my ublish date. And my image I'm going to leave blank my excerpt this text excerpt.
+This is my description. This is additional content, a different page. I'm going to fill in the
+author field, but I don't think we're currently using that. And then
+we also have here some additional tags which are different from
+categories and then we also have the page path which is. When you create your new news article, all all this particular content
+that we've stored here will be displayed on that. So I don't have the
+page path yet, so I can't put anything. And again, the LD JSON field is
+something that's on our content fragment models, I think all of them. This was a requirement, I believe, for SEO purposes, so I'm going to
+leave it alone since we're just like training right now. But I do
+believe that there are instances where you guys have filled this out, so
+we could potentially take a look at that in a bit. All right, I'm just
+going to go ahead and save since I filled out my required fields. And now I'm going to go back to my KT news page. Age. And see how it looks. So it's not going to appear in my new search
+result yet. The reason why is because I have not published my content
+fragment. So this is my previous test article that we had taken a look
+at when we're looking at the default image. But it's not showing the other one that I had published or sorry that I
+had just made. So let's go ahead and publish that right now. I'm going
+to close this. And I'm going to select it and hit my quick publish close. And if I
+refresh this I should now see two articles. Here we go. Test article.
+This excerpt test. This is a test article. This excerpt. I know this is
+the right one because I have the tags I selected. So in case like if you guys, as you guys are adding these articles and
+since you guys are working on these, you know right now, hopefully you
+guys have not like had that freak out moon where where did my news
+article go? Make sure that you publish the content fragment and then you
+should be able to see it on on this page and know this page. Not published, so no one else is seeing it. I'm just viewing it within
+my author. OK, so I can see this here and when I click on read more. I shouldn't open this in new tab. Let me refresh. OK, when I click on view as published and then I'm going to click on
+read more. Is it this one or is it this one? Uh, OK, I know what I did wrong. OK, so. So right now read more is not going to do anything yet. The reason why
+is because if I were to look at my content fragment for either of these,
+the page URL, the page path that has not been published, the page path
+is not does not have any value. It's opening up my KT training article. There's no, there's no page path, so there's nothing for me to
+actually go to. So that's why the read more button's not working. Sorry, I'm gonna close out. Let me close out a couple of these tabs
+first. All right, so let's stay here. Yeah. OK, cool. Um, so how do we, how do
+we get those read mores to actually go to a specific details page? Let's go back to our site's view O here, as the chart says Cororate
+careers EN. Here's my news page. I am going to create a new page and I am going to
+select news page. So here's all the available templates I have. I'm
+going to select news page. I'm going to click on next my title. I'm
+going to call it KT article. Oops. And I'm going to click create an open. And on this page I'm going to click edit the this particular news page
+template. What it does is it's going to have a the header and footer
+that gets automatically pulled in. You can see this experience fragment
+which is pointing to a specific image so. By default it's going to show whatever is in this experience for me.
+You can change it if you need to to something else, but this is I
+believe this is what was established for the corporate site. Of course,
+if you guys are trying to use this in other places, you can certainly
+customize it to be a different image. We also have our breadcrumb functionality here. We have a news content
+fragments component. Another experience fragment is just listed here in
+case you guys need to show, say like specific texts that's shared
+across articles. This is one place to put it. Then we also have our related posts
+component which will be pulling in any articles that have similar
+categories or tags. And then on the right we have this new search
+component. We have this category listing component and then we have another
+category listing component, but it's displaying different tags. So
+let's break down everything that we see on this page. But first
+starting with our news content fragment, I'm going to click here and I
+am going to select which content fragment I want to display. Display. In this case I want to display my. Training article that I just made and you'll see here display mode
+multiple elements being. I just want to show everything from here.
+Variation. I'm not going to touch it. There's I don't have any
+variation for this content fragment. I don't necessarily need to fill
+out the ID field. The searcher page search result page though I do need to fill out since
+it's a required field. Since I have not set up a search result page for
+my little test site. Currently I'm just going to point it to the
+existing one underneath corporate, but that's that's just for right
+now because I don't have that set up. Up. And I believe that's located here on log and search. Here we go. So
+this is just temporary, but we're going to also set one of these up for
+my little training site. So select. And hit done. So now this is going to show everything that was stored in
+my news content fragment. We can see here all those different categories
+that I applied, the date, the social share also automatically gets added
+and then here is the description portion that I had. And then the additional content, which is something that's only
+displayed on this page. That's why I put that note to myself. So all
+that is here. So this portion's configured. I'm going to ignore the
+experience fragment for right now because there's nothing that I care
+to display from the experience fragment on this page. For related posts, let's configure that. By default you're going to
+have the placeholder of related posts as the title. This could certainly
+be changed to say like related articles or other news or whatever it is
+that you want. Right now we're going to be displaying up to three cards at a time. I
+point to my content fragment path. I'm going to choose EN. And then I can have a default image if I want to, but for right now I'm
+just going to hit done. Yes, Carlos, go ahead.
+
+**Carl Aldan** 37:24 Daniela, at some point, for example that path or the one for the search
+option, those paths at some point are going to be set by default. So do
+I I don't have to look for that?
+
+**Jenny Smith** 37:25 Mhm. Mhm. So keep in mind that what I'm showing is if you were to set up a
+completely brand new news page right for like a say like a hotel or say
+a like for the career site. Since we don't know exactly what you guys want to do, like where this
+is located, This is why it's required for you guys to configure this.
+However, what you're asking though is as you're creating new news
+pages underneath the same location, you're wondering, can that actually
+be filled in in advance? So that way you don't have to worry about it. Is that correct? Yeah. So
+right now it's it's not filled in because again, like we didn't have
+any default values for this depending on where you're using this. But I
+can understand what your use case is. I think I would capture that as a
+gap.
+
+**Carl Aldan** 38:18 Yes, yes.
+
+**Jenny Smith** 38:34 With the desire to have a search result like certain fields, identify
+which fields would make sense to be essentially have a default value and
+establish like you know. Obviously if you're like if you're setting
+something up new for the first time, there can be no default value
+because it doesn't know exactly where you're trying.
+
+**Carl Aldan** 38:43 Mhm.
+
+**Jenny Smith** 38:54 Where the location is, right. So these are the kinds of requirements
+that would we would want to understand and that's why we want to make
+sure this is captured for the gap. OK, yeah, no, but that that's a I
+agree though. I understand where you're coming from, so.
+
+**Carl Aldan** 39:04 OK. Thanks.
+
+**Jenny Smith** 39:09 OK. Yeah. And so it sounds like also like like related posts, you know,
+so this is like what I would capture as well. If you know that the CF
+folder path would be the same for all the related posts and that you
+would eventually want that to have a default value, that would totally
+make sense. So we want to make sure that that's also captured. All right. So, yeah, go ahead. Sure.
+
+**Terry Friedman** 39:28 Yeah, Danielle, Danielle, sorry. I'm just thinking like if there's
+maybe some kind of logic that could be applied since we're creating
+this article underneath, you know, the Hard Rock page, it should note
+that it's coming from that path directly. That's the kind of thing
+that is that something that could possibly be addressed in the gap as
+well?
+
+**Jenny Smith** 39:38 No. Yeah, that's that's exactly what I mean. Like if you guys know anytime
+you create this news page under like you're you say, OK, yeah, I know
+it's going to be in this specific location. That could be the
+established default value and then that's what you would want to be
+stored, right? Yeah, that's exactly what I what we would want to
+understand. Mm-hmm.
+
+**Terry Friedman** 39:58 Perfect. Yeah, cool.
+
+**Jenny Smith** 40:03 Awesome. Yep. OK, so right now you can see I have no related posts and
+the reason why is because the other section where I was sorry, this
+particular folder path only has two articles and they don't have any
+overlapping categories. I'm going to actually change this really quickly to cororate and see if
+anything OS U. OK, Yep. So you can see now, yes, related posts is working because these
+particular items match the categories I have associated with this
+article. So that's, you know, just wanted to show that. So that way you
+guys understand how related posts like the logic for that in this case
+though because I'm pointing it to my little. Training folder, which has nothing in it. Basically that's why you're
+not seeing anything. But of course if I add more articles and such and
+had matching tags and this would surely be displaying things up to three
+items, since that's what's been configured. All right. The other things that you would need to configure on this page would be
+the search right now again, because this was specifically only for the
+the corporate news. That's why this was the default, but this could
+certainly be one of the things that would totally make sense. To change this instead to whatever the site that you are in to default
+there. I kept it this to to this one right now just because I don't
+have my search result page set up, but this is also something I would
+envision you would want to capture in your gap. Then here we have our category listing. Open this up and see the titles
+as categories. My search result page. Again, I'm pointing it right now
+to an existing one, but this is something I would change depending on
+where I created this specific page. My listing type. I have the option of either categories or archives. In
+this case I'm choosing categories and then I'm saying OK, find
+anything within this path that's been chosen and display all the
+categories that are in there. So if I were to change this to my. Little training folder. This is this should be a lot smaller. Yeah, so now it's pulling in,
+looking at all the content fragments in my little training folder and
+extracting all the tags that were within there. And so if we recall I
+used three tags in this one. The other one I had applied Caffe News and
+Casino News. That's why these are appearing here. And finally with this archive section. Same component category listing. It's just that archives is the listing
+type for my content fragment list path. I am again just going to change
+to KT and we can see what gets here. So right now you can see it's
+it's it's just showing EN like there's like I don't. I don't really, again, I don't really have anything associated with
+that. So that's why it's it's not actually like showing much. If I
+change it back to like say corporate, we're going to see where is it? Actually, I don't think it was at corporate level. I think it was at
+the news level. Yeah, OK, so these specific you'll see here. This is showing Roxino, KT
+Hotel and corporate. This is showing the folder structure that's listed
+here. I think if we take a look at the hardrock.com site. And we look at blog, which I have over here and see what it's like
+currently on production. So the archives are displaying the different
+years. I don't have the years necessarily set up like that on mine. But let's see. Yeah, so on this particular page apparently is
+configured a certain way, and then on some other pages it looks like it
+might have been configured differently. I'm just pulling up some other
+ones, but this is configured at both the. News article page level on the news on the news page template. This is
+the news page template and then also on the news homepage which is when
+you view the news website. So this is the news page. And then this is. This is the this is the news page template, but a lot of things are
+shared between the two with the sidebar and then of course like the
+header. So there's gonna be a lot of similarities between those two
+templates, however. The news page is for one specific article, whereas the news homepage is
+for when you were displaying all the news. OK, so that is the yes,
+Edwin, go ahead.
+
+**Terry Friedman** 45:04 So I just wanted to go over a few things on since you know it looks like
+we covered a bit with the new page template. So I'm just gonna back
+back up a little bit. When we do the create title, is this impacting
+anything like is this creating the impacting the metadata or anything
+like that?
+
+**Jenny Smith** 45:08 Yeah. Yes.
+
+**Terry Friedman** 45:20 What? What is this crew impacting?
+
+**Jenny Smith** 45:20 When you say. Which title are you talking about? This is a test article or the the?
+
+**Terry Friedman** 45:23 Yeah. Let me first create the page, right? When we're creating this page,
+right?
+
+**Jenny Smith** 45:28 OK, I see. So if I were to take a look at my properties, so the title of
+my page is KT article. So ideally what you would do in my case I
+didn't, but ideally what you would do is this would likely this is
+likely what you would want the title of the page to be. I would imagine
+right?
+
+**Terry Friedman** 45:37 Yep. Mhm.
+
+**Jenny Smith** 45:48 Visit as article. So when you're creating the page and I believe I saw
+you guys were doing this essentially copying whatever you have in the
+content fragment and then when you create the page with the page title
+and such, that's where you just, you know, paste it here. So that way
+everything is all matching for like SEO purposes, right? Like the title
+of the page as well as like the each one that's on the page. So I think that's what you guys are doing right now. In my case here, I
+was just putting something for knowledge transfer, but from a practical
+standpoint, I think you guys are likely just going to copy whatever the
+title of the content fragment is.
+
+**Terry Friedman** 46:23 OK, great. And I'm just trying to go through a few things here under
+page properties. If we go back to that, the more titles and description,
+what what is the page title used for and and like where what what is
+this being used for?
+
+**Jenny Smith** 46:24 Yeah. Yeah. Yes, sure. Yeah, yeah, sure. And actually I yeah, one second. I want to pull up the
+documentation for that cause it does a pretty good job. I I hope it, I
+hope you would think it does a pretty good job of how it breaks down.
+But I think we saw, I believe I saw in some instances you guys are
+using.
+
+**Terry Friedman** 46:41 Is this the meta?
+
+**Jenny Smith** 46:59 Different values for here. To be clear, if you leave it blank, it will
+always default to whatever like the title is. So you'll see here page
+title is typically used by title components. So when you put a title
+component on the page, it will take whatever's listed in here and it's
+going to be the default value for your title component which you can. You can of course change later. However, in most cases, like I think
+I've seen a lot of instances where this is usually left blanked and
+then just defaults whatever you have in this section here here for
+navigation title second. So it says here you can specify a separate
+title for use in navigation. For example, we want something more
+concise. If empty, the page title is used, this is empty again, so therefore
+it's defaulted to KT article. So when we're talking navigation, like
+if you're like trying to surface up like a list of a list of pages, or
+perhaps I would say like in the navigation itself and you don't want to
+have like that long article name. Or something. If you need something different, you could store that
+value here. And so that way if this, you know if this has anything
+there, it would it would default to this one versus just looking at the
+title and displaying that instead. So if you leave this blank, yeah,
+yes, exactly. That's exactly right.
+
+**Terry Friedman** 48:09 Basically like like like a breadcrumb or something like if you wanna use
+it in a breadcrumb or yeah.
+
+**Jenny Smith** 48:15 And then subtitle. So I think this here I know the subtitle for your sub
+page is kind of vague, right? I believe we can actually put something
+here. This is the subtitle and then let's take a look at the page and
+see where it displays training, but we'll take a look at that in a
+second. And then of course the description this I believe would. Would be what's displayed like in say like the like Google search
+results or whatever if you have something here. If not, I believe it
+takes like the first, you know, paragraph or however many characters
+from whatever's on the page itself. So let's take a look at where
+subtitle shows up. I'm going to view as published and I am going to actually inspect it. And I'm just going to type in subtitle and see what pops up. OK, so in here. Let's view source. Hmm. Well, I did save it here. All right, let me take that one back then.
+Edwin, let me get back to you on that one. Let's save it. This is the
+subtitle training. Yeah, let me get back to you on that one, because now
+I don't think so to be to be. Perfectly candid with you. Typically like when when I see pages created,
+most people might fill up page title or navigation title or just the
+title itself in the description. I don't there's I, you know, I
+haven't seen subtitle being used on like. A lot of sites, but I want to get back to you on exactly where that is,
+pinpoint that and then show you that way. If you guys do use that field,
+you understand what the purpose is, OK.
+
+**Terry Friedman** 50:14 OK, perfect.
+
+**Jenny Smith** 50:15 Yeah, but alright.
+
+**Terry Friedman** 50:16 Alright. And then can we go over a few more things with the news content
+fragment if you can? Um.
+
+**Jenny Smith** 50:19 Go back to. Back U and we can take a look at the content fragment itself.
+
+**Terry Friedman** 50:28 Sure. I just didn't wanna interrupt your flow of, you know, going over
+the content.
+
+**Jenny Smith** 50:29 Um. No, no, please. This is great. I just wish I was better organized with
+my tabs. OK, assets. Let's navigate back to our news. OK, go ahead.
+
+**Terry Friedman** 50:45 So with the content fragments, I see that we have a a published date for
+that. Is that specifically related to when the article will go live on
+the website or is that just when we want to display that information?
+
+**Jenny Smith** 50:50 Huh. No, but yeah, that's just so you'll actually notice if I go back here,
+if I go back to the home page of this. Oops, didn't do that right. OK, if I go back to the home page of this, you'll actually notice this
+particular article's displaying, even though it says February 23rd,
+today's February 20th. So it's for display purposes. However, you
+know, keep in mind that there is that publishing functionality. So for
+let's see here. Um. Oops. So when you manage publication. You can schedule that, but the actual published date that you are
+selecting within the content fragment itself is for the like display
+purpose. Like it's essentially the date of the article, right? So it
+has nothing to do with scheduling within the content fragment itself,
+OK.
+
+**Terry Friedman** 51:55 It's just for displaying and if we wanted to add the time, we can
+always update the content fragment model to include the time as well.
+
+**Jenny Smith** 51:57 Yeah, it's for display. Uh, yes. So right now I think we had defaulted the value to just be
+date, but if I'm not mistaken, you should be able to set like you know,
+date, date with time, that sort of stuff. Yep.
+
+**Terry Friedman** 52:15 Perfect. Alright. And then could we do a little bit deeper dive on the
+new search functionality? Um, what exactly is triggering the results
+here specifically when we use this component?
+
+**Jenny Smith** 52:20 Yes, sure thing. Yeah, so this particular component and let's create a new search page
+and then we can see and then I'm going to update this to instead of
+pointing to this version, this corporate version will point to my new
+one. Alright, so let's go back to. I'm going to close out of literally everything, if possible. OK, so this is here. All right, perfect. I'm going to create a new page
+under my KT news home and I am going to select news search template. OK,
+next this is my KT search. And OK, right create. All right, the page has been created. So on this
+particular template. As I mentioned before, things are going to be, you know, shared. It
+looks very similar to the news page template and also the news home page
+that we were just looking at just now. In this case here though, what is
+different is this news search result component. So if I were to take a look at that, I can see I can configure things
+such as how many results do I want on the page before pagination shows
+up, right? Older post label, newer posts, the no results found message,
+the read more text. I'm pulling in the content fragment path where I want all my articles
+to be. In this case I want it to all be within that KT folder. Yeah, let's do this all right. And then setting that default image
+here. Um, let's just choose anything. Yeah, sure. OK. And then I'm gonna put 5 results per page. And this is
+this seems weird, right? The search results page. It's like, wait, am I
+going to be pointing to myself? And I actually need to check this one
+here, but for the time being. I'm going to put where I have this page created which is. Select. All right, done. OK. All right, so now I can see that my articles from that specific folder
+are displaying here and that you may think, OK, well, well like like
+what is the purpose of that here? Like this seems to look exactly the
+same as what is on our home page. Let me pull up the home page for
+reference. This is the homepage for reference and it is using the exact same
+component. However, as you're searching when you're searching on the
+new search, instead of it taking you back to the homepage, you can see
+there's some additional stuff on this homepage. There's. Like the featured news, which you can put here. And then there's also I
+think, I believe there might be some additional components or text or
+something that you guys might have present on the news homepage. So
+instead of having, you know all this information here at the top. Before your users actually get to the news search results. That's why
+there's a separate page which essentially like see it removed
+everything else from there and it's literally just showing the new
+search results. So now if I were to. Change my KT News home new search component and point to my. Age that I just created. Done. And if I were to view this as published. And if I were to try and search up the word. Wish I didn't use the exact same things search. This should take me to
+the search page I just created and you can see I search for this and
+it's showing my this is a test article and you can see it took me to A
+to the search page itself and not like refreshing the home page. And also keep in mind I had selected a different default image. That's
+why this is here, because this particular content fragment did not have
+an image associated with it and I said it at the component level. So I
+guess Edwin for your question about what's the purpose of the search,
+just to make it clear. Page is slightly different from the whole page in the sense that it
+doesn't have any of this other stuff on top and it's basically
+bringing the search results to you like you know, like immediately
+versus having like the featured news and anything else that might appear
+on top of this component.
+
+**Terry Friedman** 57:31 Yeah, not not necessarily the purpose. I was referring to what is
+pulling in the actual content. So is this similar to the search query we
+were looking at earlier where it's checking everything on the content
+fragment, whether it's the categories, tags, a title, everything? What
+is it pulling in?
+
+**Jenny Smith** 57:38 Yeah. I see. So search itself. Oh, like what is the actual this part here
+looking for is what you're asking. OK, if I were to search an excerpt,
+I do believe it is indeed showing or pulling in.
+
+**Terry Friedman** 57:50 Yes, correct. Yes.
+
+**Jenny Smith** 57:59 Oops. One second. Oh, did I change it back? I change it back. I don't know if I changed it back or not. It should
+be based off of the things within the content fragment, right? So like
+whether it's in the title or whether this is the, this is the excerpt,
+and then there's also a description field. See here. This is take one second. One second. Let me go back to my search page.
+Oh, I didn't. OK, I didn't configure it on my search page. That's why
+it's doing that. OK, all right. Alright, so now if I were to go back here and let's take a look at
+searching for the word excerpt this time to show that it should pull in
+this result because it's the search is looking also within that field
+as well. OK, so it's not. So it's not pulling up. Sorry. Must then just be the
+title. And the description, I believe let's pull in. Let's pull in the description. I want to see what the description is
+and we can take a look at. We can put actually a specific term there to
+confirm that that's showing up. Let's say property. I'm just putting. I'm just putting some of a term
+here that we can reference and I'm going to hit close. All right, let's now publish this. And I am going to refresh this again and we're going to search for the
+word property.
+
+**Terry Friedman** 1:00:02 Can we also see if this is pulling in possibly tags like reverb or or
+something? I know we have tags that we could just click. I'm just
+curious what else is being pulled in here.
+
+**Jenny Smith** 1:00:05 Yeah. No, sure, we can. We can certainly let's let's. I think that's a
+good, it's a good way to be able to confirm what you're expecting.
+
+**Terry Friedman** 1:00:17 And and how are we adjusting this exactly? Like what if we wanted to
+change how the search is being populated? Is there any kind of is this
+functionality being built in already into the component or is there any?
+Yeah, how are we changing this?
+
+**Jenny Smith** 1:00:30 Let me pull up the ticket really quick. I believe for this one this
+would be something that's within the components functionality, so that
+would be like a a a code change, but one second. I'm waiting the search component and we can take a look at what was
+captured for that. But to your point though Edwin, I think like for this
+here understanding exactly what should you know be tailored for the
+search like. You mentioned tags and like I guess you know that that's certainly
+something that could be added, but keeping in mind, you know like is
+that something that you would want to see here? So like you might feel a
+lot more than you're anticipating if something was tagged a certain
+way. So I guess identifying you know like which parts of the content
+fragment model would you want to?
+
+**Terry Friedman** 1:01:19 Yeah.
+
+**Jenny Smith** 1:01:25 Want to surface up in the search, like perhaps just the title and the
+description or the title and the actual article, the tags and the
+excerpts. So taking a look at what you guys want, that can certainly be
+adjusted, but that would that would have to be a code change.
+
+**Terry Friedman** 1:01:41 Yeah, and it's just, it's just because it's not very intuitive as to
+what it's actually doing, right? It doesn't like any kind of like keep
+a tool tip or anything that's telling us exactly what it's searching
+for. So if anything, just things to make it more clearer for the end
+user, that'd be perfect, honestly.
+
+**Jenny Smith** 1:01:45 Yeah, understood. Mhm. I know, I agree. That totally makes sense. Um, so let's take a look
+here. I'm just taking a look at at what was captured here. So it's based off of keywords is what it says against the title, the
+excerpt and the full body. That's what the keyword search should be is
+title, excerpt and full body. So if I were to. Type in and this is. So if we are seeing that the excerpt text is not appearing on here, Yep,
+alright. So the fact that this is not appearing is something that I
+would want to investigate a little bit more. It might be because of the
+content I have in my content fragment. Because I kind of put, I kind of put like, you know, bare bones test
+data. But the intention for this is supposed to be those three different
+fields. So this, this and then also the body. But this is something
+I'll have written out as a take away for us to investigate and confirm
+since that is what the search bar is supposed to to. Work against and to your point about a like a tool tip or something,
+depending on what you guys decide, like how you would want this search
+to search against, maybe it's more than those 3 fields that can you
+know within whenever that code change is made, a tool tip could
+certainly be added with that information so that way the. End user knows what they're searching against too. Yeah, all right, so
+I have this one as a take away. Anything else but the news search. I
+also want to cover the news homepage template since that's also a
+that's a different template and that's something you would need to do
+to set up a news.
+
+**Terry Friedman** 1:03:26 Okay, perfect. Thank you.
+
+**Jenny Smith** 1:03:42 section in any other site. Anything else about this search page?
+
+**Terry Friedman** 1:03:48 Um, finally, one last thing is where do we add the category? How do we
+add additional categories that we can select from?
+
+**Jenny Smith** 1:03:50 Yeah. OK, yeah, sure. So categories are going to be added in in the tag
+section. So if we were to go back to our little hammer and tagging. And I'm choosing Semo Hard Rock support. As we saw, you know when
+you're creating an article, you have the option to select from any of
+the tags that are located within this namespace. If you're trying to
+add a new tag to like say the news category, so that way this is
+available like one of the options available. You'll click create, you'll create tag and then you would put whatever
+the title of the tag is here and then that would eventually. When I say
+eventually I mean like it will be available then to people who are
+creating new content fragments, you would see that tags an option to
+select. So anything that any article that has that tag would then appear in this
+section.
+
+**Terry Friedman** 1:04:50 All right, perfect. Thank you. That's it for me.
+
+**Jenny Smith** 1:04:51 Yep, yeah, sure thing. OK, OK, I'm going to now switch on over to my
+homepage template. I'm going to create a completely brand new one so we
+can see, you know, again, the process of if you have to do this for,
+say, a new site. So here I'm going to just click create and click on page. So I see that
+option for news homepage and I'm going to hit next. OK. I'm going to hit create. OK, so creating a completely new homepage, this is what's going to look
+like. It's pretty empty and so it's basically the the portions of the
+site that you need to configure like we saw earlier, setting the new
+search categories and archives to point to where you need it to point to
+setting. New search results to point to the content fragment folder path that you
+need to when filling out this information. But the main difference
+between the news homepage and the new search is that you have an area to
+feature some news. So as we see on our homepage here on the Hard Rock blog homepage, we
+have this section for the title News and Press Releases. Right now the
+title is defaulting to what I need it. However, as an author, I have the
+ability of course to configure that with whatever title I need. And then here in this section this year we had the featured news that
+again title for you to put whatever you need, featured news or featured
+articles, whatever it is. And then the ability to select exactly what
+you want to feature. So in this case here this you can see. That this isn't necessarily going to be the most recent ones. It can be
+things that you specifically select, or if you did want to be the most
+recent ones, you could. You could do that too if you always wanted that
+to show up here. Just keep in mind though that. Whatever. Like if you set it to be like, you know, show most recent,
+then that of course will change without you intervening with it. So if
+you really want to just say like pin a news article, then you would want
+to select that like fixed list or something like that in order to make
+sure it's showing exactly what you want versus changing out. Out without your own control. So just some options here to be able to
+feature articles is really the main difference, but just this is one of
+the parts of the news portion of your site that you need to take into
+consideration if you're creating it for a new a new property. So any questions like what the purpose of this news homepage template
+is? OK. OK. OK, um, let's take a quick look at our agenda. All right, so we have our news homepage template, news page template,
+new search page template. Then we saw the news content fragment. We saw
+our new search which is used on a couple of pages, the category listing,
+the social share which is on the article page enabled by default. That can certainly be turned off if that's something you want to do
+related posts and how it pulls in based off of the article's category
+tag and then also the news search results component. So these this here
+new search this was. Let's see this here is that new search here, whereas new search results
+is this section here. So I know that might be a little confusing, but if
+you look at the titles of the component you would see that's what this
+this is referring to as new search and this here is new search results. OK, um, let's see. So any questions about news, anything that was covered today or any
+questions about say, setting up a new section for a completely new
+website or property?
+
+**Terry Friedman** 1:09:16 Just one thing regarding the social sharing. How does that information
+get populated and what exactly? How do we edit this information?
+
+**Jenny Smith** 1:09:19 Mhm. Alright, let's take a look at social share in one of these pages.
+Alright, so I'm going to open up one of my knowledge transfer
+articles. All right, so social share this as mentioned before, this particular
+component is just part of this this news content fragment component. So
+when you fill out the news content fragment component, this will also
+appear. When I configure it, I can see I can enable Twitter, Facebook and
+Pinterest. I realize maybe you guys might consider wanting to change it
+from Twitter to X, but keep in mind this is only shown to the authors.
+But if I were to say what the author can do is if I were to uncheck
+these. And that would remove those options from displaying to the end user. So
+if you guys decide, oh, I don't actually want this to be shared on
+Pinterest for whatever reason, you have that flexibility of removing
+that specific social media icon. But your question was like what? How
+does it share? Is that is that correct? Correct.
+
+**Terry Friedman** 1:10:32 Yeah, So what is exactly pulling in from the article? Is it pulling the
+article title? Like where is this information being pulled from?
+
+**Jenny Smith** 1:10:36 Right. So I wish I could log in. I don't actually have. Yeah, I don't
+have. OK, so this is supposed to be pulling in from some information
+that's, you know, within our basic tab. Let me see if I can. For this one, Edwin, I might want to create because I don't. I I'll be
+honest, I don't have X so I can't show you exactly how it works, but I
+don't mind creating like a an account for the purpose of that. But I
+can show you a screenshot of like how that's being shared and like
+point that to. The specific properties that's coming from. So for example likely going
+to be like the title and the description as well as on this images tab
+you have the ability to set a specific image that's associated with
+that. So like. These fields are not required because you don't you might not need it
+for other pages. However, this is these tabs are available. So I want
+you to keep in mind though that I am planning on going over page
+templates a little bit more in depth. I'm trying to see if I can. Put that as to one of the sessions next week. I would like to go over,
+you know like the the custom tabs that we had added as well as the
+different page templates and then also like you know how do these come
+into play when it's like shared across other sites and other
+platforms. So we'll definitely get more of that. And by then I will make sure I
+have my X account created so you can see what that looks like when
+we're sharing these pages across social media. Does that sound good?
+Yeah. OK, Yep, absolutely.
+
+**Terry Friedman** 1:12:19 Perfect. Yeah, that sounds great. Thank you.
+
+**Jenny Smith** 1:12:24 OK, um. Anything else? Try to take a look here to see what like, since I know
+you guys are already using news, it's like, yay, you guys, you guys are
+probably already pros at this. Yeah, so like, you know, I can see this
+news, new news article February 5th. Yep. So just to keep in mind, and this is what I meant about like, you
+know, if you guys ever have content, going back to our discussion
+yesterday, if you guys ever have content that's like potentially going
+to be reused across multiple articles. That's when we would recommend, you know, using like an experience
+fragment. Say this, say this here in particular. I know it's probably
+not going to be shared across all these articles, but say this was
+something that's a constant on every article. It might make sense to
+put that within the experience fragment and then just reference that
+experience fragment with. In the article page itself, and then if this ever changes, you only have
+to change it in one place.
+
+**Terry Friedman** 1:13:26 Perfect. Good to know.
+
+**Jenny Smith** 1:13:29 Yeah. All right. OK, guys. Anything else before we wrap up? I know it's Friday afternoon, so I
+don't want to keep you guys too long, but happy to take a look at
+anything else if you guys have any questions right now.
+
+1:13:45 No.
+
+**Burt Jones** 1:13:49 Hey Daniela, it's Luke. I scheduled the remaining sessions for next
+week and the three days of the following week for content authoring, and
+then I also scheduled the adoption sessions.
+
+**Jenny Smith** 1:13:51 Hey. OK.
+
+**Greg Scott** 1:14:04 Mhm.
+
+**Burt Jones** 1:14:06 Uh, starting the end of the week after next. Um, so those are on the
+calendar. Um, we'll we'll.
+
+**Jenny Smith** 1:14:10 OK. Let me let me flash up the calendar really quickly then. Luke, one
+second. OK, I'll pull that up.
+
+**Burt Jones** 1:14:16 Yeah, and we'll we'll owe agendas on the invites, Daniela. OK, OK.
+
+**Jenny Smith** 1:14:22 Yup, understood. So yeah, let's let's take a quick look to see what we
+have ahead. OK, Yep. So let's see. We are here. So next week's gonna be all
+content authoring and then the week after, like you mentioned. OK, Yep.
+So I see the first adoption session is going to be on Thursday, which
+also coincides with the beginning of the.
+
+**Burt Jones** 1:14:42 Yeah.
+
+**Jenny Smith** 1:14:51 Um, technical knowledge transfer.
+
+**Burt Jones** 1:14:51 Yeah, and and the other comment there is Scott and I are working in the
+background. I'm gonna schedule those technical enablement sessions. So
+Andy, perk your ears. It's gonna be from 9:00 to 11:00, the 5th,
+Thursday the 5th through Thursday the Thursday the 12th. That's the two hour blocks that we're going to cover those technical
+enablement sessions. So you Yep. So we'll see those on the calendar.
+And then last but not least, we'll have the platform expansion
+discussions on the calendar as well for the two weeks on the last part
+of the schedule.
+
+**John Zimmerman** 1:15:15 Sounds good.
+
+**Jenny Smith** 1:15:28 OK. And to be clear, these are going to be in the afternoon as well as
+the adoption ones. It's just strictly the technical knowledge transfer
+ones will be in the morning.
+
+**Burt Jones** 1:15:32 Yeah. Yeah, just because we want to include Vinay to to co-lead those with
+Andy given the context he has. So Yep, I just wanted it was housekeeping
+at the end of the call. That's all I yeah, I'm, I'm sorry to be the
+guy to schedule a Friday afternoon call. So you know you can blame Luke
+for that.
+
+**Jenny Smith** 1:15:39 Yep. Yes. Yeah, that's good.
+
+**Burt Jones** 1:15:54 Uh, but if there's no other questions, appreciate your time everybody
+and have a great weekend.
+
+**Jenny Smith** 1:16:00 Thank you, everybody. Goodbye. Thank you.
+
+**Terry Friedman** 1:16:00 Have a great weekend, everyone. Thank you, Daniel. Thank you, everyone.
+
+**Rachel Winters** 1:16:03 Thank you.
+
+**Greg Scott** 1:16:03 Great. Thanks, Luke. Thanks, Danielle. Good job.
+
+Richard Ray (Director of Digital Experience)** 1:16:05 Thanks everyone.
+
+Greg Scott** stopped transcription
+
+## Session: Locations — 2026-02-23
+
+**Customer Vendor Knowledge Transfer-20260223_130200-Meeting Recording --
+PART 1**
+
+February 23, 2026, 1:00PM
+
+49m 15s
+
+**Burt Jones** started transcription
+
+**Burt Jones** 0:07 (Part 1) All right, we're off and running, Daniela, whenever you want to get
+started. Thank you.
+
+**Jenny Smith** 0:12 (Part 1) OK, awesome. Thank you. Hey, everyone. Good afternoon. I don't see
+Edwin on right now. I wanted to follow up with some of the questions
+that he had from our Friday session, but perhaps we can cover that at
+the end of the call if he's able to sign on then. And if not, then I can certainly post responses on Confluence later. All
+right. So today let's go ahead and share my screen. We can take a look
+at our agenda. OK, today we are going to cover locations, so location related
+components as well as some of the content fragment models associated
+with locations and see examples of how these components are being used
+on. The Hard Rock websites specifically for the corporate site, cafes and
+hotels. So as you can see here, we do have two content fragments to
+cover 1st and then we'll take a look at some of these components. So let's go ahead and get started with the location content fragment.
+So I'm gonna jump on over to AEM here and just navigate again to the
+section where we're going to find our content fragments. So let's if I
+were to click on the AEM logo in the top left. I'm going to my assets, going to my files and then customer and CF and now
+I can see here is the folder for locations and you're going to see a
+breakdown of all the different regions. Four locations and as I click on them, I'll see the particular country
+names and then I will see the particular content fragment itself. So to
+be clear, hang on. Alright, so this is so I wanted to call out something
+that I know that we have talked. About previously about the titles that we see here and you can see here
+in Mexico this actually has a title that seems to make sense. So one of
+the things that I wanted to let the team know is that when these are
+coming in from DPLT. What's being stored here in the title field is the location ID. This
+particular field though the title, I'm going to open this up, is
+actually something that can be changed. You'll see here I actually
+renamed this particular one. What the actual name of the location is. So I I put that there versus
+location ID and so this is something that can be changed. And Don,
+correct me if I'm wrong, do you have any experience with bulk metadata
+updates? OK, awesome. So what I just wanted to show is that I understand that
+this is not something that could be easily found by like the author
+themselves. However, if we were to take a look at the properties, I'm
+sorry, not the properties, if we were to take a look at the actual
+content fragment.
+
+**Don Wood** 3:01 (Part 1) Yeah, I do. I do.
+
+**Jenny Smith** 3:20 (Part 1) There are a couple fields here that could be appropriate to use instead,
+whether it's a property, legal name, location, legal name, long name or
+short name, you know, whatever that's decided upon, which would be a
+better title for the content fragments. I would recommend that once that's decided, you could apply those
+updates so that way the titles are renamed from instead of the location
+ID number to whatever that specific field is. So again, this one looks
+correct because I had manually titled it this way, but since there's so
+many. Any locations that's being stored here. That's why we're recommending
+doing a a bulk metadata update for it once you decide on the field.
+
+**Don Wood** 4:03 (Part 1) Right, so go back in and show me what we might be adding.
+
+**Jenny Smith** 4:09 (Part 1) Yeah, sure thing. So I'm trying to find one where the the names aren't
+all the same. Um, so let's see if I can find one of those.
+
+**Don Wood** 4:17 (Part 1) Right.
+
+**Jenny Smith** 4:21 (Part 1) OK, this is a bad example 'cause all the names are the same, but maybe
+this? No, these are all Hard Rock kind of.
+
+**Don Wood** 4:29 (Part 1) But even if yeah, where would how would I pull that property legal name?
+
+**Jenny Smith** 4:33 (Part 1) So this is a stored value like right now it's read only because these.
+So these fields are coming in from DPLT, right? So this value is being
+stored as the property legal name like that's that's the name of the
+metadata property or something to that extent.
+
+**Don Wood** 4:41 (Part 1) OK. OK.
+
+**Jenny Smith** 4:50 (Part 1) So whether it's this field or this field, this field or this field,
+that's really going to be up to to, you know, you guys, whatever it is
+that needs to be updated to, you would take that value and then replace
+the title with it. If that's and if that's something you know that you might you know
+need some help from us, I you know like we can perhaps talk about that
+more during like some of the technical knowledge transfer, but if
+that's.
+
+**Don Wood** 5:03 (Part 1) OK. Sure. Yeah, let's, let's, let's spend a little time on that 'cause I
+just wanna make sure I'm pulling the right and adding the right data.
+But yeah.
+
+**Jenny Smith** 5:18 (Part 1) Yeah, no, understood. Sure. OK, awesome. Yeah. So just wanted to make sure the team is aware there
+is a way to do it. Of course there needs to be, you know, some thought
+as to which field would be the most appropriate one to rename it, but it
+doesn't have to be like this. And and certainly Don, once we enable you
+on showing how to do the update, then that can be.
+
+**Don Wood** 5:35 (Part 1) Sure.
+
+**Jenny Smith** 5:42 (Part 1) Updated moving forward. All right. OK. So, well, let's take a look at one of these content
+fragments and break down some of the fields that we're seeing here. So
+I am just right now, I just have this specific one open. I'm from DC
+area, so I found one from Washington, DC as mentioned earlier. The fields that are all read only, those are going to be fields that of
+course an author cannot change. It's coming in from DPLT, so these are
+not something that's editable. However, there is a section of fields
+that are going to be editable by the author. And it starts here with these this image field and we're going to be
+seeing this image field be used on some of the components, not the. Some
+of these content fragrates will not have them because there was nothing
+to since it's not coming in from DPLT. And it wasn't something that was necessarily set for like this
+particular location. That's why some of these fields are going to be
+blank. So image is one of them that's being used for example in in a
+component called destinations and venues. So we're going to see another
+content fragment which has this filled out and how it will appear in a
+component. Component in this section here we also have some dropdowns, type of
+destination and type of vacation. These are also things that the author
+is going to fill out as necessary since this is a cafe specific content
+fragment. Is delivery is something that's only relevant to cafes and you can see
+once this is checked it displays this multi field here to add the
+delivery partners. In this case Doordash, Postmates, Uber Eats and
+Grubhub are going to be associated with this Hard Rock Cafe, Washington
+DC. Take a look at the delivery widget. We're going to see how these appear
+on there. So Scroll down. There's also another editable field for is
+venue and an opportunity to select a venue content fragment. This is
+specific to hotels. And it's on the main hotel website I believe where you see a list of
+locations and the associated venue with them, meeting space, that sort
+of stuff. So if you have a hotel and you have a venue, you would select
+the check box and then you would also add the venue content fragment. Reference here so that way it's linked to this location. So in terms of
+the is delivery, let's take a look at how this translates to the web
+page. I'm just going to go to this other tab here of a live usage of
+this. I am on the delivery page on the Cafe Stage website and this is our
+delivery widget and you can see here Washington DC is what I selected
+and the preferred service here are the four items that were being stored
+within that content fragment. DoorDash, Postmates, Uber Eats and Grubhub. So going back to the Hard
+Rock Washington, Hard Rock Cafe, Washington DC, you can see if any of
+these need to change, whether it's URL, whether it's the order or just
+like the name of the service that would be done here within the location
+content fragment. For that specific cafe. So this section again is specifically for
+displaying it within this component that's on the delivery page and
+you're able to see the options that you put here. And then of course
+when you hit go, it would take you to that URL. Hey Rick, I see your
+hand up. Right. Did you have a question?
+
+Richard Ray (Director of Digital Experience)** 9:38 Sorry, I was still muted. I didn't see an option to open the links in a
+new window, so I assume that they will all automatically open in new
+windows.
+
+**Jenny Smith** 9:39 (Part 1) No problem. Yeah, so these, so you'll see here Uber Eats, I'll click it, go, it
+opens up in a new tab, yeah.
+
+Richard Ray (Director of Digital Experience)** 9:52 OK, so even like the venue stuff, like anything on that I guess page or
+card that you're adding links to. Is it the assumption every link here
+just automatically opens in a new window?
+
+**Jenny Smith** 9:56 (Part 1) So. So for this particular section, everything is going to open up a new
+window. I I don't think these are ever going. These would never be like
+an internal link, right? So I believe that's why it was just baked in.
+These are always like 90. Like I can't imagine an instance where this
+would be an internal link. So it's it's baked into the component to
+automatically.
+
+Richard Ray (Director of Digital Experience)** 10:08 Perfect. OK. Mhm. OK.
+
+**Jenny Smith** 10:25 (Part 1) Open up to new tab. You mentioned the venue portion though, so now venue
+is something that's different. In this case here I'm referencing a
+content fragment and we can take a look at that. Yeah, yes, exactly.
+Yep, we can take a look at that shortly.
+
+Richard Ray (Director of Digital Experience)** 10:36 And that's that table, the meetings and event table, OK.
+
+**Jenny Smith** 10:42 (Part 1) But before we do that though, any questions though about the is delivery
+portion of this content fragment and how it translates to the cafe site?
+
+**Amy Carter** 10:53 (Part 1) Just a question from me.
+
+**Jenny Smith** 10:56 (Part 1) Sure.
+
+**Amy Carter** 10:57 (Part 1) When a new location's added to the DPLT, this part is delivery only
+would be checked if the author manually went in and did it right. Like
+we wouldn't. OK, that was my first question and my second one was not
+to derail from delivery, but we quickly glanced over the image.
+
+**Jenny Smith** 11:01 (Part 1) Mhm. That is correct, yes.
+
+**Amy Carter** 11:15 (Part 1) Section. So we said that that image you you don't have an example of
+where that populates yet or we will get to that.
+
+**Jenny Smith** 11:16 (Part 1) Image section, yes. Oh, we'll see that this is, um, we'll see that when we look at the Uh
+hotels.
+
+**Amy Carter** 11:27 (Part 1) OK, so image is specific to hotels. I just wanna make sure I'm like
+writing my notes correctly. OK.
+
+**Jenny Smith** 11:30 (Part 1) Yep, yeah, I will show you. Yeah, let's look at an example. I think, I
+think Lisa, sorry, before I cut you off, was there any other questions
+related to delivery before? Because I want to jump to hotels so you can
+see this portion and then also we can talk about the venue portion too.
+
+**Amy Carter** 11:43 (Part 1) Yeah, sorry, I missed that. That was hotel related, so I just wanted to
+glance over that.
+
+**Jenny Smith** 11:46 (Part 1) Oh, that's OK. Okay, yeah, perfect. Uh, okay, great.
+
+Richard Ray (Director of Digital Experience)** 11:49 OK. I think I'm good. I don't know if anyone else has questions.
+
+**Jenny Smith** 11:53 (Part 1) Yeah, we can always. We'll come back to our location content fragments
+as we continue to review this. But since we were talking about some of
+these other fields, let's take a look at venues as well as how this
+maps to a venue. All right. So I'm going to now jump on over first to show you guys what where the
+venue CF comes into play and I'm actually going to view this. OK, yeah,
+oops. So I am in. Just to be clear, I'm an author. We can take a look
+at this. Um. The ublisher side and I'm just going to put this in my tag here. I'm
+going to do find a venue. OK. All right. OK. So here is our destination and venues component.
+We'll look at it in author in a second, but so you guys can see what it
+looks like on here. These are the different locations that have venues
+associated with it. So Lisa, the image that we saw in that field, that's where these images
+are coming from. So if we took a look at Hard Rock Hotel Cancun, let me
+see if I can pull that up. You'll see this is it. Yeah, Hard Rock Hotel
+Cancun. You'll see that this particular picture is associated with it
+and that's the picture that's being displayed. Play here.
+
+**Amy Carter** 13:19 (Part 1) OK. I think just obviously you're going to know our our question will
+be what size for this, but we can move on from that. I'll I'll make
+sure it gets written on the Confluence page.
+
+**Jenny Smith** 13:24 (Part 1) Yeah. Yes, sure thing. All right. Um.
+
+Richard Ray (Director of Digital Experience)** 13:30 But then you know, does that image also get displayed on the
+destinations page?
+
+**Jenny Smith** 13:33 (Part 1) I'm sorry, what was that?
+
+Richard Ray (Director of Digital Experience)** 13:34 Does that image also get displayed on the destinations page or is that
+strictly for the venues page?
+
+**Jenny Smith** 13:40 (Part 1) So let's take a look at destinations. I believe it is also displaying
+destinations. We're using the same component. So in this case here,
+keep in mind we are on our stage website. I think this means. So what we
+would need to do here is just republish the images. I don't think. I don't know if anyone is actively working on any hotel related things
+on stage, but yes, right to your point, those images are also associated
+when you view it on this particular page. This is actually the exact
+same component as what we we just saw here. It's just a different. A different variation that's selected, but we'll take a look at how
+that's being authored. But yes, these images are also being used on
+that on that page as well. All right, yeah.
+
+Richard Ray (Director of Digital Experience)** 14:24 OK. Thank you.
+
+**Amy Carter** 14:28 (Part 1) And I think the reason why maybe the image specs is probably critical
+for this is because it doesn't look like we'll have the same
+flexibility to adjust like image position and you know height or what
+what have you like it's pretty contained which.
+
+**Jenny Smith** 14:43 (Part 1) Yeah.
+
+**Amy Carter** 14:44 (Part 1) Honestly, I prefer just as long as we know what the image spec is.
+
+**Jenny Smith** 14:46 (Part 1) OK. Yeah, understood. Let me refresh the author site here so we can take a
+look at this component. So this component is called destination,
+destination search and filters. As we saw, it's being used on our find
+a venue page. It's also being used on that destinations page. But we can take a look at this configuration first, so pull this to the
+side to show how this was authored. So one component but different
+variations. In this case here you can see I've selected find a venue.
+When we go to the destinations page we'll see this one being selected. We have our request for this is the RFP, sorry request for proposal like
+here. Right now it's linking it to this request information page and
+then we also have our sort by drop down. So you can see everything's
+actually selected and it's it's within this. This particular order, so meeting room, Max capacity, total square feet
+and number of guest rooms. So when I take a look at the actual page
+itself and expand this meeting room, capacity, total square feet and
+guest rooms, I think this is actually a better view, so I'm going to. Pull this off to the side. So I want I want you guys to see how this was
+authored and how it corresponds to what the end user will see. So bear
+with me one second. OK. All right. So let's open this back up. OK. All right. So then we also have our region section. So we have North
+America and this is going to show everything that's under the North
+America region. In this case, we can see like some of the Mexico ones
+are here. We see Atlantic City, Indiana, etcetera, etcetera. This is all
+information. Like when we just select region North America, this is like associated
+with those specific location content fragments. So as I'm selecting the
+different regions, Central America, South America, Caribbean, say OK,
+pull in anything that has the venue. And pull anything that is from this specific region and then display it
+in that section, right? So let's see here. Then we have Europe, Middle
+East, Africa, and then we have Asia Pacific here at the bottom. All
+right.
+
+**Amy Carter** 17:14 (Part 1) And Daniella, for for those fields, for region and for when you checked
+off, I believe it was, let me go back to my notes when you were sorting
+by the different, yeah, when you were doing those categories, can we add
+to those?
+
+**Jenny Smith** 17:14 (Part 1) So yeah. Mm-hmm. Yes. So these categories are based off of what's being stored in our venue
+content frame like these. Sorry. Oh, I'm sorry, I'm sorry, not sort
+by. I apologize. You're talking about the regions.
+
+**Amy Carter** 17:40 (Part 1) I guess it's two-part question because I would like to know what if we
+decided to make a new category to sort by. So we'd like a new field
+basically to say what these locations you know can have. Is that hard
+coded right now? So I just want to know. If if tomorrow we need not just meeting rooms count, but meeting room
+view view, I don't know whatever it ends up being. Can we add to those?
+And then is I guess the regions just characterized by the folder
+structure? Just trying to better.
+
+**Jenny Smith** 18:00 (Part 1) A. OK. So let's take a look. Yeah, let's take a look at our venue content
+fragment. So let's take a look at the content fragment. So in this case
+here, I'm going to look at Hard Rock Hotel Cancun, which is associated.
+
+**Amy Carter** 18:14 (Part 1) And if we have new.
+
+**Jenny Smith** 18:28 (Part 1) With this specific location, so we have there's a corresponding venue
+content fragment that has been associated with this location. Alright,
+so let's let's look at it. I'm going to hit edit just to open it up.
+So here is all the information that was displayed on here, right? So all
+this information is being stored.
+
+**Amy Carter** 18:34 (Part 1) Venue content fragment, OK.
+
+**Jenny Smith** 18:48 (Part 1) In a content fragment that looks like this. So you can see here those
+were those established fields that we had meeting rooms, Max capacity
+area and guest rooms. And so your question about what if we needed an
+extra field that would require an update to the content fragment model
+since this was the defined data structure for.
+
+**Amy Carter** 18:52 (Part 1) OK.
+
+**Jenny Smith** 19:08 (Part 1) This particular content fragment, so you wouldn't be able to just add
+it right now to this view. You would have to update the content fragment
+model, determine what kind of field you want it to be. Is it a text
+field, is it a number field, etc. And then once that's been enabled and
+added and published to the model, then you would be able to. See that field here and start storing values for it, but right now.
+
+**Amy Carter** 19:31 (Part 1) So if I I guess that would be like if our IT team or product team,
+whoever's in charge of editing the fragment models adds it, do they
+work in conjunction how that new field also looks on this? Like just so
+I can understand like what's going to be our process for we need a new
+field and if we can't add it as authors, we need another.
+
+**Jenny Smith** 19:38 (Part 1) Mhm. So this. Mhm.
+
+**Amy Carter** 19:50 (Part 1) I know that it might take us a week to get the fragment updated plus the
+design of the new field.
+
+**Jenny Smith** 19:56 (Part 1) Right. So um, let's take your example of if you needed to add, let me
+see like you said like, I don't know, like view or.
+
+**Amy Carter** 20:03 (Part 1) I said like meeting. Yeah, the view of the room, even though I'm just
+couldn't think of.
+
+**Jenny Smith** 20:06 (Part 1) Yeah, so say that's a field that you want to add. First step would be
+OK is that a number of fields that determine the input field, which of
+course like you mentioned, that would be added by whoever has admin
+rights to those that content fragment model. The next step would.
+
+**Amy Carter** 20:22 (Part 1) Group did take the content fragment model course, so I did see where it
+gets added, but obviously I just want to know what that process looks
+like for this.
+
+**Jenny Smith** 20:24 (Part 1) Mhm. Yes. Yep, so that specific field needs to get added. This specific sort by
+would also need to be sorry this this drop down would need to make sure
+that that particular field is added here. However, keep in mind how
+would you want it to be displayed here, right? Do you want it to be
+displayed in the section in a different part of section? So that would be also a component update. So like there are like you're
+saying there are different like decisions that would need to be made.
+You add a new field, you need it to be accessible to the author within
+the dialogue window, but then also determine where should it go to the
+end user which would require a front end update to the component.
+
+**Amy Carter** 20:50 (Part 1) Mhm. OK.
+
+**Don Wood** 20:59 (Part 1) OK.
+
+**Amy Carter** 21:07 (Part 1) OK. Thank you. Rick can probably speak to how an author does it today, but I
+just want to be sure that this group knows if we needed something new,
+we're going to need to make it like a process to get that field.
+
+**Jenny Smith** 21:09 (Part 1) Yeah.
+
+**Maia Emerson** 21:20 (Part 1) Can we can we tag this as a as a as a gap please? Because it's way
+overcomplicated on how to manage knowing that we're constantly changing
+to at least those points. We will need to have a more optimized way of
+doing this.
+
+**Burt Jones** 21:36 (Part 1) Yeah, go ahead and mark it as a gap, guys. Yeah, it makes sense. If
+y'all need this optimized market and document it accordingly. And
+Gonzalo has his hand up, Daniel.
+
+**Maia Emerson** 21:37 (Part 1) So we can add up. Thank you.
+
+**Amy Carter** 21:45 (Part 1) Oh, yeah. I was gonna say cause but sorry before Gonzalo goes, the probably same
+will go to the filter itself. Like I'm I'm assuming the filters also
+now hard coded for grabbing these destinations. So it's like if we were
+to to classify the type of destination by being a unity participating
+hotel, we can't just add it so.
+
+**Maia Emerson** 21:51 (Part 1) Yes.
+
+**Amy Carter** 22:03 (Part 1) Same kind of concept, but sorry, Gonzalo, your hand's been up for a
+while.
+
+**Maia Emerson** 22:08 (Part 1) Yeah, one, sorry to consult. I'm sorry. One more thing. Luke, I just
+want to make sure we're doing the right thing before we could move in.
+I assume you guys were like marking the gaps. Are you saying we have to
+annotate them? OK.
+
+**Burt Jones** 22:18 (Part 1) No, no, Maite, no. We're providing the knowledge transfer and the
+information you need to document those. Yep.
+
+**Maia Emerson** 22:23 (Part 1) OK. OK. Thank you for clarifying. So for now on we'll we'll document them.
+Thanks.
+
+Cal Nelson (customer)** 22:32 Hey Tim, thank you. Quick question. You were in the component a moment
+ago and that you were sharing the regions and this section. So it in
+prod I don't see this working the when you select the regions.
+
+**Maia Emerson** 22:32 (Part 1) OK, let's start.
+
+**Jenny Smith** 22:42 (Part 1) Mhm.
+
+Cal Nelson (customer)** 22:47 Uh, and and I'm talking about the hardroad.com one. The the Google Maps
+component is.
+
+**Jenny Smith** 22:51 (Part 1) Yes. Yeah, so that's a different. So to be clearer than the one that's a
+different component than this one. I like you said, I think it's using
+the Google map component which we are going to be going over today on
+how that works. But this component here is destination search and
+filter. So there are some different functionality and different fields
+in the.
+
+Cal Nelson (customer)** 22:59 OK. Got it.
+
+**Jenny Smith** 23:13 (Part 1) Component dialog window.
+
+Cal Nelson (customer)** 23:14 OK. So maybe we can go through those questions when we get that. Thank
+you.
+
+**Jenny Smith** 23:17 (Part 1) Yeah, when we go through Google Map, definitely we'll we'll make sure
+you have some time to ask that. OK.
+
+**Amy Carter** 23:24 (Part 1) Sorry, I am getting a little bit confused Luke, with that statement.
+I'm gonna be honest, I was really under the impression that you guys
+were also like building out the list and like ours was just more so like
+the questions. But if I was under the wrong impression, I think this
+team needs to know because we might not be document mean not be
+documenting as much. Um.
+
+**Burt Jones** 23:44 (Part 1) Yes, Scott, this is kind of what I talked to you offline about. I was
+wondering how the process was going for you guys internally documenting
+the the gaps that you would come to the platform expansion reviews on
+the last two weeks on the calendar. So Scott, if you could take that offline with Lisa.
+
+**Greg Scott** 24:01 (Part 1) Yeah, I I thought our question, I thought the questions on confluence
+were were feeding into that funnel. No.
+
+**Burt Jones** 24:07 (Part 1) They're feed into a funnel for you guys to document what you're
+finding as gaps and what we're showing in this knowledge transfer. Yep, but but we're we're not documenting your your your gaps. You guys
+come prepared with use cases and functionality that's missing from the
+framework that we're showing you how to.
+
+**Greg Scott** 24:15 (Part 1) Right, right.
+
+**Jenny Smith** 24:16 (Part 1) But.
+
+**Amy Carter** 24:16 (Part 1) But.
+
+**Greg Scott** 24:25 (Part 1) Right. And that's what yeah exactly in the in the landing zone for that
+is is the questions in confluence like we did in previous sessions
+right. Whether it you know what like like with Maite's ask or
+anybody's ask them we need more of this or we need we need
+clarification on this or you know this is not working for us. You know
+like the the questions I think it's also it's questions slash needs. Maybe is a better terminology, Luke, on confluence, right? It's not
+just questions, it's also what do we need, right?
+
+**Maia Emerson** 24:46 (Part 1) To be, to be. OK. To be fair, Scott, just to the vendor team, I don't think they can
+easily understand the gaps from the questions because our questions were
+more on like how do we do this and can you show us this or that because
+these are pretty high level, so we don't get to see all the steps, but.
+
+**Greg Scott** 25:00 (Part 1) Mhm.
+
+**Maia Emerson** 25:06 (Part 1) That's why I asked earlier if there was another list being done, but
+now that I know it's not, I'll catch up, look on the rewatch stuff and
+I'll start documenting gaps. That way when this ends, we should have a
+list.
+
+**Burt Jones** 25:18 (Part 1) OK, that sounds good, my team.
+
+**Amy Carter** 25:19 (Part 1) Yeah, to add to that, because I think, remember when we met as like a
+high-level group with Leandra and she was like, well, why are you asking
+questions if they were asked in the video? So it's I hadn't been
+documenting gaps necessarily on the confluence page, just questions. So
+to me it feels like a lot.
+
+**Greg Scott** 25:19 (Part 1) It sounds great, Mikey.
+
+**Amy Carter** 25:38 (Part 1) A lot of my gaps from those previous sessions might not be written
+because I thought those were at least getting take away from the vendor
+side.
+
+**Maia Emerson** 25:47 (Part 1) OK, so Lisa, once I have my listing, well, I'm going to start, but once
+give me next week to catch up, I'll make sure that I'm not missing any
+of your gaps and that we are aligned.
+
+**Greg Scott** 25:54 (Part 1) OK. Well, the good thing is things are recorded and Luke, you've been
+posting the A I notes as well, right. So it should be pretty, yeah. So
+we can distill from that too. It's not like we we we have missing time.
+
+**Maia Emerson** 25:57 (Part 1) Yep.
+
+**Burt Jones** 25:59 (Part 1) Yeah, that's that's correct. The the transcripts. Yep, Yep. Yeah, transcripts and videos, yeah.
+
+**Maia Emerson** 26:06 (Part 1) Yeah, and to be fair, we know what we need, right? So it should be, it
+shouldn't be that hard for me to accomplish because we know exactly
+what we're missing in most of the cases. From what we're seeing, like
+it's it's a lot. So I'll, I'll take on that.
+
+**Greg Scott** 26:11 (Part 1) OK.
+
+**Burt Jones** 26:20 (Part 1) Thanks, Mike. Yeah, I'm glad we got this cleared up then. Thanks, guys.
+
+**Greg Scott** 26:23 (Part 1) Yeah, 100 S now instead of later. I gotta step away for a minute. I'll be right back.
+
+**Jenny Smith** 26:31 (Part 1) Um, sorry guys. I'm trying to. I'm trying to remember where we were.
+Uh, OK, OK, yeah, so.
+
+**Amy Carter** 26:38 (Part 1) I I think it was Gonzalo had a question. I'm gonna. I don't know if he
+still have a question, but.
+
+**Jenny Smith** 26:42 (Part 1) I think, yeah. OK, yeah. No, thank you. That reminds. OK, yes. So
+Gonzalo had asked specifically about the Google Map component, which is
+being used on the hardrock.com website under locations. That's a
+different component. We'll be covering that. That's in one of my one
+of my tabs here. Yeah, here we go, Google Map. So we will take a look at that and any questions that you have, Gonzale,
+you can certainly ask them while we're looking at the component. OK,
+Yep. All right. So we have here. So, yeah, so this is the how the venue
+content fragment is being used. Let's take a look at a live example
+here.
+
+**Amy Carter** 27:06 (Part 1) Thank you.
+
+**Jenny Smith** 27:19 (Part 1) This venue for Hard Rock Hotel Cancun. Again, you'll see there's no
+actual connection to the actual location for Hard Rock Hotel Cancun. The
+connection is being made when you add it to the location content
+fragment. Meaning, as we saw here, this is that location, content fragment, Harbor
+Coast Hall, Cancun. We saw that there's an associated venue or there's
+associate, there's venue information associated with this location. And it's being added by attaching a content fragment to this location. So going back to this is the venue content fragment and it has these
+fields for meeting rooms, max capacity area and guest rooms which we saw
+can be displayed in a certain order through the component configuration.
+We also have the short description, additional information and the fact
+sheet that information is being. Dislayed here. And then we have, let's see, yeah, so the fact sheet, no. So none of
+these are necessarily required, feel like none of these have been made
+required. So if like for example, there's no additional information or
+if there's no fact sheet that will not, you know, that's not something
+that an author needs to.
+
+**Amy Carter** 28:26 (Part 1) And and those aren't required fields, all of these, so like if
+someone's missing one.
+
+**Jenny Smith** 28:41 (Part 1) To add in order to publish and save this. Yep, alright.
+
+**Amy Carter** 28:45 (Part 1) OK. And I could be wrong, but maybe Rick, if you won't answer this, if
+you go back to the like options right there on the cards, like so we can
+see the additional information, do we ever have more than just two
+buttons on the left?
+
+**Jenny Smith** 28:54 (Part 1) Yeah. Do we ever have more than two? Oh, sorry. Is this the right question?
+OK, yeah.
+
+**Amy Carter** 29:00 (Part 1) I'm I'm I'm asking, yeah. So Rick, I'm I'm just, I'm trying to
+understand he has a little bit more background with hotel do we is it
+this card or am I confused something else where we've added more more
+buttons than just the two?
+
+Richard Ray (Director of Digital Experience)** 29:14 It's just the two on this. I don't know if you think about like the
+rooms or the eats and drinks venue card on those. Yeah, you have like 5
+or 6 menu buttons or something, but on this it's typically just these
+two and then that view more link that links to the, I think they're
+PDF.
+
+**Amy Carter** 29:17 (Part 1) Yeah, that might be what I'm thinking. OK. OK.
+
+**Jenny Smith** 29:29 (Part 1) Mhm.
+
+Richard Ray (Director of Digital Experience)** 29:30 So this is kind of just like a high level quick view and if you want to
+know everything else, just download the fact sheet.
+
+**Amy Carter** 29:33 (Part 1) OK. Okay, thank you.
+
+Richard Ray (Director of Digital Experience)** 29:38 Mhm.
+
+**Jenny Smith** 29:42 (Part 1) OK, so this as we mentioned for the destinations and filters component,
+this is using that venue find a venue variation, but let's take a look
+now at the destination search. Um variation for this O I'm going to. Open UA new tab. Let's see here. Yeah, I'm going to find the example
+of. Hotel stage. So under destinations. OK, so let's take a look at this
+component here. I'm gonna open up this page and the author so we can
+see how that's been configured.
+
+Richard Ray (Director of Digital Experience)** 30:28 We can do something with all those countries listed on the left, right
+underneath Central and South America.
+
+**Jenny Smith** 30:29 (Part 1) To. Let's let's take a look how we can if we can get that. Sorry, I'm
+sorting this out to get to the destinations page. Here we go. All right,
+I'm going to click edit.
+
+Richard Ray (Director of Digital Experience)** 30:37 Shouldn't that list, yeah.
+
+**Jenny Smith** 30:47 (Part 1) OK, all right. So now as the component is loading, we're going to keep
+this here on the left and take a look at this on the right. All right,
+so same component, slightly different filters are being displayed due to
+the variation that was selected here. Here we have again the regions. This portion here is of course the same
+as what you saw for find a venue. However you see the sort by is missing
+since that's venue specific and then also. I can't remember what else is on there, but this portion here where you
+select regions is going to be exactly the same functionality. So in this
+case we have North America specified and then we have the the
+description listed. So the country names here is what's being surfaced
+under the title. The description is what's being listed here and then the associated
+countries are what's being listed here. So right to your point about
+how do you clean up these countries, I believe that was an update that
+we had made to the Google map component. But it sounds like, you know, of course if if you have specific
+countries that you want to show versus anything that is in South America
+and Caribbean, you would want that sort of functionality also being
+added to this component. So that to me does sound like a gap, but we
+will look at how it's done in Google Maps just to confirm that that's
+what the expectation essentially like an open. Field I would imagine is what you're looking for to be able to select
+certain countries to be listed here. Is that correct?
+
+Richard Ray (Director of Digital Experience)** 32:25 Yeah, I think Envisogy is just a manual text field. So we could put, you
+know, two countries, we could put 12 countries, but we could also remove
+individual countries because like there were a couple of countries that
+we were in, but we didn't want to list Russia, China, for example.
+
+**Jenny Smith** 32:28 (Part 1) Mm. Yeah, OK. I see. Yeah. OK.
+
+Richard Ray (Director of Digital Experience)** 32:43 I don't know what those locations are now, but so just having that
+control was pretty important 'cause I know it came up a couple times.
+Hey, can you remove this country?
+
+**Jenny Smith** 32:50 (Part 1) Mhm. OK, Yep. So that that to me sounds like, uh, that's that would be,
+yeah, that would be a gap for this specific component. But when we take
+a look at Google Map, we'll confirm that that functionality is what
+essentially the gap would need to.
+
+Richard Ray (Director of Digital Experience)** 32:56 I don't know if that's a gap. All right, that's been. And that would be the same for wherever there's a locator, we want to
+be able to control what shows. So if it's on hardrock.com, hotels,
+cafes.
+
+**Jenny Smith** 33:09 (Part 1) Um, a su. Mhm. Yeah. Got it. OK, all right. So taking a look now as we see this here. And
+again, I can I can take a look at why these images are not displaying.
+This is likely either there's no image associated with this or if
+something's not necessarily published. But you can see here that the images that we saw previously associated
+in this content fragment for the location is being surfaced up in the
+destinations as well as the venues here. And I know Lisa, like you
+mentioned having the dimensions. For the image that's being displayed is is information that the team
+would be looking for. Where did I? Sorry, I was.
+
+**Amy Carter** 34:03 (Part 1) Yeah, definitely because I I don't see the option to make this like. I
+know like that was the solution with the image position at least, but
+since I don't think that has that here, we'll definitely want
+baseline.
+
+**Jenny Smith** 34:11 (Part 1) Hello. Yeah. Yeah, understood. And yes, you are correct. The image position is not
+available on here since I think like the images would, it wouldn't
+really make sense to have that here at a component level in its
+entirety. So yes, definitely want to make sure that we can identify what that is.
+So the authors can add something appropriate to this field here. OK,
+where did it go? Here it is. All right, so let's see. OK, so this component, so we can see what the author looks like. We can
+see how it displays. We've identified a gap for the countries that are
+listed underneath the the title for each section. Any other questions though about this specific component, the type of
+destination and filter by region. This is information again that's
+coming in from the content fragment. So type of destination, type of
+vacation. In this case this is empty for this specific one for Hard Rock
+Cafe if we're to go back to our. Cancun one. These should be filled out by an author to make sure that
+it's filterable when if the user were to interact with this here.
+
+**Amy Carter** 35:33 (Part 1) I do have a question. Given that cafes, you know, are going to need the
+knowledge base to access their own fragment model if they have something
+that they need on their page, what if they were to accidentally fill out
+anything for like hotel because?
+
+**Jenny Smith** 35:35 (Part 1) Mhm.
+
+**Amy Carter** 35:49 (Part 1) You know some cafes are at those hotels, so what if someone just gets
+confused? Are they going to now accidentally show show here? Like does
+this get impacted by any author in their content fragment model if I
+like am a cafe website manager, but then I put. You know, I don't know something one of the the fields that are for
+hotel only.
+
+**Jenny Smith** 36:15 (Part 1) Um, so your question, let's see here. So I know.
+
+Richard Ray (Director of Digital Experience)** 36:17 I get the menu, they check yes, but it's a cafe.
+
+**Amy Carter** 36:19 (Part 1) Yeah, exactly. So like what if they're like, oh, we're we are a venue
+because they got confused and they also put their capacity for their
+maybe their cafe can be used for meeting. I don't know. I just, I'm
+saying worst case scenario, is it gonna impact our hotel pages, those
+fields?
+
+**Jenny Smith** 36:25 (Part 1) Mm. Um. Right. Understood. Yeah, no, understand, especially with all the fields.
+So one thing that I do know is I believe we are looking at the line of
+business, you know, as because that's not, this is not something like
+you can't just say, oh, only get me cafes or only get me hotels here.
+So my understanding. As we are looking at the line of business, I will check with our dev
+team to ensure that these specific components you know like. So if I
+were to add something here, this should you know this uneditable field
+should prevent that. But I will check with the team just to confirm that
+because I understand. Yeah, I definitely understand that. Like you wouldn't want this cafe to
+appear on this page, but I will.
+
+**Amy Carter** 37:17 (Part 1) I meant for like the editable, the editable fields, obviously.
+
+**Jenny Smith** 37:20 (Part 1) Well that what I'm saying is that if the editable field here is saying
+cafe, even if you fill out this information, I do believe that that
+should not have an effect on this, but that's what I'm going to check
+with the dev team to see how that was coded up.
+
+**Amy Carter** 37:34 (Part 1) Because the reason I ask is we've we've seen not cafe locations under
+the is delivery meaning someone went in to a hotel location and selected
+is delivery so then they appear on cafe. So it's like we may run into
+that.
+
+**Jenny Smith** 37:49 (Part 1) Yeah, yeah, definitely. We'll want to check. I will be checking with
+the team tomorrow just to get a better understanding of how these
+components will display certain information that's not related to their
+line of business. And so we'll check in on that one, Lisa. Hey. All right.
+
+Richard Ray (Director of Digital Experience)** 38:08 Danielle, on this page that we're looking at the the HTML version, is
+that just like a a test page that you made or is that like the actual?
+OK, that is the actual page. Can we see what this looks like like a
+preview, view preview, view of published, whatever it is?
+
+**Jenny Smith** 38:10 (Part 1) Yes. Yes, you can view as published, but this is also something that's. So
+if you were to go to the publisher, this is what it would look like.
+Keep in mind, I think that these probably don't have images associated
+with that, so that would be something that an author would have to add.
+
+Richard Ray (Director of Digital Experience)** 38:33 Right. OK, the only reason I ask is you have the the accordions aren't the
+same length or width, and then there's white underneath each accordion
+instead of the Gray background. So I'm just looks like there's some
+unfinished styling padding on the above purple section.
+
+**Jenny Smith** 38:43 (Part 1) Yeah, yeah. Right. So I think, yeah, so you can see this page has not been touched
+for quite some time. So I I don't think, I don't think that we have
+made any changes to this, but obviously like to your point, Rick,
+there's this would be something that would certainly want to be
+reviewed prior to.
+
+Richard Ray (Director of Digital Experience)** 38:51 Um.
+
+**Jenny Smith** 39:09 (Part 1) Doing any actual publishing to an actual website, but no one has touched
+this page in quite a few months, so just be clear on that.
+
+Richard Ray (Director of Digital Experience)** 39:12 Um.
+
+**Amy Carter** 39:18 (Part 1) I think we'll want to report it, Rick. Yeah, because, well, the reason
+I think we need to report it is because hotels was technically already
+handed off. So to our understanding, there's no no other work being
+done from that handoff until until the gap.
+
+Richard Ray (Director of Digital Experience)** 39:18 OK, so it's gonna be touched. Yeah, OK.
+
+**Jenny Smith** 39:26 (Part 1) Mhm.
+
+Richard Ray (Director of Digital Experience)** 39:28 Oh, fine. OK, who reviewed before that was handed off?
+
+**Amy Carter** 39:34 (Part 1) No, I mean, we paused that. It didn't make it to the content team or
+past Angelica. But what I'm saying is vendor's not working on these
+components, so it just needs to be documented.
+
+Richard Ray (Director of Digital Experience)** 39:39 Oh. So we find issues with them.
+
+**Amy Carter** 39:47 (Part 1) Yes.
+
+Richard Ray (Director of Digital Experience)** 39:48 We're OK. There's no review process before they're handed off.
+
+**Amy Carter** 39:54 (Part 1) This will be part part of our like gap analysis, part of our gap
+analysis.
+
+Richard Ray (Director of Digital Experience)** 39:58 Gotcha. OK. I'm surprised it wasn't reviewed by somebody, OK.
+
+**Jenny Smith** 40:08 (Part 1) OK, let's see here. All right, so venues, the destination and
+destination search and filters component. So we understand how this
+works and how that's. Author and lives on this page. Let's take a look now at. Cafe stuff. OK, let me see what else I have open here. All right, let's
+take a look now at some hotel specific items, starting with the booking
+widgets. And I did want to mention that I believe before the pause there
+was discussion about the. Different booking engines. However, of course, since we were paused,
+changes had not been made to the component. So what I'm going to show
+you today is what the component is in its current state, but I do
+remember prior to the pause, I believe sometime last year. There was quite a few meetings about booking engines and and that sort
+of things with the with the need to add certain other ones in addition
+to say Synexus and I can't remember the name of the other ones, but
+that is not in place right now, so just want to make sure that's
+clear. OK, so with this booking widget component, what we're taking a look at
+now is at the very top of our hotel pages, clicking on book now. And
+because I am viewing and publish, this is actually, I'm sorry, I was
+being in preview. Let's look at this view of publish. Look now. OK, so
+this. Specific component booking widget is being used in two locations for
+most hotels. You're going to see it here at the top in the Book Now
+button and then also on the main page for the hotel. I will take a look
+at this in. Alright, yeah, so taking a look at this on the publisher side, you'll
+also see here's the book. Now the booking widget, except it's laid out
+slightly differently to control that. It's a style variation between
+pop-up and default. Default will have that horizontal view and pop-up
+displays it. Like this, since the intention is to use it within a Moodle. So what's
+being shown here when you click book now and you see this. Right now
+this is being authored within an experience fragment. I'm taking a look
+at the Riviera Maya. Experience fragment, Book now experience fragment. And so this has a one
+booking widget component in it with some configuration. I see your hand
+up, Rick. Go ahead and ask your question.
+
+Richard Ray (Director of Digital Experience)** 42:52 No, I I didn't wanna wait or interrupt you as you're doing the
+functionality. I just had a comment on the other view, but I don't
+wanna stop your functionality.
+
+**Jenny Smith** 43:00 (Part 1) OK. All right, sure thing. Um, Carrie, I think your hand's up.
+
+Carrie Hollins (customer)** 43:10 Can you hear me now?
+
+**Jenny Smith** 43:11 (Part 1) Yes, there we go.
+
+Carrie Hollins (customer)** 43:13 Thank you. Um, this book now button today fires event 67. How do we
+ensure that that continuity is maintained?
+
+**Jenny Smith** 43:28 (Part 1) I, let's see.
+
+Carrie Hollins (customer)** 43:32 Is that something that happens at the developer level or is that
+something that happens in this configuration of the the module itself?
+
+**Jenny Smith** 43:39 (Part 1) Someone, I believe it. Hey, Andy, are you?
+
+**Burt Jones** 43:42 (Part 1) Andy might have to help with that. Andy, can you perk your ears? And
+Kerry, you might have to restate it.
+
+Carrie Hollins (customer)** 43:45 OK.
+
+**Jenny Smith** 43:45 (Part 1) Yeah.
+
+43:46 Yeah, what's the question?
+
+Carrie Hollins (customer)** 43:47 Well, we can take it offline. We can take the analytics discussions
+offline, but I just want to make sure that we're aware that this
+specific component, wherever it's used, should be firing event 67 on
+that book. Now for the first time it's clicked in a session, and if
+it's clicked more than once in a session, every subsequent time it
+fires events. 68 and that's the current implementation today. So we want to make sure
+we maintain that that tracking.
+
+**John Zimmerman** 44:14 (Part 1) Thanks, Carrie. Yeah, definitely track it and we'll take a look into it
+and and circle back with it.
+
+Carrie Hollins (customer)** 44:16 Sure. Excellent. Thank you.
+
+**John Zimmerman** 44:21 (Part 1) Yeah.
+
+**Jenny Smith** 44:23 (Part 1) Alright, OK, so looking at the configuration for the booking widget
+component and I'm actually going to go to the Riviera. OK, yeah, let's go to this page so we can see the exact oops. OK, alright, so I'm clicking book now. Alright, so for starters you may
+wonder, OK, why is the experience fragment showing the button in this
+color but on the actual site is showing different color. This is because
+when you are in experience fragments. It's not going to show the theme, the theme for your site because the
+themes are being set at the site level. So when you see it like this and
+you see it differently on this, the the only difference is just that the
+theme colors have now been applied at the site level. All right, OK, so configuration wise for this one.
+
+Carrie Hollins (customer)** 45:17 Sorry, real quick, one other question. So we have a target activity
+running on the book now button on the sites where it's green and it
+says check availability. How do we well this might be a separate
+conversation for another time, but I just want to raise the issue that.
+
+**Jenny Smith** 45:19 (Part 1) Sure.
+
+Carrie Hollins (customer)** 45:36 If we were to make that change, if we're running an AB test on this
+module, do we run it on this experience fragment or do we set it up some
+other way?
+
+**Jenny Smith** 45:50 (Part 1) So Kerry, correct me if I'm wrong. You're saying that this basically
+you're running target to change this when the page loads. So instead of
+saying book now it would say check availability.
+
+Carrie Hollins (customer)** 46:01 And it's a color green, yes, that's correct.
+
+**Jenny Smith** 46:03 (Part 1) It's color green. So I think in terms of the target activity you're
+asking, would you be taking this experience fragment and setting the AB
+test in the experience fragment versus page? OK.
+
+Carrie Hollins (customer)** 46:15 Yes, versus the way we're doing it today on Sitecore, yeah.
+
+**Jenny Smith** 46:20 (Part 1) And in site core is the the buttons on at the page level.
+
+**John Zimmerman** 46:24 (Part 1) Yeah, that's OK.
+
+**Maia Emerson** 46:25 (Part 1) Actually, visually, that's a visually.
+
+**Jenny Smith** 46:25 (Part 1) Oh, um.
+
+Carrie Hollins (customer)** 46:26 Oh, sorry, visorgy. Yeah. Uh. I mean, is it at the page level? I don't that's Rick, is it at the
+page level? I mean, I feel like it's a module that that drops down.
+
+**Maia Emerson** 46:40 (Part 1) It's a it's global on pages.
+
+Carrie Hollins (customer)** 46:43 Yeah.
+
+**Jenny Smith** 46:43 (Part 1) It's global across all pages. OK, so with hang on, I'm going to just
+pull up. Oh, hang on. Oh, one second, guys. My computer seems to have frozen.
+
+Carrie Hollins (customer)** 47:01 And I don't want to take us off track for the training of the module
+itself. I just want to be aware of where do we go to run a B test. So
+maybe we can do target activities as a separate training session just in
+general.
+
+**Jenny Smith** 47:14 (Part 1) Oh yeah, I think, yeah.
+
+**Burt Jones** 47:15 (Part 1) We'll take that offline, Carrie. We we we don't have a target resource
+as part of this KT. We had it explicitly out. You know, I hate to be the
+scope guy, but I always am it. Yeah, so. So I'll take it offline that
+there's some further target questions that you're having as a result
+from these KT sessions that we can see.
+
+Carrie Hollins (customer)** 47:18 OK. OK. No, that's fine.
+
+**Burt Jones** 47:35 (Part 1) we can do, okay?
+
+Carrie Hollins (customer)** 47:35 Yeah, and and I know how to set up the test. I just need to know if I'm
+targeting an experience fragment or or some other component. That's
+all. It's a basic question. Thank you.
+
+**Burt Jones** 47:44 (Part 1) OK, got it. Yeah. And and Andy, take that down technically. I know, I
+know you, you go through these as well for notes and then we can have an
+internal follow up to see what we can do for Carrie. OK.
+
+**John Zimmerman** 47:55 (Part 1) Got it.
+
+**Burt Jones** 47:57 (Part 1) All right. Thanks, Carrie.
+
+**Jenny Smith** 47:59 (Part 1) OK, OK, so my computer has frozen just this browser. So if you guys can
+give me one second, I'm going to try to relaunch Google Chrome. Sorry
+about that guys. One second please. OK, I am still having some issues with this. I might need to restart my
+computer. Uh. Computer. Uh. Luke, can you if you want to pause the recording for right now because I
+think I need I think I need a restart. I wouldn't want to have like 5
+minutes of dead air on here so.
+
+**Burt Jones** 49:07 (Part 1) OK, yeah, no problem. I'll stop the recording real quick. All right, no
+problem.
+
+**Jenny Smith** 49:08 (Part 1) Thanks. I'll be right back guys. Thank you.
+
+**Burt Jones** stopped transcription
+
+**Customer Vendor Knowledge Transfer-20260223_135724-Meeting Recording -- PART 2**
+
+February 23, 2026, 6:57PM
+
+10m 37s
+
+0:07 (Part 2) Alright, we're back up.
+
+**Burt Jones** 0:10 (Part 2) And Daniella, if you have issues with whatever system updates happening,
+you know, if you have to, if it drops you quickly, I'll, I'll screen
+it and we'll have to pick these back up, OK.
+
+**Jenny Smith** 0:21 (Part 2) Yeah. Yeah, yeah, got it. Hopefully my computer doesn't just restart. But
+yeah, if so guys, just FYI, if I just disappear, it's because my
+computer restarted. But well, hopefully that won't happen. OK, let's
+resume. I'm going to go ahead and share my screen again.
+
+**Burt Jones** 0:25 (Part 2) All right. Thank you. Yeah.
+
+**Jenny Smith** 0:38 (Part 2) And let's pick back up. We were talking about the booking widgets.
+Carrie had some questions about things that we will hopefully be able to
+address with a target resource if possible. Um, but going back to our experience fragments.
+
+Richard Ray (Director of Digital Experience)** 0:59 So, so before you get started, this is probably a good time to ask ask
+my question or just speak. If you can go back a tab or two to the to the
+main UI widget, no on the homepage.
+
+**Jenny Smith** 1:00 (Part 2) Yeah. Check. Here. Uh, so the homepage like the hotel homepage?
+
+Richard Ray (Director of Digital Experience)** 1:17 Yeah, you had it open in one of your tabs.
+
+**Jenny Smith** 1:18 (Part 2) Yeah.
+
+Richard Ray (Director of Digital Experience)** 1:21 So the the booking widget looks a little like not long enough or wide
+enough and then then all the lines are like on different levels. So is
+that something that we can get adjusted or are we going live with all
+those lines and book now buttons all just everywhere?
+
+**Jenny Smith** 1:39 (Part 2) So I think like I think this is the kind of things that we would want to
+make sure is covered in the gap analysis. So just to be clear, Rick,
+like you know things like this, you know or if there's like
+functionality that we know should be added to the booking widget such as
+the booking. Engines functionality I was mentioning that's stuff that needs to be
+covered in the gap analysis. So as long as you write that down and we
+can review it during the gap analysis portion.
+
+Richard Ray (Director of Digital Experience)** 2:09 OK. Thank you.
+
+**Jenny Smith** 2:10 (Part 2) Yep. K. Oh, yeah, I see. OK. I was like, I see your head back up. Another
+question. OK, looks like we're OK.
+
+**Burt Jones** 2:17 (Part 2) No, he was giving you a high five, Danielle. Are you good?
+
+**Jenny Smith** 2:19 (Part 2) Oh, got it. Thank you. All right. OK, so let's go back to. I think I
+had to. Yeah, I had to get out of that tab. I'm going to open back up
+the experience fragment for Riviera Maya. So to be clear, these booking
+widgets are added to. To the header. Um. The header of each individual website and the reason being is that they
+each have individual URL links that they would go to. In this case here
+for we were looking at Riviera Maya back up. I'm going to click on
+Hotel Riviera Maya and then EN and you'll see here here's the header. And then here's the book now. So opening up book now, I'll see what it
+looks like when you click on the book now button. Going back here, I'm
+going to go to the header. I'm going to take a look at the header
+experience fragments. We've seen these before. Um, but the way that this has been added. Here in the crown CTA location, I Scroll down and I see book now that's
+so this is the actual button itself and then you'll see it's pointing
+to that experience drive that I have open in this tab and it's going to
+open it. Up in a modal, so that's how this is authored. So the book now modal is
+separate, but separate from the header, but it's referenced in the
+header by adding it to the Crown CTA component. Let's cancel this and I'm going to close all this tab. So now I'm
+focusing on our book now widget. I'm going to click on edit. And take a look here. So this specific component as we saw, it's being
+used on the main hotel site, but then also each individual property. So
+you'll see group name here. It says North America. Reason why is
+because again, this is the shared component. So that is listed in the dropdown. If we take a look at the main hotel
+website and and and then. Now. OK, sorry, it's loading if we were to take a look at. If we were to take a look at the main main website, you'll see that the
+book. Like I might be going through a restart right now.
+
+**John Zimmerman** 5:06 (Part 2) Yeah, you cut out audio wise there for a second.
+
+**Burt Jones** 5:07 (Part 2) Yeah, I noticed you cut out too. Do we need to? Do we need to postpone Daniela?
+
+**Jenny Smith** 5:16 (Part 2) Um, can you hear me?
+
+**Burt Jones** 5:18 (Part 2) Yeah, I hear you. Can you hear us?
+
+**John Zimmerman** 5:18 (Part 2) Yeah.
+
+**Jenny Smith** 5:19 (Part 2) OK, yeah, I hear you. I just. I don't know what's we might need to,
+because I don't want this to persist. Um.
+
+**Burt Jones** 5:26 (Part 2) Yeah, a lot of people on the call, right?
+
+**Jenny Smith** 5:28 (Part 2) Yeah, understood. So I think what we can do is let's, let's, let's
+pick this up tomorrow. What we'll cover is the booking widgets. I want
+to make sure we cover the Google map. So that way Gonzalez has a chance
+to ask his questions. And I unfortunately, I can't pull up the agenda right now, but anything
+else that we have not talked about, we'll make sure that we cover
+during the first half of the session tomorrow and then just kind of
+continue with our next agenda, which I can connect with you, Luke. About so we can send it out to the team.
+
+**Burt Jones** 6:03 (Part 2) And we can tailor the agenda from what you know you you you were
+planning on tomorrow plus the remaining stuff we need here. Yeah, I
+think it's it's probably better anyway because Lisa had the drop I see
+and I she's key for these discussions. So yeah, all right, sounds good.
+I'll send the recording and transcriptions out and then we'll send the
+agendas out for the.
+
+**Jenny Smith** 6:13 (Part 2) OK, OK.
+
+**Burt Jones** 6:21 (Part 2) At least tomorrow's session with the tailored agenda. Alright, thanks
+guys.
+
+**Jenny Smith** 6:25 (Part 2) In. Sorry about that, everyone. Thank you, everyone. Goodbye.
+
+**Burt Jones** 6:27 (Part 2) No, it's all it's all good. Alright, bye. You.
+
+Cal Nelson (customer)** 6:32 Thank you. Bye.
+
+**Burt Jones** 10:07 (Part 2) Angelica, are you on this call right now? Yeah, yeah, we we we had to end it. Yeah. Oh, no problem.
+
+## Session: Locations, Day 2 — 2026-02-24
+
+**Customer Vendor Knowledge Transfer-20260224_130151-Meeting Recording**
+
+February 24, 2026, 1:00PM
+
+1h 50m 12s
+
+Burt Jones** started transcription
+
+**Burt Jones** 0:09
+All right, Danielle, it\'s all yours. Thanks.
+
+**Jenny Smith** 0:12
+All right. Thank you everyone for joining. Apologies again for yesterday\'s computer technical issues. Hopefully we won\'t have that today, but what I wanted to cover today is first start off with some follow-up items from our new session. I I had planned on doing that yesterday.
+But Edwin, I don\'t think you were here at the time at the beginning. So I just wanted to quickly cover at least one of your questions from that day. And then I also want to show some follow-ups from yesterday\'s session before it got cut short. And then we\'re going to continue the rest of the agenda to go over the remaining locations related components.
+and leaving some time for questions and and seeing where we end up at the end of the call. So I\'m going to go ahead and share my screen so we can take a look at that news page here on the Confluence page. And Ed, when I saw this specific question here, um the other items I know
+That we had also talked about on on our call and I am planning on going through the confluence pages and providing some answers, but for this one I think it\'ll be easier if I just show what we\'re talking about here. You asked what path do we choose for the CF list path? This was a bit confusing in the enablement session.
+Can we maybe explore updating the info tools to be more informative as it isn\'t intuitive on on what the path should be? So I was a little confused when I saw that, but I looked down here and I saw that it was specifically for category listing, so I wanted to just show and confirm our understanding of this.
+So here on our news pages we have these two category listing components. Depending on how you configure it, it can either be showing categories or it can show archives. Your question specifically was what should the content fragment list path?
+And what we can see here is that I\'ve selected the path for showing all the years. So basically the EN is what I\'ve selected. So that\'s going to be showing all the content fragments that are news under corporate under EN.
+And then immediately under that all these child items will be listed here on the side. And I saw an example of a page where that was not set. So this is just a page I I saw on stage. The category listing is listing something different.
+And the reason why is because this specific content fragment list path stops at news and so if corporate, that\'s why the the child items immediately under news being displayed. But to show the years like we saw previously, you would have to just go down a little bit further in the DAM.
+So if this were changed to EN, I\'m just actually going to do this because we\'re in stage, so it\'s OK and we hit done. You can see how it updates to that next child, that next child level, which happens to be the year folders.
+So just wanted to confirm that that was what your question was, is you know, what would you ideally want to put in this path? And whatever you plan on showing, it\'s going to be the child, the child level immediately after the last item in your content fragment list path.
+
+**Terry Friedman** 3:33
+Thank you, Daniela. That that covers it exactly. It was just a little bit confusing for the team and we wanted to make sure we had the right answer for that.
+
+**Jenny Smith** 3:37
+OK.
+Yeah, perfect. Understood. So yeah, glad I could answer that. And again, I think it was a lot easier to do it by just showing it versus trying to write that out. So, OK, great. All right. So that was the one item from news. You had also asked about the news page template. We are going to be covering page templates hopefully this week, if not very.
+Early next week, depending on how far we can get through the other items. So we\'ll talk about the name field since that\'s not exclusive to news page, it\'s for all pages. Alright, OK, I\'m gonna pull this over to the side now and I wanted to address another question that came up yesterday.
+With regards to the dining, I\'m sorry, the delivery widget and I think Lisa, you\'re on and I just wanted to confirm when we take a look at this, I think your concern, you mentioned a hotel that was on here. I don\'t see it here, but maybe it was on the production or.
+
+**Amy Carter** 4:35
+Yeah, it\'s it\'s actually, it\'s a casino that\'s showing. So how it\'s Hard Rock Casino, Rockford. Obviously we wouldn\'t want that unless something\'s pulling like the wrong name for that location.
+
+**Jenny Smith** 4:37
+Something.
+OK. Yeah. OK. OK. Yeah. So I.
+Right.
+Yeah, so let me show you. I did some digging as to why is this coming up? Um.
+
+**Amy Carter** 4:52
+Yeah, \'cause I think we reported this actually like way back when when we were, you know, looking at Cafe for validation. So something\'s not right at DLT.
+
+**Jenny Smith** 4:59
+Yeah, so.
+Yeah, OK, Yep, Yep. So you can see here the property legal name is Hard Rock Casino Rockford. The location legal name is Hard Rock Cafe Rockford Casino. This this specific item has this delivery with the Uber Eats. So and if you look down here the sub, the line of business is.
+Cafe.
+So that\'s why this specific item is coming up in that list. I also did some tests just to take a look. You\'ll notice this here. What I\'m showing is Hard Rock Hotel, Daytona Beach and the line of businesses hotel. What I did was I added some test delivery partners for.
+Delivery, however, and I published it too. You can see I had published it. However, it\'s not going to appear because it\'s not the line of business isn\'t Cafe.
+
+**Amy Carter** 5:53
+OK. That\'s good to know that the line of business is dictating this widget. I think the concern here is, I don\'t know Scott or IT if someone can take this to the right contact to say like like this casino is getting classified as a cafe, which I believe is wrong.
+
+**Jenny Smith** 5:58
+Yes.
+
+**Amy Carter** 6:14
+I don\'t know who the contact is for this though. This is my question to customer.
+
+**Jenny Smith** 6:17
+Hmm.
+Mhm.
+I yeah, I.
+
+**Amy Carter** 6:24
+31.
+
+**Carrie Hollins (customer)** 6:24
+Is it? Is this being driven by the DPLT integration?
+
+**Jenny Smith** 6:27
+That\'s, yeah, that\'s correct. Any field that you see here is that\'s hard. I\'m sorry, that\'s disabled. That\'s coming in from DPLT.
+
+**Carrie Hollins (customer)** 6:37
+Then the DPLT team needs to all the classifications have to come through DPLT correctly, and that\'s Vipul Patel.
+
+Richard Ray (Director of Digital Experience)** 6:38
+So it\'ll be that team, yeah.
+
+**Amy Carter** 6:46
+OK, so.
+
+**Carrie Hollins (customer)** 6:47
+So if you see something misclassified here, then we need to take that up to Vipul\'s team.
+
+**Amy Carter** 6:53
+OK, that\'s fine. I was just curious because obviously this is the only one that this is happening for, right? The casinos. This is the only casino showing as a cafe compared to other locations that might be a casino, but their cafe specific location is showing. For example, Hollywood comma Florida is the Hollywood.
+
+**Jenny Smith** 7:00
+Mhm.
+
+**Carrie Hollins (customer)** 7:00
+Mhm.
+
+**Amy Carter** 7:13
+Cafe. Yet there is probably a different DPLT name and number associated for the casino for Hollywood. So does that make sense? So something\'s wrong with Rockford.
+Rockford should just say Rockford in this list if Rockford has a cafe.
+
+**Jenny Smith** 7:29
+Mm.
+
+**Amy Carter** 7:31
+And I\'ll take this back then. I guess I\'ll, yeah, that\'s fine.
+
+**Carrie Hollins (customer)** 7:35
+Um.
+
+**Jenny Smith** 7:37
+Did did did you need the property ID number Lisa or?
+
+**Amy Carter** 7:41
+Um, if I can just like, actually zoom in and I\'ll screenshot this. Yeah, that\'s fine.
+
+**Jenny Smith** 7:45
+Yeah, that\'s helpful. Um.
+
+**Amy Carter** 7:49
+Thank you.
+
+**Jenny Smith** 7:49
+Yep. And so yeah, I just wanted to show though. Um, so yeah, I had done some tests.
+
+**Amy Carter** 7:53
+I just thought it had mistakenly said is delivery, but it\'s and that by mistake it was like selected for a casino property. But it\'s because this is classified as cafe and DPLT. So OK, let me reach out and I will get.
+
+**Jenny Smith** 7:57
+Hmm.
+Yeah.
+Correct. That\'s correct, yes.
+
+**Amy Carter** 8:09
+You can carry on, I\'m sorry.
+
+**Jenny Smith** 8:10
+Sure, no problem. Yeah. So I was testing, I did some tests, you know, with the hotels. So with this Hard Rock Hotel, Daytona Beach, the category was, I\'m sorry, the live business was hotel that did not appear in the list. And then I also tested with like for example, this one was sports book and it was categorized as a sports.
+Book also not paired the list and then to make sure that things were actually being published, updating an existing one like Amsterdam and you can see here\'s my fake Google one. So this is basically pulling in the things that our line of business Cafe has is delivery checked.
+And it\'s it\'s just showing those names. So Lisa will you know if they make that change in DPLT like changing the the line of business or something, this should be removed even if his delivery information is still stored there. But we can certainly you know look at that later once that changes is made.
+
+**Amy Carter** 9:00
+OK.
+
+**Jenny Smith** 9:05
+In DPLT. So Yep, no problem. All right, so that was a follow-up from yesterday that I wanted to make sure the team was aware of. Let me pull up the agenda so we can take a look at what else we are covering.
+
+**Amy Carter** 9:07
+Take care.
+
+**Jenny Smith** 9:24
+All right. So yesterday we talked about the location content fragment and we\'ll continue to reference that as we go through some additional components, the venue CF and how that works for hotels and how it\'s displayed within the destination search and filters component.
+We started talking about the booking widget and then that\'s when my computer died. So we\'re going to pick up here and go over booking offers, find a location, Google map, and I know Gonzalo said he had some questions about this one and then also the location list component. So let me go ahead and pull up our booking widgets.
+Booking widgets. OK, so I\'m just going to pull the publisher side to the right and the configuration side on the left. And right now I am in Cancun Hotels homepage and we\'re taking a look now at the booking widget from the.
+Within the content page point of view. All right. OK, so let\'s let me select my booking widget and take a look at how this has been authored. So as we saw yesterday, if you guys remember the same widgets being used within this book now component.
+We have our the ability to display it in two different ways, whether it\'s within a modal like we see here, or whether it\'s just on the page like we see here will be listed horizontally. The fields are exactly the same since the same component, just a style variation has been either default or pop up.
+And you\'ll notice here under under my group name I have North America, but my destination is Cancun with the specific URL where the book now will lead to and the destination value and I\'ve enabled rooms, adults and children.
+And so this here rooms, adults and children is displayed because I had that check mark there. You see North America, which was the group name Cancun, which was I I had configured for it to say Cancun.
+And then the you know. So let\'s take a look at what gets passed. We need to hit book. Now we can see that this passes in the parameters I had selected from the previous page, including the one second.
+Uh, geez.
+Including the destination URL, so hotel.
+Reservations are hardrock.com. The destination value of 59391 is getting passed in so that we were able to go specifically to our Cancun location and then all the parameters for rooms, adults and children are also getting passed in as you can see here with the URL.
+And Rick, I see your hand up. Um, please go ahead.
+
+Richard Ray (Director of Digital Experience)** 12:22
+Sorry, I didn\'t want to interrupt your your flow. Can we see that the pop-up booking model again? There is like a black border thing around it.
+
+**Jenny Smith** 12:28
+Yeah, certainly.
+Yeah, so I think this here is. So this is coming in from the modal, I believe if we were to, yeah, so this is coming in from the modal on the backgrounds. Try to remember if you can change that or not.
+
+Richard Ray (Director of Digital Experience)** 12:50
+What can we make the the booking widget the same size as the model, at least the background color or something?
+
+**Jenny Smith** 12:54
+Mm.
+We can see.
+
+Richard Ray (Director of Digital Experience)** 12:59
+OK, that was it. I didn\'t mind it. Sorry, I check it. Sorry.
+
+**Jenny Smith** 12:59
+So I\'m gonna pull. No problem. Yeah, no problem. Let\'s take a look at this this experience fragment though, just to make sure we understand how it\'s used also with an experience fragment. Let\'s see, where\'s Cancun?
+
+**Amy Carter** 13:16
+And again, while you\'re looking for the location, we get the number from here. Where do we get that number from?
+
+**Jenny Smith** 13:17
+OK.
+So the number was, I think, Rick, can you answer that question with regard? You\'re talking about the destination value, Lisa. Yeah, Rick, these are numbers I believe that were provided to us during like the migration like these were. Yeah, OK.
+
+**Amy Carter** 13:30
+Yeah.
+
+Richard Ray (Director of Digital Experience)** 13:31
+Yeah.
+Yeah, I\'m sorry. If it\'s a hotel, Lisa, these are the Senex societies.
+
+**Amy Carter** 13:41
+OK, so we would have these already somewhere for reference and or they\'re just like pre created once this is handed over. Oh like I just want to make sure that as authors.
+
+Richard Ray (Director of Digital Experience)** 13:47
+Yeah, yeah, you\'ll you\'ll see it in like the booking links. It\'ll be like hotel is 68 whatever, whatever and then I\'ll say or chain group or something and then hotel equals and then that\'s usually when you\'ll see this number. Now I can\'t speak to site core sites, so I don\'t know what.
+
+**Amy Carter** 14:00
+Yeah, no, we we don\'t use values. We just have a link. Um.
+
+Richard Ray (Director of Digital Experience)** 14:04
+Right. So I don\'t know what that what this would look like if this was, you know, a a casino if you\'re trying to book Hollywood. So I don\'t know if it would just link off here or.
+
+**Amy Carter** 14:09
+Or actually, yeah, you\'re right.
+I\'ll speak to that. I mean, actually I\'ll let IT speak to that because I\'m sure there\'s other configurations that I don\'t want to jump to conclusions for Sitecore. I was just curious, as authors, do we need to know that number moving forward or like once this is configured, there\'s no need for us to really get that number?
+
+Richard Ray (Director of Digital Experience)** 14:17
+Yeah.
+
+**Amy Carter** 14:29
+Again.
+
+Richard Ray (Director of Digital Experience)** 14:31
+I would say yes and yes. I don\'t know if they\'re all gonna come in, so you shouldn\'t have to do anything, but those numbers will never change. So once they\'re set, you should be good. But Danielle, So what? How does this work with a casino?
+
+**Amy Carter** 14:36
+OK.
+OK.
+
+**Jenny Smith** 14:44
+So I think for a casino, I don\'t, I would need to check to see what had been migrated. Keep in mind that I know that when we pause the project we keep, we were planning on discussing additional booking engines and stuff specifically for casinos.
+For the booking widget and also the booking offers component. So I\'m not quite sure if those like those had been finalized, but there is there were still some gaps that we were discussing before the pause. So right now this here like the destination value like you were saying Rick, I believe this was specifically for your.
+
+Richard Ray (Director of Digital Experience)** 15:13
+OK.
+
+**Jenny Smith** 15:20
+The Vizirgy sites and anything that had been previously within like the Hard Rock Hotel like Destiny\'s Rock Zoo should have been carried over during the migration. So if you\'re saying they would never change for these locations, they will already be in the dialogue window with this like text like this.
+So I think Lisa, if like someone were to like put something else here and hit done and messes that up, then yes, she would need to be able to restore the previous value. But anything that\'s been migrated over like it should still it should be there.
+
+**Amy Carter** 15:50
+Okay, thank you.
+
+Richard Ray (Director of Digital Experience)** 15:51
+Is there any way we can test a casino if you had one migrated over just to because the the value, the ID is for Synexes. I don\'t know how the wind surfer links. I don\'t know if there\'s an ID maybe Kerry can jump in.
+
+**Jenny Smith** 16:04
+Yeah. So I I think with our during the IB discussion having specifically for casinos, that\'s where that\'s like right around the time of the pause. So I don\'t think that that\'s been finalized yet. So yeah, for Visorgy though this should be fine, yeah.
+
+Richard Ray (Director of Digital Experience)** 16:15
+Mhm.
+OK.
+OK.
+
+**Jenny Smith** 16:22
+I\'m going to hit cancel so we can see how this was authored here within the page and we were taking a look at our experience fragments which I opened up the header of Cancun.
+I open up the Crown CTA component and I\'m scrolling down and we\'re seeing that we are referencing our book now experience fragment to open up within a modal. So as you can see here this is there\'s.
+The modal itself I believe does have a black background automatically, Rick. So if the desire would be say to have like this be like a configurable color or something, that\'s something I I would want you guys to note down as like a gap, right? If that\'s the desire to do this.
+
+Richard Ray (Director of Digital Experience)** 17:13
+Yeah, just edge-to-edge. Nothing special. Just the, you know, black border. It\'s just it\'s like thicker at the bottom, so it doesn\'t even look like a border, just like a smaller container inside of the pop-up container.
+
+**Jenny Smith** 17:21
+Mm.
+So let\'s take a look at the experience fragment version of this. We can see how you would set up the book now button to point to it, but we can take a look now at the experience fragment itself. So Cancun EN book now. So let\'s open this up.
+And as mentioned before, again, don\'t forget when you are looking at things in the experience fragment section, the theme\'s not going to be applied. So this is certainly going to look different when you actually view the site. I\'m going to open this up and you can see here this is the exact same configuration as I had for what\'s on the.
+Actual page itself O this portion here has been configured the exact same way. The only difference is that the style has been changed to OU.
+Right. OK.
+All right, so any questions about the booking widget component?
+
+**Amy Carter** 18:27
+Just for the rooms, adults, children, I know that that\'s what we have today, but just so I can understand configuration wise if we ever had to add or I I know for a remove would just be unchecking, but I see that word add that what what does that?
+
+**Jenny Smith** 18:30
+Mhm.
+Mhm.
+Uh.
+Yeah.
+Oh, so this this adds. Let me show you the version on the actual on the hotel site. So when you have multiple locations, oops, this is not what I want. When you have multiple locations, you would have.
+Different groups that they\'re under. And so in this case here we have North America and then you have all these hotels underneath, right? So as I\'m adding locations here, like if I so in North America, I could add additional ones, right? So like Atlanta or whatever and then it would just be in whatever order.
+
+**Amy Carter** 19:02
+Okay.
+
+**Jenny Smith** 19:17
+I specify here, I save it and then it would appear within that dropdown. That\'s what the ad does.
+
+**Amy Carter** 19:21
+OK, so there\'s add for the group name and then add for destinations. But for those categories, just in the case of the future that we need a different differentiator, label, field, whatever for what someone selects, like say it\'s like you know, balcony, I don\'t know.
+
+**Jenny Smith** 19:23
+Mm-hmm. Underneath that group name, yeah.
+
+**Amy Carter** 19:38
+Do we? I just want to know, does that field right there require the development to the to the component? I guess I just want to know how it works or I know we don\'t have any other options today besides those three, but just wanted to know for future reference.
+
+**Jenny Smith** 19:50
+Mhm.
+
+**Amy Carter** 19:54
+If someone were to request it.
+Yeah, different field.
+Uh huh.
+Uh huh.
+
+**Jenny Smith** 20:15
+Enable balcony and then determine what those fields should be. Is it like a yes or no field? Is it like a one through 6 whatever? It would probably be yes or no and then also and then updating the UI. So that would be development for sure.
+
+**Amy Carter** 20:31
+OK, OK.
+
+**Jenny Smith** 20:32
+Yep, because there\'s also like, you know, things in place to make sure it gets passed to the correct parameter, that sort of stuff.
+
+**Amy Carter** 20:37
+Right. It\'s gotta be smart enough on the booking engine side too. OK, thank you.
+
+**Jenny Smith** 20:40
+Yes, correct. Yep. All right. Um, OK. Yeah. Any other questions though about the booking widget?
+Right.
+OK. If not, let\'s jump on over then to booking offers, which is pretty similar. However, there\'s just a couple of nuances. So First off and Rick, I know that we had talked about.
+I think like I was trying to find, I was trying to find like a live version of this. I wasn\'t clear if there was a live version of of where booking offers is being used. So I found something that was like old, at least in our author environment. So if there is something that that\'s live today, I can certainly take a look at it, but.
+
+Richard Ray (Director of Digital Experience)** 21:28
+The only thing is the the footer of the hotel site. There\'s a travel corporate and a travel.
+
+**Jenny Smith** 21:29
+It\'s.
+Mhm.
+
+Richard Ray (Director of Digital Experience)** 21:40
+I can\'t remember travel advisors or something, but it\'s in the footer. All the offers. What they do is they just they set up the offer for anybody participating on the booking engine side so we don\'t have to pass a parameter, but these here do pass a parameter, so if you wanted to see it.
+
+**Jenny Smith** 21:43
+OK.
+Oh.
+Mhm.
+Yes, OK.
+
+Richard Ray (Director of Digital Experience)** 21:57
+Just, yeah. And then you\'ll see it up top. There\'s R coming, R coming.
+
+**Jenny Smith** 22:01
+Yeah, saw it. Yeah, yeah, I saw the archon. Yup, I see it here. OK, So what we had here for booking offers is we it\'s as mentioned before, it\'s pretty similar to booking widget. We\'re able to put the group name if you need to. You don\'t have to put it on default to select a destination.
+Yes, I see that this is truncated, certainly something that you guys would want to note, but the functionality for this one is just the ability to put those selected places that have that offer going, the ability to put that booking URL. In this case here I know this says EN and that\'s because.
+This this I believe is an older page. I don\'t know if this is still valid anymore, but and then in our stage environment these right now are just defaulting to to to put something here since this offer is no longer valid, but you would certainly put the booking URL here. If you need to enable arrival and departure dates, that\'s also something that can be selected.
+And then here at the bottom you have the booking window start date and end date. Now this is just for display purposes only. This takes up this portion here and you can see there\'s no way for the end user to change this. This is essentially like a read only field. What they can select is the specific destination they want to go to and the.
+Depending on whether or not arrival arrived date and depart date have been selected, that determines whether this is showing. So in the case of Bali, if we look at the configuration window, we\'ll see that this did not have enable arrival and departure date selected. However the other ones did, which is why those.
+Up here then. So this is the booking offers. Again, Rick, I I do see the version here on this page. I I noticed that this doesn\'t necessarily have the arrival dates. I don\'t know if that\'s that was intentional. I think when we reviewed it initially it did have like a window.
+Um, for the booking window, OK.
+
+Richard Ray (Director of Digital Experience)** 23:56
+Yeah, this is just open. It\'s as long as you, you know, either one\'s for a travel agent. So this is the one for agents, travel agencies or whatever. The other one is for for corporate staff, so they didn\'t need the date.
+
+**Jenny Smith** 24:04
+OK.
+OK, OK. So yeah, yeah, I think, I think then for for here the start date and end date is is not actually mandatory. But yeah, we don\'t. This is an, I know this is an older page so just wanted to show though how this worked, what the intention was for and.
+An example that\'s on the live site right now where this specific component is used. I\'ll pause though and see if there\'s questions about this.
+
+**Amy Carter** 24:38
+Yeah. Do you mind opening? Oh.
+
+Richard Ray (Director of Digital Experience)** 24:39
+Are we able to hide that booking window section? Sorry.
+
+**Jenny Smith** 24:41
+Oh, let\'s try it. I\'m going to make a copy of the component.
+And.
+OK.
+So the booking window is still present, but just the field is blank. Obviously if if you guys are hiding the values I can understand if you guys want to also hide the label too, but as you can see this is how it would work today where it would be present.
+On the component.
+But the fields itself aren\'t necessary. Yeah, go ahead, Lisa.
+
+**Amy Carter** 25:24
+Um.
+My question again, sorry if I like missed it, just figure out what overrides it. So when you click the configure again.
+
+**Jenny Smith** 25:34
+Mhm.
+
+**Amy Carter** 25:36
+And so we\'re looking at a destination. So we have Bali which doesn\'t have enable in departure dates. So what displays when it\'s not checked and then what displays and then what displays when it is checked and then what about?
+
+**Jenny Smith** 25:44
+When it\'s not checked, yeah, when it\'s not checked, it looks like this. You can see that those specific fields didn\'t show up. When I chose Cancun though, these two fields did show up.
+
+**Amy Carter** 25:51
+What?
+OK, so when it\'s not checked, it\'s using the if you go back to configure.
+
+**Jenny Smith** 26:01
+Yep.
+
+**Amy Carter** 26:06
+So if it\'s left unchecked, it\'s using the dates at the very bottom, the booking window dates.
+
+**Jenny Smith** 26:10
+Oh, so, so where? Hang on. Yeah, one second. Oh, sorry, sorry. Let\'s take a look at this again.
+
+**Amy Carter** 26:18
+No, I think I thought that was where it was.
+
+**Jenny Smith** 26:20
+Yeah, yeah, yeah. So yeah, the keep in mind the booking window this and correct me if I\'m wrong, like you could theoretically still bypass this by selecting dates outside of it. Is that accurate?
+
+**Amy Carter** 26:40
+Rick, you\'re on mute if you\'re.
+
+Richard Ray (Director of Digital Experience)** 26:43
+That was, yeah. If this is, this is for the offer space. We\'ve we\'ve kind of modified this since the version you have. So we do have a booking window and that kind of sets the calendars. So those calendars will still pop. I don\'t know if.
+
+**Jenny Smith** 26:53
+OK.
+OK.
+
+Richard Ray (Director of Digital Experience)** 27:03
+This functionality is in the component, so I\'m explaining it. So like it says February 15th to August 31st. So the arrive is going to start at February 15th and then the depart would somewhere end, you know August 31st. So you have to pick dates between those.
+Success since that\'s the booking window.
+
+**Jenny Smith** 27:18
+OK, but got it. So to confirm though, because I I feel like when the component you said that that\'s been like that\'s a a newer change, is that correct?
+
+Richard Ray (Director of Digital Experience)** 27:30
+Yeah, like I said, because they don\'t have to do the rates anymore. So they kind of try to simplify it and do it on the side. So once you\'re at the booking engine, you\'ll see all the rates. But the point is, I guess once you\'re there, you\'re gonna book regardless, so.
+
+**Jenny Smith** 27:31
+OK.
+I see.
+OK, got it. OK.
+
+Richard Ray (Director of Digital Experience)** 27:46
+That\'s what the the decision was.
+
+**Jenny Smith** 27:47
+OK, OK, so so that logic is likely not in here since that sounds like it\'s it\'s newer. So right now if you have the booking window set again, I think this is going to be just for like the display purposes, right? So you can see a changes 2026 this one.
+The bottom um and.
+
+**Amy Carter** 28:09
+So it\'s if you have the booking window set and you leave it unchecked, you\'ll see it. If you have the booking window set but you check it off, you\'ll see it, but you also can choose your dates.
+
+**Jenny Smith** 28:18
+You will always see the booking window. Yeah, you\'ll always see that regardless. It\'s just that if you don\'t have arrival date and end date checked, that\'s not going to pass in. It\'s not going to pass in like any like user fed dates because there\'s no option for them to add that.
+
+**Amy Carter** 28:21
+Always will see the booking window.
+OK, but there\'s no option to hide it completely.
+
+**Jenny Smith** 28:38
+Correct. There\'s no option to hide it completely as of right now, yes.
+OK.
+All right, I\'m gonna remove this since this does not belong to that page. All right, so let\'s move on now to finding a location. So this one is something I think you guys are familiar with on the home page.
+Of the Hardrockcom website. Let\'s take a look at that here.
+Yep, so find find a hard rock. Let\'s configure this.
+All right, so author authorable fields, our location label, find a Hard Rock, our placeholder text. What appears here in the search bar, our search text. This is for the button itself, the view all text for the view all button.
+If something\'s empty and someone tries to hit search then the message will appear and then also we have the page path. So essentially what the search and view all take you to. This will take you to the locations page. So that\'s the configuration for here and as we know the way it works.
+If I were to put in a zip code and hit search, that gets passed as a parameter here. If I were to click view all, this just takes me to the locations page as specified in my configuration.
+And if I were to say put some junk and I hit search, it\'s going to pass in the junk. But if I were to put in.
+
+**Amy Carter** 30:20
+And I\'m sorry, what where did we determine the path that of search or that\'s just like this is configured?
+
+**Jenny Smith** 30:24
+The path of search and and view all is determined by this page path right here.
+
+**Amy Carter** 30:29
+So both view all and search is to locations.
+
+**Jenny Smith** 30:33
+That\'s correct, yes. The locations page. Yep. OK, so since I didn\'t put anything in, here\'s that text that appears that was authored under empty input text.
+
+**Amy Carter** 30:34
+OK.
+
+**Jenny Smith** 30:47
+OK.
+All right. And to my knowledge, I don\'t think you guys are using this. You guys are probably not using this currently on any other site, is that correct?
+
+**Amy Carter** 31:04
+I think that was going to just be my question. I don\'t think we are, but I was just wondering if we could change the color of the find a location like background if necessary.
+
+**Jenny Smith** 31:12
+Right now I believe that is established as black or whatever exact hex code this is. So if if a color change is required like if you wanted to use it on.
+I don\'t know which theme or whatever, but that would have to be something that is updated through code to just allow for like this background to be changed by an author. OK, all right.
+
+**Amy Carter** 31:38
+OK.
+
+**Jenny Smith** 31:42
+OK, so that is the Find a location component. I\'m going to move on to the Google map component and I\'m going to show.
+How it is currently right now and I\'m in stage. Just to be clear, I am in stage. I\'m not messing around anything on production, but I\'m in stage on the locations page. But I am going to go to the corresponding page here on the.
+Published version. All right. OK, so here on our locations page you\'ll notice that there is something that says placeholder for Google Map component and this component here called Google Map is present. However, if I were to click on view as published.
+You\'ll see it says oops, something went wrong. It didn\'t load. The reason why you\'re seeing this message is because essentially when I was talking to the devs about this, the the authoring side and the anything that\'s not in prod like the those URLs.
+Would need to be whitelisted. So that\'s why you\'re seeing this issue. It\'s not really an issue, but it\'s that\'s why you\'re seeing this message because this particular domain has not been whitelisted. So anything in the author side has not been whitelisted. So I believe that would be something that the customer IT team.
+Would be managing. We would just need to make sure that anything an author is whitelisted. So that way when an author views is published, they would be able to actually see the map on here. As you can see here on the publisher side, the map is displaying because that\'s because this particular domain has been whitelisted.
+So just want to make sure the team is aware you will see this message down in author, but the map does work and it is due to whitelisting domains.
+All right, so let\'s go back to this component and let\'s break it down and see how we\'re getting this map to populate.
+Wanted to be clear that this specific information, this was the API key was provided by the Hard Rock team and some some items here that you\'ll notice like C region for the element ID, you know things like that. This was all things that were migrated over. So I believe this was associated.
+With the map on the original site, when it got migrated over to AEM, we retain those values here. So if the API key changes or anything like that, that is something that someone from the tech team would be able to handle. The authors don\'t have the ability to change out the API key.
+I believe that is a smart move. You wouldn\'t want someone to be able to remove it or replace it or anything like that. The API key is handled outside of the configuration window and that would be managed by anyone who has access to.
+Environment variables which would which would typically be like the dev team. OK so for our Google map component the element ID field. This is specifically for if you\'re say doing any JavaScript and you need to like you know have call this ID and and add some additional.
+Functions or something. So that\'s that\'s what this specific field is for. An author typically wouldn\'t use this. Again, we retain the value previously from here, so this value is here. Radius and kilometers, default central latitude and longitude. All this information again was provided to us, so that\'s.
+That\'s why it was captured here in the component. The zoom sets the zoom level. We can see some examples outside of this map though, where something might be zoomed in more or zoomed out more. That is controlled by the zoom level on load and of course the user themselves would be able to change that.
+By interacting with the controls as necessary. Um.
+
+**Amy Carter** 35:40
+And that\'s just like 1 digit values.
+
+**Jenny Smith** 35:43
+Yeah, go ahead.
+So this can go up to 15.
+
+**Amy Carter** 35:49
+OK, so it\'s just like playing around to see what each one kind of means.
+
+**Jenny Smith** 35:52
+Yeah, mm-hmm.
+Yeah, I think and so I think Lisa, the maps that we migrated over, they were set to what like very like it should look similar to like whatever was already existing. If I\'m not mistaken, I believe like we tried to.
+Get the values migrated over correctly.
+
+**Amy Carter** 36:12
+OK.
+
+**Jenny Smith** 36:13
+Here we have the style JSON. So this is gonna change the way that the map looks. I believe we have. So this is kind of like the, you know, a certain style of the map. But if I\'m not mistaken for like the franchise map, that\'s like grayscale.
+So you\'re able to essentially like use like Google development styles as you can see here to kind of like tailor the map to how you need. Keep in mind this is like this is from like Google, not necessarily like us. So this would be something that I guess would be established like what the different maps should look like and then you can update.
+The style Jason. So again, I don\'t think anyone would expect an author to just type this up. This would be more of OK, this is what map style we\'re applying based off of like the Google dev styles and then that information can be populated here. You can also leave it blank.
+And then this the map might look a little bit different. We can I can make a copy of this. We can see how that looks, but the reason why the map looks like this specifically is because of information that you can see here.
+All right, map type. There are three different selections that you can make. In this case here, this is the default map. We also have the ability to view the map as the area guide, which is what hotels is using.
+And the franchise map is what\'s used in the cafe franchise opportunities page, I believe where I would mention the whole grayscale map. So this this also has different criteria, interested, not interested. Area guide has points of interest and the defaults.
+Of course has something slightly different from those as well. So we can we\'ll we\'re going to take a look at the different types of maps in some of these other tabs, enable map type control. That\'s where we have this on here, right? The zooming in, zooming out. So that determines whether or not you want to do that.
+In some instances you you might not want them to zoom in and just see what\'s there without them, you know, being able to play around. So you might have a need to check that off. And then also side panel. This is going to be seen I think with the area guide specifically if you want to hide the side panel, the area guide.
+You have the ability to. You can see right here it\'s checked and this is or is it?
+Right now it\'s checked, but the side panel, the side panel from the area guide is is not visible here. Find your location is a different sort of side panel and we\'ll take a look how that is authored, but these specific fields here are going to be present on all the maps you would need to.
+At the bare minimum, I think it would be important to have the latitude and longitude. You can see here though nothing is actually required. So like if you don\'t have the style JSON, doesn\'t matter. You\'ll still have a map displayed, it just won\'t be styled.
+The zoom will probably default to a specific value. I believe 3 is the smallest that you can go, so adjust that as needed. But recommendation of course having the center latitude and longitude is probably a good idea to have as well as just making sure that you have the appropriate map type selected.
+So this here default map and a quick peek at the area guide map. Here\'s an example on here. So this is an example of the area guide map which has the side panel here and the franchise map. I know that we have that down in the integral.
+Environment. I want to be clear about this. The franchise map is specifically for cafes. However, in DPLT there is some information that\'s not being supplied that we would need to get from.
+Hard Rock for I think it\'s interested. We need to get the interested information in order to be able to accurately display the map on the franchise map. Well, so we can see the map, but you won\'t see points on it until that information is provided to us.
+So let\'s focus right now though on the default map and how we got it to look like this and then we\'ll switch back to the others.
+So for our map data here, just going to go down, explore our locations, I clicked on the map data tab. So that\'s the section heading at the top. We also have our description. So here\'s our description from Boston to Brussels, etcetera.
+Area guide header. This is actually specific to the area guide. You\'ll see sample area guide header is not actually listed here.
+And that\'s because we are displaying the default map. So this value, even though it\'s being it\'s stored in this component, it\'s not actually being displayed since the default map was selected, not the area map. Here as I Scroll down to regions, we have our group title.
+Of North America, let\'s see. And so we have our featured countries and our. So we have, sorry, we have a group title, the region that selected associate that group title and then featured countries. And Rick, this is what I wanted to call out because I think yesterday when we were talking about destination search and.
+Filters the ability to be able to kind of show, you know, just specific countries. And so in this component here you\'ll see there is that featured countries text box where you\'re able to put whatever text that you need, United States, Mexico, Canada, and that\'s why that\'s displaying.
+Versus all the countries within North America.
+Alright, yeah. So you\'ll see other regions that were added here and the regions that were selected to appear underneath that group and then the future countries are going to be listed underneath that region. So all that is configured by the author.
+You\'ll see this check box for hide other locations. So I believe there are instances where some locations are actually I I saw a folder in the content fragments for other. So it\'s just kind of hiding anything that\'s outside of whatever\'s here. So that way there\'s not like a second section.
+Section that says other displaying here you\'re able to hide anything that\'s not from what you specifically called out. That\'s why this is checked. The location addresses here. This is related to the area guide. It\'s filled out in this case, but it\'s not going to display because area guide has.
+This has not been selected, so if you were trying to find this on here, you won\'t see it, but we\'ll see how it is authored for area guide. So let\'s go now to markers.
+
+**Amy Carter** 43:18
+I\'m sorry, what was the filter map? That was nothing.
+
+**Jenny Smith** 43:21
+Yeah, so the filter map is not being used on this here. Let me check if it\'s being used in our area guide.
+So it\'s not being used there too. So if you were to, I\'m just gonna show this here. If you needed to add like I think like you know like a additional hotel, cafe, casino, social gaming, sports book, online gaming, if you need to add specific filters that appear within.
+Here you have that ability to do that. In the case of what we\'re seeing right now, I don\'t think this is, you know, I think these are just the locations that are showing. Let me actually go to the prod environment and see if that map has been configured slightly differently.
+
+**Amy Carter** 44:08
+OK, \'cause I\'m I\'m a bit confused if it\'s showing the three categories, but it\'s not in the filter.
+
+**Jenny Smith** 44:14
+Yeah, let\'s pull that up.
+So I\'m going to oops.
+Alright, so I am in prod right now. I\'m going to just increase this to desktop.
+So the filter map is in prod. It\'s also not being used. We can make a copy of the map though, at least on a separate page and add the filter map functionality. I believe what it does though is it will add the specific filters.
+To show up on the actual map, but we can take a look at that on the like outside of prod. I don\'t want to mess around with this prod map, yeah.
+
+**Amy Carter** 45:07
+Yeah, no, I don\'t wanna mess up prod. I\'m just still confused why filters are showing if we didn\'t, if they\'re not like listed there.
+
+**Jenny Smith** 45:12
+Yeah, I\'ll make a copy of the page in a moment and then we can we can start adding something to that so we can see how that works. All right. For markers, you can see here these are the different markers for the different lines of businesses, cafe, casino, hotels.
+Live we have first section marker image which I believe is something that will be used in area guide default marker image and then the interested and open markers are used for franchising. If we take a look here we can see how that corresponds.
+With what we had authored and then finally for search, filter and results we have our text search which is the Finder location portion here.
+Alright, so find your location. Hang on one second.
+Alright, find your location is here. Search placeholder, city, state or zip postal code. Search result count is 10. So if I were to say let\'s say Washington.
+Alright, OK. Um.
+So if I were to have, if I were to change this to say like one or something, then obviously this would be this will only show one location at a time. In this case I think the default was set to 10, so you should see 10. I don\'t know if there\'s maybe a specific keyword we can.
+Try that might have multiple results. I don\'t know if cafe. OK, so that\'s not something. Baltimore. Yeah, I\'m not clear exactly what would be something that could show a ton of results so we can see how that works.
+But by default I do believe it\'s set to 10. So for our button text search has been configured here. No results found for. So let me put some junk. No results found for is is the text.
+Right here and then messages for no locations. OK, I think. Hang on. All right, all right. I believe Lisa, I can explain what the filter map does. So this portion here explore locations. This is connected to our map above.
+So we saw how like some of these parts are being configured based on what was put in map data. Again, we saw these sections here is what\'s configured. We also saw that the regions are being added in this portion and that affects this stuff down here.
+However, if you are, let\'s see.
+Trying to see if I can show this.
+Hmm, I need to find. I need to, yeah, let\'s go ahead and create that that image. I\'m sorry, that copy of this specific map to show. So what happens is you are actually able to filter some like if you filter things you can have it so it\'s connected to this portion.
+So as you are searching for things, then this table should update to only show things that match your results. But let me take a copy of this right now. We can do that.
+
+**Amy Carter** 48:37
+Sorry, did we finish the I I feel like we\'re just jumping around a bit. Did we finish all of the fields like did OK, so message for no locations was just the I just I guess I don\'t understand the difference between no results and no location.
+
+**Jenny Smith** 48:43
+We did finish all the fields, yes.
+Yeah, that\'s what I\'m trying to show you, because right now this is not how the map is set up. So I\'m making a copy so we can make some adjustments. OK, alright, so I\'ve made a copy of the page, yeah.
+
+**Burt Jones** 49:02
+Hey, did did Daniella Gonzalo\'s hands up? Just wanted to call it a.
+
+**Jenny Smith** 49:05
+OK, go ahead, Gonzal.
+That\'s all. You wanna go ahead?
+
+**Cal Nelson (customer)** 49:11
+Hey, so hey Daniela. So something that we noticed in prod is that and you were showing the the the publishing page on prod, you see that the Central America is on top first and we tried to kind of reorganise that we needed to be North America region to be on top.
+But when we we notice that when you go into the component, it shows the sorry, go ahead.
+Yeah, you see how Central America, right?
+
+**Jenny Smith** 49:39
+Yeah, I see that. Mhm.
+So I\'m in, yeah.
+
+**Cal Nelson (customer)** 49:44
+So, so we noticed that there is a missing part there. So I wonder if there is something we can.
+
+**Jenny Smith** 49:52
+One second.
+
+**Cal Nelson (customer)** 49:53
+Sure.
+
+**Jenny Smith** 49:55
+I\'m trying to find the location page here on prod alright.
+
+**Cal Nelson (customer)** 50:05
+Awesome.
+
+**Jenny Smith** 50:07
+All right.
+
+**Cal Nelson (customer)** 50:08
+So if you go to map map data you will see that you have this group titles and in the stage you will have the region selected and here when you click in one of those regions or drop down box nothing shows up. So I think that oh now it\'s showing up.
+
+**Jenny Smith** 50:13
+Mhm.
+
+**Cal Nelson (customer)** 50:24
+OK, cool. Let me try it. OK, my question is that then how you can sort this up? What\'s is is the order that you\'re seeing here or is is taking a different order because North America is first, but in the page is Central America.
+
+**Jenny Smith** 50:37
+Mhm.
+Hmm, let\'s see. So I\'m not going to touch the prom page, so I made a copy. Yeah, yeah, let\'s let\'s go back to the local copy that I have. Let\'s see. OK, so this is my KT locations. And so let\'s, yeah, let\'s mess around with this one and I\'ll first I\'m going to.
+
+**Cal Nelson (customer)** 50:46
+That\'s fine.
+Yeah.
+
+**Jenny Smith** 50:59
+Publish this page so I can actually see the map. So yeah, let\'s take a look at that.
+
+**Cal Nelson (customer)** 51:03
+Correct.
+And my question will be how how you manipulate the order. That\'s my question, right?
+
+**Jenny Smith** 51:09
+Yeah, let\'s see if that dot the hard rock dot no. Oh yeah, it is dot stage.hardrock.com and then I\'m just going to go to slash KT locations.
+So I can see my published age. OK, perfect. All right, let\'s see here.
+OK, so I think.
+I think, I think Gonzalo, when I took a when we took a look at what you had. So you said that regions was blank for you.
+Is that like \'cause in your?
+
+**Cal Nelson (customer)** 51:53
+Correct. It was it was blank. I just saw in production there was nothing selected and now that you\'re in stage you see those North America, South America and the drop down was was not showing anything. Now that you went it\'s showing up. So maybe maybe whatever you deploy.
+This last Monday maybe that have that I could have fixed it, so I will take a look on that.
+
+**Jenny Smith** 52:16
+I guess in terms of deployment, I think you\'re probably talking about the ACS Commons deployment. I my understanding is I don\'t think that is on production as of yet. Luke, correct me if I\'m it is, it is OK. Thank you. Sorry, I was mistaken.
+
+**Cal Nelson (customer)** 52:24
+Right.
+
+**Burt Jones** 52:28
+It is on production, Daniella.
+
+**Jenny Smith** 52:33
+I think Gonzalo, we would want to just make sure that the Google map component on that page you\'re saying now regions should like. I think we saw that there is a drop down making sure that that is authored properly. At least here we can see here in stage North America was the first one.
+And then central and South, etc. So this is ordered as expected here down in the stage environment like this is matching what you would expect, correct?
+
+**Cal Nelson (customer)** 52:59
+Correct. So how, how, for example, I make Asia or like Europe be on top?
+
+**Jenny Smith** 53:06
+So if we were to grab, let\'s see, where is Europe? So Europe is this one right here. If we were to drag this up to the top and hit done and hit publish because again, remember we\'ve mentioned that the Google map.
+You would not be able to see until that\'s like whitelisted. So this might need to have a cache broken because of the.
+OK, so yeah, you can see I I broke the cache here and the Europe is at the top based off my configuration where I drag that group to the top on the map data tab.
+
+**Cal Nelson (customer)** 54:06
+OK, so in production, North America is on top, but it\'s showing up showing up at last. Should I wish? Should I just publish the pitch again?
+
+**Jenny Smith** 54:11
+Right, so.
+I would say also I guess like the for regions though, let\'s take a look at your at what\'s on here. OK, so I I thought I saw that the regions thing is is blank. I mean you can certainly publish the page again with what you have, but I guess I would.
+Want to make sure that you have all the authoring updates that you needed for the region section first.
+
+**Cal Nelson (customer)** 54:39
+And something interesting in production. When you select the region dropdowns, it worked for you, but I tested again and it does not work for me. Maybe maybe it could be something else.
+
+**Jenny Smith** 54:47
+OK, let\'s take a look at that.
+So I\'m in, I\'m in prod and I\'m gonna go to sites and customer, corporate, Hardrock, English and location. All right, edit.
+
+**Cal Nelson (customer)** 54:53
+Uh.
+
+**Jenny Smith** 55:06
+And opening up the map component, opening up map data and clicking on region and you\'re saying that this is not working for you.
+
+**Cal Nelson (customer)** 55:14
+Yeah, it does not work for me. It\'s it shows up empty.
+
+**Jenny Smith** 55:19
+Hmm.
+
+**Cal Nelson (customer)** 55:22
+And I can I can share my screen if you want to.
+
+**Jenny Smith** 55:22
+Um.
+I think, yeah, we\'ll do that really quickly and then we can, I can extract this portion of the recording to show our dev team just to take a look at that. And I think Gonzalo, what browser are you using? Chrome.
+
+**Cal Nelson (customer)** 55:37
+It\'s a it\'s a Chromium based browser. It\'s the one that we use in the company. So we have a prod for example, right? And this is the locations page and this is the Google map and we are in the map data and if I click region it\'s just submit.
+Which I found interesting and that\'s why you know if you if you see a stage you will have like a region selected you know multi multi list as options here below because they have been selected but here none of this must work and the order you know I thought there was something else because this is this is not.
+
+**Jenny Smith** 55:56
+OK.
+Uh huh.
+
+**Cal Nelson (customer)** 56:15
+Checking in place, uh, automatically, right?
+
+**Jenny Smith** 56:19
+So sorry, you said.
+
+**Cal Nelson (customer)** 56:21
+So for example, as you I just saw there, North America is is on top, but when you come here.
+
+**Jenny Smith** 56:31
+OK, yeah, so I I just, I checked when this page was last published. When did you make that change to put North America on top?
+
+**Cal Nelson (customer)** 56:32
+Essential America, I am.
+No, no, that no, we we don\'t. We no, actually what happens is that North America was on top at some moment and then somebody came say, hey, somebody moved this thing to to the bottom. So we came here and we saw that no, it\'s on the top.
+
+**Jenny Smith** 56:42
+Was that like?
+
+**Cal Nelson (customer)** 56:58
+But we and then we haven\'t touched it because we we noticed that, you know, nothing we we do it, it will make a change, right. So we didn\'t know how to use this. That\'s why we didn\'t touch it.
+
+**Jenny Smith** 57:12
+OK, so I think we\'ve seen regards to spread. I guess my question is, are you able to use this in Chrome or something? I\'m just curious.
+
+**Cal Nelson (customer)** 57:24
+I will have to ask somebody else that doesn\'t have a Windows, but I yeah.
+
+**Jenny Smith** 57:27
+Oh, OK.
+
+**Amy Carter** 57:28
+You you can ask. You can ask me, Gonzalo, if you want on the side and I can try it on my Mac.
+
+**Cal Nelson (customer)** 57:33
+Sure.
+OK. Thank you, Lisa. Yeah. And that was that\'s that was pretty much my question. Thank you. Let me stop sharing.
+
+**Amy Carter** 57:35
+No problem.
+
+**Jenny Smith** 57:41
+Yeah, no, thanks, Gonzalo. Yeah, no, we\'ll we\'ll if I think, Lisa, if you can get back to us on if you\'re able to see the same functionality that I was showing where the drop down works and you\'re able to select things, that sort of stuff, that would be helpful for our team to understand what\'s going on.
+Um.
+
+**Amy Carter** 57:58
+Yeah, I would say we truthfully haven\'t touched the component and that\'s the way it was migrated over. So it\'s like it\'s correct on the back end, but not displaying correctly on the front end. And it was just brought to our attention. Why was it at the bottom? So when they looked into it, they\'re like, well, we can\'t fix it because it looks fixed.
+Besides it not displaying correctly, so no one went in and like changed the area of it.
+
+**Jenny Smith** 58:18
+I think.
+Right, but I think what what I\'m concerned with is the fact that Gonzalez I have been able to access the region drop down. That is, I\'m not really clear as to why that would be the case when I\'m able to demonstrate it in my Chrome browser that reordering things will show when it\'s published as well as being able to.
+
+**Cal Nelson (customer)** 58:29
+Yes.
+
+**Jenny Smith** 58:40
+Select things from the drop down. So since I don\'t, I think you said Gonzal, that\'s like the browser that you guys use over at Hard Rock, is that right? So like I wouldn\'t be able to replicate that issue.
+
+**Cal Nelson (customer)** 58:52
+Correct. It\'s an Iceland, but it\'s it\'s it\'s chromium based, so it\'s kind of like very similar to Chrome.
+Right. And no, and The thing is that it works on stage, correct. And if I go to a stage, I can see the drop down working finally correctly. So in stage it works fine, but in production does not work and that that was what I was trying to bring it up.
+
+**Amy Carter** 59:01
+I mean this is the location, correct?
+
+**Jenny Smith** 59:09
+OK, so so.
+Uh, OK. Thank you for that. So stage everything works as expected. Sorry.
+
+**Amy Carter** 59:17
+And that\'s, so I\'m going to go into it now.
+I\'m gonna try right right now for Gonzalo just so that we can say so I\'m on prod and I\'m on the locations page and then I need to go to the the future locations. Is that the?
+How do I get to that exact component?
+
+**Cal Nelson (customer)** 59:42
+Just locations. Locations. Hard Rock Corporate. Hard Rock. No, sorry, Hard Rock Corp.
+
+**Amy Carter** 59:51
+Yeah, I\'m on corporate Hard Rock locations English page, but which part am I opening up right now?
+
+**Cal Nelson (customer)** 59:51
+Corporate.
+Decides and select the.
+
+**Amy Carter** 59:58
+Am I opening the the Google map or this is the?
+
+**Cal Nelson (customer)** 1:00:00
+Let me share.
+Let me share.
+So when you are in this page and locations right and you select this one and you can click in this one.
+
+**Amy Carter** 1:00:14
+You\'re on the Google map. Yep.
+
+**Cal Nelson (customer)** 1:00:16
+Yep, enable map and click here and just you know.
+
+**Amy Carter** 1:00:22
+Yes. So North North America is the first region showing in prod. I\'m on my Mac and I\'m on regular Chrome.
+
+**Cal Nelson (customer)** 1:00:22
+Selected.
+And and does this region drop down box works with you that does it shows multiple values?
+
+**Amy Carter** 1:00:40
+No, I can\'t see anything.
+
+**Cal Nelson (customer)** 1:00:42
+OK, maybe you can share really quick so.
+
+**Amy Carter** 1:00:45
+Yeah, I I have the same. I have the same experience as you. I can\'t. I can\'t view it. I\'ll share my screen, but.
+
+**Cal Nelson (customer)** 1:00:45
+Because for.
+
+**Amy Carter** 1:00:54
+It\'s blank.
+And I\'m in prod, and I\'m in Chrome.
+
+**Cal Nelson (customer)** 1:00:57
+Thank you.
+
+**Jenny Smith** 1:01:01
+OK. All right. Yeah. So this is exactly what we wanted to confirm because I\'m in prod, I\'m in Chrome. The drop down does display for me. So trying to isolate if this is so since Lisa is also in prod, I\'m sorry, since Lisa is also in Chrome.
+
+**Amy Carter** 1:01:03
+OK.
+
+**Jenny Smith** 1:01:19
+No, it clearly is not a browser issue. So this is, yeah, I was gonna say we\'ll we\'ll ask, we\'ll ask our tech team to take a look at how this is. We\'ll see if we can try to replicate it, but.
+
+**Burt Jones** 1:01:22
+We\'ll get Vinay to look at it, Daniella.
+
+**Cal Nelson (customer)** 1:01:33
+Thank you.
+
+**Amy Carter** 1:01:34
+And my question too with this component in general, if we want to use it somewhere else, who configures all of those initial metrics? Because like any content author could want a map on their page since it\'s available, but we don\'t have all of the JSON JavaScript.
+
+**Jenny Smith** 1:01:34
+The fact that.
+
+**Amy Carter** 1:01:52
+Details, latitude, longitude, all of that. So that\'s not pre-populated. So who configures this for us then? IT like if we\'re like we need a map, they do it. We can\'t do it as authors.
+
+**Jenny Smith** 1:01:59
+No, it\'s not.
+I think who would have, who would typically have that information right now was my question.
+
+**Carrie Hollins (customer)** 1:02:09
+So longitude latitude for locations comes from the DPLT.
+
+**Jenny Smith** 1:02:16
+So Carrie, to be clear, for this specific map, like you know it\'s not necessarily I I think we\'s are you asking like showing a point on a map or are you asking for showing like a location on a map or?
+
+**Amy Carter** 1:02:28
+I\'m sorry, my my connection must be poor, so it\'s cutting out, but basically every single field on that map component required some sort of knowledge base that we would not have.
+
+**Jenny Smith** 1:02:32
+OK.
+Right. So I guess my question is currently right now how are you guys authoring the maps? So like this like where would this like who we got this information from migrating over the page? Who would typically provide this information?
+
+Richard Ray (Director of Digital Experience)** 1:02:58
+Well, I used to do it, but now everything\'s from the DPLT.
+
+**Maia Emerson** 1:03:03
+Oh, to Kerry\'s point.
+
+Richard Ray (Director of Digital Experience)** 1:03:04
+So whoever said no, I think Finance Finance usually sets it up in DPLT.
+
+**Maia Emerson** 1:03:09
+So yes, and to Kerry\'s point, if we have that in the DPLT, we expect all those values to come from the DPLT.
+
+**Jenny Smith** 1:03:16
+So this is the default center latitude and longitude. This is saying this is what I want the map to show. This is not saying show me the specific location right? So like in this case here we\'re showing like when I refresh the page it\'s showing the center of the map is these two points.
+Right. So this is just say, oh, I want the map to be focused on this area. I want the zoom to be at this level. All these locations here, like you guys are saying all of this is stored in DPLT, right? These locations are coming up for DPLT.
+
+**Amy Carter** 1:03:46
+I think my my confusion is, my confusion is if you add this Google map to a page right now, every single field of this element ID, kilometers, all of that is blank. So even if we\'re getting the right locations getting pulled in, I don\'t even know how to configure the map from start to finish who.
+
+**Maia Emerson** 1:03:46
+OK.
+
+**Jenny Smith** 1:03:52
+Mhm.
+Yes.
+
+**Amy Carter** 1:04:05
+Do I lean on for that?
+
+**Maia Emerson** 1:04:11
+I would say, Lisa, at this point, and I\'m sorry, Kerry, I\'m just saying since we see the gap, it\'s a gap. We\'ll just have to put a ticket, right? And then we\'ll rely on it to set it up correctly.
+
+**Carrie Hollins (customer)** 1:04:11
+OK, but let me let me just see. Hold on.
+Well, hold on. I think it\'s a different. I think it\'s a different answer though, because if if what you\'re trying to do is set a view. So my apologies, I misunderstood. I thought we were mapping a location, but if we\'re trying to set a viewpoint, then why don\'t you just reference Google in maps.google.com where you\'re trying to get to? You can get your longitude and latitude from there.
+
+**Amy Carter** 1:04:43
+That that\'s two fields though this is.
+
+**Maia Emerson** 1:04:43
+Right, but you gotta remember the type of content authors that we have, Carrie. We\'re not gonna be asking content authors to do all these settings and setups. They shouldn\'t have to.
+
+Richard Ray (Director of Digital Experience)** 1:04:52
+And I don\'t think that counts for the Uh JSOM.
+
+**Amy Carter** 1:04:55
+Yeah, exactly. Every field is blank when you add this to a page.
+
+**Carrie Hollins (customer)** 1:04:56
+Oh, OK.
+
+**Maia Emerson** 1:04:57
+Yeah.
+
+Richard Ray (Director of Digital Experience)** 1:04:58
+Yeah.
+
+**Carrie Hollins (customer)** 1:05:00
+Hmm, it\'s there\'s. But Rick, you were doing it before you were the one adding the content or the the parameters before.
+
+Richard Ray (Director of Digital Experience)** 1:05:07
+Yeah, I didn\'t do the JSON though, but that was all back and it was just the map was already set up. I went out of location and I know it appeared on the map.
+
+**Carrie Hollins (customer)** 1:05:10
+Oh, I see. OK.
+Oh, I see. OK.
+
+**Amy Carter** 1:05:16
+Yeah, so that\'s what I\'m saying is how do we get this in a place where I can just add the map and all I need to do is determine the locations that need to filter in, not actually configure the entire map.
+
+**Carrie Hollins (customer)** 1:05:18
+Yeah.
+Gotcha.
+
+**Maia Emerson** 1:05:27
+We are going to have to redo this component and or enhance it, I should say, and until then we\'ll rely it on our IT support to set it up whenever we add a new one.
+
+**Amy Carter** 1:05:39
+OK.
+Thank you.
+
+**Jenny Smith** 1:05:41
+So yeah, I do want to also call out and this is not, this is not saying oh this will cover a gap or anything, but one thing to keep in mind is you know the ability to copy like a component from an existing page.
+To your new page. So like I made a copy of this specific component, it has all the values already in place and I can even see it when I published my page to the stage server. So like if you\'re trying the what I\'m saying is if you\'re trying to make a map that looks very similar to what you already have, you can do that and have all those.
+values in place and then you can change like your map data fields here for the sections that are configurable, right? If you need to only, yeah.
+
+**Amy Carter** 1:06:27
+And Daniella, I\'ve had trouble doing that, copying components across pages. It like doesn\'t recognize my copy from one page to the next. It\'ll just remember the copy from that page I\'m on. So how how what\'s the solution?
+
+**Terry Friedman** 1:06:40
+I\'ve noticed that as well, but I noticed it as well. In order to fix it, I had to refresh the page in order to get it to register it correctly. I don\'t know why it keeps doing that.
+
+**Amy Carter** 1:06:42
+Yeah.
+Yeah, it doesn\'t remember your last copy, but rather the page you\'re on\'s last copy.
+So if you copied it from this location page and decided to put it on the home page, if I\'m working on the home page and click paste, it\'s just gonna copy and paste something else from the actual home page, not this page, but to Edwin\'s page, it\'s a refresh.
+
+**Jenny Smith** 1:07:08
+So I.
+
+**Terry Friedman** 1:07:11
+Yeah, I\'ve noticed that I had to refresh the page that I was on in order for it to actually like register that I copied something from a different page. Um.
+That\'s something that I\'ve noticed I had to do for like a workaround, but shouldn\'t really be happening.
+
+**Amy Carter** 1:07:34
+Is that something we should like call out as like maybe a possible defect if it\'s not recognizing it without a refresh? Or is it something your team can look into? It just it\'s it was happening a lot when I was working on the campaign page. I really wanted to just add a convenience copy from other pages.
+So.
+And they wouldn\'t copy from page to page, but just on the same page level.
+
+**Jenny Smith** 1:07:56
+Yeah, so um.
+That sounds to me more that would be more like a product issue or defect or something. So that would not necessarily be our team. So Ed, when you\'re saying though it does work, however, you have to refresh the page so we can we can certainly look into if that\'s something that\'s worth having a support ticket open.
+And I guess, I guess I would want to understand like exactly what you guys are doing to see it. You\'re saying you have another page open, you\'re trying to copy this from there to there. And when you\'re saying it would work if you were to refresh the page in the other browser and then try to paste it again, is that correct?
+
+**Terry Friedman** 1:08:34
+Yeah, that\'s what I\'ve noticed happening. I I I believe you had the same issue during one of our enablements as well when you were trying to copy something and it wasn\'t working for you.
+
+**Jenny Smith** 1:08:42
+OK, and did I probably automatically refresh the page without even thinking twice \'cause that\'s \'cause that\'s.
+
+**Terry Friedman** 1:08:47
+No, no, actually I I don\'t think we figured it out at the end, but I I was able to test it on my own and that\'s what caused the resolution.
+
+**Jenny Smith** 1:08:56
+OK, well I would say so here\'s here\'s some options. You should be able to copy from page to page. If there are issues with that, yes, we can certainly see about getting the product team to identify what could be the cause for that.
+The second thing is making a copy of the page where the configuration is set up already, right? The point is though, I understand this is not going to cover entirely the gap of what you guys need, where certain fields maybe should be pre-populated already, however.
+If copying the component, if you\'re able to do that, then that should have all the fields that you need with the ability to change the fields that might need to change, right? So I just want to make sure that that\'s also something that the team is aware of that if you guys have identified this is how all the maps should be default.
+Yes, ideally there will be default values in place and that could be handled through a code deployment with some development updates to the component. But for the time being you are supposed to be able to copy a component from one page to another and it should retain the values that have been set here in the configuration window.
+
+**Amy Carter** 1:10:10
+I would say 99 percent, 99 times out of 100 it doesn\'t work without a refresh. So I don\'t know if that\'s like a platform defect or I I don\'t. I just don\'t think it\'s like user error at that point.
+
+**Terry Friedman** 1:10:16
+Agreed.
+
+**Amy Carter** 1:10:26
+Because if you copy something so much and then it just doesn\'t.
+
+**Jenny Smith** 1:10:27
+Right.
+
+**Amy Carter** 1:10:31
+So I don\'t.
+
+**Jenny Smith** 1:10:31
+Yeah, so oh, I was just gonna say, um, hey, Andy, are you on the line?
+
+**Terry Friedman** 1:10:37
+Yep, I\'m here.
+
+**John Zimmerman** 1:10:47
+Yep.
+
+**Jenny Smith** 1:10:47
+Just wanna make sure that I had your ears perked up. That\'s all.
+
+**John Zimmerman** 1:10:51
+Oh, I\'m I\'m dragging.
+
+**Jenny Smith** 1:10:52
+Thank you. Appreciate it. All right. Um, OK.
+All right, so I want to take a look at some other map types, in particular the area guide to see how that is being configured. I\'m moving on to the hotel page for San Diego, since this is typically where I believe area guides are are mostly used.
+
+1:10:58
+No.
+
+**Jenny Smith** 1:11:15
+We see we have the Google map component on the San Diego page and I\'m going to open up what that looks like on stage so you can see how that\'s configured. If I can find it, where is it?
+There it is. OK, alright.
+OK, OK, so for our Google map component displaying the area guide, you can see the values that were in place here and how it looks like on the right.
+And instead of having default checked, area guide has been checked instead and so that displays the map a little differently with the sidebar in place. You\'ll also notice the style Jason field is blank and this map does look a little bit different from what we had on the Hard Rock website with the style.
+In place and so again style JSON that is like Google development standards and such. Leaving it blank is perfectly fine. However, keeping in mind that the map will look more something like this versus whatever was established for the Hard Rock website.
+Clicking on map data, we\'ll see our area guide. This is the section heading portion. No description has been set. Our sorry the our area guide section heading is actually what would be displayed if this map was default. You\'ll see that there\'s no location list.
+Underneath like we saw on the Hard Rock site. So this title here maps to the section heading here, but the area guide heading here is what gets displayed.
+Right here OI know that seems a little confusing. There\'s a value here, but it\'s not actually being used even though the value\'s exactly the same. If I were to remove this and hit done.
+And I published this page.
+Then this should look exactly the same because that value is not actually being displayed when this area guide is being used.
+So I\'m going to break the cache so we can make sure it is there and we\'ll continue to make changes as we configure this to see what happens. All right, filter map. I made a copy of that map. We\'re going to mess around that in a second. And regions. We saw how regions works when reviewing the map as the default.
+Fault map like we saw on the Hard Rock website. This is not needed for the area guide, but what is needed is the location addresses. So as I\'m scrolling down here you\'ll see there are several fields. We have a section.
+Called attractions. This is called attractions, right? And we\'re saying section ID is section two. You have 5 different sections that you can add to your area map. And so I\'m saying I want this to be with the second attract. Sorry, the second section is going to contain these items.
+So you have the location name as well as the latitude and longitude of each of those locations and the full address. So you can see that gets displayed here within these little tool tips. And then if there is a specific URL that needs to be added for like view with this visit site that me added.
+Added here within the URL section, so I\'m going to Scroll down, but you can see the attractions here, how they are mapping to what we have configured. If I keep going we see museums is Section 3. So we have our museums here.
+OK. And then we have universities, which universities and we have arenas and stadiums.
+Arenas and stadiums. So this here locations. All these locations are what populates the map for the locations of interest as well as the sidebar, specifically when the area guide map has been selected under map controls.
+
+**Amy Carter** 1:15:28
+Sorry, where did the visit site and get directions get pulled from?
+
+**Jenny Smith** 1:15:31
+So visit site and get directions are let\'s see here. OK, so visit site is supposed to be like whatever you\'ve put in the URL, right? So this is San Diego. San Diego. Oh, the text.
+
+**Amy Carter** 1:15:45
+So we can\'t change that first call to action, yeah.
+
+**Jenny Smith** 1:15:48
+That you\'re talking about the text here. Yeah, so the text doesn\'t do that. That\'s not configurable, I don\'t believe, but the values like the hrefs for these are determined based off of what you put in the URL and get directions I believe takes the latitude and longitude and then launches Google Maps.
+
+**Amy Carter** 1:15:54
+OK.
+
+**Jenny Smith** 1:16:12
+Second.
+Yeah, so.
+Let\'s see here.
+
+**Amy Carter** 1:16:19
+And what about the get directions? That\'s like in the full address description.
+
+**Jenny Smith** 1:16:24
+In the full after this, you\'re talking about where?
+
+**Amy Carter** 1:16:27
+In all of the descriptions for those locations it says get directions like hyperlinked.
+
+**Jenny Smith** 1:16:32
+Oh, I see that. Yeah, so looks like in the actual full address someone had put this here, so that\'s why that\'s appearing in in this. Like it is actually a hyperlink. You can see that, but this should be removed. This would likely be removed and then migrate that URL over to the URL section.
+
+**Amy Carter** 1:16:43
+Well.
+Yeah.
+OK.
+
+**Jenny Smith** 1:16:53
+1.
+All right, let\'s see. We have our markers here. In this case, the marker that\'s being used is this. This is the first section marker, the all these locations.
+While they I know that we had set the casino marker to this color, I believe that this is defaulting to that because we are on the hotel theme. Essentially that\'s why this color is being used so.
+That the markers are typically that\'s that\'s something that you\'re really going to to utilize on the default location map, but the points of interest are all going to essentially be the same marker. And then finally the search filter and results. Again, while this is this is filled out, this is only something that\'s.
+Used with the Google map that\'s on the this portion, this specific map, not the area guide. So we can certainly, you know, disable this. I\'m going to actually do that right now. I\'m showing that we can disable some of these items when you\'re viewing things in an area guide it and.
+It doesn\'t affect it, like you could fill it out, but you it doesn\'t actually affect the map. The important part for an area guide map is filling out the area guide header and the location addresses and then also making sure that the area guide map type has been.
+And selected.
+Alright, um, let me close up this.
+OK, so that\'s a lot for the map. I want to go back though to our copy of the page.
+So my KT locations page and let\'s go ahead and.
+
+**Amy Carter** 1:18:50
+I guess like this is the reason why I have so many questions is that we actually have a very relevant request from the hotel teams to get an area guide map on both the reverb websites, Hamburg and Atlanta to to create that there is no existing so I don\'t know what values.
+
+**Jenny Smith** 1:18:58
+Mhm.
+Mhm.
+Mm.
+
+**Amy Carter** 1:19:10
+Input to get the map right. And also I guess we want to confirm 100% that this can be reused on that reverb theme, of course, knowing that we\'re going to make something very similar to that area guide we just saw with all of those locations.
+
+**Jenny Smith** 1:19:17
+Mhm.
+Right. So I think what you\'re describing though, but so to confirm, you\'re saying like for example for you said for hotels, like would it be kind of like this, but like you would want to just.
+
+**Amy Carter** 1:19:35
+No, we\'re we\'re we\'re gonna do the area area guide map. Yeah. So we\'re trying to replicate this for Atlanta reverb and Hamburg reverb, but we don\'t have an existing. So it\'s like, what\'s the starting point to get this map configured?
+
+**Jenny Smith** 1:19:38
+Oh, the area guide. OK, I see. I see.
+Mhm.
+And a rebirth.
+
+**Amy Carter** 1:19:52
+And then add the locations that we need that are relevant to those areas.
+
+**Jenny Smith** 1:19:55
+Mhm.
+OK, let\'s try to do that right now actually. All right, let\'s see. So I know I made my page and I know that I made a copy. But before we actually, before we get into that, Lisa, I know you wanted to you had some questions about what filter map does.
+
+**Amy Carter** 1:20:14
+Yes.
+
+**Jenny Smith** 1:20:14
+Um, so let\'s let\'s actually do that really quickly first, OK?
+My cafes test and then also let\'s say hotels singing. All right, I\'m going to hit done. So I\'ve added two filters and I\'m going to publish this page and then we\'re going to refresh our KT locations page.
+And then I will break cache if needed.
+OK, so do you see how this got updated?
+It.
+
+**Amy Carter** 1:20:51
+Yes.
+
+**Jenny Smith** 1:20:51
+Cafes test. OK, yeah. So previously nothing was set. So it\'s going to show, I think, you know, everything that you want if if you. That\'s correct, yes. So that\'s why it was.
+
+**Amy Carter** 1:21:00
+So this overrides it. I guess my question is though, if you\'re making your own filters, how? OK, because the types are hard coded. I was going to say how is it smart enough? OK, so this is the only filtering you\'d use to override to not just show the three LOBS, otherwise we\'d.
+
+**Jenny Smith** 1:21:10
+Yes, the type. That\'s correct, yes.
+
+**Amy Carter** 1:21:19
+Have to use this if we wanted it to be more or less.
+
+**Jenny Smith** 1:21:23
+And also because keep in mind if I don\'t have anything, it\'s going to default to certain values. So if you want the values to say like instead of cafes, maybe you want to say something else. I don\'t know what you might need, but like keep in mind that value also changes, right? So like by default when we did not have this present and I and so now it\'s empty.
+
+**Amy Carter** 1:21:24
+OK.
+
+**Jenny Smith** 1:21:43
+Right, and I\'m going to publish the.
+And let\'s refresh it. It might take a second.
+Strike the cache.
+OK, yeah, so by default the all fragments in DPLT and such as cafe, hotel and casino, these are the default label names as well. So if you wanted to still show cafe, hotel and casino, you could do that. But if you wanted different labels, you could certainly put whatever label it is you want here and over.
+Write it in this filter map section.
+
+**Amy Carter** 1:22:20
+OK. So I think just the important call out is that that\'s being that\'s needed to override is really the the answer.
+
+**Jenny Smith** 1:22:26
+Yes.
+While we\'re here because we\'re this is our copy of our map, I\'m going to remove this style Jason and we can see what happens.
+I\'m going to publish the page.
+And.
+OK, so cache is still not broken. You can see what that looks like though.
+Uh, actually let\'s make another update and push that through. Um, so.
+
+**Amy Carter** 1:23:03
+So to be clear, the the whitelist issue is in the authoring environment, but if we view as published, we should be able to see it or that\'s still gonna give us an issue.
+
+**Jenny Smith** 1:23:06
+Mhm.
+No, that\'s that\'s still the whitelist issue is for the authoring environment entirely, whether it\'s view as published or not. So you can see here you will not be able to see the map until this is whitelisted.
+
+**Amy Carter** 1:23:23
+OK, I\'d say that\'s critical then for customer since we need to use this component this week to be able to to view this.
+
+**Jenny Smith** 1:23:27
+Mhm.
+Hmm.
+
+**Amy Carter** 1:23:39
+Is anyone taking away?
+
+**Jenny Smith** 1:23:43
+I guess Lisa, is there anyone on the call who would be able to take that as an action item or?
+Is that?
+
+**Maia Emerson** 1:23:56
+Hey, I\'m sorry if I missed the Lisa. I\'m I\'m in two calls with the Ottawa stuff going on. Are you planning to use this component for the landing pages because?
+
+1:23:56
+Well, no one\'s.
+
+**Amy Carter** 1:23:56
+If someone could just, yeah.
+Yes, so.
+We.
+Yes, we would. We would at least hope that it could be utilized for reverb. But the problem is we can\'t, we can\'t even test it and put in the locations because we can\'t view it and author it.
+
+**Maia Emerson** 1:24:09
+It doesn\'t seem like it\'s working.
+I wouldn\'t use it. Yeah, I I wouldn\'t use it. Let\'s go with a plan that we had and maybe when we figured out how this works so it gets fixed, we can, you know, enhance the page.
+
+**Jenny Smith** 1:24:22
+It.
+
+**Amy Carter** 1:24:30
+OK.
+
+**Jenny Smith** 1:24:32
+So to be clear, and I think my team probably misses at the beginning, the reason why you\'re seeing oops, something went wrong is because the author environments are not whitelisted. So that\'s A and that\'s managed by SHRSITI believe, right?
+
+**Amy Carter** 1:24:32
+Understood.
+
+**Maia Emerson** 1:24:40
+Oh.
+OK.
+Not the first time I\'ve seen issues because I\'m hoping I\'m going to take a note to remind Scott when you guys send your e-mail, I\'ll probably you\'ll see my reply just following up on him to help us get this going. So just to make sure I get it right, why listing which environment?
+
+**Jenny Smith** 1:24:58
+OK, OK.
+
+**Maia Emerson** 1:25:03
+Why?
+
+**Jenny Smith** 1:25:03
+Oh, for for actually all the author environments.
+
+**Maia Emerson** 1:25:06
+I\'m listening. Really. OK.
+
+**Jenny Smith** 1:25:09
+Yeah, the only the published on the publisher side is that those domains were whitelisted, but the author says that\'s a different domain that was not whitelisted. Yep.
+
+**Maia Emerson** 1:25:20
+Thank you.
+
+**Jenny Smith** 1:25:22
+Yeah. OK. So I think, Lisa, you said you wanted to. I just want to understand what you\'re trying to set up in reverb really quickly. We can take a look at that, how that works with the Google map, OK.
+
+**Amy Carter** 1:25:35
+Yeah, it\'s not. It seems like we we probably won\'t use it for this week, but the intention is to add a Google map with different locations that are relevant to Atlanta, different locations that are relevant to Hamburg. But again, just to add the component to the page will mean all of the fields are blank.
+
+**Jenny Smith** 1:25:48
+Um.
+
+**Amy Carter** 1:25:53
+So there\'s not really like a starting point for us to get to us to just have to add, you know, the Coca-Cola Museum for Atlanta or whatever location, Piedmont Park. We can\'t just add those locations because the the map first needs.
+You know, configuring.
+
+**Jenny Smith** 1:26:12
+So I have a couple suggestions for that. So let\'s see here. So for example, when we were taking a look at San Diego, yeah. So like you would want it to look something like this, yes. Yeah.
+
+**Amy Carter** 1:26:28
+Yes, just to the reverb theme, it\'s just to make sure that the property is, you know, reverb Atlanta and then and then the nearby attractions are new ones. So like this is a brand new content but using existing functionality.
+
+**Jenny Smith** 1:26:36
+Great. Okay.
+Yeah. So I guess my question is in terms of adding this for reverb, you know, so you can take a look and see how this one was configured. The default center latitude and the longitude would be whatever you need, like where those locations are for reverb on Atlanta and Hamburg.
+The map data is all the information that you said you needed to show here in the sidebar. So like anything that\'s relevant to reverb, Atlanta and Hamburg. So that you know those are be all fields that you would be wanting to fill out anyway. The markers, I believe they should already be added. If not, this is.
+
+**Amy Carter** 1:27:18
+Mhm.
+
+**Jenny Smith** 1:27:24
+Something that is just chosen from the dam and then for the search filter results as as I mentioned earlier, this is not needed for the area guide, so this one could certainly be left blank. This is not needed. It\'s really just the map data here.
+As the areas of interest and then.
+
+**Amy Carter** 1:27:40
+So is that theme though configured for like the markers? Like I don\'t think I saw anything reverb colors.
+
+**Jenny Smith** 1:27:48
+So we can. Let\'s see here. So the first section marker image is what was displayed here. Yeah, so this here I would imagine you\'d probably want to put like the reverb icon or something, right?
+
+**Amy Carter** 1:28:06
+Yes.
+
+**Jenny Smith** 1:28:06
+Yeah, so I think you should like you should be able to replace this in this field.
+
+**Amy Carter** 1:28:10
+Is there certain certain dimension? Like where did these icons come from? Like how would we add a new one? Would we need to get an actual like icon designed and then make sure it\'s the right aspects or?
+
+**Jenny Smith** 1:28:22
+So.
+So looking here, sorry, something just popped up from teams. Looking here we thank you, thank you. We can see this is located. There\'s a section called marker on and within the dam and that\'s where the specific image is.
+
+**Maia Emerson** 1:28:30
+I got him, Daniella.
+
+**Amy Carter** 1:28:42
+Mhm.
+
+**Jenny Smith** 1:28:42
+So you know, in terms of having something similarly, like I guess I would take a look at what this folder was. So these are where all those markers were located 50 by 50 or something. So these I think were probably, I don\'t know if these were necessarily provided to us perhaps or if these were carried.
+Over and migrated from the original site. I can\'t remember an answer for that one, but this is a specific folder that was within assets and that\'s just what we\'re referencing. But if you have something else, you can certainly upload it either to here or whatever. I guess Don has specified it within the DM would be appropriate for icons like these.
+
+**Amy Carter** 1:29:12
+King.
+
+**Jenny Smith** 1:29:21
+And then you would just configure the component to be able to replace like what we see here with what you need, right? So.
+
+**Amy Carter** 1:29:30
+OK. So so we would say like currently not one. Go ahead, Don.
+
+**Don Wood** 1:29:30
+Yeah, I think those were.
+I think those were migrated over, but we can set up another directory for website elements.
+
+**Jenny Smith** 1:29:36
+OK, OK, got it.
+
+**Don Wood** 1:29:43
+For these type things.
+
+**Amy Carter** 1:29:45
+OK. I\'m just, you know, trying to think ahead of we would need one specific to reverb that can\'t use the Hard Rock Hotels logo and then all of the markers we would want to be the reverb theme colors. So not sure how we go about getting that marker and then also just making sure this map.
+
+**Don Wood** 1:29:53
+Right.
+
+**Amy Carter** 1:30:04
+I don\'t know, does the map have like a dark version so that it\'s not, you know, huge contrast against that it I do that.
+
+**Jenny Smith** 1:30:09
+So that would, yeah, that would be controlled by the style JSON, which again would be coming from like like Google, like the Google develop map development site, right? So like what we had here, this is not something.
+That like our team wrote. I believe this was something that was provided to us for like what the exact style of the map should be. So and I understand like like you\'re saying an author wouldn\'t know. Oh, I need to add, yeah.
+
+**Amy Carter** 1:30:32
+OK.
+Exactly. That\'s why it\'s like I I\'m finding it difficult to like place a map on there where we just don\'t add the the locations instead of having to configure the entire thing. So we\'ll have to meet internally.
+
+**Jenny Smith** 1:30:50
+OK.
+
+**Amy Carter** 1:30:51
+Thank you.
+
+**Jenny Smith** 1:30:52
+Yeah. Um, all right.
+
+**Amy Carter** 1:30:52
+Thank you.
+So I don\'t think you need to go into reverb then, knowing we don\'t have the right markers or anything of that nature. We\'re gonna have to figure out how it looks and works.
+
+**Jenny Smith** 1:31:06
+Yeah, and just just just to confirm though, making sure that the area guides specifically since it seems like that\'s the type of map that you want. Those fields again are the area guide header and the regions field and setting the map controls map type to area guide is what\'s needed to display it.
+Like this?
+
+**Amy Carter** 1:31:27
+Yes.
+
+**Jenny Smith** 1:31:27
+Yep. OK. All right, let\'s see here. I\'m taking a look at time.
+And I also want to make sure that I have the agenda up so I see what other components we are taking a look at today. I believe the other one I did want to show is location list. Um.
+So as we saw previously with the Google map on this view, there\'s our Google map component on this view. We have this explore our location section that is a list of the locations from above. However, I think that there was.
+And ask at some point to be able to separate out the map from that.
+So if I were to open up this location list page that is here down in stage on this, there\'s a component called location list and so it\'s essentially like the bottom portion of this map. However, it is a different component and I did want to call out that.
+This specific component does not have the featured countries section, I think. So that means for the destination filters and the location list, it sounds like that\'s something that is desired to be able to have that override.
+Text field to be able to say what country should display. So you\'ll see here this is that\'s why it\'s listing everything based off of the region I selected. So if that\'s desired, that would certainly be something I would recommend noting down to have the similar functionality to what\'s captured here within the Google map.
+Map component, but the purpose of the location list was to essentially separate out the map from the bottom portion of this component in case this is needed to be displayed on a page without needing a map at the top.
+OK, so configuration wise again looks pretty similar to what we saw for the regions, but the.
+Um, the biggest thing is just that there\'s no map at the very top. That\'s all.
+Alright, OK.
+OK, so.
+I know that there was a lot that was covered today and I know that there\'s going to be a lot of questions, particularly with probably the map component, but I did want to go back to our locations content fragment and just make sure that we had an understanding.
+As to what these fields were and particularly the ones that were authorable versus the ones that are on disabled and coming in from DPLTI think I saw a question yesterday.
+Asking about the ability to, if I\'m not mistaken, was the ability to ask to add a location that\'s not from DPLT. Let me check if that was. I feel like I read that question so to to be clear.
+Since these are required fields and these are expected to be coming from DPLT, you would not be able to do what\'s being described. Our understanding was that DPLT was supposed to be a source of truth, and so that\'s why essentially these were made read only and these were required since it\'s needed to.
+You know, make sure that there\'s some uniqueness to this. So I\'m confirming about that question though on the page.
+Yeah, um.
+Yeah, so.
+
+**Maia Emerson** 1:35:14
+So they are supposed to come from the yes, they are supposed to and they are coming from the DPLT. We just didn\'t know what was implemented. So common questions was like can we override them? I mean did they get out of sync, right? And I or do they get override? The override gets overridden after the sync.
+
+**Jenny Smith** 1:35:30
+So for so for any of the fields that are not this read-only, those should be retained. This information here though, if in DPLT say this gets changed to a different web page or something that will be, you know, added to the content fragment and essentially republished during the.
+
+**Maia Emerson** 1:35:30
+Um, I think there\'s several questions about that.
+
+**Jenny Smith** 1:35:49
+Sync, but the information that\'s here, this should not change because these are supposed to be authorable with an AEM.
+
+**Maia Emerson** 1:35:58
+OK.
+
+**Jenny Smith** 1:36:01
+Let\'s take a look to see what else is on here.
+
+**Carrie Hollins (customer)** 1:36:03
+Sorry, just for clarification, are you saying that a content author can change a field that comes from DPLT? No, they cannot. OK, good. In particular, the page location ID, the actual DPLT ID.
+
+**Jenny Smith** 1:36:05
+Mhm.
+No, they cannot.
+Yeah.
+Page. Oh, you\'re talking about?
+
+**Carrie Hollins (customer)** 1:36:21
+In the data layer we call it a page location ID, but it\'s the property ID. Then sometimes it\'s yeah, I think it\'s one of those. Those we use to classify the data in vendor Analytics, so it\'s really critical that those are not editable.
+
+**Jenny Smith** 1:36:27
+See there. It\'s probably one of these, right? Yeah, it\'s probably.
+Right. And and yes, and none of this here is going to be editable. So content author cannot edit this, but there are certainly fields that a content author would need to add, such as the delivery options for say a cafe and like you know if there\'s an associate venue and images.
+
+**Carrie Hollins (customer)** 1:36:37
+From a content author.
+OK.
+Sure, yeah.
+
+**Jenny Smith** 1:36:56
+Everything else that you see here should be coming in from DPLT if it\'s read only and disabled, so the author cannot interact with this or change it in EM.
+
+**Carrie Hollins (customer)** 1:37:04
+Great, thank you.
+
+**Jenny Smith** 1:37:06
+Yep. Um, let\'s see here.
+OK, so on occasion I just designed the parent AM even if some values are blank. I think the answer, hopefully I understand the question, but the answer is yes, like we can see at least in this case, you know there are certainly some values that are blank. However of course since the required fields are filled out.
+That\'s that\'s why the content fragment is able to be stored within a EM. So hopefully that answers the question. Yes, blank fields are possible, but the required fields do need to be filled out from DPLT.
+Driven by any displayability of location need room.
+
+**Maia Emerson** 1:37:48
+What if the DPLT has a blank field when you call required because it could?
+
+**Jenny Smith** 1:37:54
+So I guess you\'re saying that there\'s no property ID, location ID or location code?
+
+**Maia Emerson** 1:37:58
+Well, I think property ID has to happen, but legal name could be blank, right?
+
+**Carrie Hollins (customer)** 1:38:00
+Uh.
+They have. I just actually did a new I.
+
+**Maia Emerson** 1:38:08
+I can\'t see your wait, I\'m got to submit because I can\'t see. So you mean Daniela, that the only ones that cannot be blank are the ones with the asterisk.
+
+**Jenny Smith** 1:38:19
+These are considered required in a yes like this needs to be filled out in order to be stored.
+
+**Maia Emerson** 1:38:23
+OK, So what happens if the name is blank? It shows that blank.
+
+**Jenny Smith** 1:38:30
+If the if like a property legal name is blank.
+
+**Maia Emerson** 1:38:34
+Yeah.
+
+**Jenny Smith** 1:38:35
+Yeah, so if it\'s a property legal name is blank, then this is like this content fragment will be stored in A EM because that\'s not designated. That was not told to us to be a required field if that\'s something that needs to be changed in the future.
+
+**Maia Emerson** 1:38:47
+OK, so when, yeah.
+
+**Carrie Hollins (customer)** 1:38:49
+Well, and most likely it will come through as null, so it wouldn\'t actually be blank, it would say null.
+
+**Maia Emerson** 1:38:56
+No, it comes as blank. We\'ve seen the API that they use the same. So yeah, we\'ll load it as a up and then we\'ll have to enhance this.
+
+**Carrie Hollins (customer)** 1:38:59
+Hmm.
+
+**Jenny Smith** 1:39:06
+But.
+
+**Maia Emerson** 1:39:06
+3.
+
+**Jenny Smith** 1:39:10
+All right, let\'s see here.
+
+**Carrie Hollins (customer)** 1:39:10
+Mm.
+
+**Jenny Smith** 1:39:16
+OK, how do we add decorations with the map? I say. Can you clarify what this question? Oh, go ahead here.
+
+**Carrie Hollins (customer)** 1:39:22
+Real quick Mike, I just want to mention it\'s possible that that the gap that you just identified is already resolved. The DPLT team did a reconciliation on the data set and we just ingested a clean data set to vendor Analytics and.
+We didn\'t see any legal name or or look or long name or short name that was blank.
+When we ingested the new list.
+
+**Maia Emerson** 1:39:49
+That is that that is good news. But we keep seeing wrong names, black names here and there, right? So I\'m just trying to understand what would happen. I\'m sorry my voice. What would happen if if it happens, right? So we know what to fix as we are logging bugs and and identifying ups.
+
+**Carrie Hollins (customer)** 1:39:53
+OK, OK.
+Yeah.
+OK.
+Good to know. Thank you.
+
+**Maia Emerson** 1:40:11
+Mhm.
+
+**Jenny Smith** 1:40:13
+Yeah, so might take quick clarification is needed for this place. You said. How do we add decorations with the map? Can you explain what you mean by decorations?
+
+**Maia Emerson** 1:40:22
+Um.
+I was trying to combine many questions into one, so let me think what that was. I think that was we have the ability in Cycor to change the map, you know, the color of the water, the lines, the details, all those things.
+At that time I hadn\'t seen any from what you show. It seems like we can\'t configure any of that, right? It it it is what it is.
+But that\'s not a friendly way for content authors, right?
+I.
+
+**Jenny Smith** 1:41:02
+AEM specific, it would have to be generated from like Google, right? Whatever you need, like the colors or whatever you would want to be applied to that. So you mentioned something like changing like the watercolor, right? So yeah, as we had seen previously with our Google map component here.
+The one that\'s on this specific page has all these different, you know, changes in place. But again, this is not something that like an author typically would write, but this is something that is would be from like Google\'s.
+
+**Maia Emerson** 1:41:34
+Yeah, we\'ll, yeah, that that\'s fine. We\'ll we\'ll notice the gap and we\'ll we\'ll fix it later so they can actually have a friendly UI where they can customize maps because we have campaigns, right? Not everything is going to look the same. And just being honest, if we start putting tickets to 80 for that, that the queue is going to be long.
+
+**Jenny Smith** 1:41:47
+Mhm.
+
+**Maia Emerson** 1:41:53
+And it\'s the the turn around is not as fast, so we can enhance it.
+
+**Jenny Smith** 1:41:57
+Mm-hmm.
+OK, so let\'s see here. So I\'m just trying to take a look to see like what we can quickly answer. So OK, so this is this is the question I think that I was trying to remember how do we add a location not yet in the DPLT? So the answer.
+To that would be as of right now you can\'t because those that information is supposed to be coming from DPLT. Those required fields are read only and supposed to be coming from DPLT so.
+
+**Maia Emerson** 1:42:21
+Oh.
+OK, we have the ability to allocations that are not yet added because finance has to make the decision to add them when a lot of checks, checks and balances have you know, like passed the testing or whatever criteria they need to add. So we have the ability to.
+Allocations.
+
+**Jenny Smith** 1:42:47
+So I guess my question is, I know that there is a field for what is it status like I guess is that something that\'s like?
+
+**Maia Emerson** 1:42:56
+No, they don\'t. Before we didn\'t get into that, like think of, I don\'t know, trying to come up with a good example for you, Athens, right? Athens is not in the DPLT yet, but we\'re going to start showing it in a couple of weeks as an upcoming location. It\'s not going to be in the DPLT until let\'s say 4 weeks from now and we need a life two weeks from now. So that\'s when we.
+
+**Jenny Smith** 1:42:59
+OK.
+Mm.
+Mm.
+Mm.
+
+**Maia Emerson** 1:43:16
+Can actually go and add a cycle item and just type whatever we need to type and when it comes in the DLT, it\'ll override it and that\'s fine, but it lets us display the content that we need to.
+
+**Jenny Smith** 1:43:27
+So when you say display the content you need to like what are you like for your Athens example? I just kind of. I want to understand are you displaying it like on a map or displaying like all the information that would typically be in deep?
+
+**Maia Emerson** 1:43:35
+So we\'re listing.
+Anywhere we want to, right? It could be a listing, it could be a listing, it could be a map, whatever we need to display it. It could be a coming soon section and all of that comes from the DPLT because we can dice whatever criteria we need with the queries that we can say give me only the coming soon locations, give me only the whatever locations.
+And if it\'s not in the difficulty, we can just insert a new item.
+
+**Jenny Smith** 1:44:04
+OK, right. OK.
+Uh, it\'s not. Locations based on one different like criteria. How do you say a criteria displays specific locations?
+Um, let me see here.
+I think we\'re kind of covering that, but we\'re saying very specific locations. That might be something I can work on. I don\'t think I can. I can work on this one. How do we ensure the canal fires vent 67?
+OK, Yep. So Carrie, this is a question that you have with regards to tele. I\'m sorry, team was tracking that one running on the book. Now how can we get the AB test? OK, Yep, we talked about this one yesterday. This is also something we\'re tracking.
+OK.
+OK. All right. And Don, I see your question about bulk editing metadata. This is with regards to renaming the content fragments. That way they have the title instead. So I think we can, we\'d said that we would, we could walk you through the step.
+So we can make sure this question is addressed when we get to the technical knowledge transfer section and and and help you help walk you through that one.
+
+**Don Wood** 1:45:20
+Yeah.
+
+**Jenny Smith** 1:45:22
+OK, you filter category and you may for the development others should be used for place location. OK and I think Don, is this the same question?
+
+**Don Wood** 1:45:40
+Um.
+I can\'t see it. Um, hold on a second.
+
+**Jenny Smith** 1:45:43
+Sorry, this here.
+
+**Don Wood** 1:45:47
+Let me pull this of the right screen so I can see it. Um, which CL should be used to replace? That\'s not me. I didn\'t have that. Um.
+
+**Jenny Smith** 1:45:56
+Right. But I guess this is that the same question though for?
+
+**Don Wood** 1:45:59
+It might be, which I think so. I I added mine and someone else added more questions, so I don\'t know. It might be the same. Yeah, I think it\'s the same. Yeah, and it\'s.
+
+**Jenny Smith** 1:46:02
+OK.
+OK, OK, no problem. I just want to make sure that that this we would we would make sure this is addressed, yes.
+
+**Don Wood** 1:46:14
+Yeah, as far as the bolt, you know, updating metadata, I know how to do that. I just need to know what those fields are, the names. So if you go back to mine.
+
+**Jenny Smith** 1:46:20
+OK, OK.
+Yeah.
+Yeah. OK. I see. OK. Yeah.
+
+**Don Wood** 1:46:25
+I just don\'t know what the fields are. I just because I\'m pulling metadata and I don\'t see anything that would align with those that data.
+
+**Jenny Smith** 1:46:39
+OK. Yeah, let\'s, let\'s make sure that we\'ll add that as a topic. Yeah, yes, got it. OK. Yeah. So don\'t want to go through all these questions over on the call right now. So what I\'m planning on doing though and I know that there\'s been a.
+
+**Don Wood** 1:46:40
+So.
+But yeah, just add that to the what we need to cover.
+
+**Jenny Smith** 1:46:58
+A lot of questions added to the pages and our team is we are trying to go through them. I want to make sure that I can identify ones that I can show during calls. So that\'s still what my priority is going to be, just like we did today by reviewing something with the news and then also with the location for.
+The casino that was appearing in the dining widget, so definitely want to make sure that I\'m allocating time for that. So I\'ll try to identify some items here that I can show tomorrow, but the plan moving forward is we are hoping to cover.
+As well as media items like I was trying to think of like a a category for this, but this is essentially things that are going to be using like say images or like videos or images. So the container is here because you can put an image or a video in there.
+And then finally I have this other category called navigation and data display. So things like the breadcrumb, the site map and subnav and microsite navigation. That\'s what I mean by navigation, but data display things like the list and the content carousel, so.
+Hoping to also cover this either today or tomorrow, but I\'ll be sharing some new agendas for some of the remaining components and we will be covering those next week. And then a quick reminder that if we take a look at the KT calendar.
+We will begin our technical enablement sessions starting next Thursday. I think we\'ll be sending out some agendas for those and so Don will make sure that we we have the bulk metadata export topic in one of these sessions.
+But keep in mind though with these sessions, we are also going to be bringing our offshore TA as one of the subject matter experts to each of those. So we\'ll send out the agendas and we\'ll be covering some of the more technical topics. So Gonzalo, I know if you have any questions and certainly please make sure that.
+These are that you bring those questions to these sessions. That way we can get as many answered as possible. So with that being said, I am going to propose that we end the session so I can continue to review our locations page and.
+Start to provide some answer to these and also identify some ones that we can cover tomorrow at the 1st 10 minutes of our next session. But before we close, is there anything else, anything, anything else that the team wants to cover for the next 5 minutes or so?
+All right. OK, then. OK, guys. Thank you. Thank you so much, everyone. Hope you all have a good rest of your afternoon. All right. Thank you. Goodbye.
+
+**Don Wood** 1:49:49
+Thanks, Daniella.
+
+1:49:54
+Thank you.
+
+**Burt Jones** 1:49:55
+You too. Bye.
+
+**Maia Emerson** 1:49:56
+Thank you.
+
+**Don Wood** 1:49:57
+Thank you. Bye.
+
+Greg Scott** stopped transcription
+
+
+## Session: Media — 2026-02-25
+
+**Customer Vendor Knowledge Transfer-20260225_130204-Meeting Recording**
+
+February 25, 2026, 1:00PM
+
+1h 34m 37s
+
+Jenny Smith** started transcription
+
+**Jenny Smith** 0:07
+Alright, good afternoon everybody. So today we are going to be covering some media related items, so some components such as the media gallery, the image gallery grid and then also reviewing some things that I know that the team is already familiar with like the hero band.
+Or the Hear A Carousel. But before we get started with that, I did want to provide an update for an item from yesterday and Gonzale, I see her on the call and I was hoping perhaps if you could share your screen and if we can open up the prod environment, I would just like you to navigate.
+To the Google Map component, just to confirm and see if you\'re able to view the dropdown options that you weren\'t able to see yesterday.
+
+**Cal Nelson (customer)** 0:57
+Hi, uh, sure. Let me give me a minute so I can go to Prague and I\'m gonna share.
+
+**Jenny Smith** 1:04
+Yeah, sure thing. Thank you. And yeah, and if Lisa, I don\'t see Lisa on right now, but I would also if when she\'s joined, I would also like to confirm that she can see it as well. And then if all is good, I can explain what\'s going on and and what the fix is.
+
+**Cal Nelson (customer)** 1:24
+Thank you. OK, let me share my screen.
+
+**Jenny Smith** 1:28
+Yes.
+
+**Cal Nelson (customer)** 1:39
+Can you guys see my screen now?
+
+**Jenny Smith** 1:40
+Yes, I can see it. I see you in the prod environment and you\'re navigating to. We need to go to the locations page.
+And just to confirm, this is the island browser, is that correct?
+
+**Cal Nelson (customer)** 1:56
+Yeah, this is correct.
+
+**Jenny Smith** 1:57
+OK, cool.
+
+**Cal Nelson (customer)** 2:00
+So this is loading.
+There you are.
+OK, sweet. Now I can see them.
+
+**Jenny Smith** 2:40
+OK, perfect. Hang on, let me just admit some people are also still joining the room. Awesome. Just wanted to confirm you can see that. So thanks for showing that Gonzalo. I can check separately with with Lisa on that, but I\'m gonna go ahead and take over screen share to show how we resolve that, what the issue is.
+OK, so I\'m sharing my screen and I\'m in the prod environment and the field that you\'re interacting with that locations drop down, that\'s actually something that\'s coming in from what\'s called a generic list.
+
+**Cal Nelson (customer)** 3:00
+OK.
+
+**Jenny Smith** 3:16
+And that generic list is we have one called regions and that\'s populating that specific drop down. I\'m just going to hit property so you can see. So these are the values. These values are the same ones that you saw within that drop down. Now the reason why you were not able to see it yesterday, but I was is because.
+Yeah, the user groups that have been set for you, we took a look at user groups that you were in that did not have read access to this list. That\'s why you weren\'t able to see the values. So we specifically added you to. We saw you\'re part of this group called Template Authors.
+So that group has been provided access for read privileges. We understand that there are probably some additional groups that need that, but this is all related to user groups, permissions, understanding who should view them versus who should write them, etcetera. That is a topic that we are covering within knowledge.
+Transfer starting next week with the technical side of things with Andy running that. So that\'s the reason why you were having issues seeing it. Same thing with Lisa, but in order to make sure that the proper people are seeing it and the proper people are able to actually like edit this, say add an additional value.
+Or change a value or a title on here. That\'s where we would need to understand what those user groups are that need privileges for this. So hopefully that\'s clear to the team. This was a permissions issues, but that\'s how it gets resolved is making sure that your groups, the groups that you\'re in, have access to this.
+
+**Cal Nelson (customer)** 4:52
+Thank you. But still I still have a question. I still see the North America being on the last on production is that we need to publish the page again or do something in order to show up on the top because of the components on the top.
+
+**Jenny Smith** 4:56
+Mhm.
+Yes.
+Right. So yeah, so this particular issue was specifically for the dropdown. I think you haven\'t published the page in like a month or so. Definitely if you were to view as published and you can confirm to see what the order is before you publish, then perhaps you know.
+
+**Cal Nelson (customer)** 5:19
+Got it.
+
+**Jenny Smith** 5:28
+Then you can go ahead and publish the page, but I would recommend you viewing the ages published, making sure it\'s in the right order, and then publishing it again.
+
+**Cal Nelson (customer)** 5:37
+OK, let me let me do that right away and you can continue. I will let you know if if.
+
+**Jenny Smith** 5:40
+OK.
+Yeah, if you want to post in the chat too. And Andy, if you could just take a look at that and perhaps we can, we can discuss that after if that\'s good. Gonzalo, OK.
+
+**Cal Nelson (customer)** 5:49
+Yeah.
+Yeah, we can discuss. Thank you.
+
+**John Zimmerman** 5:52
+Sounds good.
+
+**Jenny Smith** 5:53
+Alright, awesome. Thank you guys. OK, I\'m going to go ahead and close out on some of these tabs since I do not want to be messing around in the prod environment right now. So let me close out of a couple tabs and now we are going to.
+Pull up the agenda so you can take a look at what we have covered or plan on covering today. So to be transparent with you all, there are a couple items I believe that we will not fully cover today just because there\'s quite a few pieces of functionality that I would like to break out into.
+Different sessions, so that including the container component. So there\'s other elements with the container component I would like to cover on a different day, but we are going to cover some items within the container, things that relate to actual media, but when it comes to say like the container best practices.
+Sizing using layout mode, that sort of stuff. I think that that would be best handled in a separate sessions, so I want to keep this kind of focused on specific media items. So let\'s go ahead and get started. I would like to focus on 2.
+Components here that I know that the team hasn\'t necessarily used on the main Hard Rock website, and that\'s the media gallery and the image gallery grid. I believe that the team should have experience with the other components, so I would like to focus on these two first.
+So let\'s get started with the media gallery. I\'m going to show an example of a page that has a media gallery, as well as how the functionality currently works, and then we\'ll break it down with the configuration of this.
+So when we say media gallery, we\'re referring to this section right here. You can see that there are 4 images being displayed right now to the end user. When I select an image and I click on it, it opens up in this light box view. I\'m able to cycle through additional images.
+And I\'m able to exit this out and get taken back to the page. So configuration wise this media gallery component. Yes, this is a global component as in every page can use it, but we haven\'t seen on hardrock.com. But right now I\'m pulling up an example from the hotel\'s website.
+When I configure this specific component, I\'m able to add different types of media. So in this case this specific gallery was using images and so you can see images has been selected for everything that\'s here.
+But you are able to also have videos be displayed here so we can take a look at actually authoring one and seeing how how that would be done. So when you add an image, you would select the image from the DAM. You would also include the alt text, a caption and a title.
+On here, and that\'s the caption and the title are things that can be displayed on the image or visible on the light box view of the image. In this case here, there\'s no caption or title, so that\'s why we didn\'t see anything. But we\'re going to again, I\'m going to be authoring a new one on the KT on my KT Media page.
+So just like any multi field, you\'re able to add multiple. You\'re also able to change the order of the items and how you want them to be displayed. So you can see right here there are four images showing, but I actually have one to.
+345 S That\'s why there are some arrows indicating that I can go to extend and see the additional images that are not visible in this view.
+When I click on others, this tab allows me to select the aspect ratio that I want for the images that I\'ve I\'ve included. So I have the ability for desktop, tablet and mobile. You can see here for number of desktop tiles it\'s been set to four. That\'s why any image past four is not going to be visible.
+Table on the screen upon load. Tablet tiles has been set to three, number of mobile tiles set to two. So when it\'s viewed on the different devices, you\'re not going to see all four. You\'re going to see whatever\'s been configured here. You also have the ability to display the indicator dots.
+To the end user or hide them. In this case this is not being displayed currently and then you also have the ability to loop the carousel so that way you can just cycle through without any without like an end point for the carousel itself.
+So I\'m going to now go on to a new media gallery and we\'re going to author one and then play around with some of these options to see how that affects what it looks like to the end user. So let me get my page up here.
+And I\'m going to just add a media gallery component.
+All right. And just for just to put a separate spacer in between here so it\'s not butting up against the other element I have here. Now let\'s configure it. Yep.
+
+**John Zimmerman** 11:09
+Hey, Daniella, real quick, Gonzalo or Danielle, can you just paste the link to that page in production so I can take a look at it?
+
+**Jenny Smith** 11:17
+Which page?
+
+**John Zimmerman** 11:18
+The one that was having the the issue with North America showing up left.
+
+**Jenny Smith** 11:20
+Oh.
+Yeah, Gonzalez, that\'s something you can send from the Hard Rock website, please.
+
+**Cal Nelson (customer)** 11:27
+Right away. Thank you.
+
+**Jenny Smith** 11:28
+Thank you. Thank you, Andy. Thank you, Andy. And thank you, Gonzalo. All right, so for my media gallery component, we\'ll also go over the vertical variation and how that works. Here\'s my media section where I\'m able to add specific items.
+
+**John Zimmerman** 11:28
+Thank you. Oh, he got it. He\'s on it. Thanks.
+
+**Jenny Smith** 11:46
+So I\'m just going to add some images for right now. I actually had my little training folder set up, so I\'m just going to use that for the time being. So I\'m selecting which folder in the dam where I want my sidebar to focus on and filter.
+So I\'m just going to do this and hit select and so now my you can see my sidebar only has assets that are from my little trading folder. So this is just for me to make it easy and ensure I\'m using images that I uploaded earlier. All right, so I\'m dragging my images. I\'m putting my alt text.
+Is alt text. This is the image caption. This is the image title. All right, so putting this here so it\'s very clear when it\'s displayed where those values are being displayed. Just gonna add a couple more images in this case.
+Alright, just doing this and I\'m going to add two more.
+Right.
+OK, so that\'s been set for the images itself. By default, if I click on others, I can see that the aspect ratios are automatically set to 3/4. I also have the ability to do one for one, which makes it more of a square or 9:16 so.
+We can certainly mess around with these and see what that looks like to the end user. For my number of desktop tiles, I\'m just going to set it say to four for tablet tiles, maybe three and then maybe two. And let\'s turn on carousel dots and carousel loop and I\'m going to hit done.
+OK, all right, so preview. OK, so here we can see how the image caption is displayed on on top of the image. Let\'s view this as published.
+OK, and let\'s take a look at what happens when I click on the image itself. You can see that the title is is what\'s being displayed when you view it within the light box. The other ones and I didn\'t put a title, nothing is displayed there. So just something to consider. Image title maps to this portion here and the image captions.
+Is what\'s being displayed underneath the image. So since I only put one underneath, that\'s why this does look a little wonky. If I were to add captions for all, I\'m just going to do this.
+So we can see now that everything is aligned because it\'s taking into consideration the image caption underneath the image. All right, so let\'s go back here and now that we see how it looks, let\'s change the aspect ratio.
+Of say the to one to one. See how that affects it. So you can see how when I did that it changes what the ratio is. It\'s more of a a square instead of what it was before. And then the last option of course is the 916. I\'m gonna hit done.
+And so this one is taller and a little skinnier. So depending on how you need the media gallery to display your images, couple of options with regards to changing the aspect ratio which is present on the others tab you might consider you know you might need separate aspect ratios for each one, so certainly have.
+The ability to do that here. Let\'s take a look in tablet.
+And mobile. So I had set. Actually I think I would have to do it as view as published and let\'s do this.
+OK, so you can see how it went from 4:00 to 3:00. This is the tablet mode and then from 3:00 to 2:00 because I\'d set 2 for mobile. So this is just my way of being able to control how much I want.
+The images, how many images I want to be displayed to the user as well as what aspect ratio I want for the for the user. Let me go back here.
+OK, all right. So with the media gallery though, there is also a another variation. It\'s called the vertical variation. I\'m going to just check that and hit done and we can see what happens.
+Um, so right now, one second.
+Changes the view. Sorry, I\'m just viewing as published. It changes the view. This is a little I typically these are going to be, I believe we see them with a background container. So let me go ahead and set that up very quickly.
+I\'m going to just add a container here.
+With a background color, so it\'s not necessarily white.
+Mhm.
+Yeah.
+OK.
+It\'s fine.
+All right, and I\'m going to cut this and then paste it here in the container.
+Alright, and then I am preview it.
+OK, alright, so I just wanted to show it so it\'s on a white background so you understood like the borders. I can see this looks a little off. Let me do a quick check.
+I do have another version which doesn\'t seem to have it look like that, but let\'s take a quick look here. I\'m gonna add one more image.
+You guys can see as I\'m adding images what happens. There\'s some indicators here that wasn\'t necessarily visible on the white background. So I think that\'s something you just want to call out. As I\'m cycling through, you can see that this is the main image and it shows.
+The image to the right. It also displays the caption on top of the image when you have the vertical variation set. So it\'s basically it\'s the exact same media gallery component, but just determining which view that you want it to be, whether it\'s in vertical.
+View or whether it\'s in horizontal view, you would just configure it once and then just select how you want the images to be displayed.
+And as I click on the style variations, I also have a couple of ways to be able to say I want to have the media gallery. Yeah, so I want the media gallery with caption on image top. So previously I had it with the captions underneath. If I don\'t have that style variation set like you saw.
+Before it would be underneath the image. I do have the ability to display it on top of the image if I wanted that. Let\'s see primary without indicator. I also have the ability to just not have the carousel indicators appearing underneath.
+And then so the default. This is what the default looks like, where you have the arrows to the left and the right and the carousel indicators underneath. No caption unless you actually display that on here.
+OK.
+I will pause and yes, Rick, I see your head up.
+
+Richard Ray (Director of Digital Experience)** 19:32
+Sorry, I thought I had to unmute. It\'s more of like a a visual kind of notice of something that the two dots don\'t appear to be centered underneath the images. It\'s like they\'re on the left side of the center.
+
+**Jenny Smith** 19:43
+Mm.
+I see. Uh, yeah, one second. Let\'s see.
+
+Richard Ray (Director of Digital Experience)** 19:48
+This must be like a third or fourth shot. Maybe that\'s just not rendering or just.
+
+**Jenny Smith** 19:52
+Let\'s jump.
+So first I\'m going to set this to full width and then if I don\'t want this to be full width, I\'m just going to add another container in here. This container is being set to content area I\'m just seeing.
+Happens when we put it with a content area. OK, yeah, no, I understand what you\'re saying. The believe how many images are here. OK, so there\'s five images total. So it\'s showing two. OK, all right.
+Yeah, no, I noted on that one, Rick. Looks like that might be something checking, just checking the.
+Aspect ratios as well. Wondering if that\'s.
+OK.
+OK, yeah, no noted on this one. This is something that would likely have to be updated to center a line on those specific carousel dots. So that would be something we would of course want to make sure is captured.
+
+21:03
+OK.
+
+**Jenny Smith** 21:04
+Um, any questions? Yeah.
+
+Richard Ray (Director of Digital Experience)** 21:06
+And then the how many images were there \'cause you got two dots, but.
+
+**Jenny Smith** 21:10
+Yes, I have 5 images total, so when I click next and it shifts over.
+
+Richard Ray (Director of Digital Experience)** 21:13
+So it just goes to like the other section versus the other thumbnail, I guess. OK.
+
+**Jenny Smith** 21:19
+Yes.
+Yeah, mm-hmm.
+
+Richard Ray (Director of Digital Experience)** 21:24
+Thank you.
+
+**Jenny Smith** 21:25
+Yeah. Anybody else on the call? Any questions about this media gallery component?
+We can go ahead and add a video. Actually, let\'s do that.
+And.
+So for Vimeo, let me get I was working with another Vimeo video that had an ID and I can actually copy that over one second.
+No, not that.
+Yeah, I was just going to get this one.
+All right.
+And then because of course the video is since this is is going to show images, that\'s why you would choose a specific thumbnail versus just the video itself. I am going to hit done.
+Pull up my folder again, but we can actually take a look to see how that is. Right now you can see this is not going to show anything because I didn\'t put my video thumbnail, but this is the square that\'s representing it. So I\'m going to add the image now for my video thumbnail.
+Let\'s just choose this.
+Done.
+Right, so I can see this and if I were to click on it.
+One second \'cause it sorry I was blaring out of my ears. If I were to, as you can see, I click on it just like the same with the images. It does open it up in that light box. You notice I\'m in the author though, so let me show you really quickly the.
+View if you were viewing it as published.
+So it\'s again, it\'s just the same as the images, but the video is just within this middle window.
+All right.
+OK, um, anything else for this media gallery component?
+All right. OK.
+OK, let\'s move on then to the image gallery grid. I believe this is something also I don\'t think is currently being used on the hardrock.com website. It\'s typically right now from what I saw in AEM, it\'s being used on the hotel pages.
+But let\'s take a look at how this is set up and what you might want to use this for. So the image gallery grid. You can see I set up something here just to show some items from my little trading path and.
+Configuring this, what I did was I selected what image folder I wanted my gallery to contain, so I\'m pointing it to one image folder here and then I\'m also selecting what tags that are on these images do I want to pull into this component and display.
+Finally, I\'m also selecting how many images do I want to display within this component. Because keep in mind you know if you have say a folder that has like 200 images and if those 200 images are all tagged.
+You can certainly display all 200 or you can say OK after maybe like 20. I don\'t want to display those because the page is going to get too long with those. So that\'s this is a configurable field, but by default and I\'ll hover over this by default the.
+Number of images is 50 when you first configure the component. I\'m just going to put 50 back because this is what it was before. So when it comes to the tags, what this is saying is OK, I want everything that has all photos like A tag called all photos applied to it or I want everything that has recreational.
+Activities applied to it. The tags that I select here are going to be displayed on top of the image gallery grid to serve as essentially like tabs. So if I were to.
+View this and I\'m just refreshing my section here. All photos currently is selected. If I click on recreational activities, it\'s only going to show me anything that has recreational activities tagged to this specific folder.
+So how do we, you know, make sure that we\'re showing everything that we need in here? What if we choose tags that don\'t have any any photos associated with it? Let\'s go ahead and show how that works and what would happen. What\'s the behavior?
+So clicking on my tags, it defaults to where those customer tags are located. In this case, I\'m just going to go to the location where I knew most of these tags were being used. So for me it was hotel and gallery. Of course, if they\'re the tags are located somewhere else, whatever.
+Images that you were using, you would go there, but I know for a fact I did not tag anything in my folder with rooms and suites. I\'m going to select that, hit select and I\'m going to hit done. So you\'ll notice that still appears as a tab.
+I hit preview, I hit it and there\'s nothing that appears underneath because while I\'ve selected the tag to serve as part of the navigation, it doesn\'t actually have any specific images. As I start adding images with that tag, then it would automatically appear here. However, if you do not have images that are.
+Are tagged with what you selected. You will not see anything, but you will see it in the navigation. So what I\'m going to do right now is I\'m going to add a couple more images to my grid in the dam by tagging them with certain tags and then we\'re going to see how they would appear.
+Within this grid, so let\'s navigate on over to the dam. Let\'s go view an admin, just navigate to assets and files.
+HR My little folder is called training. My little images folder is here.
+Now say I want things to appear under my rooms and suites tag. So what I can do if I know exactly what images I\'m going to use, I\'m just going to select a couple and I am going to click on properties.
+And I\'m going to see my asset metadata view. I\'m just going to go to tags.
+And I\'m going to select that specific. Oops, sorry, I\'m going to select that specific tag of rooms and suites.
+And then I am going to hit save and close and you\'re going to see this little drop down that says append mode. What that means is that if you when you select append mode, it\'s going to add this tag to these four images.
+In addition to whatever tags are already there, it\'s going to keep. If say this image had four tags already associated with it by clicking the pen mode, that means OK, I\'m just going to add this tag in addition to those four for this image. If you do not select that, what it will do is it will replace the tags that are associated.
+With these images. So if news one had four tags on there and I did not select the pen mode, this will now replace whatever tags were previously on news one. So something to keep in mind and be very aware of if you want to just simply add the tags to the images in addition to whatever tags are either, you want to make sure pen mode is.
+Selected. All right, going to hit submit.
+And I am going to come back here and hit refresh and hit preview. When we check rooms and suites, we can see that there are now 4 images that were there that were not previously there because these are the ones that I applied the tag to.
+However, keeping in mind and I think let\'s see if this was there, the all photos tag is something that you if you want, if you want this specific view where you\'re seeing every single photo, I want to be clear that this is not the total of all the photos.
+That are present on these other tabs. This is itself A tag and in order to be able to see all your photos, you\'d want to make sure that the tags that you\'re adding include all photos to it. So when I was adding my, I\'m just going to select some random ones.
+Ones when I was adding my tag for rooms and suites. What I should have done is also added the all photos tag as well. OK, one second. All right, let me select that again.
+Properties. All right, so we\'re going to add, do that again.
+I\'m adding my rooms and suites and then also you\'ll see there\'s A tag called all photos. So by selecting this, this will mean that it would appear in that all photos tab at the beginning. Select it.
+Same close, append mode, submit.
+Ulling back refresh.
+I should now see more photos. Yeah, so like I had added, I think I added. I added some more here. So all photos now contains the other ones that are in rooms and suites here because each of these individual photos.
+Should have two tags, essentially rooms and suites and all photos added to it if you want it to appear on this tab and this tab.
+Alright, um, something to keep in mind as well is as I\'m viewing as published.
+Here\'s a view of me viewing. This is published. I can see everything looks as I as I intend. If I click on this, you know it\'s going to display the title at the bottom. Since I have no title, there\'s no title being displayed.
+Let\'s take a look at the configuration for that. So in terms of how this works, I believe that the image gallery for the image gallery grid dam assets, you\'d want to ensure that a title is added since that is being displayed.
+Right now at the bottom, but that\'s only visible when you do view as published, just to be clear. So I would recommend as you\'re doing your configurations items, always make sure you have like that second tab open. View as published as a.
+Way more accurate view as to what your end user will see versus just the preview mode. Because sometimes as you\'re working with things like modals or light boxes, it\'s not necessarily going to be completely accurate since it\'s not taking, say, like the header into consideration when displaying it back to you. So just a quick tip making sure you just.
+Simply have at least two tabs open. But yeah, so to be clear where it says no titles is because a specific asset did not have a title in the metadata stored. Don, I don\'t know if you\'re on right now, but I guess I my question for you and the team would be.
+If the team is is planning on adding you know all metadata fields with like say titles and captions and descriptions or or is that if that\'s something that you know is not typically added for your assets?
+
+**Don Wood** 33:29
+Sorry, sorry, I was doing something else. Yeah, we\'re planning on adding as much metadata as possible. So titles.
+
+**Jenny Smith** 33:39
+Description and OK.
+
+**Don Wood** 33:40
+Uh, description and all that kind of stuff. So yeah.
+
+**Jenny Smith** 33:43
+OK. Yes, OK, got it. So I think, I think that\'s just something that the team should consider. And the reason I\'m highlighting this is because you know, say if if if you guys decide, well, we don\'t necessarily always want the tile displayed here currently with the configuration it is displaying.
+
+**Don Wood** 33:44
+Um.
+Sorry.
+
+**Jenny Smith** 34:02
+So if that\'s something you know in the future that you guys decide, well, titles might not always make sense because maybe we don\'t have titles for every asset or you guys are still working towards that, then that would be something I would recommend capturing as something you would want to to be configured to not always display a title or whatever or if there\'s like a.
+Description you want to display that would be considered an enhancement that I would recommend you guys capture for this.
+
+**Terry Friedman** 34:29
+Question Daniela for that title text, is that an option that we can uncheck or check like where it inherits the information from the asset or \'cause I know we have an option to inherit like a alt text.
+
+**Jenny Smith** 34:30
+Um.
+Yes.
+Yes.
+Alt text typically, right? So no, I don\'t. That\'s not currently for this specific component and I\'m going to actually go back to preview and I\'m going to refresh the page so I can get out that Moodle. So taking a look at the specific configuration for this.
+It\'s more since I\'m simply selecting the image folder from the component itself, I\'m just setting where the location is and what images I want. And in terms of what metadata properties it\'s pulling in, it\'s based off of whatever was stored in the DM. But since I up uploaded these, I don\'t actually have anything associated with it.
+But if I were to update this image, let me see if I can find it. Let\'s take a look at where\'s that image.
+Um.
+OK.
+
+**Terry Friedman** 35:32
+So, so basically there\'s no option to select specific images. Um.
+Oh.
+It it would only pull it via via tag like we.
+
+**Jenny Smith** 35:42
+It would pull it in via tag. That is correct. Yes, it would pull it in based off of whatever is stored here for each specific image and if you selected these tags within that that component.
+
+**Terry Friedman** 35:55
+Is there a way we can select variations of an image? That way it has a different title \'cause let\'s say we don\'t use the same title across different property sites.
+
+**Jenny Smith** 36:04
+Is there a way to select variations? And when you say variations, do you mean I guess can you give me like a like would would they still have the tags associated with it?
+
+**Terry Friedman** 36:14
+Same tags, except it would just be different titles for the images, yeah.
+
+**Jenny Smith** 36:18
+Different titles. OK, so I don\'t think that would be something that\'s in place right now. What we are doing for this currently, just going to refresh this and I\'m going to it was publish.
+Is whatever I have associated with that specific image. It\'s going to display that title that was based off the image that was tagged. That\'s in the location that I have, if that makes sense. So yeah, OK.
+
+**Terry Friedman** 36:39
+OK.
+Yeah, that\'s.
+
+**Jenny Smith** 36:48
+But as as you guys can see here, this was that test title I just added within the metadata properties and that\'s what\'s being displayed here. That\'s how you would control what\'s for each image was to update the metadata. OK, any other questions?
+About what we\'re seeing here.
+So you can also see there there\'s a slightly different view when it comes to mobile. It changes to a drop down versus tabs and then you would just select which you would want to display. Same, you know, same kind of functionality of only showing whatever specific view you selected, but instead of it.
+Tabs as a drop down.
+OK. All right.
+Hi. All right. So those two specific items I don\'t think we had covered before since they are not on the current Hard Rock website. So hopefully that is something. Perhaps if there\'s instances where you might be able to use it, you\'ll be able to do.
+That however, moving on now to some items I do believe the team should be pretty familiar with, including our hero banner as well as our hero carousel. So with our hero banner, we do have.
+The ability to either select an image or a video. I don\'t think on the Hard Rock website right now there\'s there were ever any videos that were appearing in the carousel, however, for the careers website.
+We are using a video, so there is a video that is going to be displayed within the hero banner so we can take a look at how that is configured. This is going to be very similar to what we saw with the video player with regards to the third party and external URL options.
+For this case here we use the Vimeo third party, just plugged in the ID and then we had some items selected here, in this case enabling mute so that way it\'s not blurring out at you when you first go to it, enabling auto play so that way it\'s playing when you first load it, enabling loop so.
+Never stops. We also had background mode.
+Which hides the controls and then this one enable transparency. It checks this chat box to enable transparency. I was looking into this one a little bit more just to understand when I unchecked it or checked it. I believe it\'s probably not visible now because there\'s no like container it\'s full width.
+But in this case here this was selected. We also have the ability to have enabled the display of unmute button. So if you want the ability for the author to unmute it, that can be added and then we have inline playback. So it says here it controls where the videos play inline or full screen.
+In an HTML player on iOS. This is an iOS specific toggle, but in this case you can see this is the video we had selected the ID. We selected the aspect ratio too because if we were to remove this there are black bars that appear.
+And I can show an example on a different page. I\'m going to go on over to my original page, my KT Media page.
+And then just add this video here.
+Here.
+So let\'s see, let\'s do this.
+Yeah, I didn\'t want to. I don\'t want to mess around with this on this page because I know people are using it. But if I were to put the aspect ratio, I could leave it blank, or I could, you know, change that to whatever I needed. But if I were to do that, we\'re going to see how those black lines appear.
+Just going to do video and I\'m going to hit done so you can see when I did that a video component appears for the hero banner for me to then configure and I\'m going to click on 3rd party and I\'m going to choose Vimeo.
+And for the video ID, I\'m just going to see what this is. I can just add it.
+OK, and I\'m going to do some of these. I believe these are all the ones that were selected. Click that. So I\'m going to hit done and you\'ll see this is a video with no aspect ratio selected. There are bars on top and below and so that\'s why you are.
+Able to essentially change that when I put it to around 35, that\'s when the black bars for the video are gone. So there\'s some control that you have depending on how the video is rendering to change this.
+And puts back to 35. So this again, I don\'t think I\'ve seen video being used anywhere else outside of careers, but certainly it\'s an available option, including within the carousel itself.
+So what I saw on the Hard Rock website was that you guys are using all hero banners. However, there is that ability to add a video if that\'s needed as one of the slides. All right, so moving on though to the hero banner when using an image.
+OK, so in this case, in most use cases that I\'ve seen on the site, we\'ve been using images and I think most of the team probably is aware of how these are set up. We\'ll do a quick refresher though on our text tab. Of course we have the eyebrow.
+That\'s stored here. We have our title which maps to this, and we have our description which is then displayed underneath here.
+We add our CTA\'s. You can see I\'ve added three different ones and just so you can see how they would be displayed, we have our one primary one and then everything else will take that secondary style.
+For the asset, I selected something from the DAM. You do have the ability to inherit that description of the asset, which is whatever would be from the DAM. Or if there\'s something specific that you need to put for alt text instead, you can do it directly on the component here.
+If the image that you\'re using is just decorative, that would make sense then to not provide one and then this would be selected and here this is for lazy loading. It\'s it\'s enabled unless you check this. So if you can read this little tool tip here, when checked image will be loaded eagerly.
+Regardless of if the image is currently visible by the user. So I think typically these have been marked as unchecked from what I saw on the site. And then finally our image position tab for this and when you cancel Ramon, I saw your hand up, but really quickly let me just show this in mobile.
+Here in mobile, I do have the ability to hide the description as part of my style variation, so you can see hide it. I could show it if I wanted to, but since the likelihood is you probably just want to focus on the title and the buttons, that\'s something that you can adjust.
+You can also adjust the text style, so if the image is very light and text be dark, you can select this header height. What that does is it takes into consideration the height that\'s coming in from the header.
+Or you can toggle that off and you can see how it\'s say OK, I\'m just going to show it from the very top without respecting the sticky header.
+And then also gradient on or gradient off. See how that works for size, large, medium and small. These were sizes, preset sizes that were established. Oh sorry, I I did that too fast. So you can see how this one is super large.
+As I get to medium and then finally I think small is actually I can check the exact size, but typically I believe you guys have been using I think either medium or large, but changing the size is accessible here and then changing the alignment of the content.
+On the actual manner itself is selected through here, whether it\'s right, center or left. But I believe most of these have been on the left-hand side. So yeah, Ramona, please go ahead.
+
+**Liz Black** 45:40
+I\'m just curious to know, um, for the image size, how did you know what size dimensions to choose? If we don\'t really know, we don\'t really have any standard as far as what sizes work for cards, what sizes work for banners, and so forth.
+
+**Jenny Smith** 45:55
+So in this case here I had selected. I believe this was copied over. I think I copied over this hero banner from one of the home pages. So I had selected an asset that was just from the dam. If we were to, we can certainly change this out and see, but I believe this was one of the.
+Assets that you guys had uploaded at one point, like right before go live. So it was more of me just selecting a random asset.
+
+**Liz Black** 46:26
+So it doesn\'t have to be any specific size dimensions like any. Should any image be able to be responsive to fit in that banner area or what are our parameters as far as the sizes we would know to select from images? Like if you did not know that if you didn\'t already have that knowledge, how would you know what size image?
+
+**Don Wood** 46:27
+So it.
+
+**Jenny Smith** 46:43
+Mhm.
+
+**Liz Black** 46:46
+To put in there for it to work.
+
+**Jenny Smith** 46:47
+Yeah, so let\'s take another random image and see what happens. So I\'m just going to take this one here and hit done so we can take a look at how that is being displayed. So this is let\'s look at desktop. Actually this page is published.
+OK, so.
+Hang on. Yeah, so let\'s. I\'m trying to find something that\'s like not 1600. Let\'s see. Let\'s do this 11200.
+So with regards to the hero banner, um, in terms of like the style variations where we have like the large and medium, you can see as I\'m like selecting large and I\'m selecting medium, it\'s essentially like kind of.
+Scaling the image down. I think we are still working on getting getting like exact specs, but as you can see like I\'m using random images and you can kind of see just how it looks on there. But I understand Ramona about the overall ask about.
+Understanding exactly what specific dimensions are needed. But yeah, as as we play around with this, we can see how it looks and if it\'s something that\'s necessarily appropriate, right. So, Carlos, go ahead. Oh, sorry, go ahead, Don.
+
+**Don Wood** 48:08
+Yeah, Danielle.
+No, go ahead Carlos. OK, with regards to this, so last week we we talked about the if if I were to set up you know static renditions and I had multiple sizes though.
+
+**Jenny Smith** 48:23
+Mhm.
+
+**Don Wood** 48:26
+And it was told to me that if whatever I create it would this would automatically know what to put there in different placements and I want to make sure that that\'s accurate that if I were to set up you know.
+Let\'s say it\'s a 4K image, but we don\'t want it to be, you know, 4K on the site. We want to use a static rendition to adjust it, whatever the site, whatever these dimensions are going to be. Is that accurate that it would automatically know what to put?
+In a placement, depending I guess on if it\'s desktop, mobile.
+So I\'m not sure if if that makes sense what I\'m saying, but.
+
+**Jenny Smith** 49:09
+Yeah, it\'s yeah, Don, let me let me repeat what you said to make sure I understand the question. You\'re asking about if you be based off of your conversation, it sounds like I think probably during like the DM enablement sessions.
+
+**Don Wood** 49:24
+Mm-hmm. Yes.
+
+**Jenny Smith** 49:26
+Oh, it was probably discussed about renditions, correct?
+
+**Don Wood** 49:29
+Yes.
+
+**Jenny Smith** 49:30
+OK. And so you\'re asking if you were to set up renditions including like say a hero banner rendition, so that way an image that\'s being used in the hero banner would match whatever rendition is applied to it. You want to confirm that that is an accurate statement, is that correct?
+
+**Don Wood** 49:37
+Thank you.
+Right.
+Yes. So if I set it up, this would automatically be up. That image would automatically be applied to this placement or this type of placement or one that\'s that.
+
+**John Zimmerman** 49:51
+Yeah.
+
+**Jenny Smith** 50:01
+Hmm.
+
+**John Zimmerman** 50:01
+Yeah, it can be configured so that it will. It will, um, use the correct condition. Yep.
+
+**Don Wood** 50:06
+But it has to be configured.
+
+**John Zimmerman** 50:10
+So.
+
+**Don Wood** 50:10
+So we.
+
+**John Zimmerman** 50:11
+I yeah, I think it has to be configured in the template policy, but or somewhere. But let me check. You know what? We\'ll let\'s put a pin on that. We\'ll come back to you. Let me look into it.
+
+**Don Wood** 50:21
+OK. All right. Thanks.
+
+**John Zimmerman** 50:22
+I\'ll check with uh, Chris to see if I need to talk to her about that.
+
+**Don Wood** 50:27
+I just want to make sure that that\'s accurate or if there\'s other work that we have to do to make it work right until we get dynamic, you know, media. If if we ever get that in place, then we\'ll scrap all of that.
+
+**Jenny Smith** 50:32
+Mhm.
+
+**John Zimmerman** 50:36
+Yeah, exactly. Yeah. Then that all that changes it because yeah, it\'ll be automatic. But for now, yes, you can definitely set it up so that renditions of the correct rendition applies to the component on the page. I just need to let me get the exact status for you.
+
+**Don Wood** 50:43
+Yeah.
+Yeah.
+Okay. All right. Thank you.
+
+**Jenny Smith** 50:55
+And and Don, yeah, well, while Andy is getting that info and we\'ll certainly send that over to you when it\'s available. Just I just wanted to quickly understand though, are you trying to set up renditions right now for every single component? Is that is that what you\'re working on?
+
+**Don Wood** 51:01
+OK.
+I I\'m not trying to. I\'m just want to know what the options are for me right now to start doing this to start looking into. Once we get the right dimensions for these different placements, I can set up the renditions for those so that they\'re automatically.
+
+**Jenny Smith** 51:11
+OK.
+Um.
+
+**Don Wood** 51:21
+Resized and for those placements and you know.
+
+**Jenny Smith** 51:25
+Yeah, no, that that makes, that makes a lot of sense. Understood. So yeah, we\'ll wait to hear back from Andy and Chris and hopefully be able to provide a response soon. Carlos, I see your hands up. Please go ahead.
+
+**Don Wood** 51:27
+S.
+It.
+
+**Carl Aldan** 51:38
+Thanks. No, I just wanted to say that I would like to see you fixing the mobile option here and also what template are you using here? Because I think that I tried to build a page using the.
+Template. No the content template and I couldn\'t find the option to size the image. You know the it\'s as large, medium and small. I couldn\'t find that under that that template.
+
+**Jenny Smith** 51:59
+Mhm.
+Mm.
+OK, so let\'s let\'s sorry, your first question was about mobile. Let\'s let me see if I can address that one. What? Sorry, what exactly did you want to ask about mobile?
+
+**Carl Aldan** 52:21
+Yeah.
+How? How would you adjust the images? Because I I I had many different many problems just trying to to adjust different images you know.
+
+**Jenny Smith** 52:34
+OK, so I think my first question for you would be are like are you like having some difficulties with using the image position for OK?
+
+**Carl Aldan** 52:43
+Yeah, I for example you say I was working on this one and and tried to adjust the the mobile image and and even though I tried to set up the percentage in several different ways, I I couldn\'t.
+Find the the right position for the image. So I finally I I changed the image.
+
+**Jenny Smith** 53:07
+OK, I think So what I would recommend is actually let\'s let\'s see. Actually, do you have the page? I actually want to take a look at what you were working with just to make sure I understand and then I can actually adjust whatever you were doing.
+
+**Carl Aldan** 53:20
+I.
+I was working on the landing page, the the main page of the hardrock.com.
+
+**Jenny Smith** 53:31
+OK, got it. OK, I\'m gonna go to stage then.
+
+**Carl Aldan** 53:36
+I\'m Brad, yeah.
+
+**Jenny Smith** 53:37
+I\'m proud. I\'m not gonna mess with pro right now, but I\'ll go to the stage, the stage here, make sure I understand. And to answer your second question before I get too far, you asked about.
+Why weren\'t you seeing it on the specific template? So I\'m going to show you what my template was. So when you view the page here and you click on an item like this, you can see it tells you what template was used to create that page. So in the case of the page we\'re currently on, I\'m using.
+
+**Carl Aldan** 54:09
+Yeah.
+
+**Jenny Smith** 54:12
+The open page template. So just to confirm, Carlos, when you said you created a page, did you do you know? Do you remember which one you selected?
+
+**Carl Aldan** 54:15
+Yeah.
+Yeah, it was the content template.
+
+**Jenny Smith** 54:24
+OK, it was this. OK, yeah. So this is I think something that we will be going over more in the page templates session that I have. But a quick tip for you guys is that typically what you\'re going to be creating are probably homepages, which is of course.
+You know the page like the main landing page for the site that you\'re working on, the open pages, which is going to be the child pages underneath that landing page. You\'ll also likely use the events page for any events like in cafes and such.
+Those news pages, just like we saw, I think on Friday when we were going over creating news articles as well as the search results page and the news homepage. And then there are a couple other items like the blank page, which might be something that you would use for say like a modal or something where.
+You don\'t want the header and footer to be included and microsite page is something that was specifically created for certain hotel pages and the messy burger page is of course for that those messy burger pages that were on the cafe website.
+
+**Carl Aldan** 55:35
+Yeah.
+
+**Jenny Smith** 55:35
+Error pages is what you would use when you create an error page and the content page. I don\'t think you guys are using this right now, so this is something I understand. If you guys don\'t want it, this could essentially be removed from the view since I believe right now all the other pages are typically going to be your open page templates, but.
+We can talk a little bit more about how can you guys create new page templates in the future or modify existing templates. Like when does it make sense to do that? When does it make sense for a brand new template? When do we set initial content, the structure, etcetera?
+But certainly want to make sure all that\'s covered in I think the session that we are planning to have on Monday. So again, open page template I think is probably what you\'re going to want to be using moving forward, Carlos, based off of what I understood you were saying.
+
+**Carl Aldan** 56:24
+OK.
+Thank you.
+
+**Jenny Smith** 56:27
+Yes. OK. So now going back to the homepage for the site, I know you said prod, but I\'m just going to do this here in stage. Let\'s take a look if you could describe the situation please.
+
+**Carl Aldan** 56:36
+Yes.
+It is the oh you\'re you\'re on the stage sorry. OK no it was it was it was the the image on the when you look down the mobile side I I I had that hard time just trying to.
+
+**Jenny Smith** 56:43
+So if.
+Yeah, I\'m on stage. I didn\'t want to go on prom.
+
+**Carl Aldan** 57:02
+To set up the image for that. So I ended up changing the image and I\'m playing with the different positions, but it was super difficult. That\'s why I wanted to see you. How do you solve those issues? So maybe I did.
+
+**Jenny Smith** 57:15
+OK.
+
+**Carl Aldan** 57:22
+I didn\'t do something that maybe you do.
+
+**Jenny Smith** 57:25
+OK, so I\'m navigating to prod. I\'ll just take a quick look at the page. Hopefully I can see your changes there, but OK, Yep, always log this and hit edit. You said you changed out the image. Was was it this specific image?
+
+**Carl Aldan** 57:38
+Yeah, I\'m talking about this first slide.
+
+**Jenny Smith** 57:42
+OK, so let\'s see here how it looks in Google.
+OK, so it sounds like if I\'m.
+I guess I would need to understand like what placement yeah.
+
+**Carl Aldan** 57:57
+Yeah now now you see it now you see it right. But I I I just struggle. So my my my question because I remember that you last probably last week or the previous week you you mentioned that you you adjusted the the.
+
+**Jenny Smith** 58:11
+Mhm.
+
+**Carl Aldan** 58:16
+Only the mobile image and I I didn\'t know how to do it.
+You know, you just did a specific slide for the mobile. It\'s light. Yeah, option.
+
+**Jenny Smith** 58:35
+Let\'s see. So I\'m going to, let\'s, yeah, let\'s take a look here and I\'m just gonna take a quick look at your image position. So what you\'re saying though, is that you had to kind of figure out like what\'s the best way to do this, you know, in order to set it so it\'s showing what I want.
+
+**Carl Aldan** 58:47
+Mhm.
+
+**Jenny Smith** 58:52
+And honestly like this, I guess this is what the image position tab is for. Like what is the focal point that you want? Like for example when like this I\'m assuming in mobile you probably want you might just want it to be, you know, you might want it to be focusing on this section, you might want to be focusing on this session.
+
+**Carl Aldan** 59:10
+Yeah.
+
+**Jenny Smith** 59:10
+It\'s a matter of just positioning, you know, like choosing the right position for that. Like I guess if you\'re if you\'re asking like how would I personally do that, what I\'m describing to you is exactly what I would do. Figure out oh is it in on the left or the right of the image. I want to show this person or I want to show this portion of the image and I would.
+Just change the numbers accordingly. So yeah.
+
+**Carl Aldan** 59:32
+And and but how? How? How does it work? If you want to display only the left side of the image, what would you do?
+
+**Jenny Smith** 59:39
+If you only want it to display the left side of the image for mobile.
+
+**Carl Aldan** 59:44
+Yes.
+
+**Jenny Smith** 59:47
+Yeah. OK. One second. All right. So let\'s see.
+I am going to go back to my thing. It\'s the exact same stuff, but just let\'s let\'s work on this one right here. So I\'m on stage and let\'s say we want, let\'s see. So if I were to do like say 10%.
+
+**Carl Aldan** 59:59
+Yeah.
+
+**Jenny Smith** 1:00:07
+And if I were to view this here, let\'s see here.
+Okay, um\...
+
+**Carl Aldan** 1:00:16
+On on that note, if you you just you\'re you\'re putting 10% because it starts from the left to the right 10% and increases on from the left to the right side.
+
+**Jenny Smith** 1:00:26
+So, so just keep in mind that 5050% and 50% means centered, right? So we\'re like, yeah, 50 and 50, right? So 5050, that\'s why the focal point is centered. But let\'s see here.
+Let\'s see what we can do and see how we can affect this. I think you\'re going to have to set a height for this as well, but let\'s check. I set four to pixels and see what happens. We can see how this is shifting up and down.
+Oh, it\'s 200 pixels, 10%. Yeah. So you you can see just like how I\'m plugging in numbers. I\'m not saying that this is not exactly the intention I\'m doing, but I\'m just trying to show as I\'m shifting the numbers, you can see how it affects it. The reason why I think you guys, one of the issues that you guys have is that.
+
+**Carl Aldan** 1:01:12
+No.
+
+**Jenny Smith** 1:01:22
+My sizing for this is a fixed size. I want to make sure that\'s clear. So I was going to pull up. I wanted to pull up the just so you guys could see really quickly what those sizes are.
+Second, pulling up the JIRA requirements that describe the exact sizes for our hero banner.
+Yeah. So for the hero banner, we can see that there are three different sizes, small, medium and large. So what was established was that small is always going to be 540, medium is always going to be 600 and large is always going to be 814.
+So when you are using the hero banner component, this kind of goes back to, I believe Lisa was mentioning having to use the image component. These specific heights variations is not something that\'s for the image component, it\'s specifically for the hero banner and that\'s why there\'s kind of like a fixed size that\'s being put into place.
+It\'s the fixed height for these images are always going to be this when these variations are selected. So that was something that was established a while back as what was necessary for the hero banners. However, as you can see, I am kind of changing.
+Oh, where is it? I\'m kind of changing my heights here for my image. So instead of whatever the big size was that was selected for that variation, I\'m changing it to something different on mobile. So if I were to probably do this.
+Maybe something like this 800. You can see how now it\'s changing. It changed the height of the image, but still only displaying a certain portion. It\'s also changing the position of where the image is. So my 10% and 80% is being respected if I were to remove that.
+Should default to 5050 and you can see now it\'s everything is centered, but it\'s centered as if the image was 800 pixels. So if you wanted to say only have like say like the view of.
+I would say like this sky area, right? You\'d probably need to do something like this.
+And then now I\'m only focusing on the sky portion, and I\'m focusing on the sky portion because I\'ve increased the height of the image in the image position section, right? So I\'m not actually like modifying the image itself, just modifying how the image is displayed on here because I just want to show.
+Clouds and mobile. But then of course if I were to go back to desktop, I can see the full image as it was before because I didn\'t set a specific height for desktop. Does that kind of make sense? I can go over that again, but hopefully you can see how me setting that height.
+For the exact same image, an image position is forcing it, you know to say OK, I want it to be 1200 by leaving this blank, it\'s automatically 5050. If I wanted to like play around and only show certain parts of this image, say I do this.
+
+**Carl Aldan** 1:04:25
+Yeah.
+
+**Jenny Smith** 1:04:41
+You can see now we\'re focusing on on this portion, but if you leave it blank, it\'s always going to be essentially like centered.
+
+**Carl Aldan** 1:04:49
+Yeah, and if I wanna display all the all the left side of the image, what would it be?
+
+**Jenny Smith** 1:04:55
+If you only want to display the left side, oh, so let\'s remove the height. Then make sure I understand this and we want to display the left side of the image, meaning like, I don\'t know like.
+Sorry, this is.
+
+**Liz Black** 1:05:10
+Like for instance, that hero that you were just on with the two people at the at the the registration counter, the people are all the way to the left. Like if he just wanted to show those two people, would you just have to manipulate the mobile vertical position?
+
+**Jenny Smith** 1:05:17
+Uh.
+
+**Carl Aldan** 1:05:24
+Mm-hmm.
+
+**Jenny Smith** 1:05:29
+Hang on, let me find a How about this? Let\'s add this these guys here.
+OK, let\'s let\'s see how we can do that for this one too.
+
+**Carl Aldan** 1:05:38
+Yeah.
+
+**Jenny Smith** 1:05:39
+Uh, OK hmm.
+Uh, so we\'re saying we want these people to be shifted over to the left. Is that correct?
+
+**Liz Black** 1:05:48
+Like if we wanted them to be centered.
+
+**Jenny Smith** 1:05:50
+want them to be centered. Okay.
+
+**Carl Aldan** 1:05:52
+In in this case, you will be looking to to go to the right, right?
+
+**Jenny Smith** 1:05:56
+I would want to focus to the right. That\'s correct. So let\'s try and see what we would need to do for that.
+
+**Carl Aldan** 1:05:59
+Yeah.
+
+**Jenny Smith** 1:06:05
+60%. This is still 50%. Let\'s see. So we\'re slowly shifting. So I\'m going to change this to 70.
+So if I want it to be centered, this is me centering. I know it\'s not exact guys, but this is me having them more centered on by changing that horizontal position specifically for mobile.
+
+**Liz Black** 1:06:20
+Yeah.
+
+**Carl Aldan** 1:06:27
+No, but this this is very helpful looking look into you doing this.
+
+**Jenny Smith** 1:06:32
+OK. So yeah, so Carlos, just to confirm, is this like are you kind of seeing like how that would work in relation to like the image that you had for the prod site?
+
+**Carl Aldan** 1:06:44
+What? What was that?
+
+**Jenny Smith** 1:06:46
+I said is is what we were just reviewing here. Is that is that helpful for you as you were working on the? OK, perfect. Glad to hear that. Awesome. Thank you, Carlos. Rick, I think I saw your hand up.
+
+**Carl Aldan** 1:06:50
+Yes, yes, definitely. Thank you.
+
+Richard Ray (Director of Digital Experience)** 1:06:59
+No, I I I answered. The image looks like it was starting to like you\'d reach the end of it because of that white line, but you could see you moved it a little bit more. Now you can see there\'s a gradient and something in the foreground. So I I thought maybe the image had been reached the edge, but no.
+
+**Jenny Smith** 1:07:06
+Oh yeah, it\'s it\'s \'cause.
+Oh yeah, yeah, no, understood. Yeah, the image I was chosen just happened to have like a white wall or something.
+
+Richard Ray (Director of Digital Experience)** 1:07:15
+Yep.
+Yeah, yeah. So I\'m good. That\'s why I put my hand up. Thanks.
+
+**Jenny Smith** 1:07:21
+OK, awesome. Awesome. OK. So thanks Carlos for that for that question. Actually really happy that we were able to go over that and happy to hear that you\'re able to use that. Hopefully as you\'re updating the pod site, you know if you have a question, please post it in the Confluence page and perhaps I can take a look at it and.
+Try to see if we can address it in tomorrow\'s session if you have any other issues, OK?
+
+**Carl Aldan** 1:07:44
+OK. Thank you.
+
+**Jenny Smith** 1:07:45
+All right, so that was the hero banner. I\'m just going to Scroll down to the hero carousel, which of course is basically a carousel to be able to add specific components. I think there was a question previously as to why is the hero carousel only limiting us to show these three items to be.
+Clear checking the requirements since this is supposed to only really have hero banner or in some cases just like a blank or plain image with no text or anything like that or a video. That\'s the reason why this was restricted to only three different.
+Components. Certainly if there\'s additional components that you guys need to add that can be configured in the future, but we specifically restricted it based off of what we understood was needed for this component, so adding.
+Adding a a new hero banner here. It\'s the same process as we had for. I think some of the other carousel components that you guys are familiar with the different slides displayed here. You would just add your title for the slide, see each.
+And my properties tab.
+I\'m able to select the active item. I think typically you guys are showing whatever\'s first. That\'s what the default is. But if for whatever reason you need it to start from a certain point, say you\'re adding more items, but a specific slide is something that should still be, you know, important even though it\'s not the first item place.
+You have the ability to select whatever you want to be active on load. You can see here automatically transition slides is on. I think that\'s what you all are typically using, but you can change the delay if you need it to be longer than just sliding through at the speed that we see here. This can be increased.
+Or decrease depending on what you think is best. We have disable automatic pause on hover. So depending on if you turn this on or off right now, if you were to pause on top of the slide it will stop. So that way the user can read the information on there versus it still automatically sliding.
+And then also this final check box of always display carousel slide indicator, which we see is what\'s displayed here on the banner. Hey Carlos, I see your hand up.
+
+**Carl Aldan** 1:10:12
+Yeah, regarding that the the transition delay, I I\'m not sure if that\'s working properly because when when I was trying that I had to increase the delay probably to 10,000.
+
+**Jenny Smith** 1:10:14
+Mhm.
+Mhm.
+
+**Carl Aldan** 1:10:29
+Because I I I\'m I\'m not sure if once once you go to you reach to the next slide it\'s supposed to start from zero again or it it it continues counting from the one the from the time that you start watching the the slides.
+
+**Jenny Smith** 1:10:36
+Mm.
+
+**Carl Aldan** 1:10:46
+And I think that they should start again from zero once you are watching a particular slide.
+
+**Jenny Smith** 1:10:55
+Let me.
+
+**Carl Aldan** 1:10:55
+I\'m not. I\'m not sure if I you get. Yeah, yeah.
+
+**Jenny Smith** 1:10:57
+Yeah, let me make sure I understand what you\'re saying. So we\'re gonna view this as published and if you could just describe what you what your understanding of it was. So right now you can see it\'s automatically transitioning, so it should be transitioning in like one second, yeah.
+
+**Carl Aldan** 1:11:05
+OK.
+This.
+
+**Jenny Smith** 1:11:12
+So now it\'s cycling through.
+
+**Carl Aldan** 1:11:12
+Yeah, and that\'s too. Yeah, super fast.
+
+**Jenny Smith** 1:11:16
+OK, so if we were doing, yeah.
+
+**Carl Aldan** 1:11:17
+OK so but if you use your arrows and if you use and OK then if you are here it it is supposed to start again counting you know the the the the frequency.
+
+**Jenny Smith** 1:11:31
+Oh, you\'re saying if I if I use the arrows, does it start at 0 when I interact with this? OK, I see what you\'re saying.
+
+**Carl Aldan** 1:11:35
+Yeah, it it it\'s supposed to start at 0 because otherwise you you just use your your arrow and you don\'t have time to read the next one because it is gonna change.
+
+**Jenny Smith** 1:11:46
+OK, um, so let\'s see what we have configured here. So.
+
+**Carl Aldan** 1:11:54
+To fix that, I I increased it to 10,000.
+
+**Jenny Smith** 1:11:58
+Right. Uh.
+
+**Carl Aldan** 1:11:59
+At least to for the experience to be better.
+
+Richard Ray (Director of Digital Experience)** 1:12:02
+What? What\'s the equivalent to 7 seconds in milliseconds? Is that 7000 or or 70,000? OK.
+
+**Jenny Smith** 1:12:02
+Oh my God.
+7000, right? I think. No, it should be 7070 thousand, right? Oh man, someone who\'s better at math than me. Please answer.
+
+Richard Ray (Director of Digital Experience)** 1:12:20
+Because that\'s what we I usually put is I think 7 seconds just so you have time to read.
+
+**Jenny Smith** 1:12:24
+OK, let\'s pretend.
+
+Richard Ray (Director of Digital Experience)** 1:12:25
+So if it\'s on 5000, then that would be like, yeah, very fast compared, compared to.
+
+**Jenny Smith** 1:12:30
+So I have changed it now to 770. Although yeah, I need somebody to check my math. I don\'t feel like 70,000 is correct, but that\'s why I changed it too. So as it\'s cycling through. So I think Carlos, what you\'re saying though is no matter.
+If you were to, if you were to click on this, that should kind of your expectation is that it would retrigger the countdown from here. OK, all right, got it. So I\'m gonna change it back from 70. Yeah, let\'s change it to 7000 and so.
+
+Richard Ray (Director of Digital Experience)** 1:12:51
+Should be 7.
+
+**Carl Aldan** 1:12:56
+Yes.
+
+Richard Ray (Director of Digital Experience)** 1:13:00
+7000.
+I just looked it up.
+
+**Jenny Smith** 1:13:05
+OK. Thank you, Rick. Like we might be sitting here for a while, alright.
+
+Richard Ray (Director of Digital Experience)** 1:13:06
+No, I wanted to know.
+
+**Carl Aldan** 1:13:08
+It.
+
+Richard Ray (Director of Digital Experience)** 1:13:09
+Yeah. So I guess five was like 5 seconds. So that\'s still kind of quick.
+
+**Jenny Smith** 1:13:12
+Yeah. So five was 5 seconds, correct. OK. So yeah, OK. So I am going to, I think I\'ll Carl\'s off to investigate that a little bit more. What you\'re saying though is that the expectation or what you were wanting to confirm is if the arrow indicators resets the.
+Timer if you have automatic transition set on and if not right now it sounds like what you\'re doing is you are you increase the time for the transition delay. But let me get back to you on on that. I\'m going to check with the dev team to see what our expected behavior was.
+
+**Carl Aldan** 1:13:37
+Yeah.
+Mhm.
+
+**Jenny Smith** 1:13:52
+I can report back on that tomorrow, OK?
+
+**Carl Aldan** 1:13:54
+Awesome. Thanks.
+
+**Jenny Smith** 1:13:56
+No, thank you. OK, so properties, we talked about this. We talked how the carousel slide indicator is being displayed here and then there\'s some accessibility items with regards to labels, previous, next.
+So this is items that you would be able to see if you were to view source. You would see these Aria labels within the markup. And for this you\'ll notice there\'s that empty slide. That\'s because what I did.
+Was I had added my my beach slide, but I didn\'t actually edit it. So I don\'t know if like the team has run into any issues like that where you know you you\'re like, where\'s this coming from? Of course it\'s because I did not actually edit this one. All right, so.
+Here I can see the different items. I am actually able to kind of interact with this if I wanted to, like so say I want to change the order from here. But truthfully, typically what I personally do is I I usually just like configuring it so that way I can also make changes.
+Within the dialogue window or delete something from this specific view. So all right, so as we know from our hero banner, exact same items, you know, because it\'s just essentially a banner that\'s within the carousel. So I think you know you guys already know how to use this.
+But I will certainly look into the automatic transition delay versus when you click on the arrow and I will report back on that item. Any questions though about the hero banner or hero carousel that you guys have? Anything else that you guys are doing currently on your site that you guys maybe want some more?
+Yeah, Carlos, please go ahead.
+
+**Carl Aldan** 1:15:41
+I think that that can can you open the the the carousel again the to see it?
+
+**Jenny Smith** 1:15:46
+The actual carousel, certainly, Yep.
+
+**Carl Aldan** 1:15:48
+Yeah.
+OK, I can you check if those names for each slide are named equally on the left side of the drop down menu? Yeah, that one.
+
+**Jenny Smith** 1:16:06
+You\'re talking about in here. OK, let\'s take a look. OK, so we have Harold Collard\'s Hard Rock sale. OK, so this is still seeing Hard Rock. Oh, wait, no, am I looking? I\'m looking at the right thing. OK, Yeah. OK.
+
+**Carl Aldan** 1:16:06
+Yeah, yeah.
+Because because what I what I I I think that my experience was that it was registering only the title assigned to the slide instead of these.
+
+**Jenny Smith** 1:16:30
+OK, I see. So your question is why is this showing items that are not actually associated with the hero carousel? So why are these not being replicated here? So for example we see.
+
+**Carl Aldan** 1:16:37
+But I probably I\'m mistaken.
+
+**Jenny Smith** 1:16:48
+Hard Rock Live, whereas this one here is saying Mike Tyson presents return of the mic tour. So let\'s see Uni by Hard Rock. Now I\'m gonna assume this last one says Hard Rock Cafes, OK?
+
+**Carl Aldan** 1:17:04
+And sometimes it\'s confusing, you know.
+
+**Jenny Smith** 1:17:05
+OK, so yeah, I think what\'s going on is what this is displaying is it\'s actually looking at the eyebrow portion of the hero banner. That\'s why this is blank because there\'s nothing there. If I were to put testing right here in eyebrow text.
+
+**Carl Aldan** 1:17:21
+Yeah.
+
+**Jenny Smith** 1:17:21
+That\'s what should be displayed here. So this is actually taking the eyebrow text. It is not taking the name of the slide here, which I understand could certainly be confusing because from here I think from this aspect.
+
+**Carl Aldan** 1:17:36
+Yeah.
+
+**Jenny Smith** 1:17:39
+You know, this is more for if you want, if you know you want to quickly reorder something or whatever, you know that this specific one is what you want. But yes, from this view it is showing the first element of the hero banner, which is the eyebrow. So that is what it is right now. But definitely understand that why you why that could be confusing and also something I would.
+Mention this would be a perfect candidate to add as a gap if that\'s something that you would be looking to changing in the future.
+
+**Carl Aldan** 1:18:06
+OK.
+Thank you.
+
+**Jenny Smith** 1:18:09
+Yeah. All right. OK, let\'s see here. I\'m gonna go back to our agenda. Hero banner, Hero carousel, Media gallery, image gallery, grid. OK, so we\'ve covered those four. I\'ll be getting back with some.
+Answers on some of the questions we had today with regards to the video player component. So as we had seen when I was adding the hero banner and using the video, we\'ve kind of we\'ve noticed you know with the video card and the and the like this video component.
+Inside the Hero banner, you\'re going to see like those same settings. So this is more just, you know, it\'s you guys should be familiar with this based off what we saw. You know, selecting that third party is going to list those different options. Again, I think there are some follow-ups I\'m planning on providing. There were some questions.
+Regards to the layout, fixed and responsive that I believe I saw on the jobs page, so I do need to get back to that. But the video card like we saw previously is very much similar to the video component. You\'ll see a lot of the same fields.
+However, they are separate because the video card of course has some additional fields that need to be filled out with regards to like the title, the description, and also the fact that it opens up into a separate modal window.
+So I want to make sure there was, you know, there\'s some clarity as to these two different components, but there are a lot of similarities with regards to the authoring dialogue. So in addition to, I guess, is there anything else other than the questions that I know have already been asked with regards to Video Guard?
+Is there any other questions about like video in general with these components?
+
+**Carl Aldan** 1:20:07
+No.
+
+**Jenny Smith** 1:20:08
+All right. OK. So going back here, we also have images. I think you guys, you guys are pretty familiar with the image component, I would imagine. I\'m just going to add one on here.
+Alright, so this by default you may wonder, hey I added I just added an image component. Why is it just showing an image? You\'ll see here inherit featured image from page is typically checked automatically.
+And my featured image was set when I was creating my KT Media page. I\'m going to open up the properties. You\'ll see that there\'s an images tab. I set my featured image here and so if there is an image associated with your page, in this case this one here when you add the.
+Image component with that box being checked by defaults. That\'s why this image looks like it came out of nowhere, but no, it\'s because I had set it as the featured image for my page. I\'m going to uncheck this cell. I\'m also going to uncheck this and we\'re just going to add a different image.
+Garrett from description of asset. We\'re all familiar with this or if I need to add something specifically here on the page itself, I can do that. We talked about that we saw these also on our hero banner, I believe these specific fields.
+We have metadata fields on the image component caption which should be coming in from the DAM or of course if you want to add your own you can do that as well. The ability to make the image a clickable link, so selecting either from within a EM.
+Or putting an external link and then opening in the new tab. We have our image position tab and then we have the styles tab. I know there\'s an open question about the purpose of logo image. I\'ve reached out to the dev team and they are looking for some instances where that\'s applied so that we.
+Guys can see like the specific use case, so I will get back to you on that one. But typically I think you guys are not, you know you guys aren\'t using that on here. It\'s more I want to show an image on the page. I might want to make it clickable and so that\'s that\'s how you would do it. Add the image component at the link and it should become a clickable.
+Image to a destination, but any questions I guess or any use cases where you guys are using images and maybe you know there\'s there\'s there\'s something you might want to know more about it.
+Right.
+OK. So then I also want to talk a little bit about the container and keep in mind we are going to go more about the container and layout mode and that sort of stuff. Yep. Oh, hey, Carlos, go ahead.
+
+**John Zimmerman** 1:23:04
+Daniella, we\'ve got a question. Henry.
+
+**Carl Aldan** 1:23:06
+It\'s a it\'s like a comment. It would be great, really, really great if we are working on a component and we can upload the image from the component itself and not have to go through the tree to the assets.
+
+**Jenny Smith** 1:23:11
+Mhm.
+Uh.
+
+**Carl Aldan** 1:23:26
+8.
+
+**Jenny Smith** 1:23:28
+I see. So what you\'re saying is and like for example instead of having you\'re saying instead of the damn uploading an image.
+
+**Carl Aldan** 1:23:37
+Yeah.
+
+**Jenny Smith** 1:23:38
+Um.
+
+**John Zimmerman** 1:23:38
+They\'d require a the way that it\'s set up is that you, I mean you have to use the the asset has to exist in the dam and there\'s not really a way to do that right now. It could be done as a if you really, really wanted it and it was really high value, it could be done through a custom.
+Uh, extension of the um out-of-the-box interface. But yeah, I hear you Carlos. It would be nice.
+
+**Carl Aldan** 1:24:02
+Yeah. Thank you.
+
+**Jenny Smith** 1:24:02
+So, yeah, definitely that that\'s that Carlos would be platform expansion for sure. I think, I think Donna still came off of you. I don\'t know if you had any comments that you perhaps wanted to add about. Yeah, go ahead.
+
+**John Zimmerman** 1:24:03
+M.
+
+**Don Wood** 1:24:13
+Yeah, I yeah, no, I I think that we might want to avoid that because people might upload it and they might actually put it in the wrong directory. And then yeah, I I just see where the need might be, but maybe if you clicked on it and then you.
+
+**John Zimmerman** 1:24:24
+Yep, there\'s a reason for it. Yeah, it\'s.
+
+**Don Wood** 1:24:33
+Found the directory you wanted to put it in and then you dropped it in there. But it\'s like which way do you do it? Do you do it through here or you just do it the normal way? It\'s not that much additional work I think to do it so.
+
+**Maia Emerson** 1:24:47
+It does. It does bring value to our content authors, and we have it built in a way that if you\'re working, it goes directly to the folder that you\'re supposed to upload it. So when?
+
+**Carl Aldan** 1:24:48
+I hear you.
+
+**John Zimmerman** 1:25:00
+It\'s a governance issue though. Also sorry to cut you off my table and I\'ll let I definitely want to hear what you you have to say. But even to to hammer home the governance point from Don also is in terms of proper dam hygiene and governance.
+
+**Maia Emerson** 1:25:03
+Pleasure.
+
+**John Zimmerman** 1:25:17
+You you know there\'s you really don\'t want the average author to have, but they had an asset that they wanted to include on a page. There should be a process by which it gets put in then.
+
+**Maia Emerson** 1:25:28
+Oh, this is not for the average author. This is not for your regular author. This is more for like the like Lisa\'s team that need to do things really, really fast. So yeah, so we load it as a gap and then we\'ll do discovery. We\'re done.
+
+**John Zimmerman** 1:25:33
+Yeah.
+Yeah.
+So there could be a governance.
+Yeah, there could be a path that makes sense. And as part of that, my dad would say look at a path where like you and Don where you have a space in the dam where you know like that is.
+For that where things might you might have a workflow that lets Don know or that the an asset\'s been put in to a specific authoring like like real time space and then gets approved and then moved into you know what I mean like or or have like I said you could do a.
+
+**Don Wood** 1:26:10
+OK.
+
+**John Zimmerman** 1:26:19
+Custom interface where you you\'re limited to putting assets into a certain place from there. So there\'s definite ways to go about it, but I hear both sides like it. It would be much more convenient. That used to be there by the way, but what would happen is you the asset wouldn\'t go into the dam, it would actually just go right into the JCR.
+
+**Don Wood** 1:26:30
+Isn\'t.
+
+**John Zimmerman** 1:26:39
+Under the page. And so then you had all these like orphan ghost assets like floating around, so it took it away.
+
+**Jenny Smith** 1:26:41
+Um.
+
+**Don Wood** 1:26:47
+Yeah, and I think part of that, even if we do go a route to implement something like that, we need to put certain parameters in place, especially around metadata. I don\'t want an asset to go in. Even if we\'re hurrying, it still need to do it the proper way to get the asset in, make sure the metadata is applied to it.
+Make sure it\'s, you know, properly published and that sort of thing. So definitely discussion that we need to have about the right way to do this.
+
+**Burt Jones** 1:27:16
+Yeah, feels like an internal discussion, Don, Maite and team that you guys can have. And if that\'s something that\'s a priority for you guys to add, you know, for your platform expansion, bring it to the table. Yeah, yeah, OK, sounds good.
+
+**Don Wood** 1:27:20
+Yeah.
+Yeah.
+Sure. Yeah.
+Thanks.
+
+**Jenny Smith** 1:27:33
+Yeah.
+
+**John Zimmerman** 1:27:35
+Thank you.
+
+**Jenny Smith** 1:27:36
+Yeah, no, thank you guys for that. OK. So yeah, just going to cover the two portions of the container right now.
+I I believe. I\'m not sure if you guys are using the background image functionality for the container, but of course there is there the ability to set a container, put a background image, and then of course you would put all your components on top of that, so.
+I\'m not, I\'m not sure if you guys are using that feature right now. Let\'s we can do it really quickly. So you can see here my my contents, I\'m sorry, my container going to set this to full width. Again, we\'ll go over all this more in greater detail in our next session.
+But my image is here and you\'re thinking, well why is it not showing anything? Like it\'s just showing this top portion. So currently what I\'m doing is as I add additional components, like say I add this image here, it\'s going to then grow the container.
+So that way the and all the components that are within it are going to be adding height to the specific container. Oops, I accidentally resized both. Just want to resize the image so you guys can see it. So if I were to.
+Say add like a lot of content within here, then I would likely see the full image. All right, yeah, so you can see the height of the image now is dictating the height of the container. However, there is the ability to set a minimum container height.
+So I\'m just going to put, I don\'t know, like 600.
+And hit done. So you can see how now this is this is growing because of what I had set without having to worry about the content that\'s in here. So if you want the container to be dictated based off the content that\'s in it, so that way the height will grow as you add more content, you have the ability to do that, however.
+If you want to set a fixed or a minimum height for it, so it\'s always displaying say like the top of the firework like we see here, then you can use this specific field down here to do that. I think though what the.
+Most of you guys are likely using the background color. I said that so the since the background image is in here that\'s taking precedence over the background color. I\'ll clear this, hit done so I can see here. Here\'s the background color that I selected for this. Same thing though if I removed.
+The height for this, it\'s only going to be as tall as the content within it. Since there is the spacer component, that\'s also an option. Say you\'re like, well, I don\'t really necessarily want like a height, but I know that I I might want you know this to have.
+Just to just row like this, certainly some components to be able to show more of that background color or image. But yes, we will certainly be going more in depth on the container. I can potentially tomorrow I need to check to see what the schedule is.
+And I think there were some asks about, you know, things like alignment, resizing, the parallax feature we would also talk about and then this light box tab, how does this work? I\'ll be providing some examples where we can see the use cases for why you would use this tab.
+Use this tab how it works today as well as seeing how Parallax works today and how to set that up. So more to come on the container, but wanted to make sure that the team was aware about how the background image field works and also how to show more of the background.
+Depending on if you have a certain certain height in mind for the specific container to show. Alright, so with that I see the time is around 2:30 and I just wanted to make sure that the team had some time to.
+Ask any additional questions about any of the components that we\'ve reviewed today, keeping in mind that this one we will go way more in-depth on, but any any questions, you know the image gallery grid, the media gallery, the hero banner, the hero carousel, or the image component itself.
+And if there aren\'t any, just out of curiosity, is Lisa on the call right now?
+
+**Burt Jones** 1:32:12
+She\'s not.
+
+**Jenny Smith** 1:32:13
+OK. All right. No problem. So Gonzalo, we confirmed earlier that you are now able to see the drop downs that you and Lisa weren\'t able to see. And then your second question was about.
+The order of the content that was displayed on the page. Out of curiosity, did you end up publishing the page or anything like that you know from from the earlier discussion?
+
+**Cal Nelson (customer)** 1:32:40
+Yes, I did publish and uh, this is still showing up uh at the bottom.
+
+**Jenny Smith** 1:32:45
+OK, sure. I think Andy, I believe you were planning on looking into that. I don\'t know if like we we need to just follow up with Gonzalo during perhaps tomorrow\'s session or so or if you were looking at that in the background.
+
+**Cal Nelson (customer)** 1:33:01
+Awesome. Let me know. Thank you.
+
+**Jenny Smith** 1:33:03
+Yeah, we can do that for sure. OK, um, all right. So
+
+**John Zimmerman** 1:33:07
+Sorry, I was on mute. Yeah, sorry. I was looking into it and didn\'t find a resolution and then was looking into other stuff based on the call. But but yeah, we\'ll we\'ll come back to you. It\'s so it\'s. So basically I updated it on author in the component configuration and North America\'s up top.
+
+**Jenny Smith** 1:33:13
+Yeah, no problem.
+
+**John Zimmerman** 1:33:24
+But it\'s not making any difference on display. It\'s so we got. There\'s something up with that. I\'m not sure. I also wondered if it might be driven by like the order in generic lists or some other magic. It doesn\'t seem to be, so we\'ll have to check with Vanana Marine.
+
+**Jenny Smith** 1:33:35
+Mm-hmm.
+Yeah, sure thing. Then we will take a little. Yeah, we\'ll get, we\'ll get back to you with at least a status on that on tomorrow, Gonzalo.
+
+**Cal Nelson (customer)** 1:33:40
+Thank you.
+
+**John Zimmerman** 1:33:42
+Yes.
+
+**Cal Nelson (customer)** 1:33:47
+Awesome.
+
+**Jenny Smith** 1:33:47
+OK. All right. OK, guys, as always, please make sure to update the Confluence page with any questions. I\'ll try to take a look at it and see what we can answer for tomorrow. My plan again is to I need still need to go and follow up on some items on on some of the other pages.
+I really appreciate everyone\'s patience with this and also your participation in today\'s session. But if there\'s no further questions, I think we can conclude for today and resume tomorrow.
+
+**Burt Jones** 1:34:18
+Great job, Daniella. Thank you.
+
+**Terry Friedman** 1:34:19
+Thank you, Danielle.
+
+**Jenny Smith** 1:34:20
+Okay, thank you everybody. Bye.
+
+**Don Wood** 1:34:21
+All right. Thank you.
+
+**Terry Friedman** 1:34:21
+Thank you.
+
+**Cal Nelson (customer)** 1:34:23
+Thank you. Thank you. Bye.
+
+**Carrie Hollins (customer)** 1:34:25
+Yes, Sir.
+
+**Angela Johnson (customer)** 1:34:25
+OK.
+
+Richard Ray (Director of Digital Experience)** 1:34:27
+Thank you.
+
+Greg Scott** stopped transcription
+
