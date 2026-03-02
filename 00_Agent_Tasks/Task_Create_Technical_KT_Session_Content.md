@@ -131,7 +131,17 @@ Analyze the strawman agenda `(/Users/lambert/Documents/Projects/SHRSS/SHRSS_Know
 
 Create a new copy of the agenda file and populate with the refined agenda. Pause and prompt me to review the refined agenda along with any questions or points of clarification. I will review, provide feedback, and then we can either refine futher or move on to the next subtask.
 
-### Subtask 2 - Create & Timbox Detailed Session Content
+### Subtask 2 - Create & Timebox Detailed Session Content
 
-For each session in the refned agenda, create a separate markdown 
+> [!IMPORTANT]
+>
+> I have copied the refined agenda here: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Technical_KT_Session_Content/SHRSS_Technical_KT_Main_Agenda.md`. We will refine this version into the final main agenda draft. It is essentially complete. We just need to update with the topic/subtopic durations that we come up with during this subtask.
+>
+> NOTE: I also copied the exercise supplemental file to this directory. Please place all newly generated files in this directory (`/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Technical_KT_Session_Content`)
+
+First, take an initial pass at timeboxing each topic/subtopic for each session. Update the main agenda document, adding durations after each topic/subtopic.
+
+Next, for each session in the main agenda, create a separate markdown file. Populate each file with the respective session topics/subtopics from the main agenda file, and then create/add content for each topic/subtopic to provide as comprehensive an understanding of the topic/subtopic as possible given the time constraints (proposed durations). As you go, adjust topic/subtopic durations and content to achieve the best possible balance across all.
+
+
 
