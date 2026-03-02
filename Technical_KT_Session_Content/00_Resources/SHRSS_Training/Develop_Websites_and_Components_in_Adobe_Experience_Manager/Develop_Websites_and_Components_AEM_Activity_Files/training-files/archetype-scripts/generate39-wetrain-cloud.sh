@@ -1,0 +1,33 @@
+#!/bin/bash -x
+
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
+ -D archetypeArtifactId=aem-project-archetype \
+ -D archetypeVersion=39 \
+ -D appTitle=We.Train \
+ -D appId=wetrain \
+ -D artifactId=wetrain \
+ -D groupId=com.adobe.training \
+ -D package=com.adobe.training \
+ -D version=1.0-SNAPSHOT \
+ -D aemVersion=cloud \
+ -D sdkVersion=2022.10.9398.20221020T071514Z-220800 \
+ -D includeDispatcherConfig=n \
+ -D frontendModule=general \
+ -D language=en \
+ -D country=us \
+ -D singleCountry=n \
+ -D includeExamples=n \
+ -D includeErrorHandler=y \
+ -D includeCommerce=n \
+ -D commerceEndpoint= \
+ -D includeForms=n \
+ -D includeFormscommunications=n \
+ -D includeFormsenrollment=n \
+ -D sdkFormsVersion= \
+ -D datalayer=y \
+ -D amp=n \
+ -D enableDynamicMedia=y \
+ -D enableSSR=n \
+ -D precompiledScripts=n \
+ -D includeFormsheadless=n

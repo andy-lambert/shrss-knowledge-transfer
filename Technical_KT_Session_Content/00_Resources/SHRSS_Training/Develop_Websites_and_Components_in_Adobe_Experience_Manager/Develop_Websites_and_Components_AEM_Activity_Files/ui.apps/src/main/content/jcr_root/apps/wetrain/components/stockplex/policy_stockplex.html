@@ -1,0 +1,33 @@
+<!--/* Similar to dialogs, policy values from design dialogs can 
+    be retrieved with a global object called 'currentStyle'.
+    */-->
+<div data-sly-use.template="core/wcm/components/commons/v1/templates.html" 
+    data-sly-test.hasContent="${properties.symbol}"
+    class="">
+
+    <div class="">${properties.symbol}</div>
+    <div class="">Current Value: 300</div>
+
+    <div data-sly-test.summary="${properties.summary}">
+        <h3>Summary: ${properties.summary}</h3>
+    </div>
+
+    <div class="">
+        <a href="#">
+            <button>Placeholder</button>
+        </a>
+    </div>
+
+    <!--/* The global object currentStyle can be used to retrieve configurations 
+        set at the policy level with a cq:design_dialog */-->
+    <div class="" data-sly-test.summary="${currentStyle.showStockInfo}">
+        <ul data-sly-list.sInfo="${['Request Date','Open Price', 'Range High', 'Range Low', 'Close', 'Volume']}">
+            <li class="">
+                <span class="">${sInfo}: value</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!-- If there is no stock symbol added to the dialog, create a component placeholder -->
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent}"></sly>

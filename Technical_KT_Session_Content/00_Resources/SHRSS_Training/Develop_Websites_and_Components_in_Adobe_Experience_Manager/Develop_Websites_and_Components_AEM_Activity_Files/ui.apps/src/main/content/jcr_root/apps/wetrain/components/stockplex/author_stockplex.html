@@ -1,0 +1,29 @@
+<!--/* When authoring a component using a dialog, you can use the global
+    object called 'properties' to quickly pull out values persisted to the JCR.
+    */-->
+<div data-sly-use.template="core/wcm/components/commons/v1/templates.html" 
+    data-sly-test.hasContent="${properties.symbol}"
+    class="">
+
+    <div class="">${properties.symbol}</div>
+    <div class="">Current Value: 300</div>
+
+    <div data-sly-test.summary="${properties.summary}">
+        <h3>Summary: ${properties.summary}</h3>
+    </div>
+
+    <div class="">
+        <a href="#">
+            <button>Placeholder</button>
+        </a>
+    </div>
+
+    <ul data-sly-list.sInfo="${['Request Date','Open Price', 'Range High', 'Range Low', 'Close', 'Volume']}">
+        <li class="">
+            <span class="">${sInfo}: value</span>
+        </li>
+    </ul>
+</div>
+
+<!-- If there is no stock symbol added to the dialog, create a component placeholder -->
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent}"></sly>

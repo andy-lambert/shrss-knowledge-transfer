@@ -1,0 +1,44 @@
+<!--/* The Adobe Client Data Layer can also capture different events
+    triggered through attributes such as data-cmp-clickable that can also
+    be handled with Adobe Launch or custom javascript. This can be useful
+    for sending data to Adobe Analytics or Adobe Target by using Adobe Launch.
+    */-->
+<div data-sly-use.stockplex="com.adobe.training.core.models.Stockplex" 
+    data-sly-use.template="core/wcm/components/commons/v1/templates.html" 
+    data-sly-test.hasContent="${stockplex.symbol}" 
+    data-cmp-data-layer="${stockplex.data}"
+    class="cmp-stockplex">
+
+    <div class="cmp-stockplex__column1">
+        <div class="cmp-stockplex__symbol"
+            data-cmp-clickable="${stockplex.data ? true : false}" >
+            ${stockplex.symbol}
+        </div>
+        <div class="cmp-stockplex__currentPrice">${'Current Value:' @ i18n} ${stockplex.currentPrice}</div>
+
+        <div class="cmp-stockplex__summary" data-sly-test.summary="${stockplex.summary}">
+            <h3>${'Summary:' @ i18n} ${stockplex.summary}</h3>
+        </div>
+
+        <div class="cmp-stockplex__button">
+            <a href="${currentPage.path @ selectors='model', extension='json'}">
+                <button>${'Headless JSON View' @ i18n}</button>
+            </a>
+        </div>
+    </div>
+    <div class="cmp-stockplex__column2">
+        <div class="cmp-stockplex__details" data-sly-test="${stockplex.showStockInfo}">
+            <ul data-sly-list.sInfo="${stockplex.stockInfo}">
+                <li class="cmp-stockplex__details-item">
+                    <span class="cmp-stockplex__details-title">${sInfo @ i18n}:</span>
+                    <br />
+                    <span class="cmp-stockplex__details-value">${stockplex.stockInfo[sInfo]}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- If there is no stock symbol added to the dialog, create a component placeholder -->
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent, classAppend='cmp-stockplex'}"></sly>
+

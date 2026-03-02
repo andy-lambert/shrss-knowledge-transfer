@@ -1,0 +1,41 @@
+<!--/* Using cmp-stockplex as class identifier for the component, the rest of the
+    classes follow BEM notation.
+    
+    Available styles configured through the style tab in the content policy
+    are selectively injected into the class attibute of the component. 
+    This decision is made by the content author using the style icon in the component toolbar
+    */-->
+<div data-sly-use.template="core/wcm/components/commons/v1/templates.html" 
+    data-sly-test.hasContent="${properties.symbol}"
+    class="cmp-stockplex">
+
+    <div class="cmp-stockplex__column1">
+        <div class="cmp-stockplex__symbol">${properties.symbol}</div>
+        <div class="cmp-stockplex__currentPrice">Current Value: 300</div>
+
+        <div class="cmp-stockplex__summary" data-sly-test.summary="${properties.summary}">
+            <h3>Summary: ${properties.summary}</h3>
+        </div>
+
+        <div class="cmp-stockplex__button">
+            <a href="#">
+                <button>Placeholder</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="cmp-stockplex__column2">
+        <div class="cmp-stockplex__details" data-sly-test.summary="${currentStyle.showStockInfo}">
+            <ul data-sly-list.sInfo="${['Request Date','Open Price', 'Range High', 'Range Low', 'Close', 'Volume']}">
+                <li class="cmp-stockplex__details-item">
+                    <span class="cmp-stockplex__details-title">${sInfo}: </span>
+                    <br />
+                    <span class="cmp-stockplex__details-data">Value</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- If there is no stock symbol added to the dialog, create a component placeholder -->
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent, classAppend='cmp-stockplex'}"></sly>

@@ -1,0 +1,10 @@
+function stockplexClickHandler(event) {
+    var dataObject = window.adobeDataLayer.getState(event.eventInfo.path);
+    if (dataObject != null && dataObject['@type'] === 'wetrain/components/stockplex') {
+        console.log("Stockplex Clicked!");
+        console.log("Stockplex symbol: " + dataObject['symbol']);
+    }
+}
+window.adobeDataLayer.push(function (dl) {
+     dl.addEventListener("cmp:click", stockplexClickHandler);
+});

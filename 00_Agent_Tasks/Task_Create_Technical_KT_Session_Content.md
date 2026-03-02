@@ -1,8 +1,50 @@
-# Task: Prepare Content for Technical Knowledge Transfer Sessions
+# Task: Prepare Content for Technical SHRSS Knowledge Transfer (KT) Sessions
+
+## Task Overview
+
+During this task, we will be curating the detailed agendas and content for each technical KT session. We will organize session content into timeboxed blocks to ensure the optimal balance of topic coverage and management of allocated session time.
+
+The sessions will be conducted over Microsoft Teams. Presenters will share their screens to walk through code, Adobe Cloud Service consoles, etc. For exercises, we would like to have one of the participants share their screen and complete a task. For example, have a participant create a new IAM group in Adobe Admin Console (https://adminconsole.adobe.com/), add an IAM user, then add the IAM group to a native AEM group in the DEV author cloud environment.
+
+### Target Audience
+
+The audience for the technical KT sessions are the SHRSS technical stakeholders that are taking ownership of the platform, including new development (new features + defect resolution), system adminstration, and CI/CD. Participating SHRSS stakeholders will include developers, system adminstrators, quality assurance team members, and technical managers.
+
+Some of the participants have minimal knowledge of AEM, some have minimal hands-on experience, and one participant has taken an official Adobe training: `"Develop Websites and Components in Adobe Experience Manager (AEM)"`. An overview of this training is available here: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Technical_KT_Session_Content/00_Resources/SHRSS_Training/Develop_Websites_and_Components_in_Adobe_Experience_Manager/Develop_Websites_and_Components_in_AEM_Course_Overview.md`
+
+
+### Presenters
+
+The KT sessions will be conducted by the following Adobe subject matter experts:
+
+- Andy Lambert – Principal Technical Architect, Adobe
+  - AEMaaCS application and cloud service paradigms, DevOps instructions, best practices
+- Vinay S A – AEM Technical Architect, Adobe
+  - SHRSS implementation details, backend code, configurations, AEM authoring components
+- Deepkamal Narang – Senior Technical Consultant, Adobe
+  - Frontend code, UX implementation, AEM authoring components
+
+### Agenda
+
+A total of ten (10) hours have been scheduled for technical knowledge transfer, to be conducted over five (days).
+
+I have put together a strawman agenda outline that includes the main topics to be covered, along with some subtopics for each here: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Technical_KT_Session_Content/00_Resources/SHRSS_Technical_KT_Main_Agenda.md`
+
+Ideally, this agenda can be organized similar to the following:
+
+| Session(s)                                                   | Duration |
+| ------------------------------------------------------------ | -------- |
+| Introduction/overview, AEM Application Development Parts 1 & 2 | 2 hours  |
+| AEM Application Development, Parts 3 & 4                     | 2 hours  |
+| AEM Application Development, Parts 5 & 6                     | 2 hours  |
+| Change and Release Managemen, DevOps Part 1                  | 2 hours  |
+| DevOps Part 2, Conclusion/Q&A/Customer Topic                 | 2 hours  |
+
+---
 
 ## Inputs/Reference Artifacts
 
-- Technical KT main agenda outline: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Technical_KT_Session_Content/00_Resources/SHRSS_Technical_KT_Main_Agenda.docx`
+- Technical KT main agenda outline: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Technical_KT_Session_Content/00_Resources/SHRSS_Technical_KT_Main_Agenda.md`
 
 - Solution design (Optimized version created post-implementation as part of implementation analysis exercise. Provides context): `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Technical_KT_Session_Content/00_Resources/SHRSS_Optimized_SDD.md`
 
@@ -60,12 +102,31 @@
 
       `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Content/shrss-assets-PROD-1.0/jcr_root/content/dam/shrss/corporate/careers`
 
+### MCP Servers
 
+You have access to the tools/services defined in these MCP servers, currently enabled in Cursor:
 
+- Adobe Developer Assistant (ADA)
+  - `ask_ada` tool to search Experience League and internal docs
+- singularity
+  - `ask_docs` tool to deep search Adobe docs, repos, Jira, Confluence
+- MCP_DOCKER
+  - Includes browser tools (wrappers for Playwright: https://hub.docker.com/mcp/server/playwright/tools)
 
+---
 
-  
+## Task Details & Execution
 
+> [!IMPORTANT]
+>
+> Use the resources from the *"Inputs/Reference Artifacts"* section in this document, along with canonical AEM reference files/links in `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/docs/ai/reference` to help refine the session topics/subtopics and information provided during each.
+>
+> Always adhere to AGENTS.md (`/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/AGENTS.md`)
+>
+> Throughout task execution, maintain detailed notes in AGENT_SCRATCH_NOTES.md (`/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/AGENT-SCRATCH-NOTES.md`)
 
+### Subtask 1 - Refine the Agenda
 
-`/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/AGENT-SCRATCH-NOTES.md`
+Analyze the strawman agenda `(/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Technical_KT_Session_Content/00_Resources/SHRSS_Technical_KT_Main_Agenda.md`). Based on the target audience, the SHRSS implementation, etc. make opinionated recommendations for enhancing/optimizing the agenda by recommending additional topics/subtopics, order of topics, and any other ideas that come to mind. Think both from the perspective of an AEM expert and of the SHRSS stakeholders that will ultimately own the code and the infrastructure (i.e. the SHRSS platform in AEMaaCS (Cloud Manager + Admin Console)). What will they need to know?
+
+Create a new copy of the agenda file and populate with the refined agenda. Pause and prompt me to review the refinede agenda along with any questions or points of clarification. I will review, provide feedback, and then we can either refine futher or move on to the next subtask.

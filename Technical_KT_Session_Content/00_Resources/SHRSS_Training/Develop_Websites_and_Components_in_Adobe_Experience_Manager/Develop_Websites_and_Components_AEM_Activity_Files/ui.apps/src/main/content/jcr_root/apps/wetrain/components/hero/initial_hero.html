@@ -1,0 +1,18 @@
+<!--/* This Hero component is extended from the Core Image component. 
+    When a component is initally added to a page, the HTL can be 1
+    of two display options:
+    Initial content - Author input is optional to display basic content
+    Authoring placeholder - An author must provide content to display the component
+    */-->
+<div data-sly-use.template="core/wcm/components/commons/v1/templates.html" 
+    data-sly-test.hasContent="${properties.fileReference}"
+    class="">
+
+    <!--/* Only displayed if authored content is added 
+        data-sly-test.hasContent is a test to see if certain content exists.
+        Since there is no dialog, it's set to false to force the placeholder to show.*/-->	
+
+</div>
+
+<!--/* If there is no content entered into the dialog, show a placeholder. */-->
+<sly data-sly-call="${template.placeholder @ isEmpty=!hasContent}"></sly>
