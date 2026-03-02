@@ -4,6 +4,12 @@
 
 **Document:** Refined from strawman agenda. See *Refinement summary & recommendations* below.
 
+**Exercises:** Suggested in-session and homework exercises are in the supplemental:  
+`Technical_KT_Session_Content/00_Resources/SHRSS_Technical_KT_Exercises_Supplemental.md`  
+(organized by session/topic/subtopic; includes steps and repo file paths.)
+
+**Authoring KT cross-reference:** Where it adds context, this technical KT will reference the **authoring KT** sessions—especially questions, comments, or conversations involving **Gonzalo Calasich**, **Taranjeet Loh (TJ)**, and **Tim Willis**, who are primary participants in the technical sessions. Consolidated authoring transcripts: `KT_Session_Transcripts/SHRSS_Adobe_KT_All_Session_Transcripts_Consolidated.md`
+
 ---
 
 ## Refinement summary & recommendations
@@ -27,10 +33,13 @@ The following changes were made to better align the agenda with the **target aud
    - Backend (run modes, OSGi, integrations) before Dispatcher/CDN so request flow and security (e.g. servlet auth) are clear before discussing cache and filters.
    - Change/Release and DevOps in the last two sessions so the “how we build and deploy” story is consolidated after “what we have.”
 
-4. **Participant exercise**  
-   The IAM → native AEM group walk-through is retained as the primary hands-on exercise; consider adding one short “follow along” in the repo (e.g. locate a Sling Model for a component) if time allows.
+4. **Participant exercises**  
+   Multiple suggested exercises (in-session and as homework) are listed in the **exercise supplemental** document, organized by session/topic/subtopic. These include the IAM → native AEM group walk-through, repo navigation (e.g. locate a Sling Model for a component), Cloud Manager, and testing. Complete as time permits; the supplemental can also be shared with participants as suggested homework.
 
-5. **References**  
+5. **Topic scope**  
+   All added topics (security, idempotency, integrations, CF/GraphQL, testing) are retained. The next subtask will timebox topics/subtopics; pruning will be done after that exercise as needed.
+
+6. **References**  
    Implementation analysis (`00_EXEC_SUMMARY.md`, `01_STRUCTURAL_ARCHITECTURE.md`, `02_CROSS_LAYER_INTERACTIONS.md`), SDD, and implementation notes are the primary references for SHRSS-specific detail; AEM canonical references in `docs/ai/reference` for best practices.
 
 ---
@@ -72,7 +81,7 @@ The following changes were made to better align the agenda with the **target aud
   - Clientlibs (definition, categories, file/folder structure)  
   - Sling Models (Use-API, extending, debugging)  
   - Best practices (structure, clientlib categories)  
-  - *Optional participant follow-along:* Locate the Sling Model for a component in the repo
+  - *Exercise:* See supplemental — “Locate the Sling Model for a component (hrccard)”
 
 ---
 

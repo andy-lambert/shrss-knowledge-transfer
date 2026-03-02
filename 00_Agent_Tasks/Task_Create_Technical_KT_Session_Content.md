@@ -129,4 +129,6 @@ You have access to the tools/services defined in these MCP servers, currently en
 
 Analyze the strawman agenda `(/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/Technical_KT_Session_Content/00_Resources/SHRSS_Technical_KT_Main_Agenda.md`). Based on the target audience, the SHRSS implementation, etc. make opinionated recommendations for enhancing/optimizing the agenda by recommending additional topics/subtopics, order of topics, and any other ideas that come to mind. Think both from the perspective of an AEM expert and of the SHRSS stakeholders that will ultimately own the code and the infrastructure (i.e. the SHRSS platform in AEMaaCS (Cloud Manager + Admin Console)). What will they need to know?
 
-Create a new copy of the agenda file and populate with the refined agenda. Pause and prompt me to review the refinede agenda along with any questions or points of clarification. I will review, provide feedback, and then we can either refine futher or move on to the next subtask.
+Create a new copy of the agenda file and populate with the refined agenda. Pause and prompt me to review the refined agenda along with any questions or points of clarification. I will review, provide feedback, and then we can either refine futher or move on to the next subtask.
+
+### Subtask 2 - 
