@@ -131,4 +131,7 @@ Analyze the strawman agenda `(/Users/lambert/Documents/Projects/SHRSS/SHRSS_Know
 
 Create a new copy of the agenda file and populate with the refined agenda. Pause and prompt me to review the refined agenda along with any questions or points of clarification. I will review, provide feedback, and then we can either refine futher or move on to the next subtask.
 
-### Subtask 2 - 
+### Subtask 2 - Create & Timbox Detailed Session Content
+
+For each session in the refned agenda, create a separate markdown 
+
