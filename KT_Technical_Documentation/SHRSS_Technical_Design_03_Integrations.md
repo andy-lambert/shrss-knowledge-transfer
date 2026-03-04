@@ -10,7 +10,7 @@
 
 - **Purpose:** Member login, registration, rewards.
 - **Pattern:** Frontend iframe modal (Crown CTA component); header orchestrates Unity login flow.
-- **Backend:** Unity-related backend services exist in the codebase (e.g. UnityProductService, UnityCheckoutService, UnityOrderService) but are not in use; only the frontend iframe integration is active.
+- **Backend:** Unity API backend code (e.g. UnityProductService, UnityCheckoutService, unityapi package) was never fully implemented and is being removed as part of cleanup. Only the frontend iframe integration (Crown CTA, header) was active.
 - **Components:** crowncta, header (Unity orchestration).
 
 ### 1.2 Workday / Jobs (Careers)

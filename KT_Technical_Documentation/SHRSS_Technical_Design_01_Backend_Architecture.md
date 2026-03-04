@@ -19,7 +19,7 @@ The core bundle contains backend business logic, data access, integrations, and 
 | Package | Approximate count | Primary role |
 |---------|-------------------|--------------|
 | models | 155+ | Sling Models for HTL component data |
-| services | 130+ | OSGi services (business logic, integrations) |
+| services | 8 | OSGi service implementations (in `services/impl/`; business logic, integrations, config) |
 | servlets | 22 | HTTP endpoints and JSON APIs |
 | utils | 6+ | Utility classes and helpers |
 | filters | 4 | Sling filters (request/response) |
@@ -32,7 +32,7 @@ The core bundle contains backend business logic, data access, integrations, and 
 | caconfig | 1 | Context-Aware Configuration |
 | workflows | 1 | AEM Workflow process step |
 
-**OSGi configurations:** Dozens of configs in the **ui.config** module, correlated by runmode and service PID.
+**OSGi configurations:** Multiple configs in the **ui.config** module, correlated by runmode and service PID.
 
 ---
 
@@ -71,7 +71,8 @@ Example: `TagsPathMappingConfigService` (interface), `TagsPathMappingConfigServi
 ### 3.2 services
 
 - **Purpose:** Business logic, integrations, data access, configuration.
-- **Domains (examples):** DAM/asset operations, content/JCR access, configuration/utility, external integrations (OpenTable, Grubhub, GraphQL, etc.).
+- **Count:** 8 OSGi service implementation classes in `core/src/main/java/com/shrss/core/services/impl/` (e.g. JobsContentFragmentConfigServiceImpl, NewsSearchConfigImpl, PageJSONServletServiceImpl, SitemapServiceImpl, TagsPathMappingConfigServiceImpl, ThirdPartyURLConfigurationServiceImpl). The `services` package also contained a `unityapi` subpackage (Unity API POJOs and related classes); that Unity API code was never fully implemented and is being removed as part of cleanup.
+- **Domains (examples):** Content Fragment config (jobs, news search), sitemap generation, page JSON, third-party URL configuration, tags path mapping.
 - **Constraints:** Idempotent where applicable for cloud; close ResourceResolvers; use service users where appropriate.
 
 ### 3.3 servlets
@@ -105,7 +106,7 @@ Example: `TagsPathMappingConfigService` (interface), `TagsPathMappingConfigServi
 - **bean:** DTOs (e.g. CFCardResults, GraphQLResponse, LocationData).
 - **utils:** Stateless helpers (e.g. DateUtils, PathUtils, JsonUtils); no OSGi dependencies.
 - **config / constants / caconfig:** Configuration constants and Context-Aware Configuration (e.g. SiteConfig for multi-brand).
-- **commerce:** Unity-related placeholders (e.g. UnityProductService); backend Unity services are not in use; frontend uses iframe integration.
+- **commerce:** Unity-related placeholders (e.g. UnityProductService); backend Unity services were never fully implemented and are being removed as part of cleanup. The only active Unity integration was the frontend iframe (Crown CTA).
 
 ---
 

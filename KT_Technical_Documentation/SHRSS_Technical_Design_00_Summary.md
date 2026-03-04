@@ -10,7 +10,7 @@
 
 The SHRSS implementation is a custom, enterprise-scale web content and digital asset management (DAM) platform built on **Adobe Experience Manager as a Cloud Service (AEMaaCS)**.
 
-- **Sites:** Three Hard Rock web properties are live; additional site migrations are planned.
+- **Sites:** Two Hard Rock web properties are live, one is planned for go-live on March 23, 2026; additional site migrations are planned.
 - **DAM:** Approximately 500 GB of digital assets are managed in AEM Assets.
 - **Live sites:**
   - Hard Rock corporate: https://www.hardrock.com
@@ -39,7 +39,7 @@ The SHRSS implementation is a custom, enterprise-scale web content and digital a
 
 ## Structural Scope (Approximate)
 
-- **Backend (core):** Hundreds of Java classes (Sling Models, services, servlets, filters, listeners, schedulers, workflows, utils) and dozens of OSGi configs in **ui.config**.
+- **Backend (core):** Sling Models, 8 OSGi service implementations, servlets, filters, listeners, schedulers, workflows, utils, and OSGi configs in **ui.config**.
 - **UI/Frontend:** Dozens of custom AEM components, Content Fragment models, and clientlibs.
 - **Dispatcher:** Apache virtual hosts, rewrites, and Dispatcher farm/filter/cache configuration.
 - **Request flow (high level):** Browser → CDN (e.g. Cloudflare → Fastly) → Dispatcher → AEM Publish.
