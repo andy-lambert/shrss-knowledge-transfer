@@ -13,10 +13,10 @@
 
 The frontend layer contains AEM authoring components (HTL), client library definitions, and frontend assets (TypeScript/JavaScript, Sass/SCSS) built by Webpack and deployed into ui.apps as clientlibs.
 
-### Scope (Approximate)
+### Scope (Codebase Counts)
 
-- **AEM components:** Dozens of custom components under `apps/shrss/components/`.
-- **Content Fragment models:** Six models (Events, News, Promotions, Locations, Jobs, FAQs) used by CF-based components.
+- **AEM components:** 95 custom authoring components under `ui.apps/.../apps/shrss/components/` (each with a `.content.xml` defining `cq:Component`; includes structure/page, structure/open-page, structure/blank-page, form/*, video/embeddable/*, accordion, container, jobsearch, jobfilters, cfcard, cfcardlist, etc.).
+- **Content Fragment models:** 6 models in `ui.content/.../conf/shrss/settings/dam/cfm/models/` — events, news, promotion, locations, venue, jobs (no separate FAQ model in this path).
 - **Clientlibs:** Categories such as `shrss.base`, `shrss.site`, `shrss.components`, and brand-specific (e.g. `shrss.hrhh`, `shrss.hrcasino`, `shrss.hrhcasino`).
 
 ---
@@ -99,7 +99,7 @@ The frontend layer contains AEM authoring components (HTL), client library defin
 
 **Location (example):** `ui.content/.../conf/shrss/settings/dam/cfm/models/` (or equivalent in content package).
 
-**Models:** Event, News, Promotion, Location, Job, FAQ.
+**Models (6):** events, news, promotion, locations, venue, jobs (in `ui.content/.../conf/shrss/settings/dam/cfm/models/`).
 
 **Usage:** Rendered via cfcard, cfcardlist, and dedicated CF components; exposed via GraphQL for headless consumption.
 

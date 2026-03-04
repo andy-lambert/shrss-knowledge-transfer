@@ -10,11 +10,12 @@
 
 The SHRSS implementation is a custom, enterprise-scale web content and digital asset management (DAM) platform built on **Adobe Experience Manager as a Cloud Service (AEMaaCS)**.
 
-- **Sites:** Two Hard Rock web properties are live, one is planned for go-live on March 23, 2026; additional site migrations are planned.
+- **Sites:** Two Hard Rock web properties are live, one is planned for go-live on March 23, 2026 (Careers); additional site migrations are planned.
 - **DAM:** Approximately 500 GB of digital assets are managed in AEM Assets.
 - **Live sites:**
   - Hard Rock corporate: https://www.hardrock.com
   - Reverb: https://reverb.hardrock.com
+- **In UAT, planned go-live March 23, 2026:**
   - Careers (Stage, customer QA/UAT): https://aem.careers.stage.hardrock.com/
 
 ---
@@ -37,10 +38,10 @@ The SHRSS implementation is a custom, enterprise-scale web content and digital a
 
 ---
 
-## Structural Scope (Approximate)
+## Structural Scope (Codebase Counts)
 
-- **Backend (core):** Sling Models, 8 OSGi service implementations, servlets, filters, listeners, schedulers, workflows, utils, and OSGi configs in **ui.config**.
-- **UI/Frontend:** Dozens of custom AEM components, Content Fragment models, and clientlibs.
+- **Backend (core):** 155 Sling Model classes, 8 OSGi service implementations, 20 servlet-package classes (18 HTTP servlets), 3 filters, 2 schedulers, 1 listener, 1 workflow, 6 utils, 4 bean DTOs, 2 commerce model classes (Marquee); OSGi configs in **ui.config**. (Unity API code is being removed.)
+- **UI/Frontend:** 95 custom AEM authoring components, 6 Content Fragment models, clientlibs, page templates, content policies, asset metadata configurations.
 - **Dispatcher:** Apache virtual hosts, rewrites, and Dispatcher farm/filter/cache configuration.
 - **Request flow (high level):** Browser → CDN (e.g. Cloudflare → Fastly) → Dispatcher → AEM Publish.
 

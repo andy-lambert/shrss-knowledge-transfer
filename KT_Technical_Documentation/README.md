@@ -38,7 +38,7 @@ The documentation describes **what exists**, **how it is structured**, and **how
    - Reverb: https://reverb.hardrock.com
    - Careers (Stage, customer QA/UAT): https://aem.careers.stage.hardrock.com/
 
-4. **Source of truth** — The implementation code and configurations in the SHRSS AEM repository are the source of truth. This documentation should be updated when the implementation changes.
+4. **Source of truth** — The implementation code and configurations in the SHRSS AEM repository are the source of truth. Counts (e.g. Sling models, servlets, AEM components) in these documents are aligned to the current codebase and should be updated when the implementation changes.
 
 ## Document Set
 

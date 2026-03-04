@@ -16,21 +16,23 @@ The core bundle contains backend business logic, data access, integrations, and 
 
 ### Package Distribution
 
-| Package | Approximate count | Primary role |
-|---------|-------------------|--------------|
-| models | 155+ | Sling Models for HTL component data |
+*Counts below reflect the current codebase (post–Unity cleanup).*
+
+| Package | Count | Primary role |
+|---------|-------|--------------|
+| models | 155 | Sling Models for HTL component data (interfaces + impl in `models/` and `models/impl/`) |
 | services | 8 | OSGi service implementations (in `services/impl/`; business logic, integrations, config) |
-| servlets | 22 | HTTP endpoints and JSON APIs |
-| utils | 6+ | Utility classes and helpers |
-| filters | 4 | Sling filters (request/response) |
-| bean | 4 | DTOs and data transfer objects |
-| schedulers | 3 | Background jobs and scheduled tasks |
-| commerce | 3 | Commerce integration (Unity API placeholders) |
-| listeners | 2 | Event listeners (JCR/OSGi) |
-| config | 1 | Configuration annotations/interfaces |
-| constants | 1 | Application constants |
-| caconfig | 1 | Context-Aware Configuration |
-| workflows | 1 | AEM Workflow process step |
+| servlets | 20 | HTTP endpoints and JSON APIs (servlets package: 18 servlet classes + 2 support classes, e.g. JSONComponent) |
+| utils | 6 | Utility classes and helpers (CFCardUtils, SHRSSUtils, TagUtils, LinkUtils, GraphQLUtils, CFCardListUtils) |
+| filters | 3 | Sling filters (LoggingFilter, CFFilter; CustomRequestWrapper is support) |
+| bean | 4 | DTOs and data transfer objects (CFCardResults, Jobs, PageData, ReservationData) |
+| schedulers | 2 | Background jobs (LocationExportScheduler, LocationsDataExportJobConsumer) |
+| commerce | 2 | Commerce/marquee model (MarqueeModel, MarqueeModelImpl in `commerce/models/`; Unity code removed or in cleanup) |
+| listeners | 1 | Event listener (ActivateServiceEventHandler) |
+| config | 1 | Configuration (GoogleMapConfig) |
+| constants | 1 | Application constants (SHRSSConstants) |
+| caconfig | 1 | Context-Aware Configuration (TealiumConfig) |
+| workflows | 1 | AEM Workflow process step (EventIdCreationProcess) |
 
 **OSGi configurations:** Multiple configs in the **ui.config** module, correlated by runmode and service PID.
 
@@ -98,15 +100,15 @@ Example: `TagsPathMappingConfigService` (interface), `TagsPathMappingConfigServi
 
 ### 3.7 workflows
 
-- **Purpose:** AEM Workflow process steps (e.g. asset metadata update).
+- **Purpose:** AEM Workflow process steps. One implementation: **EventIdCreationProcess** (event ID creation).
 - **Constraints:** Idempotent; use workflow sessions; handle partial failures and log progress.
 
 ### 3.8 bean, utils, config, constants, caconfig, commerce
 
 - **bean:** DTOs (e.g. CFCardResults, GraphQLResponse, LocationData).
 - **utils:** Stateless helpers (e.g. DateUtils, PathUtils, JsonUtils); no OSGi dependencies.
-- **config / constants / caconfig:** Configuration constants and Context-Aware Configuration (e.g. SiteConfig for multi-brand).
-- **commerce:** Unity-related placeholders (e.g. UnityProductService); backend Unity services were never fully implemented and are being removed as part of cleanup. The only active Unity integration was the frontend iframe (Crown CTA).
+- **config / constants / caconfig:** GoogleMapConfig (config), SHRSSConstants (constants), TealiumConfig (caconfig).
+- **commerce:** MarqueeModel and MarqueeModelImpl in `commerce/models/` (marquee component). Unity-related code was never fully implemented and is being removed as part of cleanup.
 
 ---
 
