@@ -27,7 +27,7 @@ The SHRSS implementation is a custom, enterprise-scale web content and digital a
 | **core** | OSGi bundle: Sling Models, OSGi services, servlets, filters, listeners, schedulers, workflows, utilities. Backend business logic and component data. |
 | **ui.apps** | FileVault package: AEM authoring components (HTL), clientlib definitions, templates structure. |
 | **ui.frontend** | Webpack build: TypeScript/JavaScript, Sass/SCSS compiled into clientlibs and deployed into ui.apps. |
-| **ui.content** | FileVault package: Default content, site structure, and **conf** (templates, policies, Content Fragment models, GraphQL persistent queries, metadata schemas). |
+| **ui.content** | FileVault package: Default content, site structure, and conf (templates, policies, Content Fragment models, GraphQL persistent queries, metadata schemas). |
 | **ui.config** | FileVault package: OSGi configurations (runmode-specific). Immutable in AEMaaCS. |
 | **dispatcher** | Apache and AEM Dispatcher configuration (caching, security, routing). Cloud-optimized. |
 | **config** | CDN rules and maintenance task configurations. |
@@ -40,7 +40,7 @@ The SHRSS implementation is a custom, enterprise-scale web content and digital a
 
 ## Structural Scope (Codebase Counts)
 
-- **Backend (core):** 155 Sling Model classes, 8 OSGi service implementations, 20 servlet-package classes (18 HTTP servlets), 3 filters, 2 schedulers, 1 listener, 1 workflow, 6 utils, 4 bean DTOs, 2 commerce model classes (Marquee); OSGi configs in **ui.config**. (Unity API code is being removed.)
+- **Backend (core):** 65 Sling Model implementation classes, 8 OSGi service implementations, 20 servlet-package classes (18 HTTP servlets), 3 filters, 2 schedulers, 1 listener, 1 workflow, 6 utils, 4 bean DTOs, 2 commerce model classes (Marquee); OSGi configs in ui.config. (Unity API code is being removed.)
 - **UI/Frontend:** 95 custom AEM authoring components, 6 Content Fragment models, clientlibs, page templates, content policies, asset metadata configurations.
 - **Dispatcher:** Apache virtual hosts, rewrites, and Dispatcher farm/filter/cache configuration.
 - **Request flow (high level):** Browser → CDN (e.g. Cloudflare → Fastly) → Dispatcher → AEM Publish.

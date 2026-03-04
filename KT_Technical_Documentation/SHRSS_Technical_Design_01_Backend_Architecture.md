@@ -20,7 +20,7 @@ The core bundle contains backend business logic, data access, integrations, and 
 
 | Package | Count | Primary role |
 |---------|-------|--------------|
-| models | 155 | Sling Models for HTL component data (interfaces + impl in `models/` and `models/impl/`) |
+| models | 65 | Sling Model implementation classes (classes with `@Model` in `models/` and `models/impl/`) |
 | services | 8 | OSGi service implementations (in `services/impl/`; business logic, integrations, config) |
 | servlets | 20 | HTTP endpoints and JSON APIs (servlets package: 18 servlet classes + 2 support classes, e.g. JSONComponent) |
 | utils | 6 | Utility classes and helpers (CFCardUtils, SHRSSUtils, TagUtils, LinkUtils, GraphQLUtils, CFCardListUtils) |
@@ -68,6 +68,7 @@ Example: `TagsPathMappingConfigService` (interface), `TagsPathMappingConfigServi
 ### 3.1 models
 
 - **Purpose:** Expose content and data to HTL (component models, exporters, injectors).
+- **Count:** 65 Sling Model implementation classes (Java classes annotated with `@Model`; the models package also contains interfaces and support classes not counted here).
 - **Constraints:** Stateless; no JCR writes; delegate business logic to services; use `@PostConstruct` for initialization.
 
 ### 3.2 services
