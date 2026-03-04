@@ -350,3 +350,17 @@ At minimum, the document should include the folder structure in outline form. Am
 Please also generate a spreadsheet that conveys the current DAM structure. For an example of what the customer has seen before, see the "Asset Folders" sheet in this workbook: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/SHRSS-Content-Architecture-Workbook-v1_3.xlsx`. Note this sheet is likely out of date.
 
 Save the markdown file here: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/DAM`
+
+---
+
+## Task 7 - Draft agnostic/non-graded version of analysis documents as KT technical documentation artifacts
+
+For now, the documentation generated during the implementation analysis project is for Adobe use only. 
+
+I would like to generate technical documentation from the analysis documents to be provided to the customer. The technical documentation should include all architectural details, but exclude any content related to quality assessment, grading, security/risk assessment, etc. The goal is to provide SHRSS technical stakeholders with detailed technical documentation to support taking ownership of both future development and run-and-operate procedures.
+
+Analysis final docs: `/Users/lambert/Documents/Projects/SHRSS/Implementation_Analysis_Project/Documentation/Implementation-Analysis/final`
+
+Technical documentation location: `/Users/lambert/Documents/Projects/SHRSS/SHRSS_Knowledge_Transfer/KT_Technical_Documentation`
+
+Let's start by generating an initial draft of the documentation from the analysis docs. I will review, and then we will ideate and iterate on subsequent drafts to include more specific details, visual enhancements, etc.

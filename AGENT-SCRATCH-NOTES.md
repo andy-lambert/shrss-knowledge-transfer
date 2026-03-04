@@ -371,3 +371,80 @@
 - **Resolution:** User may review timeboxed agenda and session content; adjust durations or content during rehearsal/delivery as needed.
 
 ---
+
+## Task 7 — KT Technical Documentation: Git Changes & Execution Plan (2026-02-17)
+
+- **Timestamp (UTC):** 2026-02-17T20:00:00Z
+- **Timestamp (Local):** 2026-02-17T15:00:00-05:00
+- **Category:** New Task
+- **Context:** Task-7-Getting Started-Confirmation.md; Task_Implementation_Analysis_Technical_Documentation_Generation.md; user requested plan of execution after reviewing confirmation, new task doc, and Git history since 2026-01-29.
+- **Description:**
+
+  **Confirmation and task doc reviewed:**
+  - Exclude 00, 03, 04 entirely. Create new doc set optimized for SHRSS technical stakeholders (technical manager, architect, developer). Strip every sentence related to quality/grading/risk. Exclude issue IDs; remove staging/Phase 3 refs; add live site links where appropriate (hardrock.com, reverb.hardrock.com, aem.careers.stage.hardrock.com). Output: one high-level summary; separate docs for backend, frontend, integrations, cross-layer interactions, dispatcher/Apache detail. Naming: `SHRSS_Technical_Design_*.md`. Location: `KT_Technical_Documentation/`. README with “How to use this documentation.” Index deferred until all other docs ready. Task_Implementation_Analysis_Technical_Documentation_Generation.md defines depth and templates (structural + cross-layer entry templates, per-module guidelines) for technical documentation without quality assessment.
+
+  **Git history (develop since 2026-01-29) — significant changes:**
+  - **Careers / job search:** Job search accessibility (AA) fixes, sort options, job search scroll, job filters (jobsearch, jobfilters components), jobReqId support, job-null/date fixes; favicon and header logo/favicon condition for Careers; Careers apple-touch-icons and favicons in ui.frontend.
+  - **Authoring / components:** Accordion transparent variation style; CFCard/cfcard component and CFCardUtils (core) updates; promotionsearch editConfig; structure/page head.html and _cq_dialog (favicon, page config); googlemap editConfig/data.json; column styles for list; CIF core component version update.
+  - **Frontend (ui.frontend):** Header (reverb regression, button/dropdown styles, logo); jobSearch/jobFilter/hrcCustomSelect/hrcCardList TS/SCSS and stories; videoCards/carousel/video history fix; Careers resources (favicons, mock data); clientlib.config.js; _common.scss.
+  - **Backend (core):** TestServlet change; CFCardUtils; VimeoImplTest and CoreComponentTestContext removed; .gitignore and core/bin removal (BIN no longer committed).
+  - **Infrastructure / config:** ACS Commons upgrades (multiple PRs); Groovy console version update; log forwarding (remove port from logForwarder; file name change for logs ingestion); event calendar null check (Image Set).
+  - **Other:** Removed test case (VimeoImplTest, etc.); various QA/bug fixes.
+
+  **Recommended plan of execution:**
+
+  1. **README and high-level summary (first)**  
+     - Add `KT_Technical_Documentation/README.md` with audience (SHRSS technical stakeholders), purpose (platform ownership, development, run-and-operate), and how to use the doc set.  
+     - Add `SHRSS_Technical_Design_00_Summary.md`: platform overview (AEMaaCS, three sites, key modules), pointers to each detailed doc, live site links; no grading/risk; content drawn from 01/02 intro/exec-summary sections only where factual.
+
+  2. **Structural architecture docs (from 01 + current codebase)**  
+     - **Backend:** `SHRSS_Technical_Design_01_Backend_Architecture.md` — core bundle (packages: models, services, servlets, filters, listeners, schedulers, workflows, utils, config), OSGi config correlation (ui.config), naming/conventions; use 01_STRUCTURAL_ARCHITECTURE.md §Backend + Task doc core guidelines; update for post–Jan 2026 changes (e.g. CFCardUtils, TestServlet, removed tests).  
+     - **Frontend:** `SHRSS_Technical_Design_02_Frontend_Architecture.md` — ui.apps (components, clientlibs, filter), ui.frontend (Webpack, NPM, clientlib config, conventions); use 01 §UI/Frontend + Task doc ui.apps/ui.frontend guidelines; update for Careers components (jobsearch, jobfilters, header, accordion, CFCard), favicons, clientlib.config.js.  
+     - **Integrations:** `SHRSS_Technical_Design_03_Integrations.md` — external systems (Workday, DPLT, GraphQL, third-party), where they live in core/ui, config; use 01/02 integration-related sections; factual only, no risk wording.  
+     - **Dispatcher:** `SHRSS_Technical_Design_04_Dispatcher_Configurations.md` — Apache and Dispatcher layout, main files, cache/security rules, file relationships (includes, aliases); use 01 §Dispatcher + Task doc dispatcher guidelines; remove staging refs; no issue IDs.
+
+  3. **Cross-layer interaction architecture**  
+     - `SHRSS_Technical_Design_05_Cross_Layer_Interactions.md` — scenario-based flows from 02_CROSS_LAYER_INTERACTIONS.md; strip grading/risk/issue IDs; keep trigger, participating elements, execution flow, data flow, contracts, error paths, related structural elements; add live site context where helpful; remove “see staging” refs.
+
+  4. **Codebase delta pass**  
+     - After drafting 01–05, do a single pass over `develop` (core, ui.apps, ui.frontend) to ensure new/renamed components and services (jobsearch, jobfilters, CFCardUtils, header/favicon logic, accordion style, log config) are reflected in the right structural doc; update counts or entries as needed.
+
+  5. **Index (deferred)**  
+     - After user review and any iteration on 00–05, add `SHRSS_Technical_Design_Index.md` (or fold into README) pointing to each doc.
+
+  **Order of execution:** README → 00_Summary → 01_Backend → 02_Frontend → 03_Integrations → 04_Dispatcher → 05_Cross_Layer → codebase delta pass → (after review) index.
+
+- **Note Status:** Resolved
+- **Required Action:** (N/A)
+- **Resolution:** User approved plan; first draft executed. See “Task 7 — KT Technical Documentation first draft complete” below.
+
+---
+
+## Task 7 — KT Technical Documentation first draft complete (2026-02-17)
+
+- **Timestamp (UTC):** 2026-02-17T21:00:00Z
+- **Timestamp (Local):** 2026-02-17T16:00:00-05:00
+- **Category:** New Task
+- **Context:** User gave go-ahead to proceed with Task 7 per approved plan. Execution: README, 00–05, delta pass.
+- **Description:**
+
+  **Deliverables created under `KT_Technical_Documentation/`:**
+  - **README.md** — Audience (SHRSS technical stakeholders), purpose (platform ownership, development, run-and-operate), how to use, document set table, live site links (hardrock.com, reverb.hardrock.com, aem.careers.stage.hardrock.com).
+  - **SHRSS_Technical_Design_00_Summary.md** — Platform overview, key modules table, structural scope, “where to go next” table, AEMaaCS conventions.
+  - **SHRSS_Technical_Design_01_Backend_Architecture.md** — Core bundle packages, service/Sling Model/config patterns, package-level summary, OSGi config (ui.config), integration tests, recent additions (CFCardUtils, TestServlet, removed tests), dependency direction.
+  - **SHRSS_Technical_Design_02_Frontend_Architecture.md** — ui.apps paths and filter, ui.frontend build and clientlib.config, component categories and patterns, notable components (incl. jobsearch, jobfilters, cfcard, accordion, header, Careers), CF models, recent frontend additions (Careers, accordion, CFCard, header, clientlib.config, stories).
+  - **SHRSS_Technical_Design_03_Integrations.md** — External systems (Unity iframe, Workday/jobs, DPLT, GraphQL, OpenTable, Grubhub, Google Maps, Dynamic Media, TransPerfect/Target); internal AEM (Core Components, CIF, Headless); configuration and credentials.
+  - **SHRSS_Technical_Design_04_Dispatcher_Configurations.md** — Apache (conf.d, vhosts, rewrites, variables), Dispatcher module (farms, filters, cache, renders, client headers), CDN flow (Cloudflare → Fastly → Dispatcher), file relationships, operational notes.
+  - **SHRSS_Technical_Design_05_Cross_Layer_Interactions.md** — How to use; example flows: page render with model/service, CF/GraphQL consumption, job CF management API, location export scheduler, Unity login iframe; interaction categories summary.
+
+  **Codebase delta:** Post–Jan 2026 changes (Careers jobsearch/jobfilters, CFCardUtils, accordion, header/favicon, clientlib.config, removed tests, etc.) reflected in §6 of 01_Backend and §7 of 02_Frontend. No new codebase reads required for first draft.
+
+  **Exclusions applied:** No 00, 03, 04 from analysis; no issue IDs; no quality/grading/risk wording; no staging or Phase 3 refs; no “Critical Finding” or “Decision Required.”
+
+  **Index:** Deferred per plan; add after user review and iteration.
+
+- **Note Status:** Resolved
+- **Required Action:** (N/A)
+- **Resolution:** User to review first draft; then iterate (details, visuals, index) and approve or request changes.
+
+---
