@@ -61,7 +61,7 @@ The SHRSS implementation is a custom, enterprise-scale web content and digital a
 
 ## AEMaaCS Conventions (Brief)
 
-- **Configuration:** OSGi configs live in **ui.config** and are immutable at runtime. Environment-specific values use Cloud Manager environment variables or secrets.
+- **Configuration:** OSGi configs live in ui.config and are immutable at runtime. Environment-specific values use Cloud Manager environment variables or secrets.
 - **Scaling:** Services, schedulers, and listeners should be designed for horizontal scaling (e.g. idempotent where applicable).
 - **Deployment:** Via Cloud Manager pipelines (build, quality, deploy). No direct runtime edits to `/apps` or `/libs`.
 

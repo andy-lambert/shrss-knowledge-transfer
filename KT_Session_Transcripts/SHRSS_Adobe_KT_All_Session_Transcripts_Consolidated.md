@@ -1,8 +1,8 @@
 ---
 title: SHRSS Adobe Knowledge Transfer — All Session Transcripts (Consolidated)
 source: KT Sessions (Microsoft Teams meeting recordings)
-sessions: Jobs, Events, Careers, Tagging & Taxonomy, DAM, Shared Data, News, Locations, Media
-dates: 2026-02-10 through 2026-02-23
+sessions: Jobs, Events, Careers, Tagging & Taxonomy, DAM, Shared Data, News, Locations, Media, Page Templates, Nav and Data Displays, LOB Specific Components, Additional Components
+dates: 2026-02-10 through 2026-03-04
 format: Markdown transcript (no images). Optimized for AI ingestion and analysis.
 ---
 
@@ -15105,4 +15105,4555 @@ Lyon, Rick (Director of Digital Experience)** 1:34:27
 Thank you.
 
 Scott Sorel** stopped transcription
+
+## Session: Page Templates — 2026-02-26
+
+**SHRSS Adobe Knowledge Transfer-20260226_130306-Meeting Recording**
+
+February 26, 2026, 6:03PM
+
+2h 17m 23s
+
+**Lucas Nelson** started transcription
+
+**Lucas Nelson** 0:09
+All right, Danielle, it\'s all yours. Thank you.
+
+**Daniela Tea** 0:11
+All right. Thank you guys. Good afternoon, everyone. Let me go ahead and share my screen so we can go over some page template items today. So what we have identified here are the page.
+Page templates that we currently have in the system. So we\'re going to go over the home page template, which I believe that the content authoring team should be familiar with already as well as the open page template. There are a couple of other templates that I think you know if we can explain what they are, you can understand how that might be.
+Used and then these two templates. Here we have a messy burger page template as well as a microsite page template. I wanted to create an example of those so I might not be able to show them today, but essentially this is the template that\'s used.
+For those very specific pages in cafes, we created a special template because there was a lot of custom functionality that was expected for that page, so it had its own template. And then also for these microsite page template, that\'s something that\'s specific to the microsites that are present.
+In the hotel, we can take a look at a live example within the state environment if there\'s one available, but if not, my plan is to create one and then I can walk through that in our next session. But first, let\'s take a look at how to access existing templates.
+So I am going to navigate to the template section which is available by clicking on the AEM in the top left. I\'m going to click on the tools icon and then general tab we can see.
+Right here is a section that\' called Temlates.
+And just changing my view so I can show Hardrock Seminole and then we can see here there\'s quite a few templates in here and you can see when the template is enabled, when it\'s last been modified, if it\'s published, etcetera.
+And you know, I like this to be better. If we were to take a look at, say, our homepage template, this is a template that\'s already been created. It\'s already been in use. One thing that you can do if you\'re ever curious to see what pages are using your templates is by opening up the side rail.
+I can see just the content, just the templates that are available, or I can click on references. When I select a specific template type, let\'s do the news homepage because there\'s not too many. I can see that there are 7 pages that are used in that template and when I expand on that I can see.
+Exactly which pages are are using it. I can also have it take me back to the site section so I can see the exact page. In addition to that, if you\'re ever curious about what template is being used for a page.
+When you select the page itself with the the sites, the sites who you\'ll see here underneath name where it says template and it tells you what template you\'re using. So just some things to keep in mind. If say you see a page and you want something maybe similar, you can understand what template they started from or.
+If you want to understand, hey, is this template something that people are really using? Is it popular? You can come to this section and just simply select it and view what pages are referencing that template. All right, so let\'s take a look at our homepage template.
+And what it consists of. I\'m going to go ahead and click on Edit.
+And one thing that I wanted to point out is that when it comes to authoring templates and you know, creating new ones or editing the template, that sort of stuff, I believe this should have probably been covered in the authoring training that the team took.
+From the Adobe Learning Services team, there are several different parts for this template to be able to be edited. There\'s of course the admins being able to like a certain admin group to be able to allow.
+Adding the template, you know, depending on permissions. There\'s also the developers who would need to set up things like the template policy and some of the more technical details about it. And then for the content authoring team themselves, the ability to do things such as editing the structure or editing the initial content on the templates.
+So that way when the template is live and you create a new page based off of it, it\'ll automatically have whatever set in the initial content. So there\'s different roles that are involved with creating a template for the content author themselves. So what will likely be the case is that the development team will identify.
+The sections of each template, sections on the template for each layout container, identify which components are allowed, which policies are being applied, and then setting some of these additional details here so that way the content author themselves doesn\'t need to worry about that. So that\'s more of a development.
+Task and there are going to be certain authoring groups in the permission side. There\'s a template authors group that I believe is is part of part of the Hard Rock environment right now, so not everyone is going to have access to be able to.
+You know, create a new template or edit or anything like that. It would be based off of whoever\'s in that specific group. And from what I saw, I think like folks like Gonzalo and I believe Lisa and probably the rest of the team on Lisa\'s team, you guys would have access, but say somebody from like.
+A random cafe or hotel. They wouldn\'t necessarily have access to create or edit the template or anything like that. Just want to make sure it\'s clear that before you just start creating new templates, there are some things that would need to be set up from the developer side and.
+That\'s some documentation that I can certainly send out or put on the page from the link site. But taking a look at our homepage template, this is very similar to what you would expect like with the page layout. For example here I\'m clicking.
+And I can see the content tree, so I understand what has been set up for the structure of the homepage. So for our homepage, what have been established for this template is the top portion has a component called the Alert Aggregator.
+We have not reviewed alerts yet. That\'s something I do have on the schedule though, but essentially this is at the top of the header. You can see this portion here is experiments. Experience fragment is intended to be used for the header, but the alert aggregator is essentially on every single home page at the very top. So if it is.
+Configured with actual alerts that it would always display. We also have, as I mentioned, the experience where I went to display a header. We have this container which contains 2 layout containers.
+One which represents the hero, the hero banner, hero carousel. Essentially those are the only components that can come here in this portion of the page. And then here is essentially like the main container, like the main page content section, and you\'ll notice it has a list of all the allowed components.
+So as additional components are created, that would just be that could be allowed based off of what\'s added in the policy. You can see here this is the allowed components tab. We can see that Hard Rock Seminole content.
+Components have been all added. Everything that\'s within that group is available for you to use. This is essentially what you see whenever you are interacting with the page. When you\'re editing a page and you do insert new component. This is the list of components that you should see when you\'re editing the page.
+Finally, at the very bottom we have our experience fragment which is intended for the footer.
+And so this is this is the homepage template. The main difference between the homepage and say like the open page template is there is this section to be able to have like that hero carousel at the top. It\'s been defined already for you. I believe I saw a.
+Either a JIRA ticket or a question or a comment or something about why the hero carousel isn\'t necessarily available on the open page. It just was defined this way where we had requirements that said that the homepage would always have that. However, the open page doesn\'t always have a hero carousel at the very top.
+So when you are considering building out templates, typically you want to make sure that it\'s flexible enough to be used for, you know, your various use cases. But then there\'s also of course the need to have some specifics. So for homepage, since we knew everything, every homepage would always have a section.
+Above the main content, that\'s why that was defined. However, for an open page template, we want it to be more flexible, so we didn\'t include that section since it seemed a lot of pages were not necessarily using that we didn\'t receive requirements.
+For that to be captured. However, moving forward that can certainly be added and edited on on the open page template. So this is the structure. We can see what\'s here. We can see when we go to the initial content portion of this.
+That certain things have already been set. For example, if I wanted to say I\'m not going to add it here, but if I wanted to to add a specific hero carousel here so that whenever you create the page off of this template you always.
+Want that specific image or something there? That initial content can be present and set in advance on the template side, so that way it could potentially save your authoring team some time. But again, if these are supposed to be, say, flexible for.
+Multiple lines of businesses or, you know, multiple sites. You need to just be aware of like what\'s going to make sense for your authors. What would make sense for for your initial content to be able to apply to several use cases, but just keep in mind that as you\'re planning your templates.
+You are able to set things up so that way you can save your author team time. Just wanting to make sure that you are still keeping the templates a little bit flexible in case some use cases don\'t cover that. All right, when I click on layout, I think we\'re familiar with the layout mode.
+You\'re able to essentially resize the structure the the contain, excuse me, the components that are on the page based off of your view port. So if you know that say you have like a the hero banner on here and perhaps you know that you.
+Want it to appear in iPad? You can set that hidden button in advance on the template side. So that way when your authors start using this template, they don\'t have to worry about doing that themselves. It\'s already taken care of at the template level.
+So all they have to do is just focus on essentially like adding the content versus setting up that layout. So this here though is the home page template. Let me take a look at showing you an example of a home page.
+Right.
+Yes, Edwin, go ahead.
+
+**Edwin Aquino** 12:27
+Just to just to confirm, any edits we make to the template don\'t impact existing pages that use the template. This is just for new pages that are created, correct?
+
+**Daniela Tea** 12:34
+So you\'ll see here editing the structure will affect all the pages referencing it. So right now, yeah, so like you do want to be careful. And so I\'m mainly talking about the pages that I know that are like the pages that I know that you guys, I\'m sorry, the templates I know you guys are likely going to want to create. Definitely want to.
+
+**Edwin Aquino** 12:42
+OK.
+
+**Daniela Tea** 12:54
+And make sure you kind of plan that out because of course right now there\'s as we saw, I think there\'s like I think 420 home pages right now. So if I were to edit this right now, that affects all those 420 pages that are using this template.
+
+**Edwin Aquino** 13:08
+Now, how exactly would that impact those pages? Would it change the content as well or just the the the components that we\'re adjusting here? I\'m just, yeah.
+
+**Daniela Tea** 13:15
+So if you\'re yeah, yeah, if you\'re adding say, I\'m going to make this a little bit bigger. If I were to say add like another container here or something like that and and perhaps add that initial content right there, then that should add that also to my page.
+However, if I were to say like set some initial content for like sections that have been established, that\'s where you\'re going to potentially run into trouble, right? So I would strongly advise making sure that if you\'re making updates to templates of things that already exist.
+You know, of course there\'s with the cloud services, I know backups being taken up, so you could potentially restore content, that sort of stuff. But I would certainly make sure to try things out down in say lower environments or or such, you know, just to make sure that you\'re not.
+Essentially having to do a roll back if possible, but yeah, just want to be careful with anything that\'s that\'s already being used. But I believe when you guys start identifying things like I think there was a need for like a say like a cafe template, right? Make sure you\'re planning that out and you can certainly set up whatever you need in advance.
+
+**Edwin Aquino** 14:12
+OK.
+
+**Daniela Tea** 14:27
+To make a couple test pages to see if it covers what you need, make those edits, and then certainly, you know, start creating pages. So there\'s a way to edit it after it\'s been used, but you still want to be careful since that template\'s already live. Yep, Yep, Yep. All right, so.
+
+**Edwin Aquino** 14:38
+Got it. Thank you for clarifying.
+
+**Daniela Tea** 14:45
+Here\'s a look at my homepage template I\'ve used. I am using and I\'m just going to show this. So by KT homepage, if I check it, you\'ll see it\'s using the homepage template, which you\'ve established is it concludes an experience fragment.
+The alert aggregator through the top, some containers, one that includes a hero carousel and then also a layout container which is manually for all page components and then a bottom experience fragment. Let\'s take a look at how that is.
+Your no, this is not it here as we see same structure alert aggregator. Now the experience fragment you may wonder why am I not able to edit it here? This is something that is actually presets. We\'ll take a look at where I had set that.
+So the experience environment is displaying. That\'s what the header and the footer are, right? But I\'m not. I don\'t edit it through this page. I edit it somewhere else, but we\'ll take a look at that in a second. Here\'s my earlier aggregator. Here is my container, my first container, and here is my second container, just as I have right here. So you guys can kind.
+I see like I created a page. It\'s using this template. This is what it looks like when I first create it. It matches the structure that I\'m expecting since that\'s what was established here. Now if I were to create an open page template, I want us to take a look at that since that\'s what the majority.
+Of your pages are. I\'m going to select this and I actually want you guys to see how many pages are referencing this template and I\'m going to go ahead and open up my open page template. I have Bing that I\'m using so we can see how this gets mapped.
+All right, as you can see, it\'s thinking quite a bit because so many pages are using it. So I\'m going to go ahead and click edit and we can come back and check how many pages are actually using it. All right, so we\'re looking at the open page template. I take a look at my.
+At my content tree, we can see exactly what\'s been established. For the most part, what you\'re going to be using is again the open page. The homepage template is going to be mainly for.
+Setting up your site. So what I mean by that is in this homepage template there are certain properties that are going to be filled out that establish essentially any child pages underneath it. So when I mentioned the header and footer experience fragments, I had set that here.
+At the homepage template level, the page I choose my homepage template and then underneath there where I\'m using my open page, it\'s going to inherit that experience fragment that was established within the properties I\'m gonna go.
+More through properties and such, but just wanted to show why when I created the open page, why is it automatically look like this? Why is the theme color applied? All of that is established at the homepage level. At the open page level is where I believe the content authors.
+Would be creating content ages in general.
+So here in my open page we can see I have a hero banner here and I\'m going to go to initial content just so you guys can see in this section here where I previously had a layout container and it said what\'s components were allowed. Here it\'s establishing it\'s a hero banner.
+That\'s why over here I see here banner. If I wanted something different to appear in this section here, what I would do is I would add whatever component I wanted. These are the allowed components as we saw from that previous page. It only allowed five different components in the section. That\'s why I\'m seeing 5 different components here.
+If I wanted to say change out the hero banner to be a hero carousel to appear initially when creating a page, this is where you would do it.
+You can see here a breadcrumb has been established in this container section, so that\'s why when I created my new page, a breadcrumb automatically appeared here and then this last container I think.
+Let\'s see where it is. Yes, this last container is actually just the root container. Essentially you\'ll see the little icon here. This is an unlocked container. This is for the entire page itself. So creating an open page, my initial content includes.
+A hero banner and a breadcrumb, just like what we can see here. Hero banner and breadcrumb. The alert aggregator is appearing. There\'s nothing set because it\'s it\'s just there, but nothing has been configured for this. You\'ll see it\'s blank, and that\'s because of course it\'ll be different based off what page you have.
+But this hopefully this can you guys can kind of see as you\'re planning out your templates again as you understand like what components would make sense for like say a cafe template, you know having your your experience fragment set up so that way it\'s pointing to having a header and footer.
+Having a section for bread crumbs, perhaps having like an event section, etcetera, etcetera. So that can be set up by both structure, identifying the different sections and then the initial content, actually selecting the components and even configuring the components with say.
+You know, like like a specific hair banner that might be present on every single cafe. You could set that here. So with our open page template though, a couple things to keep in mind as we see here the.
+Navigation at the top and the footer are the same as what was established in the homepage template. Now Edwin, I believe you had asked a question I think a couple of days ago with regards to how do you create a page that doesn\'t inherit from that homepage section, right? So like maybe you want something.
+
+**Edwin Aquino** 20:57
+Correct. Yeah.
+
+**Daniela Tea** 20:58
+At the same level, but you don\'t want say this here, right? OK, so we do have a blank page template and so I started thinking about I was like actually you could use this. So the way the blank page template works is it is literally what the name is. It\'s a blank page.
+So what that means is there is no header and footer, right? So we\'re just going to put show you what this is. There\'s no header or footer associated with it. So if your intention is to say add a header and footer, you can can do it by adding your experience fragment.
+And then you can reference whatever header or footer you know you want to use instead of the one that\'s that was established at the level up top. I\'m just going to choose a random one so you can you can kind of see that I\'m going to hit done. So let\'s see. Yeah, so you can see it says order now.
+Reserve a table, menu, locations, catering, etcetera. If I were to go to my other page, my open page that I just had, you\'ll see this has different, this has a different navigation, right? Destinations, hotel and resorts, casinos.
+But this one, my blank one has many locations catering right? So they\'re at the same level KT open page, test blank, but I\'m using different header navigations because I\'m using blank page template. So I just wanted to check if this is kind of like the use case that you were looking for.
+Like to fulfill, you know, with the different header, header and footer for a specific page.
+
+**Edwin Aquino** 22:40
+Yeah, that that\'s correct. So sometimes we occasionally have footers that are a little bit different than other pages or you know, so, so yeah, this this would qualify to to there\'s a better issue.
+
+**Daniela Tea** 22:44
+OK.
+OK, perfect. So yeah, so the process for that always keeping in mind is since it is an experience fragment, you would create an experience fragment and just point to the reference. And something else to keep in mind that I did want to point out is that it\'s still going to inherit the theme colors and.
+I\'m not sure if that\'s part of your use case too, Edwin, but like you can see here, like the theme that I\'m using is actually the hotels theme. I know that because the buttons are purple and that\'s the that\'s one of the indicators. So even though I\'m pointing and using a different experience fragment, it\'s still going to inherit the same.
+Themes, it\'s still going to look kind of similar to that. Does that make sense? Hoefully that is that is also in line with your use case that you were describing.
+
+**Edwin Aquino** 23:29
+OK.
+Um, um, I\'ll have to bring that back to the team. But yeah, it sounds like we we can discuss that if that\'s needs to be adjusted.
+
+**Daniela Tea** 23:34
+OK.
+OK.
+OK, awesome. All right, so let\'s take a look then. As I mentioned before, the blank page is literally a blank page, but we can always take a look at what has been established here. I\'m going to just click on edit.
+So you can see initial content, everything\'s literally blank. There\'s a container on here and that\'s for you to be able to add what you need, all the components, you know, like literally the experience fragment all the way to the card to everything. So it\'s just a blank page. And so it sounds like there are already some existing use cases for that.
+O hoefully the team will be able to use this as you guys see fit.
+Alright, OK. Some other pages that you guys are also currently using. We talked about like the news homepage and the news page and the new search template and I I think we might have taken a look at them. We can look at them right now in terms of the structure and such.
+But yeah, so at one point you you guys had seen that there was an experience fragment at the top of all the news pages. You\'ll see that was set in initial content. So this is where it\'s coming from that image. It was set here on the template side. So when you create a new page, it\'s always gonna have this banner.
+Of course, you know in the future if you guys realize that\'s not necessarily something that you want, that that is something to consider potentially changing. But again, keep in mind not a draft anymore. Pages are using it, so.
+Use some caution, but as you can see here like we\'ve this specific template for news home page has quite a lot of different components on here versus the open page since this was specifically for news with the and with the news search results component.
+Category listing, etcetera. So from the initial content point of view, you can see that some things are already preset. So in this case here, initially when you first create your page, your news homepage, it\'s going to point to the CF list path. However, of course the author themselves.
+Can change that. So this means like in the future if you guys have different news pages that you might want for different sites, it might make more sense to have a news homepage template with the initial content set to point somewhere else. So that that\'s going to be decisions you know that your team can make.
+Keeping in mind that initial content is just to help the author be able to have essentially like placeholder values, which they can change as they\'re creating their page.
+Right.
+So with our structure, you can see the structure portion like we mentioned before. It\'s more I\'m establishing what needs to be on this page, but the initial content is I\'m establishing exactly what I hope a user will see when they first create the page.
+Based off this template and then layout is again was I go look at different viewports, I can establish how I want that to be laid out. So that way the content author doesn\'t necessarily need to do it, but they do have the ability to change it.
+As they\'re working with the page. OK, so we had our news homepage template, which was created for the corporate website. We have our news page template, which is for those specific articles.
+Structure is going to look pretty similar to what we had for experience fragment for the header container for every component in there. Experience fragment for the footer. Initial content is where we establish what belongs on a news page.
+You\'ll see the different ieces added here.
+And then finally, um, the last uh news related template was the new search template.
+And initial content. The main difference I believe is the new search results here, which is the main difference between the other two. So this is how I know you guys are already creating news pages in general, so these are where those templates are coming from.
+And you guys can can see how they were initially set up. We also have a an experience fragment template which I believe the team is also familiar with called the SHRSS blank variation. This is essentially the same or very similar.
+To that blank page. However, it\'s it\'s special because it\'s for an experience fragment. There\'s some things behind the scenes that makes it use for the experience fragment itself. So that\'s why you would want to use this when you create. When you create an experience fragment, you would want to make sure you\'re selecting this template, however.
+The same premise is as an author. You know, you just add whatever component you need after you\'re using this template. That\'s the purpose of this is for experience fragments exclusively. All right, you can see that here. OK, let\'s see what else we have.
+Uh, so the footer variation is specifically for footers.
+In this case, I believe we were to take a look at.
+Go to structure.
+So you\'ll see that the footer variation only allows specific components since this is what was established. So when you are creating footer, if you wanted to, if you wanted to add something crazy like I don\'t know, like a media gallery, you cannot do that. You are restricted from doing that.
+And if you were to take a look at the template policy for this, this was again when I mentioned things about policies, that\'s something that more than likely like the developers would have set up for the content authoring team. But the policy that has been selected is specifically for XF footer, you can see that what.
+Variations are using that and you\'ll see that these are the list of allowed components. So it was the policy is to essentially restrict a content author from being able to add basically the world to a footer, so it\'s just restricted to these specific items.
+So we have been using this when whenever you see your your footer at the very bottom, it\'s using that footer variation template and experience fragment. And let\'s see here, what else do we have? The event page is also.
+Is also a custom template that was built. Um.
+And we talked about events in general structure is going to look exactly like you expect pretty bare bones because we\'re just saying we need a section that has all this has all these components available for an author to select from.
+However, the initial content itself has the specific component that should be present when a an author creates a page based off of this. In this case it\'s the event detail. You\'ll see there are some values that have been preset. Hard Rock live event calendar event details, no special error message.
+Has been set here, but these are the same exact fields that you\'re going to see as an author when you create a page based off of this template. But this is this is where those placeholders come from.
+Let\'s see. So for the messy burger, again for the messy burger and the microsite, I would like to make some pages based off of those and show them to you guys at a later date. But again, therefore both the cafe page as well as the hotel page.
+I\'m going to pause here though, and see if there\'s questions about the template set up, you know, editing it or adding a new one. And then we\'re going to go to page properties. Hey Edwin, I see your hand up.
+
+**Edwin Aquino** 32:00
+So is there any way we can organize templates by like folders? So let\'s say we have templates specifically for casino sites. We can have templates listed there or templates for cafe. We can have a specific folder for that. Or is this just all in one general location?
+
+**Daniela Tea** 32:15
+So I\'m in my templates. So this is there\'s templates. So right now this established structure have been having Hard Rock Seminole, which is essentially you know like all the custom ones that have been created specifically for Hard Rock Seminole. What you\'re saying is you might want like say this error page and event page to be specifically.
+For casinos, like essentially organization, is that correct?
+
+**Edwin Aquino** 32:39
+Yeah, right, correct.
+
+**Daniela Tea** 32:39
+Like you might want these at. OK, let me think. I think that has to be set up by an admin to essentially have a section like a lot for that. Like this is what I was talking about with like there\'s three different roles when it comes to creating templates. So that would have to be established I believe at like the admin level and then.
+Also.
+Also identifying which user groups would have permissions to that specific folder. So we don\'t have that set up necessarily because these are all intended to be used globally. But yes, you should be able to have additional organization as needed and then also be able to set up who should have access.
+Access to the to those to those specific folders.
+
+**Edwin Aquino** 33:24
+OK. All right. Thank you.
+
+**Daniela Tea** 33:25
+Mm-hmm. All right.
+OK. So yeah, so that\'s definitely something to think about. Like what do you guys necessarily want that might be global or what might you want that\'s specific for your like your line of business. So yeah, definitely things to plan as you\'re coming up with what templates are needed for your properties.
+All right. OK, so now let\'s take a look at our page properties for some of our templates and get an understanding of, you know, what\'s custom, what\'s not, what\'s out-of-the-box. And I\'m just going to navigate back to my admin.
+Now we\'re going to take a look at our homepage template first. All right, so I\'m selecting this. I\'m going to click on properties.
+And um, all right, one second.
+Actually, was it media? I\'m just checking something really quickly. OK, yeah, so media is the one where I filled out everything so we could take a look at how that translates when we resource. OK, so with our homepage template.
+As I mentioned before, the most important thing to set at the homepage, one of the reasons why this is extremely important is as I mentioned, the child pages underneath will inherit the theme and will inherit the.
+Header and footer. So if I go to our SHRSS themes tab here, this is this is where you establish that I have said I want my specific site to have the Hard Rock theme and for my sub theme it\'s going to be the hotel theme, which is why we\'re seeing those purple buttons everywhere.
+And for every page that\'s created underneath this homepage, I want to make sure that it has this header experience fragment and this footer experience fragment. So as we saw, yes, you could add a blank page underneath there and kind of establish your own on the page itself.
+But if you\'re using the open page template, which is heavily what most of the sites are using, this is where it\'s inheriting the information underneath the home page that\'s established for that site. So this is very important to set if I were to move to our custom common tab.
+Again, these these three tabs. So sorry, you guys might be wondering why am I focusing on these three tabs? Everything before these three tabs are have are out-of-the-box page properties. So AEM provides, you know, specific page properties that are applicable.
+For pages for different things such as SEO purposes or you know like special configurations that you could set. However, again, all of these are out-of-the-box. We do have some documentation on that which kind of go a little bit more in depth as to like what is the title, what is the page title, navigation title where?
+What are these going to use, etc. But the only thing that has been customized for the basic tab I would say is when we discussed vanity URLs, I explained the process for creating a vanity URL due to the shortening rules that we had established as we saw with the International Women\'s.
+Month page. So that was the one consideration I want to make sure the team was aware of is you have to put the full content path versus just like a slash women so that that this is still out-of-the-box, but there was a special consideration because of the shortening rules we had in place.
+But all these properties that you see here are out-of-the-box and I can certainly try to answer some questions with regards to how they might be applicable to the team, but we do have the documentation experience link that we could take a look at.
+For for some of these properties, all right, so going back to our custom tab. So here with our custom common tab you can see some options, one for hiding the breadcrumb. This means that the breadcrumb component can stay on the page, but if you just don\'t want it to be visible.
+You can, you know, check it. So it\'s possible that you know you can also delete the breadcrumb component from the page itself. But if you want it there, but you say you want to temporarily hide it or you don\'t want an actual user to see it, that\'s what this checkbox is for. There\'s also the hide scroll to top button.
+I think you should be able to see it on hardrock.com and I think Reverb is using that as well. That\'s the button that appears in the bottom right and let\'s see, where did it go?
+Going back here, we have the LD JSON field, so that\'s gonna be something that\'s visible when you view. When you view page source, there\'s a value right here, so this this here.
+Anything that needs to be displayed within this section of the page, I believe that\'s for. As I mentioned, I believe that\'s for SEO purposes would be put into this section here under custom common and then we have the OneTrust cookie configuration.
+I believe if we were to take a look at the home page, we could see exactly what value was here as well as the domain script key that was entered here. And again this is set up for at the home page level and then the child page is underneath.
+Should inherit this. So you should. If you view a homepage template, you should see these values filled out. And then finally there was an analytics tab established. It had these four specific fields. Now there are certainly additional values that.
+You know, are being captured from the analytics side. However, my understanding of this was that there were four specific values that would need to be added at the homepage level. So that\'s what you see here. I think this is also available.
+If we were to take a look at our open page template, you should be able to. Actually no, you you should not be able to set it at any child page, but you would set it at the home page and then all the child pages essentially would inherit that value.
+So these three tabs, the SHRSS themes and the analytics are actually specific to home, but the custom common is another custom tab. These are three custom tabs that were created for every SHRSS template.
+And that\'s what you\'ll see here. Here\'s the custom common, but it\'s missing the themes because this is not a homepage. It\'s missing the analytics because this is not a homepage, right?
+Uh, I\'ll pause here to see if there\'s questions about these three tabs.
+Hmm.
+Yeah.
+Mhm.
+Yeah.
+Yeah.
+
+**Edwin Aquino** 40:41
+That just because that\'s something that\'s definitely used a lot by the team.
+
+**Daniela Tea** 40:44
+Yeah, sure. So let me pull up the test page that I made and we can take a look at how it translates to the source. All right. So for starters, you may notice that this particular page has a thumbnail associated with it and the author.
+And let me show you. I know that\'s not actually what you asked, but I am using the images tab here. So the intention for the featured image is this is what actually populates the OG image field. Edwin this here and then the thumbnail that I established is what\'s going to be displayed within the.
+The AEM sites console like we just saw. So that\'s why you see this here. But this is what populates the OG image field. You are not able to set the image until after you create the page, so I wanna make sure that\'s clear. So you\'re thinking, wait, I\'d never seen that before.
+If I were to try and create a page right now and I\'m just going to select open page, you\'ll see. Oh actually yeah, you\'ll see here on the images tab. I can\'t interact with this and that\'s because you need to have the page created first, but then once you open the page back up again, you\'re going to be able to interact with it.
+So that\'s one field I think would be relevant to the team. So here we go. Here\'s my KT Media page. I\'m going to open up the publish side of this so we can see the source.
+This was the page that we were messing around with yesterday and I published it. So it is not pretty by any means, but we\'re not actually looking at the page content. We want to see the source. OK, so take a look here. As we can see, title is a required property.
+And it\'s not present here because this page has already been established, but there is the name field. I believe Ed, when you had a question about what the name field is, the name field is the URL. So like right now the name that I had was KT Dash Media.
+When I was creating the page, if I want it to be something else like knowledge transfer instead within that field, I would have put, you know, something like this. Yeah, Carlos, go ahead.
+
+**Carlos Aldana** 42:55
+Sorry Daniela, the the feature image, where can I see it? Where is the is it displayed?
+
+**Daniela Tea** 43:02
+Oh, so the featured image one you can see. Yeah, so when you can see this is the image value right in the meta property OG image. You can see this is the image value right in terms of the display. The intention for the featured image is that for some.
+
+**Carlos Aldana** 43:17
+Mhm.
+
+**Daniela Tea** 43:22
+Components like yesterday we had used the image component and by default it was displaying this image. That\'s because I had set it here. So if I were to.
+Um, let\'s see. I\'m gonna cancel this. I wanna open my KT media page.
+You\'re trying to actually see the image and if I were to add a new image here.
+It\'s going to automatically display that featured image because that\'s what I had said right? So from the AEM standpoint, the featured image is being used whenever you have like an image component. This is checked in here featured image. However, it\'s also intended to populate this the OG image meta property.
+
+**Carlos Aldana** 44:08
+But for example this morning I I built the a blog history story and and and I added the on the feature image a logo because I wanted to see if maybe that would be displayed as a priority.
+On the home page because the story had like a an image with text and it was inappropriate if I wanted to display it on the home page on the blog widget.
+So in that case the the the feature image doesn\'t work.
+
+**Daniela Tea** 44:48
+Are you talking about this here? So this is he, yeah.
+
+**Carlos Aldana** 44:49
+Yeah, yeah, so that that\'s that\'s the image I associated to the story, but it but I added on the on the component. I added a different image as a feature image, but I didn\'t see it anywhere.
+
+**Daniela Tea** 45:06
+So we\'ll take a quick look at this. So just to be clear, so the featured image for the page property is not necessarily associated with this component. I believe this is a content fragment list component, but I will take a look.
+
+**Carlos Aldana** 45:13
+Oh.
+
+**Daniela Tea** 45:25
+Um, so I think we\'re talking about two different use cases, but can certainly check to see what our homepage is using.
+
+**Edwin Aquino** 45:34
+Just for clarification, Daniel, like the featured images used whenever we\'re sharing it like on Twitter, like a a little the preview image, correct? OK.
+
+**Daniela Tea** 45:39
+That\'s the intention of it. Yeah, that\'s the intention of the OG image. So that\'s what I was saying, Carlos. I think you know what you were expecting from that feature image tab is not actually how the component is used, but I\'ll just take a quick look. So yeah, the content fragment card list.
+
+**Carlos Aldana** 45:41
+See. Um.
+
+**Daniela Tea** 45:58
+So this is the default image. So obviously if you had not had any image associated with this, it would display this instead. And what you\'re saying is that you\'re trying to change this image, is that correct?
+
+**Carlos Aldana** 46:09
+The the the story had a different image with some text and we don\'t want to display that. So we decided to go when we had those stories we we used this one. This is like the default image for us, but I wanted to try to use.
+
+**Daniela Tea** 46:26
+Hmm.
+
+**Carlos Aldana** 46:29
+Use the the image that they provided with the text and to be displayed on the story. But then I wanted to add the feature image on the on the place that you just show us in order to probably see it displayed on the on the homepage.
+
+**Daniela Tea** 46:43
+Mhm.
+
+**Carlos Aldana** 46:49
+Because it said feature image, so I assume that maybe it will be working like that, but it\'s not the case probably.
+
+**Daniela Tea** 46:56
+Right. So I\'m going to take a look here. So the image that you set is this, right? This image field is being used for like at the very top. Like I think, yeah, the intention of this image is to be at the very top of the article as well.
+
+**Carlos Aldana** 47:02
+Yeah.
+That that one, yes.
+
+**Daniela Tea** 47:16
+well as what\'s being used for this content fragment card list. So I think if you were trying to say add some additional images, you would likely want to, yeah, go ahead.
+
+**Carlos Aldana** 47:24
+Yeah, on the properties on the properties section probably.
+
+**Daniela Tea** 47:29
+If you wanted to use additional images within the story, you would want to add it, say within the RTE, right? Or you know like on the actual page itself. You could also say like you wanted something at the bottom of of this use content fragment. You could add a new component.
+Own it for an image, et cetera, et cetera, right? So I guess to to be clear though, this image that\'s here is the image that\'s being set in this section here, and this image is currently being used also for the content fragment card list.
+
+**Carlos Aldana** 47:51
+Oh no.
+Yes, but can you check the feature this this section that you use to show that is does it?
+
+**Daniela Tea** 48:15
+Yeah.
+So if we were to take a look at this here, this feature, yeah, so this featured image property is not being used in relation to the article image or this like. So as I mentioned, if we were to let me see here.
+
+**Carlos Aldana** 48:19
+See that? That\'s what I added, yes.
+OK.
+
+**Daniela Tea** 48:34
+Going to click on edit just so I can see what this is called logo if we were to.
+I think this is this is the live page. Is that right, Carlos? OK, let me let\'s find that.
+
+**Carlos Aldana** 48:46
+Yep.
+
+**Daniela Tea** 48:56
+OK, so looking at the OG image value, you can see how it\'s taking in the image that you had set Hard Rock News logo, right? Corporate logo is Hard Rock News logo. You can see how the value is taking what you had set in the featured image property field.
+
+**Carlos Aldana** 49:13
+Yeah.
+
+**Daniela Tea** 49:14
+So that that\'s that\'s what this is used as well as if you were to add an image right now to this page, it would also, you know, show that specific image that you set within that field. But if your intention was to try and you know, change this right now, this is going to be pulling in from whatever was the established image in the content fragment.
+
+**Carlos Aldana** 49:33
+Yeah. OK. OK. I get it. Thank you.
+
+**Daniela Tea** 49:36
+So yeah, hopefully, hopefully that makes sense. I think you know, like I mentioned, hopefully you can. If you need to add that image here though, you can certainly do that by adding say like another component or trying to use the description field. But yeah, keeping in mind though the featured image for the page is.
+Going to map to the OG field, OG image field and then the thumbnail that I saw you had also set that maps to the thumbnail that\'s displayed here, right? So like if we were to look at your page now in AEM, you would see that that thumbnail image that you would set within the page properties.
+
+**Carlos Aldana** 50:02
+Mm-hmm.
+Yeah.
+Yeah.
+Hey, saw that.
+
+**Daniela Tea** 50:17
+Yeah, OK, cool. So that you guys, you guys can also that can be helpful to add a thumbnail. You know, if you guys need to quickly find something like I was like, where\'s my page? Oh, it\'s right here. This thumbnail I know is set, but that\'s something that the team can certainly start using now. It\'ll certainly help the authors, you know, versus seeing.
+It\'s just like a kind of, you know, generic image. So if you guys need to see something, you can classify it quicker, maybe having something different for like a homepage or an open page. That way you guys can just quickly see it by looking at the thumbnail. So some options for the team.
+Let\'s take a look though back at our page properties. I\'m going to go back here.
+OK. So Edwin, I think you were asking about, I was talking about the name field and I know that was a question that you had had when I create my new page is when I set the name field and I believe your question was with regards to what exactly is the purpose of the name field.
+So this is going.
+
+**Edwin Aquino** 51:21
+Oh, not sorry, not necessarily. It was basically with the the news page titles like the news page name, because normally if we leave that blank, I think it auto populates the full URL based on the title. So I\'m not too sure if if the name is what we would use to override whatever gets populated there for the news articles.
+
+**Daniela Tea** 51:24
+Oh, go ahead.
+Oh, I see.
+Yeah, if you wanted to change it. So like, say the news article name was like, I don\'t know, like Hard Rock. I\'m just writing it like this intelligent Hard Rock news, right? And say you\'re like, Nope, it should be just like SHRSS news or something. The name field is where you would put this and then that would be what is sent in the URL.
+Like it would look something like that, right? But the title itself would still be whatever\'s established here. That\'s what\'s listed on the page that would be listed, you know, within the tab name, that kind of stuff. So this is essentially a field to be able to change like, you know, like you mentioned with the Neos at the auto populates to be able to.
+Change it to maybe something that\'s shorter because I have a feeling the use names are probably pretty long, so that\'s certainly an option. Keeping in mind though that the name does have, I\'m gonna try to show that again one second. Here we go. Those have some.
+Validation in place. So you\'ll see here what I did was I typed a letter and I put a space and that is not allowed. So it\'s going to tell you what is allowed, which is lowercase alphabets, numbers, underscores, hyphens. So that way you know you guys are not making a page that could potentially break something.
+So there is some validation in place here and I think you guys are probably aware of this, but just in case, if you say you have a name and you kind of messed up and you misspelled it and you\'re recreating your page, the way to fix that is selecting your page.
+Clicking on move.
+And then page name after the move. You know, make your correction. We\'re going to do this. Hit next. Select where you want it to move to. In this case, I have my page under KT home. I want to stay there. I\'m going to click next.
+You can see it tells me, oh, hey, you know you actually have something that\'s that\'s going to be adjusted and or has like a reference. And so I\'m saying, Yep, republish that. I want that to happen. Click on move. I want to do it right now. Hit continue.
+That\'s OK. And so now if I were to refresh, you can see this page no longer exists, right? Because I moved it. I go back.
+To where I was before.
+Oops, Nope, it\'s not there. It goes here. Yeah, you\'ll see my name is here and it\'s been updated. I published it from that previous screen that we saw. Anything that is referencing this page should still work because the references for for it should have gotten updated as well.
+So um, yeah, and out of curiosity is as a team had um have had to like move any sort of pages or rename any of the names or anything like that as of yet.
+
+**Carlos Aldana** 54:33
+Yes, images, yeah.
+
+**Daniela Tea** 54:35
+OK.
+
+**Edwin Aquino** 54:35
+I believe we, yeah.
+
+**Daniela Tea** 54:37
+Perfect. OK. Yep. Just making sure. Sounds like you guys are using it just great. So that\'s perfect. All right. Yeah. Yes.
+
+**Edwin Aquino** 54:43
+Uh, Daniela, with the move, however, so we did notice that the page broke, right? The previous link. Um, what if?
+
+**Daniela Tea** 54:48
+Yes, the. Yeah, because, yeah, yeah, yeah. Sorry, go ahead.
+
+**Edwin Aquino** 54:52
+So no, I\'m just saying in cases that where we still need people like if they have the old link to redirect to the new one, is that what we would use the vanity URL for to have that old link as well?
+
+**Daniela Tea** 55:03
+So, OK, so the purpose of the VAD URL is I\'m actually gonna let\'s, you know, like for let\'s take the International Women\'s Month page as an example. That\'s an established page. It\'s not getting moved, but you want people to access it by having like a more user-friendly URL.
+Vid URL essentially. So that\'s the purpose of Vid URL. The page is there. The Vid URL is just going to take that user to the page that you have established in AEM, but through a different URL. What you\'re asking for though is like previously we saw I had KT Media. I have now changed the name to KT Media SKFJH.
+
+**Edwin Aquino** 55:22
+Yeah.
+
+**Daniela Tea** 55:41
+You, however, have a link to KT Dash Media, correct? So that would be like an actual redirect that that needs to be set up. So I think there\'s a couple of ways you could go about doing that. I think I I mentioned previously that there have been some redirect rules that were.
+
+**Edwin Aquino** 55:45
+Yes.
+
+**Daniela Tea** 56:01
+Established in the dispatcher, we\'re gonna be covering more about that. Those are like including the ones that have been added from Visergy and migrated over. So one of the URLs, for example, for the International Women\'s Month that was established I believe in Visergy maybe last year, the year before or something that got migrated over that\'s in the dispatcher.
+You guys don\'t have to worry about that. What you guys would do here though for a redirect oops, I\'m gonna click properties.
+So under the advanced tab there is a there\'s a redirect feature. However the way what this is saying though is that my specific page that I had for not the one I just did, my specific page can be redirected to someplace else and this is considered a permanent redirect.
+So what I did with the naming portion, that changes all the references within AEM and stuff. However, if you were to have like KT Media, you can establish the KT Media page, then redirect to my new KT Media page by setting it up here, having a KT Media page point to the new one.
+If it\'s permanent, set it there. So that\'s that\'s one way to do it. Again, the other way would be to do the redirect through dispatcher, like creating a rule for there for a vanity URL. I think if you\'re saying that the page no longer exists.
+There is a rule for media URLs where you are not able to add an existing page here. So I think what you\'re describing is if it was actually well it would just be like slash media or something like if what we would have before would go here and that should work because the page.
+No longer exist in AEM, but I just want to make sure you\'re aware of like some options. Dispatcher for redirect rules. If you had an existing AEM page that needs to redirect to another AEM page, you would do that here and then the VADI URL needs to be a page that doesn\'t actually exist in AEM.
+
+**Edwin Aquino** 58:03
+OK. That clarifies that. Thank you.
+
+**Daniela Tea** 58:04
+Hi.
+Yeah, all right. OK, so we\'re taking a look at our KT Media page so we can see where these titles are all populating.
+OK, so title again, very important. It\'s a required field. You need a title for your page that gets populated in the title field because I\'ve appended a a brand slug. You\'ll see I had override KTM brand slug that is also part of the title.
+So we\'ll see how that displays here in the title tags. I think you guys are familiar. This is you adding any associated tags that you might want for the page. This might affect things such as we\'re looking at lists for example. Edwin, we were looking at like say we want a list that has this tag on it.
+Then it would surface up whatever you applied here. So that\'s what this is is used for. The hiding navigation checkbox is used for things like the main navigation or the OR like the breadcrumb. There are components that specifically will pull in pages if you don\'t want.
+That this page to appear in those components because say it\'s it\'s on a page you just want surface to user. You can select this and it would hide it from those components so it doesn\'t appear in like say a site map or something. Scrolling down our HTML ID field. Now this is something that would be applied like you know into the markup so that way you would be.
+Be able to essentially attach it. I think it\'s at the. Let\'s see if I can find it. KTIT. So I don\'t think it was added because I put some spaces in it, but essentially this is what\'s going to be.
+Added as like a a HTMLID so it you know the page can have like a unique identifier. For more titles and descriptions we can see how that gets inherited. Let\'s see.
+YouTube Media.
+T Media navigation title. I think the page title itself check this. Yeah, so this is actually the page title is an AEM. It\'s related to AEM. So when I drag the title component onto a page, it\'s going to take whatever\'s here versus what\'s here. If I leave this blank, it just.
+It\'s going to take what\'s in this field, so none of these are actually necessary. As you can see, they\'re not required. But if you do want to establish, say like you know the title should be using this versus this when it\'s on a page, that\'s what you would put here. The navigation title, as we can see, populates.
+Here in the OG field, OG title field here. I think there\'s a couple other places too. So we see Twitter title, data page title. Yeah, so you can see where this is coming in.
+In.
+OK, the subtitle. I think Edwin, you had that question about what is subtitle field documentation wasn\'t extremely helpful for certain. It basically says this is a subtitle for the page. This can be used as when you\'re referencing.
+In components you might want to use this property so that way say your author has supplied something here and they want it to be displayed on a page without them having to edit it on the page. So right now we are not using the subtitle field, however I think.
+If you guys say we\'re using the eyebrow text field within the title component, instead of having it editable on the page, it could theoretically point instead to the subtitle and you guys can manage it here. So that way the title and say the subtitle are both coming from the page properties versus having to edit it on the page.
+So that\'s something that could, you know, potentially be an enhancement. But right now this specific field is not something that\'s necessarily used because we have the eyebrow field and the title component as essentially open text, but something that could be used in the future if desired.
+
+1:02:16
+Got it.
+
+**Daniela Tea** 1:02:17
+The the description field KT media description, we can see where that\'s coming in, how that populates in these areas. So this these these specific values as mentioned I think for SEO purposes hopefully.
+Edwin, if there\'s like specific questions about like open graph or you know like how like how these affect SEOI would, you know, I could certainly take those questions back to the team so you know and provide more information. But was there something specific SEO wise that you\'re curious about?
+You know from the page properties.
+
+**Edwin Aquino** 1:02:55
+No, I believe it was just mostly those specific categories. And then I know on some of our CMSS we can indicate a specific Twitter handle whenever we\'re associating with Twitter. Is that something that\'s on here as well?
+
+**Daniela Tea** 1:03:06
+Hmm, an associated Twitter handle. As in, I\'m sorry, can you like, can you like explain like like does it?
+
+**Edwin Aquino** 1:03:13
+It.
+So it\'s whenever we share, whenever we share this, it\'ll automatically on Twitter, uh, attach that, um, handle to the link.
+
+**Daniela Tea** 1:03:21
+I.
+OK, I I see.
+
+**Edwin Aquino** 1:03:26
+To the ship, yeah.
+
+**Mayte Eme** 1:03:27
+We have a section that I\'ve called out before that is a gap where we can set per site certain settings right their time zone. How do they prefer that day and time format? There\'s social handles for like a few things.
+On other metadata fields and that\'s per site and that way when we have those sharing widgets, it gets associated.
+
+**Daniela Tea** 1:03:52
+So let\'s let me go back to the homepage template then. And again, you guys realize the reason why it\'s saying no page found is because this was the page that we had renamed and moved. But I\'m going to go to the homepage and make sure I again understand what you\'re just saying. Maite, you\'re saying per site meaning.
+Say like the Hard Rock website or a specific hotel site, is that what you\'re referring to?
+
+**Mayte Eme** 1:04:15
+Every single website in Cycord.
+
+**Daniela Tea** 1:04:20
+Right. So, so like that\'s what I mean like, so like the Hard Rock site, a specific hotel site, a specific cafe site, et cetera, et cetera, like all of them at that site level, meaning not all these pages, you wouldn\'t set it there, but you would set it at like the Hard Rock site level or the Atlantic City site level or the San Diego site level, is that right?
+
+**Mayte Eme** 1:04:25
+What?
+Yeah, those are site level for like languages, formats, associated content, like bunch of settings that we have per site.
+
+**Daniela Tea** 1:04:39
+OK.
+Mhm.
+Yep. So what I\'m hearing then is that it sounds like as we had talked about with the home page template. So each site we know would have a a essentially like a home page. That\'s where we\'re setting things like the theme and then the child pages inherited.
+It sounds like what what would be needed in the future is to expand a little bit on on the tabs that we have. So it sounds like perhaps the custom common tab which is present you know on the homepage template but can is also present on a child page.
+We might need some additional fields to be able to set some of those site wide variables that you\'re mentioning. Maite. It sounds like you mentioned social media. I\'m sorry, I don\'t remember what else you said, but if it\'s site wide and you want the child pages to inherit it, it would certainly make sense to expand upon these custom fields that are added.
+Um uh to the page template.
+
+**Mayte Eme** 1:05:39
+OK. And just because you\'re showing this, if you can, is there a place where it\'s enterprise wide? We have both site level and enterprise level where it goes through every single website. We we call it like master site and whatever we put there, it gets pushed to every website.
+
+**Daniela Tea** 1:05:49
+Enterprise level.
+Oh.
+I see. So I think right now, so the home pages are being set underneath the line of business, right? So like, but what you\'re saying is even like above here, right? It\'s like above like at this level is what you would be wanting to set like some global properties that would then be inherited by every.
+
+**Mayte Eme** 1:06:10
+Mm.
+
+**Daniela Tea** 1:06:17
+Anything that\'s underneath it, is that what you mean Maite? OK, got it. So that to me, yeah. So right now we do not have it at that like at the very top level that you see here because it was all done within the homepage level which would be per site. So sounds like you know that could be an opportunity for.
+
+**Mayte Eme** 1:06:19
+Yes.
+
+**Daniela Tea** 1:06:37
+Or perhaps say like a specific new template that\'s created or something that should be handled at a more global level and then more specific fields for the site level etcetera. So I think this is the kind of information that would certainly need to be captured for the gap. Currently it is not part of what was done.
+The implementation.
+
+**Mayte Eme** 1:06:58
+And I\'m sorry I bought it in. Edwin, I don\'t know if your question but answer.
+
+**Edwin Aquino** 1:07:04
+No, no, my question is answered. Thank you.
+
+**Daniela Tea** 1:07:07
+All right.
+
+**Edwin Aquino** 1:07:07
+I think it, yeah.
+
+**Daniela Tea** 1:07:09
+OK, alright, so let\'s see here. We talked about the so as mentioned before these these specific tabs are essentially out-of-the-box. We we covered how the for the basic tab that one slight change of any URLs and and how to.
+The proper way to set up a fan URL due to the shortening roles. We talked about the custom tabs that are present on the page properties, as well as how the content author would interact with setting up a new template, how it requires.
+You know some development as well as an admin to essentially say set up the folders like you were discussing Edwin for a specific line of business. We also discussed how there\'s a template author group, so not everybody would have access to that section to be able to create new templates or edit templates so that can be restricted.
+Let\'s see, what other questions do you guys do you guys have with regards to templates?
+
+**Mayte Eme** 1:08:13
+Maybe this was asked, but if we create a template, can we use it on any site like at a master level or is it per site too?
+
+**Daniela Tea** 1:08:22
+Yeah, so yeah, no problem. Um.
+
+**Mayte Eme** 1:08:24
+If you ask that, I can rewatch it so you don\'t have to waste that.
+
+**Daniela Tea** 1:08:26
+No, no, might say it\'s OK. Yeah, let\'s just show that right now because at the templates right now, currently all these templates that we see here can be used by every site. There was a question that came up like.
+
+**Mayte Eme** 1:08:40
+And your first three templates because we might not want to use some on some sites.
+
+**Daniela Tea** 1:08:45
+So there was a question that came up about how could things be say restricted for like say casinos, like could there might be some casino specific templates or cafe specific templates. So that can be set up by an admin right now. Currently these are all global, but you know if if it\'s determined that certain.
+
+**Mayte Eme** 1:08:47
+Oh.
+Yeah.
+
+**Daniela Tea** 1:09:06
+things should not be at a global level. That can certainly be set up by a site admin. I\'m sorry, an AEM admin.
+
+**Mayte Eme** 1:09:13
+OK, I was gonna ask, is that an admin as in power user or like a developer admin?
+
+**Daniela Tea** 1:09:18
+So there, so there\'s a couple different levels and it depends on what group you\'re in. I believe there is an admin group. We would need to check to see who\'s part of that. There\'s also a template authoring group. So that means someone who can actually create a template. I think typically that\'s going to be like your your developer and then there\'s going to be.
+I think the Super users might have their own group. I\'m not sure if they would be considered template authors or not, but say people who might need to create templates based off of policies a developer had created, etc. So there are different groups and there could be different permissions that are set up for that. So depending on you know who should have access to what.
+That can certainly be adjusted. Right now though, all of these templates are global and they can be edited and new ones can be created by the template authoring group.
+
+**Mayte Eme** 1:10:09
+Can you restrict sections of the template?
+
+**Daniela Tea** 1:10:13
+Can you restrict? Um, so let\'s open up a template and take a look. I\'m going to open up.
+
+**Mayte Eme** 1:10:18
+I think you don\'t want you you know we have and this happened with cafe right sections that we don\'t want people to touch that are managed by corporate. So some sections that are like shared or pushed by corporate to properties we don\'t want the content others to.
+
+**Daniela Tea** 1:10:34
+Right. So yeah, so you\'ll see here you can lock a structure component. What that means like right now it\'s it\'s open, right? You can see that the lock is unlocked. But yes, there are features to be able to lock certain parts of the page. I think some might say just really quick because I we I would recommend.
+
+**Mayte Eme** 1:10:35
+Touch.
+Oh.
+
+**Daniela Tea** 1:10:53
+Watching the earlier part when you do get a chance because we talked about initial content, but the initial content is set to be able to allow a content author to change things that are on there. As in when they create a page based off of this template, this is what they\'ll see, like they\'ll see this image, etcetera. However, at a structure level.
+
+**Mayte Eme** 1:10:54
+OK.
+
+**Daniela Tea** 1:11:12
+Level. We\'ve established exactly what is allowed on the page, and if I need to lock some things down, yes, that can be locked down at the structure level.
+
+**Mayte Eme** 1:11:16
+Mhm.
+OK, that\'s good. And last question I can think of just from you know what we have on on or issues that we have had another on inside court. If you edit the template and you push it, does that update the pages using that existing template or do they need a a refresh?
+
+**Daniela Tea** 1:11:30
+Mhm.
+Yes, so Eddie. So yeah, there\'s a message here that mentions how this specific template is being used by one or more pages. So this is live. I think there\'s pages using it. If you edit it, your question is if I were to add, say like a new component or a section here, what happens to the pages that are already referencing it, right?
+
+**Mayte Eme** 1:11:48
+Mhm. Yeah.
+
+**Daniela Tea** 1:12:00
+So you would have to publish the template and you can actually do it from this view like you can see published template. It should essentially tell you. I don\'t want to do it here just because I know things are using it, but it should tell you like the ones that are using it are going to be updated like kind of.
+
+**Mayte Eme** 1:12:01
+Yeah.
+
+**Daniela Tea** 1:12:20
+You a warning, but you would publish the template to make sure that those pages get those updates.
+
+**Mayte Eme** 1:12:26
+So let\'s say that you added a row, you publish and that gets added and it\'s live before you had a chance to edit those pages. Or is there like a draft state where you can validate that you got added, add the content?
+Or update the content and then publish live.
+
+**Daniela Tea** 1:12:46
+Let me repeat what you said. Make sure I understand. You\'re saying I\'m on my news page, my news home template. You want to add. I\'m gonna go to the initial content section. You\'re saying you want to add like something here, something.
+
+**Mayte Eme** 1:12:52
+Uh huh.
+OK.
+Yeah, let\'s say we got a Yeah, what we add a new component there.
+
+**Daniela Tea** 1:13:05
+You add a new component there. Your question is, does any news homepage template now have that component in place or do you need to republish the page? Is that correct?
+
+**Mayte Eme** 1:13:16
+So when you when you add the component you publish it, does it automatically get live in every single page that is using the template? Or is there a chance to actually go to those pages and update the content before it goes live? Because each page might need different content.
+It\'s a placeholder for each different property to update in.
+
+**Daniela Tea** 1:13:36
+I see. So there\'s a difference between initial content and structure, right? So with my structure I\'m adding, you know, I can add, you know, different parts of the page, whereas the initial content.
+
+**Mayte Eme** 1:13:42
+OK.
+
+**Daniela Tea** 1:13:52
+Is adding like actual content to the page, right? So like in this here you can see this experience fragment has been filled out. Any pages that use this specific template when they first create a page based off this template will always see this. They have the opportunity to change it, right? So it sounds like what you\'re asking is you want to add say like a.
+On the page, but you want the page to be able to like the page author to be able to select what content goes in that section. Is that correct?
+
+**Mayte Eme** 1:14:20
+Yeah, mm-hmm.
+
+**Daniela Tea** 1:14:21
+OK, so yeah, so adding the structure doesn\'t actually add like like content. When I say content, I mean like if you have like a title, like it wouldn\'t have like like specific text in that title. If you had a title component on there, the title component will will be available to the author, but you know they would have to.
+
+**Mayte Eme** 1:14:36
+Mhm.
+Mm.
+
+**Daniela Tea** 1:14:41
+Still, like, configure it, right? So it sounds like that\'s what you\'re asking for, right? OK, yeah. So structure is where you would be like essentially setting up the structure of the template, like what should go there. You know, if I add a container, I\'m determining exactly what components I want a.
+
+**Mayte Eme** 1:14:46
+Yes, uh-huh.
+
+**Daniela Tea** 1:15:00
+An author to be able to add. In some instances I might not want them to add everything as we saw with like the footer. We don\'t necessarily want like a huge media gallery being added by mistake, so we\'ve restricted what can be added within the footer. So you can see here allow components because this is like the main container of the page, we\'re allowing every component.
+But if we wanted to remove something the that can be that can be determined by selecting one second. This was checked. I thought this one this was checked. I\'m going to hit cancel. I\'m not going to say this, but this can be, you know, determined like if I just wanted three components to be allowed in that section we can.
+Do that at the structure level.
+
+**Mayte Eme** 1:15:40
+M.
+
+**Edwin Aquino** 1:15:44
+So basically like you can add that component to the page and it I think the the big part of of my taste question was rather than pushing it all live all at once, we can go in and check which pages, how the pages were updated before it gets published. Is that is that like a a step in the process or as soon as we make the change to the template it\'s all live where?
+
+**Mayte Eme** 1:15:45
+OK.
+
+**Edwin Aquino** 1:16:03
+There\'s not really anything we can do about that. It\'s it\'s there and we just have to go and check it and change it manually, even though it\'s not.
+
+**Daniela Tea** 1:16:08
+So I think, I think what I what I want to understand though is like if you\'re adding like I can add any component to in the structure side of things and it\'ll be empty, right? So even if I were to, if I were to publish it like that page in the authoring side.
+Let\'s see, let\'s take an example of my KT media page. Yes. All right, so my page might have like a empty container component or whatever have been established in the structure. Say it had, I don\'t know, like a.
+
+**Mayte Eme** 1:16:42
+Mm.
+
+**Daniela Tea** 1:16:44
+Like a I\'m trying to think like a text component. Oops. So you added a text component for a reason. It\'s there, but it\'s empty because in the structure you\'re not setting initial content. Does that make sense?
+
+**Edwin Aquino** 1:16:55
+Got it. So it\'ll the the the structure will be there and then you can always change it and add whatever you need to afterward. It\'s it\'s just adding that portion there for you. But if you wanted the actual content, that\'s when you would do the initial content.
+
+**Daniela Tea** 1:17:04
+Yes, so.
+You you would do the initial content so that if if you wanted every page that creates a template to have that right. So like as we as we saw for what\'s it called the news page template, it will always display that banner because that was set the initial content level. However when I create a news page.
+I\'m going to do that here. Let\'s see that in practice. I think it\'s news page.
+Oops, let\'s do this. So my initial content that appears, this appears, right? I didn\'t set it, but that\'s because initial content was set. However, I still have the opportunity to change it out, right? So what I what I heard you say, Maite, is say you wanted to add.
+If you had a a like you know, say a title field or a text field. I\'m just using random components. You would set that structure level that would still that would appear on my page, but it\'s empty. You didn\'t set any content on it. So at a page level you would then have to configure it per page.
+
+**Mayte Eme** 1:18:11
+OK, OK, so it\'s not gonna show the page life is not gonna have this blank gap or OK.
+
+**Daniela Tea** 1:18:17
+Oh, right. So it it shouldn\'t take up like space if it\'s empty, right? Yeah.
+
+**Mayte Eme** 1:18:23
+OK, OK.
+
+**Edwin Aquino** 1:18:24
+OK, and Danielle, a question. This may sound a little confusing. Are we allowed to have a template of a template? So for example, you\'ll have a template that pulls in the structure. You have one template for the structure and then you have sub templates.
+
+**Daniela Tea** 1:18:27
+Yes.
+Somewhere with some movements.
+
+**Edwin Aquino** 1:18:39
+Based on the initial content. So let\'s go back to like the news example. We have that, we have that initial structure set up for the news, but we have, you know, six different casino properties that have different things pointing to different experience fragments as their initial content. Is there some kind of like?
+
+**Daniela Tea** 1:18:42
+OK.
+OK.
+
+**Edwin Aquino** 1:18:56
+Where we can have that set up.
+
+**Daniela Tea** 1:18:57
+OK, so one when you create. So when you create a new template you can see here I\'m able to see what templates I can build against, right? So like open page which was that open page template that we saw was created specifically for this project.
+
+**Edwin Aquino** 1:19:10
+OK.
+
+**Daniela Tea** 1:19:15
+What you\'re asking is if I were to click this and I were to. By the way, I\'m going to delete these from the stage environment later, don\'t worry.
+
+**Edwin Aquino** 1:19:16
+OK.
+
+**Daniela Tea** 1:19:25
+You\'re asking if you could set initial content separately on here, so that way it you can reuse it over and over again. OK.
+
+**Edwin Aquino** 1:19:38
+Yeah, basically.
+
+**Daniela Tea** 1:19:39
+I think I would want to get I would want to get back to you on like the precise answer because I think what you\'re what you\'re basically asking for is like kind of like how it\'s like shared content and then also if you were to like I\'m assuming and correct me if I\'m wrong if you were like to update the structure in one would it update the structure in.
+
+**Edwin Aquino** 1:19:57
+In all the other templates, correct?
+
+**Daniela Tea** 1:19:57
+Yeah, that\'s what. OK, yeah, I want to make sure I understood why you\'re asking that. Yeah, let me get back to you on a more exact answer for that, because I understand what you\'re. I understand what your use case is. I could totally see why you would want initial content for different sites that may use a similar structure. OK.
+
+**Andy Lambert** 1:20:04
+Yes.
+Hey Danielle, I would say that the the short answer is yes, there\'s definitely a path to do it. What we what I would want to do is go and figure out like what the happiest slash best practice path is. There\'s several, well, there\'s several ways to go about it, so.
+
+**Daniela Tea** 1:20:15
+Yeah.
+Yeah.
+Yeah, that that\'s exactly what I\'m I\'m. I want to make sure I can explain it. But yeah, the short answer is yes, but I want to make sure I explained it properly to you, Edwin. So let me get back to you on that one.
+
+**Andy Lambert** 1:20:31
+Yeah.
+
+**Edwin Aquino** 1:20:40
+Yeah, \'cause that\'s a that\'s a important thing. Like if we have so many different newsrooms, which each of them have their own specific experience fragment, we definitely wanna make sure that\'s easier on the author to easily just pull in that template and be ready to go with whatever content they need rather than having to.
+
+**Daniela Tea** 1:20:48
+Mhm.
+
+**Edwin Aquino** 1:20:56
+You know, switch each and next every experience fragment, yeah.
+
+**Daniela Tea** 1:20:57
+Yeah.
+Yeah, understood. Yeah, no, great question. So we\'ll work on getting back to you on that one. Let\'s see. So I\'m gonna pull back up the agenda again.
+OK, so oh error page, let me show you guys. So we we kind of talked, you know we talked about like the custom templates, what blank page would be used for. This is another quote UN quote custom template. You can see 2 pages, right? 2 pages right now on stage are using it. Right now we have.
+We have the Hard Rock page for careers I believe is using this. So if I were to take a look at what it is, my errors section, my 404 page in the error section is using this template.
+So you can see what the page looks like.
+There\'s really not, you know, too much difference from like the open page that we saw. However, if we were to take a look at the structure, one thing it does have that we saw other sites like the open page did not have is a site map template is is here in this specific template.
+Right so the site map component is here. If I were to click on initial content right now the site map is not actually pointing anything because I think this page is actually this page is is still in progress since it\'s.
+For the career site, but that\'s the reason why there isn\'t our template to make sure that the site map was available as part of the structure. So if I were to create a new page right now using that errors template.
+We could see I have in my sections.
+No, it didn\'t show up. We can see I have in my sections, my containers, my site map is not here because I believe the site map. OK, yeah, so root path of site map. So this here I think we\'re still this one must still be working.
+This here the expectation is if initial content had been set for the site map, like say we had set the site map to use to point to a specific section, then that would display here within my KT errors page. I\'m going to take a look at this 404 one.
+Mhm.
+So here we\'ve added quite a bit of content for this page. Believe the site map is something that you guys are using on the hardrock.com site.
+Yeah, so this is essentially the section that appears within error pages. I\'m going to go actually to prod so we can take a better look at this.
+I\'m going to go to the prod error templates.
+So error page. So I\'m selecting this. Actually we\'re going to see how many pages are referencing it.
+OK, so no pages right now are referencing it. However, OK, this must be a new template that we created and we can we can use it moving forward. But let\'s see here. So yeah, no pages currently are using it. What we probably did for this page is use an open page template.
+But the intention of the error page though is as you saw before, there\'s a section for site map which is not present on the open page template. So that way anytime you create an open, create a site map, create an error page.
+For a new site, it would always have that site map component. So here\'s our open template. You\'ll see it had the hero banner established as initial content, the breadcrumb as initial content within those within this section of the page.
+So I think hopefully you guys can kind of see how the page templates right now are pretty broad, pretty global. But like to your point, Edwin, we understand though that you guys are probably going to need to set up some specifics for like say a line of business or even specific sites.
+Within those lines of businesses. So while we have established some, you know, quite quite open templates for you guys to start with understanding like what exact fields you guys need to display to the author, what initial content needs to be displayed based off of the site that you\'re on, that\'s going to certainly be things that I would.
+Imagine that that the team would need to really kind of map out. So that way again, this is all for the ease of authoring and making sure that things are uniform and gives the author the right guardrails for them to be creating pages moving forward.
+So hopefully you guys now understand more about like the different templates that have been available. We\'re going to go over the messy burger and the microsite template. I think Monday is our next session, yeah.
+So we\'re going to go over that because I want to show like actual examples, including the initial content, how it is when I create the page, but then also a finished example of it and my plan for next week is also to go over.
+Just gonna click here some additional navigation and data displays. So we talked about the alert aggregator component that\'s present as part of the structure on the templates. We haven\'t actually seen the example, so we\'ll go over how that works.
+As well as things like breadcrumb, the list, the site map, the drop down, language selector, sub NAV, micro site navigation and page template like I mentioned before, content carousel. So there\'s some additional components that I think I might add to the section, so I\'m going to take a look.
+But we have three more sessions next week and ideally we\'ll be able to have covered all the ticket items that were identified and listed in the SOW. And then on Thursday we are beginning the technical knowledge transfer.
+With Andy, who will be going over things such as release management and development processes, best practices when it comes to AM development, that sort of stuff. So wanted to see though if there\'s questions about what we\'re going to be covering.
+Or anything else you guys wanted to share about today?
+
+**Edwin Aquino** 1:27:47
+Yeah, Daniela, I have one more question. When it comes to the templates, is there any way we can limit specific templates based on the location in the tree in the in the structure? So let\'s say if we\'re under cafe, it\'ll only show these specific templates. Is this something an admin can also set up?
+
+**Daniela Tea** 1:28:02
+Hmm, I do believe you should be able to restrict it, Andy. I don\'t know if you\'re listening or not, but I believe that would that would have to that would be set up by the admin as well as like some like permission and user groups that et cetera, et cetera.
+
+**Andy Lambert** 1:28:15
+What happened? What\'s the question? I\'m sorry, I was not paying attention.
+
+**Daniela Tea** 1:28:17
+No problem. That\'s why I said your name. Question is about how how do you restrict a template? And correct me if I\'m wrong, Aaron, how to restrict a template to only be used in certain parts of the site? Is that correct?
+
+**Edwin Aquino** 1:28:30
+Correct. Yeah.
+
+**Andy Lambert** 1:28:31
+Yeah, absolutely. Yeah, absolutely. Yeah, you can definitely do that.
+
+**Daniela Tea** 1:28:34
+But that yes, so that\'s. But again, Edward, that\'s not gonna be like you as a content author wouldn\'t be able to establish that. Wanna make sure it\'s clear.
+
+**Edwin Aquino** 1:28:35
+OK.
+
+**Andy Lambert** 1:28:39
+No.
+Yeah, it\'s a policy setting. So I would be like a super author that has privileges, you know, basically a a permissioned user and would be able to do it.
+
+**Edwin Aquino** 1:28:42
+OK. Yeah.
+
+**Daniela Tea** 1:28:51
+Mhm.
+
+**Edwin Aquino** 1:28:51
+And it\'s, it\'s sort of ties in with my question earlier about like the templates of a template. That way we have, you know, we have let\'s say a property specific templates for Bristol, right? We would have their templates under their. So whenever we get a quick land page under their section of the site, it\'ll only show those templates for them rather than all of these other templates that we have.
+
+**Daniela Tea** 1:29:02
+Mhm.
+
+**Edwin Aquino** 1:29:12
+Here, that\'s the idea behind that.
+
+**Daniela Tea** 1:29:12
+Yeah, I think, yeah, understood. So like anything that is established as global as well as anything specific to Bristol is what you\'re looking for when you are in the Bristol section. OK, yeah, yeah, I think I do know that one of Andy\'s topics is gonna be about things like permissions and user groups and things and.
+
+**Edwin Aquino** 1:29:20
+Exactly.
+Exactly.
+
+**Daniela Tea** 1:29:31
+So hopefully we\'ll be able to dive a little bit a little bit deeper into that. But my plan is also everyone for the question you had previously about template within a template. I do want to try to gather some information and get back to you on that and then also maybe some other details about how to accomplish what you just asked as well.
+O hoefully we can cover some of that next week and then additional actual technical details within the technical knowledge transfer.
+
+**Edwin Aquino** 1:29:49
+Alright, probably.
+Perfect. Thank you, Daniela.
+
+**Daniela Tea** 1:29:58
+Thank you. Yeah, go ahead, Magic.
+
+**Mayte Eme** 1:29:59
+One question, I don\'t know if this was asked. Can we change templates? Like if page A is using template one, can we just change it to template 2 and apply it?
+
+**Daniela Tea** 1:30:12
+You\'re talking about like an existing page that\'s like published. So I I do not think you\'re able to do that. Like you\'re basically saying I want this page to be converted into another page.
+
+**Mayte Eme** 1:30:16
+Yeah.
+
+**Daniela Tea** 1:30:28
+Maybe it has a similar structure, but I think the The thing is it wouldn\'t. You are not able to do that as an author. You\'re not able to do that at all.
+
+**Mayte Eme** 1:30:36
+Oh, OK. We\'ll just write it down. Thank you.
+
+**Daniela Tea** 1:30:41
+However, I guess my question though might say is if you can give me an example like a like I guess like an example of like what you are expecting or hoping for. I can perhaps give a slightly better answer like a more detailed answer.
+
+**Mayte Eme** 1:30:55
+We have come up with new templates based on whatever needs, right? And then we see, oh, this template can actually fit this existing page or we do a whole revamp, not just an enhancement of existing template because we want to leave it like that. We need another variation. So a new page that gets created and we want to apply it to existing pages.
+Without replacing. So it\'s not like replacing the existing, it\'s an additional temper that gets created.
+
+**Daniela Tea** 1:31:20
+OK.
+
+**Mayte Eme** 1:31:26
+Yeah.
+Yeah.
+Yeah.
+
+**Daniela Tea** 1:31:41
+OK, um, yeah, I.
+Andy, if you\'re listening, we might need to take this one offline. Right now there would be no way to do that from like a content authoring point of view. I\'m not sure if like programmatically from the back end side of things, perhaps that could be done, but yeah.
+
+**Andy Lambert** 1:31:57
+Do you? Do you what, Danielle? You busted me again.
+
+**Daniela Tea** 1:32:00
+I know converting a page from 1 template to another.
+
+**Andy Lambert** 1:32:06
+No, it\'s not not a not a happy path for sure.
+
+**Daniela Tea** 1:32:10
+Yeah, that\'s that\'s exactly it. But but my day, let me, let me do a little bit of thought, try to gather some information. I\'ll write that down and and see if I can provide a better answer to you on Monday, OK.
+
+**Mayte Eme** 1:32:21
+OK, and another last last thing that that made me think about is can we have different template versions for different languages?
+
+**Daniela Tea** 1:32:26
+Mhm.
+Different as in like this open page like would would the structure be different or just the content or?
+
+**Mayte Eme** 1:32:35
+So but then one let\'s say.
+The structure. So content is easy because I know we can localize per language, but we\'re actually looking at the Japan site right now and we\'ve been in discussions under the templates that we have. It\'s the same content, but in a different way because it\'s a completely different culture. They read differently, not to mention right to left or up and down, whatever that is.
+
+**Daniela Tea** 1:32:45
+Mhm.
+
+**Mayte Eme** 1:32:59
+So it\'s kind of like the same content, but in a different template structure, if that makes sense.
+
+**Daniela Tea** 1:32:59
+Mhm.
+Oh.
+Yeah, I\'m.
+
+**Andy Lambert** 1:33:07
+I\'m saying similar with with other projects and customers. Um, so don\'t quote me on this, but I believe that there there there is a.
+
+**Mayte Eme** 1:33:15
+OK.
+
+**Andy Lambert** 1:33:21
+I don\'t know if it\'s happy, but it\'s not unhappy path. There is a way to do it with. Yeah, yeah.
+
+**Daniela Tea** 1:33:24
+Neutral path.
+
+**Mayte Eme** 1:33:29
+OK.
+
+**Daniela Tea** 1:33:30
+OK, it.
+
+**Andy Lambert** 1:33:30
+But I\'ve seen so I\'d like I said I\'ve seen something that I remember seeing something that smelled a lot like that and I so that\'s something we could definitely look into and talk about like like look at the what you\'re describing like probably during gap analysis and then and be like OK hone in on.
+
+**Daniela Tea** 1:33:43
+Yeah.
+
+**Mayte Eme** 1:33:43
+Mm.
+
+**Andy Lambert** 1:33:47
+Yeah. Is that exactly the right solution for that? Like different templates or is there another way to go about it that would be a happier, you know, I don\'t know, but but yeah.
+
+**Mayte Eme** 1:33:53
+Mm.
+
+**Daniela Tea** 1:33:59
+Yeah, I was, I was about to say, might say like from like the initial like what you just described, I think I would definitely want to learn a little bit more because you know to Andy\'s point, can you do it versus should you do it like you know, like is that the best way to handle what you\'re describing? I think we we would.
+
+**Mayte Eme** 1:34:06
+Mhm.
+
+**Daniela Tea** 1:34:17
+Want to make sure we understood fully before we prescribe something, but we can certainly do a little bit of research offline based off what we did hear you say. And if we, you know, can provide more information, we\'ll certainly do that sometime next week when we reconvene.
+
+**Mayte Eme** 1:34:32
+Yeah, no, I agree. I don\'t. I don\'t know what\'s the right way to do it. It just, you know, trigger something in my mind. So I\'ll add it to the list and when we get to it, you guys can advise what\'s the, you know, best, best approach for that.
+
+**Daniela Tea** 1:34:36
+Right.
+Yeah, that sounds, that sounds good. My team will certainly ask additional follow-up questions to really pinpoint exactly like what you\'re looking for. OK. All right guys, well, if you guys have any other questions about templates, we I will try to.
+
+**Mayte Eme** 1:34:50
+Mhm.
+
+**Daniela Tea** 1:35:01
+Get up some follow up information on Monday based off of what we discussed today. But yeah, look forward to look forward to covering navigations data displays I think next Monday and then I will be also posting some additional agendas for Tuesday and Wednesday to essentially cover the remaining items.
+Cards is a huge topic, so one of the sessions is probably going to be dedicated all to cards, so look forward to that one as well. But if there\'s nothing else, guys, I think we can end the session for today and I hope everyone has a great afternoon.
+
+**Edwin Aquino** 1:35:39
+Thank you, Daniela.
+
+**Lucas Nelson** 1:35:40
+Thanks, Daniella. Thank you. Thank you. Bye.
+
+**Daniela Tea** 1:35:40
+Great. Thank you guys very much. Bye everyone.
+
+1:35:41
+Thank you.
+
+**Carlos Aldana** 1:35:42
+Thank you, Sonia. Thank you.
+
+Scott Sorel** stopped transcription
+
+
+## Session: Nav and Data Displays — 2026-03-02
+
+**SHRSS Adobe Knowledge Transfer-20260302_130320-Meeting Recording 1**
+
+March 2, 2026, 6:03PM
+
+2h 13m 51s
+
+**Lucas Nelson** started transcription
+
+**Lucas Nelson** 0:08
+All right, the recording\'s live now. Um, Daniela, if you wanna get started, thank you.
+
+**Daniela Tea** 0:16
+Thanks, Luke. I am pulling up the agenda and I will go and share my screen once that\'s up.
+OK. All right, here we go. Good afternoon, everybody. So we have actually three more content authoring meetings for this week. And so you can see here I do have some agendas and draft where I\'m essentially getting.
+The remaining components that we have not discussed yet and then putting them into the agendas for today, tomorrow and Wednesday. For today we\'re going to be covering navigation and data displays. So you\'ll see this is what I plan to cover for today.
+Tomorrow I wanted to cover things that are line of business specific. So think about things that are specifically on the cafe page, like for example the dining widget. So we\'ll go over things like that for tomorrow and then the final day is essentially going to be like a catch all.
+Anything that was not covered in the other sessions, I want to make sure is within that final session, but also going more in depth into things like the container, which we did talk about in some other sessions, but going into some of the additional properties that we didn\'t have a chance to cover as well as the.
+Card component will be on the last day since I know that\'s something that the team is familiar with in terms of using cards, but we can certainly explore more of the variations and some of those use cases on that final day. But for today though, we\'re going to cover these items and I think.
+For the most part, most of these are things that the content authoring team is familiar with. I\'m not sure if we have ever discussed content carousels. I want to make sure there\'s enough time for that one. But as we go through, you know, I would love to hear if you guys are.
+Currently using these or have any questions about these components since I believe the majority of these are probably used on the corporate or the reverb website. So I\'d love to hear any of the use cases you guys are using these for for the corporate site.
+So I\'m going to jump on over to my test page over here and let me pull it U in author. So a little quick tip for anyone who is viewing a page as publish.
+If you want to quickly get back to the author view, all you do is add slash editor dot HTML after the base URL and then remove the question mark WCM mode equals disabled at the end.
+And so when I click on that, that takes me right to the page that I was just viewing as published, but now I\'m in the author mode. All right. OK, so this is my one of my test pages I was creating specifically for today.
+As you can see here, I have the components listed out and so I wanted to start with our breadcrumb navigation. One second, I\'m going to pull this over here. Alright, OK, so the breadcrumb components as we were reviewing things such as the page properties.
+There are some things that are being driven from the page properties that affect how the breadcrumb navigation works. So what I have here is I had just added a breadcrumb to the page and I\'ll do that again. I\'m going to add the breadcrumb component.
+And you can see here this is what\'s being displayed by default. When I just add the breadcrumb to the page, it\'s showing the page hierarchy starting at Level 3. It\'s not showing any hidden navigation items when I just drag it to the page.
+It\'s not hiding the current page. You can see my KT NAVS page that we\'re currently on is being displayed and with disable shadowing that is unchecked. But I do have an example down here to explain what that means. So by default you can see the start level is set where the base site is in this case.
+In the careers website and then it shows all the child items underneath it and it\'s also going to show the current page that I\'m on so we can see how that is being displayed right now. Now this is the exact same version that I previously had on the page. You can see nothing has been selected.
+However, for this next one, what I\'m showing is show hidden navigation items. So the navigation start level is still at 3:00, but now I\'m showing anything that\'s hidden and So what you can see here is this hidden page.
+So if I were to view this particular page in the sites, you\'ll see Careers, KT Home, this hidden page and then KT Navs. So for my hidden page, what I did was if I clicked on properties, you\'ll see.
+I had checked the box that said hide in navigation. So when we first dragged the breadcrumb component onto the page, this page was not listed in the navigation. However, because it is part of the structure, if I wanted to show that hidden page for whatever reason, I could do that.
+Just by making sure this checkbox is checked. So again, you can see that my KT Navs page is actually not really directly underneath this level where it says Seminole Hard Rock Careers. It\'s actually under a hidden page and I was able to show that by checking this box.
+
+**Lisa Cardia** 6:00
+So that hidden page checkbox that impacts both our site map and this now component just so like I can understand OK.
+
+**Daniela Tea** 6:04
+1.
+Yes, Yep, that\'s correct. So the hide and navigation check box here in the page properties affects the breadcrumb component and the site map.
+
+**Lisa Cardia** 6:21
+OK. And then for the navigational start level, I\'m, I\'m just a bit confused because we say that like obviously it\'s at three, that\'s what it starts with, but like the higher the number, the less it it displays. So I guess.
+
+**Daniela Tea** 6:25
+Yeah.
+Yeah, so, so let\'s look here. I\'m gonna go back. I\'m gonna hit cancel on this so we can see this is 123. So say you didn\'t want careers to be listed. If you started at four, it would start at this level.
+
+**Lisa Cardia** 6:51
+OK. So the start is counting from left to right on the page that\'s going to start. So three starts you on the third level, 4 which would only show you the two. Got it. That was definitely a question of mine. Thank you.
+
+**Daniela Tea** 6:54
+That\'s correct.
+Mhm.
+Yep.
+Yep, absolutely. And so I think what would be like for example when you guys are say setting like a cafe or something, if you put the breadcrumb and you know by default it would start at three, you might, you might need to adjust it just based off of the level, but you could see what level to start at based.
+Off of what you see here in the sites page. So that is certainly something that can be configurable through the breadcrumb component. All right, so we see how this hidden page was listed. Now let\'s take a look at this one. You can see I\'m going to hit preview just so you can so it\'s a little bit clearer. You can see instead of it saying Seminole Hard Rock Careers.
+It actually says KT home O let\'s see what I checked in order for that to display.
+So I have selected disable shadowing and so the reason why this has changed is if I were to go back and look at this page, this KT homepage, I\'m gonna click here on EN. Let me navigate back to corporate careers. Here\'s the KT homepage.
+If I select this and I click on Page Properties and I click on my Advanced tab, you can see I actually had set a redirect to go to the Careers homepage if I go back to my page here.
+That\'s why this is listed, because this is the page that KT home redirects to. However, with disable shadowing checked, instead of showing the redirect, it\'s going to show you know like the the page, the page that\'s a higher level than what I\'m currently on. So like this KT home, which is actually a redirect to Seminole Hard Rock.
+Careers with disable shadowing checked, it\'s going to show Katie Holmes instead.
+
+**Lisa Cardia** 8:55
+But we would be able to access the page. It wouldn\'t. It wouldn\'t just show the page title, but still redirect.
+
+**Daniela Tea** 9:01
+So if I click on KT home, you can see. So hang on, I\'m gonna show this as view as published so you can see what the behavior looks like. So KT home, it should redirect. If we publish this, I might need to publish a couple of things to actually show this. So one second, I\'m just gonna publish some pages.
+
+**Lisa Cardia** 9:21
+OK, just because I can\'t really think of a use case where we would want to show the page if it\'s ultimately redirecting.
+
+**Daniela Tea** 9:25
+Mhm.
+Right. And so I I think for for you guys you would likely either want to hide it, which you could do that right? If you were say this is a redirect you don\'t want in the navigation, then you could simply use the hided navigation feature, but let\'s take a look.
+
+**Lisa Cardia** 9:37
+Yeah.
+
+**Daniela Tea** 9:44
+So what should happen though is it should redirect you to the thing. So I agree Lisa, it\'s likely not something. But if you guys do need it, you know to say something else, like say you don\'t want it to be like a like you don\'t want the redirected title, you want like what the actual title of the pages that you named it. That could be a reason for you guys to perhaps need to use.
+
+**Lisa Cardia** 9:45
+Yeah.
+
+**Daniela Tea** 10:04
+Is that right? So OK, I think I have published everything. This one\'s not published yet, so I\'ll publish this.
+
+**Lisa Cardia** 10:11
+And and just a question though, that doesn\'t impact the redirect in general, right? So like if I again can\'t think of why we would want to use disabled shadowing, but let\'s just say we did and the user clicks the page and then they get redirected. If someone just accessed the URL otherwise it would still redirect as normal, right? Like putting the disabled.
+
+**Daniela Tea** 10:30
+Yeah, a bit.
+
+**Lisa Cardia** 10:31
+This is only for the from.
+
+**Daniela Tea** 10:32
+Yeah, yeah. So that, yes. So this is strictly for the breadcrumb, right? Like, so KT home is actually not like there\'s nothing on the page. It\'s actually just a redirect page. I\'m not like using it. I simply put the in the properties that I want it to redirect to the Seminole Hard Rock careers page. So what it should do is it.
+
+**Lisa Cardia** 10:38
+OK.
+
+**Daniela Tea** 10:52
+Should take you to this particular page, but I\'m trying to publish everything like things work a little bit different in the author. Always keep that in mind. You know some things are are going to function differently, so you need to like if I\'m trying to just click around on here because it\'s like taking into account you know.
+The how do you say like the interface on here and stuff. Not everything\'s going to work exactly the same as when you actually publish the pages. So it takes the properties that were that you\'ve applied when you view page properties and all that stuff. So that\'s why I\'m trying to publish the page so we can take a look at the exact behavior when I click on KT home.
+
+**Lisa Cardia** 11:24
+OK.
+
+**Daniela Tea** 11:31
+Should do though is it should redirect you to this page.
+
+**Lisa Cardia** 11:31
+But.
+To be clear though, disable shadowing just means you\'re using the original page title. But other than that, it\'s still the same exact experience. If we didn\'t use disable, it would just show the redirect page title. OK, so it\'s just I just I\'m taking some notes, OK?
+
+**Daniela Tea** 11:39
+The.
+That\'s correct. Yep. So if I were to put this, yeah, if I uncheck this and I hit done, you can see how it it puts back that Seminole Hard Rock careers page, which is what I had redirected to. Yep. All right. And then this one here, this was just showing all the combination of disabled shadowing.
+
+**Lisa Cardia** 11:54
+That right here, OK.
+
+**Daniela Tea** 12:04
+And show hidden navigations kind of the same as what we had above, but just wanted to show, you know, like depending on what you check, your breadcrumbs certainly could look different. And if I wanted to hide the page I was on for whatever reason, say because you have a very large title on the page that you would rather have that be.
+The focal point you can see here I do not have the name KT Navs on here. Instead I just have the pages before KT Navs listed since I have hidden the current page from the breadcrumb navigation.
+Hey.
+All right, let\'s see. And one more thing to think about as I find my editor. This is.
+
+**Lisa Cardia** 12:50
+My my question was going to be more for the team and I don\'t know if this would be on the Adobe side or internal, but I did notice that this component, you know, comes with let\'s just say like the open page template, but we like currently don\'t use breadcrumbs on our sites. I mean, I know that there\'s some pages such as like The Newsroom, but not on our typical inner pages.
+So I just wanted to know if there\'s a way to remove that just from all feature page templates or is that just something the internal team needs to do? Because I did notice it comes with it.
+
+**Daniela Tea** 13:21
+Yeah. So I think last week when we were talking about page and yeah, Lisa, sorry, I believe you probably missed that specific one. Yeah.
+
+**Lisa Cardia** 13:31
+Yes, I I know you were talking about which templates to use, but I I know my team did tell me open page over content page. But I\'m just curious if we could remove like the breadcrumb from that since we wouldn\'t have a breadcrumb on our inner pages.
+Typically today.
+
+**Daniela Tea** 13:47
+Yes, yes. So we last week we were talking about how you can edit the templates in terms of like the structure, the initial content, that sort of stuff. So let\'s see here for our open page template.
+When we talked about initial content, we do have this breadcrumb here editing templates. So you know, since it\'s not a draft, definitely need to be mindful of the changes that you made. However, there is, you know, I understand as you\'re creating it, the breadcrumb is automatically there.
+While you can edit the templates in the future, you know like we\'re we\'re not trying to change anything right now, but if you\'re trying to remove things or add things as initial content to the template, you can certainly do that if you have the correct privileges to access templates and author them.
+So that can that change can be made and as you guys are planning out your templates for future sites, anything and you know there could be a page that might have a breadcrumb, like you might determine that there are some pages that should have the breadcrumb on it. You can certainly add that there, but in order to delete it though, you need to be able to have author privilege.
+To templates and I do believe Lisa, your team should, but not everyone would have access to be able to like mess around with the template.
+
+**Lisa Cardia** 15:07
+OK, I can connect with the internal team and it will probably be like my taste team that would do that, but I would just suggest it since we don\'t really use bread crumbs outside of a very few one off pages.
+
+**Daniela Tea** 15:18
+Got it. OK, yeah, one second. I\'m just refreshing my page. The last thing I want you guys to keep in mind when it comes to this breadcrumb component is that another page property that does affect it is that page page navigation title. One second, just closing out of a couple things.
+So if I were to, I don\'t want to add any templates. If I were to go to my properties, although my page, my title for this AEM page was KT Navs and the navigation title you can see I put KT navigation title and so now when I look at the breadcrumb it is displaying that.
+Title instead.
+
+**Lisa Cardia** 16:00
+But we don\'t need to use that, it\'s just overriding.
+
+**Daniela Tea** 16:02
+No, correct. So if I were to remove this here and justice hit save, it\'s going to default to whatever was in the title field.
+
+**Lisa Cardia** 16:13
+OK.
+
+**Daniela Tea** 16:16
+OK. Um, any questions about the breadcrumb? Um.
+Whether it\'s like, you know, like what\'s being displayed here or like the level, any questions about the breadcrumb in general?
+
+**Lisa Cardia** 16:30
+Is it responsive? So what what do we see on?
+
+**Daniela Tea** 16:35
+So it\'s it\'s not necessarily responsive in the sense that it doesn\'t actually like collapse into say like a drop down or something, it just sort of wraps.
+
+**Lisa Cardia** 16:44
+OK.
+
+**Daniela Tea** 16:47
+Yeah, OK, it wraps. All right. OK, so breadcrumb navigation. Yeah, I think Lisa, I\'m not sure exactly where it\'s being used, but I believe, like you said, it was a few one off pages that we had noticed.
+The sub nav though, this is something that we saw was used on the hotel pages, I believe like the meetings and weddings section. And so for the sub nav component, what this does is I\'m essentially able to take a subset of pages.
+So instead of it, you know, taking everything from like a hierarchical structure, if I want to group pages together in some form of navigation, I can do so. So in this case you can see here I\'ve taken a homepage from my KT home section.
+I\'ve taken my hidden page, I\'m sorry, my KT Navs page in my KT home section, a KT open page and my KT blank page. So these are all pages that if I clicked on here you can see where they are and all I did was just select what I wanted.
+To appear in my sub NAV. With that being said, what happens is you\'ll notice here that the KT NAVs right now is actually highlighted because I am currently on this page. If I were to open up, say I think I added it on KT blank.
+If I were to open up my KT Blank page and if I added the subnav, which I did on this page, you\'ll see that the KT Blank page is now highlighted because that\'s the active page within the subnav. So if I were to add this subnav to another page that isn\'t.
+That isn\'t listed here. So like say there was another page called KT Media, nothing would be highlighted because it\'s not within the sub NAV, but you would be able to access it. So the highlight is based off of if it\'s in the sub NAV and if you\'re currently on that page.
+So if I were to also change this to mobile, this does have slightly different mobile functionality. You\'ll see here I actually want to view this as published so that way I can interact with it.
+Oops.
+Second.
+Hmm.
+Let me stop sharing the reshare. One second guys. Sorry, my computer seems to be freaking out yet again.
+go and try this here.
+OK.
+So I get this back up. I will share my screen.
+
+**Lisa Cardia** 19:55
+\'Cause I I do have a few questions, but I can wait until you your screen is back up.
+
+**Daniela Tea** 19:58
+Yeah, sorry guys. One second. Just trying to get my trying to close out of some stuff since my computer is running a little bit slowly.
+Elise, if you do want to ask your questions, you can go ahead. I just won\'t be able to show it just yet, but you can go ahead with the questions.
+
+**Lisa Cardia** 20:20
+Yeah, I had said how do we and cause we had tested this in the stage environment and we actually struggled to get the the down state that you were showing where it was like showing just the page you were displaying on. But maybe we need to play with that a little bit more and make sure it\'s added to all of the pages to see it in.
+
+**Daniela Tea** 20:26
+M.
+
+**Lisa Cardia** 20:39
+To actually work, but we didn\'t know how to get the the tablet mobile mobile options to expand past the first navigation. It wasn\'t working for us and then there was like no hamburger menu or option to expand to like the next set of links. So that was one question of ours was seeing it on a different break point and it wasn\'t working.
+
+**Daniela Tea** 20:45
+Mm.
+OK.
+OK.
+
+**Lisa Cardia** 20:59
+If you want just all my questions that I have, I can go through them. My I was just wondering if we have the option to use a light background with a dark font. I know it\'s only right now showing the black with the white, so just wanted to see if that is something we can do as authors or is that?
+Extra development. And then I was just curious if that first page like is considered I guess like the parent page because like it does show the arrow as if those are ending up to be like children of it. So I\'m just.
+
+**Daniela Tea** 21:18
+Mhm.
+Mhm.
+Mhm.
+
+**Lisa Cardia** 21:32
+I\'m I\'m guessing like you\'d always want that to be a parent level the way it\'s designed with that arrow and and then we and then we just had some we just had some concern about like the the alignment of the text isn\'t actually the same for the additional links. So that just might be something we want to report that it\'s not really to the like.
+
+**Daniela Tea** 21:39
+Yeah. So, yeah.
+OK.
+
+**Lisa Cardia** 21:52
+The correct pixels across all of them.
+
+**Daniela Tea** 21:56
+OK, yeah, so let\'s take a look at. I just restarted Chrome. So let\'s take a look at some of the things you said for for when you mentioned that you guys are messing around with this component. Out of curiosity, are you can we like maybe we can see?
+How you guys set it up and perhaps we can understand you know what is like what\'s different from your version versus what I showed.
+
+**Lisa Cardia** 22:20
+I don\'t think I have the example for you ready today. A lot of times we\'ve just been testing the components like by themselves. So it it does make sense to see how you just said it like needed to be on several pages for you to see. So that could be why, you know, we just encountered the one issue that I questioned.
+
+**Daniela Tea** 22:23
+OK.
+Yes.
+OK, OK, so so.
+
+**Lisa Cardia** 22:39
+So I don\'t, I don\'t really want to share it right now just cause it\'s like the component on an empty page, but I think our our other questions if you were able to take those down are definitely warranted.
+
+**Daniela Tea** 22:45
+OK.
+Yeah. So let\'s see the other question, one of them was about the arrow portion. So like you said that is intended to be kind of like say like the highest level, the parent if you will like you mentioned. So in the use case on hotels I believe.
+
+**Lisa Cardia** 22:55
+Yeah.
+
+**Daniela Tea** 23:07
+It\'s the the portion that\'s showing before the arrow is like meetings of events because that was like the top level navigation. And then it\'s like a subset of pages that essentially are related to meetings and events. So there\'s no like real like it\'s not like saying oh this.
+
+**Lisa Cardia** 23:15
+Right.
+Yeah.
+
+**Daniela Tea** 23:25
+This is a parent and it\'s going to automatically bring in all the child pages. It\'s more this is an author set navigation, like you\'re determining like what you want within that group. So it\'s so like the intention is to be like, OK, this is more like a parent level page and these are the pages related to it. But as an author I have selected the pages.
+
+**Lisa Cardia** 23:36
+OK.
+
+**Daniela Tea** 23:45
+That I say are related to that parent page.
+
+**Lisa Cardia** 23:48
+OK, just because like the first one has the arrow, but the rest don\'t. So it to me it makes sense to say like the rest almost group in underneath that umbrella. Otherwise I feel like it would be a bit misleading to have the first one not be like a higher level, if that makes sense, just because of that arrow.
+
+**Daniela Tea** 23:56
+Mhm.
+Yeah, so OK.
+
+**Lisa Cardia** 24:08
+Like at least the other children items kind of all seem like siblings versus higher than another.
+
+**Daniela Tea** 24:12
+Mhm.
+Yeah. So, yeah, I think it.
+
+**Lisa Cardia** 24:16
+To at least, especially because like if you could test the tablet mobile and us not being able to see anything past that first navigation is what kind of makes it seem that way as well. So we definitely want to figure out why we can\'t get past the first level and if.
+
+**Daniela Tea** 24:28
+Yeah.
+
+**Lisa Cardia** 24:32
+Why there\'s no like hamburger?
+
+**Daniela Tea** 24:35
+Yeah, so let\'s view as published. OK. And I\'m about to share my screen. One second. Let\'s see. OK, let me share my screen. Sorry about that, guys. Hopefully this will work now.
+OK, all right. So what we\'re seeing here with our sub NAV currently on that KT Navs page, I\'m viewing it as published and I\'m going to make this as a smaller breakpoint. So now we see it saying I\'m at KT Homes.
+Our KGM is like the the the essentially the quote UN quote parent I have determined and with KG navs that\'s the page I\'m on. If I click on this it\'s going to show a drop down underneath of the other pages.
+
+**Lisa Cardia** 25:17
+What did you just click though? Because I guess like there was no like a user wouldn\'t know to click and maybe I\'m not as familiar. Rick, if you want to speak of what this looks like in present is there? I thought there would be like a hamburger to indicate that there like that this is a drop down.
+So maybe I just misunderstood what it was supposed to look like.
+
+**Lyon, Rick (Director of Digital Experience)** 25:38
+It\'s been a minute. I\'d have to see what\'s live. I think it just goes turns to menu and then all the links are down below, but I\'d have to take a look.
+
+**Lisa Cardia** 25:48
+OK. I guess we could move on from that question and just circle back. I I had tested this and was wondering how I just kept clicking for example KT Nav so I could never get to the drop down. So you\'re clicking just is it?
+
+**Daniela Tea** 25:59
+Yeah.
+Yeah, I\'m just clicking where I\'m.
+
+**Lisa Cardia** 26:05
+Is it because it\'s like disabled right now or I don\'t know why we were struggling to get or maybe it wasn\'t even showing?
+
+**Daniela Tea** 26:13
+O Let\'s go to KT Blank.
+
+**Lisa Cardia** 26:15
+More than just the parent is what we were saying.
+
+**Daniela Tea** 26:16
+Yes, so so you can see here I\'ve clicked on K So I clicked on KT Blank and open in a new tab. So now it\'s showing when it\'s in in mobile, it\'s showing again that that parent level that I\'ve determined and then the current active page I\'m on which is KT Blank. When I click on that I can see the other options as.
+Down underneath.
+
+**Lisa Cardia** 26:39
+OK, I guess Rick did send a link I I guess I\'m not as familiar with.
+The present one.
+I\'m going to click it if you\'re not.
+Just compare really quick.
+So I think, yeah, the one present day has that drop down arrow and then they all kind of fall. So I guess the confusion here is that this is isn\'t the same functionality experience, like I guess to a degree because you\'re clicking on it, but there\'s no indicator to the user to click if you.
+To click Rick\'s link and look at the production site.
+
+**Daniela Tea** 27:26
+Yeah, sorry, one second. Let me try and get up the link.
+M.
+Oh.
+
+**Lucas Nelson** 27:54
+Looks like your crumb\'s struggling, Daniela.
+
+**Daniela Tea** 27:56
+Yeah, what\'s going on?
+
+**Lucas Nelson** 27:59
+I don\'t know.
+
+**Daniela Tea** 28:01
+Yeah, one second. I won\'t let me. Sorry guys, about this. Let me get out of Chrome again. I might be able to do this. I could do it from Firefox, but one second.
+Mhm.
+Let\'s try again.
+OK, I am going to share screen again and see if this works. Hopefully it works. All right. So taking a look here now at here we go. All right. So we have our overview page, which is the meetings and weddings page. And So what you\'re saying, Lisa, is when you come down here.
+
+**Lisa Cardia** 28:46
+Yes.
+Yeah, so it\'s like indicating to drop down \'cause otherwise I\'m unless that was like just me not realizing you had to click. I I had no idea with the current implementation that a user should click since there was no arrow.
+
+**Daniela Tea** 28:58
+Here how it\'s shown.
+Mhm.
+Let me see. Yeah, I uh.
+
+**Lisa Cardia** 29:17
+Especially cause on mobile like you can\'t hover to see that state so.
+
+**Daniela Tea** 29:21
+Mhm.
+Go back.
+Yeah, so I think in terms of the functionality itself, it\'s uh wait, am I on the wrong page?
+Oh.
+OK, sorry, I just noticed it says old in here, so I\'m not sure if I was on the right page or not. But what you\'re saying is that the yeah, so the functionality is the same in the sense that yes, you can click on the area and it presents a drop down. However, what it\'s showing is not just the active page, it\'s also showing the.
+The established like the author established quote UN quote parent level page and it\'s also having a drop down here versus essentially the carrot facing to the right.
+
+**Lisa Cardia** 30:21
+Yeah, so I would say for our team, I don\'t know if if like this would get reported as a defect, but or like missing for gap analysis. But to me it\'s not indicative of the to the user that there\'s gonna be a drop down since it doesn\'t.
+Look the same.
+Is my thought. We can take it and move on though, so we don\'t waste.
+
+**Daniela Tea** 30:47
+Yeah.
+OK, Yep. So for sub NAV, I think another thing you asked was about in terms of the background. So I believe we had established it was black.
+Yeah, so we had established that it was black, so it\'s not currently author configurable. So like it\'s always gonna be black, but it sounds like what could be added in the future, what a desire would be to essentially have a configurable background color.
+As well as the ability to change the text color from white to a dark color in order to accommodate for whatever was selected for the sub NAV.
+
+**Lisa Cardia** 31:28
+Yeah, I think just having like a light and dark version is something we should take back as a team.
+
+**Daniela Tea** 31:33
+Yep, and the final thing as we saw with the the sub NAV in mobile, how it looks it it if it\'s in desktop, it\'s going to display everything. However, for whatever reason you need to always display it like it\'s in mobile.
+If that use case is there, then this would just simply be checked. So then even in desktop it would be displayed the same way as in mobile.
+OK. All right.
+
+**Lisa Cardia** 32:03
+Could you? I I don\'t think unless you were gonna get there next, there\'s the accessibility tab, what we would typically label for that.
+
+**Daniela Tea** 32:09
+You.
+Yes, so the accessibility tab there is just for an Aria labels. So you can see I put here sub NAV label and so when you view this as published and if we were to inspect this you can see here\'s where the Aria lab Aria label gets applied.
+So it\'s, um, not something that like a user would see, but it\'s more for like, um, screen readers and such.
+
+**Lisa Cardia** 32:36
+Yeah, I think that we would want to cover it if it\'s a.
+
+**Daniela Tea** 32:39
+Yeah.
+
+**Lisa Cardia** 32:41
+um, field.
+
+**Daniela Tea** 32:46
+All right, so moving on now to our site map components. I\'m going to open this up. So for our site map you can see here I have for my route path just selected the KT home.
+Which should include then everything underneath it except for things like hidden pages. So in this case I should see 123456 links which I can see. Actually I\'m going to try and open this in a new tab so we can compare.
+Let\'s go back to the admin section, OK?
+So here we have our homepage, we have my KT blank page, my KT media navigation title which is what I had named this here. Underneath it you can see test news is appearing so it\'s saying this is a child level page.
+And then we have my KT open page here and then we have my test blank page. So what\'s not showing is my error page because I believe for this page let me check.
+I don\'t think I actually. I think this page it\'s so I\'m using the an error page template and so that\'s not going to appear as part of the site map itself. So that\'s why this is hidden. And then for the hidden pages, we remember I had selected the hide and navigation field so the hidden page is not going to appear.
+Ear here, nor will the items underneath my hidden page.
+All right. Um, so questions about the site map and how it\'s bringing in the items.
+
+**Lisa Cardia** 34:45
+So just everything besides an error page template unless we have it selected as hidden.
+
+**Daniela Tea** 34:50
+Yes, that\'s correct, but also keeping in mind that the page pages underneath hidden pages are also not going to appear in the site map.
+
+**Lisa Cardia** 35:00
+Hey OK pages under hidden pages.
+
+**Daniela Tea** 35:03
+And also that the page title, the navigation title. Let me open this up. Yeah, so the navigation title is also what\'s going to be displayed within the site map. However, of course, if that\'s not filled out.
+It\'s going to default to the title that\'s U here.
+
+**Lisa Cardia** 35:25
+OK, I don\'t know if the team can think of any pages where we hide the parent, but then we want the children to display, so we\'ll have to think on that if it\'s something we need in this section.
+
+**Daniela Tea** 35:36
+OK.
+Yeah.
+OK, so that is the site map. So now I wanted to show the content carousel, which I don\'t think you guys, you guys are not using this currently on the corporate site, but this is something that\'s pretty common on the hotel pages.
+Let\'s take a look at the published view of this page over here.
+We need to just drag this over here so we can have it in a separate window. All right, so the content carousel. The purpose of this is to essentially be able to display things within this image carousel here, and then there\'s content that appears underneath. Again, this is typically.
+Something that\'s being used on the hotel websites. So we\'ll break this down in a second, but wanted to show you guys what it looks like when you view it as published, because when you work on it in the editor, what\'s happening is the content carousel.
+There\'s multiple images being added and you\'re not going to see the information underneath. The information underneath is within this tab. So in order to be able to view it, just remember to just view as published and you can see that preview of how the content looks and what images you\'ve added, et cetera, et cetera.
+So here it is in author. The content is there, it\'s just only within the the component itself, but you can view it by viewing it as published.
+OK, so let\'s break down exactly what has been authored here in the content carousel. All right, so for starters, what we did is when I dragged on the page, I can only add images to here. It was restricted to just images.
+Since the images is what\'s populating here, if that\'s something that needs to be, you know, if that needs to be expanded on, say. I\'m not sure if you guys would ever add a video or something here, but that can certainly be added in the future to allow additional components to be added here, however.
+When this component was made, it was supposed to be strictly just for image carousels only, but that that\'s that\'s where you would add this here. So this carousel portion for the items is strictly just for the images and I\'ve added two images as you can see.
+Then on my additional tab, what I\'ve done is I filled out some information. So we have a title and a subtitle and those are listed here on the card itself. Then I have a description.
+Which is displayed underneath the subtitle if I am having a if I\'m having a two column style. So this is a two column, this is a three column. So this here is the description. It\'s going to be displayed underneath here if I\'m having a two column style and then my.
+Details I\'ve left blank. I can add some details here so you guys can see.
+The details we don\'t actually do this. We need to refresh this.
+So you can see that the details field would display here if I added something there because this is in the two column field. However, I don\'t think typically two column the two column content carousels you would actually have anything in this field from what we saw on the hotel site.
+I\'m going to Scroll down and we can see the CTA for book now. Let me refresh. Oops, let me hit done and then I\'m going to hit refresh here. So this updates. Yep, right. So we have our CTA for book now and I have my URL.
+Listed here. So when I click on this it\'s going to open up in a new tab. I also can style the button whether I want it to be the primary style, which you can see here for these three, the secondary light style which is that outline version or the tertiary style which is we can show it right now essentially like the button.
+Without the background and the the carrot on the right.
+And then?
+If I want to have a read more details section up here, I can select this box. If I uncheck it then this will go away. So there\'s you don\'t necessarily need to have it if this is all you really need for your card. But as you can see here I have my read more details label which is what populates in this.
+For this specific button, then I put a section heading called Amenities. So when I select read more details, you can see my section heading amenities. I put whatever I want here and then for these features here, free Wi-Fi, 24 hour room service, etc. What I\'ve done is I\'ve selected from this list as to what I want to display.
+In here and this list is coming from a generic list, which means that certain authoring groups based off of permissions. If you are, if you have the right permissions, you can add additional values to appear in this list. However, say.
+Like a hotel author who likely wouldn\'t have that privilege, they can\'t just add additional features here. So this is managed at from a a specific user group. So if you know if you guys are seeing this, you\'re like wait, but there\'s a lot more amenities that should be there that can be added as long as it\'s in like a specific.
+Admin person who is able to add additional options to this list. In this case I\'ve picked four and so that\'s displayed here. And then there\'s also another text box that\'s here if I need to put any other information that might need to appear on underneath my amenities sub header.
+And before we go into the three column version, I\'ll pause here to see if there\'s any questions about how this portion has been authored.
+And hit cancel. OK, so now let\'s take a look at this one. This one has some differences. You can see here there\'s actually 3 columns that are being displayed instead. Pretty much all of the details and such is here on the left. And then the middle we have this.
+Section called Hours and then in the far right we have a menu of buttons. So if we take a look how that was authored.
+So I had two images that were added to this carousel. On my additional tab you can see my title and my subtitle. We can see my description is populating this section here. The details is populating here in the middle and then I have my different CTA.
+Days. In this case, the style has all been selected as primary, so that\'s why they look like this. But if I wanted one to look, you know, say slightly different, so I want these two to essentially be secondary links, can certainly do that. I hit done.
+And I hit refresh. You can see how that has changed. And then for this particular one, it\'s kind of the same thing. Read more details. I\'m not using the features section because I don\'t necessarily. I\'m not actually showing any sort of amenities because this.
+This is a restaurant. However, you can see how I\'m using that additional info box to put the dress code information here in this section and then finally for this one.
+I click on styles, you can see here that three columns has been selected. That\'s why you see again 3 columns. If I were to change this to two columns and hit done, things are probably going to look a little strange. So the buttons are now appearing here on the bottom.
+So, and so things are a little, you know, this is not intended to be a three, a two column card. So you want to make sure that when you\'re planning out your carousel, is it going to be 2 columns or is it going to be 3? That will determine how the items are displayed. So I\'m going to change it back to three.
+Hit refresh and so now it\'s it\'s back to three columns and it\'s displaying as intended.
+Um, so questions about this content carousel.
+
+**Lyon, Rick (Director of Digital Experience)** 44:32
+Hey Daniel, I\'m getting a door installed so it might get loud here. So as quickly, quickly as I can. I think we had briefly discussed this, you know what a year or two ago. Some hotels will have like four or five if not more menus and I think we had talked about maybe having a drop down or something.
+
+**Daniela Tea** 44:42
+Mhm.
+Yes.
+
+**Lyon, Rick (Director of Digital Experience)** 44:51
+Um, like a menu drop down and then you could select which menu. I\'m sorry Sir.
+
+**Daniela Tea** 44:52
+Uh, yeah, let\'s try. Let\'s try and do that.
+Go ahead, Rich.
+Press menu. Just gonna add some stuff here. Uh, let\'s see here.
+Trying to remember if there was a limit. I do believe we talked about that. Let\'s add some more.
+Um, this menu. Oh, I think I know. Um.
+I believe that had been implemented when it came to the dining widget. If there were multiple menus there, I I do remember that discussion and that had been implemented. I would need to check our notes when it came to this specific component.
+Because when we were talking about, I think what the intention is, is for this to be a drop down that then just shows the additional menus. So I\'ll check my notes to see if that was implemented for here. I know that we definitely did that for the dining widget, so I\'ll just need to check how we handle it for the content carousel.
+So I don\'t know if Rick was able to hear that because yeah, no problem. OK, yeah. So what I was saying was that I do remember we talked about having the drop down appear. I know that that is in place for the dining widget for cafes.
+
+**Lyon, Rick (Director of Digital Experience)** 46:05
+Sorry, I just got back. Um.
+
+**Daniela Tea** 46:17
+I need to check to see what we implemented when it came to this specific component. I think it\'s probably like similar functionality maybe you\'re looking for, but I just need to check to see if we implemented that and how it was implemented and I can get back to you on that one. OK.
+
+**Lyon, Rick (Director of Digital Experience)** 46:17
+Hmm.
+Go.
+Yeah, that\'s fine. I mean, like, you know, I don\'t think we went into like too much detail on the hotel side, but I do think that we did discuss at least that part and during like a walkthrough. I just don\'t know if it got captured or anything soon. Cool. Thank you.
+
+**Daniela Tea** 46:33
+Yeah.
+Yeah.
+Yeah.
+OK.
+Yeah, that\'s what I\'ll definitely go and check on that one, right? Yep.
+
+**Lisa Cardia** 46:48
+And I\'d say for this one, just, you know, the same thing we\'ve been saying that knowing the baseline dimensions for the asset here going to be definitely critical for us since it\'s such a wide image. I don\'t want, you know, a very tall image impacting this or selecting the wrong image. It\'s.
+Going to break this component essentially.
+
+**Daniela Tea** 47:09
+Yep, noted.
+OK. And then let\'s take a look at this in mobile really quickly. So just shrunk the screen so you can see how things are stacking. So essentially those three columns are just in a row and then the read more details is underneath that and then just displays underneath the.
+The buttons for both both the three column and the two column.
+OK.
+All right.
+OK. All right. So if there\'s no other questions about the content carousel, we can move on, excuse me, to our drop down language selector. I think we have covered this one before just because I this is this should be on the corporate privacy policy.
+Pages. Essentially this can be used for a drop down or it can be used for a language selector. The use case that I know that you guys are using again is for the privacy policy where you\'re able to put the label on the button.
+The icon by default right now is the globe icons, since that\'s what I believe was used on those pages. And then you can see how I\'ve populated the different links, one for English, one for French, and then when I click on that I\'m just able to display whatever I want. However, the reason why I\'m saying.
+Drop down slash languages because of course if you just need this to be more like a like a drop down menu essentially, then you can simply disable the icon, just you know, put whatever the label needs to be. And so then instead of it being more with a language selector, it\'s more just like a a page menu.
+Menu that you can have if you need to use it within the pages. So the icon I think is just typically what you guys are using for your language selectors, but by disabling it then you can just kind of use it as a normal drop down menu.
+
+**Lisa Cardia** 49:13
+I just had a couple things on it, Daniela, and this may have gotten corrected, but we noticed this a lot on the cafe sites that if you kept the drop down open, it like overlaps the content beneath it. Like there was like a point where like multiple drop downs were.
+
+**Daniela Tea** 49:15
+Yep.
+Mhm.
+Mhm.
+
+**Lisa Cardia** 49:31
+I I don\'t know, creating some sort of like overlay on the content that you wanted to click under it. Had you kept one open or another? I think that got reported.
+
+**Daniela Tea** 49:38
+Yeah, I think I yes, I do. I do recall that one. It was specifically when the language selector was used in the dining widget component, like at the top portion of all the cafe pages. So yes, I do remember that issue being reported. I would have to check the status on if it was fixed, but I yes.
+
+**Lisa Cardia** 49:49
+Yeah.
+
+**Daniela Tea** 49:58
+Yes, you guys did report that one. So yeah, it\'s it should have been captured in JIRA.
+
+**Lisa Cardia** 50:00
+OK.
+And then the I have just two questions on this component. I think you kind of answered it with one, but if we did want to change the icon, is that a development ask or is there just a possibility to like insert it somewhere on the back end as a content author but with someone with permissions?
+
+**Daniela Tea** 50:21
+So right now this is is is only showing 1 icon and the disable icons essentially show this or show not or don\'t show it. Sounds like what you\'re asking Lisa is like say like the ability to have like a library of icons to select from perhaps.
+Ups um.
+
+**Lisa Cardia** 50:37
+Yeah, or a lot. A lot of times we use like, I don\'t know if we\'ll get away from this, but currently we use like font awesome for certain things to pull it in. So wasn\'t sure just the flexibility that we had here.
+
+**Daniela Tea** 50:44
+Mhm.
+Yes.
+Yeah.
+Yeah so right now that is not present in here but what I what I could see you guys doing in the future like what if this if this were to get expanded on is having the library like save guys just want awesome or whatever icon library having that put as.
+So like a generic list and then being able like a developer would need to enhance the component to allow the author to be able to select from the list of icons so that way it would display here instead. So like instead of like say like display disable icon, it seems like you guys might want to enhance this to essentially be like a.
+Drop down select from a list and then it would display to the left and maybe there\'s an option on there that\'s like none and then it would just display as if it was disabled as in like the icons not there. So that would be a code enhancement. Yeah that that would that would be a development item, but definitely something that I would recommend you note down.
+
+**Lisa Cardia** 51:41
+Yeah, just so we know our options code, OK.
+
+**Daniela Tea** 51:50
+Or like gap, like the gap portion. Yeah, I can totally see how that could be used in the future.
+
+**Lisa Cardia** 51:51
+Yeah.
+And and my other question was this seems to always left align. Is there a way that if we ever needed this drop down to be center on a page, I can\'t think of a use case really for right right alignment, but there\'s no way to change the alignment like we can with like buttons.
+
+**Daniela Tea** 52:11
+Yeah.
+
+**Lisa Cardia** 52:13
+So just I I was hoping we would have similar functionality if the three buttons you have below you know are are can use styling to do something like that so.
+
+**Daniela Tea** 52:14
+It\'s.
+Yeah, I I see what you\'re saying. So for this itself, the only available options for styling is just changing the primary or secondary. What you\'re asking for is like say you want it to be center aligned or right aligned, so that\'s not presently in the component itself.
+I\'m wondering, let me try something.
+
+**Lisa Cardia** 52:43
+I thought I tried with a container and I don\'t know if it was possible, but.
+
+**Daniela Tea** 52:46
+Yeah, I was just about to say I wonder what I I don\'t think it actually would work because I believe the language selector is essentially full width. I don\'t think this is able to necessarily be like resize the way that you\'re looking for. So what you\'re what you\'re asking is is something that I would also recommend putting within the.
+The gap analysis portion, because while you probably could kind of fiddle around with it, I think what you\'re looking for is mainly like something where you\'re able to have like a center alignment or right alignment specifically on this component. Yep.
+
+**Lisa Cardia** 53:19
+Yeah, because it\'s like a button, so I would assume it would have had those same.
+Uh functions or say my styling options.
+
+**Daniela Tea** 53:25
+It.
+Yeah, Nope, understood. But yes, so currently not present on here because I believe it was always left aligned. However, totally understand how if you guys want to use this for other use cases, it would make sense to have an alignment built into that.
+
+**Lisa Cardia** 53:41
+Okay, thank you.
+
+**Daniela Tea** 53:42
+Yep.
+OK, all right, so that is the drop down language selector. Moving on to tabs. I know you guys are also familiar with tabs, but just as a refresher, taking a look at how these tabs are.
+Builds 2 variations. As we know I\'m going to click on properties, we have our horizontal style variation or we have the vertical style variation. So I have those on the page itself. Horizontal just means of course the buttons are going to be horizontally aligned.
+However, when it\'s vertically aligned, you can see here instead of it appearing on top, it\'s going to appear on the side. Additionally, you also have a title that can show on when you\'re doing a vertical aligned tab.
+I\'m gonna show this here. So I\'ve used in my properties the title field and you can actually put a description as well if you need to, but I don\'t. I don\'t know how often you guys are using that right now in the tabs that are currently live.
+But the title field is what you\'re going to want to use when you have a vertical style for my items on the first tab, memorabilia, rock wall and in-house clinic. This is what populates the actual tab names on top and you will notice here. I\'m just going to cancel.
+When you\'re viewing it in author, the vertical variation on author is is not going to display as you\'re expecting, so it\'s only it\'s only going to display when you are viewing it as published.
+So just to be clear, like if you\'re seeing this here like this, you\'re like, oh man, this looks doesn\'t look like what I expect. If you view as published, it should look like this version.
+OK, and of course with the tabs, essentially what the tabs is doing is kind of like how you have your other like just carousel components and such. As you\'re clicking on the tab itself, there\'s a container underneath for you to be able to add.
+Your content underneath it, so that\'s you edit it within the container. So if I were to edit this here, I\'ll see here\'s a container specifically for my tab. I can put any component I want under the Rockwall tab. You do have to hit preview and then click on the next tab to be able to.
+Edit that specific tab, but you\'re able to. Again, you\'re able to add any component within here. It\'s not. I do not believe there\'s any restrictions. Yep.
+
+**Lisa Cardia** 56:26
+And Daniela did. I don\'t know if I\'m because I\'m going back and forth between my notes and you said you needed to view as published. You don\'t have a spacer in there, right? The spacer just doesn\'t show in the authoring environment. That was one of my that there wasn\'t any really great spacing below the tab buttons.
+
+**Daniela Tea** 56:33
+Mhm.
+Oh, oh, so I.
+
+**Lisa Cardia** 56:42
+But I wasn\'t sure if that\'s just in. Did you add a spacer?
+
+**Daniela Tea** 56:48
+Yeah, so I added a spacer to each of these. So I think, yeah, by default right now the container is just there. And so as you\'re adding your content, yes, there is a spacer that you would likely want to add within the container if.
+And so like for example for your gap analysis. So if you know that you\'ll always want the spacer, that can certainly be added, but that would be a change with the component to build in a spacer to every container that\'s within the tab.
+
+**Lisa Cardia** 57:07
+Yeah.
+OK, I think that\'s a really big take away for a lot of the components that we\'ve seen just over the course of the last few weeks is that it\'s really difficult that as content authors that that kind of attention to detail is needed just for adding one component to a page like it. It leaves a lot of room for error if not everyone\'s using.
+Adding the spacer, they forgot it, or they\'re using a different pixel of a spacer. So just for consistency purposes, that\'s a big one I think that we need to add to the gap analysis.
+
+**Daniela Tea** 57:42
+Mm-hmm. OK, Yep, that makes sense.
+
+**Lisa Cardia** 57:45
+And then something I\'ve also just noticed in general, and I don\'t know if it\'s just my own authoring environment, but every time I use the preview mode, not view as published, but preview. If there\'s no like spacer added to the bottom of your content, you cannot Scroll down to see it.
+
+**Daniela Tea** 57:55
+Uhhuh.
+
+**Lisa Cardia** 58:02
+Which I find very defective. So if you if you had added a component to the very bottom of your page, most times than not, I can\'t scroll and view the entire component unless I had added a spacer or two and then clicked preview. Not talking view as published, but preview.
+
+**Daniela Tea** 58:05
+Mhm.
+Hmm.
+
+**Lisa Cardia** 58:20
+And I experienced that like a a a lot of the practice pages that I built.
+
+**Daniela Tea** 58:26
+OK, so I think I would want to see that simply because I would want to understand first like what templates you might be using to see that. Second thing, what components? OK.
+
+**Lisa Cardia** 58:37
+Yeah, I\'ve I\'ve only been using open page templates myself.
+
+**Daniela Tea** 58:41
+All right, OK, so there\'s that. I think I\'d also wanna understand like for example, do you have like a navigation set up with like the footer? Has that been applied or is it like these are this isn\'t like the experience fragments are like you\'re not pointing experience fragments for these or?
+
+**Lisa Cardia** 58:57
+No, I the only thing I\'m doing is clicking open page and then testing out the component with whatever components already come with that open page. I didn\'t like add the header or the footer, so if it didn\'t have those, it was just me testing on the page. Does that impact it?
+
+**Daniela Tea** 59:12
+Well, so like I guess because you mentioned when you put a component at the very end you\'re not able to access. So I\'m just trying to envision and understand like like for example how might it look for you? So like right here this is my last component on the page, right?
+
+**Lisa Cardia** 59:19
+Mhm.
+
+**Daniela Tea** 59:28
+So that\'s why I\'m trying to understand like where is that being placed? Like I have my container here, right? So this is my my my container for all my content that\'s within it. And then there\'s the root container, which is, you know, essentially everything that\'s on the page outside of the experience fragments are being.
+
+**Lisa Cardia** 59:29
+Yeah.
+
+**Daniela Tea** 59:48
+Within this root container. So that\'s why I\'m just trying to understand like where you\'re placing the last component so I can I can understand like how to replicate that.
+
+**Lisa Cardia** 59:58
+Does that matter though if it was in root container versus the container you had above it? So if you were to add to the like, I don\'t think you\'re personally going to see it with the stay connected and everything on this page. If you were to build a brand new page from scratch using open and all you did was say let\'s test out this tabs and we add.
+Add a tabs component to a blank open page. You would notice it.
+So I don\'t know if that\'s just like a limitation of the fact that I\'m building on a page that\'s not exactly replicated to be header, footer and everything you see here.
+
+**Daniela Tea** 1:00:36
+Mm.
+
+**Lisa Cardia** 1:00:38
+Hopefully. Did I lose everyone? Oh.
+
+**Daniela Tea** 1:00:40
+I\'m processing what you\'re what you said. I think that, um, yeah, so.
+
+**Lisa Cardia** 1:00:40
+Oh.
+If you just went into like the sites right now click to open page because that\'s I pretty much would do that with every component and that\'s why I\'m I\'m ready to go with questions is because I\'ve tested these. So if I just went from here and hit create and I used open.
+
+**Daniela Tea** 1:00:54
+Mhm.
+
+**Lisa Cardia** 1:01:06
+Yeah, and just if you call it tabs or whatever you\'re going to do.
+
+**Daniela Tea** 1:01:11
+That\'s fine.
+
+**Lisa Cardia** 1:01:14
+From this page is where I would just simply add to the container or to the page, whether that\'s you know at the very bottom there and I would click tabs.
+And I would have it populated with like probably just the bare minimum just to see it in action.
+I would click preview and I would not be able to scroll.
+
+**Daniela Tea** 1:01:49
+So this is what I mean like I would need to see the page so I can understand like how it\'s been set up and also you know like potentially like like what your container, what your page structure is. So I think Lisa you do have like an example. I\'m happy to take a look at that.
+You know it under.
+
+**Lisa Cardia** 1:02:06
+Yeah, it it would be though like since there\'s nothing on the bottom, is that the reason why I\'m I\'m experiencing that is my question I guess because all of my test pages, I\'ve never gone the additional step to put a header and a footer because of time. I\'m not just trying to do that. So maybe that is the reason I don\'t want to like.
+
+**Daniela Tea** 1:02:23
+So.
+
+**Lisa Cardia** 1:02:26
+Come up with my own solution, but like I found it really hard to preview a lot of the components I wanted to test on a regular open page because it would cut off, but I never added a footer.
+
+**Daniela Tea** 1:02:38
+So keep in mind that the header and footer are actually being set. Excuse me, are actually being set at the homepage level, right? So like you would set it here once and then any child page that you create underneath it will automatically inherit that.
+So I guess if you\'re like, So what the fact that I created it at this level? Sorry, excuse me.
+
+**Lisa Cardia** 1:03:02
+You could actually you\'re you\'re in the stage environment. You could find all of my test pages, which is fine for this. I would hope it would still show it on your end. I\'m not. I don\'t have stage open, so I don\'t know if this won\'t replicate, but if you went to.
+
+**Daniela Tea** 1:03:06
+It.
+
+**Lisa Cardia** 1:03:17
+US at the bottom US.
+
+**Daniela Tea** 1:03:21
+Mhm.
+
+**Lisa Cardia** 1:03:22
+English. I think this is where it\'s always um Hard Rock second one down Lisa component test pages and then scroll to tabs I guess if I if I have it marked on my.
+
+**Daniela Tea** 1:03:39
+Mhm.
+
+**Lisa Cardia** 1:03:41
+Mm-hmm. Yeah, so maybe it\'s gonna show if you click preview.
+
+**Daniela Tea** 1:03:46
+Yep.
+
+**Lisa Cardia** 1:03:47
+Yeah, you\'re on preview. See how you can\'t see it.
+
+**Daniela Tea** 1:03:49
+I see that.
+
+**Lisa Cardia** 1:03:51
+I\'ve experienced this a lot of times, no matter the component, so I\'m just wondering why I can\'t see it. If I can see it in the edit mode, click preview quickly, can\'t scroll on my content and it happens more times than not without me adding a spacer beneath it.
+
+**Daniela Tea** 1:04:00
+Mhm.
+Mhm.
+Yeah, so I would need to take a little bit of time to take a look at what\'s going on on the page, like what\'s going on with these containers. Are these just, you know, I can see it.
+
+**Lisa Cardia** 1:04:19
+It would be me adding things more like I\'ve been playing around with these pages so I can\'t tell you why I have an extra container or two now, but just know that if I started from scratch, put this on the page, you would not be able to scroll.
+And it\'s with like a lot of the components. But again, maybe that\'s a limitation of it not in having the header and the footer. I don\'t know, but these were just my random test pages.
+
+**Daniela Tea** 1:04:38
+So.
+So I I think in terms of this, so yeah, I totally understand when you create a test page or like I just need to see what the component looks like, how it works when you preview it. Because I I can\'t answer you right now as to why this is happening for your test page. What I would recommend though is.
+For the for future tests, I would set it up similarly to like however you guys would be using the pages. So kind of like how I have my little training folder here and careers like you could set up a section to be able to essentially establish what would that.
+Excuse me, what would that header and footer experience fragment be and just set it once, then create all your child pages underneath there. So then you\'re also able to see it with the theme, like whatever theme applied that you need. So if you\'re working in hotels, I\'ve also keep in mind I\'ve also set the theme be hotels so I can see the correct color for the CT.
+I can also see like if it\'s in the cafe section, if this was changed to the cafe, I mean we\'ll see that that correct color for there too. So I would recommend doing that if you guys are testing so that we can understand exactly how it\'s going to look for your theme.
+But I will. I can certainly take a look at this to kind of understand like what\'s going on, because I do understand the frustration of not being able to see everything that you need as you\'re testing a component. But I would say though I think it it would be best practice though to try and test it with the correct theme applied, meaning having that parent level.
+With the theme applied because like right now this is the corporate theme. However, if you were trying to understand, you know, like for hotels or whatever, like I I personally, when I test things, I like understanding how it\'s going to be for the site that I\'m testing it with, meaning the theme is applied. So that\'s personally how I\'ve done things is just making sure I\'m at a specific level.
+
+**Lisa Cardia** 1:06:36
+Yeah.
+
+**Daniela Tea** 1:06:39
+That has a homepage that has the theme established and the header experience fragments added.
+
+**Lisa Cardia** 1:06:44
+Which are you guys able to confidently confirm that this works across themes? Because I do have in my notes that it was not working for Cafe on mobile and I must have that written down for something with the theme. So I just want to is there any way we can get confirmation that this has been tested on all of them?
+
+**Daniela Tea** 1:07:03
+Are you talking for the are you talking about the for for tabs?
+
+**Lisa Cardia** 1:07:06
+For tabs.
+Yeah, and and I do want to also call out that like the tabs accordions are gold on desktop, but they turn to black on mobile. So I do want to call that out. I\'m not sure if that was like a miss or intentional.
+
+**Daniela Tea** 1:07:19
+Let\'s take a look here.
+So we are saying.
+Actually, I\'m going to view this as published. Let\'s do this.
+We\'re talking about these.
+
+**Lisa Cardia** 1:07:42
+Yeah, so you see how they\'re all now black, but they were just gold.
+
+**Daniela Tea** 1:07:48
+I don\'t think they would have been gold because this is using the hotels theme.
+
+**Lisa Cardia** 1:07:55
+Can you go to the one though that we just or the LC tabs?
+
+**Daniela Tea** 1:07:59
+So keep in mind though LC tabs though has no feeding like.
+
+**Lisa Cardia** 1:08:02
+It.
+OK, so that I just assumed this is the the gold is showing me the Hard Rock theme.
+
+**Daniela Tea** 1:08:10
+So what are we trying to do here? So we\'re saying.
+
+**Lisa Cardia** 1:08:13
+To see how it was gold originally experiencing that on on desktop, but now they\'re like we lost that gold the highlight.
+
+**Daniela Tea** 1:08:23
+So see. So when it\'s expanded, it is gold. Is is that?
+You\'re saying, you\'re saying, I guess you\'re saying because it\'s not expanded and it\'s not showing.
+
+**Lisa Cardia** 1:08:38
+I guess maybe that\'s why I\'m sorry, my note is from. I probably tested this a little while back so I can look back into this so I don\'t waste the time of the group.
+
+**Daniela Tea** 1:08:47
+OK.
+
+**Lisa Cardia** 1:08:47
+Thanks.
+
+**Daniela Tea** 1:08:48
+Yeah, let me close out that and let me close out of this one as well. Let\'s see. OK. Um.
+All right, so tabs, we talked about the different variations. I\'ll take a look at your page, Lisa, afterwards and see if there\'s a can get back to you. As you mentioned, the tabs is accordion and mobile is a selection that can be checked. If it\'s not checked, of course.
+Then it would look a little bit differently. I\'m going to uncheck this version, hit done.
+Do it over here to see what happens. If we were to look at this in mobile, what happens?
+Oops.
+I actually think it affects the one on the top, not the one. One second guys, one second.
+O for here.
+For my tabs U here I\'m going to set this one. This is a horizontal version. I\'m going to set this to not be accordion and mobile.
+And I\'m going to refresh here and so we can see the tabs instead of being an accordion is going to instead display as three buttons on top, right? So this is this is this is the default because by by default if I were to add a tabs component here.
+Add it right on top here tabs component. I do not believe. OK, so actually I\'m sorry, this is checked as tabs accordion mobile. So by default it\'s going to have the accordion, but if you don\'t want it and you want it to be like this instead where you have the three tabs as buttons on top of the content.
+You would just need to uncheck this um check box here for it to function like this instead.
+OK.
+All right. Um, OK, scrolling on. The last thing I had on my agenda was the table component. I know that you guys are also using this currently on the Um.
+Corporate website. This is actually. I took this example from the corporate website. I believe it\'s on the Heals Foundation page if I\'m not mistaken. I also saw examples where you guys have tables on some of the hotels pages. It doesn\'t have necessarily the zebra striping or or anything like that, but it\'s.
+Or just like a table to display information. So some use cases that can certainly be across different different lines of businesses. But of course with our table component you can establish how many rows you want, how many columns you want. Do you want a table header?
+Do you need a section header within the table? With percentage allows you to say, hey for this column I want it to be X amount, say like by default what it\'s going to do is try and do things, you know, like just kind of resort itself to to make sure that everything fits within the table.
+So you can see I didn\'t set anything for the width percentage. However, this is just, you know, based off whatever I have. However, if I were to say, let\'s do oops, so this is actually 10.
+OK, so you can see now it\'s taking 10% of the table, whereas now charity partner is taking 90.
+If I want something to be a little bit more even, maybe try 30 so that it it\'s going to redraw itself so it can take up however much I want, but if you don\'t put anything there, so I\'m just going to remove the width percentage.
+And then you can see by default how it will display. It\'s essentially going to say, OK, there\'s two. It\'s basically going to be 5050 if I don\'t put anything there.
+Yeah, so the parallax and G lightbox stuff. These are things I\'m going to cover when we go over the container. To be honest with you, I don\'t think this is actually really used in the table component, but I\'ll show you guys how it works when we cover a container on Wednesday.
+But the main things for the table component is the table tab, the section tab, and then there are a couple of style variations such As for the borders with colors, the full border or striped, the sub header row color, the table row color.
+Header row color. And then there\'s also the ability to select a piece of text within here and determine what color you want that cell to be. So let\'s say I want it to be yellow here and say I want this to be red here. So essentially some highlights are available for the table cell.
+So this is your like your text component. To be clear, this is like a standard text component. So if I were to add a text field here like outside of the table, I do believe that the table cell color is something that\'s available. So the reason why is because the text component.
+The component is comprised of several different text. The table component is comprised of several different text components, so that\'s where you\'re going to see the style variations that are for all the text components available in here, but mainly you\'re going to be using the table cell ones.
+And I think that\'s that\'s that\'s really what you\'re going to be focusing on when you\'re interacting with these cells.
+
+**Lisa Cardia** 1:14:26
+And Daniela, I guess my question, unless this is answering it just for something like this unique feature, but I guess just like why wouldn\'t we just use the table feature that exists in the like rich text editor to build this?
+
+**Daniela Tea** 1:14:39
+Yeah, so you could certainly do that too. In terms of, I guess in this case here, I think it\'s it\'s really dependent on if you prefer. So I\'m gonna put this here. So in case people aren\'t aware, there is this table feature that allows you to do this.
+There\'s a couple of I think additional pieces of functionality that are present in within the table component itself, but you could also, yes, you could also use the table within here. So I think it\'s really up to you guys what you guys wanted in terms of the table component that\'s being used on the.
+Yields Foundation, all the variations and stuff that\'s present here. That\'s why we were using the table component, but you can also use the text component if you want.
+Mm.
+OK, I\'m going to delete the front page. All right, so breadcrumb, sub NAV, site map, content, carousel, the drop down language selector, the tabs component.
+And our table components. Any other questions about these specific components?
+
+**Lisa Cardia** 1:16:02
+Unless I unless I missed it, did you go over the features of the table component where it allows you? It says like animation class and.
+
+**Daniela Tea** 1:16:12
+Oh yeah, so I was saying that this stuff here is. I believe that this is actually not going to be used in the table component. I\'m going to check with our dev team. This is typically going to be used in the container, which I am going to show on Wednesday.
+
+**Lisa Cardia** 1:16:27
+Oh.
+
+**Daniela Tea** 1:16:28
+So I\'m going to talk to the team about these two tabs, but you guys will see how it works, at least with the container component on Wednesday.
+
+**Lisa Cardia** 1:16:34
+Is there a reason that these were built that way? Like I guess it\'s it\'s just a little bit confusing to an author to see the options, but then to have to say that wasn\'t meant for this component. Like why would they just be options? Like could we not remove them so there\'s no room for error?
+
+**Daniela Tea** 1:16:49
+Yeah, so that\'s why I want to talk to the dev team to understand because I think the table component is. I believe it has some inheritance coming in from the container. I do want to confirm and check that. My understanding though is that this would there isn\'t necessarily use case for the table, but I want to talk to the devs to see.
+If there was and and how the parallax or G light box functionality would affect that. So that\'s all I\'ll get back to you. And if there if it is something that can be used on a table, I will also show that on Wednesday, but you\'ll at the bare minimum see the functionality and how it\'s presented when it\'s being used within a container component.
+
+**Lisa Cardia** 1:17:25
+OK. And then the only other question I had was actually related to all of the colors. I noticed like between like border, the sub header table, header row, we get like a medium Gray and a light Gray as options for border but nowhere else.
+
+**Daniela Tea** 1:17:30
+Mhm.
+
+**Lisa Cardia** 1:17:42
+I just, I\'m just curious, I guess, like why it\'s not consistent of all of the options for every every section.
+
+**Daniela Tea** 1:17:48
+Yeah, so I would have to check the actual ticket for it. I think when we had established what was needed for each of these different sections, although it was like specifically called out for the color. So I\'m not, I can\'t answer right now exactly like why is there like right up here but not downs here.
+
+**Lisa Cardia** 1:18:06
+Yeah, or like a medium. We have us. OK, yeah, if you don\'t mind checking, I just found it a bit confusing that they weren\'t consistent with their options.
+
+**Daniela Tea** 1:18:07
+Like the header row, I would have to check the ticket for that one.
+
+**Lucas Nelson** 1:18:17
+But Daniela, either way, if we need additional options there, that can just be marked under gap analysis, right?
+
+**Daniela Tea** 1:18:24
+Yeah, certainly.
+
+**Lucas Nelson** 1:18:25
+OK. Yeah.
+
+**Daniela Tea** 1:18:26
+That\'s certainly.
+
+**Lisa Cardia** 1:18:27
+OK.
+
+**Daniela Tea** 1:18:28
+And.
+All right, OK, so let me go back now to our wanna go back to the our Confluent page here.
+
+**Lisa Cardia** 1:18:30
+Thank you.
+
+**Daniela Tea** 1:18:44
+OK, excuse me. All right. So tomorrow and Wednesday, as I mentioned, we are going to be covering things such as the line of business specific components. So I\'m gathering together those. I will be publishing that draft hopefully this afternoon.
+And then we\'ll be attaching it to the calendar invite. And then my last one, which is currently called Untitled, it\'s because it\'s essentially the rest of the components. So things like the button, the separator, which I know you guys are familiar with. So things that I know you all are also familiar with is also why I was keeping it for the end.
+But definitely want to make sure there\'s time to discuss cards. So that\'s going to be covered here in Untitled. But I will be publishing these either this afternoon or very early tomorrow morning once I can gather the remainder of what\'s in the list. And then starting on Thursday, we will have our tech.
+Technical knowledge transfer sessions. These are going to be morning sessions so that our GCTA will also be able to attend and then the adoption sessions will be beginning on Thursday afternoon and then as we continue the week after with additional technical knowledge transfer.
+And then starting March 16th is when we\'ll actually go over the platform expansion sessions. This is where we\'ll discuss what\'s been documented, the use cases that the SHRSS team has come up with over the course of the.
+Past few weeks. So we have 6 sessions scheduled for those taking us into the week of March 23rd. So I am going to pause though and see if there\'s any questions about the calendar or what\'s ahead for the next couple of sessions or if there\'s any other questions or comments.
+
+**Lisa Cardia** 1:20:38
+Are we gonna get those invites this week, you think? Just or at least placeholder if Scott, could it do something like that just so we don\'t lose the time? I don\'t know.
+
+**Lucas Nelson** 1:20:45
+The platform expansion ones, Lisa.
+
+**Daniela Tea** 1:20:45
+Look to me.
+
+**Lisa Cardia** 1:20:47
+Um, I I was just checking like my weekly calendar and I think I had for this week the adoption strategy, but not those morning ones, so that we were just referencing.
+
+**Lucas Nelson** 1:20:57
+Scott gave me the attendee list. I would ask him if he can forward those on.
+
+**Lisa Cardia** 1:21:02
+Is it not just like everyone?
+
+**Lucas Nelson** 1:21:04
+At least you\'ll have to ask Scott that.
+
+**Lisa Cardia** 1:21:08
+OK, he\'s not on the call.
+
+**Lucas Nelson** 1:21:09
+Yeah.
+
+**Daniela Tea** 1:21:10
+And and just to confirm, Lisa and Luke, do we these are sent out already, is that correct? Well, or at least placeholders, they wouldn\'t have the agenda yet, but I just want to confirm.
+
+**Lisa Cardia** 1:21:11
+OK.
+
+**Lucas Nelson** 1:21:19
+Yeah, tech. So technical enablements have placeholders. Andy\'s going to be sending in the agendas by at the latest Wednesday morning.
+
+**Daniela Tea** 1:21:26
+Oh, no, I I\'m sorry. Look, I meant the the two remaining clots.
+
+**Lucas Nelson** 1:21:28
+No, we haven\'t sent the agendas yet, but the placeholders are on the calendar for the content authoring, yeah.
+
+**Daniela Tea** 1:21:33
+OK. Yeah, that\'s what I was. I was want to confirm Lisa that those were on your calendar and so you will see an update to that once the agenda link is added.
+
+**Lisa Cardia** 1:21:42
+OK. I think I was confusing it with the the early morning ones that we were talking about. So those are the ones I didn\'t see.
+
+**Daniela Tea** 1:21:48
+OK, yeah. So yeah, that would be a definitely a a Scott questions. I think he\'s managing the attendee list for that, but are we sending out the platform expansion ones as well, Luke, this week?
+
+**Lucas Nelson** 1:22:01
+Yeah, I can put the placeholders on those for sure. Yeah. And and state state intention. It it\'s it\'s basically what\'s on this page here. I\'ll just restate it in the invite. Yeah, right. Yep. That\'s a good idea. Yeah.
+
+**Daniela Tea** 1:22:04
+OK, OK, sure.
+Yeah, we can. Sounds good. OK, perfect. Thank you.
+Alright.
+Alright guys, um, there\'s no further questions then. Thank you guys for joining and I will be sending out the remaining agendas shortly.
+
+**Lucas Nelson** 1:22:29
+Thanks, Danielle.
+
+**Daniela Tea** 1:22:29
+Thank you guys. All right, goodbye.
+
+**Charles Baugh (SHRSS)** 1:22:31
+All right. Thank you.
+
+**Lucas Nelson** 1:22:32
+Have a good afternoon.
+
+**Lyon, Rick (Director of Digital Experience)** 1:22:33
+Thanks everyone.
+
+**Lucas Nelson** 2:13:37
+Hey Angelica, can can can you drop from the call so the recording can stop?
+
+Lucas Nelson** stopped transcription
+
+
+## Session: LOB Specific Components — 2026-03-03
+
+**SHRSS Adobe Knowledge Transfer-20260303_130309-Meeting Recording**
+
+March 3, 2026, 6:03PM
+
+1h 37m 18s
+
+**Lucas Nelson** started transcription
+
+**Lucas Nelson** 0:09
+All right, Daniella, recording started whenever you\'re ready. Thank you.
+
+**Daniela Tea** 0:13
+Thank you, Luke. Hey, everyone. Good afternoon. Let me pull up today\'s agenda.
+OK. All right. So today I wanted to cover some line of business specific components. This is for the cafe websites, which we have talked about some of these before, but we\'ll take a look at them and and see the configurations for each of these.
+I also wanted to go over something that we know was specifically within hotels for the microsites. So that includes A microsite page template as well as a component called the microsite navigation. We can see how that works.
+And then also as part of the cafe websites, there was also that special page for the messy burger. And so in order to create that page, the team had to create a special template as well as another special component that\'s used within that template.
+So we can take a look to see how that works and how that\'s set up, and also what the page looks like when it\'s viewed as published. So we\'re going to go ahead though and start first with these three cafe components here, the cafe delivery widget, the dining reservation component, and the reserve table component.
+So I am going to jump on over to my little test page called KTLOB and so let\'s take a quick look here. All right, so I believe the team should be familiar with this component. We talked about how it\'s pulling in those cafes.
+That are within the locations content fragments and we had acknowledged why Hard Rock Casino Rockford was appearing. As we saw from within the content fragment itself, it had been marked as a cafe location.
+And so that\'s why this is here. And of course when we were trying to add some additional locations without that line of business selected, we saw that that wasn\'t actually getting added. So this is coming in from the cafes listed in the content fragments.
+And within those content fragments, as we remember, you\'re able to select whether that specific location allows for delivery service and including the specific URLs that are associated with them.
+So as you can see here for me, because I live close to the DC area, by default it\'s showing DC for me and for the Washington DC Cafe, there were the four different preferred services, DoorDash, Postmates, Uber Eats and Grubhub.
+If I go over to this tab here, this is the Hard Rock Cafe, Washington DC content fragment. And so we can see that\'s where the delivery partners are listed with the associated URLs. And so that\'s what\'s populating the drop down that\'s present.
+In this component, there are of course some additional configuration items for this specific component. In addition to pulling in the locations here, what we see here, I know there\'s a field called radius and kilometers and I was looking into the specific field.
+Trying to track down how this is controlled right here. You can see though I\'ve left it blank and so it\'s not having any bearing on the component itself at this moment. It\'s showing Washington DC for me because my location services is on and that is the closest to me.
+But I was planning on talking to the team to understand this specific field, but it does not necessarily need to be filled out. It\'s not a required field by any means, and I can speak more to this once I discuss with the team on this field. We also have our title field for order delivery now, which you can see is displayed here to the right.
+We have our image displayed to the left, the alt text associated with the image, the description which gets displayed right underneath the title, the button text of go which is displayed here and we also have a disclaimer field. So if I were to fill out.
+My disclaimer text and hit done. It displays underneath here and typically what we saw with this component I believe on the live version of this, there\'s actually a background where this is placed on it. So like you may think, oh this is like some really weird padding and such.
+But if you look at the actual delivery page, I believe there\'s like a background image and another white background. So this seems to line up with that, but I\'m going to remove the disclaimer text right now, but that\'s what it looks like when you do display it.
+And Don, I see your hand is up.
+
+**Don Middlebrook** 5:07
+Yeah, I just wanted so make sure like I said, the alt text is coming from the description field in the dam, but the description field is custom.
+
+**Daniela Tea** 5:18
+So you can inherit it from the description of the asset, but for this particular asset, I do not believe there\'s anything associated with it. That\'s why I just put something here for right now.
+
+**Don Middlebrook** 5:23
+OK.
+OK.
+
+**Daniela Tea** 5:30
+Mhm.
+
+**Don Middlebrook** 5:32
+But I guess the description field right there, that\'s custom, right?
+
+**Daniela Tea** 5:36
+Oh, you\'re asking if it\'s no. So this description field if we.
+
+**Lisa Cardia** 5:41
+That\'s the description, Don, on the card, not for the image.
+
+**Don Middlebrook** 5:46
+OK, that\'s what I\'m just trying to clarify.
+
+**Daniela Tea** 5:49
+So wait, I\'m sorry, what? What do you mean on the card?
+
+**Lisa Cardia** 5:51
+He he he thought that like the all image text and the description field were related to the image above. But the description field right there is, unless correct me if I\'m wrong, the description we see when we\'re viewing the page, not for the image. Yeah, yeah.
+
+**Daniela Tea** 6:04
+Oh, you\'re. I\'m sorry, you\'re talking about this field. I sorry, dot. Thank you, Lisa, for clarifying. Yes, this description field is specifically for this here, right?
+
+**Don Middlebrook** 6:05
+So our delicious menu, yeah.
+
+**Lisa Cardia** 6:14
+I think the only confusion is why that\'s not like a regular text area where we have all the other like instead of it\'s like a field instead of like a rich text.
+
+**Daniela Tea** 6:26
+I miss. So I suppose this could potentially be changed to a rich text. However, I guess the this particular component has a certain style to it. Like this was not intended to necessarily be able to like change the heading or change.
+Like bolding or anything like that. So that\'s that\'s why this was a specific text field. But I think what you\'re saying though is because it\'s like just like one line, perhaps it\'s hard to understand that it maps to this particular field.
+
+**Lisa Cardia** 6:56
+Yeah, I think that was the confusion there.
+Right.
+
+**Daniela Tea** 6:59
+OK, but yeah, so the description field is this here. The alt text is specifically for this image here, and you do have the ability to inherit if there\'s something in the dam, but this field is is mapped to the image over here.
+
+**Don Middlebrook** 7:09
+Turn it on again.
+OK. Thank you.
+
+**Daniela Tea** 7:15
+Yep.
+Oh.
+OK, cancel. So since we saw how this works with locations in terms of how the drop down is populated, of course as new cafes are opened and such and if there\'s delivery, what the author would certainly need to do is make sure that the.
+Is delivery check box is checked as well as adding the delivery partners and as long as the line of business is correct then it should appear within the drop down drop down scene here. But I will pause to see if there\'s any questions about this component.
+
+**Don Middlebrook** 7:58
+I do have one for the location that\'s coming. Is that coming from the DPLT?
+
+**Daniela Tea** 8:00
+Mhm.
+Yes. So this, yes. So the list of locations here is coming in based off of what you see in deep like when we say DPLT to be clear, when we see DPLT, the content fragments that is getting information from DPLT.
+
+**Don Middlebrook** 8:23
+OK.
+
+**Daniela Tea** 8:23
+That\'s that\'s what I mean when I say that.
+
+**Don Middlebrook** 8:25
+OK, all right, \'cause I I I guess.
+I want to kind of relate that to the tags that we have in the dam for locations. Right now that\'s a manual process. So I I think we need to on our side look in how to how to keep updating those tags.
+For locations rather than me and go in and update every time we have a new property. So if that\'s just something we need to look into.
+
+**Daniela Tea** 8:58
+Makes sense. Yeah, no. But that certainly makes sense. So in terms of like trying to get the process a little bit more streamlined. Um, yeah, understood.
+
+**Don Middlebrook** 8:58
+Nothing you need to do.
+Yeah.
+
+**Lisa Cardia** 9:09
+I think for me Daniella, I was trying to compare this one to the production site and because this was I think designed just slightly different in the in the visuals like the disclaimer which I don\'t think you have in your example in mobile like looks.
+
+**Daniela Tea** 9:15
+Mhm.
+
+**Lisa Cardia** 9:28
+Unrelated to the content because of the way it sits. Like usually there\'s like an outline I guess in the box for desktop tablet.
+
+**Daniela Tea** 9:35
+Mhm.
+
+**Lisa Cardia** 9:39
+I don\'t see your the outline for you right now though. Like if you go to view as published, maybe that\'s why I\'m not seeing it.
+
+**Daniela Tea** 9:47
+What are you? Sorry, what are you trying to? What do you mean by?
+
+**Lisa Cardia** 9:48
+I I had on my notes like mine was showing like a black border.
+
+**Daniela Tea** 9:56
+Uh oh.
+
+**Lisa Cardia** 9:57
+Is it no longer? That\'s interesting. Like I had a black border around this entire widget.
+
+**Daniela Tea** 10:03
+So if you had it within, I\'m not sure if you had it placed within a container or something, but what I did was I just placed the cafe delivery widget directly on the page. I think if we were to look at at the cafe delivery page that has this on there in AEM, it\'s likely going to be set in.
+
+**Lisa Cardia** 10:03
+Widget.
+OK.
+
+**Daniela Tea** 10:23
+In a container with a background image or something like that, but I this is me just adding this directly on the page. So if I added it directly on the page, I guess I\'m this is what it looks like right now. You can see it\'s pretty empty because there\'s no image, there\'s no button text.
+
+**Lisa Cardia** 10:30
+OK.
+Oh, no, no. Now I understand what I was. OK, I do understand my comment. Sorry again, I\'ve tested these so long ago. So if you add a disclaimer and I guess the same, it\'s so you see when you hover over the whole widget, you can see that where the border is.
+
+**Daniela Tea** 10:43
+OK.
+Mhm.
+
+**Lisa Cardia** 10:54
+So the disclaimer like isn\'t aligned with the photo, it\'s more so aligned with like the container itself. So the disclaimer looks very disjointed to the content since it doesn\'t match production, which goes pretty much edge to edge photo with the disclaimer.
+So if you added a disclaimer and you just put like a sentence, like a fake filler sentence, I guess this is where. Yeah, see how it goes. To me, that looks odd.
+
+**Daniela Tea** 11:23
+Yeah.
+
+**Lisa Cardia** 11:25
+Because you\'re not gonna have the cafe delivery widget title there. So to me, the disclaimer looks off or unrelated because we can\'t like align it with the content.
+
+**Daniela Tea** 11:29
+Right.
+Mm-hmm. Um, let me see.
+
+**Lisa Cardia** 11:38
+Does that make sense? It\'s just and it\'s because this is a different visual than production. Like I think production\'s image has either a like a background to it or something. So this is just slightly different. But since it\'s different, I think it looks off or like unrelated to the content above it.
+
+**Daniela Tea** 11:53
+Mm-hmm. Yeah. So let\'s see. I\'m trying to take a look to see what what was what we did on the actual page and.
+
+**Lisa Cardia** 12:04
+It\'s just, yeah, because there was background images from our production site, but since the containers are empty, it doesn\'t look like it aligns.
+
+**Daniela Tea** 12:09
+Yeah.
+Yeah, so yeah, Nope, I I agree. So in terms of of what I\'m seeing here on on the other AEM page, the delivery page, and I\'m gonna just pull that over here. So yeah, it looks like it was placed within a container and then also a container with the background.
+I noticed the disclaimer isn\'t on here. Perhaps this was what where we moved the disclaimer to appear completely underneath. Of course, this is just a text component versus actual using the disclaimer field here. So I think this is one way to get the desired alignment, but I think as we\'re documenting.
+And understanding how to like some of the things that could be needed for this component. You mentioned like the edge to edge for the image as well as the alignment for the disclaimer text.
+
+**Lisa Cardia** 13:02
+Yeah, just because if a if a background image isn\'t used, it just doesn\'t look correct.
+
+**Daniela Tea** 13:07
+Yep, understood.
+
+**Lisa Cardia** 13:12
+Minor, but yeah, you can continue. I don\'t think I had actual questions because we did answer the Casino Rockford question why that was displaying and I reached out to the to the the DPLT team, so.
+
+**Daniela Tea** 13:13
+OK.
+Mhm.
+OK, Yep. So that I guess it might take a while for it to appear, but once the that data is correct and it\'s updated and and pushed to AEM, then that it should disappear from the drop down.
+
+**Lisa Cardia** 13:39
+Yeah, and then I think it just goes without saying again, image will hope for the spec.
+
+**Daniela Tea** 13:44
+Yep.
+Let me pull up for the reserve a table component. I wanted to also show how this is authored for an individual site, so I\'m going to pull up experience fragments here on the side.
+OK, so for the reserve a table component, this is what\'s being used within both the the modal at the very top of our cafe page, but also something I believe you would see within the dining reservation component if it if there\'s say like a button.
+Or something that would activate it. So let\'s take a look at how this one is handled. So with our reserve table configuration, there\'s two fields, one for the drop down placeholder and then one for the button that will appear.
+After you select something O let me show you though how this is populated because if I click this you\'ll see a bunch of different locations O this dropdown is actually coming from.
+I\'m going to change the view to column. This might be if you\'re more familiar with some of the experience fragments and I\'m going to cafe and you\'ll see all the different cafe locations. If I click on a location like let\'s say Pittsburgh and I click EN, you\'ll see there\'s an experience fragment called reserve table.
+O I\'m going to open this U and I\'m going to hit edit.
+And I can see that actually. So let\'s see one second or table. I want to get something that actually has like a button or something, so it\'s very clear. Let\'s see.
+Nope, that\'s all I.
+
+**Lyon, Rick (Director of Digital Experience)** 15:37
+Hey Daniel, is that that one fragment you just showed? Is that in every cafe folder?
+
+**Daniela Tea** 15:39
+Yeah.
+Yeah.
+Yes. So there is a, so there is each of the cafes have their own separate section of experience fragments and that\'s to be able to say handle say like the header, the footer as well as this reserve table component.
+So I\'m trying to find one that just has a button associated. So let me let me. OK, so like, let\'s look at this one here. Let\'s look at this one.
+
+**Lyon, Rick (Director of Digital Experience)** 16:09
+It\'s purple.
+
+**Daniela Tea** 16:11
+Yep, it\'s it\'s purple because I\'m within a I\'m in the hotel\'s theme. I\'ve set my page to be the hotel\'s theme. That\'s the reason why it\'s purple.
+
+**Lyon, Rick (Director of Digital Experience)** 16:12
+Why is it a purple button?
+
+**Daniela Tea** 16:23
+Um, one second. I\'m going to.
+
+**Lyon, Rick (Director of Digital Experience)** 16:23
+Oh.
+
+**Daniela Tea** 16:27
+Try to find this here.
+We should.
+
+**Lisa Cardia** 16:33
+I know you\'re looking for an example, so would it? I know and you\'re going to show us that it gets configured on the fragment level too. So would you say that when you add the the actual component to the table that filling out those two fields isn\'t really necessary because it\'s going to get overridden by this or?
+
+**Daniela Tea** 16:35
+Mhm.
+Mm-hmm.
+Oh, so to be clear, what we\'re seeing here is this is a component that\'s going to be used within the header, the EN header. I\'m going to show you what that is and so I\'m just showing though.
+
+**Lisa Cardia** 17:02
+OK, so so we\'re not dropping it on a page. It\'s only. OK, that makes sense then. Got it.
+
+**Daniela Tea** 17:04
+No, you\'re not dropping it on a page. That is correct, Lisa. So here what you\'ll see though within here within my experience fragment I have this is this is not that component. What this is showing is this is a container that has a black background with a title, some spacers and a button that has.
+The information on there, right? And So what this component does is it pulls in the different experience fragments and displays it depending on the drop down. So let\'s go ahead and make a new one so you can see how that gets added here. I\'m going to go back.
+To just create a new cafe, I\'m going to create a folder called KG.
+And I\'m going to go to my KT folder, which should be here, and I\'m going to create my structure. I\'m just following the structure here because this is typically what you\'re going to have for your cafes, the different languages.
+O In my case I\'m going to have en and then I\'m going to make something called reserve table.
+Second. Yeah. OK.
+Yeah.
+And then where did it go? Oh, it\'s down here. And then I want to make a something called reserve tables. I\'m going to create experience fragment called reserve table. I\'m going to choose SHRSS blank variation.
+I\'m going to call reserve table.
+OK, all right, so now within my reserve table, let\'s. I\'m actually going to just copy this container, but change out the phone number so it\'s clear what we\'re showing.
+OK.
+So I\'m just going to put some random numbers.
+That\'s too close. Alright, so I\'m just going to put this here just so we can see the number has changed. Alright, and if I were to refresh this.
+We should be able to see my KT.
+So let\'s see, reserve a table.
+And my reserve table had a reserve table. So I yeah, one second.
+Yep. OK, so let me go ahead and publish my experience fragments.
+Excuse me.
+K and let me see if I can get that to appear on the page.
+Table.
+Table.
+Trying to think this was one second.
+Trying to remember what I did earlier to get this to work.
+So once I can get this U and running I will show you guys how I did it.
+this one again.
+Hmm.
+Hmm.
+All right, so I should be seeing that on here. I will actually work on this one off the side, but I did want to show if I change something how you guys can see it get changed. I\'m going to go ahead and change this one right here.
+So instead of showing this, if we were to take a look at this specific location, let\'s take a look here.
+So that displays our OpenTable advanced embed here. So if I click on this you can see we\'ve used an advanced embed, but the experience fragment is going to be.
+Gathered within this specific component, but if I were to like if I were to say, I think you guys have things other than just open table, but those would be using again the advanced embed component. So whatever you put in here will be displayed within this component when that specific drop down is selected.
+So let\'s try and add. I\'m going to change this. Hey Rick, I see your hands up.
+
+**Lyon, Rick (Director of Digital Experience)** 22:05
+Yeah, so one thing that I know that we\'ve ran into on the Vision GN doing this is sometimes the widgets are sometimes are just insanely large because you\'re just not coded very well. So are there any like adding safeguards or anything in the widget if you know the code is like accessible?
+
+**Daniela Tea** 22:11
+Mhm.
+Mhm.
+
+**Lyon, Rick (Director of Digital Experience)** 22:25
+Simply wide or or you don\'t very tall or anything like that.
+
+**Daniela Tea** 22:29
+So when you say excessively wide, do you mean like I guess like do you have an example that I can see?
+
+**Lyon, Rick (Director of Digital Experience)** 22:34
+I mean it\'s gonna be franchise, it\'s not gonna be open table because they have the nice widget. But I\'ve seen other smaller I guess services that are similar and you know you could see like the the table coded in in the widget itself is just not very styled and stuff like that and there could be like 7 or 8 fields.
+
+**Daniela Tea** 22:38
+Oh, OK.
+Hmm.
+So keep in mind that. So this is where that reserve a table. So I\'m just on the stage version of the cafe site. This is where the reserve a table button is located. It\'s in the top and then it displays as a modal and then depending on what you select, I think you\'re looking at.
+
+**Lyon, Rick (Director of Digital Experience)** 22:53
+Um.
+Me.
+
+**Daniela Tea** 23:10
+This one here, depending on what you select, it displays, you know, like within the modal. So that\'s what I was saying. If you have an example, we can certainly see what it looks like in here. Oh, here we go. We can see here\'s my KT location. This is the one that I had added.
+
+**Lyon, Rick (Director of Digital Experience)** 23:17
+Mhm.
+
+**Daniela Tea** 23:28
+So just to be clear, this was the KT location that I had added within my experience fragment and you can see how it\'s visible within the cafe website and it\'s invisible in this drop down. So it\'s based off of and I\'m actually going to write out the steps for you.
+Guys and post it onto the Confluence page later tonight just to make sure it\'s clear. But as you can see how my experience fragment is now displayed when I was looking at the cafe website available here. But yeah, Rick, if you have an example, I can certainly take a look at that. But I think for what we saw, it was mainly like buttons for phone numbers as well as the open table.
+
+**Lyon, Rick (Director of Digital Experience)** 24:02
+OK.
+
+**Daniela Tea** 24:08
+For for the reservation, I\'m I think I just want to know like what what other options there were and I can report back to you on that.
+
+**Lyon, Rick (Director of Digital Experience)** 24:17
+OK, yeah, so like I don\'t know if if what you guys build works the same way as on Visergy, but if a cafe site has a particular third party widget that\'s not open table on their cafe site, that same widget is will be displayed here in the pop-up.
+
+**Daniela Tea** 24:28
+No.
+
+**Lyon, Rick (Director of Digital Experience)** 24:32
+So that\'s kind of where that came from. So I don\'t know if if the same widget will appear twice in AEM or if it\'s only on the cafe site, but I\'ll I\'ll click around and see if I can find any that I\'m talking about, but.
+
+**Daniela Tea** 24:33
+I I see so.
+OK, sure. Yeah, yeah. So for the most part though, I think what I saw from the experience fragments was the use of a button. I think it\'s possible, you know, if you needed to to have the button just I guess either link to the page versus doing an embed.
+You know, something like that. So there there are potentially some ways you could get around like a really ugly embed. But for the most part, what I saw with the open table one is going to be very similar to this. Right now it\'s kind of wonky, right? Because this is when the experience fragment, but when it\'s displayed within the reservations component, I believe there was.
+
+**Lyon, Rick (Director of Digital Experience)** 25:14
+Mm.
+
+**Daniela Tea** 25:20
+Some styling that was added in order to kind of make it fit within the modal itself. But yeah, Rick, if you have any examples, please provide them and I can take a look. Yeah, OK, so for this reserve a table component though, again, I\'m going to write out the exact instructions for what I did to get this.
+
+**Lyon, Rick (Director of Digital Experience)** 25:28
+OK. Thank you.
+
+**Daniela Tea** 25:40
+To work. However, it is a matter of creating an experience fragment on folder. We go back here. As you can see with my KT folder here I created this and this is going to be something you\'re going to need to do for additional cafe properties.
+Your experience fragments are going to basically be things like the header, the footer, reserve a table. You can see here we had the parking information set up for the specific cafes as well. So just something to keep in mind as you add additional properties.
+To the site.
+I\'ll pause here to see if there\'s any questions about this.
+OK. All right. Let\'s move on now to our dining reservation component. This is something that I think that the team is pretty familiar with for the cafe websites located at the very top of our cafe websites.
+
+**Lisa Cardia** 26:39
+Wait, sorry, sorry. I I do actually have one question. What is driving like the options in the list? Like could we make this a like a unique list if we wanted a landing page with just US location? Sometimes we have offers where they\'re just.
+
+**Daniela Tea** 26:41
+I\'m viewing it as published. Yeah, go ahead.
+Yep.
+
+**Lisa Cardia** 26:58
+EU locations or just or just the franchise or what have you? So is there a way that we can control the list?
+
+**Daniela Tea** 27:07
+So this.
+
+**Lisa Cardia** 27:07
+Or isn\'t it all or nothing?
+
+**Daniela Tea** 27:09
+So this list is based off of all of the different experience fragments that are created here. So that\'s what\'s that\'s what\'s dictating this. So keep in mind like for example I made my and I\'m gonna view it as on on here.
+Yeah, so you can see my KT option is available here. However, this is not necessarily something that\'s in like DPLT, right? So this list is specifically drawing in the different folders that are listed in here in the experience fragment section based off of if there\'s that reserve a table.
+Experience fragment in it.
+
+**Lisa Cardia** 27:47
+OK, but we can\'t like include or exclude.
+
+**Daniela Tea** 27:51
+As of right now, no. It sounds like though what you\'re saying is like the different regions would might be what you\'re interested in, OK.
+
+**Lisa Cardia** 27:58
+Yeah, yeah. In case it\'s on a page at the header, well, is it only in this header? I guess because we can\'t actually have a unique header per page, can we?
+
+**Daniela Tea** 28:10
+So you. So there\'s actually unique headers per each each cafe. Mm-hmm.
+
+**Lisa Cardia** 28:16
+Property page but but like if we made like a a landing page for like a promotion that just so happens to be only available at specific cafes.
+
+**Daniela Tea** 28:28
+Um, maybe about specific cafes, I see.
+
+**Lisa Cardia** 28:31
+So if we made, yeah, so like so a lot of times we have these limited time offer menus that we make and we have a landing page dedicated to them. So like currently there is a landing page for International Women\'s Month. So if that\'s only available though at specific locations, my question was could we just limit?
+
+**Daniela Tea** 28:36
+Mhm.
+Uh huh.
+
+**Lisa Cardia** 28:47
+The reserve to show just the locations that it\'s.
+
+**Daniela Tea** 28:50
+I see. So right now, no. But what I\'m wondering is for your use case, if perhaps you could do that using the drop down component we looked at yesterday. I know that\'s not like exactly the same. I\'m just trying to think about.
+How what you\'re trying to show is essentially this drop down, but with specific locations listed.
+
+**Lisa Cardia** 29:13
+Yeah, but then it wouldn\'t trigger the, it wouldn\'t trigger the open table from there like that would be more so just like a work around to get you to the property page.
+
+**Daniela Tea** 29:19
+Well.
+So something I wanted to show is that you can see how I\'m what I\'m showing right now is I\'m looking at this specific cafe, right? And I\'m looking at their specific header. The way that this is authored is it\'s showing the experience fragment.
+Showing the experience fragment to be launched when clicking reserve a table. So it\'s not actually using this component at all, it\'s using the experience. It\'s going to show the experience fragment in a modal. So what I\'m saying is there\'s potential to be able to show these experience fragments in a different way, perhaps using that drop down.
+
+**Lisa Cardia** 30:03
+OK.
+As as the URL. OK, OK.
+OK, OK.
+
+**Daniela Tea** 30:15
+Yeah, so something something I need to think about since I I know like right now this specific component I believe is only used presently on on the cafe homepage. But for your use case, I think there could be ways to achieve what you\'re saying with that other component.
+Yeah. All right. Yes.
+
+**Lisa Cardia** 30:34
+OK. Thank you.
+
+**Lyon, Rick (Director of Digital Experience)** 30:36
+Um, Port Porto is one of the cafes.
+
+**Daniela Tea** 30:39
+I\'m sorry, what was it?
+
+**Lyon, Rick (Director of Digital Experience)** 30:40
+Orto.
+
+**Daniela Tea** 30:42
+Let\'s take a look. OK, so I think here you can see it has that book now link and then it takes you to. It looks like it it what was added was the actual link to it versus showing an embed within the modal.
+
+**Lyon, Rick (Director of Digital Experience)** 30:59
+I don\'t know if it was Porto or I think it\'s just Porto.
+
+**Daniela Tea** 31:01
+Oh, was it? Oh, I\'m sorry.
+
+**Lyon, Rick (Director of Digital Experience)** 31:03
+That\'s fine.
+
+**Daniela Tea** 31:04
+Uh, I don\'t. Is that? Can you spell that word?
+
+**Lyon, Rick (Director of Digital Experience)** 31:11
+I mean, it\'s porto PORTO. Maybe go to the live cafe site.
+
+**Daniela Tea** 31:14
+Uh, OK.
+
+**Lyon, Rick (Director of Digital Experience)** 31:21
+Just forward slash portal. Oh OK yeah, I wanted to show the the website first cause it\'s the same.
+
+**Daniela Tea** 31:29
+Oh.
+OK, so this is what you were saying. Um.
+
+**Lyon, Rick (Director of Digital Experience)** 31:35
+Yeah, so probably not the best case, but you can see how they\'re not as clean as the open table, which it.
+
+**Daniela Tea** 31:43
+Yeah, I\'m sorry, I\'m a little confused \'cause so on the live site it looks like it is. Does the embed normally display here?
+
+**Lyon, Rick (Director of Digital Experience)** 31:52
+It should. It\'s not now and I just saw that as I found Porto, but I just wanted to show you the non open table widget that could be a little bit taller than the open table widget, if not wider.
+
+**Daniela Tea** 31:54
+OK.
+Bye, bye.
+Yeah, no, understood.
+Yep. OK, So what I am thinking, I\'m like if this were placed within because the way that this would be authored would likely be the advanced embed component with that embed code that would be placed within the experience fragment. I think we would. I can\'t tell you exactly how it will look in the modal.
+
+**Lyon, Rick (Director of Digital Experience)** 32:16
+Right.
+
+**Daniela Tea** 32:24
+I saw the code, but the experience from. Yeah.
+
+**Lyon, Rick (Director of Digital Experience)** 32:26
+What is that? Is that the procedure? We would put it in the advanced bed on the cafe site and then for that pop-up motor we would we would put it there as well.
+
+**Daniela Tea** 32:32
+So, so the procedure would be for the let me get back to our experience fragment. So in our experience fragments for your specific cafe, you would have created a reserved table experience fragment.
+And on here you would have you know you would you would put whatever you need here. In this case I have my button for this specific for Porto. Where is it?
+OK, one second. Proporto this code would then go within this experience fragment. So that way when you click reserve a table, it would pop up in a modal. So pretend it popped up here so you would see it here. It would pull in whatever\'s in the experience fragment.
+
+**Lyon, Rick (Director of Digital Experience)** 33:08
+Mm.
+
+**Daniela Tea** 33:18
+And then what you have here on the actual Porto page, this is part of the dining widget, which we can break down how this is authored and how you might be able to, you know, like add some of these features here.
+So let\'s take a look at the dining widget to see how that would work. But for this to appear in the modal though, Rick, it would go within the experience fragment.
+
+**Lyon, Rick (Director of Digital Experience)** 33:42
+OK.
+OK.
+
+**Daniela Tea** 33:44
+All right. Let me pull in the page we\'re just looking at, which has my dining reservation. OK. All right. So as you guys have probably seen on several of the cafe pages, of course, you know, there\'s.
+Different options for every cafe. Not everything\'s gonna use OpenTable, not everything\'s gonna use Grubhub, etc. I believe when we reviewed this, I think a couple months ago, there had been an ask about other integrations other than just Grubhub.
+And so I know that we had added another delivery services button in order to to provide some flexibility for you know things are the Grubhub. Of course we understand though that if there\'s additional integrations that\'s certainly something you know I would imagine you would want to capture in the gap while this.
+Provides a button to be able to add other delivery services. If you\'re looking for something that\'s more styled for the specific delivery service, that would of course be additional enhancements for this, but let\'s take a look and break this down.
+And see how is this specific component authored. All right, so let me maximize this.
+OK, so starting with our title here, Baltimore in this case, we can see how it\'s presented on the image. The banner image of course is selected and then displayed here on the page.
+Alt text whether you want to get it in from the dam itself or if you want to apply your own that those fields are there. We have our phone number which is displayed here. We have our e-mail CTA label.
+General inquiries and you can notice that the icons that are present here, these are things that are paired with the specific label. As of right now, you\'re not able to necessarily change out the icons, but whatever is put in this label here or this label field is going to appear next to the appropriate icon.
+So telephone for phone number and then this letter icon for the e-mail CTA label. The e-mail CTA link is then added and applied to be the HREF for whatever the label is for here and as we Scroll down we have the address.
+601 E Pratt with the address link. So when I hover over this, if I hit preview, I\'ll be able to see this be underlined and then it\'s next to the address icon. I feel like someone\'s hand might have gone up, but I don\'t see it anymore, so I\'m not sure.
+Does somebody have a question?
+
+**Lisa Cardia** 36:33
+I have a question. I didn\'t put my hand up. Yeah, my question is for the phone number. I know we had gotten this issue in the past to so that it like we don\'t have the special characters showing, but we still have it where if you click it, you still have the like TEL colon.
+
+**Daniela Tea** 36:35
+Oh, OK. Go ahead, Lisa.
+Mm.
+OK.
+
+**Lisa Cardia** 36:52
+Format because the numbers they weren\'t. You couldn\'t make a phone call all the way through while the way it was configured because the display name needed to be the same as the actual phone number.
+
+**Daniela Tea** 37:00
+OK.
+Yes.
+Right. So I don\'t. I just might be super tiny, but you can see that I\'m maybe you can see I\'m hovering over if you look at the very bottom left. OK, OK.
+
+**Lisa Cardia** 37:15
+Yeah, I can see the tell. So does that mean if a user just puts in the right digits with no special characters? Like what was it on the the back end so that we know it?
+
+**Daniela Tea** 37:24
+Yeah, so let\'s take a look at what was put there. So you can see here this says 1410-347-7625 and what that equated to was when I hover over this again tell and then the plus and then 14103477625 without the dashes.
+
+**Lisa Cardia** 37:44
+OK, it\'s stripped it of the dashes and the spaces. OK, And then my second question was that if we don\'t have the e-mail, the phone number or anything, we can\'t hide the icons. They still show when it\'s blank.
+
+**Daniela Tea** 37:45
+That\'s correct.
+Yeah, let\'s let\'s take those away. Yeah, so these are required fields, I believe. The e-mail at least was a required field, but let\'s take away the phone number.
+
+**Lisa Cardia** 38:10
+When you when we like, yeah, when we removed the optional, it didn\'t remove the icon.
+
+**Daniela Tea** 38:16
+OK, so I\'ve removed the phone number. The icon is hidden.
+
+**Lisa Cardia** 38:21
+OK, so maybe this is this was just something that we experienced in the past. Maybe that got fixed.
+
+**Daniela Tea** 38:26
+Well, so the for the phone number, phone number is optional.
+
+**Lisa Cardia** 38:29
+Or or or or is it the required ones that maybe that\'s what I\'m confusing this with. There was there was just something where we could not remove. So possibly it\'s the e-mail. Yeah some something like that where it\'s always displaying. But there are there are case like scenarios where a cafe might not have.
+
+**Daniela Tea** 38:40
+Maybe could be the. All right, one second. Let\'s do this.
+
+**Lisa Cardia** 38:49
+Of the the phone number or e-mail, so like we wouldn\'t have anything to put there.
+
+**Daniela Tea** 38:54
+OK, so one second, just putting something here. So the phone number can be blank and if you I\'m going to remove the phone number. So if you don\'t have the phone number, you can also see it\'s not technically a required field. e-mail was deemed a required field though.
+But for the phone number, I\'ve removed the phone number and you can see that the icon doesn\'t show. So I\'m I\'m not sure if perhaps that was. I\'m imagining when you were doing the testing for this probably a couple months ago, perhaps that was something that got addressed during that time. But phone number since it\'s not required if you do remove it.
+It\'s not displaying the icon.
+
+**Lisa Cardia** 39:36
+OK, we\'ll we\'ll take down that the other ones still display when left blank.
+
+**Daniela Tea** 39:41
+Yeah. OK. All right. I\'m gonna hit done again just so we can see the phone number that was there previously.
+
+**Lisa Cardia** 39:46
+Oh, I and I did have one more, but you didn\'t. I\'m probably jumping ahead myself. You didn\'t. Did you show us where you link the menus with the PDFs?
+
+**Daniela Tea** 39:53
+Oh, no, we\'re we\'re we\'re up top here. I\'m working my way down. No problem. No problem. Yep. All right. I\'m going to Scroll down and we can take a look at our social media icons. Excuse me. So in this case here, I\'m going to open this up and we can notice what\'s there.
+
+**Lisa Cardia** 39:57
+OK. Yeah. Sorry, I\'m, I\'m jumping around on my notes at the same time. Thank you.
+Yes.
+
+**Daniela Tea** 40:26
+Icon is being phased out so that\'s being that was added here. I believe though I think we maybe it was last week we were talking about generic lists and adding you know like icons and stuff to to appear in this drop down list.
+That that is something that\'s like kind of like permissioned group who would be able to add additional icons. This is the set of icons that we were provided with for the cafes. However, when it comes to adding additional ones, there is a way to do it, but only if you.
+Who are within a specific user group. I\'m going to bring up the generic list which should not be accessed by like say a random site author. I\'m just going to head over to our little tools icon here and then ACS AEM Commons and click on generic lists.
+So there is the social media types. Believe this is it. I\'m going to hit properties and you can see here this is where those icons are coming from. Facebook, Twitter, AKAX.
+Instagram, et cetera, et cetera. And so someone who has the proper permission, so it\'s likely going to be like a site admin or something, can add additional options available to the authors.
+And you\'ll notice here we are currently using Font Awesome for these. So these are the Font Awesome classes and so that\'s what would be displayed once that\'s enabled by the admin user. So I think Lisa, you were out last week, but when you were having that issue.
+I think it was with the locations component, you and Gonzalo were having that issue.
+
+**Lisa Cardia** 42:18
+Oh yeah, yes, we couldn\'t see the drop down.
+
+**Daniela Tea** 42:21
+Correct. So yeah, we, I think last week, I don\'t know if Gonzalez is on the call right now, but we were able to confirm that Gonzalez can now see it. You should also be able to see it. The reason why you weren\'t able to see it is because there was the the list of drop down options again is a generic generic list.
+And so that is something that just needs to be applied at like a read-only level for the users. So I believe we addressed that. So you can also actually confirm that on the locations component, but that was the reason why you weren\'t able to see it. So for the authors though, they should be able to see these values. However, they\'re not necessarily going to.
+
+**Lisa Cardia** 42:49
+OK.
+
+**Daniela Tea** 43:01
+Be able to add these values unless they belong to a certain user group. OK, so I\'m going to go back to our page.
+Where\'s it? I\'m gonna go back to our page. So that is how these specific icons.
+That\'s where these values are coming from, so everyone understands that. And as you can see here, you can add multiple, reorder them, et cetera. And I do believe these should open up in a new tab by default. Let\'s try that. Yep. So I didn\'t have the option to set it to open in a new tab in here because.
+By default all of these are going to open U in a new tab.
+All right. OK. I am going to keep moving down. So now we\'ve covered the top portion of this. Let\'s go down here to this make a reservation section. So we see where that label\'s coming from. Make a reservation. It\'s coming right here.
+We have a reservation platform. We either have open table or you have the option to choose others. Others means that I let\'s. I\'m actually going to make a copy of this. One second. I\'m going to make a copy of this.
+So I can kind of mess around with this one and we can see what that looks like.
+OK.
+Rush.
+OK.
+OK, so let\'s change this to others. I think there are quite a few that do have OpenTable, but if I were to keep, you know, if I have other selected, I can keep the OpenTable ID, but it\'s not going to do anything. I\'m going to hit done.
+All right, so now we see that that the open table, the open table embed has now disappeared.
+Right. And what I can do instead is I\'m able to enable my other delivery services button and I\'m going to hit done and so that\'s going to allow me to edit this component. There\'s going, there\'s supposed to be a button on here.
+That appears I\'m going to refresh there. I don\'t think there\'s ever going to be an instance where there\'s going to be two of the same component on the page, so I think I might need to just bring this to a different window, but what this is going to show is.
+The ability to instead of adding OpenTable, if you need to add, say something else, you should be able to add it within the component itself. Instead of having Grubhub, say you want to add DoorDash. Right now we only have Grubhub and that\'s why you have that style button.
+However, if you don\'t want that, let\'s do done. If you don\'t want that, why is that button not appearing?
+I think I am doing all sorts of things to complicate this just because I was trying to put things on the same page, but I\'m going to check on where that button is. So there\'s going to be an embedded button for you to be able to add another delivery link if it\'s not Grubhub.
+But I\'ll show you that in a second and another page where I wasn\'t messing around with two at the same time. But let\'s move down to this menu section. So here we see I have my View menus button. I also have the additional menus underneath.
+So cafe, drink, gluten-free, happy hour, banquet, etcetera, etcetera. I can add more if I want to, but if there\'s, I believe it\'s a there\'s only there\'s more than three, then it presents itself as a drop-down instead of listing out the menus if I were to go at.
+Go ahead and just remove say like and remove about. Let\'s do these two here. So if I have two on the page, it\'ll display directly onto the page, but anything more than two then changes to a drop down and displays as a button.
+Based off of whatever the label that you have here. In this case, view menus was the label.
+I\'m just going to put this here. You can see that operates. So here\'s our view menus button with the three different options underneath. And then finally at the very bottom there is an ability to do enable languages.
+What that does is that embeds our language selector component. This is the one we saw yesterday. So you guys should hopefully be guys remember from yesterday. This was the ability to essentially add additional drop downs as needed. So like you know English.
+And then whatever the link is for that, French, etcetera, etcetera. And then it would just appear underneath the view menu section after you author the component. So I do want to get a working example for the delivery.
+Portion of this component, which I\'m trying to work on on the side, but looking at the time, I also want to make sure we cover some of the other options. So for right now, were there any questions about the other portions of the dining reservation component?
+Like for the menus, the language selector, the social media or the fields above as well as the image and the the title of the component.
+
+**Lisa Cardia** 48:46
+I just wanted to comment on an issue we had uncovered when we were linking the menus for the PDFs that it it it. I think this might be an easy fix on Adobe side, but we can\'t link to the PDFs without having like a path already because it starts with sites and not.
+
+**Daniela Tea** 48:53
+Mm-hmm. OK.
+
+**Lisa Cardia** 49:06
+Not the assets, so.
+That\'s what we\'ve encountered. I have that written down as a take away.
+
+**Daniela Tea** 49:13
+OK, I see what you\'re saying. Yeah, so that one second. Yep. So I can see what you mean here. This works because this was probably already inputted and you have access to the dam. But what you\'re seeing is that this is starting at this SHRSS level versus starting.
+
+**Lisa Cardia** 49:28
+Yeah.
+
+**Daniela Tea** 49:33
+At the content level, is that correct? OK, got it. Yep. Yeah, understood about that. I guess, Lisa, was there an existing GR ticket for that or is that something you\'re just noting down for the platform expansion gap analysis?
+
+**Lisa Cardia** 49:34
+Correct.
+I\'ll I\'ll probably note it in the confluence, but like I haven\'t put tickets in quite some time.
+
+**Daniela Tea** 49:53
+OK.
+OK, yeah, no problem. I just wanna make sure that if it\'s at least captured for the platform expansion, then we can we can make sure that it\'s good.
+
+**Lisa Cardia** 50:02
+Yeah, well, if if you guys can definitely take that on your end, just because I think it\'s just a matter of like setting the the starting point on the back.
+I feel like we\'ve encountered this somewhere else and it got fixed.
+
+**Lucas Nelson** 50:20
+Lisa, what do you mean take it on our end?
+
+**Lisa Cardia** 50:23
+Like, like, I think like it was just like a setting. I don\'t know if this was during like Matt Ross\'s time or something, but it was like we just needed the starting path for the links to just start from the asset folder versus from the sites. Yeah, so where Danielle is showing us.
+We can\'t get to that from how it\'s set up currently.
+
+**Lucas Nelson** 50:48
+Daniella, do you have a handle on what Lisa\'s asking us to look at?
+
+**Daniela Tea** 50:54
+Uh, yes, I I understand. Um, I think.
+
+**Lisa Cardia** 50:56
+It\'s linking to sites instead of assets.
+
+**Daniela Tea** 50:59
+Yeah, no, I I understand what the ask is. I just wanna make sure that, yeah, we we wanna make sure that\'s captured because I it is something that that would be. That\'s what the authors need. Yep.
+
+**Lisa Cardia** 51:09
+We can\'t as authors, yeah, like we we wouldn\'t be able to complete this.
+
+**Lucas Nelson** 51:14
+Yeah, Daniella, just articulate that when Danae\'s back on Thursday, just so I have a better understanding during our stand up. That\'s all. Yeah.
+
+**Daniela Tea** 51:19
+Mhm.
+yep yeah sure thing sure thing um
+OK, so for the menus, it\'s, uh, getting the starting point for the dam versus the sites.
+
+**Lisa Cardia** 51:37
+I\'ll put it on the confluence page, but yeah.
+
+**Daniela Tea** 51:40
+Yeah, no, sure thing. Thank you, Lisa. Any other questions about the other fields and I\'ll be posting a link to an example of with the other delivery options later in Confluence as well.
+But any other questions about the component before we move on?
+All right.
+OK, so now I wanted to take a look at the Messy Burger page and what that entails. So there were two things that were created for this. I\'m going to.
+First show in the template section that there is a page template for this and I\'m going to take us there, right? So clicking on tools, clicking on templates, Hard Rock Seminole.
+And you\'ll notice there\'s a page called Messy Burger Page and it\'s based off of the open page template and we can actually take a look to see what it includes this page. To be clear, this page was specifically made. This template was specifically made for this page because that page had a lot of.
+Custom functionality that was added to it and what this page has so everyone understands if I were to take a look at our page policy.
+There is a specific class that\'s associated with the entire page. Now this allowed us to create very specific CSS that would only affect this page. What this does is if I were to view the messy page right now, I would see this at the page level, so it\'s essentially wrapping.
+The entire page content within this class. So that way then we can target it with some specific CSS and not have to worry about it affecting the other templates. So if we were to look at the actual template itself, you may say OK, well this is pretty much this is very similar.
+To what we saw the other day when we were viewing templates, how we had the experience fragment at the top, the experience fragment at the bottom, and then those two layout containers, one for the hero banner and then one that essentially is allowing every component to be added.
+And so that\'s why I wanted to make sure it was clear. The messy burger page was created specifically for the messy page and it needed to be wrapped with a special class in order for us to target the CSS. So in practice though when you create a page with this template.
+Which I\'m going to do right now.
+And create a page and you will see that here.
+I\'m going to hit next and I\'m going to call this test messy.
+And I\'m going to hit open. So this is what it looks like to to an author. Again, looks just like the open page template. However, everything that is needed for this page to work is is dealing with that class that was added within the template level.
+So a finished version of this page and we can break down all the components on it. This was what we had migrated over. I\'m going to refresh the page so you guys can see so we can see some of the parallax effects that were added to it.
+And if we were to breakdown this page here.
+This is using that specific template. It\'s also using some of the components you all are familiar with. The hero banner for example. This is the video.
+This is the Messy Experience component, which I\'ll breakdown.
+This is an image. You can see containers and other containers with images on it.
+But with the special class that\'s added to it, that\'s why there\'s some additional CSS that\'s only affecting this specific template. So the main template, I\'m sorry, the main component here that\'s unique is this messy experience.
+Component and it includes things such as. I\'m going to scroll this up a little bit so you guys can see how the fields are mapping. So we have our title field, elevate your experience.
+With a description that appears underneath. We have a specific image background which shows this burger on mobile. It\'s going to show something slightly different. We have a title field here which is available at a Hard Rock Cafe near you.
+And then the additional information section which is this description underneath. And then we have a couple buttons, find a cafe, reserve a table. These two open in a new tab if you select it and then it also opens reserve a table opens in a modal.
+Which we can see in a second. So the messy experience component was specifically to be able to display this section here and have it work the same way as it did on the live site where the mobile version is showing something different, slightly different from the desktop.
+And also allow for things to have that parallax effect in this section here. O again if we were to take a look at it.
+So as we saw how how things were moving around, that is based off of that specific component we took a look at. That\'s why it\'s this portion here is all grouped together and not built with separate components since it needed to function a certain way for both desktop and for mobile.
+It\'s coming in from below. It\'s showing that slightly different image.
+However, as I Scroll down to this section, so like let\'s take a look here. We saw that there is a parallax effect also for these these two containers as well as these two containers. Let\'s take a look at that parallax effect again.
+Scroll down here. So we saw this is coming in from the left and this is coming in from the right. Now that is something that is actually built into the container component. So when we were reviewing the container previously, we only talked about a couple of elements and I.
+Said I want to talk more about that in the G light box later. So now let\'s take this opportunity to talk about the parallax tab that\'s within the container component. So I\'m going to select this outer container.
+And this outer container contains this specific image and it also contains this container with the title and the text and the button.
+So if I click on here and I click on the parallax tab, again this is the container that is surrounding both of these here. In the parallax section you\'ll notice I have a component class name targeting CMP image which is this image here that has that class.
+And I said I want the animation class to fade in from right. I also have the option you fade in from left or fade in bottom. And then I\'m also selecting messy right. So this container has a class called messy right applied to it.
+And I selected the animation class of fade in left. So what this is saying is OK this container target this element that\'s within this container and have it fade in from right. Target this specific element with this class name.
+Within this container and then fade in from left. We took a look at this container here and I Scroll down. You\'ll see in this class messy rate has been applied. That\'s why I\'m able to target it with the parallax tab since I applied this class here and for this image.
+I don\'t actually have a class on it. By default the class for all images is CMP image, but if you need it to be more specific, you can certainly change that out and apply a different class name for that, but again for the parallax tab.
+I\'m targeting items within the container, the parent container, and I\'m just dictating which animation I want to apply to it. So fade in right and fade in left. The same was done for this section. Here we have our container. I think this is probably called.
+Messy left and then here is my image for the parent container. What we did was on the parallax tab. I targeted messy left which is this container and I targeted the image to fade in left. I will pause here and see if there\'s questions on the parallax tab.
+Tab in general for the container.
+OK.
+All right, so I am not sure if the team would be using this, sorry, this template as well as this specific component for additional pages. However, the parallax functionality that I showed within the container here, this is.
+Something that is available for all containers, so you can certainly keep that in mind if you\'re trying to introduce any sort of parallax effects within your page and we can certainly we\'ll be going over the container a little bit more tomorrow to go over that final tab.
+Of G lightbox. So if you have questions about the parallax you know between now and then, please put in the confluence. We will be taking a look at containers one last time tomorrow.
+
+**Lisa Cardia** 1:02:01
+I just have some questions on the messy experience component itself.
+
+**Daniela Tea** 1:02:06
+Yep.
+
+**Lisa Cardia** 1:02:08
+Um, for the title, can we change the color of the title or we\'re always?
+
+**Daniela Tea** 1:02:15
+I think we were doing this literally based off of what the existing page was, and so with the black background, I believe all the text that is on this page was intended to be white.
+
+**Lisa Cardia** 1:02:31
+OK, and that\'s because of the template of the page, \'cause I guess I tried this component on a different theme, so that\'s why.
+
+**Daniela Tea** 1:02:37
+So so to be clear, this specific component can be used on different templates, but yes, this is on the the template itself. I believe the color the background color was set to black.
+
+**Lisa Cardia** 1:02:50
+OK, what else do I have written down there for? There\'s two different options for buttons, like button one and button two, and it\'s just why is button two have the option to open in a modal but button one doesn\'t?
+
+**Daniela Tea** 1:03:06
+So I think that was because probably for the live for the live site, it was only the second button that was opening in a modal. I\'m not sure if that was the case for the first button or not, but I believe that was probably the reason why was when this was migrated over it was just.
+Ensure that this reserve a table button, which is this actually the same exact one that we\'ve seen on the other pages, was just to allow it to open in a modal. So I think that was the reason why that was just made because this was just to support the reserve a table button.
+
+**Lisa Cardia** 1:03:43
+OK, and then for the text in the title on mobile, it looks like it\'s it\'s center aligned but left aligned. I\'m not sure. Was this intentional?
+
+**Daniela Tea** 1:03:55
+Let\'s see here we\'re talking about the elevate your experience or?
+
+**Lisa Cardia** 1:04:02
+I have just in my notes, so this could have just been from my example, but it went title and text on mobile is not. I\'m sorry, it\'s not center aligned, it\'s left aligned in the center is what mine came to be. So see how they\'re like all left aligned but in the center. Is there a reason that they\'re not? I guess.
+
+**Daniela Tea** 1:04:14
+Just left the wood in the center.
+
+**Lisa Cardia** 1:04:21
+Center all the contents just left aligned but centered not \'cause see how the buttons are centered but then.
+
+**Daniela Tea** 1:04:25
+Um.
+
+**Lisa Cardia** 1:04:30
+Everything else is left aligned.
+
+**Daniela Tea** 1:04:33
+Yeah, so I would have to reference what the original page requirements were for this. I\'m trying to remember that, so I can\'t answer about what the alignment was. However, excuse me, I think.
+I think for this, keeping in mind that like you know these specific components here, at least down here, anything that\'s outside of the messy component, these are just like your standard title, text and container. So you know theoretically that the alignment for that could be set if we\'re talking about the.
+
+**Lisa Cardia** 1:05:01
+OK.
+
+**Daniela Tea** 1:05:09
+Information that\'s here. This is a specific component, so you wouldn\'t have the same kind of classes that you would for the container classes down here.
+
+**Lisa Cardia** 1:05:16
+OK. OK. Thanks.
+
+**Daniela Tea** 1:05:21
+OK, so.
+Let\'s move on then to the microsite. I\'m going to close out of a couple of these tabs, all right.
+OK, alright and a quick note, I\'m working on the microsite currently in the Int environment. We actually were doing a Sage deployment earlier today for the Careers website.
+And so some things were were still like loading in the environment while I was trying to set this up. So in the in environment though I did set up the page and so I\'m just showing you guys right now an int. But I just want to make sure that was clear that right now we\'re looking at the integration environment, not on stage. So if you try to find this page.
+Page in the stage environment. It\'s not going to be there, but you will see it in the in environment. All right. So when we\'re talking about microsite, this is specifically for so there are some very specific pages that are within the hotel\'s website.
+That\'s essentially have like a sidebar navigation and then there\'s like some, you know, cards here on the right and then there\'s like the different things based off of like different locations which we can kind of see here.
+This specific template, excuse me, has if we were to take a look at what gets added to this template.
+When I create a new page.
+Using this template so I click create page and I\'m going to click microsite page.
+I.
+I click create.
+What I\'ll see on the page is something that looks like this where I\'m going to see the microsite navigation.
+And I\'m going to see some containers which have some baseline components in here like microsite, banner, space or text. So some items that kind of sets it up. I realize that.
+You know, there could be certain pieces of initial content that you guys might want to add to this. Like when we when we were talking about templates and planning out your templates, how the structure, how that gets set up and how if there\'s initial content that you identify that you might want all sites to kind of start out with, that\'s certainly something to plan out.
+So right now this is the initial content, but if there\'s specific things that you know should belong, whenever someone creates a new microsite, that\'s an opportunity to identify that and make sure that that gets added to the page. So that way when someone clicks on create new, they\'ll see certain things like say a specific title that you might want to be on all.
+Microsite pages or perhaps like specific links that you know belong within the sidebar navigation. So this is it from complete scratch. I want you guys to take a look at one that has been kind of authored. I did not author everything on here, but there are some items here that I want you guys to.
+Take a look at. We\'re going to start with the microsite navigation, which is a component that is specific to this template.
+I\'m just going to click on Configure.
+And we can see that this component has our logo image which gets displayed at the very top on the side. It can also be linked out to a specific page, whether it\'s internal or external, alt text associated with it.
+We have a a label for a button that appears above. Essentially it\'s supposed to be how you get back to the page if you want. However, this specific button, if you need to link it to something, it can certainly be linked to something else. However, the intention was supposed to be to link it back to the hotels.
+Page. Then we have our NAV items, which is of course our multi fields, home, roots, mottos, etc. You\'ll notice here I\'m actually linking to specific things on the page, so just using anchor tags for these.
+And then as I continue to Scroll down, I have my view destinations label which is actually a drop down. Underneath the drop down, the intention for this was to have different regions and then the different locations and then you\'ll notice again I\'m linking to specific.
+Anchor tags, since these are things that are on this actual page itself. So the microsite navigation is like a sidebar navigation to literally navigate through your microsite. That\'s the intention for this.
+I\'m going to hit cancel and if we were to take a look at this as published, which I have in this tab here, this is what it looks like. I\'m going to click on roots because I had tagged. I had the anchor tag for roots. This specific card here has an ID.
+ID of roots, that\'s how it\'s linking to that, anything with like mottos, et cetera. So this is essentially like a slightly differently styled template with a sidebar navigation versus that header and footer experience fragment that we see on like the open page template.
+So that\'s why we needed to have a new template for this. You\'ll notice that the cards do look a bit different, and that\'s because if we were to view the card component, this is the same card component that we\'ve been using across.
+All of our sites, however, we\'ve just applied a specific style under the microsite variation. In this case we have content left, but there\'s also content right, title right, title black, title gold that can be applied. But these specific styles were intended for use on microsite pages.
+When applied. So the styles are essentially making the titles this large gold color. It\'s also allowing for. Let\'s see here.
+So essentially like that content left, content right, kind of like our. I think we have split cards that allow you to do that too. However, this is preserving the style that was specifically intended for the micro site. So that\'s why you would select these to be applied to these cards.
+See what this one is. So here you\'ll notice it says title small that\'s been applied. So these titles that are here, this title here, that\'s very tiny in comparison to this. So it has a title small class.
+So see it with this one title black. By default the titles I believe were intended to be gold, but just allowing some flexibility in terms of how you want to style the cards within the micro site.
+So to be clear, the micro-site variations section is actually. I think you would be able to see that on any page if you\'re using a card, but the intention for it is for micro-sites or I suppose if you\'re trying to get that look and feel on other pages, but the styling was created specifically.
+For our microsites.
+So just trying to show you guys how some of these variations are being applied to the cards, but the main component that is specific to our microsite page is this microsite navigation component up here. Hey Don, I see your hand up.
+
+**Don Middlebrook** 1:13:17
+Yeah, um, for those images, um, if we Scroll down.
+
+**Daniela Tea** 1:13:22
+Mhm.
+
+**Don Middlebrook** 1:13:24
+Do we have uh?
+Like the dimensions like to like most of these are vertical and what I\'m looking at because I\'m looking at the side too. Do we have specific like what works best in these placements? This is.
+
+**Daniela Tea** 1:13:37
+Mhm.
+Yeah. So for this specific page, like this microsite page in general, I believe we were using with the assets that were previously used on the live site. Yeah. And so these were like the assets that were migrated over.
+
+**Don Middlebrook** 1:13:55
+Already OK.
+
+**Daniela Tea** 1:14:01
+And I think, yeah, so they were just placed here in terms of if we wanted to, you know, increase like the height of the image in order for it to show more or essentially move it around like say you only want to show like this top portion and this portion and not show the bottom portion. That\'s where you would kind of fiddle around with it, which in which position, but we.
+
+**Don Middlebrook** 1:14:01
+OK.
+OK.
+Alright, so it\'s.
+
+**Daniela Tea** 1:14:21
+Have migrated over the existing content.
+
+**Don Middlebrook** 1:14:23
+OK. I wasn\'t sure about that. OK.
+
+**Daniela Tea** 1:14:25
+Mm-hmm. Um.
+
+**Don Middlebrook** 1:14:27
+Alright.
+
+**Daniela Tea** 1:14:29
+So as we take a look at the microsite page, we understand how it\'s created by using the template. We see that there\'s this microsite navigation component and then as we see here, literally these are components that are.
+Kind of global, right? Like the card text component, image component. However, the card component of course has specific styles that are intended for use on the micro site.
+So I\'ll pause here to see if there\'s questions about what we\'re looking at.
+Actually, let\'s take a look at this in mobile too.
+All right.
+OK.
+All right, so taking a look at our line of business specific agenda here, I will be posting a link for my dining reservation page and sharing that here.
+I think Rick, for the Rick, if you\'re still on, I\'ll also see if there\'s any examples of locations that have that different embed. If you have anything that you could think of, you can certainly, you know, send that to me and I can take a look at that.
+And in terms of the microsite page, keep in mind again my page is down in the integration environment. If you want to take a look at that I can post it. But again this is this one currently is not on stage right now since I was working in the in environment for this.
+Are there any other questions though about these five components and page templates?
+OK.
+OK. So tomorrow what we will be covering essentially anything that was not covered in our previous sessions, these a lot of these are things that I know that the team is familiar with. So hopefully we\'ll be able to, you know, get through these these.
+Those ones up top fairly quickly. We\'ll spend more time though on the card components since there are plenty of variations. I also hope to go over the last tab in the container as well as kind of see some like nesting containers, containers, backgrounds, etcetera. So we\'ll take.
+A deeper look at containers tomorrow as well. The tabs cards filter might be new to the content authoring team. I don\'t think this is used on the corporate website, but we\'ll see how that\'s being used on other sites alongside the cards.
+The alert and alert aggregator or something that is in our templates but currently is not being used, but I\'ll set up some alerts so we can see how that\'s going to be displayed and how that\'s being used across sites. And I added the list component here because I know we did cover it.
+We were talking about how to build lists, say based off of tags or a fixed list or child pages, but I just want to make sure that we examine the rest of the fields if there\'s anything missing. Just want to have an opportunity to be able to go over lists one more time in case.
+There was anything else with that specific component, but this is what we plan to cover tomorrow. Any questions about tomorrow\'s session, anything that we were expecting to see that\'s not on here?
+All right. Um, I yes.
+
+**Mayte Eme** 1:18:19
+Question, but just wanted to let you know that I\'ve been out sick. I\'ve been trying to join these things, so I need to catch up on adding all the questions from the previous sessions. So I\'ll I\'ll try to do that tonight.
+
+**Daniela Tea** 1:18:31
+OK. Thank you, Mait. And I hope you feel better soon. OK, so I will put a title on this. I\'m still debating what I want to call it, but I\'ll put a title on this and I will be publishing the link. And when Luke sends out the transcripts and the recording later, he\'ll also.
+
+**Mayte Eme** 1:18:35
+No thanks.
+
+**Daniela Tea** 1:18:51
+Include the links that I am providing for some of the examples that I mentioned earlier, so please keep a lookout for that later tonight.
+
+**Lisa Cardia** 1:19:01
+Is it possible that Luke sends out a little earlier?
+
+**Daniela Tea** 1:19:02
+3.
+
+**Lucas Nelson** 1:19:04
+Yeah, let me see what I can do, Lisa. Yeah, sorry about that.
+
+**Lisa Cardia** 1:19:09
+No, it\'s OK. I just thought they were like automatic and sometimes I forget the questions I\'ve asked if it\'s not sent right away. So appreciate it.
+
+**Lucas Nelson** 1:19:15
+Yeah, let me see what I let me see what I can do here.
+
+**Lisa Cardia** 1:19:19
+Thank you.
+
+**Daniela Tea** 1:19:19
+Mm-hmm. Alright. OK, everyone. Um, well, that is it for today then. Uh, hope everyone has a good rest of their afternoon.
+
+**Lucas Nelson** 1:19:29
+Thanks, Daniel.
+
+**Daniela Tea** 1:19:30
+Thank you. Goodbye.
+
+**Lucas Nelson** 1:19:31
+Bye.
+
+**Lyon, Rick (Director of Digital Experience)** 1:19:33
+Thanks all.
+
+Scott Sorel** stopped transcription
+
+
+## Session: Additional Components — 2026-03-04
+
+**SHRSS Adobe Knowledge Transfer-20260304_130309-Meeting Recording**
+
+March 4, 2026, 6:03PM
+
+1h 59m 56s
+
+**Lucas Nelson** started transcription
+
+**Lucas Nelson** 0:09
+All right, we\'re off and running on the recording, Danielle. Let\'s do it.
+
+**Daniela Tea** 0:12
+All right. Thanks, Luke. Hey, everyone. Good afternoon. Coming up with coming near the end, guys, for our content authoring sessions, I\'m going to go ahead and share my screen so we can take a look at what I hope to cover today.
+I can\'t think of a fancy name for this topic. It\'s basically here are the other things that we want to make sure that we cover in this final session. However, to be clear, a lot of these items I do believe the team is familiar with. However, there are a couple of new things like the tabs cards filter that will take a closer look.
+At as well as the card component. It\'s just looking at all the different variations, but I believe most of these will be familiar to the team, so let\'s go ahead and get started. All right, just switching over to the test page.
+That I\'ve made, so I want to just start out here at the very top. Just going to make this a little bit bigger with our button components. So we\'ve seen buttons being used a lot across the site and of course with our button.
+We have that ability to be able to of course put the text. You can see my link type here. In this case I have selected a modal which is linking to an experience fragment, but typically for most of the buttons that I\'ve seen on the site, you guys are just using it for the link functionality to link it to a.
+External or internal link if we were to take a look at this button as it launches.
+Put this you can see here it\'s displaying that parking information experience fragment. This was from one of the cafes I believe. Yeah, Amsterdam. So I was just referencing an experience fragment. So that\'s how you essentially tie a modal to a button by selecting the specific link type as modal.
+You\'ll also notice that when it comes to buttons, right now you can see how this is full width. I can certainly set it to be center aligned or right aligned. Yes, the style change because I did not have my primary style selected.
+But if I change the alignment, if I need to put it in a certain way, I can do this. However, what we also have underneath here is I have put three buttons into a container and within this container I have set the button group styling to be center for desktop.
+Up in tablet. So looking at this right now in desktop, you can see it\'s all centered. Hard to view it in tablet. You can see it\'s stacked without me having to actually change anything. If I wanted to say put them all center across all viewports or left across all viewports, I also have those.
+Options there. So by saying left it\'s essentially like this and then if I were to look at it in a similar window you can see it\'s all left aligned. However these will start to wrap depending on the length of the OR the width of the button.
+So this is just a way to be able to say group the buttons if you need them to appear side by side. I think we ran into this use case for the first time on cafes and so some of these button group stylings were introduced to support how some of those buttons were handled, but you can certainly just use one.
+Button if it\'s needed on the page or you can put multiple within a container and group them just like you can see here. There are some styles for our button. You see how it is with primary. I\'m actually gonna show you the XD file because it\'s going to.
+Show exactly how this was handled for the different. Um.
+Uh, the different themes. So let me pull that up really quickly.
+
+**Lucas Nelson** 4:13
+Why are you looking for that? Rick has his hand up, Danielle.
+
+**Daniela Tea** 4:16
+Oh, OK. Go ahead, Rick.
+
+**Lyon, Rick (Director of Digital Experience)** 4:21
+Can we see the button on Gray? I just said for whatever reason I just want to make sure I can see it on the right. And then is there any option to make the buttons a a percentage with so like if we wanted to have?
+
+**Daniela Tea** 4:26
+Yes.
+
+**Lyon, Rick (Director of Digital Experience)** 4:37
+You know, two buttons side by side that were 50% each so that it filled the width on mobile, for example. Are we able to do that or is it all a default with?
+
+**Daniela Tea** 4:42
+Um.
+So right now, yeah. So right now there was a minimum width and a maximum width that had been established. But certainly, you know, I I believe like this is the kind of information that I think we would want to capture in terms of like how would you want your button to be handled and mobile. So I think what you were saying.
+Even though Rick is like perhaps like this might be full width or essentially you know like display block or something within a mobile. So that that\'s certainly something that I would note down right now with the button grouping. What we were focusing on was allowing it to display in Center for desktop and tablet.
+
+**Lyon, Rick (Director of Digital Experience)** 5:06
+Yeah.
+
+**Daniela Tea** 5:23
+Because that\'s how it was, I believe for cafes and then having it essentially stacked. But for the full width version of this, that\'s something that would have to be noted down.
+
+**Lyon, Rick (Director of Digital Experience)** 5:35
+Thank you.
+
+**Daniela Tea** 5:36
+Uh, you mentioned something about seeing it on a Gray background. Is that OK?
+
+**Lyon, Rick (Director of Digital Experience)** 5:40
+Yeah, like if you could just put it in like turn your one of your containers full width with the Gray background just to.
+
+**Daniela Tea** 5:45
+Yeah, let me let me turn this. Let me turn this one. Let\'s see. OK, I would say, so let\'s put this in here. So this is how it look like in a Gray backgrounds. And keep in mind when you have. Where\'s my?
+
+**Lyon, Rick (Director of Digital Experience)** 5:47
+Just for the sake of seeing it, I guess.
+
+**Daniela Tea** 6:05
+When you have the other themes, certainly the like primary CTA button is going to be different across themes and you can see how like this specific class for the Hard Rock theme that you\'ll notice that the light color is the same as the default color.
+Because there was not necessarily a primary light that was established for the Hard Rock theme. However, if I Scroll down specifically for cafes, there\'s a primary CTA button and the primary light, secondary light, secondary. So because these buttons, this button component.
+Is going to have the exact same. This is the same button component that\'s used across all the themes. However, the styling of the buttons, specifically the the color of the background and the color of the text is going to change depending on if that button is on a cafe page or hotel page, et cetera.
+But that\'s why these specific styles are all here, because they might apply to a theme or they might not. But if you do select something that isn\'t necessarily applicable in the theme you\'re in, in this case I\'m the corporate theme, so I\'ve selected primary and primary light looks the same. That is expected because.
+The Hard Rock theme didn\'t necessarily have a rimary light established. If I were to move this button to cafes though, and I selected primary versus rimary light, that\'s where you\'ll actually see like a very clear difference between the two.
+Um.
+
+**Lisa Cardia** 7:37
+And I have, I have a question with the colors, Daniela, I think we might have mentioned this in the past, but can we do, how would we have the option to change the color of the button if we were trying to like manipulate it for let\'s say a pinktober campaign where we would want to do pink buttons or pride where we do kind of like a rainbow of a sort?
+
+**Daniela Tea** 7:40
+Mhm.
+Yep. So within the button right now, your options for that would be if you were to write a specific class and like say your developers had specific color classes for your buttons, you could call on that in here. That\'s one option.
+So you would need to know what class, like say they had established a class that was called like button pink. If you knew those classes existed, you could call that here. So one option, the other option, and this is something I would advise with great caution.
+
+**Lisa Cardia** 8:26
+Sorry for that one though would be like in the style sheet someone would have to make changes.
+
+**Daniela Tea** 8:31
+So if say say your dev team you knew that you wanted all specific colors for buttons like say you know pink, red, green, whatever and so they established it within the style sheet. So it\'s then available for you to be able to call through here. So you yourself would not be writing the CSS.
+A developer could write CSS and then you would just need to know what the class name is to access it by calling it here. So that would be done through code. The CSS would be written in code, but an author would be able to call the class if they knew what the class name is. That is one option.
+
+**Lisa Cardia** 9:05
+Would the code require a development, I mean a deployment?
+
+**Daniela Tea** 9:09
+Yes, because that would be entered into the style sheet that\'s applying to the site.
+
+**Lisa Cardia** 9:14
+OK.
+
+**Daniela Tea** 9:15
+So that\'s one option, second option and this is a component that we are. Um, I was planning going over today, so this is.
+A decent time to do it is using the advanced embed component. This is highly I\'m. I\'m basically going to highlight this. We have this big warning on top because essentially what this is doing is you can insert.
+Some CSS through here and I believe we might have that in the sign up form just going to the Hard Rock website. So these items here like the stay connected.
+Form. This is using the advanced embed component, so you know you\'re able to embed like pieces of JavaScript and stuff in there to be able to display different things. On the other hand, you are able to use it.
+We\'re putting some inline CSS for this specific page, but again, highly want to make sure that everyone is aware you can do this. However, I would make sure that if you do this, you know what you\'re doing. So if I were to say right, I could write that same class here.
+Right, and I could put whatever I wanted for wrap it in a style tag. I could put whatever I wanted here.
+Um, I\'m actually not sure what the color for pink is, but we\'re just gonna do this. We\'re gonna do this. I\'m gonna call it button red.
+All right, so done this.
+
+**Lyon, Rick (Director of Digital Experience)** 10:52
+You you can probably just give it color pink, the word pink.
+
+**Daniela Tea** 10:56
+Well, I wanted to do a hex code, but all right, hang on. OK, one SEC. Yeah, if it doesn\'t work. Alright, so let me add this here.
+
+**Lyon, Rick (Director of Digital Experience)** 11:01
+This case if it doesn\'t work.
+
+**Daniela Tea** 11:12
+What I call button red?
+So let me see. Try to remember if I have to put the period or not. Let\'s let\'s view this as published. Let me see if it actually got applied.
+Was it this one or was it this one?
+All right, OK, so I don\'t want my red.
+I\'m gonna open up my advanced in bed.
+Um.
+Uh.
+
+**Edwin Aquino** 11:49
+You may you might have to also add the important modifier to the background color to override it.
+
+**Daniela Tea** 11:56
+We\'ll see. Yeah, you\'re probably right. But but one second, one second. I do want to to do make sure that this doesn\'t have that period in it, which I think it does. So you\'re gonna do this one second.
+OK, I have this here and I\'m going to view this and I\'m going to see how it\'s being overwritten.
+All right, Yep. So you can see my class is not as specific as this. So what I could do is in order to, I\'m going to avoid putting the important tag just because I don\'t want that necessarily floating around, but that was a good call out.
+I think it\'s all at the same level.
+Is it?
+So, hey, Andy, are you uh?
+And are you listening right now?
+
+**Andy Lambert** 13:00
+Yep, Yep, I\'m here. What\'s up?
+
+**Daniela Tea** 13:00
+I think let\'s take a look at this page. I believe there\'s cause it\'s hanging a little bit on here. It\'s probably the combination of me trying to mess around with the advanced embed while trying to test out some classes.
+
+**Andy Lambert** 13:14
+OK.
+OK, can you speak the URL over in chat?
+
+**Daniela Tea** 13:16
+Alright.
+Yes, I can. Here you go. I\'ll send it over. Thank you. All right.
+
+**Andy Lambert** 13:22
+All right. All right. Yep.
+
+**Daniela Tea** 13:26
+OK, so OK, there\'s a space between that and button.
+OK, so we have that. Let me have button red.
+Oh, do you not reply?
+Um.
+Mm.
+Let\'s see. Oh, it was this one.
+OK, so we have CMP, button and button read at the same level. So I just need to write that at the same level too. All right. OK, so yeah, the important tag would have been easier for this specific demo, but.
+Let\'s do this.
+OK, oh, there we go. All right, so you can see how I\'ve overwritten the the styling for my button text by having my advanced embed component on here and then.
+Is that if I highlight this, you\'ll see my role CMP button in primary, CMP button dot button red has been applied with a specific background color. But as you can also see because I actually put say like you know I took away my space there when I was writing it up in the advance embed and then things didn\'t seem to work.
+As planned. That\'s why I do advise caution with using that component. But that is the other option for those who I would recommend people who are more familiar with, say like JavaScript and HTML and CSS to use this component. But this is the way that you would essentially do it. Keep in mind though.
+So that if you\'re not specific with your class name, what will happen is it might have some unintended effects. For example, if say another card on here has a class name of something that perhaps you were trying to target, that could also be affected as well if you wanted to change the.
+Font on say these cards here, but not the cards everywhere else. You\'re going to have to make sure you\'re extremely specific by either setting additional IDs on the component or make like a very specific class name. So I I just want to strongly advise everyone before they just bust out advanced embeds to do everything there are.
+You have to be very careful, but it is possible without a deployment. However, again, the other option is to do it by having the CSS established and then just simply referencing the class name without having to write it up yourself. So Lisa, hopefully that.
+
+**Lisa Cardia** 16:05
+I think like I said, it\'s gonna be like on occasion anyway that we would change the color for a campaign, but maybe that\'s a bigger discussion to say, can we limit the advanced embed to even be available just to like a certain group of users just so that no one does use it?
+
+**Daniela Tea** 16:06
+Answered.
+Mhm.
+
+**Lisa Cardia** 16:20
+Um, and adds random code to their pages anyway, but.
+
+**Daniela Tea** 16:23
+Yeah, I would. Yes, definitely. I would say we wanna lock it down for sure. And I know you guys are using it right now for like its intended purposes of like, you know, displaying things like this, the form stack form and I think there\'s some other places where you guys are using it, but.
+For your Pinktober example, I do believe that page is on the corporate site, right? And I think we were targeting things such as say the card background, right? So like for the overlay card, I believe you know it was like a light pink versus like a darker white and then also just the card colors.
+Itself. I believe the way that we did that was with the advanced embed component.
+
+**Lisa Cardia** 17:07
+OK. And then I did have a quick other additional question for buttons. Is there a character limit and if there isn\'t, how many characters is it until it it decides to wrap? Because we did notice a lot of buttons with.
+Like stacked text, which isn\'t like our yeah, that\'s not really our our standard, but it seems like there really is no way to enforce a limit anyway. So I guess understanding what that limit is before it\'s wrapping.
+
+**Daniela Tea** 17:24
+E.
+Yep.
+Yeah.
+So I yeah, so you can see here that the Max width was established at 3:16. For whatever reason that was, I I can\'t answer to that. However, it\'s not so much a character limit, but it\'s more of is that is what is your text going to?
+Exceed what the Max width is before it starts wrapping, right? So I\'m like, like I said, like I can\'t tell you exactly how many characters, but it is based off of the width of the button.
+
+**Lisa Cardia** 18:00
+Yeah.
+
+**Daniela Tea** 18:18
+OK.
+I\'m gonna remove this class since it\'s no longer valid. Button, button, button. Trying to think what else we got here. OK, right. So we were talking about the button styles. We talked about two ways to potentially override the button style if you need something outside.
+Of the established styles here we talked about the button alignment. So for the button state let me show we have like a disabled version that can be shown like so for secondary light buttons if it\'s disabled it should look like this.
+If it\'s a primary button, it would look like this. So that I\'m not quite sure if you guys are necessarily using that, but it\'s just a way to be able to have the button not or visually look a specific way that is disabled.
+Oh yeah, of course. There\'s the Aria label that is going to be added to the button, which you would see if you were to inspect it. But are you guys, is there any other questions about the button that we have here? I know you guys are using it a lot throughout the sites, so is there anything else?
+On like what you were observing, Lisa, you might have questions on.
+
+**Lisa Cardia** 19:41
+I think that\'s my only questions for for oh, I did have one question. There\'s the option to display an icon inside the button and it says that the availability depends on the CMS configuration. So I guess my question is like what\'s an example of this icon and like what are?
+What are our options? Can we use like?
+
+**Daniela Tea** 20:00
+Yeah, so this I believe is linked to the Font Awesome icon. If you recall, sorry, the Font Awesome icon library. Let me check. I\'m trying to remember some of the class names for this. Um, so this this.
+
+**Lisa Cardia** 20:16
+So if we use Font Awesome, it\'ll it\'ll just, uh, use the same code.
+
+**Daniela Tea** 20:21
+Yeah, so one second, let me show you how the icon would appear. So you can see here that the FA Chevron right here. So this here like you can see how what I passed in is appearing here, but I need to check to see you know like how this is hooked up.
+Font Awesome. We know that we have Font Awesome already available in AEM because we\'re referencing it for like say the dining widget or so. So this one here would be basically putting like specific class names, but I need to get back to you in terms of the proper format for that.
+I think though, in the future it sounded like I believe when we first talked about the button a while back, instead of like more like, you know, typing things out like this, I believe it sounded like, you know, perhaps determining what icon library you guys might want to use and then.
+
+**Lisa Cardia** 21:00
+Yeah.
+
+**Daniela Tea** 21:18
+Perhaps having like a drop down instead or something of available icons, but currently right now it is a text box and you would have to know the class name for it.
+
+**Lisa Cardia** 21:30
+Thank you.
+
+**Daniela Tea** 21:30
+Yeah.
+OK, so that is buttons. I\'m gonna keep moving \'cause I know we we probably want to get the cards at some point. Yep.
+
+**Mayte Eme** 21:41
+11 question before you move. I was trying to see the model but it was too quickly and I it when you trigger the model it didn\'t seem finished, it looked weird. So I wanted to make sure if there\'s a yeah is that how it\'s supposed to look?
+
+**Daniela Tea** 21:58
+So the modal is simply taking in whatever\'s in the experience fragment. So this is the content that was in the experience fragment. If I can certainly reference another modal when you say it doesn\'t look finished, like if you\'re talking about like say I don\'t know like the padding around here or whatever.
+This is going like if I were to change out the content, I have to do at the experience fragment level because I\'m referencing an experience fragment. I\'m not actually like creating a modal in here, I\'m just simply referencing it. So this is where the modal is.
+
+**Mayte Eme** 22:32
+OK, so we just you just took an unfinished model just to show us how it works, right? That\'s not how it works.
+
+**Daniela Tea** 22:37
+I\'m showing you. I\'m showing you that if I linked so it\'s I could link to. I don\'t know. I don\'t know what\'s in this reserve table. We could try this one.
+So this is showing like open table. I can\'t tell you if this is how it looks the experience fragment, but it\'s simply taking whatever you have in the experience fragment and putting it within this modal.
+
+**Mayte Eme** 23:03
+And how do you how do you configure that to make it look better than that? Like is that a setting that we just apply?
+
+**Daniela Tea** 23:12
+So you would have to go to where the experience fragment is. If you\'re say trying to make it, I don\'t know like add additional space at the bottom or anything like that, then you would add you would edit the experience fragment itself. So right now if I were to go to this experience fragment for.
+Uh, I think.
+
+**Mayte Eme** 23:30
+I mean, I wouldn\'t go to those widgets because that\'s that\'s another discussion for another day. But like if we wanted to do a regular model, we can\'t use how it looks now. So is there like a configuration for models so they can look decent?
+
+**Daniela Tea** 23:43
+The only configuration you have an option between modal and modal small. I was checking to see how that affects the modal and it\'s basically setting like a a Max width. So it\'s based off of the content that\'s in the experience fragment. So I changed it to modal and so you can see this content seems to be.
+
+**Mayte Eme** 23:51
+Oh.
+
+**Daniela Tea** 24:03
+Is exactly the content that is an experience fragment.
+
+**Mayte Eme** 24:04
+Yeah, but but that one was very specific, right? I\'m talking like other use cases. We wouldn\'t use this. So what I\'m, I guess what I\'m trying to ask is are we locked into that look and feel and that\'s it, right? We have to redo it so it can serve.
+All our use cases or is there something we can do a checkbox or setting that would make it look decent that we can use it at now or we just got to wait until we redo the whole thing?
+
+**Daniela Tea** 24:32
+Um.
+I think the only thing I could say is
+Depending on your content, right? If your experience fragment, if there\'s things that you need to put in experience fragment, like say extra spacing, padding, anything like that, you would do at the experience fragment level. There is not a setting within the button component to be able to simply change the way the modal looks because it\'s simply taking.
+This experience fragment and putting it within that container.
+
+**Mayte Eme** 25:06
+I\'ll just add my questions to conference so we don\'t keep going.
+
+**Daniela Tea** 25:10
+OK.
+OK, moving on to the accordion component. This is another component that I think you guys are using on the corporate website. So I believe y\'all are familiar with it, but it\'s similar to the tab component in the sense that you add your items, meaning your accordion headers.
+So I can add multiple multiple headers. In this case I I I know that you\'re able to insert a new component here. What I\'ve been doing is I would typically recommend putting a container component because then you are able to have some additional flexibility in terms of layout and such like that.
+But let\'s do this. I\'m going to add another item, all right? And you can see here in my properties I\'ve set the expanded items to be one and two. I can make this a single expansion one and let\'s say I want.
+I don\'t want to be open, so you can just see how you can control what you want to be open within the accordion upon load. If you don\'t want anything to be open at all, you can just simply do this so everything is closed at once. I did see a hand up, but I don\'t see any more.
+So does somebody have a question?
+
+**Mayte Eme** 26:32
+It was Rick.
+
+**Daniela Tea** 26:33
+OK, great.
+
+**Lyon, Rick (Director of Digital Experience)** 26:34
+Yeah, sorry, that was me. I was just gonna say if you could also show us it on the the Gray background as well, that would be awesome.
+
+**Daniela Tea** 26:39
+Oh, sure thing. Yeah. And so something that we we do have two different variations for this. I\'m going to put this in the very background here. We do have different, two different variations for this. We have a basically a transparent variation.
+
+**Lyon, Rick (Director of Digital Experience)** 26:42
+Thank you.
+
+**Daniela Tea** 26:59
+Which would just make it inherent or or just remove the background color of the accordion. Or if you remove the transparent, it becomes white. So that\'s certainly a whatever preference is needed. I think we\'re using the transparent variation now on the careers.
+Website, but for most of the accordions that are on on the Hard Rock, because the Hard Rock website, because it\'s within a white background, you can\'t really tell if it\'s using transparent or white. So this is what it looks like if you were to have the white background. This is what it looks like if you were to make it transparent.
+OK.
+
+**Lyon, Rick (Director of Digital Experience)** 27:37
+Can you show that expanded with content?
+
+**Daniela Tea** 27:39
+Sure, let me see. So we want to add some content here. I\'m going to put title. Oh yeah, because I have the with the background on if I were to take this off.
+
+**Lyon, Rick (Director of Digital Experience)** 27:42
+Thank you.
+OK, so stays quiet.
+
+**Daniela Tea** 27:56
+This is what it looks like. Everything is just essentially one color. Yep.
+
+**Lyon, Rick (Director of Digital Experience)** 27:59
+Great, OK.
+OK, so in this view there\'s nothing to highlight the title with of the accordion that\'s expanded. So we\'ll have to do that I guess with styling on the title.
+
+**Daniela Tea** 28:03
+Alright.
+Oh.
+So you can let\'s see. So you could see it is a it is a some. There\'s some formatting that you are able to do for the specific title. So like I I highlighted this by bolding it right.
+Excuse me, I don\'t think. I don\'t know if you would ever put like a title within the accordion. Maybe you would depending on what content you have. But so right now, if I were to remove this, I think it is a little bit clearer that this is the header just because it\'s bolder than the text that\'s within it.
+Um, but yes, there is a little bit of, um, somebody to do.
+
+**Lyon, Rick (Director of Digital Experience)** 28:48
+So we can\'t change the size here or give it a heading or anything.
+
+**Daniela Tea** 28:53
+So for the size itself, not with the you could, we\'re able to do a subscript and superscript, yes.
+
+**Lyon, Rick (Director of Digital Experience)** 28:58
+OK, but we can do it with the visit.
+OK, but we could do it with the source if we had to. OK, but no default way to change the size, OK.
+
+**Daniela Tea** 29:05
+Yes, you could do it with the source edit if you had to.
+
+**Lyon, Rick (Director of Digital Experience)** 29:14
+Oh, properties. OK.
+OK.
+
+**Daniela Tea** 29:15
+Can be applied, but I don\'t think it\'s very obvious. It\'s more along the lines of like the heading has that structure, right? So now this is an H2. So this this is essentially adding the H3H4 markup or whatever that\'s being set.
+In in the markup. So that way depending on accessibility, you know obviously this is never going to be an H1. That\'s why it\'s not allowed, but it could be H2 headers for here. So you can change the heading element markup here to make sure that\'s clear.
+All right. Um, and.
+
+**Lyon, Rick (Director of Digital Experience)** 29:52
+And you can give it to the class or the ID so you can link to an opened accordion.
+
+**Daniela Tea** 29:58
+Yes. So in order to do that, what you do need to do is so you can see here at the very top there are generated IDs for the accordion that get added to each item. So when I click on item 2, you\'ll see this got changed.
+I\'ll click on item three, you can see this got changed. So these would be the IDs that you would pass for like a anchor link or something in terms of like having something that\'s more custom than that. Right now the ID that would be applied here is for the entire accordion element.
+And you aren\'t able to necessarily set it for the accordion item header, but you can get that generate ID when you view it as published and you can see what that ID is.
+
+**Lyon, Rick (Director of Digital Experience)** 30:53
+Got you. OK. Thank you.
+
+**Daniela Tea** 30:54
+Yep. All right. OK, so that is the accordion. I\'m gonna keep moving. Yep.
+
+**Lisa Cardia** 31:05
+Oh wait, sorry, I I do have a few questions because we\'re we\'re really kind of rushing through these. The FAQ markup, we saw that, but we didn\'t explain if we check this box to show what what does this do exactly? What does that mean?
+
+**Daniela Tea** 31:08
+Mhm.
+Yep, so checking FAQ markup if I were to view.
+You can see how the item type oops Nope, not there. Sorry the item type here. I\'m I\'m looking at the accordion so this is the accordion component. The item type is has the schema.org slash answers and you can see how the accordion item.
+Item here has schema.org question, so it\'s essentially applying this item type property within the markup in order to essentially say like this would be a question right? Your your accordion item would be a question or as the accordion item inside of it would typically be the answer.
+
+**Lisa Cardia** 32:11
+So this is the schema markup.
+
+**Daniela Tea** 32:14
+Yes.
+
+**Lisa Cardia** 32:15
+OK. And then my second question before we\'re able to move on to a just a different component is some issues that we\'ve experienced as a team was that when you do add a third item, the container for items one and two are always set to none for width and then adding a third you have to I think.
+Set it to content area. Whatever it is that third item, they don\'t have the same settings to get the same alignment for your for your items 1-2 and three. So if you check what items one and two were set to and you added text boxes to both items one and two, and then you added a new item with another text box.
+They don\'t all have the same alignments, but then when you try to set them to the same alignments, it doesn\'t work.
+
+**Daniela Tea** 33:01
+OK, is that AI guess? Lisa, do you have a Jira ticket that perhaps I can reference so I can understand like?
+
+**Lisa Cardia** 33:10
+I like I said, I haven\'t submitted a JIRA ticket since the project pause, but it might exist. I can track this in confluence, but I mean you probably could see it in real time with like once an accordion\'s added to a page just from the start you get items one and two.
+And they\'re already set to have their certain container. So as soon as you add item 3 and you want to make item 3 also a text, whatever that container is, it just doesn\'t have the same adjustments. So when you do try to adjust it, it still doesn\'t align.
+
+**Daniela Tea** 33:45
+OK, yeah, no, I think.
+
+**Lisa Cardia** 33:47
+I I can track it in confluence, but like it\'s definitely a consistent thing we experience.
+
+**Daniela Tea** 33:54
+OK. And yeah, no, I would appreciate if that\'s in confluence. I can also take a look in in JERA to see if there are any associate tickets for accordion that\'s having what you\'re describing and if not, I can.
+
+**Lisa Cardia** 34:06
+Yeah, \'cause probably even if you just look at your items one, you can see what is that container set to.
+Right there.
+
+**Daniela Tea** 34:15
+Yeah.
+
+**Lisa Cardia** 34:17
+So it\'s not set to anything and so item 2 is not set to anything. But as soon as you add text to item 3, if you can add text to that one instead, because I\'m assuming one and two have text, maybe I don\'t know what they have.
+
+**Daniela Tea** 34:19
+Mhm.
+Mhm.
+
+**Lisa Cardia** 34:33
+Yeah, so add item 3.
+
+**Daniela Tea** 34:34
+Mhm.
+
+**Lisa Cardia** 34:35
+This way you can see it in real time.
+So assuming that we have the container here, I don\'t know if you did that if I missed it, yeah.
+
+**Daniela Tea** 34:43
+I yeah, I do.
+
+**Lisa Cardia** 34:45
+So this container now if you want to, yeah, just type dummy text. See how it\'s slightly indented.
+
+**Daniela Tea** 34:51
+Mhm.
+
+**Lisa Cardia** 34:52
+Compared to items one and two.
+
+**Daniela Tea** 34:54
+Right. And that\'s just because the width content area or full width has not been uh set. So that is that\'s that\'s why I mean like.
+
+**Lisa Cardia** 35:02
+But but if you set content area, it still doesn\'t align. I believe like if you change one and two now.
+
+**Daniela Tea** 35:10
+So I\'m going to set everything to full width.
+
+**Lisa Cardia** 35:15
+But that.
+OK, so.
+
+**Daniela Tea** 35:18
+Let\'s see if that works.
+
+**Lisa Cardia** 35:22
+So the issue is, or the resolution I guess, is having to change the alignment of one and two because they\'re not preset and then whatever comes after that.
+Change it to be the same. I guess to me it was coming. It\'s.
+
+**Mayte Eme** 35:37
+No, no, I would say that\'s a bug, Lisa. We shouldn\'t have to be. If one and two are working fine, the rest should work like one and two. If you wanted to change it, that\'s a different story.
+
+**Lisa Cardia** 35:46
+Yeah, that\'s where I think as authors we were getting confused to add additional items and since one and two come automatically adding a third fourth doesn\'t add the same way.
+
+**Mayte Eme** 35:51
+OK.
+Yeah.
+Yeah, that that\'s a bug.
+
+**Daniela Tea** 35:59
+Mhm.
+Yeah, that\'s why I I wanted to see if this was something I was tracked in JIRA, because I know I understand where you\'re coming from, Lisa. And yes, well, I can show you how you can kind of make it work as an author. So that way you\'re not like waiting for like some code deployment.
+
+**Lisa Cardia** 36:14
+Yeah.
+
+**Daniela Tea** 36:21
+Totally understand that you guys would want to have this track somewhere. So if it\'s not endure though, if you could just make a note on Confluence, I do understand the issue, but I just want to make sure that we have note of it somewhere.
+
+**Lisa Cardia** 36:35
+OK. Thank you.
+
+**Daniela Tea** 36:35
+Thank you.
+OK, um, anything else before we move on to the container?
+
+**Mayte Eme** 36:42
+Did I miss how you changed the background? Because I think we had a bug that you couldn\'t even see when it was on a darker background.
+
+**Daniela Tea** 36:52
+So there is a background style called transparent that I had set. In terms of changing the background, I had changed the background on the container that this is in. So you can see this has the Gray background here. So it\'s not actually applied to the accordion itself, it\'s applied to the container holding the accordion.
+
+**Mayte Eme** 36:56
+OK.
+2.
+OK, and what about if the background is black? I assume automatically the text changes to white.
+
+**Daniela Tea** 37:17
+I don\'t think that is the case right now since this transparent class I believe was added specifically for when we were working with careers. So. So what was established then was just to make a transparent class where it would just have the background color.
+
+**Mayte Eme** 37:37
+OK, so we\'ll have to redo this one too. OK.
+
+**Daniela Tea** 37:42
+S.
+OK, moving on to our container light box. So I\'m not sure if the team had has ever used this feature, but just to be clear as to what this feature is, let me see, is it here OK?
+So on the container, there\'s those four tabs, which I know we\'ve been filling out the properties tab in order to set colors and background images. We use the Styles tab to essentially set a lot of, excuse me.
+A lot of different styling properties for like widths or paddings. We had the parallax tab, which we reviewed yesterday in terms of identifying pieces of content where we might want to have specific animation associated with it. And then finally there\'s this fourth tab that says G light box.
+The check box that says enable G light box and So what I\'m showing here is I just have a container full of some cards. I even have an image here and I have set the container to enable the G light box.
+So what happens is when I view, when I click on anything within this container, it\'s going to open it up in a light box. As long as it has an image like you know, like that\'s why I was showing cards and images, it\'s going to open up in a light box. You can just view the images in a light box.
+Just like what I showed right there. So I\'m not sure if the team is using this right now, but just want to make sure you all were aware of this feature. Again, it\'s just simply having your items in a container, but I notice I\'m having items that have images.
+And then setting the glightbox checkbox to say enable.
+I\'ll pause here, though, to see if there\'s any questions about that piece of functionality.
+
+**Mayte Eme** 39:48
+I mean, my screen was too small. Can you? And I\'m gonna make it bigger, I\'m sorry, but could you pop the light box again? We\'re trying to capture like all the steps and what everything means to ask the right questions, and sometimes it\'s hard.
+
+**Daniela Tea** 39:55
+Sure.
+alright. So I clicked on one of the cards within the light box. Um, so oh,
+
+**Mayte Eme** 40:03
+Yeah.
+No, I\'m sorry. Can you open the settings like the? Yeah. Thank you.
+
+**Daniela Tea** 40:10
+Yes, Yep.
+So I am targeting my container which contains my three cards and my image. It\'s essentially this right here and within the container all I simply did was on the G light box tab. Excuse me, I just have the the button checked.
+OK.
+Alright.
+
+**Edwin Aquino** 40:38
+Any other? I have a question. I have two accessibility questions regarding the light box. Are users able to like tab to the little X \'cause I know that\'s sometimes an issue with the light boxes where you can\'t close it if you\'re using like tab or.
+
+**Daniela Tea** 40:39
+Yes.
+
+**Edwin Aquino** 40:53
+Some other option.
+
+**Daniela Tea** 40:54
+So I am able to get out of it by pressing my escape button. So I\'m actually not using my mouse, I\'m using my arrow key to go forward and then I\'m using my escape to get out of it.
+
+**Edwin Aquino** 40:59
+Escape, OK.
+OK.
+OK. And then the other question is, I know some users have like a dark mode on their web browser. Is the X visible in that mode? Do you know?
+
+**Daniela Tea** 41:16
+Um, that\'s a good question. Um.
+
+**Mayte Eme** 41:19
+Where is the X?
+
+**Daniela Tea** 41:21
+The X is here.
+
+**Edwin Aquino** 41:23
+On the top, top right? Yeah, it\'s kinda small.
+
+**Mayte Eme** 41:24
+Why is it so?
+
+**Daniela Tea** 41:25
+I do have just just to be clear, I do have a very large monitor, but the X is there.
+
+**Edwin Aquino** 41:30
+OK.
+
+**Mayte Eme** 41:32
+Yeah, it seems way too small.
+Oh my God, there are rows on the bottom. The dust are super small too.
+Let me just take a screenshot so we cannot do the list of things to.
+OK.
+
+**Edwin Aquino** 41:51
+Thank you, Danielle.
+
+**Daniela Tea** 41:52
+Yeah. And so just to confirm on what you were asking about how it looked in dark mode, right?
+
+**Edwin Aquino** 41:58
+Yeah \'cause I know some web browsers use the dark mode and occasionally since the X is like a text letter, it\'ll convert the texts from white to black and I don\'t know if.
+
+**Daniela Tea** 42:01
+I.
+Yeah.
+I do think.
+I think this is actually let me see. I think we\'re using. I believe we are using an icon for this one. So but well, I can certainly check just to confirm that one though. I believe it still should show up as white, but I can certainly check on that.
+
+**Edwin Aquino** 42:27
+I appreciate it. Thank you.
+
+**Daniela Tea** 42:28
+OK.
+
+**Lisa Cardia** 42:29
+And then Daniella, are you able to at least quickly run through just the regular properties of the container? Just because you know, I think most are set to responsive, but just if there\'s any use case of us selecting default and simple.
+I think we understand the background color now, but there\'s still like options for like roll, hide container on page, minimum container height. So just understanding all of the different styling options would be helpful.
+
+**Daniela Tea** 42:44
+Yes.
+Mhm.
+Yes.
+Yeah.
+Yep. And I actually did want to go over. I was planning on going over the the styling options with regards to like cards in here, but we can let us Scroll down and just have another container. Excuse me. And so we can start, we can start from there. So I\'m just going to add a container here.
+
+**Lisa Cardia** 43:14
+OK.
+
+**Daniela Tea** 43:21
+And I\'m going to change the background of the container so we can we can see what it looks like. So this is just for the purposes of seeing it on the page. All right, all right. So by default, whenever you add a container to the page.
+It\'s going to be with the content area selected. The reason why is because and I\'m going to delete that one. The reason why is because within this everything\'s going to be within this root container and if you guys remember when we talked about page templates.
+The page template for for example, this is the open page template. It\'s basically the experience fragment up top for the header, experience fragment at the bottom for footer, and then there\'s like this container on the page that essentially allows you to add all the components. So this container is like a full width container.
+And so that\'s why whenever you add content in it or containers in it, it\'s going to default to content area. So if you need it to be a another full width container, say you\'re setting like a background image or some or or like a background color or something you want to extend full width, just simply change it there.
+And then from here, likely you\'ll want your content to be set, set to be within the content width. So just want to make sure that that\'s like, you know, kind of like the practice is.
+This one here is in my outer container that\'s red. This one is going to be set to full width because I want that background color to be full width. The container within it is set to content area and so to see what that looks like, let\'s just make it this color.
+So this is likely what most of the content that you guys are doing when you, especially when you guys are alternating colors, you\'re going to want to have that outer container with the background color, the inner container for the content inside of it.
+OK, let\'s see. So let\'s take a look at some of the other pieces of functionality. So when it comes to layout, the simple and response grid, so default is actually a responsive grid. To be clear, these two options.
+One with response grid means, hey, I want to be able to like adjust columns and you know, do everything that we\'re doing in layout mode where simple is basically like not having all that functionality in it. So if you just need like a simple container around components without.
+Say, like wanting to allow for like any layout adjustments, it\'s just going to be like, here\'s like a box full of things in it. That\'s why we had it defaulted to responsive grid, because more than likely you probably do want to make some adjustments to it.
+But so by default layout grid is going to be selected. I\'m not clear if you guys have any use cases where you might use simple, but it is essentially to kind of have pieces of content that aren\'t necessarily going to be adjusted by columns and widths.
+So that\'s what layout is. Background colors, we can see what it does. The background image. I\'m not sure if you guys are using this currently, but essentially it just sets the background of the container with whatever that image is. And something to keep in mind is that by default containers are not.
+Not going to have any height.
+It\'ll only have height as you put content in it. That is why there is a minimum content container height down here to be able to set a height so that way I can have the height of something on here without any content in it.
+O That is what that specific field does.
+OK, let\'s see ID. We know what ID is. That\'s essentially adding your HTML value and you can you can reference that label. This is going to be your Aria, yes.
+
+**Mayte Eme** 47:31
+Quick question, is the ID only for let\'s say an anchor or analytics or is that used somewhere else like other places where we had to copy paste IDs because there was no relation to components?
+
+**Daniela Tea** 47:33
+Hello.
+Oh.
+So the ID, let\'s put an ID value here at container. So basically this is just populating the ID for the. Yep, good, I got that. It\'s populating that ID field within.
+
+**Mayte Eme** 47:50
+OK.
+
+**Daniela Tea** 48:06
+The container. So here\'s my value. How you use it? You know it could be. It could be an anchor tag, right? You might put an ID on the container or say like the title or something. You might use this ID for say JavaScript if you need a target for whatever reason.
+You mentioned analytics. Right now I\'m showing you on a container. I\'m not sure when you would be tracking a container itself in analytics, but the ID field should be on every component for you to be able to put a value on and you can see how it\'s getting populated when you inspect the element.
+
+**Mayte Eme** 48:42
+OK, so this is not like the other ones where we had to remember the ID because we had to paste it somewhere else.
+
+**Kerry Holyoak (SHRSS)** 48:45
+And.
+
+**Mayte Eme** 48:50
+And there\'s no validation either, right? Because ID should be unique, but it seems like you can enter whatever you want and you can repeat that idea across anywhere. So if we had two containers, we have to remember the IDs we gave them.
+Across any bay.
+
+**Daniela Tea** 49:05
+That, yes. So in term, Yep. Sorry, who? Go ahead.
+
+**Kerry Holyoak (SHRSS)** 49:07
+Sorry, I have a question. Can those IDs be used in target to target an entire container for a personalized experience?
+
+**Daniela Tea** 49:16
+Yes, and it should. Yes, this this should be able to.
+
+**Mayte Eme** 49:21
+Remember the names? We\'re gonna have to keep track of them, otherwise you\'re gonna be targeting. Yep.
+
+**Daniela Tea** 49:21
+So.
+
+**Kerry Holyoak (SHRSS)** 49:24
+Well, yeah, no, I agree that. Well, that the reason I asked the question is because for that very reason what you\'re saying might is well, we\'re going to need a standardized process, right, or some constraints and can that field be, are there rules we can set on that field to force constraints for like a?
+
+**Mayte Eme** 49:32
+Mm-hmm. Yeah.
+
+**Kerry Holyoak (SHRSS)** 49:41
+A naming convention or something like that? Or is it just open?
+
+**Daniela Tea** 49:45
+Um.
+So let\'s do this. So I\'ve added container and I just I\'ve added KT container to the other one. Let\'s add it again. So it\'s likely not going to allow me to save it. Yeah, so you can see this idea already exists on the page. Please enter a unique ID. So this is something that we saw also with our content.
+And fragments. So I\'m not able to save this or get out of this because I\'m already using this on this page. Now if you guys are trying to have IDs that are unique like across the site, like you know outside of the page, I don\'t think it\'s doing. It\'s not going to do that validation, but it is going to do the validation.
+
+**Mayte Eme** 50:13
+Awesome.
+
+**Daniela Tea** 50:26
+Within the page itself, OK.
+
+**Mayte Eme** 50:28
+Is this the same case from the other one? And I don\'t even remember the component, but there was another one that was also validating that it was unique. But now I\'m wondering if was that only for the page or the whole site?
+
+**Daniela Tea** 50:42
+Uh, that\'s really hard to answer because I\'m not really sure what you\'re referring to. Um.
+
+**Mayte Eme** 50:49
+There was one. I\'ll go through the through the pages because I know we asked the question where we had to paste an ID, otherwise it wouldn\'t display what it was supposed to display. And now I\'m wondering if that\'s page only or site only because that\'s another fix we gotta log.
+
+**Daniela Tea** 50:50
+Uh.
+We cancel this and let me go back to our container and I think, yeah, this is it. So let\'s add a label.
+And let\'s add a role.
+All right, and we can inspect and see how that comes up.
+All right, so Aria label, KT label, role, KT roles. So these are just the values that you would put. And again, you yourself wouldn\'t see it unless you inspect it and then you can see how the values are populating and how it would work like for example with a screen reader perhaps.
+So let me open this back up again. All right, so we\'ve talked about these fields here. So hide container on page. So you can see here it says check this checkbox to hide container and use page template based on keyword and selectors in the URL. So this one is is I think more of like a.
+If you need to hide the container on the page but you don\'t necessarily want to delete it. So if I were to check this, this is not this is only. However this is only I believe on the news page template as it says here so.
+I can open that up in a side window so we can see how that works. I don\'t think you guys are actually using this functionality currently. I can check on that but.
+
+**Lisa Cardia** 52:40
+So if if we use this on a page, this is different than that feature where we were like hiding on mobile. Like sometimes we actually add content to a page, take it down and then end up replacing that content down the road with something a little bit more refreshed. But the layout\'s already there so we don\'t have to worry about recreating it from scratch.
+
+**Daniela Tea** 52:42
+Mhm.
+
+**Lisa Cardia** 52:59
+So this would actually be very useful as long as the hidden content isn\'t crawled on the live page. Is that correct?
+
+**Daniela Tea** 53:05
+Yeah, So what? So let me confirm what you\'re saying. So you\'re you wanted to make sure like your use case when I was showing how you hide things on mobile, that\'s not necessarily something you would want because you want to essentially set up like the whole layout of everything.
+And say mobile and desktop, but simply hide it from the page so that way it\'s not showing right now and it can show whenever you\'re ready, correct?
+
+**Lisa Cardia** 53:29
+Yeah, like we might add to a cafe or to like a spa page. It might be the Valentine\'s Day specials, which obviously only work for February. But then in March there might be, I don\'t know, Saint Patrick\'s Day specials. And instead of the author having to now figure out how he wants to lay that out from scratch, we could repurpose the same.
+
+**Daniela Tea** 53:36
+Mhm.
+
+**Lisa Cardia** 53:49
+One already on the page and unhide it. We like to store content a lot on the back end and reuse it later down the road or already configured. Not saying it\'s like an experience fragment per SE because it\'s not like reused across sites, but.
+
+**Daniela Tea** 53:52
+Mm.
+OK.
+
+**Lisa Cardia** 54:09
+Like on that page level, so it just helps us make quicker updates by repurposing, but I wanna make sure that\'s not crawled if we were to hide it.
+
+**Daniela Tea** 54:17
+OK.
+OK. So actually Lisa, like what you\'re describing and the reason why I\'m trying to like get clarification on the use cases and this is actually what the purpose of the platform expansion sessions will be. We want to hear these specific use cases like what you just said to understand, OK, is that like is that something that?
+Perhaps you could do with an experience fragment, but like you know, hearing as you describe it and we\'re asking questions like, OK, no, is that something we can do by repurposing this checkbox that we have within the container, but we might have to tweak it so that way it\'s not actually displaying and being crawled, you know, so.
+Right now, I believe what we have right here, based on what I\'m hearing you from the use case you just described, I don\'t think that this is going to provide everything you need in terms of hiding it from being crawled. I believe it\'s essentially I could display none, but the content would actually still be on the page.
+It\'s just hidden, but this is the.
+
+**Lisa Cardia** 55:21
+What? What would be the purpose of it then, if it\'s getting crawled but you have it hidden?
+
+**Daniela Tea** 55:23
+So.
+So this is where this is where I was saying this specific functionality is actually for the news page template. But what I\'m saying is based off of your use case, it could potentially be tweaked upon and repurposed.
+
+**Mayte Eme** 55:41
+I I wouldn\'t tweak it. This doesn\'t suffice with the the need because it\'s bigger than just one component. But I wanted to understand what\'s the use case for this. You said news, but what are we hiding the news that gets crawled?
+
+**Daniela Tea** 55:52
+Yeah.
+Right, so if you I don\'t know if you guys can read this little tooltip, but it\'s say it\'s this is specifically for the news page template. Right now I\'m actually on an open page template, so that\'s why this is.
+
+**Mayte Eme** 56:00
+Yeah.
+So why is he showing Akers not?
+And then.
+
+**Daniela Tea** 56:12
+So yeah, I\'m so this. Keep in mind that these containers are going to be reusable across all components. Sorry, across all all templates. However, like we saw with the style variations, the style variations don\'t necessarily apply to all themes.
+Some of the fields on some of these components aren\'t necessarily going to apply to all page templates. This specific field is not something that\'s necessarily applicable for the template that I\'m on. This is for the news page template, so I\'m showing.
+
+**Mayte Eme** 56:45
+What is he? OK, what is he doing? The new speech number?
+
+**Daniela Tea** 56:49
+Yeah, so that\'s what I was showing what the tooltip says. I would need to set up something so we could see that, but I do want to make sure that we\'re trying to cover as much as possible. We have about an hour left. So this one here though, what you\'re describing though Lisa, this is not going to cover your specific use case.
+
+**Mayte Eme** 57:08
+No, not at all.
+OK.
+
+**Daniela Tea** 57:11
+All right, class field. We talked about applying a class and how it gets applied to the container. You could be on the markup. We saw how the minimum container height is set and it\'s essentially adding height to the container even though you don\'t have content in it.
+As you continue to add content though, and as it grows, this too will of course grow. It\'s just simply a minimum height. All right, so that is the first tab. Moving on to our styles tab.
+We have our width. We can see the full width which is applied to this one here. We see the content width which is applied here. We have borders left and right. Let me see if I can try and apply that somewhere.
+Um.
+Let\'s see. So you can see this black border has appeared left and right. This is typically actually used I believe down in the footer is where I think I\'ve seen this being used for a container. Essentially if you say have like 3 containers in a row and you want to add borders.
+That\'s what the border left and right is. Hide border and mobile devices and mobile slash tablet devices. Keep in mind that the breakpoints that were established were mobile and essentially tablet and desktop were considered to be one. So that\'s why there\'s two options, one for mobile and then one.
+For both. So when I shrink the screen down, if these are selected then these borders would disappear if these if these two options were selected the vertical spacing. Again this is being used for I believe we\'re using the.
+And this experience fragment which I can actually open up and we can take a look at that. But the vertical spacing allows you to add some space for left up to 40 pixels and from right up to 40 pixels of these set values.
+The card styling though is something that I think will be of most importance for you guys as you guys are using a lot of cards. So I\'m going to actually scroll up to this section here where I have these cards set up. I also have this image, but I\'m just going to delete it cause it\'s not a card.
+All right, so on my container right now I have set cards list equal space. If I set it two column lists, it\'s going to change it so it\'s displayed as two columns. I can set it to three card list.
+So it\'s set within three columns. There\'s also center line, which you can see here. If I hit preview, it\'s there\'s absolutely no space between the cards and then if I set.
+End a line. I think you\'re going to see this with some of the other card variations. Keep in mind right now I have the default card set. I really want to get through all these card variations so we can see how that gets applied. But typically what I believe you guys are using when it comes to these default cards in here is.
+The cards list this equal space. You\'ll see here though. One second.
+You\'ll see here in my container I have my three cards. If I were to add another card, I\'m just going to add another card here. It\'s going to just appear underneath.
+
+**Mayte Eme** 1:00:46
+Do you have to? Do you have to add the cards like that? Like one by one? Can we just do a query and just pull them? Does he have?
+
+**Daniela Tea** 1:00:55
+There is, there is a. So if you\'re doing a content fragment card list, meaning if your cards are coming from content fragments, there\'s a list list component that allows you to pull those in.
+In terms of cards, those like I guess when you say a query, keep in mind these cards are being edited on this page. Like these cards are something I\'m just editing on the page.
+
+**Mayte Eme** 1:01:21
+We we don\'t do that. We really don\'t do that manage anything at local level like 1 by 1. So it\'s it seems everything has to be built as a fragment.
+
+**Daniela Tea** 1:01:35
+And Yep, so I mean if that\'s the case, like another option is if you\'re using say experience fragments, then you can use these add experience fragments to the page instead. But when it comes to the content fragments, that\'s why I think I\'m not sure might say if you\'re part of the.
+We\'re going over the content fragment and the page templates and such, but understanding like what would make a good content fragment model. So you\'re saying that a lot of things are not necessarily local and you know that that\'s fine, but establishing what are the common elements?
+For these items, that way you can build out the structure for that content fragment model. That\'s something you know that that certainly would be beneficial if you\'re if you know for a fact that like these cards can be used across multiple sites or multiple pages, but you just have to define what the model is.
+
+**Mayte Eme** 1:02:32
+Yeah, I was watching that the other day and I\'m still very confused about the whole thing, but we it\'s more than just repeating on pages.
+That it shows on one or the other, it\'s.
+
+**Lisa Cardia** 1:02:46
+I was going to say to add a great example is that a cafe author should not even have to configure 1212 different checkboxes and settings to get the card to look how it should in the breakpoints that it should. This would have ideally been set up as just a content fragment feeding in so that they don\'t impact UX at all.
+
+**Mayte Eme** 1:02:54
+I know.
+
+**Lisa Cardia** 1:03:06
+So it\'s not necessarily reused, but still a fragment so that we don\'t break anything because there\'s a lot of room for error with how many settings can be adjusted, especially if certain settings need to be trained to say this is available to you, but actually not for your theme or not for this style card, because there\'s really no clear.
+
+**Daniela Tea** 1:03:16
+Mhm.
+
+**Lisa Cardia** 1:03:26
+Indicator as you pick styling efforts that like your first option for styling is only meant for a card that is horizontal and has a shadow. Like there\'s really no grouping of the stylings. You can check off as many or as little as you want.
+Does that make sense? There\'s really no like construct constraints.
+
+**Mayte Eme** 1:03:47
+No, and the more I see this, we\'re gonna have to adapt because one like all these checks and settings that you have to like literally trial and error until you get it right. It\'s just too time consuming.
+
+**Lisa Cardia** 1:04:01
+Yeah, and it\'s not like based on logic, so that if you were to choose, let\'s say the horizontal card, that certain variations remove from the list because obviously you wouldn\'t want to use them, but instead they\'re all available.
+
+**Mayte Eme** 1:04:04
+No.
+Yeah, I\'m just scared of the limitations of those fragments and if it\'s really gonna work, so.
+I\'ll let the question so we get answers and and decide how we\'re going to use what has been built until we can redo the whole thing and and and use it for our business.
+
+**Daniela Tea** 1:04:37
+Um.
+Well, let\'s see what else we have here for our container. Let me see. I\'m going to go back down here to my container I just made for the purpose of this, and I\'m going to actually open up the styles tab.
+All right, we looked at card styling, which was above used with cards, footer, wrapper. So these items here are specifically for the footer. Keep in mind again, yes, containers are global.
+But to your point, Lisa, understand that like since you\'re not having a footer necessarily being built within the main page, sounds like there would be a desire for some conditional logic to hide some of these things that shouldn\'t be on the page. But footer wrapper is available because this is something that would be applied to containers within the footer.
+The messy burger style. This was something that was applied to a container that\'s that was specifically for that messy burger page. So again, sounds like this would be something that could also potentially be hidden for outside of that template.
+Padding. It\'s either you have the built-in padding that was established or you have no padding depending on what you select. The border color. When we had selected borders up here, you\'re able to set it border black, border Gray.
+Those are the two options, and I know that there\'s also a border here. I think this is something that should have been consolidated where it says red border. This was specifically, I believe, for the cafe sites, the ability to put a red border around some of those different divs.
+Text alignment, setting the text either center, right or left. With this specific container we have content alignment, so not just text, but setting content that\'s within the container center horizontally or center vertically.
+And then we have the button group styling that we saw up top where I had set the center desktop slash tablet for that group of buttons above. Let\'s see. So one second here I\'m going to put back my image.
+We\'re actually, I\'m going to let\'s remove this card and I\'m going to make this card have a lot more text.
+My X button\'s not working. All right, so I were to remove my card list. You can see now how things are not going to be evenly spaced. Things are not going to be the same height.
+If I were to do, let\'s see.
+My two column list, it pushes it down. If I were to add more to here, it\'s just going to keep it within two columns. If I continue to add more, it\'s just going to naturally keep going underneath and across. I can change this also to my three column list.
+Um, which is?
+Again, if I add more, it\'s just going to keep going in threes underneath. All right, so.
+
+**Mayte Eme** 1:08:16
+So so you have to do 1 by 1 to make sure they have that same high and if you add more text then you gotta go back and tweak all of them again.
+
+**Daniela Tea** 1:08:25
+Hang on, if I were to add more text here.
+I hit done so right now you can see it.
+
+**Mayte Eme** 1:08:33
+So it\'s not like it\'s smart enough cycle to know and grow based on the highest.
+
+**Daniela Tea** 1:08:39
+So you can see right now this is truncated. So this this specific card has truncation applied to it by default. However, on the card itself you can turn off truncation if needed.
+
+**Mayte Eme** 1:08:43
+OK.
+
+**Daniela Tea** 1:08:54
+So that is at a card level. So if I were to turn this off right now, no truncate description. So it\'s you know, depending on like I believe for some of the cards you guys do have a truncate I think with like the news card if I\'m not mistaken.
+So the truncation is added by default, but you can turn it off and you can see when I turned it off here it expanded the height of the other cards.
+
+**Mayte Eme** 1:09:21
+So because of Newsroom is default for all of them instead of just for Newsroom.
+
+**Daniela Tea** 1:09:29
+Since I think that was probably the first one we worked on, but I mean there\'s this is something again, like if it\'s OK, yeah, the card should always not be truncated and then have this essentially have this essentially be like the default.
+That that\'s certainly something and you know during the platform expansion discussions that can be noted for sure.
+
+**Lisa Cardia** 1:09:52
+Well, what additional setting do you have to these cards right now? Because when we did the cafe content validation months ago, all of the cards were different heights. Was that because it was migrated without a container with the settings because?
+
+**Daniela Tea** 1:10:02
+Mhm.
+
+**Lisa Cardia** 1:10:07
+They were all all different heights.
+
+**Daniela Tea** 1:10:10
+I believe that these so right now I have it set to three column list. Um.
+
+**Lisa Cardia** 1:10:15
+Mhm.
+
+**Daniela Tea** 1:10:16
+As you can see under the card card styling, this is on the container. I believe that some of these were additional variations that were created as we were working on the cafes.
+
+**Lisa Cardia** 1:10:31
+Sorry, I\'m not understanding. So like, there\'s new cards now.
+
+**Daniela Tea** 1:10:35
+No, I\'m I\'m saying like when during that time, I don\'t remember when that was, maybe it was like October or so. Our team was also working on some additional style variations. So like they were added there, but when it was migrated, I don\'t think those variations were necessarily available.
+Mobile.
+
+**Mayte Eme** 1:10:55
+So with these variations, we don\'t have to configure each one one by one to be the same height. We can just apply that to the cafe.
+
+1:10:56
+OK.
+
+**Daniela Tea** 1:11:06
+For at the container level, yes.
+
+**Lisa Cardia** 1:11:09
+If there\'s a container on the page from migration.
+
+**Mayte Eme** 1:11:13
+So we love it as a bug and then that can get fixed because it should have been migrated properly, right?
+
+**Lisa Cardia** 1:11:22
+OK.
+
+**Daniela Tea** 1:11:27
+All right, OK, let me see what else is in the container. Styles, border, border, parallax. We went over to like box. We went over. OK.
+I wanted to get to something I think which is brand new to you guys 1st and that\'s this tabs cards filter and then we can go back to the actual card styles itself. But this is something I I don\'t know if the team has actually used before, so I just wanted to show that.
+So the way that this works and I put this note view as published because if I were to interact with it right now in the preview mode, it\'s not it\'s. It doesn\'t work as as it will for the end user when you view it as published. So I\'m going to view it as published which is.
+Right over here, just refresh this and so the tabs cards filter. I have my 6 cards here. You\'ll see I just put spring, summer, fall, winter, spring and fall and just description as to when I\'m expecting this to be shown.
+And So what it does is it just displays the cards which is associated with the tab on top. So I\'ve clicked summer, so I\'m seeing summer. I\'m seeing my summer and winter card. When I click on winter, I see my winter card on my summer and winter card. Click on all, I see everything.
+So this specific component I think is likely on the hotel pages and the way that this is authored is.
+I have my tabs that I\'m able to establish. So you\'ll see here I have my all tab label all offers and then here I have specific category filters. So here I have the label for spring offers.
+I have my summer offers, fall offers and winter offers. So those are all the labels that are on this button here and then here.
+
+**Mayte Eme** 1:13:28
+So one one quick question because to freaking out, is this the only cards that we can use with these tabs?
+
+**Daniela Tea** 1:13:37
+What?
+
+**Mayte Eme** 1:13:37
+Hey.
+So you have the tabs, right? All offers and spring offers. I don\'t know what offers we would use like this, but fine. And then you have cards below 6 cards. Is that the only card variation that you can have below the tabs?
+
+**Daniela Tea** 1:13:50
+No, I have not. No, I have not gotten to that yet, might say. OK, all right.
+
+**Mayte Eme** 1:13:54
+OK, OK, that was very scary.
+
+**Daniela Tea** 1:13:57
+So here I\'m showing the button label or the tab label and I\'m showing a name. And so this name is essentially the category filter name. I\'ll show you where this is used in order to attach the cards to these filters. I\'m going to keep scrolling down.
+I have my column layout set to three. I could set it to four. Don\'t think there\'s a limit, but I think there would be you would want there to probably you would probably do three or four I would imagine. But right now I have it set to three and I\'m going to click done.
+So now within the tab card filter I have the ability to add cards. So I\'ve added 123456 cards here. I can add more if I want. Let\'s go ahead and do that right now.
+So I have my a new card here and this card is the same as all my other cards. I am able to put an image, I am able to put my text.
+I\'m able to put a a link to here, right? So this is the exact same part.
+
+**Mayte Eme** 1:15:01
+Does it only take? Sorry, does it only take manual cards again, or can we just query and pull a list from whatever criteria we need?
+
+**Daniela Tea** 1:15:11
+So keep in mind I just wanted to show this on each of these cards. What I have here is a specific category. So this category is associated essentially with those buttons there. So in terms of the list.
+Thinking.
+I I think right now this is hooked up to be individual cards to match with these tabs.
+
+**Mayte Eme** 1:15:43
+Does that mean we can\'t query like query experience recommends or does it have to be local at the page level and manually 1 by 1?
+Because if we\'re gonna have offer like I\'m just using the use case that you have right offers, we can be recreating offers. We gotta pull the ones that we already have.
+
+**Daniela Tea** 1:15:55
+Um, so.
+Yeah, no understood. I think for this here you are able to add additional components like this one. This one you know you can say I can add an experience fragment. However, what this has been tested against is for the like specific individual cards I understand.
+What your use case is where say you have a list of cards where it\'s things that were all say located in a specific area or based off of a specific keyword or perhaps even A A tag like say you want everything that was tagged as like from this specific hotel.
+So right now though, what we had created against was on individual local cards, but that doesn\'t mean you know in the future that that cannot be enhanced to be able to pull in things based off of say like a content fragment card or something.
+Right now though, with the card itself, we have that categories field here, which allows you to be able to associate the individual card with the tab that you created in the component.
+
+**Mayte Eme** 1:17:12
+OK, I I really don\'t see a use case for this. Um.
+I don\'t know what we will use this for. If it\'s manually creating cards, seems like too much work.
+
+**Lisa Cardia** 1:17:22
+I also am just a bit confused on like the difference between this and tabs itself. Like is tabs not the same? Couldn\'t we have added cards to the tabs other other component we learned?
+
+**Daniela Tea** 1:17:33
+So yes, you could. You could do that. However, keep in mind that I mean I have one card and I\'m able to oh sorry because remember view is published. I have my I\'ve created all my all my cards on the all offers tab. However, I\'m able to display it on different tabs without.
+Having to make copies of that card, right? So yes, well, you could do it. Like say you had a tab called Spring Offers using the tabs component. So you\'d put two cards here, right? Then if I go to fall, I\'ll put another two cards here.
+But what I\'m saying is like I only have one of these cards. If you do it within tabs, you would have to create this card multiple times to appear on both of those tabs.
+
+**Mayte Eme** 1:18:18
+OK.
+
+**Lisa Cardia** 1:18:21
+Got it.
+
+**Daniela Tea** 1:18:21
+Yeah. So that\'s where the, that\'s where the, that\'s why there there\'s that categories field down here at the bottom. That\'s what this is used for. It\'s associated with the categories that you had established at this component level here. So these are all the categories.
+
+**Mayte Eme** 1:18:40
+What will what will be the difference between using actual filters right where we can filter by category and versus these tabs?
+
+**Daniela Tea** 1:18:41
+I am using.
+What do you what do you mean? Like what are you referencing when you\'re saying filters?
+
+**Mayte Eme** 1:18:55
+Then we have filters when we have offers and promotions and we can filter by different categories.
+
+**Daniela Tea** 1:19:01
+So we do have the promotions component which is linked to the promotions content fragment.
+
+**Mayte Eme** 1:19:02
+OK.
+Yeah.
+Yeah. So what would be the difference of just?
+The look because it is.
+
+**Daniela Tea** 1:19:13
+So this is the promotions, this is the promotions, the promotions component and then we also have the destination and.
+
+**Mayte Eme** 1:19:25
+And the events.
+
+**Daniela Tea** 1:19:26
+Search and filters. So keep in mind that these components are tied towards specific content fragment models. This here is saying if you need to make something where it\'s you know like it\'s not so much. This is not content fragment based, at least not at this moment. This is something if you need to create it, you don\'t have the content.
+Fragment model, but you need things to be filterable like a card level. You would create all your cards in one area, just this container. As long as you tag it correctly in the category section, you\'re able to essentially quote UN quote filter it with the tabs above as long as the categories match.
+
+**Mayte Eme** 1:20:04
+It seems like it\'s the same. It accomplishes the same in a way functionality, just more complicated. Is there a way to hide components from users selecting them and using them? Like how do we do that to avoid people from using this?
+
+**Daniela Tea** 1:20:20
+So that\'s gonna have to be something established at the permissions and user group level. So like so I think you guys had mentioned for example the advanced embed component, you guys would probably want to, you know, lock something like that down.
+
+**Mayte Eme** 1:20:36
+Yeah, it should have never been that open. Yes, too risky for people to break things. OK, so that\'s good to know. Thank you, Daniela. We can restrict based on user access what components they see because it seems like we have, I don\'t know, 3-4 things that do the same. So if we can limit to the one that we actually know how to use and has.
+
+**Daniela Tea** 1:20:41
+Mhm.
+
+**Mayte Eme** 1:20:55
+The least amount of steps the better.
+
+**Daniela Tea** 1:21:02
+Gonna remove some of this here just so the page doesn\'t have to grow.
+OK, all right. So tabs, card filter, card carousel, which is kind of linked to cards. I think I know you guys probably want to talk more about the card styling.
+Just preview. OK, all right, so cards. We are using cards everywhere. Right now we have the call to actions here. I put two versions of this to kind of show when the text is.
+You know, a certain width or whatever. It will be a full width button on the card itself. So this is just to show how that looks.
+
+**Mayte Eme** 1:21:49
+Is that automatic or is that a setting where you say one is stacked or side by side?
+
+**Daniela Tea** 1:21:55
+No, it\'s if I were to like put stuff like this here. Hang on.
+
+**Mayte Eme** 1:21:59
+Because we might have shorter words, but we want them as stacked versus side by side.
+
+**Daniela Tea** 1:22:03
+OK, well, so it\'s automatic in the sense that it\'s based off of if you have enough text to make it wide enough.
+
+**Mayte Eme** 1:22:12
+OK, that\'s not right. OK.
+
+**Daniela Tea** 1:22:15
+Alright, let me put this back.
+So it\'s other.
+OK. All right. So taking a look though at some of the card variations. So I was trying to also show just a couple of the variations, but we can certainly change them here right now on the fly.
+I think we have seen the primary and secondary button default card on several sites right now. What I did want to highlight though is that this specific card again keep in mind that this is the buttons are theme driven. So if I use this card in say a.
+A casino, A casino theme site or like the hotel or the cafe, the buttons will be whatever colors were established for that. Same thing with the tertiary link. We can see here how it\'s gold. Sorry, it\'s in the edit mode. There\'s that slight overlay.
+But you can see how how it\'s gold. That\'s again based off of the theme. If I were to select the overlay card, this is how it looks. So for vertical, horizontal, because I\'m at this specific width, I don\'t think you\'re you\'re really going to see much, but I think this.
+This is used on the news website, so full width overlay cards. I\'m going to Scroll down to where I have something that is full width.
+Oops.
+All right, so I have this is split card. I\'m going to select my full width overlay card so we can see when it\'s right content, how the content displays here with this specific.
+Uh, slight overlay left content. It moves.
+Full with right content. This is making it white and then this makes it white on the left. Switching to split card image on the left, image on the right.
+List card variation. The content is wider and the image is smaller. And something I did want to note is you may be wondering, OK, well how come like the image is just, you know, looks a certain way. I have used the image position for this.
+This specific card, so you know this is this is where the image position tab tends to be used. If you\'re using a specific variation and the image is like perhaps not showing the focus focus on on the subject, if I were to remove this.
+I hit done.
+
+**Lisa Cardia** 1:25:03
+I think one one of our gaps with the image position we did notice is that since the tablet and desktop, if we can take this down on our end was grouped together, it it doesn\'t work well because tablet shows such a different.
+
+**Daniela Tea** 1:25:09
+Mhm.
+Mhm.
+Yeah, tablets should be split out is what I believe, yeah. Mm-hmm.
+
+**Lisa Cardia** 1:25:19
+Yeah, tablets should be split, yeah.
+
+**Mayte Eme** 1:25:21
+I think that\'s across every single component that has an image, right? We have to redo that part because it\'s not looking good. Even the websites that we have live, it looks really bad on some specific widths.
+
+**Lisa Cardia** 1:25:29
+Yeah.
+Yeah, because like, I know that the thought behind that was that we use the same image from for desktop and tablet on the hero banners, but that\'s because on our production sites it never changes like their widths, but since it\'s actually manipulating it in AEM.
+We do see the difference.
+
+**Daniela Tea** 1:25:53
+Mhm.
+
+**Mayte Eme** 1:25:54
+Yeah.
+
+**Daniela Tea** 1:25:57
+Let\'s keep going. Yep, go ahead.
+
+**Mayte Eme** 1:25:57
+Yeah, and.
+No, I was going to say that\'s a big issue, especially with entertainment and cropping people faces and and it\'s we got a that\'s one of the high priorities if we want to launch any other site.
+
+**Daniela Tea** 1:26:10
+Mm.
+Yep. OK, so I wanted just to point out that up to this point here before it says additional style group borders, so.
+In terms of guidance that I\'m providing, um, typically you\'re going to only select one of these from like, so like one of these up until this point. But when you get to the additional style group here, these items can be applied. Um.
+Can be applied to the card in addition to whatever you had selected on top. So like when I select default card or primary and secondary button and this looks kind of weird because I don\'t have in a container, I haven\'t set the width when I set this here and I\'m clicking somewhere else right now, yes.
+It does essentially stack and I can certainly see that that can be very frustrating if you\'re trying to have a specific look and you\'re messing around with the style and you\'re saying, OK, I this looks OK, but that\'s not actually what you want. So some guidance for the team is that default card.
+A card, et cetera, et cetera. All the way up until you get to this additional style group is typically supposed to be. You select one of these and that\'s the variation that you would want applied to your card.
+So in some cases it\'s going to look fine if you have multiple applied. It\'s not really going to have too much of an effect, but you might notice some wonkiness though if like you have say this selected and like that selected. So some unintended behaviors may occur.
+So just wanted to provide that kind of guidance. OK, but with that being said, so let\'s keep going down with the styles underneath. We also have some borders. I think by default you\'ll see like a a shadow.
+Underneath the card so that that\'s like the base card. If you especially if you have, if you have one of the cards that\'s not an overlay card, you you would likely see a shadow and a border and so this specific style.
+Where the border group just allows you to either show a border or remove a border, show the shadow or disable the shadow for background color, transparent background. You\'re not going to see this on here. I will need to find an example for you guys to see how this works.
+For microsite variations, this is what we were looking at yesterday when we were reviewing the microsite template, the content lab, content right, etcetera. All of these were created specifically for that microsite template and the use of the cards on there.
+The messy card variations, these were used specifically for the messy template. We have the image height variation for some of our cards. We can see that if I select no minimum height, it essentially is saying OK for the default card there is a minimum height that\'s established here.
+There\'s like some height restrictions for some of these variations. If I don\'t want to have that applied, I can select this so that way it will essentially show the full image like we see here. So now it\'s very tall, which could cause problems if you\'re trying to have.
+Multiple cards on a page and say your images aren\'t all the same. The default card is supposed to kind of standardize that by only having a specific height. But if you do need to show the full image for whatever reason, that\'s why that is there. The icon card variation. We see that for the.
+Careers site. I\'m just going to Scroll down here. So these are using the icon card variation. It\'s going to be essentially like an icon, AKA an image of an icon or whatever, however your icons are stored SVGS or something.
+And then with the text underneath, but this is a card component, so I\'m just going to go back to where I was. So right now this looks kind of silly because I\'m not actually using like an icon, I\'m using like a full-size image, but that is what this is for.
+Uncheck that and then the no no truncate description. If I have a very long description which is not on any of these right now, let\'s take this for example and this is this is the same. This is this is the same thing in terms of the styles for the card carousel.
+And the card are going to be very similar, if not the same, but you\'ll see here I have no truncate description on this. If I have it unchecked, you\'ll see that it\'s trying to essentially make the cards a little bit smaller by only showing 3 lines of text instead.
+And I do realize I\'m, I am going quite speedily and that\'s simply because I know that you guys probably have a lot of questions about the cards and I want to make sure you guys have time for that. But in terms of what you guys are, how you guys are using cards right now?
+I think Lacy, you had, you know some some good use cases with regards to improving the selection of the groups if something is essentially supposed to be applied once, kind of trying to see how that can be enforced versus.
+
+1:31:39
+Yeah.
+
+**Daniela Tea** 1:31:46
+Having multiple be selected, but just curious to hear of some other use cases or questions about the cards.
+
+**Lisa Cardia** 1:31:55
+I think along with just the, you know, the conditional styling of when an option is selected that other options go away of course, is that we find a lot of trouble with these because they will accept any image and even if you have the same styling selected, the image dictates what the card looks like.
+
+**Daniela Tea** 1:32:08
+Mhm.
+
+**Lisa Cardia** 1:32:14
+Rather than the opposite. Now I think that\'s that\'s a huge gap and a huge problem honestly for the UX of our sites. Because even if we had selected horizontal card, shadow, border, what have you, whatever image gets thrown in there dictates the card look so.
+
+**Daniela Tea** 1:32:19
+Mhm.
+Mhm.
+
+**Lisa Cardia** 1:32:33
+I don\'t know how we fix that and set better constraints that way, but that all stems from the fact of of course us needing the image dimensions per card style variation, which I know you were working on the confluence page for, but it seems that even with that.
+
+**Daniela Tea** 1:32:47
+Mhm.
+
+**Lisa Cardia** 1:32:49
+It\'s still not a perfect science because the image is dictating the card rather than the opposite is what we\'ve noticed.
+
+**Daniela Tea** 1:32:58
+Right. And out of curiosity, like I guess I would if you guys can send me like just like a page or two, like I understand what you\'re saying, but I do also want to like kind of see the use cases that you guys have and this can be something that we can talk about during the platform expansion because like I know like you know what I\'m.
+It\'s like, yeah, I have an image and it just happens to work. Yes, while I did set the image position for this one to make the focal point, you know, more like this. I\'m just, I just want to kind of see like the kind of content, you know, like how many lines of text are you guys using? What kind of images are you guys using? I just want to kind of see that.
+Maybe play around with that a bit, but definitely noting, you know, like it\'s noted what you said about the image height dictating the card versus having some restrictions on the card itself for the for the image.
+
+**Mayte Eme** 1:33:49
+And to be honest, I think Daniela, this, this card is a whole refactor. It\'s just I don\'t think it was.
+I think it\'s a lot of settings that contradict each other and it was not built for content authors, right? It was if you click this, this is your outcome. If you click this, this is your outcome, this and this, this is your outcome. But it wasn\'t. It wasn\'t built with our content authors in mind. So that experience is very poor right now and we\'re going to have to.
+Refactor a lot of components that I would say this is one of the biggest ones.
+So I get understanding the use cases, which obviously helps, but it\'s it\'s a redo in my opinion.
+
+**Daniela Tea** 1:34:23
+Yes.
+Yep.
+All right.
+Let\'s see here.
+OK, so yes, lots of styles that were added in order to essentially try and support some of the styles that we knew we had to migrate over. I am going to go to the card carousel which is linked to the cards.
+And I think so right now what I\'m showing, I\'m actually using the example that was, I think that\'s currently on the careers website with our card carousel. I think you guys are fairly familiar with it, but.
+What I just wanted to highlight was that the styles here as you selected here it does apply to all of the cards within it like we saw. So right now default card primary and secondary button is selected if I select the tertiary link.
+That gets applied, so all the cards are now updated and I think let\'s see like we saw with the truncating description, having some control of the cards all within a group. Essentially for the card carousel though, it\'s it\'s pretty similar to I think the carousel you guys have.
+I\'ve used. Keeping in mind though, this is restricted to only cards. This is called a card carousel. That\'s why it\'s only cards. So you can add as many cards. I believe there\'s no restriction in terms of how many cards you you can add to your.
+Deleting them, of course, reordering them, et cetera. Setting the active item, essentially what should be the first card that actually gets displayed. This is similar to what we saw with our accordion component.
+The ability to transition the cards. So we wanted to. I\'m going to make this really short just for the purpose of showing it. If we wanted to have the cards kind of move on their own, that\'s something else that that can also be done.
+So you can see I was just moving without me interacting with it, but I think that is not checked by default and you guys are not currently using that right now. So I\'m just going to uncheck this and then I have my carousel slide indicators underneath displayed.
+And we talked about how right now I don\'t think the tablet slide counts field is currently something that was taken into consideration because of the fact that the begin the project, the whole breakpoint established desktop and tablet were the same.
+So right now this field is is there, but it\'s not necessarily something that I think we mentioned we we wanted to clean that up. However, the understanding that there is a desire to have separate breakpoints, one for desktop, one for tablet, one for mobile.
+It seems like it would make sense, you know, for this as well as other components to have it tablet split out to be able to have more control with this new established break point. So while this is not necessarily something that is currently being used today, it sounds like this is something that is desired and needed for the future.
+ID and class just like we saw on every other component, how this gets appears in the markup. We have our accessibility tab which also again in terms of screen readers and you would see it in the markup when you put values here.
+And then the styles tab we kind of already reviewed questions about the card carousel component.
+
+**Mayte Eme** 1:38:14
+I just want to confirm that we can pull content right when we move, because this all has to be moved to fragments, so we can pull lists. It doesn\'t have to be manual, right? There was that setting where you were hiding where you said you can add unlimited cards. That\'s just an option, right?
+We can add them manually or we can just pull and say this list based on this criteria.
+
+**Daniela Tea** 1:38:34
+Oh.
+OK, so something I wanted to make sure you were aware of currently right now these specific cards, at least in the career site, while they are, these are manual quote UN quote localized cards. However, these have been stored in an experience fragment and so they are essentially being reused.
+Used on multiple pages within the careers website. You would update it once in the experience fragment. When you make the update, say you have to add another card to that, you can do that there and then all those pages would be able to reference it and have that new additional card. So that\'s the current use case for today.
+
+**Lisa Cardia** 1:39:11
+But to be clear though, we we couldn\'t use different variations for that same experience fragment, correct? The experience fragment would have to be designed as a carousel and not as a list. Like we like to use the same source of. If there\'s 10 cards in this carousel, these 10 cards might be listed on another page, but as.
+
+**Mayte Eme** 1:39:12
+Thanks.
+And so that.
+
+**Daniela Tea** 1:39:23
+The list.
+Mhm.
+
+**Lisa Cardia** 1:39:31
+A a list. We weren\'t able to use the same experience fragment for that.
+
+**Daniela Tea** 1:39:33
+Oh, right.
+So, yes.
+
+**Mayte Eme** 1:39:36
+Oh, so we can we need that to just one variation? Well, OK.
+
+**Lisa Cardia** 1:39:42
+Unless I\'m I I I\'ve learned that recently. So if I\'m if I was miss misspoken, please correct me. But I believe that we wanted to have these same sources just displayed differently, but same content.
+
+**Mayte Eme** 1:39:48
+Mm.
+
+**Daniela Tea** 1:39:57
+Yeah.
+So.
+
+**Mayte Eme** 1:40:01
+So we still end up managing more than one in one plan.
+
+**Daniela Tea** 1:40:01
+So.
+So this is so when we were talking about content fragment models. So this is where again like yes, I understand you know wanting to reuse this content elsewhere like the reusability shared content etcetera.
+
+**Lisa Cardia** 1:40:17
+Yes.
+
+**Daniela Tea** 1:40:20
+So like for example this could be this would be something where perhaps a content fragment model might be appropriate for say this is I\'m not sure like Hard Rock brands or or lines of business or something right? I\'m not sure what the exact term would be for that.
+But then of course identifying what you would want to be stored for that right? Like an image, title, description, the apply now CTA link, the learn more CTA link, right? So understanding what that structure is.
+And then from there, that\'s where this would eventually be able to be reused across multiple pages from the content fragment being the data source. So right now that content.
+
+**Mayte Eme** 1:41:02
+But to Lisa\'s to Lisa\'s questions, it can only be used as a carousel if you apply it as a so you set it up as a carousel. That\'s it. You\'re you\'re set to only use it as a carousel. If I wanted it in a list view or or a grid, I can\'t. I will have to.
+Have another set of fragments that have exactly the same content, yes, so I can have the two different looks.
+
+**Daniela Tea** 1:41:23
+So.
+Right, right now. OK, so right now like this specific card carousel component has individual cards within them. Currently we are using an experience fragment to reuse the card carousel on multiple pages, but only edit it once. Now what you guys are talking about is the shared content.
+Aspect of having this be displayed in different ways. While there are different variations you can apply to the cards in here, right? It\'s like there\'s a list card variation. However, I don\'t think this is necessarily going to accomplish what you need because in this case here I\'m going to change this to one.
+And then I\'m going to change this to here, right? So I don\'t think it\'s necessarily going to accomplish what you need, but what you guys are describing though would be creating or establishing what a new content fragment model would be for this, having this content then be added as as content fragments based off that new model.
+And then you would be able to reuse that in multiple ways and display it in different ways. Right now there\'s no content fragment model for this specific type of data that we see here.
+
+**Mayte Eme** 1:42:31
+OK.
+Yeah, I don\'t think if I follow all that. So can we just go through that example maybe on the next session and see how it applies? And my other question, if you want to take it on the next session, that\'s fine. But even though this and if I had it correctly, these courts are experience programs, you were still selecting them one by one. Can we just?
+Query and say give me all the cards that have this tag or whatever. Is that not how AO works and we have to still manually click, click, click, click, click and add 1 by 1 every single time.
+
+**Daniela Tea** 1:43:07
+So so for I\'m gonna change this back to three so I can see at once alright and then I\'m going to change this to my default card. Alright, so for this component I am adding an individual card to the component.
+So I\'m adding one at a time, one card, right?
+
+**Mayte Eme** 1:43:30
+Is that how it has to be done?
+
+**Daniela Tea** 1:43:31
+For this specific component, that is how this is this works for this specific component.
+
+**Mayte Eme** 1:43:35
+So all carousels are one by one. Other ones we can just do a query and like set up a criteria.
+
+**Daniela Tea** 1:43:43
+The way that this comonent works right now that is how you would set it U is adding an individual card.
+
+**Mayte Eme** 1:43:48
+And what happens when one drops? Because this is scheduled. Oh wait, we don\'t have a schedule.
+
+**Daniela Tea** 1:43:58
+So I will say though, like I said, it sounds like I understand the use case for the shared content. And so right now currently this these are quote UN quote localized cards. They were created and they were added to the card carousel component.
+Card carousel component was then put into an experience fragment, so that way multiple pages would be able to display this and then only have to change it in one place. So if additional cards were to be added, it wouldn\'t be added at a page level, it would be added at the experience experience fragment level.
+So again, not exactly the same thing. I understand the use case is separate, but I am explaining that while you are adding one card at a time to the card carousel, you are able to not just card carousel but with other components.
+You are able to reuse them in multiple places as experience fragments and only have to change them in one location.
+
+**Lisa Cardia** 1:45:04
+I have another question, Danielle. Could you please use the select panel feature? We\'ve noticed on a lot of components it doesn\'t work as expected.
+
+**Daniela Tea** 1:45:06
+Yes.
+Let\'s see. You\'re talking about this here.
+
+**Lisa Cardia** 1:45:18
+Yeah, so if you were to click one of those, it it\'s not working on this one, but it happens on more than you think.
+
+**Daniela Tea** 1:45:20
+Yeah, so I was I I saw that.
+Yeah, no, no, no, I I understand what you\'re saying. And actually, let me stop. Let me stop with the transitions.
+
+**Lisa Cardia** 1:45:31
+Yeah, I\'m glad it\'s happening on your screen too, because we\'ve experienced that quite a bit and it\'s like we\'d have to go into preview mode and scroll, which is like obviously not the correct way to do it.
+
+**Daniela Tea** 1:45:39
+No.
+Yeah, no, I yes. No, I understand that. So the yeah, so.
+
+**Lisa Cardia** 1:45:47
+Is that just like a bug with the platform or?
+
+**Daniela Tea** 1:45:51
+So this theoretically like the way this this should work, like this is also a way to be able to reorder the cards, which I think yeah, but I know you\'re what you\'re asking for is I want to have essentially like number six card be the active card and I want to be able to see it and be able to edit it here without me having to hit preview.
+
+**Lisa Cardia** 1:45:59
+Right.
+Yes.
+
+**Daniela Tea** 1:46:12
+So that I am, I can\'t answer as to why that is not working, which you mentioned in terms of of preview mode and then having to edit. Yes, I understand you know that\'s not necessarily ideal so.
+
+**Lisa Cardia** 1:46:24
+Yeah, it seems broken on a lot of the components. That\'s why I wanted to flag it.
+
+**Daniela Tea** 1:46:28
+Mm.
+Yep. So yeah, that\'s this is something that I can certainly take a look into for this one in terms of like if I select it, I I believe the same thing with I think like the accordion and also the hero carousel.
+
+**Lisa Cardia** 1:46:45
+Yeah, it works on some and it works on and it doesn\'t work on others, so.
+
+**Daniela Tea** 1:46:51
+Yep. So that\'s Yep, that\'s something I can certainly take a look at. Let me see. Let me see what else we got for card carousel.
+
+**Lucas Nelson** 1:47:00
+Hey Daniella, one thing I just I there\'s like 10 minutes left. Might take you mentioned next session that this is our last content authoring dedicated session. Maybe maybe you meant like during platform expansion that I don\'t, I don\'t, I don\'t know what you meant.
+
+**Daniela Tea** 1:47:02
+Uh.
+Oh, OK.
+
+**Mayte Eme** 1:47:12
+OK.
+I miss that.
+No, I missed the look. Thank you for reminding me. I\'ll just add because now I have so many more questions about the other components, so I\'ll just add them all to this page then.
+
+**Lucas Nelson** 1:47:26
+OK, sounds good. Thanks.
+Sorry, Daniella.
+
+**Daniela Tea** 1:47:30
+No, that\'s OK. Oh.
+Wait, one second. Look at my bearings. Oh, OK.
+I I try sorry, I try to remember all saying.
+Uh.
+OK. Well, yeah. So I think, Lisa, what I was saying to you though was that, yes, I I can take a look at the select panel. Um.
+
+**Lisa Cardia** 1:47:57
+I\'ll add it to the confluence page, but I think it\'s worth noting that maybe we should check on all of the components that have that feature because we\'ve noticed it on more than not.
+
+**Daniela Tea** 1:48:08
+Mhm. OK.
+
+**Lisa Cardia** 1:48:10
+But we are aware of the workaround.
+
+**Daniela Tea** 1:48:11
+Yep, Yep, Yep. OK, I\'m taking a look to see what else we had here. Buttons, accordions, containers.
+Questions about I know that this is a lot like even just with the cards it\'s a lot, but any questions right now cause like again I do see the time 251. Any questions that you guys have that perhaps I can try and answer right now or have as a take away?
+
+**Lisa Cardia** 1:48:46
+I think I asked all the ones top of mine in real time, but we\'ll we\'ll definitely be adding to the confluence page, but I I\'ll defer everyone else.
+
+**Daniela Tea** 1:48:53
+Sure. Yep. Understood. Oh, I just realized we didn\'t really go over the spacer component. Sorry about that, guys. I know you guys are using it. I know we\'ve talked about the established spacing. I understand you.
+
+**Mayte Eme** 1:49:06
+I do. I do have one question just because we have a few minutes. I noticed that sometimes you add 2 spacers like 4040, right? That it would equal 80. But when you publish you don\'t see 80, you see 40 and I\'ve seen that a lot.
+
+**Daniela Tea** 1:49:08
+Yep, go ahead.
+Yep.
+
+**Mayte Eme** 1:49:22
+Is there a reason why we have to duplicate and just to see one? Like is is it a known bug or issue?
+
+**Daniela Tea** 1:49:28
+Are you talking about the ones that are perhaps up at the very top?
+
+**Mayte Eme** 1:49:32
+Not at the top. I mean, I remember at the cafe sites and the bits that I was shown about the hotel, it was like, why do we have 3 spacers in there? And they\'re like, oh, you gotta do that so you can see one. So is there a something weird about spacers we should know?
+
+**Daniela Tea** 1:49:44
+So yeah, so one thing, one thing to keep in mind and I so I can\'t speak to exactly the use case you\'re talking about, but since it\'s since this is a sticky header and.
+
+**Mayte Eme** 1:49:56
+No, but not at the top. These were like not at the head and not at the footer like within components or carousels or cards within cards I kept saying and I remember in one session you had to add 2 just to see one.
+
+**Lyon, Rick (Director of Digital Experience)** 1:50:13
+Is that maybe the visual placeholder for spacers that kind of go up and down the page everywhere?
+
+**Mayte Eme** 1:50:17
+Alright, but.
+I don\'t know. I just think they\'re weird.
+
+**Lyon, Rick (Director of Digital Experience)** 1:50:20
+In the AEM mode.
+
+**Daniela Tea** 1:50:22
+Oh.
+
+**Lyon, Rick (Director of Digital Experience)** 1:50:23
+Could put back to edit mode, Daniela.
+
+**Daniela Tea** 1:50:25
+Yep.
+So I I guess, sorry, I guess I\'m not, I\'m not fully following. I guess like I would need to understand what component you\'re talking about and then we can kind of take a look at that, but.
+
+**Lyon, Rick (Director of Digital Experience)** 1:50:30
+Or let\'s drag component.
+
+**Mayte Eme** 1:50:37
+I don\'t think it\'s related component, it was just that we had to put spacers back-to-back so you could see one of the two because they were not rendering. Maybe it\'s a bug that got fixed. That just got stuck in my head, so hopefully it got fixed.
+
+**Daniela Tea** 1:50:52
+Hmm.
+Well, I will say you\'ll notice that at least like whenever I do like test pages and such, I do put multiple at the top. Reason being because this specific template has a hero banner and I typically don\'t put hero banners at the top when I\'m just like trying to work on my pages. So I just put spacers to kind of take up the space at a hero banner.
+Would so that is.
+
+**Mayte Eme** 1:51:15
+No, this was an actual page, not like a test page, yeah.
+
+**Daniela Tea** 1:51:17
+OK. OK. Yeah, sorry, I I guess I would just need to see the page or or understand. Um.
+
+**Mayte Eme** 1:51:26
+That\'s fine. If we see it again, we\'ll just log the bug again.
+
+**Daniela Tea** 1:51:27
+Uh.
+Bye, sure thing.
+Um.
+OK. Other questions about any of these components. Oh yeah, really quickly. First baser, I think we are familiar with it in terms of the established sizes that are here, certainly if additional sizes or if there\'s some sort of.
+If it\'s supposed to be locked out or something, that would be during the. That\'s something we\'d want to understand during the platform expansion as well as the use cases for these. But right now these were the established sizes that were specified for the spacer component. Let me see.
+Oh, I don\'t think we talked about title either. Sorry guys. Again, this is also something that I know you guys are already using on several of your pages for the title with our title field, our eyebrow field, the ability to put the eyebrow above or below like we saw for my title that\'s down here.
+Here the the size H ones through H sixes. Let\'s see there is that link field if you need this to be a link for whatever reason, but typically I don\'t think you guys are using that ID in class.
+And then for the styles, the text color, dark or light can be selected depending on say your background and then alignment left, center or right can be applied depending on how you want the title to display.
+Can\'t believe I almost wrapped on that one. But yeah, I know you guys are already using this like everywhere, so not too much. Nothing. I imagine probably nothing new from there, but anything else guys?
+
+**Edwin Aquino** 1:53:12
+Hey Daniela, probably would have to address this next time, but whenever we have carousels, a lot of times we reuse the same carousel, but we\'ll exclude a specific card, whether it\'s maybe the current page that we\'re on. So we\'ll exclude a dining page, but we\'ll show all the other dining pages that are associated with it.
+
+**Daniela Tea** 1:53:13
+Yes.
+OK.
+OK.
+Yeah.
+
+**Edwin Aquino** 1:53:30
+Um, is that something we would use a constant fragment model for or can we? Is there an option with the card carousel that we have right here to do that? How would we go about that?
+
+**Daniela Tea** 1:53:37
+Yes. So that specific use case I think is also that\'s something we also saw on the careers website. And so for right now that functionality is not there like that conditional check of am I on this page, if so then remove it. So we are aware of that specific use case once we were talking about careers.
+But that functionality has not been built in yet. So what we did, at least for careers for the time being, is that all those cards will be displayed. We\'re using the same experience fragment, but it sounds like for during the platform expansion discussion, that\'s the kind of functionality that would need to be built into, say, the card care.
+So and and perhaps other carousels if if you guys are using, you know referencing perhaps the page that you\'re on in a in a different way. So not available today, but certainly something that we want to make sure is captured during platform expansion.
+
+**Edwin Aquino** 1:54:32
+OK, cool. Thank you, Daniel.
+
+**Daniela Tea** 1:54:34
+No, thank you for that question. Anything else guys? I know we have 3 minutes, so just wanna. I understand though that you guys will probably want to, you know, capture things on the Confluence page and I I do have to add a couple of links to some of the previous pages I am planning on.
+Sending an e-mail out when I have added those links there. I want to provide some of the experience leak documentation relevant to some of these components, specifically like the page properties. I know it\'s a pretty common one for for easy reference for you guys.
+And then I\'ll also be taking a look at the questions and and try to provide answers as I can. And then also we\'ll be continuing discussions on the use cases that Hard Rock needs for platform expansion. I\'m going to pull up the KT calendar so we can take a look at.
+What the schedule is for this? So let\'s see. Here we go. All right. So today is Wednesday. This is what this is where we are today. Tomorrow we are beginning our.
+Technical knowledge transfers with Andy and Vinay leading those that will be the morning. We also have an our first adoption session starting I believe Thursday afternoon and so throughout all of next week as you can see here additional technical knowledge transfers our adoption session.
+Sessions will continue on Thursdays and then on March 16th, the week of March 16th, that\'s when we\'re going to begin the platform expansion. This will be the time, of course, for you know, Hard Rock, you guys will be providing us with the use cases, yeah.
+
+**Mayte Eme** 1:56:21
+Daniela, one thing, can we put a checkpoint before the 16th to make sure that we are ready for the platform expansion? Because we still have a lot of questions and depending on the answers, we don\'t know what we can use or not or if things will work.
+And also I\'m still trying to rewatch previous ones that confuse me even more when I watch them to identify all the gaps. So we\'re going to need a checkpoint to make sure if we are good to start on the 16th.
+
+**Lucas Nelson** 1:56:51
+Mayte, this is the schedule we\'re maintaining. So I would advise you to take an internal checkpoint to see what you have. Follow up with us with with whatever feedback you have ahead of those weeks. But we really have to maintain this schedule because this is what we committed to and what\'s in our scope of work.
+
+**Mayte Eme** 1:57:11
+OK, I\'m going to have them to let me talk internally because without having actual requirements, there\'s no point on having expansion meetings. I mean, it\'s going to be a waste of time for everybody.
+
+**Lucas Nelson** 1:57:17
+Yeah.
+Definitely have those discussions internally for sure. That\'s why we flash this calendar so often.
+
+**Mayte Eme** 1:57:26
+And can you remind me what the adoption calls are for? Because I\'m still not 100% clear on those.
+
+**Lucas Nelson** 1:57:28
+OK.
+Yeah, we brought on Jacob White, if you remember him way back when, two years ago, my day, he he\'s coming in to to kind of have like an adoption coaching with, you know, Penny\'s involved with those two. But you and Lisa are like the key participants in that because as you guys are getting into.
+You know, we obviously we need to enhance the platform from whatever we agreed to from platform expansion, but but the further adoption of this across your broader authoring groups, that was the intention with those.
+
+**Mayte Eme** 1:58:06
+Yeah, I still don\'t know what the outcome of those are gonna be. Um.
+
+**Lucas Nelson** 1:58:10
+Let let let\'s let Jacob kick it off with you on Thursday and then definitely ask your questions with him and maybe we can get to a shared understanding of where we want want it to go. OK.
+
+**Mayte Eme** 1:58:22
+Sure, I might be late for the first one because there\'s a conflict, so just FYI.
+
+**Lucas Nelson** 1:58:28
+OK, Gonzalo, what\'s up? We\'re at time. What\'s up?
+
+**Gonzalo Calasich (SHRSS)** 1:58:33
+Yeah, the take.
+Sessions. They start tomorrow.
+
+1:58:37
+Yes.
+
+**Lucas Nelson** 1:58:38
+Yes.
+
+**Gonzalo Calasich (SHRSS)** 1:58:39
+Sweet. Thank you.
+
+**Lucas Nelson** 1:58:41
+Yeah. Andy\'s looking forward to it for sure. Yeah, he\'s on the call right now. Yeah.
+
+**Andy Lambert** 1:58:47
+Yep, I\'m going to bed early, eating my Wheaties. I\'ll be, uh, ready to go.
+
+**Lucas Nelson** 1:58:52
+Going to bed early. That\'s the first time you and last time you\'ll ever hear Andy say that on the call. So, all right, guys, we we got to drop though. I got a hard stop. Thanks for your time, guys. I\'ll try to send that recording as soon as I can. Thanks. All right, bye.
+
+**Daniela Tea** 1:58:56
+Yes, absolutely.
+Thank you, everyone. Goodbye.
+
+**Gonzalo Calasich (SHRSS)** 1:59:03
+Thank you. Thank you. Bye.
+
+**Andy Lambert** 1:59:03
+7.
+
+Lucas Nelson** stopped transcription
 
