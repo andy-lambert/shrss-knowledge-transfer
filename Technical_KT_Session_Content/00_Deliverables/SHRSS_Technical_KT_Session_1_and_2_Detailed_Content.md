@@ -64,7 +64,7 @@
 
 **What to cover:**
 
-- **Maven/POM and dependency management:** Root `pom.xml` defines modules and parent POM (AEM archetype or project parent). Each module has its own `pom.xml`; `core` depends on AEM/Sling APIs; `ui.apps` packages content; `all` aggregates for deployment. Build order matters: typically `core` → `ui.apps` (which may depend on `ui.frontend` build output) → `all`.
+- **Maven/POM and dependency management:** POM (Project Object Model) - Root `pom.xml` defines modules and parent POM (AEM archetype or project parent). Each module has its own `pom.xml`; `core` depends on AEM/Sling APIs; `ui.apps` packages content; `all` aggregates for deployment. Build order matters: typically `core` → `ui.apps` (which may depend on `ui.frontend` build output) → `all`.
 
 - **Main modules (per implementation notes):**
   - **core** — OSGi bundle; Java (Sling Models, services, servlets, schedulers, listeners, workflows). Business logic and component models.

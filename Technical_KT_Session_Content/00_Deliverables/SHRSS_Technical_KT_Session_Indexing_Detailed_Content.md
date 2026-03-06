@@ -713,3 +713,21 @@ If you want to turn this into a quick demo:
 6. Close by showing **before/after** costs or times in the Query Performance tool.
 
 This keeps the session firmly grounded in *their* code while teaching them the Cloud Service indexing and troubleshooting patterns.
+
+---
+
+### References
+
+- [Content Search and Indexing](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/indexing)
+- [Query and Indexing Best Practices](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/operations/query-and-indexing-best-practices)
+- [Indexing best practices in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/development/understand-indexing-best-practices)
+- [Search and indexing in AEM as a Cloud Service](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/migration/moving-to-aem-as-a-cloud-service/search-and-indexing)
+- [Developer console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console)
+- [Other tools for debugging AEM SDK](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/other-tools)
+- [Operations Dashboard](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/sites/administering/operations/operations-dashboard)
+- [Troubleshooting Slow Queries](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/implementing/developing/bestpractices/troubleshooting-slow-queries)
+- [How to investigate search related issues in AEM](https://experienceleague.adobe.com/en/docs/experience-manager-learn/foundation/troubleshooting/how-to-investigate-search-related-issues)
+- [Oak Queries and Indexing](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/queries-and-indexing)
+- [Essential Tips and Best Practices for AEM Lucene Search](https://experienceleague.adobe.com/en/docs/events/adobe-customer-success-webinar-recordings/2025/aem2025/aem-lucene-search)
+- [AEM Project Structure](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/aem-project-content-package-structure)
+- [Adobe Experience Manager: Handle “Query Without Index Detected” Alert](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27862)
