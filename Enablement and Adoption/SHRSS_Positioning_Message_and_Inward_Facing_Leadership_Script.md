@@ -1,3 +1,15 @@
+## SHRSS Inward Facing Message
+
+*"We are invested in Adobe. Adobe is the preeminent innovator in the industry. The current authoring issues (both in terms of author resistance and actual) are a bump in the road. They are primarily an inevitable consequence of events that have occurred over the last two years -- stakeholder churn, pauses, etc. They are also common during the activation, or initial, phase of a massive content migration to a new platform. Planning gets you so far, but hands-on experience garners true, real-world requirements.*
+
+*At this current point in the program, we are in a unique position to know exactly what needs to be done so that the platform improves efficiency and readily supports day-to-day operations and business goals.*
+
+*Adobe has partnered with us on this journey so far, now has a deep institutional understanding of our processes, and knows what needs to be done to align the implementation with where we are today. It is in our best interest to continue with them as a trusted advisor and demonstrably committed partner.*
+
+*Our focus now should be on fortifying our technical and business teams in order to take ownership of the platform, in parallel with ensuring that we garner the highest possible value from the upcoming requirements gathering and capability adoption discussions with Adobe."*
+
+## Adobe's Point of View *(working to get Hard Rock to adopt)*
+
 "Where the implementation currently stands and what maturity and opportunity look like as SHRSS moves into the next phase of platform evolution."
 
 Take a pause to ***celebrate*** what has been acheived through the SHRSS/Adobe partnership to date:

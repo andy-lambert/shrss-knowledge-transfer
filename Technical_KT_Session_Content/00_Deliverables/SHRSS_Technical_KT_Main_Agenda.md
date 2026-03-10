@@ -34,7 +34,7 @@
     - Unit tests — JUnit, coverage in core (models, services, servlets, etc.)
     - Integration tests — AEM testing client, it.tests module, Cloud Manager custom functional testing step
   - Debugging/troubleshooting
-  - Best practices
+  - Best practices (Send Gonzalo best practices docs/links)
 - **Frontend (Deepkamal)**
   - Client libraries (clientlibs)
   - Webpack, NPM, build and deploy into ui.apps
