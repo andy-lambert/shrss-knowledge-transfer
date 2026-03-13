@@ -1,0 +1,26 @@
+---
+description: "STOP Protocol should be used any time we plan to add or modify any code (or key documentation during analysis projects/tasks).  It helps avoid re-work and creating extra technical debt, and forces us to work smarter, not harder.""
+alwaysApply: true
+---
+## *MANDATORY* Infrastructure Analysis (STOP Protocol):
+   Before creating ANY new class, interface, service, or abstraction, or new documentation, you MUST complete the STOP protocol:
+
+   **S** - **Search** for existing implementations
+   - Use provided tools for searching code and documentation
+   - Also consider using grep and a few variations on wording to be comprehensive
+   - Understand what dependencies we have and if they have any impact
+
+   **T** - **Think** about why existing solutions might not work:
+   - Document what exists and why it might be insufficient
+   - Check if standard libraries solve the problem or if we're using one that is out of date
+   - Verify if existing code can be extended instead of creating new abstractions
+
+   **O** - **Outline** how your solution integrates with existing patterns:
+   - Show how it fits with established architectural or documentation patterns
+   - Confirm it follows existing configuration patterns (logging, telemetry, localization, organization/naming conventions, documentation standards)
+   - Verify it uses existing validation frameworks and commons utilities
+
+   **P** - **Prove** that a new abstraction is necessary:
+   - For code changes, document unique business logic that justifies custom implementation
+   - Explain why existing libraries or documentation are insufficient (with evidence)
+   - Confirm this is the simplest solution that could work

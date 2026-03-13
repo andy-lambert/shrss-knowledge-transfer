@@ -56,6 +56,8 @@
 ```
 
 #### Template Rules (Non-Negotiable)
-- Timestamp entries MUST ALWAYS include date AND time
+> [!IMPORTANT]
+>
+> **ALWAYS** include the time in the timestamp. After creating the timestamp, **STOP** and **VERIFY** that the timestamp includes the time. There has been an issue with agents excluding the time.
 
 ---

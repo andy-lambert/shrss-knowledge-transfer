@@ -50,11 +50,11 @@ If unsure, **run it anyway**.
 
 Before ending a session, update the following documents according to the instructions in the **Steps** section below:
 
-- `docs/ai/AGENT_SCRATCH_NOTES.md` 
-- `docs/ai/SESSION_COMPLETION_SUMMARY.md`
-- `docs/ai/SESSION_RESUME.md`
-- `docs/ai/CURRENT_FOCUS.md`
-- `docs/ai/DECISIONS.md`
+- `@docs/ai/AGENT_SCRATCH_NOTES.md` 
+- `@docs/ai/SESSION_COMPLETION_SUMMARY.md`
+- `@docs/ai/SESSION_RESUME.md`
+- `@docs/ai/CURRENT_FOCUS.md`
+- `@docs/ai/DECISIONS.md`
 
 No session should end without these artifacts being current.
 
@@ -73,15 +73,15 @@ Do not skip this step — it informs all updates below.
 
 ---
 
-#### 2. Review/Update `docs/ai/AGENT_SCRATCH_NOTES.md` (Required)
+#### 2. Review/Update `@docs/ai/AGENT_SCRATCH_NOTES.md` (Required)
 
-Follow instructions in `dcs/ai/AGENT_SCRATCH_NOTES.md` using required template.
+Follow instructions in `@docs/ai/AGENT_SCRATCH_NOTES.md` using required template.
 
 ---
 
-#### 3. Update `docs/ai/SESSION_COMPLETION_SUMMARY.md` (Required)
+#### 3. Update `@docs/ai/SESSION_COMPLETION_SUMMARY.md` (Required)
 
-### Purpose (Do not skip)
+##### Purpose (Do not skip)
 
 This document is the **authoritative record of what actually happened in this session**.
  Future agents, humans, and orchestrators will rely on it to understand:
@@ -93,7 +93,7 @@ This document is the **authoritative record of what actually happened in this se
 
 If this document is vague, incomplete, or inaccurate, **cross-session continuity fails**.
 
-### Instructions
+##### Instructions
 
 - **Adhere strictly to `SESSION_METADATA.md`**
   - Do not restate metadata here
@@ -102,7 +102,7 @@ If this document is vague, incomplete, or inaccurate, **cross-session continuity
 - Prefer **concise, factual bullets** over narrative prose
 - Write as if **you will not be present** in the next session
 
-### Required content guidance
+##### Required content guidance
 
 - **Executive Summary**
   - State the original objective
@@ -123,19 +123,21 @@ If this document is vague, incomplete, or inaccurate, **cross-session continuity
 - **Exact Resume Point for Next Session**
   - This must be precise enough that a new agent can resume in under 5 minutes
 
-### Tone and intent
+##### Tone and intent
 
 - This is **not a journal**
 - This is **not a justification**
 - This is a **durable operational record**
 
-If you feel tempted to write “see scratch notes,” stop and summarize instead.
+> [!IMPORTANT]
+>
+> If you feel tempted to write “see scratch notes,” stop and summarize instead.
 
 ------
 
-## 4. Update `docs/ai/SESSION_RESUME.md` (Required)
+## 4. Update `@docs/ai/SESSION_RESUME.md` (Required)
 
-### Purpose (Do not skip)
+##### Purpose (Do not skip)
 
 This document is the **single entry point for the next session**.
  It exists to prevent cold starts, rework, and context loss.
@@ -147,7 +149,7 @@ If this document is weak, the next session will:
 - Miss critical constraints
 - Waste time reconstructing intent
 
-### Instructions
+##### Instructions
 
 - **Treat this as a handoff document**
   - Assume the next agent has *not* read scratch notes
@@ -156,7 +158,7 @@ If this document is weak, the next session will:
   - Session identity, scope, and constraints must match
 - Update the document *after* completing the completion summary
 
-### Required content guidance
+##### Required content guidance
 
 - **🔥 30-Second Summary**
   - This should be readable in under 10 seconds
@@ -178,7 +180,7 @@ If this document is weak, the next session will:
   - Only include unresolved, actionable items
   - Avoid speculation or narrative
 
-### Tone and intent
+##### Tone and intent
 
 - This document should read like **instructions, not commentary**
 
@@ -199,9 +201,12 @@ If this document is weak, the next session will:
 
 ---
 
-## 5. Update `docs/ai/CURRENT_FOCUS.md` (Required)
+## 5. Update `@docs/ai/CURRENT_FOCUS.md` (Required)
 
 Update or append the following sections:
+
+- Last updated (Timestamp)
+  - **ALWAYS** include the time in the timestamp. After creating the timestamp, **STOP** and **VERIFY** that the timestamp includes the time. There has been an issue with agents excluding the time.
 
 - Today’s objective
 - Work completed
@@ -220,9 +225,10 @@ If any decision affected project artifacts  (code, documentation, digital conten
 
 Then:
 
-- Add an entry to `docs/ai/DECISIONS.md`
+- Add an entry to `@docs/ai/DECISIONS.md`
 - Include:
-  - date/time
+  - timestamp
+    - **ALWAYS** include the time in the timestamp. After creating the timestamp, **STOP** and **VERIFY** that the timestamp includes the time. There has been an issue with agents excluding the time.
   - context
   - decision
   - follow-ups
@@ -235,12 +241,12 @@ If no decisions were made, explicitly note:
 
 ### 7. Final Session Summary
 
-At the bottom of  `docs/ai/CURRENT_FOCUS.md`, add a short summary under *Final Session Summary* section:
+At the bottom of  `@docs/ai/CURRENT_FOCUS.md`, add a short summary under *Final Session Summary* section:
 
 - Focused on outcomes, not implementation details
 - 5–7 bullet points sumarizing session
 - Immediate next steps
-- New tasks/recommendations/considerations/issues from notes capured during this session's work and/or documented in `docs/ai/AGENT_SCRATCH_NOTES.md`
+- New tasks/recommendations/considerations/issues from notes capured during this session's work and/or documented in `@docs/ai/AGENT_SCRATCH_NOTES.md`
 
 
 This summary is optimized for:
@@ -252,15 +258,15 @@ This summary is optimized for:
 
 ### 8. Execute Close Session Macro
 
-Execute macro: `docs/ai/macros/SESSION_CLOSE.md`
+Execute macro: `@docs/ai/macros/SESSION_CLOSE.md`
 
 ---
 
 ## Guardrails
 
-- Do NOT invent progress that did not happen
-- Do NOT silently skip decision logging
-- Do NOT leave TODOs only in chat history
+- Do **NOT** invent progress that did not happen
+- Do **NOT** silently skip decision logging
+- Do **NOT** leave TODOs only in chat history
 - Prefer over-documenting to under-documenting
 
 ---
@@ -276,7 +282,10 @@ A new agent (or the same agent days later) should be able to:
 
 If this is not true, the session was not properly closed.
 
-> Answer these two questions with brutal honesty:
+> [!IMPORTANT]
+>
+> Ask yourself these two questions and answer with brutal, objective honesty:
+>
 > - If this were handed to a new agent, could they continue without questions?
 > - If ***I*** had never worked on this project and this were handed to ***me***, could ***I*** execute effectively and confidently without questions?
 
@@ -284,6 +293,6 @@ If this is not true, the session was not properly closed.
 
 ## Reminder
 
-- `@AGENTS.md` defines required rules, in addition to the rules files defined under `.cursor/rules/*` / `.claude/rules`
-- When defined, skill files define procedures: `.cursor/skills/*` /  `.claude/skills/*`
+- `@AGENTS.md` defines required rules, in addition to the rules files defined under the project **rules directory** as defined in `@AGENTS.md` 
+- When defined in the project **skills directory**, skill files define procedures
 - *This* skill preserves continuity.

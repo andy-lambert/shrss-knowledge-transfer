@@ -19,7 +19,7 @@ This skill prevents:
 ## When to Use
 
 Run this skill:
-- before making suggestions to human or making any changes at the beginning of Cursor / Codex / Claude Code sessions
+- before making suggestions to human or making any changes at the beginning of sessions
 - after switching topics or features
 - after long pauses (hours/days)
 
@@ -35,11 +35,11 @@ If unsure, **run it anyway**.
 
 - Current working branch (if Git repo is configured for the project)
 - Files modified during the last session
-- `docs/ai/SESSION_COMPLETION_SUMMARY.md`
-- `docs/ai/SESSION_RESUME.md`
-- `docs/ai/CURRENT_FOCUS.md`
-- `docs/ai/DECISIONS.md`
-- `docs/ai/AGENT_SCRATCH_NOTES.md` 
+- `@docs/ai/SESSION_COMPLETION_SUMMARY.md`
+- `@docs/ai/SESSION_RESUME.md`
+- `@docs/ai/CURRENT_FOCUS.md`
+- `@docs/ai/DECISIONS.md`
+- `@docs/ai/AGENT_SCRATCH_NOTES.md` 
 
 ---
 
@@ -47,11 +47,11 @@ If unsure, **run it anyway**.
 
 #### 1. Review Context-Critical Documentation
 
-- `docs/ai/SESSION_COMPLETION_SUMMARY.md`
-- `docs/ai/SESSION_RESUME.md`
-- `docs/ai/CURRENT_FOCUS.md`
-- `docs/ai/DECISIONS.md`
-- `docs/ai/AGENT_SCRATCH_NOTES.md` 
+- `@docs/ai/SESSION_COMPLETION_SUMMARY.md`
+- `@docs/ai/SESSION_RESUME.md`
+- `@docs/ai/CURRENT_FOCUS.md`
+- `@docs/ai/DECISIONS.md`
+- `@docs/ai/AGENT_SCRATCH_NOTES.md` 
 
 Internally summarize:
 
@@ -66,19 +66,19 @@ Internally summarize:
 
 ---
 
-#### 2. Review/Update `docs/ai/AGENT_SCRATCH_NOTES.md` (Required)
+#### 2. Review/Update `@docs/ai/AGENT_SCRATCH_NOTES.md` (Required)
 
-Add an entry to `docs/ai/AGENT_SCRATCH_NOTES.md` summarizing your understanding of the information and instructions reviewed during step 1.
+Add an entry to `@docs/ai/AGENT_SCRATCH_NOTES.md` summarizing your understanding of the information and instructions reviewed during step 1.
 
 > [!IMPORTANT]
 >
-> **Non-negotiable:** **ALWAYS** follow instructions in `dcs/ai/AGENT_SCRATCH_NOTES.md` strictly adhering to template requirements defined in the document.
+> **Non-negotiable:** **ALWAYS** follow instructions in `@docs/ai/AGENT_SCRATCH_NOTES.md` strictly adhering to template requirements defined in the document.
 
 ---
 
 #### 3. Execute Start Session Macro
 
-Execute macro: `docs/ai/macros/SESSION_START.md`
+Execute macro: `@docs/ai/macros/SESSION_START.md`
 
 ---
 
@@ -86,7 +86,10 @@ Execute macro: `docs/ai/macros/SESSION_START.md`
 
 You have complete situational awareness and context to intelligently and efficiently proceed with human interaction and project tasking.
 
-> Answer these two questions with brutal honesty:
+> [!IMPORTANT]
+>
+> Ask yourself these two questions and answer with brutal, objective honesty:
+>
 > - Do I fully understand the objectives and goals of this project?
 > - Do I feel 100% confident to move forward with project tasking?
 
@@ -94,6 +97,6 @@ You have complete situational awareness and context to intelligently and efficie
 
 ## Reminder
 
-- `@AGENTS.md` defines required rules, in addition to the rules files defined under `.cursor/rules/*` / `.claude/rules`
-- When defined, skill files define procedures: `.cursor/skills/*` /  `.claude/skills/*`
+- `@AGENTS.md` defines required rules, in addition to the rules files defined in the project **rules directory**.
+- When defined in the project **skills directory**, skill files define procedures
 - *This* skill ensures context completeness for optimal task execution, positive human and agent interaction, and session success.

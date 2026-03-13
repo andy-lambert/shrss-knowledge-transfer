@@ -4,38 +4,9 @@
 
 Execute this macro at the **end of every session**.
 
-> ### Reference
->
-> - Canonical Metadata: @SESSION_METADATA.md
+### Reference
 
-### Template (REQUIRED)
-
-```md
-### Session Summary
-
-**Date/Time**
-
-- Timestamp (UTC): 2026-01-06T10:46:00Z
-- Timestamp (Local): 2026-01-06T05:46:00-05:00
-- Timezone (IANA): America/New_York
-
-**What was learned:**
-- 
-
-**Open questions / risks:**
-- 
-
-**Recommended next actions/activities/discussion points:**
--  
-
----
-
-If any required step was skipped, explain why explicitly.
-```
-
-#### Template Rules (Non-Negotiable)
-
-- Timestamp entries MUST ALWAYS include date AND time
+- Canonical Metadata: `@docs/ai/SESSION_METADATA.md`
 
 ---
 
@@ -51,13 +22,11 @@ If any required step was skipped, explain why explicitly.
 
 ### Session Summary
 
-**Date/Time**
+> [!NOTE]
+>
+> Summarize to human
 
-- Timestamp (UTC): 2026-01-06T10:46:00Z
-- Timestamp (Local): 2026-01-06T05:46:00-05:00
-- Timezone (IANA): America/New_York
-
-**What was learned:**
+**What was learned/done:**
 
 - 
 
