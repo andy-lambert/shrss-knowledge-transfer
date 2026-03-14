@@ -448,3 +448,20 @@
 - **Resolution:** User to review first draft; then iterate (details, visuals, index) and approve or request changes.
 
 ---
+
+## Session start — Presentation collateral task (2026-03-13)
+
+- **Timestamp (UTC):** 2026-03-13T16:00:00Z
+- **Timestamp (Local):** 2026-03-13T12:00:00-04:00
+- **Timezone (IANA):** America/New_York
+- **Category:** Reminder
+- **Context:** User requested task execution per AGENTS.md: review AGENTS.md, run start-session skill, then execute TASK_GENERATE_SHRSS_AEM_AI_PRESENTATION_COLLATERAL.md. User provided template and blueprint paths after initial read.
+- **Description:**
+  - **AGENTS.md:** Reviewed; rules directory (.cursor/rules), STOP protocol, agent execution file standard, session start/close skills apply. No code changes; documentation/curation only.
+  - **Start-session:** Reviewed SESSION_COMPLETION_SUMMARY, SESSION_RESUME, CURRENT_FOCUS, DECISIONS; SESSION_METADATA and AGENT-SCRATCH-NOTES (this file) checked. Last session state: Task 7 KT Technical Documentation first draft complete; various prior tasks (DAM, CF Card List, tagging, Technical KT content) resolved.
+  - **Task:** Curate 10 candidate images for 7-slide presentation “Unlocking Adobe AI with AEMaaCS for SHRSS.” Template: Adobe_Presentation_Starter-Deck_2025_Layouts_for_Agents.md (path: /Users/lambert/Documents/Adobe/Branding/). Blueprint: Presentation_Blueprint_Unlocking_Adobe_AI_with_AEMaaCS_for_SHRSS.md (path: /Users/lambert/Documents/Projects/SHRSS/00_Deliverables/AEM_AI_Feature_Adoption/). Analyzed both; created image inventory at Documentation/Generated/Task_Execution/PRESENTATION_COLLATERAL/20260313_PRESENTATION_IMAGE_INVENTORY.md. Save images to Documentation/Generated/Presentation/Images with naming NN_Company_Description.ext.
+- **Note Status:** Resolved
+- **Required Action:** (N/A)
+- **Resolution:** Completed. Image inventory created at Documentation/Generated/Task_Execution/PRESENTATION_COLLATERAL/20260313_PRESENTATION_IMAGE_INVENTORY.md. Collected 10 candidate images (9 Hard Rock from hardrock.com + cafe.hardrock.com, 1 Adobe logo from auth.services.adobe.com) into Documentation/Generated/Presentation/Images with naming NN_Company_Description. README.md added in Images folder. Adobe product pages (business.adobe.com, adobe.com) returned ERR_HTTP2_PROTOCOL_ERROR in Playwright; user may add AEM/Firefly/Commerce imagery manually.
+
+---
