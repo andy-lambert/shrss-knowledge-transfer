@@ -1,8 +1,8 @@
-# SHRSS – AEM Assets API Guide - Classic
+**SHRSS – AEM Assets API Guide - Classic**
 
-## Create AEM technical account & service credentials
+# Create AEM technical account & service credentials
 
-### Prerequisites (roles & access)
+## Prerequisites (roles & access)
 
 **Before** starting, confirm the following:
 
@@ -24,11 +24,11 @@ If any of the above is missing, skip to **Appendix A – Support ticket template
 
 ------
 
-### Create Technical Account
+## Create Technical Account
 
 These steps are done **once per AEM environment** (e.g., once for Prod author, optionally again for Stage/Dev).
 
-#### Open the AEM Developer Console
+### Open the AEM Developer Console
 
 1. Log in to **Cloud Manager**: `https://experience.adobe.com/#/cloud-manager`
 2. Select the **SHRSS AEM program**.
@@ -38,7 +38,7 @@ These steps are done **once per AEM environment** (e.g., once for Prod author, o
 
 *Reference: “Developer Console access” and roles in [Developer console](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console).*
 
-#### Create a new technical account
+### Create a new technical account
 
 1. In the AEM Developer Console, go to: **Tools → Integrations → Technical Accounts**.
 2. Click **Create new technical account**.
@@ -55,14 +55,14 @@ This JSON is what your backend services will use to generate a JWT and exchange 
 
 *References: [Generating Access Tokens for Server-Side APIs](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/generating-access-tokens-for-server-side-apis) and [Service credentials](https://experienceleague.adobe.com/en/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials).*
 
-#### Treat the JSON as a secret
+### Treat the JSON as a secret
 
 - Store the JSON in the team’s standard **secret manager** (Azure Key Vault, AWS Secrets Manager, etc.).
 - Never commit it to Git or share via email/Slack.
 
 ------
 
-### Configure AEM permissions for the technical account
+## Configure AEM permissions for the technical account
 
 By default, the technical account user is created in AEM with **Contributor/read** permissions only. You must grant it the right groups to read/write assets under `/content/dam`.
 
@@ -81,7 +81,7 @@ Once this is done, any access token obtained from the service credentials will h
 
 ------
 
-### Using the technical account programmatically (high level)
+## Using the technical account programmatically (high level)
 
 Your backend or integration will:
 
@@ -110,11 +110,11 @@ Full code samples for this flow are available here:
 
 ------
 
-## Code Samples
+# Code Samples
 
 *SHRSS AEM Assets HTTP API cURL Examples for **/content/dam/shrss/corporate/photography***
 
-### Common variables
+## Common variables
 
 For brevity, assume these shell vars:
 
@@ -125,7 +125,7 @@ export AUTH="Authorization: Bearer <ACCESS_TOKEN>"
 
 ------
 
-### Traverse folders (R – list folder contents)
+## Traverse folders (R – list folder contents)
 
 **List the `photography` folder (JSON via Assets HTTP API):**
 
@@ -140,7 +140,7 @@ curl -X GET \
 
 ------
 
-### Create a new folder under `photography` (C – folder)
+## Create a new folder under `photography` (C – folder)
 
 Example folder name: `api-demo`
 
@@ -167,7 +167,7 @@ curl -X GET \
 
 ------
 
-### Create a new asset in that folder (C – file)
+## Create a new asset in that folder (C – file)
 
 On **AEM as a Cloud Service**, binary upload via the Assets HTTP API is deprecated; use **Direct Binary Upload** instead.[[2\]](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/developer-reference-material-apis),)  
 
@@ -177,7 +177,7 @@ You will create `sample.jpg` in:
 /content/dam/shrss/corporate/photography/api-demo/sample.jpg
 ```
 
-#### Step 1 – Initiate upload
+### Step 1 – Initiate upload
 
 ```bash
 curl -X POST \
@@ -198,7 +198,7 @@ curl -X POST \
 
 Save the response as `initiate.json` for the next step.
 
-#### Step 2 – Upload to blob store (PUT binary)
+### Step 2 – Upload to blob store (PUT binary)
 
 ```bash
 UPLOAD_URI=$(jq -r '.files[0].uploadURIs[0]' initiate.json)
@@ -209,7 +209,7 @@ curl -X PUT \
   --data-binary "@sample.jpg"
 ```
 
-#### Step 3 – Complete upload
+### Step 3 – Complete upload
 
 ```bash
 COMPLETE_URI=$(jq -r '.completeURI' initiate.json)
@@ -238,7 +238,7 @@ curl -X GET \
 
 ------
 
-### Update asset metadata (U – asset metadata)
+## Update asset metadata (U – asset metadata)
 
 Example: update `dc:title` and `dc:description` on `sample.jpg`.
 
@@ -267,7 +267,7 @@ Look for the updated properties under the asset’s `properties` (metadata) sect
 
 ------
 
-### Delete asset (D – file)
+## Delete asset (D – file)
 
 ```bash
 curl -X DELETE \
@@ -287,7 +287,7 @@ Expect a `404` if deletion succeeded.
 
 ------
 
-### Delete folder (D – folder)
+## Delete folder (D – folder)
 
 > Make sure the folder is empty (no assets/subfolders) or use the `?recursive=true` pattern as appropriate and acceptable for your use case.
 
@@ -311,7 +311,7 @@ Be careful with `recursive=true` in shared folders.
 
 ------
 
-## Appendix A - Adobe Support ticket template (only if blocked)
+# Appendix A - Adobe Support ticket template (only if blocked)
 
 Use this **only if** you cannot:
 
@@ -319,11 +319,11 @@ Use this **only if** you cannot:
 - create a technical account, or
 - see the **Integrations / Technical Accounts** section despite having the right roles.
 
-#### Ticket subject
+### Ticket subject
 
 > SHRSS – Enable AEM Developer Console technical account & service credentials for Assets APIs
 
-#### Ticket body (copy/paste and fill in)
+### Ticket body (copy/paste and fill in)
 
 > **Product:** AEM as a Cloud Service – Assets
 > **Customer:** SHRSS
@@ -359,7 +359,7 @@ Use this **only if** you cannot:
 
 ------
 
-### Appendix B - Optional: OpenAPI-based AEM Assets Author API (future-proof)
+## Appendix B - Optional: OpenAPI-based AEM Assets Author API (future-proof)
 
 If you later want to use the **OpenAPI-based AEM Assets Author API** via **Adobe Developer Console** with OAuth Server-to-Server:
 
