@@ -1,12 +1,10 @@
-# SHRSS AEM Developer Console Training Deck Outline
+# SHRSS AEM Developer Console Guide Deck Outline
 
 ### Slide 1 – Title
 
 **Title:** SHRSS – AEM as a Cloud Service Developer Console
 **Subtitle:** Access, Troubleshooting & Hands‑On Practice
 **Audience:** Developers, Technical Architects, Admins
-**Presenter:** <Your name / team>
-**Version/Date:** <v1.0 – <date>>
 
 ------
 
@@ -477,7 +475,7 @@ For each:
 
 ------
 
-## Section 5 – Hands‑On Exercises (For SHRSS Workshops)
+## Section 5 – Hands‑On Exercises
 
 ### Slide 27 – Exercise 1: Getting Into Developer Console
 
